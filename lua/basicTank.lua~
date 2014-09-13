@@ -1,0 +1,2 @@
+Robot.reset()
+Robot.Teleop = dofile("/lua/basicTankTeleop.lua")

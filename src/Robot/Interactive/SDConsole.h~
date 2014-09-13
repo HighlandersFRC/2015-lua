@@ -1,0 +1,7 @@
+#include "lua.hpp"
+
+public class LuaConsole {
+ public:
+  void init();
+  void update(Lua_State*);
+}

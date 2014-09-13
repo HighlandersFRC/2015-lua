@@ -1,0 +1,19 @@
+setCompositeRobot()
+
+local motors = {WPILib.Talon(getPWM(1)), WPILib.Talon(getPWM(2)), WPILib.Talon(getPWM(3)), WPILib.Talon(getPWM(4))
+
+local leftDrive = {
+    Execute = function()
+        local pwr = getJoy(1):GetY()
+        motors[1]:Set(pwr)
+	motors[2]:Set(pwr)
+    end
+}
+
+local rightDrive = {
+    Execute = function()
+        local pwr = getJoy(2):GetY()
+        motors[3]:Set(pwr)
+	motors[4]:Set(pwr)
+    end
+}

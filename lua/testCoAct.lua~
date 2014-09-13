@@ -1,0 +1,12 @@
+setBasicRobot()
+
+local drive = WPILib.RobotDrive(getPWM(1), getPWM(2), getPWM(3), getPWM(4))
+
+local function teleopDrive()
+    while true do
+        coroutine.yield()
+	drive:ArcadeDrive(getJoy(1))
+    end
+end
+
+Robot.Teleop = coAction(teleopDrive)

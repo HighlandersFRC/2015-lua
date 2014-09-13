@@ -1,0 +1,6 @@
+#include "lua/lua.hpp"
+
+class LuaCommand : public Command {
+ public:
+ LuaCommand(LuaState*);
+};
