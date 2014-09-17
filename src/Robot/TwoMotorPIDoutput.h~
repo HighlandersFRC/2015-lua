@@ -1,9 +1,0 @@
-#include "WPILib.h"
-
-class TwoMotorPIDoutput {
- public:
-  virtual void PIDOutput(float);
-  TwoMotorPIDoutput(SpeedController, SpeedController);
- private:
-  SpeedController sc1;
-  SpeedController sc2;

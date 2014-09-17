@@ -1,2 +1,0 @@
-Robot.reset()
-Robot.Teleop = dofile("/lua/basicArcadeTeleop")

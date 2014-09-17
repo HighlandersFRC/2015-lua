@@ -1,6 +1,0 @@
-#include "TwoMotorPIDoutput.h"
-
-TwoMotorPIDoutput::PIDWrite(float output) {
-  sc1.PIDWrite(output);
-  sc2.PIDWrite(output);
-}
