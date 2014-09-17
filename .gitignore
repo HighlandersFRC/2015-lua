@@ -29,3 +29,6 @@
 
 # Editor Backup Files
 *~
+
+# Compile Folders
+build/
