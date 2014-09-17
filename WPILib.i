@@ -79,7 +79,6 @@
 %include "Vision/AxisCamera.h"
 %include "Watchdog.h"
 %include "WPIErrors.h"
-%include "TwoMotorPIDoutput.h"
 
 %import "WPILib.h"
 %import "Accelerometer.h"
@@ -160,14 +159,12 @@
 %import "Vision/AxisCamera.h"
 %import "Watchdog.h"
 %import "WPIErrors.h"
-%import "TwoMotorPIDoutput.h"
 
 uint32_t asUint32(float);
 
 %{
 #include "WPILib.h"
 #include "CounterBase.h"
-#include "TwoMotorPIDoutput.h"
 #include <math.h>
   typedef CounterBase::EncodingType EncodingType;
   typedef PIDSource::PIDSourceParameter PIDSourceParameter;

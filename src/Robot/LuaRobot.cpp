@@ -6,6 +6,7 @@
 #include "Interactive/SDConsole.h"
 
 extern "C" {
+#include "luasocket.h"
 void luaopen_WPILib(lua_State*);
 }
 
@@ -19,6 +20,7 @@ private:
     luaConsole->init();
     luaL_openlibs(LuaRobot::luastate);
     luaopen_WPILib(LuaRobot::luastate);
+    luaopen_socket_core(LuaRobot::luastate);
     cout << "begin coreInit\n";
     int errorcode = luaL_dofile(LuaRobot::luastate, "/lua/core/startup.lua");
     if (errorcode > 0) {

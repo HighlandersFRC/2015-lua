@@ -1,0 +1,2 @@
+C:/Users/dgronlund/Documents/2015-lua/build/CMakeFiles/LuaRobot.dir
+C:/Users/dgronlund/Documents/2015-lua/build/CMakeFiles/deploy.dir
