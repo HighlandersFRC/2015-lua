@@ -14,6 +14,10 @@
 /*-------------------------------------------------------------------------*\
 * Wait for readable/writable/connected socket with timeout
 \*-------------------------------------------------------------------------*/
+
+// Sketch as hell, try anyways
+#define SOCKET_SELECT
+
 #ifndef SOCKET_SELECT
 #include <wrn/coreip/poll.h>
 
@@ -31,7 +35,7 @@ int socket_waitfd(p_socket ps, int sw, p_timeout tm) {
         int t = (int)(timeout_getretry(tm)*1e3);
         ret = poll(&pfd, 1, t >= 0? t: -1);
     } while (ret == -1 && errno == EINTR);
-    if (ret == -1) return errno;
+    if (ret == -1) return errno; 
     if (ret == 0) return IO_TIMEOUT;
     if (sw == WAITFD_C && (pfd.revents & (POLLIN|POLLERR))) return IO_CLOSED;
     return IO_DONE;
@@ -120,6 +124,7 @@ int socket_select(t_socket n, fd_set *rfds, fd_set *wfds, fd_set *efds,
 \*-------------------------------------------------------------------------*/
 int socket_create(p_socket ps, int domain, int type, int protocol) {
     *ps = socket(domain, type, protocol);
+    //printf("called socket_create with domain %d, type %d, and protocol %d giving handle %d\n", domain, type, protocol, *ps);
     if (*ps != SOCKET_INVALID) return IO_DONE; 
     else return errno; 
 }
@@ -399,8 +404,12 @@ int socket_gethostbyname(const char *addr, struct hostent **hp) {
 const char *socket_hoststrerror(int err) {
     if (err <= 0) return io_strerror(err);
     switch (err) {
-        case HOST_NOT_FOUND: return "host not found";
-        default: return hstrerror(err);
+        case 0: return "No resolver error";                /* 0 NETDB_SUCCESS */
+        case 1: return "Unknown host";                     /* 1 HOST_NOT_FOUND */
+        case 2: return "Host name lookup failure";         /* 2 TRY_AGAIN */
+        case 3: return "Unknown server error";             /* 3 NO_RECOVERY */
+        case 4: return "No address associated with name";  /* 4 NO_ADDRESS / NO_DATA */
+        default: return "Undefined error string";
     }
 }
 

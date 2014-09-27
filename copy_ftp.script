@@ -1,0 +1,10 @@
+open 10.44.99.2
+random_user
+random_pass
+cd lua
+lcd lua
+mput *.lua
+cd core
+lcd core
+mput *.lua
+quit

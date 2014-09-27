@@ -5,6 +5,8 @@
 
 print("beginning lua core initialization")
 
+package.path = "/lua/core/?.lua;/lua/?.lua"
+
 local joysticks = {}
 
 function getJoy(id)

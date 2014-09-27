@@ -20,7 +20,13 @@ private:
     luaConsole->init();
     luaL_openlibs(LuaRobot::luastate);
     luaopen_WPILib(LuaRobot::luastate);
-    luaopen_socket_core(LuaRobot::luastate);
+    lua_pushglobaltable(luastate);
+    lua_getfield(luastate, -1, "package");
+    lua_remove(luastate, -2);
+    lua_getfield(luastate, -1, "preload");
+    lua_pushcfunction(luastate, luaopen_socket_core);
+    lua_setfield(luastate, -2, "socket.core");
+    lua_remove(luastate, -1);
     cout << "begin coreInit\n";
     int errorcode = luaL_dofile(LuaRobot::luastate, "/lua/core/startup.lua");
     if (errorcode > 0) {

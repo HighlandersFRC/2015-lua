@@ -1,0 +1,1 @@
+ftp -i -s:copy_ftp.script

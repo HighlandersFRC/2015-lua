@@ -399,10 +399,15 @@ const char *inet_tryconnect(p_socket ps, int *family, const char *address,
          * that shows up while iterating. if there was a
          * bind, all families will be the same and we will
          * not enter this branch. */
+        //printf("Family: %d\n", iterator->ai_family);
+        //printf("Socktype: %d\n", iterator->ai_socktype);
+        //struct protoent *temp = getprotobynumber(iterator->ai_protocol);
+        //printf("Protocol: %d\n", iterator->ai_protocol);
+        //printf("PF_INET: %d\n", PF_INET);
         if (*family != iterator->ai_family) {
             socket_destroy(ps);
             err = socket_strerror(socket_create(ps, iterator->ai_family, 
-                iterator->ai_socktype, iterator->ai_protocol));
+                iterator->ai_socktype, 0)); // iterator->ai_protocol));
             if (err != NULL) {
                 freeaddrinfo(resolved);
                 return err;

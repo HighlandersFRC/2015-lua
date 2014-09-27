@@ -5,6 +5,7 @@
 
 print("beginning lua user initialization")
 
+require("mobdebug").start("10.44.99.100")
 dofile("/lua/basicTank.lua")
 
 print("end lua user initialization")
