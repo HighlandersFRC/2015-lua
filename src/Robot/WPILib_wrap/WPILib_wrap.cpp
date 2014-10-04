@@ -2793,11 +2793,19 @@ SWIGINTERN int SWIG_lua_isnilstring(lua_State *L, int idx) {
 #include "WPILib.h"
 #include "CounterBase.h"
 #include <math.h>
-  typedef CounterBase::EncodingType EncodingType;
-  typedef PIDSource::PIDSourceParameter PIDSourceParameter;
-  uint32_t asUint32(float arg) {
-    return uint32_t(arg);
-  }
+  	typedef CounterBase::EncodingType EncodingType;
+  	typedef PIDSource::PIDSourceParameter PIDSourceParameter;
+  	uint32_t asUint32(float arg) {
+    	return uint32_t(arg);
+  	}
+
+  	std::string* asStdString(const char * arg) {
+  		return new std::string(arg);
+  	}
+
+  	const char * fromStdString(std::string * arg) {
+  		return arg->c_str();
+  	}
 
 #ifdef __cplusplus
 extern "C" {
@@ -48383,6 +48391,50 @@ fail:
 }
 
 
+static int _wrap_asStdString(lua_State* L) {
+  int SWIG_arg = 0;
+  char *arg1 = (char *) 0 ;
+  std::string *result = 0 ;
+  
+  SWIG_check_num_args("asStdString",1,1)
+  if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("asStdString",1,"char const *");
+  arg1 = (char *)lua_tostring(L, 1);
+  result = (std::string *)asStdString((char const *)arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_std__string,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_fromStdString(lua_State* L) {
+  int SWIG_arg = 0;
+  std::string *arg1 = (std::string *) 0 ;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("fromStdString",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("fromStdString",1,"std::string *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("fromStdString",1,SWIGTYPE_p_std__string);
+  }
+  
+  result = (char *)fromStdString(arg1);
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static swig_lua_attribute swig_SwigModule_attributes[] = {
     { "AnalogChannel_kAccumulatorChannels", _wrap_AnalogChannel_kAccumulatorChannels_get, SWIG_Lua_set_immutable },
     { "AnalogIOButton_kThreshold", _wrap_AnalogIOButton_kThreshold_get, SWIG_Lua_set_immutable },
@@ -48670,6 +48722,8 @@ static swig_lua_method swig_SwigModule_methods[]= {
     { "AxisCamera_GetInstance", _wrap_AxisCamera_GetInstance},
     { "AxisCamera_DeleteInstance", _wrap_AxisCamera_DeleteInstance},
     { "asUint32", _wrap_asUint32},
+    { "asStdString", _wrap_asStdString},
+    { "fromStdString", _wrap_fromStdString},
     {0,0}
 };
 static swig_lua_class* swig_SwigModule_classes[]= {
