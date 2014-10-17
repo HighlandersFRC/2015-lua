@@ -1,7 +1,13 @@
 local currentState = 1
 local currentEnabled = false
 
-require("mobdebug").start("10.44.99.100")
+if DEBUG_ENABLE then
+  require("mobdebug").start(DEBUG_SERVER_ADDRESS, DEBUG_SERVER_PORT)
+end
+
+print"start of main.lua"
+
+local watchdog = WPILib.Watchdog()
 
 local stateNames = {"Disabled", "Autonomous", "Teleop"}
 
@@ -27,12 +33,14 @@ while true do
   
   if currentState ~= newState then
     local endfn = Robot[stateNames[currentState]].End or NoOp
-    endfn()
+    endfn(stateNames[currentState])
     local initfn = Robot[stateNames[newState]].Initialize or NoOp
-    initfn()
+    initfn(stateNames[currentState])
     currentState = newState
   end
   
   local exec = Robot[stateNames[newState]].Execute or NoOp
-  exec()
+  exec(stateNames[newState])
+  notify_keepAlive()
+  watchdog:Feed()
 end

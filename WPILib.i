@@ -161,6 +161,7 @@
 %import "WPIErrors.h"
 
 uint32_t asUint32(float);
+float fromUint32(uint32_t);
 
 std::string* asStdString(const char *);
 const char* fromStdString(std::string *);
@@ -171,9 +172,14 @@ const char* fromStdString(std::string *);
 #include <math.h>
   	typedef CounterBase::EncodingType EncodingType;
   	typedef PIDSource::PIDSourceParameter PIDSourceParameter;
+
   	uint32_t asUint32(float arg) {
-    	return uint32_t(arg);
+    		return uint32_t(arg);
   	}
+	
+	float fromUint32(uint32_t arg) {
+		return float(arg);
+	}
 
   	std::string* asStdString(const char * arg) {
   		return new std::string(arg);

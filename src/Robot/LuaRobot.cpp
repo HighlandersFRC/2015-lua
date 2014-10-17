@@ -1,5 +1,9 @@
 #include "LuaRobot.h"
 
+const string LuaRobot::coreStartupName = "/lua/core/startup.lua";
+const string LuaRobot::defaultUserStartupName = "/lua/startup.lua";
+const string LuaRobot::defaultUserMainName = "/lua/main.lua";
+
 int LuaRobot::lua_IsEnabled(lua_State *l) {
   lua_pushboolean(l, ((LuaRobot*)lua_touserdata(l, lua_upvalueindex(1)))->IsEnabled());
   return 1;
@@ -35,6 +39,33 @@ int LuaRobot::lua_IsNewDataAvailable(lua_State *l) {
   return 1;
 }
 
+void LuaRobot::RestartLua() {
+  longjmp(restartLuaJmpBuf, 1);
+}
+
+int LuaRobot::lua_RestartLua(lua_State *l) {
+  ((LuaRobot*)lua_touserdata(l, lua_upvalueindex(1)))->RestartLua();
+  return 0;
+}
+
+void LuaRobot::SetUserStartupName(string name) {
+  userStartupName = name;
+}
+
+int LuaRobot::lua_SetUserStartupName(lua_State *l) {
+  ((LuaRobot*)lua_touserdata(l, lua_upvalueindex(1)))->SetUserStartupName(lua_tostring(l, -1));
+  return 0;
+}
+
+void LuaRobot::SetUserMainName(string name) {
+  userMainName = name;
+}
+
+int LuaRobot::lua_SetUserMainName(lua_State *l) {
+  ((LuaRobot*)lua_touserdata(l, lua_upvalueindex(1)))->SetUserMainName(lua_tostring(l, -1));
+  return 0;
+}
+
 luaL_Reg LuaRobot::stateFunctions[] = {
   {"IsEnabled", &LuaRobot::lua_IsEnabled}, 
   {"IsDisabled", &LuaRobot::lua_IsDisabled},
@@ -46,17 +77,23 @@ luaL_Reg LuaRobot::stateFunctions[] = {
   {NULL, NULL}
 };
 
+luaL_Reg LuaRobot::interactionFunctions[] = {
+  {"Restart", &LuaRobot::lua_RestartLua},
+  {"SetUserStartupName", &LuaRobot::lua_SetUserStartupName},
+  {"SetUserMainName", &LuaRobot::lua_SetUserMainName},
+  {NULL, NULL}
+};
+
 void LuaRobot::LuaInit() {
   //cout << "Begin stuff...\n";
   //luaConsole->init();
   luaL_openlibs(LuaRobot::luastate);
   luaopen_WPILib(LuaRobot::luastate);
   lua_pushglobaltable(LuaRobot::luastate);
-  //cout << "Before push light.\n";
   lua_pushlightuserdata(luastate, this);
-  //cout << "Before set functions...\n";
   luaL_setfuncs(luastate, LuaRobot::stateFunctions, 1);
-  //cout << "After set functions.\n";
+  lua_pushlightuserdata(luastate, this);
+  luaL_setfuncs(luastate, LuaRobot::interactionFunctions, 1);
   lua_getfield(luastate, -1, "package");
   lua_remove(luastate, -2);
   lua_getfield(luastate, -1, "preload");
@@ -64,15 +101,17 @@ void LuaRobot::LuaInit() {
   lua_setfield(luastate, -2, "socket.core");
   lua_remove(luastate, -1);
   cout << "begin coreInit\n";
-  int errorcode = luaL_dofile(LuaRobot::luastate, "/lua/core/startup.lua");
+  int errorcode = luaL_dofile(LuaRobot::luastate, coreStartupName.c_str());
   if (errorcode > 0) {
+    cout << "file name: " << coreStartupName << "\n";
     cout << "error code: " << errorcode << "\n";
     cout << "error message: " << lua_tolstring(luastate, -1, NULL) << "\n";
     lua_settop(luastate, 0);
   }
   cout << "end coreInit\nbegin userInit\n";
-  errorcode = luaL_dofile(LuaRobot::luastate, "/lua/startup.lua");
+  errorcode = luaL_dofile(LuaRobot::luastate, userStartupName.c_str());
   if (errorcode > 0) {
+    cout << "file name: " << userStartupName << "\n";
     cout << "error code: " << errorcode << "\n";
     cout << "error message: " << lua_tolstring(luastate, -1, NULL) << "\n";
     lua_settop(luastate, 0);
@@ -81,12 +120,17 @@ void LuaRobot::LuaInit() {
 }
 
 void LuaRobot::StartCompetition() {
+  userStartupName = defaultUserStartupName;
+  userMainName = defaultUserMainName;
+  if (setjmp(restartLuaJmpBuf)) {
+    lua_close(luastate);
+  }
   luastate = luaL_newstate();
   LuaInit();
   //luaConsole->init();
   //SmartDashboard::PutBoolean("lua_reset", false);
   cout << "Starting Main...\n";
-  int errorcode = luaL_dofile(LuaRobot::luastate, "/lua/main.lua");
+  int errorcode = luaL_dofile(LuaRobot::luastate, userMainName.c_str());
   if (errorcode > 0) {
     cout << "error code: " << errorcode << "\n";
     cout << "error message: " << lua_tolstring(luastate, -1, NULL) << "\n";

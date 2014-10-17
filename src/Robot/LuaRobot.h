@@ -2,6 +2,7 @@
 #include "lua.hpp"
 #include "Interactive/SDConsole.h"
 #include <RobotBase.h>
+#include "setjmp.h"
 
 extern "C" {
 #include "luasocket.h"
@@ -15,6 +16,14 @@ private:
   int robotstate;
   SDConsole* luaConsole;
   static luaL_Reg stateFunctions[];
+  static const string coreStartupName;
+  static const string defaultUserStartupName;
+  static const string defaultUserMainName;
+  string userStartupName;
+  string userMainName;
+  jmp_buf restartLuaJmpBuf;
+
+  static luaL_Reg interactionFunctions[];
 
   virtual void LuaInit();
   virtual void StartCompetition();
@@ -26,6 +35,13 @@ private:
   static int lua_IsTest(lua_State *l);
   static int lua_IsSystemActive(lua_State *l);
   static int lua_IsNewDataAvailable(lua_State *l);
+
+  void RestartLua();
+  static int lua_RestartLua(lua_State *l);
+  void SetUserStartupName(string name);
+  static int lua_SetUserStartupName(lua_State *l);
+  void SetUserMainName(string name);
+  static int lua_SetUserMainName(lua_State *l);
 
   // virtual void LuaRobotCall(int mode, int event) {
   //   lua_pushglobaltable(luastate);

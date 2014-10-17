@@ -1,3 +1,11 @@
-setBasicRobot()
+if SWITCHFILE_ENABLE then
+  setCompositeRobot()
 
-Robot.Teleop = dofile("/lua/basicArcadeTeleop.lua")
+  Robot.Teleop.Put("switchfile", require("SwitchFileControls"))
+
+  Robot.Teleop.Put("arcade drive", dofile("/lua/basicArcadeTeleop.lua"))
+else
+  setBasicRobot()
+  
+  Robot.Teleop = dofile("/lua/basicArcadeTeleop.lua")
+end

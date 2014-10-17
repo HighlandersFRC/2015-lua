@@ -5,7 +5,10 @@
 
 print("beginning lua user initialization")
 
---require("mobdebug").start("10.44.99.100")
+--require("mqtt_lua_console").start()
+
 dofile("/lua/basicTank.lua")
+
+--SetUserMainName("/lua/keepAliveMain.lua")
 
 print("end lua user initialization")

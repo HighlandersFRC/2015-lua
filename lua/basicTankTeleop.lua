@@ -8,13 +8,13 @@ end
 
 teleop.Execute = function()
     watchdog:Feed()
-    local leftSidePower = getJoy(1):GetY()
-    local rightSidePower = getJoy(1):GetRawAxis(WPILib.asUint32(3))
-    getTalon(1):Set(leftSidePower)
-    getTalon(2):Set(leftSidePower)
-    getTalon(3):Set(rightSidePower)
-    getTalon(4):Set(rightSidePower)
-    print("basicTank.Execute")
+    local leftSidePower = -getJoy(1):GetY()
+    local rightSidePower = getJoy(2):GetY()
+    getTalon(1):Set(rightSidePower)
+    getTalon(2):Set(rightSidePower)
+    getTalon(3):Set(leftSidePower)
+    getTalon(4):Set(leftSidePower)
+    --print("basicTank.Execute")
 end
 
 teleop.End = function()
