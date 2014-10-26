@@ -19,6 +19,11 @@ private:
   static const string coreStartupName;
   static const string defaultUserStartupName;
   static const string defaultUserMainName;
+  static const string defaultStableStartupName;
+  static const string defaultStableMainName;
+  static const string defaultSafemodeStartupName;
+  static const string defaultSafemodeMainName;
+  int crashCount;
   string userStartupName;
   string userMainName;
   jmp_buf restartLuaJmpBuf;

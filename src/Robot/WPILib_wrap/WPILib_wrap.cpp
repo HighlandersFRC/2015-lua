@@ -1921,89 +1921,90 @@ SWIG_Lua_dostring(lua_State *L, const char* str) {
 #define SWIGTYPE_p_IterativeRobot swig_types[56]
 #define SWIGTYPE_p_Jaguar swig_types[57]
 #define SWIGTYPE_p_Joystick swig_types[58]
-#define SWIGTYPE_p_JoystickButton swig_types[59]
-#define SWIGTYPE_p_JoystickHand swig_types[60]
-#define SWIGTYPE_p_Kinect swig_types[61]
-#define SWIGTYPE_p_KinectStick swig_types[62]
-#define SWIGTYPE_p_Kinect__Point4 swig_types[63]
-#define SWIGTYPE_p_LimitMode swig_types[64]
-#define SWIGTYPE_p_Limits swig_types[65]
-#define SWIGTYPE_p_Mode swig_types[66]
-#define SWIGTYPE_p_MotorType swig_types[67]
-#define SWIGTYPE_p_NamedSendable swig_types[68]
-#define SWIGTYPE_p_NetworkButton swig_types[69]
-#define SWIGTYPE_p_NeutralMode swig_types[70]
-#define SWIGTYPE_p_Notifier swig_types[71]
-#define SWIGTYPE_p_PIDCommand swig_types[72]
-#define SWIGTYPE_p_PIDController swig_types[73]
-#define SWIGTYPE_p_PIDOutput swig_types[74]
-#define SWIGTYPE_p_PIDSource swig_types[75]
-#define SWIGTYPE_p_PIDSourceParameter swig_types[76]
-#define SWIGTYPE_p_PIDSubsystem swig_types[77]
-#define SWIGTYPE_p_PWM swig_types[78]
-#define SWIGTYPE_p_Parity swig_types[79]
-#define SWIGTYPE_p_PeriodMultiplier swig_types[80]
-#define SWIGTYPE_p_PositionReference swig_types[81]
-#define SWIGTYPE_p_Preferences swig_types[82]
-#define SWIGTYPE_p_PrintCommand swig_types[83]
-#define SWIGTYPE_p_ReentrantSemaphore swig_types[84]
-#define SWIGTYPE_p_Relay swig_types[85]
-#define SWIGTYPE_p_Resource swig_types[86]
-#define SWIGTYPE_p_RobotBase swig_types[87]
-#define SWIGTYPE_p_RobotDrive swig_types[88]
-#define SWIGTYPE_p_SEM_ID swig_types[89]
-#define SWIGTYPE_p_SPI swig_types[90]
-#define SWIGTYPE_p_SPI__tFrameMode swig_types[91]
-#define SWIGTYPE_p_Scheduler swig_types[92]
-#define SWIGTYPE_p_Sendable swig_types[93]
-#define SWIGTYPE_p_SendableChooser swig_types[94]
-#define SWIGTYPE_p_SensorBase swig_types[95]
-#define SWIGTYPE_p_SerialPort swig_types[96]
-#define SWIGTYPE_p_Servo swig_types[97]
-#define SWIGTYPE_p_SimpleRobot swig_types[98]
-#define SWIGTYPE_p_Skeleton swig_types[99]
-#define SWIGTYPE_p_SkeletonQuality swig_types[100]
-#define SWIGTYPE_p_SkeletonTrackingState swig_types[101]
-#define SWIGTYPE_p_SmartDashboard swig_types[102]
-#define SWIGTYPE_p_Solenoid swig_types[103]
-#define SWIGTYPE_p_SpeedController swig_types[104]
-#define SWIGTYPE_p_SpeedReference swig_types[105]
-#define SWIGTYPE_p_StartCommand swig_types[106]
-#define SWIGTYPE_p_StopBits swig_types[107]
-#define SWIGTYPE_p_Subsystem swig_types[108]
-#define SWIGTYPE_p_SubsystemSet swig_types[109]
-#define SWIGTYPE_p_Synchronized swig_types[110]
-#define SWIGTYPE_p_Talon swig_types[111]
-#define SWIGTYPE_p_Task swig_types[112]
-#define SWIGTYPE_p_Timer swig_types[113]
-#define SWIGTYPE_p_Type swig_types[114]
-#define SWIGTYPE_p_UINT swig_types[115]
-#define SWIGTYPE_p_Ultrasonic swig_types[116]
-#define SWIGTYPE_p_Value swig_types[117]
-#define SWIGTYPE_p_Victor swig_types[118]
-#define SWIGTYPE_p_WaitCommand swig_types[119]
-#define SWIGTYPE_p_WaitForChildren swig_types[120]
-#define SWIGTYPE_p_WaitUntilCommand swig_types[121]
-#define SWIGTYPE_p_Watchdog swig_types[122]
-#define SWIGTYPE_p_WriteBufferMode swig_types[123]
-#define SWIGTYPE_p_bool swig_types[124]
-#define SWIGTYPE_p_f_p_void__void swig_types[125]
-#define SWIGTYPE_p_int swig_types[126]
-#define SWIGTYPE_p_int16_t swig_types[127]
-#define SWIGTYPE_p_int32_t swig_types[128]
-#define SWIGTYPE_p_int8_t swig_types[129]
-#define SWIGTYPE_p_p_Resource swig_types[130]
-#define SWIGTYPE_p_p_char swig_types[131]
-#define SWIGTYPE_p_std__setT_Subsystem_p_t swig_types[132]
-#define SWIGTYPE_p_std__string swig_types[133]
-#define SWIGTYPE_p_std__vectorT_std__string_t swig_types[134]
-#define SWIGTYPE_p_tInterruptHandler swig_types[135]
-#define SWIGTYPE_p_uint16_t swig_types[136]
-#define SWIGTYPE_p_uint32_t swig_types[137]
-#define SWIGTYPE_p_uint8_t swig_types[138]
-#define SWIGTYPE_p_void swig_types[139]
-static swig_type_info *swig_types[141];
-static swig_module_info swig_module = {swig_types, 140, 0, 0, 0, 0};
+#define SWIGTYPE_p_JoystickAxis swig_types[59]
+#define SWIGTYPE_p_JoystickButton swig_types[60]
+#define SWIGTYPE_p_JoystickHand swig_types[61]
+#define SWIGTYPE_p_Kinect swig_types[62]
+#define SWIGTYPE_p_KinectStick swig_types[63]
+#define SWIGTYPE_p_Kinect__Point4 swig_types[64]
+#define SWIGTYPE_p_LimitMode swig_types[65]
+#define SWIGTYPE_p_Limits swig_types[66]
+#define SWIGTYPE_p_Mode swig_types[67]
+#define SWIGTYPE_p_MotorType swig_types[68]
+#define SWIGTYPE_p_NamedSendable swig_types[69]
+#define SWIGTYPE_p_NetworkButton swig_types[70]
+#define SWIGTYPE_p_NeutralMode swig_types[71]
+#define SWIGTYPE_p_Notifier swig_types[72]
+#define SWIGTYPE_p_PIDCommand swig_types[73]
+#define SWIGTYPE_p_PIDController swig_types[74]
+#define SWIGTYPE_p_PIDOutput swig_types[75]
+#define SWIGTYPE_p_PIDSource swig_types[76]
+#define SWIGTYPE_p_PIDSourceParameter swig_types[77]
+#define SWIGTYPE_p_PIDSubsystem swig_types[78]
+#define SWIGTYPE_p_PWM swig_types[79]
+#define SWIGTYPE_p_Parity swig_types[80]
+#define SWIGTYPE_p_PeriodMultiplier swig_types[81]
+#define SWIGTYPE_p_PositionReference swig_types[82]
+#define SWIGTYPE_p_Preferences swig_types[83]
+#define SWIGTYPE_p_PrintCommand swig_types[84]
+#define SWIGTYPE_p_ReentrantSemaphore swig_types[85]
+#define SWIGTYPE_p_Relay swig_types[86]
+#define SWIGTYPE_p_Resource swig_types[87]
+#define SWIGTYPE_p_RobotBase swig_types[88]
+#define SWIGTYPE_p_RobotDrive swig_types[89]
+#define SWIGTYPE_p_SEM_ID swig_types[90]
+#define SWIGTYPE_p_SPI swig_types[91]
+#define SWIGTYPE_p_SPI__tFrameMode swig_types[92]
+#define SWIGTYPE_p_Scheduler swig_types[93]
+#define SWIGTYPE_p_Sendable swig_types[94]
+#define SWIGTYPE_p_SendableChooser swig_types[95]
+#define SWIGTYPE_p_SensorBase swig_types[96]
+#define SWIGTYPE_p_SerialPort swig_types[97]
+#define SWIGTYPE_p_Servo swig_types[98]
+#define SWIGTYPE_p_SimpleRobot swig_types[99]
+#define SWIGTYPE_p_Skeleton swig_types[100]
+#define SWIGTYPE_p_SkeletonQuality swig_types[101]
+#define SWIGTYPE_p_SkeletonTrackingState swig_types[102]
+#define SWIGTYPE_p_SmartDashboard swig_types[103]
+#define SWIGTYPE_p_Solenoid swig_types[104]
+#define SWIGTYPE_p_SpeedController swig_types[105]
+#define SWIGTYPE_p_SpeedReference swig_types[106]
+#define SWIGTYPE_p_StartCommand swig_types[107]
+#define SWIGTYPE_p_StopBits swig_types[108]
+#define SWIGTYPE_p_Subsystem swig_types[109]
+#define SWIGTYPE_p_SubsystemSet swig_types[110]
+#define SWIGTYPE_p_Synchronized swig_types[111]
+#define SWIGTYPE_p_Talon swig_types[112]
+#define SWIGTYPE_p_Task swig_types[113]
+#define SWIGTYPE_p_Timer swig_types[114]
+#define SWIGTYPE_p_Type swig_types[115]
+#define SWIGTYPE_p_UINT swig_types[116]
+#define SWIGTYPE_p_Ultrasonic swig_types[117]
+#define SWIGTYPE_p_Value swig_types[118]
+#define SWIGTYPE_p_Victor swig_types[119]
+#define SWIGTYPE_p_WaitCommand swig_types[120]
+#define SWIGTYPE_p_WaitForChildren swig_types[121]
+#define SWIGTYPE_p_WaitUntilCommand swig_types[122]
+#define SWIGTYPE_p_Watchdog swig_types[123]
+#define SWIGTYPE_p_WriteBufferMode swig_types[124]
+#define SWIGTYPE_p_bool swig_types[125]
+#define SWIGTYPE_p_f_p_void__void swig_types[126]
+#define SWIGTYPE_p_int swig_types[127]
+#define SWIGTYPE_p_int16_t swig_types[128]
+#define SWIGTYPE_p_int32_t swig_types[129]
+#define SWIGTYPE_p_int8_t swig_types[130]
+#define SWIGTYPE_p_p_Resource swig_types[131]
+#define SWIGTYPE_p_p_char swig_types[132]
+#define SWIGTYPE_p_std__setT_Subsystem_p_t swig_types[133]
+#define SWIGTYPE_p_std__string swig_types[134]
+#define SWIGTYPE_p_std__vectorT_std__string_t swig_types[135]
+#define SWIGTYPE_p_tInterruptHandler swig_types[136]
+#define SWIGTYPE_p_uint16_t swig_types[137]
+#define SWIGTYPE_p_uint32_t swig_types[138]
+#define SWIGTYPE_p_uint8_t swig_types[139]
+#define SWIGTYPE_p_void swig_types[140]
+static swig_type_info *swig_types[142];
+static swig_module_info swig_module = {swig_types, 141, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -2030,6 +2031,7 @@ SWIGINTERN int SWIG_lua_isnilstring(lua_State *L, int idx) {
 
 #include "WPILib.h"
 #include "CounterBase.h"
+#include "JoystickAxis.h"
 #include <math.h>
   	typedef CounterBase::EncodingType EncodingType;
   	typedef PIDSource::PIDSourceParameter PIDSourceParameter;
@@ -25357,6 +25359,81 @@ static swig_lua_class *swig_Joystick_bases[] = {0,0,0};
 static const char *swig_Joystick_base_names[] = {"GenericHID *","ErrorBase *",0};
 static swig_lua_class _wrap_class_Joystick = { "Joystick", &SWIGTYPE_p_Joystick,_wrap_new_Joystick, swig_delete_Joystick, swig_Joystick_methods, swig_Joystick_attributes, { "Joystick", swig_Joystick_cls_methods, swig_Joystick_cls_attributes, swig_Joystick_cls_constants }, swig_Joystick_bases, swig_Joystick_base_names };
 
+static int _wrap_new_JoystickAxis(lua_State* L) {
+  int SWIG_arg = 0;
+  Joystick *arg1 = (Joystick *) 0 ;
+  int arg2 ;
+  JoystickAxis *result = 0 ;
+  
+  SWIG_check_num_args("JoystickAxis::JoystickAxis",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("JoystickAxis::JoystickAxis",1,"Joystick *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("JoystickAxis::JoystickAxis",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Joystick,0))){
+    SWIG_fail_ptr("new_JoystickAxis",1,SWIGTYPE_p_Joystick);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  result = (JoystickAxis *)new JoystickAxis(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_JoystickAxis,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_JoystickAxis_Get(lua_State* L) {
+  int SWIG_arg = 0;
+  JoystickAxis *arg1 = (JoystickAxis *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("JoystickAxis::Get",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("JoystickAxis::Get",1,"JoystickAxis *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_JoystickAxis,0))){
+    SWIG_fail_ptr("JoystickAxis_Get",1,SWIGTYPE_p_JoystickAxis);
+  }
+  
+  result = (float)(arg1)->Get();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_JoystickAxis(void *obj) {
+JoystickAxis *arg1 = (JoystickAxis *) obj;
+delete arg1;
+}
+static swig_lua_method swig_JoystickAxis_methods[] = {
+    {"Get", _wrap_JoystickAxis_Get}, 
+    {0,0}
+};
+static swig_lua_attribute swig_JoystickAxis_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_attribute swig_JoystickAxis_cls_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_JoystickAxis_cls_methods[] = {
+    {0,0}
+};
+static swig_lua_const_info swig_JoystickAxis_cls_constants[] = {
+    {0,0,0,0,0,0}
+};
+static swig_lua_class *swig_JoystickAxis_bases[] = {0};
+static const char *swig_JoystickAxis_base_names[] = {0};
+static swig_lua_class _wrap_class_JoystickAxis = { "JoystickAxis", &SWIGTYPE_p_JoystickAxis,_wrap_new_JoystickAxis, swig_delete_JoystickAxis, swig_JoystickAxis_methods, swig_JoystickAxis_attributes, { "JoystickAxis", swig_JoystickAxis_cls_methods, swig_JoystickAxis_cls_attributes, swig_JoystickAxis_cls_constants }, swig_JoystickAxis_bases, swig_JoystickAxis_base_names };
+
 static int _wrap_Kinect_GetNumberOfPlayers(lua_State* L) {
   int SWIG_arg = 0;
   Kinect *arg1 = (Kinect *) 0 ;
@@ -46570,6 +46647,7 @@ static swig_type_info _swigt__p_InterruptableSensorBase = {"_p_InterruptableSens
 static swig_type_info _swigt__p_IterativeRobot = {"_p_IterativeRobot", "IterativeRobot *", 0, 0, (void*)&_wrap_class_IterativeRobot, 0};
 static swig_type_info _swigt__p_Jaguar = {"_p_Jaguar", "Jaguar *", 0, 0, (void*)&_wrap_class_Jaguar, 0};
 static swig_type_info _swigt__p_Joystick = {"_p_Joystick", "Joystick *", 0, 0, (void*)&_wrap_class_Joystick, 0};
+static swig_type_info _swigt__p_JoystickAxis = {"_p_JoystickAxis", "JoystickAxis *", 0, 0, (void*)&_wrap_class_JoystickAxis, 0};
 static swig_type_info _swigt__p_JoystickButton = {"_p_JoystickButton", "JoystickButton *", 0, 0, (void*)&_wrap_class_JoystickButton, 0};
 static swig_type_info _swigt__p_JoystickHand = {"_p_JoystickHand", "JoystickHand *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Kinect = {"_p_Kinect", "Kinect *", 0, 0, (void*)&_wrap_class_Kinect, 0};
@@ -46712,6 +46790,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_IterativeRobot,
   &_swigt__p_Jaguar,
   &_swigt__p_Joystick,
+  &_swigt__p_JoystickAxis,
   &_swigt__p_JoystickButton,
   &_swigt__p_JoystickHand,
   &_swigt__p_Kinect,
@@ -46854,6 +46933,7 @@ static swig_cast_info _swigc__p_InterruptableSensorBase[] = {  {&_swigt__p_Inter
 static swig_cast_info _swigc__p_IterativeRobot[] = {  {&_swigt__p_IterativeRobot, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Jaguar[] = {  {&_swigt__p_Jaguar, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Joystick[] = {  {&_swigt__p_Joystick, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_JoystickAxis[] = {  {&_swigt__p_JoystickAxis, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_JoystickButton[] = {  {&_swigt__p_JoystickButton, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_JoystickHand[] = {  {&_swigt__p_JoystickHand, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Kinect[] = {  {&_swigt__p_Kinect, 0, 0, 0},{0, 0, 0, 0}};
@@ -46996,6 +47076,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_IterativeRobot,
   _swigc__p_Jaguar,
   _swigc__p_Joystick,
+  _swigc__p_JoystickAxis,
   _swigc__p_JoystickButton,
   _swigc__p_JoystickHand,
   _swigc__p_Kinect,

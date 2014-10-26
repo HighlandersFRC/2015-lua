@@ -9,6 +9,8 @@ print("beginning lua user initialization")
 
 dofile("/lua/basicTank.lua")
 
+Robot.Teleop.Put("crashTest", dofile"/lua/crashTest.lua")
+
 --SetUserMainName("/lua/keepAliveMain.lua")
 
 print("end lua user initialization")

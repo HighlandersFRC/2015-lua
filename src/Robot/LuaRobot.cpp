@@ -3,6 +3,11 @@
 const string LuaRobot::coreStartupName = "/lua/core/startup.lua";
 const string LuaRobot::defaultUserStartupName = "/lua/startup.lua";
 const string LuaRobot::defaultUserMainName = "/lua/main.lua";
+const string LuaRobot::defaultStableStartupName = "/lua/stableStartup.lua";
+const string LuaRobot::defaultStableMainName = "/lua/stableMain.lua";
+const string LuaRobot::defaultSafemodeStartupName = "/lua/safemodeStartup.lua";
+const string LuaRobot::defaultSafemodeMainName = "/lua/safemodeMain.lua";
+
 
 int LuaRobot::lua_IsEnabled(lua_State *l) {
   lua_pushboolean(l, ((LuaRobot*)lua_touserdata(l, lua_upvalueindex(1)))->IsEnabled());
@@ -40,6 +45,7 @@ int LuaRobot::lua_IsNewDataAvailable(lua_State *l) {
 }
 
 void LuaRobot::RestartLua() {
+  crashCount = 0;
   longjmp(restartLuaJmpBuf, 1);
 }
 
@@ -100,6 +106,9 @@ void LuaRobot::LuaInit() {
   lua_pushcfunction(luastate, luaopen_socket_core);
   lua_setfield(luastate, -2, "socket.core");
   lua_remove(luastate, -1);
+  if (crashCount <= 2) {
+    userStartupName = defaultUserStartupName;
+  }
   cout << "begin coreInit\n";
   int errorcode = luaL_dofile(LuaRobot::luastate, coreStartupName.c_str());
   if (errorcode > 0) {
@@ -109,6 +118,12 @@ void LuaRobot::LuaInit() {
     lua_settop(luastate, 0);
   }
   cout << "end coreInit\nbegin userInit\n";
+  if (crashCount > 2 && crashCount <= 4) {
+    userStartupName = defaultStableStartupName;
+  }
+  if (crashCount > 4) {
+    userStartupName = defaultSafemodeStartupName;
+  }
   errorcode = luaL_dofile(LuaRobot::luastate, userStartupName.c_str());
   if (errorcode > 0) {
     cout << "file name: " << userStartupName << "\n";
@@ -122,13 +137,23 @@ void LuaRobot::LuaInit() {
 void LuaRobot::StartCompetition() {
   userStartupName = defaultUserStartupName;
   userMainName = defaultUserMainName;
+  crashCount = 0;
   if (setjmp(restartLuaJmpBuf)) {
     lua_close(luastate);
   }
   luastate = luaL_newstate();
+  if (crashCount <= 2) {
+    userMainName = defaultUserMainName;
+  }
   LuaInit();
   //luaConsole->init();
   //SmartDashboard::PutBoolean("lua_reset", false);
+  if (crashCount > 2 && crashCount <= 4) {
+    userMainName = defaultStableMainName;
+  }
+  if (crashCount > 4) {
+    userMainName = defaultSafemodeMainName;
+  }
   cout << "Starting Main...\n";
   int errorcode = luaL_dofile(LuaRobot::luastate, userMainName.c_str());
   if (errorcode > 0) {
@@ -136,7 +161,10 @@ void LuaRobot::StartCompetition() {
     cout << "error message: " << lua_tolstring(luastate, -1, NULL) << "\n";
     lua_settop(luastate, 0);
   }
-  cout << "Main Terminated.\n";
+  cout << "Main Terminated.\n";  
+  ++crashCount;
+  longjmp(restartLuaJmpBuf, 1);
+  cout << "Past Jump point.";
 }
 
 START_ROBOT_CLASS(LuaRobot);

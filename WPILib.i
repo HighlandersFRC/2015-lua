@@ -48,6 +48,7 @@
 %include "InterruptableSensorBase.h"
 %include "Jaguar.h"
 %include "Joystick.h"
+%include "JoystickAxis.h"
 %include "Kinect.h"
 %include "KinectStick.h"
 %include "Notifier.h"
@@ -128,6 +129,7 @@
 %import "InterruptableSensorBase.h"
 %import "Jaguar.h"
 %import "Joystick.h"
+%import "JoystickAxis.h"
 %import "Kinect.h"
 %import "KinectStick.h"
 %import "Notifier.h"
@@ -169,6 +171,7 @@ const char* fromStdString(std::string *);
 %{
 #include "WPILib.h"
 #include "CounterBase.h"
+#include "JoystickAxis.h"
 #include <math.h>
   	typedef CounterBase::EncodingType EncodingType;
   	typedef PIDSource::PIDSourceParameter PIDSourceParameter;
