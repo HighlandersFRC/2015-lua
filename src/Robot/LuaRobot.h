@@ -16,7 +16,6 @@ private:
   int robotstate;
   SDConsole* luaConsole;
   static luaL_Reg stateFunctions[];
-  static const string coreStartupName;
   static const string defaultUserStartupName;
   static const string defaultUserMainName;
   static const string defaultStableStartupName;

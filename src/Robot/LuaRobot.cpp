@@ -1,6 +1,5 @@
 #include "LuaRobot.h"
 
-const string LuaRobot::coreStartupName = "/lua/core/startup.lua";
 const string LuaRobot::defaultUserStartupName = "/lua/startup.lua";
 const string LuaRobot::defaultUserMainName = "/lua/main.lua";
 const string LuaRobot::defaultStableStartupName = "/lua/stableStartup.lua";
@@ -109,22 +108,14 @@ void LuaRobot::LuaInit() {
   if (crashCount <= 2) {
     userStartupName = defaultUserStartupName;
   }
-  cout << "begin coreInit\n";
-  int errorcode = luaL_dofile(LuaRobot::luastate, coreStartupName.c_str());
-  if (errorcode > 0) {
-    cout << "file name: " << coreStartupName << "\n";
-    cout << "error code: " << errorcode << "\n";
-    cout << "error message: " << lua_tolstring(luastate, -1, NULL) << "\n";
-    lua_settop(luastate, 0);
-  }
-  cout << "end coreInit\nbegin userInit\n";
+  cout << "begin userInit\n";
   if (crashCount > 2 && crashCount <= 4) {
     userStartupName = defaultStableStartupName;
   }
   if (crashCount > 4) {
     userStartupName = defaultSafemodeStartupName;
   }
-  errorcode = luaL_dofile(LuaRobot::luastate, userStartupName.c_str());
+  int errorcode = luaL_dofile(LuaRobot::luastate, userStartupName.c_str());
   if (errorcode > 0) {
     cout << "file name: " << userStartupName << "\n";
     cout << "error code: " << errorcode << "\n";
