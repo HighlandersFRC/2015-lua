@@ -7,9 +7,9 @@ print("beginning lua user initialization")
 
 --require("mqtt_lua_console").start()
 
-dofile("/lua/basicTank.lua")
+dofile("/lua/Quasar/startup.lua")
 
-Robot.Teleop.Put("crashTest", dofile"/lua/crashTest.lua")
+--Robot.Teleop.Put("crashTest", dofile"/lua/crashTest.lua")
 
 --SetUserMainName("/lua/keepAliveMain.lua")
 
