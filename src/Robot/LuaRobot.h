@@ -22,6 +22,7 @@ private:
   static const string defaultStableMainName;
   static const string defaultSafemodeStartupName;
   static const string defaultSafemodeMainName;
+  static const string coreStartupName;
   int crashCount;
   string userStartupName;
   string userMainName;

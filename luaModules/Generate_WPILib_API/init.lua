@@ -1,4 +1,4 @@
-local serpent = require"serpent"
+local serpent = dofile"/lua/serpent/init.lua"
 
 local function typeAPI(t)
   if type(t) == "table" then
@@ -14,6 +14,7 @@ local function populateAPI(t)
   local api = {}
   for k, v in pairs(t) do
     local APItype = typeAPI(v)
+    print("handling node", k, "of type", APItype)
     api[k] = {
       type = typeAPI(v),
       description = "",
@@ -23,6 +24,7 @@ local function populateAPI(t)
       api[k].childs = populateAPI(v)
     end
   end
+  return api  
 end
 
 print"beginning generation"
@@ -31,7 +33,7 @@ local WPILibAPI = populateAPI(WPILib)
 
 print"finished generation"
 
-local outputfile = io.open("/lua/Generate_WPILib_API/output.lua")
+local outputfile = io.open("/lua/Generate_WPILib_API/output.lua", "w")
 
 print"beginning serialization"
 

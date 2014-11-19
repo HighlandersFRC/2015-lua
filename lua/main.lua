@@ -41,6 +41,6 @@ while true do
   
   local exec = Robot[stateNames[newState]].Execute or NoOp
   exec(stateNames[newState])
-  notify_keepAlive()
+  --notify_keepAlive()
   watchdog:Feed()
 end

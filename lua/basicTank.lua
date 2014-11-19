@@ -1,3 +1,7 @@
+dofile"/lua/core/startup.lua"
+
+local core = require"core"
+
 if SWITCHFILE_ENABLE then
   setCompositeRobot()
 

@@ -1,18 +1,24 @@
 local auto = {
   Initialize = function()
       for k, op in pairs(Robot.private.autoList) do
-        op:Initialize()
+        if op.Initialize then
+          op:Initialize()
+        end
       end
   end,
   Execute = function()
     for k, op in pairs(Robot.private.autoList) do
-	    op:Execute()
+      if op.Execute then
+        op:Execute()
+      end
     end
   end,
   End = function()
     for k, op in pairs(Robot.private.autoList) do
-	    op:End()
+      if op.End then
+        op:End()
       end
+    end
   end,
   Put = function(name, act)
     if not (name and act) then return end
@@ -28,17 +34,23 @@ local teleop = {
   Initialize = function()
     print"composite teleop init"
     for k, op in pairs(Robot.private.teleopList) do
-	    op:Initialize()
+      if op.Initialize then
+        op:Initialize()
+      end
     end
   end,
   Execute = function()
     for k, op in pairs(Robot.private.teleopList) do
-	    op:Execute()
+      if op.Execute then
+        op:Execute()
+      end
     end
   end,
   End = function()
     for k, op in pairs(Robot.private.teleopList) do
-	    op:End()
+      if op.End then
+        op:End()
+      end
     end
   end,
   Put = function(name, act)
@@ -54,17 +66,23 @@ local teleop = {
 local disabled = {
   Initialize = function()
     for k, op in pairs(Robot.private.disabledList) do
-	    op:Initialize()
+      if op.Initialize then
+        op:Initialize()
+      end
     end
   end,
   Execute = function()
     for k, op in pairs(Robot.private.disabledList) do
-	    op:Execute()
+      if op.Execute then
+        op:Execute()
+      end
     end
   end,
   End = function()
     for k, op in pairs(Robot.private.disabledList) do
-	    op:End()
+      if op.End then
+        op:End()
+      end
     end
   end,
   Put = function(name, act)

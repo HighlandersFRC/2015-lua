@@ -1,7 +1,11 @@
+local core = require"core"
+
+local shiftButton = core.getJoyBtn(1, 6)
+
 local drive = {
 	Execute = function() 
-		local leftpwr = f(getJoy(1):GetY())
-		local rightpwr = f(-getJoy(1):GetRawAxis(WPILib.asUint32(4)))
+		local leftpwr = f(core.getJoy(1):GetY())
+		local rightpwr = f(-core.getJoy(1):GetRawAxis(WPILib.asUint32(4)))
 		Robot.driveFL:Set(leftpwr)
 		Robot.driveBL:Set(leftpwr)
 		Robot.driveFR:Set(rightpwr)
@@ -17,7 +21,7 @@ local drive = {
 
 local shift = {
 	Execute = function()
-		local shift = getJoyBtn(1, 6):Get()
+		local shift = shiftButton:Get()
 		Robot.shiftL:Set(shift)
 		Robot.shiftH:Set(not shift)
 	end

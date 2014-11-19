@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 2.8)
 
-include(../LuaDeploy)
+include(../LuaDeploy.cmake)
 
 project(Generate_WPILib_API)
 
-file(Generate_WPILib_API_LUA_FILES init.lua)
+file(GLOB_RECURSE Generate_WPILib_API_LUA_FILES init.lua)
 
 set_lua_startup(Generate_WPILib_API init.lua)
 

@@ -22,14 +22,12 @@ Robot.leftEnc = WPILib.Encoder(WPILib.asUint32(4), WPILib.asUint32(5))
 --solenoids
 Robot.shiftH = core.getSolenoid(1)
 Robot.shiftL = core.getSolenoid(2)
-Robot.intakeArmOut = core.getSolenoid(3)
-Robot.intakeArmIn = core.getSolenoid(4)
+Robot.intakeArmIn = core.getSolenoid(3)
+Robot.intakeArmOut = core.getSolenoid(4)
 
 --compressor
 Robot.compressor = WPILib.Compressor(WPILib.asUint32(1), WPILib.asUint32(1))
 
---potentiometer
-Robot.platformPot = WPILib.AnalogChannel(WPILib.asUint32(1))
 
 Robot.Teleop.Put("checkRestart",
   {
@@ -44,6 +42,3 @@ Robot.Teleop.Put("checkRestart",
 )
 
 dofile"/lua/Quasar/drive.lua"
-dofile"/lua/Quasar/intake.lua"
-dofile"/lua/Quasar/kicker.lua"
-dofile"/lua/Quasar/platform.lua"

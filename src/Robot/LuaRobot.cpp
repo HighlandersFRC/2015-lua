@@ -6,7 +6,7 @@ const string LuaRobot::defaultStableStartupName = "/lua/stableStartup.lua";
 const string LuaRobot::defaultStableMainName = "/lua/stableMain.lua";
 const string LuaRobot::defaultSafemodeStartupName = "/lua/safemodeStartup.lua";
 const string LuaRobot::defaultSafemodeMainName = "/lua/safemodeMain.lua";
-
+const string LuaRobot::coreStartupName = "/lua/core/startup.lua";
 
 int LuaRobot::lua_IsEnabled(lua_State *l) {
   lua_pushboolean(l, ((LuaRobot*)lua_touserdata(l, lua_upvalueindex(1)))->IsEnabled());
@@ -105,17 +105,24 @@ void LuaRobot::LuaInit() {
   lua_pushcfunction(luastate, luaopen_socket_core);
   lua_setfield(luastate, -2, "socket.core");
   lua_remove(luastate, -1);
+  int errorcode = luaL_dofile(LuaRobot::luastate, coreStartupName.c_str());
+  if (errorcode > 0) {
+    cout << "file name: " << coreStartupName << "\n";
+    cout << "error code: " << errorcode << "\n";
+    cout << "error message: " << lua_tolstring(luastate, -1, NULL) << "\n";
+    lua_settop(luastate, 0);
+  }
+  cout << "begin userInit\n";
   if (crashCount <= 2) {
     userStartupName = defaultUserStartupName;
   }
-  cout << "begin userInit\n";
   if (crashCount > 2 && crashCount <= 4) {
     userStartupName = defaultStableStartupName;
   }
   if (crashCount > 4) {
     userStartupName = defaultSafemodeStartupName;
   }
-  int errorcode = luaL_dofile(LuaRobot::luastate, userStartupName.c_str());
+  errorcode = luaL_dofile(LuaRobot::luastate, userStartupName.c_str());
   if (errorcode > 0) {
     cout << "file name: " << userStartupName << "\n";
     cout << "error code: " << errorcode << "\n";

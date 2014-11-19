@@ -4,6 +4,6 @@ include(../LuaDeploy.cmake)
 
 project(serpent)
 
-files(SERPENT_CODE serpent.lua)
+file(GLOB_RECURSE SERPENT_LUA_CODE init.lua)
 
-add_make_lua_deploy(serpent 10.44.99.2 ${SERPENT_CODE})
+add_make_lua_deploy(serpent 10.44.99.2 ${SERPENT_LUA_CODE})
