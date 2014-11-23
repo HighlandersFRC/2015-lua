@@ -4,14 +4,18 @@ local intakeOutBtn = core.getJoyBtn(2, 4)
 local intakeInBtn = core.getJoyBtn(2, 5)
 local intakeWheelInBtn = core.getJoyBtn(2, 3)
 local intakeWheelOutBtn = core.getJoyBtn(2, 2)
+local driverIntakeInBtn = core.getJoyBtn(1, 5)
+local driverIntakeOutBtn = core.getJoyBtn(1, 7)
+
+local intake
 
 local intakeInOut = {
   Execute = function()
-    if intakeOutBtn:Get() then
+    if intakeOutBtn:Get() or driverIntakeOutBtn:Get() then
       Robot.intakeArmIn:Set(false)
       Robot.intakeArmOut:Set(true)
     end
-    if intakeInBtn:Get() then
+    if intakeInBtn:Get() or driverIntakeInBtn:Get() then
       Robot.intakeArmIn:Set(true)
       Robot.intakeArmOut:Set(false)
     end
@@ -20,9 +24,9 @@ local intakeInOut = {
 
 local intakeWheels = {
   Execute = function()
-    if intakeWheelInBtn:Get() then
+    if intakeWheelInBtn:Get() or driverIntakeOutBtn:Get() then
       Robot.intakeWheel:Set(1)
-    elseif intakeWheelOutBtn:Get() then
+    elseif intakeWheelOutBtn:Get() or driverIntakeInBtn:Get() then
       Robot.intakeWheel:Set(-1)
     else
       Robot.intakeWheel:Set(0)

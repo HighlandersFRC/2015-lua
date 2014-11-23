@@ -3,7 +3,7 @@ local core = require"core"
 core.setCompositeRobot()
 
 --restart button
-local restartButton = core.getJoyBtn(1, 5)
+local restartButton = core.getJoyBtn(1, 10)
 
 -- motors
 Robot.driveFL = core.getTalon(1)
