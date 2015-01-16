@@ -1,17 +1,25 @@
+local core = require "core"
+
 local Scheduler = {}
 
 Scheduler.Execute = function(sched)
+  debugPrint("begginning of scheduler.execute ")
   local currSchedBackup = Robot.CurrentScheduler
   Robot.CurrentScheduler = sched
-  for trig in sched.triggers do
+  debugPrint("started triggers")
+  for _, trig in ipairs(sched.triggers) do
     trig()
   end
+  debugPrint("ended triggers")
   local commands = sched.commands
   local index = 1
+  debugPrint("number of current Commands :", #commands)
   while index <= #commands do
     local command = sched.commands[index]
+    debugPrint("handling Command ", command)
     if command.Execute then
       command:Execute()
+      
     end
     if command.IsFinished and command:IsFinished() then
       table.remove(sched.commands, index)
@@ -27,28 +35,33 @@ Scheduler.Execute = function(sched)
 end
 
 Scheduler.AddTrigger = function(sched, trig)
+
   table.insert(sched.triggers, trig)
 end
 
 Scheduler.StartCommand = function(sched, command)
+  debugPrint("started start command")
   local currSchedBackup = Robot.CurrentScheduler
   Robot.CurrentScheduler = sched
   local canStart = true
-  for subsys in command.subsystems do
+  for _, subsys in ipairs(command.subsystems) do
     if sched.lockSubsys[subsys] then
-      if not sched.lockSubsys[subsys]:IsInterruptible() then
-        canStart = false
+      if sched.lockSubsys[subsys].IsInteruptible then
+        if not sched.lockSubsys[subsys]:IsInterruptible() then
+          canStart = false
+        end
       end
     end
   end
   if canStart then
-    for subsys in command.subsystems do
+    for _, subsys in ipairs(command.subsystems) do
       if sched.lockSubsys[subsys] then
         sched:CancelCommand(sched.lockSubsys[subsys])
       end
       sched.lockSubsys[subsys] = command
     end
     command:Initialize()
+      table.insert(sched.commands, command)
     Robot.CurrentScheduler = currSchedBackup
     return true
   end
@@ -73,10 +86,10 @@ Scheduler.CancelCommand = function(sched, command)
 end
 
 Scheduler.UnlockCommand = function(sched, command)
-  for subsys in command.subsystems do
+  for _, subsys in ipairs(command.subsystems) do
     sched.lockSubsys[subsys] = nil
   end
-  for subsys in command.subsystems do
+  for _, subsys in ipairs(command.subsystems) do
     if sched.defaultCommands[subsys] then
       sched:StartCommand(sched.defaultCommands[subsys])
     end
@@ -121,9 +134,11 @@ Scheduler.newinstance = function()
   local newSched = {
     commands = {},
     lockSubsys = {},
-    defaultCommands = {}
+    defaultCommands = {},
+    triggers = {}
   }
   setmetatable(newSched, Scheduler.metatable)
+  core.serialize.tree(newSched)
   return newSched
 end
 
