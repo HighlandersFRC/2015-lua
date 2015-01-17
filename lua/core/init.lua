@@ -79,17 +79,17 @@ core.getSolenoid = function(id)
     return solenoids[id]
 end
 
-core.setCompositeRobot = dofile("/lua/core/compositeRobot.lua")
+core.setCompositeRobot = dofile("lua/core/compositeRobot.lua")
 
-core.setBasicRobot = dofile("/lua/core/basicRobot.lua")
+core.setBasicRobot = dofile("lua/core/basicRobot.lua")
 
-core.coAction = dofile("/lua/core/coroutineAction.lua")
+core.coAction = dofile("lua/core/coroutineAction.lua")
 
-core.seqAction = dofile("/lua/core/sequentialAction.lua")
+core.seqAction = dofile("lua/core/sequentialAction.lua")
 
-core.parAction = dofile("/lua/core/parallelAction.lua")
+core.parAction = dofile("lua/core/parallelAction.lua")
 
-core.serialize = dofile("/lua/core/serialize.lua")
+core.serialize = dofile("lua/core/serialize.lua")
 
 local keepAlive_coroutines = {nextIndex = 1}
 
@@ -121,6 +121,7 @@ if MQTT_CONSOLE_ENABLE then
   printCout = print
 
   local function mqttCallback(topic, payload)
+    printCout("mqtt console input", topic, payload)
     -- No console input currently implemented
   end
   
@@ -128,14 +129,14 @@ if MQTT_CONSOLE_ENABLE then
   
   mqtt_console_client:connect(MQTT_CONSOLE_ID)
   
-  mqtt_console_client:subscribe({MQTT_CONSOLE_TOPIC})
+  mqtt_console_client:subscribe({MQTT_CONSOLE_TOPIC.."/in"})
   
   function print(...)
     printCout(...)
-    mqtt_console_client:publish(MQTT_CONSOLE_TOPIC, ("%s"):rep(select("#", ...), "\t"):format(...))
+    mqtt_console_client:publish(MQTT_CONSOLE_TOPIC.."/out", ("%s"):rep(select("#", ...), "\t"):format(...))
   end
   
-  register_keepAlive(
+  core.register_keepAlive(
     coroutine.create(
       function()
         while (error_message == nil) do

@@ -1,3 +1,6 @@
+local core = require"core"
+local running
+
 local function formatReturn(value)
   local t = type(value)
   if t == "table" then
@@ -19,7 +22,7 @@ local function callback(topic,  payload)
 
   print("mqtt_lua_console:callback(): " .. topic .. ": " .. payload)
   
-  if topic == "lua/console" then
+  if topic == "lua/console/in" then
     if payload:sub(1, 5) == "code:" then
       print("mqtt_lua>"..payload:sub(6))
       mqtt_client:publish("lua/console", "return: "..formatReturn(load(payload:sub(6))()))
@@ -39,13 +42,13 @@ local function start()
   mqtt_client:connect("lua_mqtt_console")
 
   mqtt_client:publish("lua/console", "*** Starting Lua Console ***")
-  mqtt_client:subscribe({"lua/console"})
+  mqtt_client:subscribe({"lua/console/in"})
   
-  register_keepAlive(
+  core.register_keepAlive(
     coroutine.create(
       function()
         local error_message = nil
-        local running = true
+        running = true
         
         while (error_message == nil and running) do
           error_message = mqtt_client:handler()
@@ -53,11 +56,12 @@ local function start()
         end
 
         if (error_message == nil) then
-          mqtt_client:unsubscribe({"lua/console"})
+          mqtt_client:unsubscribe({"lua/console/in"})
           mqtt_client:destroy()
         else
           print(error_message)
         end
+        running = false
       end
     )
   )
