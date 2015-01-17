@@ -1,23 +1,19 @@
 local currentState = 1
 local currentEnabled = false
 
+local core = require"core"
+
 if DEBUG_ENABLE then
   require("mobdebug").start(DEBUG_SERVER_ADDRESS, DEBUG_SERVER_PORT)
 end
 
 print"start of main.lua"
 
-local watchdog = WPILib.Watchdog()
-
 local stateNames = {"Disabled", "Autonomous", "Teleop"}
 
 local function NoOp() end
 
 (Robot.Disabled.Initialize or NoOp)()
-
---serialize.tree(WPILib.Watchdog)
---WPILib.SmartDashboard.init()
---WPILib.SmartDashboard.PutNumber(WPILib.asStdString("test"), 42)
 
 while true do
   local newState
@@ -41,6 +37,5 @@ while true do
   
   local exec = Robot[stateNames[newState]].Execute or NoOp
   exec(stateNames[newState])
-  --notify_keepAlive()
-  watchdog:Feed()
+  core.notify_keepAlive()
 end

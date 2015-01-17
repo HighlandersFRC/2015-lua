@@ -7,7 +7,8 @@ print("beginning lua user initialization")
 
 --require("mqtt_lua_console").start()
 
-dofile("/lua/Quasar/startup.lua")
+dofile("/lua/socketTest.lua")
+--dofile("/lua/Quasar/startup.lua")
 
 --Robot.Teleop.Put("crashTest", dofile"/lua/crashTest.lua")
 

@@ -1867,144 +1867,89 @@ SWIG_Lua_dostring(lua_State *L, const char* str) {
 #define SWIGTYPE_p_ADXL345_SPI swig_types[2]
 #define SWIGTYPE_p_ADXL345_SPI__AllAxes swig_types[3]
 #define SWIGTYPE_p_Accelerometer swig_types[4]
-#define SWIGTYPE_p_AnalogChannel swig_types[5]
-#define SWIGTYPE_p_AnalogIOButton swig_types[6]
-#define SWIGTYPE_p_AnalogModule swig_types[7]
-#define SWIGTYPE_p_AnalogTrigger swig_types[8]
-#define SWIGTYPE_p_AnalogTriggerOutput swig_types[9]
+#define SWIGTYPE_p_AnalogInput swig_types[5]
+#define SWIGTYPE_p_AnalogOutput swig_types[6]
+#define SWIGTYPE_p_AnalogTrigger swig_types[7]
+#define SWIGTYPE_p_AnalogTriggerOutput swig_types[8]
+#define SWIGTYPE_p_AnalogTriggerType swig_types[9]
 #define SWIGTYPE_p_AxisCamera swig_types[10]
 #define SWIGTYPE_p_AxisType swig_types[11]
-#define SWIGTYPE_p_ButtonScheduler swig_types[12]
-#define SWIGTYPE_p_ButtonType swig_types[13]
-#define SWIGTYPE_p_CANJaguar swig_types[14]
-#define SWIGTYPE_p_ColorImage swig_types[15]
-#define SWIGTYPE_p_Command swig_types[16]
-#define SWIGTYPE_p_CommandGroup swig_types[17]
-#define SWIGTYPE_p_ComplexData swig_types[18]
-#define SWIGTYPE_p_Compressor swig_types[19]
-#define SWIGTYPE_p_ControlMode swig_types[20]
-#define SWIGTYPE_p_Counter swig_types[21]
-#define SWIGTYPE_p_Dashboard swig_types[22]
-#define SWIGTYPE_p_DashboardBase swig_types[23]
-#define SWIGTYPE_p_DigitalIOButton swig_types[24]
-#define SWIGTYPE_p_DigitalInput swig_types[25]
-#define SWIGTYPE_p_DigitalModule swig_types[26]
-#define SWIGTYPE_p_DigitalOutput swig_types[27]
-#define SWIGTYPE_p_DigitalSource swig_types[28]
-#define SWIGTYPE_p_Direction swig_types[29]
-#define SWIGTYPE_p_DistanceUnit swig_types[30]
-#define SWIGTYPE_p_DoubleSolenoid swig_types[31]
-#define SWIGTYPE_p_DriverStation swig_types[32]
-#define SWIGTYPE_p_DriverStationEnhancedIO swig_types[33]
-#define SWIGTYPE_p_Encoder swig_types[34]
-#define SWIGTYPE_p_EncodingType swig_types[35]
-#define SWIGTYPE_p_EntryValue swig_types[36]
-#define SWIGTYPE_p_Error swig_types[37]
-#define SWIGTYPE_p_ErrorBase swig_types[38]
-#define SWIGTYPE_p_Error__Code swig_types[39]
-#define SWIGTYPE_p_FUNCPTR swig_types[40]
-#define SWIGTYPE_p_Faults swig_types[41]
-#define SWIGTYPE_p_FlowControl swig_types[42]
-#define SWIGTYPE_p_GearTooth swig_types[43]
-#define SWIGTYPE_p_GenericHID swig_types[44]
-#define SWIGTYPE_p_Gyro swig_types[45]
-#define SWIGTYPE_p_HSLImage swig_types[46]
-#define SWIGTYPE_p_HiTechnicColorSensor swig_types[47]
-#define SWIGTYPE_p_HiTechnicColorSensor__RGB swig_types[48]
-#define SWIGTYPE_p_HiTechnicCompass swig_types[49]
-#define SWIGTYPE_p_I2C swig_types[50]
-#define SWIGTYPE_p_INT64 swig_types[51]
-#define SWIGTYPE_p_ITable swig_types[52]
-#define SWIGTYPE_p_Image swig_types[53]
-#define SWIGTYPE_p_InternalButton swig_types[54]
-#define SWIGTYPE_p_InterruptableSensorBase swig_types[55]
-#define SWIGTYPE_p_IterativeRobot swig_types[56]
-#define SWIGTYPE_p_Jaguar swig_types[57]
-#define SWIGTYPE_p_Joystick swig_types[58]
-#define SWIGTYPE_p_JoystickAxis swig_types[59]
-#define SWIGTYPE_p_JoystickButton swig_types[60]
-#define SWIGTYPE_p_JoystickHand swig_types[61]
-#define SWIGTYPE_p_Kinect swig_types[62]
-#define SWIGTYPE_p_KinectStick swig_types[63]
-#define SWIGTYPE_p_Kinect__Point4 swig_types[64]
-#define SWIGTYPE_p_LimitMode swig_types[65]
-#define SWIGTYPE_p_Limits swig_types[66]
-#define SWIGTYPE_p_Mode swig_types[67]
-#define SWIGTYPE_p_MotorType swig_types[68]
-#define SWIGTYPE_p_NamedSendable swig_types[69]
-#define SWIGTYPE_p_NetworkButton swig_types[70]
-#define SWIGTYPE_p_NeutralMode swig_types[71]
-#define SWIGTYPE_p_Notifier swig_types[72]
-#define SWIGTYPE_p_PIDCommand swig_types[73]
-#define SWIGTYPE_p_PIDController swig_types[74]
-#define SWIGTYPE_p_PIDOutput swig_types[75]
-#define SWIGTYPE_p_PIDSource swig_types[76]
-#define SWIGTYPE_p_PIDSourceParameter swig_types[77]
-#define SWIGTYPE_p_PIDSubsystem swig_types[78]
-#define SWIGTYPE_p_PWM swig_types[79]
-#define SWIGTYPE_p_Parity swig_types[80]
-#define SWIGTYPE_p_PeriodMultiplier swig_types[81]
-#define SWIGTYPE_p_PositionReference swig_types[82]
-#define SWIGTYPE_p_Preferences swig_types[83]
-#define SWIGTYPE_p_PrintCommand swig_types[84]
-#define SWIGTYPE_p_ReentrantSemaphore swig_types[85]
-#define SWIGTYPE_p_Relay swig_types[86]
-#define SWIGTYPE_p_Resource swig_types[87]
-#define SWIGTYPE_p_RobotBase swig_types[88]
-#define SWIGTYPE_p_RobotDrive swig_types[89]
-#define SWIGTYPE_p_SEM_ID swig_types[90]
-#define SWIGTYPE_p_SPI swig_types[91]
-#define SWIGTYPE_p_SPI__tFrameMode swig_types[92]
-#define SWIGTYPE_p_Scheduler swig_types[93]
-#define SWIGTYPE_p_Sendable swig_types[94]
-#define SWIGTYPE_p_SendableChooser swig_types[95]
-#define SWIGTYPE_p_SensorBase swig_types[96]
-#define SWIGTYPE_p_SerialPort swig_types[97]
-#define SWIGTYPE_p_Servo swig_types[98]
-#define SWIGTYPE_p_SimpleRobot swig_types[99]
-#define SWIGTYPE_p_Skeleton swig_types[100]
-#define SWIGTYPE_p_SkeletonQuality swig_types[101]
-#define SWIGTYPE_p_SkeletonTrackingState swig_types[102]
-#define SWIGTYPE_p_SmartDashboard swig_types[103]
-#define SWIGTYPE_p_Solenoid swig_types[104]
-#define SWIGTYPE_p_SpeedController swig_types[105]
-#define SWIGTYPE_p_SpeedReference swig_types[106]
-#define SWIGTYPE_p_StartCommand swig_types[107]
-#define SWIGTYPE_p_StopBits swig_types[108]
-#define SWIGTYPE_p_Subsystem swig_types[109]
-#define SWIGTYPE_p_SubsystemSet swig_types[110]
-#define SWIGTYPE_p_Synchronized swig_types[111]
-#define SWIGTYPE_p_Talon swig_types[112]
-#define SWIGTYPE_p_Task swig_types[113]
-#define SWIGTYPE_p_Timer swig_types[114]
-#define SWIGTYPE_p_Type swig_types[115]
-#define SWIGTYPE_p_UINT swig_types[116]
-#define SWIGTYPE_p_Ultrasonic swig_types[117]
-#define SWIGTYPE_p_Value swig_types[118]
-#define SWIGTYPE_p_Victor swig_types[119]
-#define SWIGTYPE_p_WaitCommand swig_types[120]
-#define SWIGTYPE_p_WaitForChildren swig_types[121]
-#define SWIGTYPE_p_WaitUntilCommand swig_types[122]
-#define SWIGTYPE_p_Watchdog swig_types[123]
-#define SWIGTYPE_p_WriteBufferMode swig_types[124]
-#define SWIGTYPE_p_bool swig_types[125]
-#define SWIGTYPE_p_f_p_void__void swig_types[126]
-#define SWIGTYPE_p_int swig_types[127]
-#define SWIGTYPE_p_int16_t swig_types[128]
-#define SWIGTYPE_p_int32_t swig_types[129]
-#define SWIGTYPE_p_int8_t swig_types[130]
-#define SWIGTYPE_p_p_Resource swig_types[131]
-#define SWIGTYPE_p_p_char swig_types[132]
-#define SWIGTYPE_p_std__setT_Subsystem_p_t swig_types[133]
-#define SWIGTYPE_p_std__string swig_types[134]
-#define SWIGTYPE_p_std__vectorT_std__string_t swig_types[135]
-#define SWIGTYPE_p_tInterruptHandler swig_types[136]
-#define SWIGTYPE_p_uint16_t swig_types[137]
-#define SWIGTYPE_p_uint32_t swig_types[138]
-#define SWIGTYPE_p_uint8_t swig_types[139]
-#define SWIGTYPE_p_void swig_types[140]
-static swig_type_info *swig_types[142];
-static swig_module_info swig_module = {swig_types, 141, 0, 0, 0, 0};
+#define SWIGTYPE_p_ButtonType swig_types[12]
+#define SWIGTYPE_p_ColorImage swig_types[13]
+#define SWIGTYPE_p_ComplexData swig_types[14]
+#define SWIGTYPE_p_Compressor swig_types[15]
+#define SWIGTYPE_p_Counter swig_types[16]
+#define SWIGTYPE_p_DigitalInput swig_types[17]
+#define SWIGTYPE_p_DigitalOutput swig_types[18]
+#define SWIGTYPE_p_DigitalSource swig_types[19]
+#define SWIGTYPE_p_DoubleSolenoid swig_types[20]
+#define SWIGTYPE_p_DriverStation swig_types[21]
+#define SWIGTYPE_p_Encoder swig_types[22]
+#define SWIGTYPE_p_EncodingType swig_types[23]
+#define SWIGTYPE_p_EntryValue swig_types[24]
+#define SWIGTYPE_p_Error swig_types[25]
+#define SWIGTYPE_p_ErrorBase swig_types[26]
+#define SWIGTYPE_p_Error__Code swig_types[27]
+#define SWIGTYPE_p_FUNCPTR swig_types[28]
+#define SWIGTYPE_p_GearTooth swig_types[29]
+#define SWIGTYPE_p_GenericHID swig_types[30]
+#define SWIGTYPE_p_Gyro swig_types[31]
+#define SWIGTYPE_p_HSLImage swig_types[32]
+#define SWIGTYPE_p_I2C swig_types[33]
+#define SWIGTYPE_p_ITable swig_types[34]
+#define SWIGTYPE_p_Image swig_types[35]
+#define SWIGTYPE_p_InternalButton swig_types[36]
+#define SWIGTYPE_p_InterruptHandlerFunction swig_types[37]
+#define SWIGTYPE_p_InterruptableSensorBase swig_types[38]
+#define SWIGTYPE_p_IterativeRobot swig_types[39]
+#define SWIGTYPE_p_Jaguar swig_types[40]
+#define SWIGTYPE_p_Joystick swig_types[41]
+#define SWIGTYPE_p_JoystickButton swig_types[42]
+#define SWIGTYPE_p_MotorSafety swig_types[43]
+#define SWIGTYPE_p_NamedSendable swig_types[44]
+#define SWIGTYPE_p_NetworkButton swig_types[45]
+#define SWIGTYPE_p_Notifier swig_types[46]
+#define SWIGTYPE_p_PIDController swig_types[47]
+#define SWIGTYPE_p_PIDOutput swig_types[48]
+#define SWIGTYPE_p_PIDSource swig_types[49]
+#define SWIGTYPE_p_PIDSourceParameter swig_types[50]
+#define SWIGTYPE_p_PWM swig_types[51]
+#define SWIGTYPE_p_Port swig_types[52]
+#define SWIGTYPE_p_Preferences swig_types[53]
+#define SWIGTYPE_p_Relay swig_types[54]
+#define SWIGTYPE_p_Resource swig_types[55]
+#define SWIGTYPE_p_RobotDrive swig_types[56]
+#define SWIGTYPE_p_RumbleType swig_types[57]
+#define SWIGTYPE_p_SPI swig_types[58]
+#define SWIGTYPE_p_SampleRobot swig_types[59]
+#define SWIGTYPE_p_Sendable swig_types[60]
+#define SWIGTYPE_p_SendableChooser swig_types[61]
+#define SWIGTYPE_p_SensorBase swig_types[62]
+#define SWIGTYPE_p_SerialPort swig_types[63]
+#define SWIGTYPE_p_Servo swig_types[64]
+#define SWIGTYPE_p_SmartDashboard swig_types[65]
+#define SWIGTYPE_p_Solenoid swig_types[66]
+#define SWIGTYPE_p_SpeedController swig_types[67]
+#define SWIGTYPE_p_TASK swig_types[68]
+#define SWIGTYPE_p_Talon swig_types[69]
+#define SWIGTYPE_p_Task swig_types[70]
+#define SWIGTYPE_p_Ultrasonic swig_types[71]
+#define SWIGTYPE_p_Victor swig_types[72]
+#define SWIGTYPE_p_f_p_void__void swig_types[73]
+#define SWIGTYPE_p_int16_t swig_types[74]
+#define SWIGTYPE_p_int32_t swig_types[75]
+#define SWIGTYPE_p_int64_t swig_types[76]
+#define SWIGTYPE_p_p_Resource swig_types[77]
+#define SWIGTYPE_p_p_char swig_types[78]
+#define SWIGTYPE_p_std__string swig_types[79]
+#define SWIGTYPE_p_std__vectorT_std__string_t swig_types[80]
+#define SWIGTYPE_p_uint16_t swig_types[81]
+#define SWIGTYPE_p_uint32_t swig_types[82]
+#define SWIGTYPE_p_uint8_t swig_types[83]
+#define SWIGTYPE_p_unsigned_int swig_types[84]
+#define SWIGTYPE_p_void swig_types[85]
+static swig_type_info *swig_types[87];
+static swig_module_info swig_module = {swig_types, 86, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -2031,10 +1976,11 @@ SWIGINTERN int SWIG_lua_isnilstring(lua_State *L, int idx) {
 
 #include "WPILib.h"
 #include "CounterBase.h"
-#include "JoystickAxis.h"
+#include "I2C.h"
 #include <math.h>
   	typedef CounterBase::EncodingType EncodingType;
   	typedef PIDSource::PIDSourceParameter PIDSourceParameter;
+	typedef I2C::Port Port;
 
   	uint32_t asUint32(float arg) {
     		return uint32_t(arg);
@@ -2055,199 +2001,21 @@ SWIGINTERN int SWIG_lua_isnilstring(lua_State *L, int idx) {
 #ifdef __cplusplus
 extern "C" {
 #endif
-static int _wrap_new_Accelerometer__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  uint32_t arg1 ;
-  uint32_t *argp1 ;
-  Accelerometer *result = 0 ;
-  
-  SWIG_check_num_args("Accelerometer::Accelerometer",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Accelerometer::Accelerometer",1,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Accelerometer",1,SWIGTYPE_p_uint32_t);
-  }
-  arg1 = *argp1;
-  
-  result = (Accelerometer *)new Accelerometer(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Accelerometer,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Accelerometer__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  Accelerometer *result = 0 ;
-  
-  SWIG_check_num_args("Accelerometer::Accelerometer",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Accelerometer::Accelerometer",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Accelerometer::Accelerometer",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Accelerometer",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Accelerometer",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (Accelerometer *)new Accelerometer(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Accelerometer,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Accelerometer__SWIG_2(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  Accelerometer *result = 0 ;
-  
-  SWIG_check_num_args("Accelerometer::Accelerometer",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::Accelerometer",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("new_Accelerometer",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (Accelerometer *)new Accelerometer(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Accelerometer,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Accelerometer(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_Accelerometer__SWIG_0(L);
-    }
-  }
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_AnalogChannel, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_Accelerometer__SWIG_2(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_Accelerometer__SWIG_1(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Accelerometer'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    Accelerometer::Accelerometer(uint32_t)\n"
-    "    Accelerometer::Accelerometer(uint8_t,uint32_t)\n"
-    "    Accelerometer::Accelerometer(AnalogChannel *)\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_Accelerometer_GetAcceleration(lua_State* L) {
+static int _wrap_Accelerometer_SetRange(lua_State* L) {
   int SWIG_arg = 0;
   Accelerometer *arg1 = (Accelerometer *) 0 ;
-  float result;
+  Accelerometer::Range arg2 ;
   
-  SWIG_check_num_args("Accelerometer::GetAcceleration",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::GetAcceleration",1,"Accelerometer *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Accelerometer,0))){
-    SWIG_fail_ptr("Accelerometer_GetAcceleration",1,SWIGTYPE_p_Accelerometer);
-  }
-  
-  result = (float)(arg1)->GetAcceleration();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Accelerometer_SetSensitivity(lua_State* L) {
-  int SWIG_arg = 0;
-  Accelerometer *arg1 = (Accelerometer *) 0 ;
-  float arg2 ;
-  
-  SWIG_check_num_args("Accelerometer::SetSensitivity",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::SetSensitivity",1,"Accelerometer *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("Accelerometer::SetSensitivity",2,"float");
+  SWIG_check_num_args("Accelerometer::SetRange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::SetRange",1,"Accelerometer *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("Accelerometer::SetRange",2,"Accelerometer::Range");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Accelerometer,0))){
-    SWIG_fail_ptr("Accelerometer_SetSensitivity",1,SWIGTYPE_p_Accelerometer);
+    SWIG_fail_ptr("Accelerometer_SetRange",1,SWIGTYPE_p_Accelerometer);
   }
   
-  arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->SetSensitivity(arg2);
+  arg2 = (Accelerometer::Range)(int)lua_tonumber(L, 2);
+  (arg1)->SetRange(arg2);
   
   return SWIG_arg;
   
@@ -2259,45 +2027,19 @@ fail:
 }
 
 
-static int _wrap_Accelerometer_SetZero(lua_State* L) {
-  int SWIG_arg = 0;
-  Accelerometer *arg1 = (Accelerometer *) 0 ;
-  float arg2 ;
-  
-  SWIG_check_num_args("Accelerometer::SetZero",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::SetZero",1,"Accelerometer *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("Accelerometer::SetZero",2,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Accelerometer,0))){
-    SWIG_fail_ptr("Accelerometer_SetZero",1,SWIGTYPE_p_Accelerometer);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->SetZero(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Accelerometer_PIDGet(lua_State* L) {
+static int _wrap_Accelerometer_GetX(lua_State* L) {
   int SWIG_arg = 0;
   Accelerometer *arg1 = (Accelerometer *) 0 ;
   double result;
   
-  SWIG_check_num_args("Accelerometer::PIDGet",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::PIDGet",1,"Accelerometer *");
+  SWIG_check_num_args("Accelerometer::GetX",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::GetX",1,"Accelerometer *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Accelerometer,0))){
-    SWIG_fail_ptr("Accelerometer_PIDGet",1,SWIGTYPE_p_Accelerometer);
+    SWIG_fail_ptr("Accelerometer_GetX",1,SWIGTYPE_p_Accelerometer);
   }
   
-  result = (double)(arg1)->PIDGet();
+  result = (double)(arg1)->GetX();
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -2309,19 +2051,20 @@ fail:
 }
 
 
-static int _wrap_Accelerometer_UpdateTable(lua_State* L) {
+static int _wrap_Accelerometer_GetY(lua_State* L) {
   int SWIG_arg = 0;
   Accelerometer *arg1 = (Accelerometer *) 0 ;
+  double result;
   
-  SWIG_check_num_args("Accelerometer::UpdateTable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::UpdateTable",1,"Accelerometer *");
+  SWIG_check_num_args("Accelerometer::GetY",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::GetY",1,"Accelerometer *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Accelerometer,0))){
-    SWIG_fail_ptr("Accelerometer_UpdateTable",1,SWIGTYPE_p_Accelerometer);
+    SWIG_fail_ptr("Accelerometer_GetY",1,SWIGTYPE_p_Accelerometer);
   }
   
-  (arg1)->UpdateTable();
-  
+  result = (double)(arg1)->GetY();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -2332,123 +2075,20 @@ fail:
 }
 
 
-static int _wrap_Accelerometer_StartLiveWindowMode(lua_State* L) {
+static int _wrap_Accelerometer_GetZ(lua_State* L) {
   int SWIG_arg = 0;
   Accelerometer *arg1 = (Accelerometer *) 0 ;
+  double result;
   
-  SWIG_check_num_args("Accelerometer::StartLiveWindowMode",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::StartLiveWindowMode",1,"Accelerometer *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Accelerometer,0))){
-    SWIG_fail_ptr("Accelerometer_StartLiveWindowMode",1,SWIGTYPE_p_Accelerometer);
-  }
-  
-  (arg1)->StartLiveWindowMode();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Accelerometer_StopLiveWindowMode(lua_State* L) {
-  int SWIG_arg = 0;
-  Accelerometer *arg1 = (Accelerometer *) 0 ;
-  
-  SWIG_check_num_args("Accelerometer::StopLiveWindowMode",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::StopLiveWindowMode",1,"Accelerometer *");
+  SWIG_check_num_args("Accelerometer::GetZ",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::GetZ",1,"Accelerometer *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Accelerometer,0))){
-    SWIG_fail_ptr("Accelerometer_StopLiveWindowMode",1,SWIGTYPE_p_Accelerometer);
+    SWIG_fail_ptr("Accelerometer_GetZ",1,SWIGTYPE_p_Accelerometer);
   }
   
-  (arg1)->StopLiveWindowMode();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Accelerometer_GetSmartDashboardType(lua_State* L) {
-  int SWIG_arg = 0;
-  Accelerometer *arg1 = (Accelerometer *) 0 ;
-  std::string result;
-  
-  SWIG_check_num_args("Accelerometer::GetSmartDashboardType",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::GetSmartDashboardType",1,"Accelerometer *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Accelerometer,0))){
-    SWIG_fail_ptr("Accelerometer_GetSmartDashboardType",1,SWIGTYPE_p_Accelerometer);
-  }
-  
-  result = (arg1)->GetSmartDashboardType();
-  {
-    std::string * resultptr = new std::string((const std::string &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Accelerometer_InitTable(lua_State* L) {
-  int SWIG_arg = 0;
-  Accelerometer *arg1 = (Accelerometer *) 0 ;
-  ITable *arg2 = (ITable *) 0 ;
-  
-  SWIG_check_num_args("Accelerometer::InitTable",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::InitTable",1,"Accelerometer *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Accelerometer::InitTable",2,"ITable *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Accelerometer,0))){
-    SWIG_fail_ptr("Accelerometer_InitTable",1,SWIGTYPE_p_Accelerometer);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
-    SWIG_fail_ptr("Accelerometer_InitTable",2,SWIGTYPE_p_ITable);
-  }
-  
-  (arg1)->InitTable(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Accelerometer_GetTable(lua_State* L) {
-  int SWIG_arg = 0;
-  Accelerometer *arg1 = (Accelerometer *) 0 ;
-  ITable *result = 0 ;
-  
-  SWIG_check_num_args("Accelerometer::GetTable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Accelerometer::GetTable",1,"Accelerometer *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Accelerometer,0))){
-    SWIG_fail_ptr("Accelerometer_GetTable",1,SWIGTYPE_p_Accelerometer);
-  }
-  
-  result = (ITable *)(arg1)->GetTable();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ITable,0); SWIG_arg++; 
+  result = (double)(arg1)->GetZ();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -2464,16 +2104,10 @@ Accelerometer *arg1 = (Accelerometer *) obj;
 delete arg1;
 }
 static swig_lua_method swig_Accelerometer_methods[] = {
-    {"GetAcceleration", _wrap_Accelerometer_GetAcceleration}, 
-    {"SetSensitivity", _wrap_Accelerometer_SetSensitivity}, 
-    {"SetZero", _wrap_Accelerometer_SetZero}, 
-    {"PIDGet", _wrap_Accelerometer_PIDGet}, 
-    {"UpdateTable", _wrap_Accelerometer_UpdateTable}, 
-    {"StartLiveWindowMode", _wrap_Accelerometer_StartLiveWindowMode}, 
-    {"StopLiveWindowMode", _wrap_Accelerometer_StopLiveWindowMode}, 
-    {"GetSmartDashboardType", _wrap_Accelerometer_GetSmartDashboardType}, 
-    {"InitTable", _wrap_Accelerometer_InitTable}, 
-    {"GetTable", _wrap_Accelerometer_GetTable}, 
+    {"SetRange", _wrap_Accelerometer_SetRange}, 
+    {"GetX", _wrap_Accelerometer_GetX}, 
+    {"GetY", _wrap_Accelerometer_GetY}, 
+    {"GetZ", _wrap_Accelerometer_GetZ}, 
     {0,0}
 };
 static swig_lua_attribute swig_Accelerometer_attributes[] = {
@@ -2486,29 +2120,33 @@ static swig_lua_method swig_Accelerometer_cls_methods[] = {
     {0,0}
 };
 static swig_lua_const_info swig_Accelerometer_cls_constants[] = {
+    {SWIG_LUA_CONSTTAB_INT("kRange_2G", Accelerometer::kRange_2G)},
+    {SWIG_LUA_CONSTTAB_INT("kRange_4G", Accelerometer::kRange_4G)},
+    {SWIG_LUA_CONSTTAB_INT("kRange_8G", Accelerometer::kRange_8G)},
+    {SWIG_LUA_CONSTTAB_INT("kRange_16G", Accelerometer::kRange_16G)},
     {0,0,0,0,0,0}
 };
 static swig_lua_class *swig_Accelerometer_bases[] = {0};
 static const char *swig_Accelerometer_base_names[] = {0};
-static swig_lua_class _wrap_class_Accelerometer = { "Accelerometer", &SWIGTYPE_p_Accelerometer,_wrap_new_Accelerometer, swig_delete_Accelerometer, swig_Accelerometer_methods, swig_Accelerometer_attributes, { "Accelerometer", swig_Accelerometer_cls_methods, swig_Accelerometer_cls_attributes, swig_Accelerometer_cls_constants }, swig_Accelerometer_bases, swig_Accelerometer_base_names };
+static swig_lua_class _wrap_class_Accelerometer = { "Accelerometer", &SWIGTYPE_p_Accelerometer,0, swig_delete_Accelerometer, swig_Accelerometer_methods, swig_Accelerometer_attributes, { "Accelerometer", swig_Accelerometer_cls_methods, swig_Accelerometer_cls_attributes, swig_Accelerometer_cls_constants }, swig_Accelerometer_bases, swig_Accelerometer_base_names };
 
 static int _wrap_new_ADXL345_I2C__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
-  uint8_t arg1 ;
-  ADXL345_I2C::DataFormat_Range arg2 ;
-  uint8_t *argp1 ;
+  Port arg1 ;
+  Accelerometer::Range arg2 ;
+  Port *argp1 ;
   ADXL345_I2C *result = 0 ;
   
   SWIG_check_num_args("ADXL345_I2C::ADXL345_I2C",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("ADXL345_I2C::ADXL345_I2C",1,"uint8_t");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("ADXL345_I2C::ADXL345_I2C",2,"ADXL345_I2C::DataFormat_Range");
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("ADXL345_I2C::ADXL345_I2C",1,"Port");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("ADXL345_I2C::ADXL345_I2C",2,"Accelerometer::Range");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_ADXL345_I2C",1,SWIGTYPE_p_uint8_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_Port,0))){
+    SWIG_fail_ptr("new_ADXL345_I2C",1,SWIGTYPE_p_Port);
   }
   arg1 = *argp1;
   
-  arg2 = (ADXL345_I2C::DataFormat_Range)(int)lua_tonumber(L, 2);
+  arg2 = (Accelerometer::Range)(int)lua_tonumber(L, 2);
   result = (ADXL345_I2C *)new ADXL345_I2C(arg1,arg2);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_ADXL345_I2C,1); SWIG_arg++; 
   return SWIG_arg;
@@ -2523,15 +2161,15 @@ fail:
 
 static int _wrap_new_ADXL345_I2C__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint8_t *argp1 ;
+  Port arg1 ;
+  Port *argp1 ;
   ADXL345_I2C *result = 0 ;
   
   SWIG_check_num_args("ADXL345_I2C::ADXL345_I2C",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("ADXL345_I2C::ADXL345_I2C",1,"uint8_t");
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("ADXL345_I2C::ADXL345_I2C",1,"Port");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_ADXL345_I2C",1,SWIGTYPE_p_uint8_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_Port,0))){
+    SWIG_fail_ptr("new_ADXL345_I2C",1,SWIGTYPE_p_Port);
   }
   arg1 = *argp1;
   
@@ -2558,7 +2196,7 @@ static int _wrap_new_ADXL345_I2C(lua_State* L) {
     int _v;
     {
       void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Port, 0)) {
         _v = 0;
       } else {
         _v = 1;
@@ -2572,7 +2210,7 @@ static int _wrap_new_ADXL345_I2C(lua_State* L) {
     int _v;
     {
       void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Port, 0)) {
         _v = 0;
       } else {
         _v = 1;
@@ -2590,9 +2228,107 @@ static int _wrap_new_ADXL345_I2C(lua_State* L) {
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_ADXL345_I2C'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    ADXL345_I2C::ADXL345_I2C(uint8_t,ADXL345_I2C::DataFormat_Range)\n"
-    "    ADXL345_I2C::ADXL345_I2C(uint8_t)\n");
+    "    ADXL345_I2C::ADXL345_I2C(Port,Accelerometer::Range)\n"
+    "    ADXL345_I2C::ADXL345_I2C(Port)\n");
   lua_error(L);return 0;
+}
+
+
+static int _wrap_ADXL345_I2C_SetRange(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_I2C *arg1 = (ADXL345_I2C *) 0 ;
+  Accelerometer::Range arg2 ;
+  
+  SWIG_check_num_args("ADXL345_I2C::SetRange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_I2C::SetRange",1,"ADXL345_I2C *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("ADXL345_I2C::SetRange",2,"Accelerometer::Range");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_I2C,0))){
+    SWIG_fail_ptr("ADXL345_I2C_SetRange",1,SWIGTYPE_p_ADXL345_I2C);
+  }
+  
+  arg2 = (Accelerometer::Range)(int)lua_tonumber(L, 2);
+  (arg1)->SetRange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ADXL345_I2C_GetX(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_I2C *arg1 = (ADXL345_I2C *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("ADXL345_I2C::GetX",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_I2C::GetX",1,"ADXL345_I2C *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_I2C,0))){
+    SWIG_fail_ptr("ADXL345_I2C_GetX",1,SWIGTYPE_p_ADXL345_I2C);
+  }
+  
+  result = (double)(arg1)->GetX();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ADXL345_I2C_GetY(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_I2C *arg1 = (ADXL345_I2C *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("ADXL345_I2C::GetY",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_I2C::GetY",1,"ADXL345_I2C *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_I2C,0))){
+    SWIG_fail_ptr("ADXL345_I2C_GetY",1,SWIGTYPE_p_ADXL345_I2C);
+  }
+  
+  result = (double)(arg1)->GetY();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ADXL345_I2C_GetZ(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_I2C *arg1 = (ADXL345_I2C *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("ADXL345_I2C::GetZ",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_I2C::GetZ",1,"ADXL345_I2C *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_I2C,0))){
+    SWIG_fail_ptr("ADXL345_I2C_GetZ",1,SWIGTYPE_p_ADXL345_I2C);
+  }
+  
+  result = (double)(arg1)->GetZ();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
 }
 
 
@@ -2650,13 +2386,173 @@ fail:
 }
 
 
+static int _wrap_ADXL345_I2C_GetSmartDashboardType(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_I2C *arg1 = (ADXL345_I2C *) 0 ;
+  std::string result;
+  
+  SWIG_check_num_args("ADXL345_I2C::GetSmartDashboardType",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_I2C::GetSmartDashboardType",1,"ADXL345_I2C *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_I2C,0))){
+    SWIG_fail_ptr("ADXL345_I2C_GetSmartDashboardType",1,SWIGTYPE_p_ADXL345_I2C);
+  }
+  
+  result = (arg1)->GetSmartDashboardType();
+  {
+    std::string * resultptr = new std::string((const std::string &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ADXL345_I2C_InitTable(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_I2C *arg1 = (ADXL345_I2C *) 0 ;
+  ITable *arg2 = (ITable *) 0 ;
+  
+  SWIG_check_num_args("ADXL345_I2C::InitTable",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_I2C::InitTable",1,"ADXL345_I2C *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ADXL345_I2C::InitTable",2,"ITable *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_I2C,0))){
+    SWIG_fail_ptr("ADXL345_I2C_InitTable",1,SWIGTYPE_p_ADXL345_I2C);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
+    SWIG_fail_ptr("ADXL345_I2C_InitTable",2,SWIGTYPE_p_ITable);
+  }
+  
+  (arg1)->InitTable(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ADXL345_I2C_UpdateTable(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_I2C *arg1 = (ADXL345_I2C *) 0 ;
+  
+  SWIG_check_num_args("ADXL345_I2C::UpdateTable",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_I2C::UpdateTable",1,"ADXL345_I2C *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_I2C,0))){
+    SWIG_fail_ptr("ADXL345_I2C_UpdateTable",1,SWIGTYPE_p_ADXL345_I2C);
+  }
+  
+  (arg1)->UpdateTable();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ADXL345_I2C_GetTable(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_I2C *arg1 = (ADXL345_I2C *) 0 ;
+  ITable *result = 0 ;
+  
+  SWIG_check_num_args("ADXL345_I2C::GetTable",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_I2C::GetTable",1,"ADXL345_I2C *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_I2C,0))){
+    SWIG_fail_ptr("ADXL345_I2C_GetTable",1,SWIGTYPE_p_ADXL345_I2C);
+  }
+  
+  result = (ITable *)(arg1)->GetTable();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ITable,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ADXL345_I2C_StartLiveWindowMode(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_I2C *arg1 = (ADXL345_I2C *) 0 ;
+  
+  SWIG_check_num_args("ADXL345_I2C::StartLiveWindowMode",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_I2C::StartLiveWindowMode",1,"ADXL345_I2C *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_I2C,0))){
+    SWIG_fail_ptr("ADXL345_I2C_StartLiveWindowMode",1,SWIGTYPE_p_ADXL345_I2C);
+  }
+  
+  (arg1)->StartLiveWindowMode();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ADXL345_I2C_StopLiveWindowMode(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_I2C *arg1 = (ADXL345_I2C *) 0 ;
+  
+  SWIG_check_num_args("ADXL345_I2C::StopLiveWindowMode",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_I2C::StopLiveWindowMode",1,"ADXL345_I2C *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_I2C,0))){
+    SWIG_fail_ptr("ADXL345_I2C_StopLiveWindowMode",1,SWIGTYPE_p_ADXL345_I2C);
+  }
+  
+  (arg1)->StopLiveWindowMode();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_ADXL345_I2C(void *obj) {
 ADXL345_I2C *arg1 = (ADXL345_I2C *) obj;
 delete arg1;
 }
 static swig_lua_method swig_ADXL345_I2C_methods[] = {
+    {"SetRange", _wrap_ADXL345_I2C_SetRange}, 
+    {"GetX", _wrap_ADXL345_I2C_GetX}, 
+    {"GetY", _wrap_ADXL345_I2C_GetY}, 
+    {"GetZ", _wrap_ADXL345_I2C_GetZ}, 
     {"GetAcceleration", _wrap_ADXL345_I2C_GetAcceleration}, 
     {"GetAccelerations", _wrap_ADXL345_I2C_GetAccelerations}, 
+    {"GetSmartDashboardType", _wrap_ADXL345_I2C_GetSmartDashboardType}, 
+    {"InitTable", _wrap_ADXL345_I2C_InitTable}, 
+    {"UpdateTable", _wrap_ADXL345_I2C_UpdateTable}, 
+    {"GetTable", _wrap_ADXL345_I2C_GetTable}, 
+    {"StartLiveWindowMode", _wrap_ADXL345_I2C_StartLiveWindowMode}, 
+    {"StopLiveWindowMode", _wrap_ADXL345_I2C_StopLiveWindowMode}, 
     {0,0}
 };
 static swig_lua_attribute swig_ADXL345_I2C_attributes[] = {
@@ -2669,56 +2565,27 @@ static swig_lua_method swig_ADXL345_I2C_cls_methods[] = {
     {0,0}
 };
 static swig_lua_const_info swig_ADXL345_I2C_cls_constants[] = {
-    {SWIG_LUA_CONSTTAB_INT("kRange_2G", ADXL345_I2C::kRange_2G)},
-    {SWIG_LUA_CONSTTAB_INT("kRange_4G", ADXL345_I2C::kRange_4G)},
-    {SWIG_LUA_CONSTTAB_INT("kRange_8G", ADXL345_I2C::kRange_8G)},
-    {SWIG_LUA_CONSTTAB_INT("kRange_16G", ADXL345_I2C::kRange_16G)},
     {SWIG_LUA_CONSTTAB_INT("kAxis_X", ADXL345_I2C::kAxis_X)},
     {SWIG_LUA_CONSTTAB_INT("kAxis_Y", ADXL345_I2C::kAxis_Y)},
     {SWIG_LUA_CONSTTAB_INT("kAxis_Z", ADXL345_I2C::kAxis_Z)},
     {0,0,0,0,0,0}
 };
-static swig_lua_class *swig_ADXL345_I2C_bases[] = {0};
-static const char *swig_ADXL345_I2C_base_names[] = {0};
+static swig_lua_class *swig_ADXL345_I2C_bases[] = {0,0};
+static const char *swig_ADXL345_I2C_base_names[] = {"Accelerometer *",0};
 static swig_lua_class _wrap_class_ADXL345_I2C = { "ADXL345_I2C", &SWIGTYPE_p_ADXL345_I2C,_wrap_new_ADXL345_I2C, swig_delete_ADXL345_I2C, swig_ADXL345_I2C_methods, swig_ADXL345_I2C_attributes, { "ADXL345_I2C", swig_ADXL345_I2C_cls_methods, swig_ADXL345_I2C_cls_attributes, swig_ADXL345_I2C_cls_constants }, swig_ADXL345_I2C_bases, swig_ADXL345_I2C_base_names };
 
 static int _wrap_new_ADXL345_SPI__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
-  DigitalOutput *arg1 = 0 ;
-  DigitalOutput *arg2 = 0 ;
-  DigitalInput *arg3 = 0 ;
-  DigitalOutput *arg4 = 0 ;
-  ADXL345_SPI::DataFormat_Range arg5 ;
+  SPI::Port arg1 ;
+  Accelerometer::Range arg2 ;
   ADXL345_SPI *result = 0 ;
   
-  SWIG_check_num_args("ADXL345_SPI::ADXL345_SPI",5,5)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",1,"DigitalOutput &");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",2,"DigitalOutput &");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",3,"DigitalInput &");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",4,"DigitalOutput &");
-  if(!lua_isnumber(L,5)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",5,"ADXL345_SPI::DataFormat_Range");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",1,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_DigitalInput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",3,SWIGTYPE_p_DigitalInput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",4,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  arg5 = (ADXL345_SPI::DataFormat_Range)(int)lua_tonumber(L, 5);
-  result = (ADXL345_SPI *)new ADXL345_SPI(*arg1,*arg2,*arg3,*arg4,arg5);
+  SWIG_check_num_args("ADXL345_SPI::ADXL345_SPI",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",1,"SPI::Port");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",2,"Accelerometer::Range");
+  arg1 = (SPI::Port)(int)lua_tonumber(L, 1);
+  arg2 = (Accelerometer::Range)(int)lua_tonumber(L, 2);
+  result = (ADXL345_SPI *)new ADXL345_SPI(arg1,arg2);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_ADXL345_SPI,1); SWIG_arg++; 
   return SWIG_arg;
   
@@ -2732,258 +2599,13 @@ fail:
 
 static int _wrap_new_ADXL345_SPI__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
-  DigitalOutput *arg1 = 0 ;
-  DigitalOutput *arg2 = 0 ;
-  DigitalInput *arg3 = 0 ;
-  DigitalOutput *arg4 = 0 ;
+  SPI::Port arg1 ;
   ADXL345_SPI *result = 0 ;
   
-  SWIG_check_num_args("ADXL345_SPI::ADXL345_SPI",4,4)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",1,"DigitalOutput &");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",2,"DigitalOutput &");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",3,"DigitalInput &");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",4,"DigitalOutput &");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",1,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_DigitalInput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",3,SWIGTYPE_p_DigitalInput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",4,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  result = (ADXL345_SPI *)new ADXL345_SPI(*arg1,*arg2,*arg3,*arg4);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ADXL345_SPI,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_ADXL345_SPI__SWIG_2(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalOutput *arg1 = (DigitalOutput *) 0 ;
-  DigitalOutput *arg2 = (DigitalOutput *) 0 ;
-  DigitalInput *arg3 = (DigitalInput *) 0 ;
-  DigitalOutput *arg4 = (DigitalOutput *) 0 ;
-  ADXL345_SPI::DataFormat_Range arg5 ;
-  ADXL345_SPI *result = 0 ;
-  
-  SWIG_check_num_args("ADXL345_SPI::ADXL345_SPI",5,5)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",1,"DigitalOutput *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",2,"DigitalOutput *");
-  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",3,"DigitalInput *");
-  if(!SWIG_isptrtype(L,4)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",4,"DigitalOutput *");
-  if(!lua_isnumber(L,5)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",5,"ADXL345_SPI::DataFormat_Range");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",1,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_DigitalInput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",3,SWIGTYPE_p_DigitalInput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",4,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  arg5 = (ADXL345_SPI::DataFormat_Range)(int)lua_tonumber(L, 5);
-  result = (ADXL345_SPI *)new ADXL345_SPI(arg1,arg2,arg3,arg4,arg5);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ADXL345_SPI,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_ADXL345_SPI__SWIG_3(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalOutput *arg1 = (DigitalOutput *) 0 ;
-  DigitalOutput *arg2 = (DigitalOutput *) 0 ;
-  DigitalInput *arg3 = (DigitalInput *) 0 ;
-  DigitalOutput *arg4 = (DigitalOutput *) 0 ;
-  ADXL345_SPI *result = 0 ;
-  
-  SWIG_check_num_args("ADXL345_SPI::ADXL345_SPI",4,4)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",1,"DigitalOutput *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",2,"DigitalOutput *");
-  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",3,"DigitalInput *");
-  if(!SWIG_isptrtype(L,4)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",4,"DigitalOutput *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",1,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_DigitalInput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",3,SWIGTYPE_p_DigitalInput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",4,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  result = (ADXL345_SPI *)new ADXL345_SPI(arg1,arg2,arg3,arg4);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ADXL345_SPI,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_ADXL345_SPI__SWIG_4(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint32_t arg3 ;
-  uint32_t arg4 ;
-  uint32_t arg5 ;
-  ADXL345_SPI::DataFormat_Range arg6 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  uint32_t *argp3 ;
-  uint32_t *argp4 ;
-  uint32_t *argp5 ;
-  ADXL345_SPI *result = 0 ;
-  
-  SWIG_check_num_args("ADXL345_SPI::ADXL345_SPI",6,6)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",2,"uint32_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",3,"uint32_t");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",4,"uint32_t");
-  if(!lua_isuserdata(L,5)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",5,"uint32_t");
-  if(!lua_isnumber(L,6)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",6,"ADXL345_SPI::DataFormat_Range");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",3,SWIGTYPE_p_uint32_t);
-  }
-  arg3 = *argp3;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",4,SWIGTYPE_p_uint32_t);
-  }
-  arg4 = *argp4;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,5,(void**)&argp5,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",5,SWIGTYPE_p_uint32_t);
-  }
-  arg5 = *argp5;
-  
-  arg6 = (ADXL345_SPI::DataFormat_Range)(int)lua_tonumber(L, 6);
-  result = (ADXL345_SPI *)new ADXL345_SPI(arg1,arg2,arg3,arg4,arg5,arg6);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ADXL345_SPI,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_ADXL345_SPI__SWIG_5(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint32_t arg3 ;
-  uint32_t arg4 ;
-  uint32_t arg5 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  uint32_t *argp3 ;
-  uint32_t *argp4 ;
-  uint32_t *argp5 ;
-  ADXL345_SPI *result = 0 ;
-  
-  SWIG_check_num_args("ADXL345_SPI::ADXL345_SPI",5,5)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",2,"uint32_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",3,"uint32_t");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",4,"uint32_t");
-  if(!lua_isuserdata(L,5)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",5,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",3,SWIGTYPE_p_uint32_t);
-  }
-  arg3 = *argp3;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",4,SWIGTYPE_p_uint32_t);
-  }
-  arg4 = *argp4;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,5,(void**)&argp5,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_ADXL345_SPI",5,SWIGTYPE_p_uint32_t);
-  }
-  arg5 = *argp5;
-  
-  result = (ADXL345_SPI *)new ADXL345_SPI(arg1,arg2,arg3,arg4,arg5);
+  SWIG_check_num_args("ADXL345_SPI::ADXL345_SPI",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("ADXL345_SPI::ADXL345_SPI",1,"SPI::Port");
+  arg1 = (SPI::Port)(int)lua_tonumber(L, 1);
+  result = (ADXL345_SPI *)new ADXL345_SPI(arg1);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_ADXL345_SPI,1); SWIG_arg++; 
   return SWIG_arg;
   
@@ -2997,320 +2619,138 @@ fail:
 
 static int _wrap_new_ADXL345_SPI(lua_State* L) {
   int argc;
-  int argv[7]={
-    1,2,3,4,5,6,7
+  int argv[3]={
+    1,2,3
   };
   
   argc = lua_gettop(L);
-  if (argc == 4) {
+  if (argc == 1) {
     int _v;
     {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
+      _v = lua_isnumber(L,argv[0]);
     }
     if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_DigitalInput, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
-          }
-          if (_v) {
-            return _wrap_new_ADXL345_SPI__SWIG_1(L);
-          }
-        }
-      }
+      return _wrap_new_ADXL345_SPI__SWIG_1(L);
     }
   }
-  if (argc == 4) {
+  if (argc == 2) {
     int _v;
     {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
+      _v = lua_isnumber(L,argv[0]);
     }
     if (_v) {
       {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
+        _v = lua_isnumber(L,argv[1]);
       }
       if (_v) {
-        {
-          void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_DigitalInput, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          {
-            void *ptr;
-            if (SWIG_isptrtype(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
-          }
-          if (_v) {
-            return _wrap_new_ADXL345_SPI__SWIG_3(L);
-          }
-        }
-      }
-    }
-  }
-  if (argc == 5) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_DigitalInput, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          {
-            void *ptr;
-            if (SWIG_isptrtype(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
-          }
-          if (_v) {
-            {
-              _v = lua_isnumber(L,argv[4]);
-            }
-            if (_v) {
-              return _wrap_new_ADXL345_SPI__SWIG_2(L);
-            }
-          }
-        }
-      }
-    }
-  }
-  if (argc == 5) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_DigitalInput, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
-          }
-          if (_v) {
-            {
-              _v = lua_isnumber(L,argv[4]);
-            }
-            if (_v) {
-              return _wrap_new_ADXL345_SPI__SWIG_0(L);
-            }
-          }
-        }
-      }
-    }
-  }
-  if (argc == 5) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
-          }
-          if (_v) {
-            {
-              void *ptr;
-              if (lua_isuserdata(L,argv[4])==0 || SWIG_ConvertPtr(L,argv[4], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-                _v = 0;
-              } else {
-                _v = 1;
-              }
-            }
-            if (_v) {
-              return _wrap_new_ADXL345_SPI__SWIG_5(L);
-            }
-          }
-        }
-      }
-    }
-  }
-  if (argc == 6) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
-          }
-          if (_v) {
-            {
-              void *ptr;
-              if (lua_isuserdata(L,argv[4])==0 || SWIG_ConvertPtr(L,argv[4], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-                _v = 0;
-              } else {
-                _v = 1;
-              }
-            }
-            if (_v) {
-              {
-                _v = lua_isnumber(L,argv[5]);
-              }
-              if (_v) {
-                return _wrap_new_ADXL345_SPI__SWIG_4(L);
-              }
-            }
-          }
-        }
+        return _wrap_new_ADXL345_SPI__SWIG_0(L);
       }
     }
   }
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_ADXL345_SPI'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    ADXL345_SPI::ADXL345_SPI(DigitalOutput &,DigitalOutput &,DigitalInput &,DigitalOutput &,ADXL345_SPI::DataFormat_Range)\n"
-    "    ADXL345_SPI::ADXL345_SPI(DigitalOutput &,DigitalOutput &,DigitalInput &,DigitalOutput &)\n"
-    "    ADXL345_SPI::ADXL345_SPI(DigitalOutput *,DigitalOutput *,DigitalInput *,DigitalOutput *,ADXL345_SPI::DataFormat_Range)\n"
-    "    ADXL345_SPI::ADXL345_SPI(DigitalOutput *,DigitalOutput *,DigitalInput *,DigitalOutput *)\n"
-    "    ADXL345_SPI::ADXL345_SPI(uint8_t,uint32_t,uint32_t,uint32_t,uint32_t,ADXL345_SPI::DataFormat_Range)\n"
-    "    ADXL345_SPI::ADXL345_SPI(uint8_t,uint32_t,uint32_t,uint32_t,uint32_t)\n");
+    "    ADXL345_SPI::ADXL345_SPI(SPI::Port,Accelerometer::Range)\n"
+    "    ADXL345_SPI::ADXL345_SPI(SPI::Port)\n");
   lua_error(L);return 0;
+}
+
+
+static int _wrap_ADXL345_SPI_SetRange(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_SPI *arg1 = (ADXL345_SPI *) 0 ;
+  Accelerometer::Range arg2 ;
+  
+  SWIG_check_num_args("ADXL345_SPI::SetRange",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_SPI::SetRange",1,"ADXL345_SPI *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("ADXL345_SPI::SetRange",2,"Accelerometer::Range");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_SPI,0))){
+    SWIG_fail_ptr("ADXL345_SPI_SetRange",1,SWIGTYPE_p_ADXL345_SPI);
+  }
+  
+  arg2 = (Accelerometer::Range)(int)lua_tonumber(L, 2);
+  (arg1)->SetRange(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ADXL345_SPI_GetX(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_SPI *arg1 = (ADXL345_SPI *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("ADXL345_SPI::GetX",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_SPI::GetX",1,"ADXL345_SPI *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_SPI,0))){
+    SWIG_fail_ptr("ADXL345_SPI_GetX",1,SWIGTYPE_p_ADXL345_SPI);
+  }
+  
+  result = (double)(arg1)->GetX();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ADXL345_SPI_GetY(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_SPI *arg1 = (ADXL345_SPI *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("ADXL345_SPI::GetY",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_SPI::GetY",1,"ADXL345_SPI *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_SPI,0))){
+    SWIG_fail_ptr("ADXL345_SPI_GetY",1,SWIGTYPE_p_ADXL345_SPI);
+  }
+  
+  result = (double)(arg1)->GetY();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ADXL345_SPI_GetZ(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_SPI *arg1 = (ADXL345_SPI *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("ADXL345_SPI::GetZ",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_SPI::GetZ",1,"ADXL345_SPI *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_SPI,0))){
+    SWIG_fail_ptr("ADXL345_SPI_GetZ",1,SWIGTYPE_p_ADXL345_SPI);
+  }
+  
+  result = (double)(arg1)->GetZ();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
 }
 
 
@@ -3368,908 +2808,16 @@ fail:
 }
 
 
-static void swig_delete_ADXL345_SPI(void *obj) {
-ADXL345_SPI *arg1 = (ADXL345_SPI *) obj;
-delete arg1;
-}
-static swig_lua_method swig_ADXL345_SPI_methods[] = {
-    {"GetAcceleration", _wrap_ADXL345_SPI_GetAcceleration}, 
-    {"GetAccelerations", _wrap_ADXL345_SPI_GetAccelerations}, 
-    {0,0}
-};
-static swig_lua_attribute swig_ADXL345_SPI_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_ADXL345_SPI_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_ADXL345_SPI_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_ADXL345_SPI_cls_constants[] = {
-    {SWIG_LUA_CONSTTAB_INT("kRange_2G", ADXL345_SPI::kRange_2G)},
-    {SWIG_LUA_CONSTTAB_INT("kRange_4G", ADXL345_SPI::kRange_4G)},
-    {SWIG_LUA_CONSTTAB_INT("kRange_8G", ADXL345_SPI::kRange_8G)},
-    {SWIG_LUA_CONSTTAB_INT("kRange_16G", ADXL345_SPI::kRange_16G)},
-    {SWIG_LUA_CONSTTAB_INT("kAxis_X", ADXL345_SPI::kAxis_X)},
-    {SWIG_LUA_CONSTTAB_INT("kAxis_Y", ADXL345_SPI::kAxis_Y)},
-    {SWIG_LUA_CONSTTAB_INT("kAxis_Z", ADXL345_SPI::kAxis_Z)},
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_ADXL345_SPI_bases[] = {0};
-static const char *swig_ADXL345_SPI_base_names[] = {0};
-static swig_lua_class _wrap_class_ADXL345_SPI = { "ADXL345_SPI", &SWIGTYPE_p_ADXL345_SPI,_wrap_new_ADXL345_SPI, swig_delete_ADXL345_SPI, swig_ADXL345_SPI_methods, swig_ADXL345_SPI_attributes, { "ADXL345_SPI", swig_ADXL345_SPI_cls_methods, swig_ADXL345_SPI_cls_attributes, swig_ADXL345_SPI_cls_constants }, swig_ADXL345_SPI_bases, swig_ADXL345_SPI_base_names };
-
-static int _wrap_AnalogChannel_kAccumulatorChannels_get(lua_State* L) {
+static int _wrap_ADXL345_SPI_GetSmartDashboardType(lua_State* L) {
   int SWIG_arg = 0;
-  uint32_t *result = 0 ;
-  
-  SWIG_check_num_args("AnalogChannel::kAccumulatorChannels",0,0)
-  result = (uint32_t *)(uint32_t *)AnalogChannel::kAccumulatorChannels;
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_uint32_t,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_AnalogChannel__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  AnalogChannel *result = 0 ;
-  
-  SWIG_check_num_args("AnalogChannel::AnalogChannel",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("AnalogChannel::AnalogChannel",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogChannel::AnalogChannel",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_AnalogChannel",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_AnalogChannel",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (AnalogChannel *)new AnalogChannel(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_AnalogChannel,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_AnalogChannel__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  uint32_t arg1 ;
-  uint32_t *argp1 ;
-  AnalogChannel *result = 0 ;
-  
-  SWIG_check_num_args("AnalogChannel::AnalogChannel",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("AnalogChannel::AnalogChannel",1,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_AnalogChannel",1,SWIGTYPE_p_uint32_t);
-  }
-  arg1 = *argp1;
-  
-  result = (AnalogChannel *)new AnalogChannel(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_AnalogChannel,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_AnalogChannel(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_AnalogChannel__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_AnalogChannel__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_AnalogChannel'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    AnalogChannel::AnalogChannel(uint8_t,uint32_t)\n"
-    "    AnalogChannel::AnalogChannel(uint32_t)\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_AnalogChannel_GetModule(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  AnalogModule *result = 0 ;
-  
-  SWIG_check_num_args("AnalogChannel::GetModule",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetModule",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetModule",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (AnalogModule *)(arg1)->GetModule();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_AnalogModule,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetValue(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  int16_t result;
-  
-  SWIG_check_num_args("AnalogChannel::GetValue",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetValue",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetValue",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (arg1)->GetValue();
-  {
-    int16_t * resultptr = new int16_t((const int16_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int16_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetAverageValue(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  int32_t result;
-  
-  SWIG_check_num_args("AnalogChannel::GetAverageValue",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetAverageValue",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetAverageValue",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (arg1)->GetAverageValue();
-  {
-    int32_t * resultptr = new int32_t((const int32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetVoltage(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("AnalogChannel::GetVoltage",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetVoltage",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetVoltage",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (float)(arg1)->GetVoltage();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetAverageVoltage(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("AnalogChannel::GetAverageVoltage",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetAverageVoltage",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetAverageVoltage",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (float)(arg1)->GetAverageVoltage();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetModuleNumber(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  uint8_t result;
-  
-  SWIG_check_num_args("AnalogChannel::GetModuleNumber",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetModuleNumber",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetModuleNumber",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (arg1)->GetModuleNumber();
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetChannel(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("AnalogChannel::GetChannel",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetChannel",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetChannel",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (arg1)->GetChannel();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_SetAverageBits(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("AnalogChannel::SetAverageBits",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::SetAverageBits",1,"AnalogChannel *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogChannel::SetAverageBits",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_SetAverageBits",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogChannel_SetAverageBits",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->SetAverageBits(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetAverageBits(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("AnalogChannel::GetAverageBits",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetAverageBits",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetAverageBits",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (arg1)->GetAverageBits();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_SetOversampleBits(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("AnalogChannel::SetOversampleBits",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::SetOversampleBits",1,"AnalogChannel *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogChannel::SetOversampleBits",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_SetOversampleBits",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogChannel_SetOversampleBits",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->SetOversampleBits(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetOversampleBits(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("AnalogChannel::GetOversampleBits",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetOversampleBits",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetOversampleBits",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (arg1)->GetOversampleBits();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetLSBWeight(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("AnalogChannel::GetLSBWeight",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetLSBWeight",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetLSBWeight",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (arg1)->GetLSBWeight();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetOffset(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  int32_t result;
-  
-  SWIG_check_num_args("AnalogChannel::GetOffset",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetOffset",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetOffset",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (arg1)->GetOffset();
-  {
-    int32_t * resultptr = new int32_t((const int32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_IsAccumulatorChannel(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("AnalogChannel::IsAccumulatorChannel",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::IsAccumulatorChannel",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_IsAccumulatorChannel",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (bool)(arg1)->IsAccumulatorChannel();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_InitAccumulator(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  
-  SWIG_check_num_args("AnalogChannel::InitAccumulator",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::InitAccumulator",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_InitAccumulator",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  (arg1)->InitAccumulator();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_SetAccumulatorInitialValue(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  INT64 arg2 ;
-  INT64 *argp2 ;
-  
-  SWIG_check_num_args("AnalogChannel::SetAccumulatorInitialValue",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::SetAccumulatorInitialValue",1,"AnalogChannel *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogChannel::SetAccumulatorInitialValue",2,"INT64");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_SetAccumulatorInitialValue",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_INT64,0))){
-    SWIG_fail_ptr("AnalogChannel_SetAccumulatorInitialValue",2,SWIGTYPE_p_INT64);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->SetAccumulatorInitialValue(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_ResetAccumulator(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  
-  SWIG_check_num_args("AnalogChannel::ResetAccumulator",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::ResetAccumulator",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_ResetAccumulator",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  (arg1)->ResetAccumulator();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_SetAccumulatorCenter(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  int32_t arg2 ;
-  int32_t *argp2 ;
-  
-  SWIG_check_num_args("AnalogChannel::SetAccumulatorCenter",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::SetAccumulatorCenter",1,"AnalogChannel *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogChannel::SetAccumulatorCenter",2,"int32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_SetAccumulatorCenter",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_int32_t,0))){
-    SWIG_fail_ptr("AnalogChannel_SetAccumulatorCenter",2,SWIGTYPE_p_int32_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->SetAccumulatorCenter(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_SetAccumulatorDeadband(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  int32_t arg2 ;
-  int32_t *argp2 ;
-  
-  SWIG_check_num_args("AnalogChannel::SetAccumulatorDeadband",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::SetAccumulatorDeadband",1,"AnalogChannel *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogChannel::SetAccumulatorDeadband",2,"int32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_SetAccumulatorDeadband",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_int32_t,0))){
-    SWIG_fail_ptr("AnalogChannel_SetAccumulatorDeadband",2,SWIGTYPE_p_int32_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->SetAccumulatorDeadband(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetAccumulatorValue(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  INT64 result;
-  
-  SWIG_check_num_args("AnalogChannel::GetAccumulatorValue",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetAccumulatorValue",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetAccumulatorValue",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (arg1)->GetAccumulatorValue();
-  {
-    INT64 * resultptr = new INT64((const INT64 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_INT64,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetAccumulatorCount(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("AnalogChannel::GetAccumulatorCount",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetAccumulatorCount",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetAccumulatorCount",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (arg1)->GetAccumulatorCount();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetAccumulatorOutput(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  INT64 *arg2 = (INT64 *) 0 ;
-  uint32_t *arg3 = (uint32_t *) 0 ;
-  
-  SWIG_check_num_args("AnalogChannel::GetAccumulatorOutput",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetAccumulatorOutput",1,"AnalogChannel *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("AnalogChannel::GetAccumulatorOutput",2,"INT64 *");
-  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("AnalogChannel::GetAccumulatorOutput",3,"uint32_t *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetAccumulatorOutput",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_INT64,0))){
-    SWIG_fail_ptr("AnalogChannel_GetAccumulatorOutput",2,SWIGTYPE_p_INT64);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogChannel_GetAccumulatorOutput",3,SWIGTYPE_p_uint32_t);
-  }
-  
-  (arg1)->GetAccumulatorOutput(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_SetVoltageForPID(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  bool arg2 ;
-  
-  SWIG_check_num_args("AnalogChannel::SetVoltageForPID",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::SetVoltageForPID",1,"AnalogChannel *");
-  if(!lua_isboolean(L,2)) SWIG_fail_arg("AnalogChannel::SetVoltageForPID",2,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_SetVoltageForPID",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  arg2 = (lua_toboolean(L, 2)!=0);
-  (arg1)->SetVoltageForPID(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_PIDGet(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("AnalogChannel::PIDGet",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::PIDGet",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_PIDGet",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (double)(arg1)->PIDGet();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_UpdateTable(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  
-  SWIG_check_num_args("AnalogChannel::UpdateTable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::UpdateTable",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_UpdateTable",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  (arg1)->UpdateTable();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_StartLiveWindowMode(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  
-  SWIG_check_num_args("AnalogChannel::StartLiveWindowMode",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::StartLiveWindowMode",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_StartLiveWindowMode",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  (arg1)->StartLiveWindowMode();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_StopLiveWindowMode(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
-  
-  SWIG_check_num_args("AnalogChannel::StopLiveWindowMode",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::StopLiveWindowMode",1,"AnalogChannel *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_StopLiveWindowMode",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  (arg1)->StopLiveWindowMode();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogChannel_GetSmartDashboardType(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
+  ADXL345_SPI *arg1 = (ADXL345_SPI *) 0 ;
   std::string result;
   
-  SWIG_check_num_args("AnalogChannel::GetSmartDashboardType",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetSmartDashboardType",1,"AnalogChannel *");
+  SWIG_check_num_args("ADXL345_SPI::GetSmartDashboardType",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_SPI::GetSmartDashboardType",1,"ADXL345_SPI *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetSmartDashboardType",1,SWIGTYPE_p_AnalogChannel);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_SPI,0))){
+    SWIG_fail_ptr("ADXL345_SPI_GetSmartDashboardType",1,SWIGTYPE_p_ADXL345_SPI);
   }
   
   result = (arg1)->GetSmartDashboardType();
@@ -4287,22 +2835,22 @@ fail:
 }
 
 
-static int _wrap_AnalogChannel_InitTable(lua_State* L) {
+static int _wrap_ADXL345_SPI_InitTable(lua_State* L) {
   int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
+  ADXL345_SPI *arg1 = (ADXL345_SPI *) 0 ;
   ITable *arg2 = (ITable *) 0 ;
   
-  SWIG_check_num_args("AnalogChannel::InitTable",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::InitTable",1,"AnalogChannel *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("AnalogChannel::InitTable",2,"ITable *");
+  SWIG_check_num_args("ADXL345_SPI::InitTable",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_SPI::InitTable",1,"ADXL345_SPI *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("ADXL345_SPI::InitTable",2,"ITable *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_InitTable",1,SWIGTYPE_p_AnalogChannel);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_SPI,0))){
+    SWIG_fail_ptr("ADXL345_SPI_InitTable",1,SWIGTYPE_p_ADXL345_SPI);
   }
   
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
-    SWIG_fail_ptr("AnalogChannel_InitTable",2,SWIGTYPE_p_ITable);
+    SWIG_fail_ptr("ADXL345_SPI_InitTable",2,SWIGTYPE_p_ITable);
   }
   
   (arg1)->InitTable(arg2);
@@ -4317,16 +2865,39 @@ fail:
 }
 
 
-static int _wrap_AnalogChannel_GetTable(lua_State* L) {
+static int _wrap_ADXL345_SPI_UpdateTable(lua_State* L) {
   int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
+  ADXL345_SPI *arg1 = (ADXL345_SPI *) 0 ;
+  
+  SWIG_check_num_args("ADXL345_SPI::UpdateTable",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_SPI::UpdateTable",1,"ADXL345_SPI *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_SPI,0))){
+    SWIG_fail_ptr("ADXL345_SPI_UpdateTable",1,SWIGTYPE_p_ADXL345_SPI);
+  }
+  
+  (arg1)->UpdateTable();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ADXL345_SPI_GetTable(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_SPI *arg1 = (ADXL345_SPI *) 0 ;
   ITable *result = 0 ;
   
-  SWIG_check_num_args("AnalogChannel::GetTable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogChannel::GetTable",1,"AnalogChannel *");
+  SWIG_check_num_args("ADXL345_SPI::GetTable",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_SPI::GetTable",1,"ADXL345_SPI *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("AnalogChannel_GetTable",1,SWIGTYPE_p_AnalogChannel);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_SPI,0))){
+    SWIG_fail_ptr("ADXL345_SPI_GetTable",1,SWIGTYPE_p_ADXL345_SPI);
   }
   
   result = (ITable *)(arg1)->GetTable();
@@ -4341,76 +2912,97 @@ fail:
 }
 
 
-static void swig_delete_AnalogChannel(void *obj) {
-AnalogChannel *arg1 = (AnalogChannel *) obj;
+static int _wrap_ADXL345_SPI_StartLiveWindowMode(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_SPI *arg1 = (ADXL345_SPI *) 0 ;
+  
+  SWIG_check_num_args("ADXL345_SPI::StartLiveWindowMode",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_SPI::StartLiveWindowMode",1,"ADXL345_SPI *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_SPI,0))){
+    SWIG_fail_ptr("ADXL345_SPI_StartLiveWindowMode",1,SWIGTYPE_p_ADXL345_SPI);
+  }
+  
+  (arg1)->StartLiveWindowMode();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_ADXL345_SPI_StopLiveWindowMode(lua_State* L) {
+  int SWIG_arg = 0;
+  ADXL345_SPI *arg1 = (ADXL345_SPI *) 0 ;
+  
+  SWIG_check_num_args("ADXL345_SPI::StopLiveWindowMode",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ADXL345_SPI::StopLiveWindowMode",1,"ADXL345_SPI *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ADXL345_SPI,0))){
+    SWIG_fail_ptr("ADXL345_SPI_StopLiveWindowMode",1,SWIGTYPE_p_ADXL345_SPI);
+  }
+  
+  (arg1)->StopLiveWindowMode();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_ADXL345_SPI(void *obj) {
+ADXL345_SPI *arg1 = (ADXL345_SPI *) obj;
 delete arg1;
 }
-static swig_lua_method swig_AnalogChannel_methods[] = {
-    {"GetModule", _wrap_AnalogChannel_GetModule}, 
-    {"GetValue", _wrap_AnalogChannel_GetValue}, 
-    {"GetAverageValue", _wrap_AnalogChannel_GetAverageValue}, 
-    {"GetVoltage", _wrap_AnalogChannel_GetVoltage}, 
-    {"GetAverageVoltage", _wrap_AnalogChannel_GetAverageVoltage}, 
-    {"GetModuleNumber", _wrap_AnalogChannel_GetModuleNumber}, 
-    {"GetChannel", _wrap_AnalogChannel_GetChannel}, 
-    {"SetAverageBits", _wrap_AnalogChannel_SetAverageBits}, 
-    {"GetAverageBits", _wrap_AnalogChannel_GetAverageBits}, 
-    {"SetOversampleBits", _wrap_AnalogChannel_SetOversampleBits}, 
-    {"GetOversampleBits", _wrap_AnalogChannel_GetOversampleBits}, 
-    {"GetLSBWeight", _wrap_AnalogChannel_GetLSBWeight}, 
-    {"GetOffset", _wrap_AnalogChannel_GetOffset}, 
-    {"IsAccumulatorChannel", _wrap_AnalogChannel_IsAccumulatorChannel}, 
-    {"InitAccumulator", _wrap_AnalogChannel_InitAccumulator}, 
-    {"SetAccumulatorInitialValue", _wrap_AnalogChannel_SetAccumulatorInitialValue}, 
-    {"ResetAccumulator", _wrap_AnalogChannel_ResetAccumulator}, 
-    {"SetAccumulatorCenter", _wrap_AnalogChannel_SetAccumulatorCenter}, 
-    {"SetAccumulatorDeadband", _wrap_AnalogChannel_SetAccumulatorDeadband}, 
-    {"GetAccumulatorValue", _wrap_AnalogChannel_GetAccumulatorValue}, 
-    {"GetAccumulatorCount", _wrap_AnalogChannel_GetAccumulatorCount}, 
-    {"GetAccumulatorOutput", _wrap_AnalogChannel_GetAccumulatorOutput}, 
-    {"SetVoltageForPID", _wrap_AnalogChannel_SetVoltageForPID}, 
-    {"PIDGet", _wrap_AnalogChannel_PIDGet}, 
-    {"UpdateTable", _wrap_AnalogChannel_UpdateTable}, 
-    {"StartLiveWindowMode", _wrap_AnalogChannel_StartLiveWindowMode}, 
-    {"StopLiveWindowMode", _wrap_AnalogChannel_StopLiveWindowMode}, 
-    {"GetSmartDashboardType", _wrap_AnalogChannel_GetSmartDashboardType}, 
-    {"InitTable", _wrap_AnalogChannel_InitTable}, 
-    {"GetTable", _wrap_AnalogChannel_GetTable}, 
+static swig_lua_method swig_ADXL345_SPI_methods[] = {
+    {"SetRange", _wrap_ADXL345_SPI_SetRange}, 
+    {"GetX", _wrap_ADXL345_SPI_GetX}, 
+    {"GetY", _wrap_ADXL345_SPI_GetY}, 
+    {"GetZ", _wrap_ADXL345_SPI_GetZ}, 
+    {"GetAcceleration", _wrap_ADXL345_SPI_GetAcceleration}, 
+    {"GetAccelerations", _wrap_ADXL345_SPI_GetAccelerations}, 
+    {"GetSmartDashboardType", _wrap_ADXL345_SPI_GetSmartDashboardType}, 
+    {"InitTable", _wrap_ADXL345_SPI_InitTable}, 
+    {"UpdateTable", _wrap_ADXL345_SPI_UpdateTable}, 
+    {"GetTable", _wrap_ADXL345_SPI_GetTable}, 
+    {"StartLiveWindowMode", _wrap_ADXL345_SPI_StartLiveWindowMode}, 
+    {"StopLiveWindowMode", _wrap_ADXL345_SPI_StopLiveWindowMode}, 
     {0,0}
 };
-static swig_lua_attribute swig_AnalogChannel_attributes[] = {
+static swig_lua_attribute swig_ADXL345_SPI_attributes[] = {
     {0,0,0}
 };
-static swig_lua_attribute swig_AnalogChannel_cls_attributes[] = {
-    { "kAccumulatorChannels", _wrap_AnalogChannel_kAccumulatorChannels_get, SWIG_Lua_set_immutable},
+static swig_lua_attribute swig_ADXL345_SPI_cls_attributes[] = {
     {0,0,0}
 };
-static swig_lua_method swig_AnalogChannel_cls_methods[] = {
+static swig_lua_method swig_ADXL345_SPI_cls_methods[] = {
     {0,0}
 };
-static swig_lua_const_info swig_AnalogChannel_cls_constants[] = {
+static swig_lua_const_info swig_ADXL345_SPI_cls_constants[] = {
+    {SWIG_LUA_CONSTTAB_INT("kAxis_X", ADXL345_SPI::kAxis_X)},
+    {SWIG_LUA_CONSTTAB_INT("kAxis_Y", ADXL345_SPI::kAxis_Y)},
+    {SWIG_LUA_CONSTTAB_INT("kAxis_Z", ADXL345_SPI::kAxis_Z)},
     {0,0,0,0,0,0}
 };
-static swig_lua_class *swig_AnalogChannel_bases[] = {0};
-static const char *swig_AnalogChannel_base_names[] = {0};
-static swig_lua_class _wrap_class_AnalogChannel = { "AnalogChannel", &SWIGTYPE_p_AnalogChannel,_wrap_new_AnalogChannel, swig_delete_AnalogChannel, swig_AnalogChannel_methods, swig_AnalogChannel_attributes, { "AnalogChannel", swig_AnalogChannel_cls_methods, swig_AnalogChannel_cls_attributes, swig_AnalogChannel_cls_constants }, swig_AnalogChannel_bases, swig_AnalogChannel_base_names };
+static swig_lua_class *swig_ADXL345_SPI_bases[] = {0,0};
+static const char *swig_ADXL345_SPI_base_names[] = {"Accelerometer *",0};
+static swig_lua_class _wrap_class_ADXL345_SPI = { "ADXL345_SPI", &SWIGTYPE_p_ADXL345_SPI,_wrap_new_ADXL345_SPI, swig_delete_ADXL345_SPI, swig_ADXL345_SPI_methods, swig_ADXL345_SPI_attributes, { "ADXL345_SPI", swig_ADXL345_SPI_cls_methods, swig_ADXL345_SPI_cls_attributes, swig_ADXL345_SPI_cls_constants }, swig_ADXL345_SPI_bases, swig_ADXL345_SPI_base_names };
 
-static int _wrap_AnalogModule_SetSampleRate(lua_State* L) {
+static int _wrap_AnalogInput_kAccumulatorChannels_get(lua_State* L) {
   int SWIG_arg = 0;
-  AnalogModule *arg1 = (AnalogModule *) 0 ;
-  float arg2 ;
+  uint32_t *result = 0 ;
   
-  SWIG_check_num_args("AnalogModule::SetSampleRate",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogModule::SetSampleRate",1,"AnalogModule *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("AnalogModule::SetSampleRate",2,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogModule,0))){
-    SWIG_fail_ptr("AnalogModule_SetSampleRate",1,SWIGTYPE_p_AnalogModule);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->SetSampleRate(arg2);
-  
+  SWIG_check_num_args("AnalogInput::kAccumulatorChannels",0,0)
+  result = (uint32_t *)(uint32_t *)AnalogInput::kAccumulatorChannels;
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_uint32_t,0); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -4421,20 +3013,22 @@ fail:
 }
 
 
-static int _wrap_AnalogModule_GetSampleRate(lua_State* L) {
+static int _wrap_new_AnalogInput(lua_State* L) {
   int SWIG_arg = 0;
-  AnalogModule *arg1 = (AnalogModule *) 0 ;
-  float result;
+  uint32_t arg1 ;
+  uint32_t *argp1 ;
+  AnalogInput *result = 0 ;
   
-  SWIG_check_num_args("AnalogModule::GetSampleRate",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogModule::GetSampleRate",1,"AnalogModule *");
+  SWIG_check_num_args("AnalogInput::AnalogInput",1,1)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("AnalogInput::AnalogInput",1,"uint32_t");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogModule,0))){
-    SWIG_fail_ptr("AnalogModule_GetSampleRate",1,SWIGTYPE_p_AnalogModule);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("new_AnalogInput",1,SWIGTYPE_p_uint32_t);
   }
+  arg1 = *argp1;
   
-  result = (float)(arg1)->GetSampleRate();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  result = (AnalogInput *)new AnalogInput(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_AnalogInput,1); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -4445,182 +3039,19 @@ fail:
 }
 
 
-static int _wrap_AnalogModule_SetAverageBits(lua_State* L) {
+static int _wrap_AnalogInput_GetValue(lua_State* L) {
   int SWIG_arg = 0;
-  AnalogModule *arg1 = (AnalogModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t arg3 ;
-  uint32_t *argp2 ;
-  uint32_t *argp3 ;
-  
-  SWIG_check_num_args("AnalogModule::SetAverageBits",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogModule::SetAverageBits",1,"AnalogModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogModule::SetAverageBits",2,"uint32_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("AnalogModule::SetAverageBits",3,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogModule,0))){
-    SWIG_fail_ptr("AnalogModule_SetAverageBits",1,SWIGTYPE_p_AnalogModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogModule_SetAverageBits",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogModule_SetAverageBits",3,SWIGTYPE_p_uint32_t);
-  }
-  arg3 = *argp3;
-  
-  (arg1)->SetAverageBits(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogModule_GetAverageBits(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogModule *arg1 = (AnalogModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("AnalogModule::GetAverageBits",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogModule::GetAverageBits",1,"AnalogModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogModule::GetAverageBits",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogModule,0))){
-    SWIG_fail_ptr("AnalogModule_GetAverageBits",1,SWIGTYPE_p_AnalogModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogModule_GetAverageBits",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (arg1)->GetAverageBits(arg2);
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogModule_SetOversampleBits(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogModule *arg1 = (AnalogModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t arg3 ;
-  uint32_t *argp2 ;
-  uint32_t *argp3 ;
-  
-  SWIG_check_num_args("AnalogModule::SetOversampleBits",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogModule::SetOversampleBits",1,"AnalogModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogModule::SetOversampleBits",2,"uint32_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("AnalogModule::SetOversampleBits",3,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogModule,0))){
-    SWIG_fail_ptr("AnalogModule_SetOversampleBits",1,SWIGTYPE_p_AnalogModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogModule_SetOversampleBits",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogModule_SetOversampleBits",3,SWIGTYPE_p_uint32_t);
-  }
-  arg3 = *argp3;
-  
-  (arg1)->SetOversampleBits(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogModule_GetOversampleBits(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogModule *arg1 = (AnalogModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("AnalogModule::GetOversampleBits",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogModule::GetOversampleBits",1,"AnalogModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogModule::GetOversampleBits",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogModule,0))){
-    SWIG_fail_ptr("AnalogModule_GetOversampleBits",1,SWIGTYPE_p_AnalogModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogModule_GetOversampleBits",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (arg1)->GetOversampleBits(arg2);
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogModule_GetValue(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogModule *arg1 = (AnalogModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
   int16_t result;
   
-  SWIG_check_num_args("AnalogModule::GetValue",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogModule::GetValue",1,"AnalogModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogModule::GetValue",2,"uint32_t");
+  SWIG_check_num_args("AnalogInput::GetValue",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetValue",1,"AnalogInput *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogModule,0))){
-    SWIG_fail_ptr("AnalogModule_GetValue",1,SWIGTYPE_p_AnalogModule);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetValue",1,SWIGTYPE_p_AnalogInput);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogModule_GetValue",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (arg1)->GetValue(arg2);
+  result = (arg1)->GetValue();
   {
     int16_t * resultptr = new int16_t((const int16_t &) result);
     SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int16_t,1); SWIG_arg++;
@@ -4635,28 +3066,19 @@ fail:
 }
 
 
-static int _wrap_AnalogModule_GetAverageValue(lua_State* L) {
+static int _wrap_AnalogInput_GetAverageValue(lua_State* L) {
   int SWIG_arg = 0;
-  AnalogModule *arg1 = (AnalogModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
   int32_t result;
   
-  SWIG_check_num_args("AnalogModule::GetAverageValue",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogModule::GetAverageValue",1,"AnalogModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogModule::GetAverageValue",2,"uint32_t");
+  SWIG_check_num_args("AnalogInput::GetAverageValue",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetAverageValue",1,"AnalogInput *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogModule,0))){
-    SWIG_fail_ptr("AnalogModule_GetAverageValue",1,SWIGTYPE_p_AnalogModule);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetAverageValue",1,SWIGTYPE_p_AnalogInput);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogModule_GetAverageValue",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (arg1)->GetAverageValue(arg2);
+  result = (arg1)->GetAverageValue();
   {
     int32_t * resultptr = new int32_t((const int32_t &) result);
     SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
@@ -4671,28 +3093,19 @@ fail:
 }
 
 
-static int _wrap_AnalogModule_GetAverageVoltage(lua_State* L) {
+static int _wrap_AnalogInput_GetVoltage(lua_State* L) {
   int SWIG_arg = 0;
-  AnalogModule *arg1 = (AnalogModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
   float result;
   
-  SWIG_check_num_args("AnalogModule::GetAverageVoltage",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogModule::GetAverageVoltage",1,"AnalogModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogModule::GetAverageVoltage",2,"uint32_t");
+  SWIG_check_num_args("AnalogInput::GetVoltage",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetVoltage",1,"AnalogInput *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogModule,0))){
-    SWIG_fail_ptr("AnalogModule_GetAverageVoltage",1,SWIGTYPE_p_AnalogModule);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetVoltage",1,SWIGTYPE_p_AnalogInput);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogModule_GetAverageVoltage",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (float)(arg1)->GetAverageVoltage(arg2);
+  result = (float)(arg1)->GetVoltage();
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -4704,28 +3117,19 @@ fail:
 }
 
 
-static int _wrap_AnalogModule_GetVoltage(lua_State* L) {
+static int _wrap_AnalogInput_GetAverageVoltage(lua_State* L) {
   int SWIG_arg = 0;
-  AnalogModule *arg1 = (AnalogModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
   float result;
   
-  SWIG_check_num_args("AnalogModule::GetVoltage",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogModule::GetVoltage",1,"AnalogModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogModule::GetVoltage",2,"uint32_t");
+  SWIG_check_num_args("AnalogInput::GetAverageVoltage",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetAverageVoltage",1,"AnalogInput *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogModule,0))){
-    SWIG_fail_ptr("AnalogModule_GetVoltage",1,SWIGTYPE_p_AnalogModule);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetAverageVoltage",1,SWIGTYPE_p_AnalogInput);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogModule_GetVoltage",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (float)(arg1)->GetVoltage(arg2);
+  result = (float)(arg1)->GetAverageVoltage();
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -4737,28 +3141,19 @@ fail:
 }
 
 
-static int _wrap_AnalogModule_GetLSBWeight(lua_State* L) {
+static int _wrap_AnalogInput_GetChannel(lua_State* L) {
   int SWIG_arg = 0;
-  AnalogModule *arg1 = (AnalogModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
   uint32_t result;
   
-  SWIG_check_num_args("AnalogModule::GetLSBWeight",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogModule::GetLSBWeight",1,"AnalogModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogModule::GetLSBWeight",2,"uint32_t");
+  SWIG_check_num_args("AnalogInput::GetChannel",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetChannel",1,"AnalogInput *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogModule,0))){
-    SWIG_fail_ptr("AnalogModule_GetLSBWeight",1,SWIGTYPE_p_AnalogModule);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetChannel",1,SWIGTYPE_p_AnalogInput);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogModule_GetLSBWeight",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (arg1)->GetLSBWeight(arg2);
+  result = (arg1)->GetChannel();
   {
     uint32_t * resultptr = new uint32_t((const uint32_t &) result);
     SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
@@ -4773,28 +3168,164 @@ fail:
 }
 
 
-static int _wrap_AnalogModule_GetOffset(lua_State* L) {
+static int _wrap_AnalogInput_SetAverageBits(lua_State* L) {
   int SWIG_arg = 0;
-  AnalogModule *arg1 = (AnalogModule *) 0 ;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
   uint32_t arg2 ;
   uint32_t *argp2 ;
-  int32_t result;
   
-  SWIG_check_num_args("AnalogModule::GetOffset",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogModule::GetOffset",1,"AnalogModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogModule::GetOffset",2,"uint32_t");
+  SWIG_check_num_args("AnalogInput::SetAverageBits",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::SetAverageBits",1,"AnalogInput *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogInput::SetAverageBits",2,"uint32_t");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogModule,0))){
-    SWIG_fail_ptr("AnalogModule_GetOffset",1,SWIGTYPE_p_AnalogModule);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_SetAverageBits",1,SWIGTYPE_p_AnalogInput);
   }
   
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("AnalogModule_GetOffset",2,SWIGTYPE_p_uint32_t);
+    SWIG_fail_ptr("AnalogInput_SetAverageBits",2,SWIGTYPE_p_uint32_t);
   }
   arg2 = *argp2;
   
-  result = (arg1)->GetOffset(arg2);
+  (arg1)->SetAverageBits(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_GetAverageBits(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  uint32_t result;
+  
+  SWIG_check_num_args("AnalogInput::GetAverageBits",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetAverageBits",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetAverageBits",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  result = (arg1)->GetAverageBits();
+  {
+    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_SetOversampleBits(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  uint32_t arg2 ;
+  uint32_t *argp2 ;
+  
+  SWIG_check_num_args("AnalogInput::SetOversampleBits",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::SetOversampleBits",1,"AnalogInput *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogInput::SetOversampleBits",2,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_SetOversampleBits",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("AnalogInput_SetOversampleBits",2,SWIGTYPE_p_uint32_t);
+  }
+  arg2 = *argp2;
+  
+  (arg1)->SetOversampleBits(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_GetOversampleBits(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  uint32_t result;
+  
+  SWIG_check_num_args("AnalogInput::GetOversampleBits",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetOversampleBits",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetOversampleBits",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  result = (arg1)->GetOversampleBits();
+  {
+    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_GetLSBWeight(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  uint32_t result;
+  
+  SWIG_check_num_args("AnalogInput::GetLSBWeight",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetLSBWeight",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetLSBWeight",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  result = (arg1)->GetLSBWeight();
+  {
+    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_GetOffset(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  int32_t result;
+  
+  SWIG_check_num_args("AnalogInput::GetOffset",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetOffset",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetOffset",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  result = (arg1)->GetOffset();
   {
     int32_t * resultptr = new int32_t((const int32_t &) result);
     SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
@@ -4809,35 +3340,130 @@ fail:
 }
 
 
-static int _wrap_AnalogModule_VoltsToValue(lua_State* L) {
+static int _wrap_AnalogInput_IsAccumulatorChannel(lua_State* L) {
   int SWIG_arg = 0;
-  AnalogModule *arg1 = (AnalogModule *) 0 ;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("AnalogInput::IsAccumulatorChannel",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::IsAccumulatorChannel",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_IsAccumulatorChannel",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  result = (bool)(arg1)->IsAccumulatorChannel();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_InitAccumulator(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  
+  SWIG_check_num_args("AnalogInput::InitAccumulator",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::InitAccumulator",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_InitAccumulator",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  (arg1)->InitAccumulator();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_SetAccumulatorInitialValue(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  int64_t arg2 ;
+  int64_t *argp2 ;
+  
+  SWIG_check_num_args("AnalogInput::SetAccumulatorInitialValue",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::SetAccumulatorInitialValue",1,"AnalogInput *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogInput::SetAccumulatorInitialValue",2,"int64_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_SetAccumulatorInitialValue",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_int64_t,0))){
+    SWIG_fail_ptr("AnalogInput_SetAccumulatorInitialValue",2,SWIGTYPE_p_int64_t);
+  }
+  arg2 = *argp2;
+  
+  (arg1)->SetAccumulatorInitialValue(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_ResetAccumulator(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  
+  SWIG_check_num_args("AnalogInput::ResetAccumulator",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::ResetAccumulator",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_ResetAccumulator",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  (arg1)->ResetAccumulator();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_SetAccumulatorCenter(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
   int32_t arg2 ;
-  float arg3 ;
   int32_t *argp2 ;
-  int32_t result;
   
-  SWIG_check_num_args("AnalogModule::VoltsToValue",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogModule::VoltsToValue",1,"AnalogModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogModule::VoltsToValue",2,"int32_t");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("AnalogModule::VoltsToValue",3,"float");
+  SWIG_check_num_args("AnalogInput::SetAccumulatorCenter",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::SetAccumulatorCenter",1,"AnalogInput *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogInput::SetAccumulatorCenter",2,"int32_t");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogModule,0))){
-    SWIG_fail_ptr("AnalogModule_VoltsToValue",1,SWIGTYPE_p_AnalogModule);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_SetAccumulatorCenter",1,SWIGTYPE_p_AnalogInput);
   }
   
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_int32_t,0))){
-    SWIG_fail_ptr("AnalogModule_VoltsToValue",2,SWIGTYPE_p_int32_t);
+    SWIG_fail_ptr("AnalogInput_SetAccumulatorCenter",2,SWIGTYPE_p_int32_t);
   }
   arg2 = *argp2;
   
-  arg3 = (float)lua_tonumber(L, 3);
-  result = (arg1)->VoltsToValue(arg2,arg3);
-  {
-    int32_t * resultptr = new int32_t((const int32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
-  }
+  (arg1)->SetAccumulatorCenter(arg2);
+  
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -4848,22 +3474,28 @@ fail:
 }
 
 
-static int _wrap_AnalogModule_GetInstance(lua_State* L) {
+static int _wrap_AnalogInput_SetAccumulatorDeadband(lua_State* L) {
   int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint8_t *argp1 ;
-  AnalogModule *result = 0 ;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  int32_t arg2 ;
+  int32_t *argp2 ;
   
-  SWIG_check_num_args("AnalogModule::GetInstance",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("AnalogModule::GetInstance",1,"uint8_t");
+  SWIG_check_num_args("AnalogInput::SetAccumulatorDeadband",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::SetAccumulatorDeadband",1,"AnalogInput *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogInput::SetAccumulatorDeadband",2,"int32_t");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("AnalogModule_GetInstance",1,SWIGTYPE_p_uint8_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_SetAccumulatorDeadband",1,SWIGTYPE_p_AnalogInput);
   }
-  arg1 = *argp1;
   
-  result = (AnalogModule *)AnalogModule::GetInstance(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_AnalogModule,0); SWIG_arg++; 
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_int32_t,0))){
+    SWIG_fail_ptr("AnalogInput_SetAccumulatorDeadband",2,SWIGTYPE_p_int32_t);
+  }
+  arg2 = *argp2;
+  
+  (arg1)->SetAccumulatorDeadband(arg2);
+  
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -4874,89 +3506,628 @@ fail:
 }
 
 
-static swig_lua_method swig_AnalogModule_methods[] = {
-    {"SetSampleRate", _wrap_AnalogModule_SetSampleRate}, 
-    {"GetSampleRate", _wrap_AnalogModule_GetSampleRate}, 
-    {"SetAverageBits", _wrap_AnalogModule_SetAverageBits}, 
-    {"GetAverageBits", _wrap_AnalogModule_GetAverageBits}, 
-    {"SetOversampleBits", _wrap_AnalogModule_SetOversampleBits}, 
-    {"GetOversampleBits", _wrap_AnalogModule_GetOversampleBits}, 
-    {"GetValue", _wrap_AnalogModule_GetValue}, 
-    {"GetAverageValue", _wrap_AnalogModule_GetAverageValue}, 
-    {"GetAverageVoltage", _wrap_AnalogModule_GetAverageVoltage}, 
-    {"GetVoltage", _wrap_AnalogModule_GetVoltage}, 
-    {"GetLSBWeight", _wrap_AnalogModule_GetLSBWeight}, 
-    {"GetOffset", _wrap_AnalogModule_GetOffset}, 
-    {"VoltsToValue", _wrap_AnalogModule_VoltsToValue}, 
+static int _wrap_AnalogInput_GetAccumulatorValue(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  int64_t result;
+  
+  SWIG_check_num_args("AnalogInput::GetAccumulatorValue",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetAccumulatorValue",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetAccumulatorValue",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  result = (arg1)->GetAccumulatorValue();
+  {
+    int64_t * resultptr = new int64_t((const int64_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int64_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_GetAccumulatorCount(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  uint32_t result;
+  
+  SWIG_check_num_args("AnalogInput::GetAccumulatorCount",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetAccumulatorCount",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetAccumulatorCount",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  result = (arg1)->GetAccumulatorCount();
+  {
+    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_GetAccumulatorOutput(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  int64_t *arg2 = (int64_t *) 0 ;
+  uint32_t *arg3 = (uint32_t *) 0 ;
+  
+  SWIG_check_num_args("AnalogInput::GetAccumulatorOutput",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetAccumulatorOutput",1,"AnalogInput *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("AnalogInput::GetAccumulatorOutput",2,"int64_t *");
+  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("AnalogInput::GetAccumulatorOutput",3,"uint32_t *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetAccumulatorOutput",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_int64_t,0))){
+    SWIG_fail_ptr("AnalogInput_GetAccumulatorOutput",2,SWIGTYPE_p_int64_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("AnalogInput_GetAccumulatorOutput",3,SWIGTYPE_p_uint32_t);
+  }
+  
+  (arg1)->GetAccumulatorOutput(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_SetSampleRate(lua_State* L) {
+  int SWIG_arg = 0;
+  float arg1 ;
+  
+  SWIG_check_num_args("AnalogInput::SetSampleRate",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("AnalogInput::SetSampleRate",1,"float");
+  arg1 = (float)lua_tonumber(L, 1);
+  AnalogInput::SetSampleRate(arg1);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_GetSampleRate(lua_State* L) {
+  int SWIG_arg = 0;
+  float result;
+  
+  SWIG_check_num_args("AnalogInput::GetSampleRate",0,0)
+  result = (float)AnalogInput::GetSampleRate();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_PIDGet(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("AnalogInput::PIDGet",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::PIDGet",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_PIDGet",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  result = (double)(arg1)->PIDGet();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_UpdateTable(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  
+  SWIG_check_num_args("AnalogInput::UpdateTable",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::UpdateTable",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_UpdateTable",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  (arg1)->UpdateTable();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_StartLiveWindowMode(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  
+  SWIG_check_num_args("AnalogInput::StartLiveWindowMode",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::StartLiveWindowMode",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_StartLiveWindowMode",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  (arg1)->StartLiveWindowMode();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_StopLiveWindowMode(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  
+  SWIG_check_num_args("AnalogInput::StopLiveWindowMode",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::StopLiveWindowMode",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_StopLiveWindowMode",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  (arg1)->StopLiveWindowMode();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_GetSmartDashboardType(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  std::string result;
+  
+  SWIG_check_num_args("AnalogInput::GetSmartDashboardType",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetSmartDashboardType",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetSmartDashboardType",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  result = (arg1)->GetSmartDashboardType();
+  {
+    std::string * resultptr = new std::string((const std::string &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_InitTable(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  ITable *arg2 = (ITable *) 0 ;
+  
+  SWIG_check_num_args("AnalogInput::InitTable",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::InitTable",1,"AnalogInput *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("AnalogInput::InitTable",2,"ITable *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_InitTable",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
+    SWIG_fail_ptr("AnalogInput_InitTable",2,SWIGTYPE_p_ITable);
+  }
+  
+  (arg1)->InitTable(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogInput_GetTable(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
+  ITable *result = 0 ;
+  
+  SWIG_check_num_args("AnalogInput::GetTable",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogInput::GetTable",1,"AnalogInput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("AnalogInput_GetTable",1,SWIGTYPE_p_AnalogInput);
+  }
+  
+  result = (ITable *)(arg1)->GetTable();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ITable,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_AnalogInput(void *obj) {
+AnalogInput *arg1 = (AnalogInput *) obj;
+delete arg1;
+}
+static swig_lua_method swig_AnalogInput_methods[] = {
+    {"GetValue", _wrap_AnalogInput_GetValue}, 
+    {"GetAverageValue", _wrap_AnalogInput_GetAverageValue}, 
+    {"GetVoltage", _wrap_AnalogInput_GetVoltage}, 
+    {"GetAverageVoltage", _wrap_AnalogInput_GetAverageVoltage}, 
+    {"GetChannel", _wrap_AnalogInput_GetChannel}, 
+    {"SetAverageBits", _wrap_AnalogInput_SetAverageBits}, 
+    {"GetAverageBits", _wrap_AnalogInput_GetAverageBits}, 
+    {"SetOversampleBits", _wrap_AnalogInput_SetOversampleBits}, 
+    {"GetOversampleBits", _wrap_AnalogInput_GetOversampleBits}, 
+    {"GetLSBWeight", _wrap_AnalogInput_GetLSBWeight}, 
+    {"GetOffset", _wrap_AnalogInput_GetOffset}, 
+    {"IsAccumulatorChannel", _wrap_AnalogInput_IsAccumulatorChannel}, 
+    {"InitAccumulator", _wrap_AnalogInput_InitAccumulator}, 
+    {"SetAccumulatorInitialValue", _wrap_AnalogInput_SetAccumulatorInitialValue}, 
+    {"ResetAccumulator", _wrap_AnalogInput_ResetAccumulator}, 
+    {"SetAccumulatorCenter", _wrap_AnalogInput_SetAccumulatorCenter}, 
+    {"SetAccumulatorDeadband", _wrap_AnalogInput_SetAccumulatorDeadband}, 
+    {"GetAccumulatorValue", _wrap_AnalogInput_GetAccumulatorValue}, 
+    {"GetAccumulatorCount", _wrap_AnalogInput_GetAccumulatorCount}, 
+    {"GetAccumulatorOutput", _wrap_AnalogInput_GetAccumulatorOutput}, 
+    {"PIDGet", _wrap_AnalogInput_PIDGet}, 
+    {"UpdateTable", _wrap_AnalogInput_UpdateTable}, 
+    {"StartLiveWindowMode", _wrap_AnalogInput_StartLiveWindowMode}, 
+    {"StopLiveWindowMode", _wrap_AnalogInput_StopLiveWindowMode}, 
+    {"GetSmartDashboardType", _wrap_AnalogInput_GetSmartDashboardType}, 
+    {"InitTable", _wrap_AnalogInput_InitTable}, 
+    {"GetTable", _wrap_AnalogInput_GetTable}, 
     {0,0}
 };
-static swig_lua_attribute swig_AnalogModule_attributes[] = {
+static swig_lua_attribute swig_AnalogInput_attributes[] = {
     {0,0,0}
 };
-static swig_lua_attribute swig_AnalogModule_cls_attributes[] = {
+static swig_lua_attribute swig_AnalogInput_cls_attributes[] = {
+    { "kAccumulatorChannels", _wrap_AnalogInput_kAccumulatorChannels_get, SWIG_Lua_set_immutable},
     {0,0,0}
 };
-static swig_lua_method swig_AnalogModule_cls_methods[] = {
-    {"GetInstance", _wrap_AnalogModule_GetInstance}, 
+static swig_lua_method swig_AnalogInput_cls_methods[] = {
+    {"SetSampleRate", _wrap_AnalogInput_SetSampleRate}, 
+    {"GetSampleRate", _wrap_AnalogInput_GetSampleRate}, 
     {0,0}
 };
-static swig_lua_const_info swig_AnalogModule_cls_constants[] = {
-    {SWIG_LUA_CONSTTAB_INT("kTimebase", AnalogModule::kTimebase)},
-    {SWIG_LUA_CONSTTAB_INT("kDefaultOversampleBits", AnalogModule::kDefaultOversampleBits)},
-    {SWIG_LUA_CONSTTAB_INT("kDefaultAverageBits", AnalogModule::kDefaultAverageBits)},
-    {SWIG_LUA_CONSTTAB_FLOAT("kDefaultSampleRate", AnalogModule::kDefaultSampleRate)},
+static swig_lua_const_info swig_AnalogInput_cls_constants[] = {
     {0,0,0,0,0,0}
 };
-static swig_lua_class *swig_AnalogModule_bases[] = {0};
-static const char *swig_AnalogModule_base_names[] = {0};
-static swig_lua_class _wrap_class_AnalogModule = { "AnalogModule", &SWIGTYPE_p_AnalogModule,0,0, swig_AnalogModule_methods, swig_AnalogModule_attributes, { "AnalogModule", swig_AnalogModule_cls_methods, swig_AnalogModule_cls_attributes, swig_AnalogModule_cls_constants }, swig_AnalogModule_bases, swig_AnalogModule_base_names };
+static swig_lua_class *swig_AnalogInput_bases[] = {0};
+static const char *swig_AnalogInput_base_names[] = {0};
+static swig_lua_class _wrap_class_AnalogInput = { "AnalogInput", &SWIGTYPE_p_AnalogInput,_wrap_new_AnalogInput, swig_delete_AnalogInput, swig_AnalogInput_methods, swig_AnalogInput_attributes, { "AnalogInput", swig_AnalogInput_cls_methods, swig_AnalogInput_cls_attributes, swig_AnalogInput_cls_constants }, swig_AnalogInput_bases, swig_AnalogInput_base_names };
 
-static int _wrap_new_AnalogTrigger__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  AnalogTrigger *result = 0 ;
-  
-  SWIG_check_num_args("AnalogTrigger::AnalogTrigger",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("AnalogTrigger::AnalogTrigger",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogTrigger::AnalogTrigger",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_AnalogTrigger",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_AnalogTrigger",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (AnalogTrigger *)new AnalogTrigger(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_AnalogTrigger,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_AnalogTrigger__SWIG_1(lua_State* L) {
+static int _wrap_new_AnalogOutput(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
   uint32_t *argp1 ;
+  AnalogOutput *result = 0 ;
+  
+  SWIG_check_num_args("AnalogOutput::AnalogOutput",1,1)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("AnalogOutput::AnalogOutput",1,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("new_AnalogOutput",1,SWIGTYPE_p_uint32_t);
+  }
+  arg1 = *argp1;
+  
+  result = (AnalogOutput *)new AnalogOutput(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_AnalogOutput,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogOutput_SetVoltage(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogOutput *arg1 = (AnalogOutput *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("AnalogOutput::SetVoltage",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogOutput::SetVoltage",1,"AnalogOutput *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("AnalogOutput::SetVoltage",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogOutput,0))){
+    SWIG_fail_ptr("AnalogOutput_SetVoltage",1,SWIGTYPE_p_AnalogOutput);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->SetVoltage(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogOutput_GetVoltage(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogOutput *arg1 = (AnalogOutput *) 0 ;
+  float result;
+  
+  SWIG_check_num_args("AnalogOutput::GetVoltage",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogOutput::GetVoltage",1,"AnalogOutput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogOutput,0))){
+    SWIG_fail_ptr("AnalogOutput_GetVoltage",1,SWIGTYPE_p_AnalogOutput);
+  }
+  
+  result = (float)(arg1)->GetVoltage();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogOutput_UpdateTable(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogOutput *arg1 = (AnalogOutput *) 0 ;
+  
+  SWIG_check_num_args("AnalogOutput::UpdateTable",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogOutput::UpdateTable",1,"AnalogOutput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogOutput,0))){
+    SWIG_fail_ptr("AnalogOutput_UpdateTable",1,SWIGTYPE_p_AnalogOutput);
+  }
+  
+  (arg1)->UpdateTable();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogOutput_StartLiveWindowMode(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogOutput *arg1 = (AnalogOutput *) 0 ;
+  
+  SWIG_check_num_args("AnalogOutput::StartLiveWindowMode",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogOutput::StartLiveWindowMode",1,"AnalogOutput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogOutput,0))){
+    SWIG_fail_ptr("AnalogOutput_StartLiveWindowMode",1,SWIGTYPE_p_AnalogOutput);
+  }
+  
+  (arg1)->StartLiveWindowMode();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogOutput_StopLiveWindowMode(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogOutput *arg1 = (AnalogOutput *) 0 ;
+  
+  SWIG_check_num_args("AnalogOutput::StopLiveWindowMode",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogOutput::StopLiveWindowMode",1,"AnalogOutput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogOutput,0))){
+    SWIG_fail_ptr("AnalogOutput_StopLiveWindowMode",1,SWIGTYPE_p_AnalogOutput);
+  }
+  
+  (arg1)->StopLiveWindowMode();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogOutput_GetSmartDashboardType(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogOutput *arg1 = (AnalogOutput *) 0 ;
+  std::string result;
+  
+  SWIG_check_num_args("AnalogOutput::GetSmartDashboardType",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogOutput::GetSmartDashboardType",1,"AnalogOutput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogOutput,0))){
+    SWIG_fail_ptr("AnalogOutput_GetSmartDashboardType",1,SWIGTYPE_p_AnalogOutput);
+  }
+  
+  result = (arg1)->GetSmartDashboardType();
+  {
+    std::string * resultptr = new std::string((const std::string &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogOutput_InitTable(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogOutput *arg1 = (AnalogOutput *) 0 ;
+  ITable *arg2 = (ITable *) 0 ;
+  
+  SWIG_check_num_args("AnalogOutput::InitTable",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogOutput::InitTable",1,"AnalogOutput *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("AnalogOutput::InitTable",2,"ITable *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogOutput,0))){
+    SWIG_fail_ptr("AnalogOutput_InitTable",1,SWIGTYPE_p_AnalogOutput);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
+    SWIG_fail_ptr("AnalogOutput_InitTable",2,SWIGTYPE_p_ITable);
+  }
+  
+  (arg1)->InitTable(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AnalogOutput_GetTable(lua_State* L) {
+  int SWIG_arg = 0;
+  AnalogOutput *arg1 = (AnalogOutput *) 0 ;
+  ITable *result = 0 ;
+  
+  SWIG_check_num_args("AnalogOutput::GetTable",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogOutput::GetTable",1,"AnalogOutput *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogOutput,0))){
+    SWIG_fail_ptr("AnalogOutput_GetTable",1,SWIGTYPE_p_AnalogOutput);
+  }
+  
+  result = (ITable *)(arg1)->GetTable();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ITable,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_AnalogOutput(void *obj) {
+AnalogOutput *arg1 = (AnalogOutput *) obj;
+delete arg1;
+}
+static swig_lua_method swig_AnalogOutput_methods[] = {
+    {"SetVoltage", _wrap_AnalogOutput_SetVoltage}, 
+    {"GetVoltage", _wrap_AnalogOutput_GetVoltage}, 
+    {"UpdateTable", _wrap_AnalogOutput_UpdateTable}, 
+    {"StartLiveWindowMode", _wrap_AnalogOutput_StartLiveWindowMode}, 
+    {"StopLiveWindowMode", _wrap_AnalogOutput_StopLiveWindowMode}, 
+    {"GetSmartDashboardType", _wrap_AnalogOutput_GetSmartDashboardType}, 
+    {"InitTable", _wrap_AnalogOutput_InitTable}, 
+    {"GetTable", _wrap_AnalogOutput_GetTable}, 
+    {0,0}
+};
+static swig_lua_attribute swig_AnalogOutput_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_attribute swig_AnalogOutput_cls_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_method swig_AnalogOutput_cls_methods[] = {
+    {0,0}
+};
+static swig_lua_const_info swig_AnalogOutput_cls_constants[] = {
+    {0,0,0,0,0,0}
+};
+static swig_lua_class *swig_AnalogOutput_bases[] = {0};
+static const char *swig_AnalogOutput_base_names[] = {0};
+static swig_lua_class _wrap_class_AnalogOutput = { "AnalogOutput", &SWIGTYPE_p_AnalogOutput,_wrap_new_AnalogOutput, swig_delete_AnalogOutput, swig_AnalogOutput_methods, swig_AnalogOutput_attributes, { "AnalogOutput", swig_AnalogOutput_cls_methods, swig_AnalogOutput_cls_attributes, swig_AnalogOutput_cls_constants }, swig_AnalogOutput_bases, swig_AnalogOutput_base_names };
+
+static int _wrap_new_AnalogTrigger__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t arg1 ;
+  int32_t *argp1 ;
   AnalogTrigger *result = 0 ;
   
   SWIG_check_num_args("AnalogTrigger::AnalogTrigger",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("AnalogTrigger::AnalogTrigger",1,"uint32_t");
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("AnalogTrigger::AnalogTrigger",1,"int32_t");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_AnalogTrigger",1,SWIGTYPE_p_uint32_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_int32_t,0))){
+    SWIG_fail_ptr("new_AnalogTrigger",1,SWIGTYPE_p_int32_t);
   }
   arg1 = *argp1;
   
@@ -4972,16 +4143,16 @@ fail:
 }
 
 
-static int _wrap_new_AnalogTrigger__SWIG_2(lua_State* L) {
+static int _wrap_new_AnalogTrigger__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
   AnalogTrigger *result = 0 ;
   
   SWIG_check_num_args("AnalogTrigger::AnalogTrigger",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogTrigger::AnalogTrigger",1,"AnalogChannel *");
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogTrigger::AnalogTrigger",1,"AnalogInput *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("new_AnalogTrigger",1,SWIGTYPE_p_AnalogChannel);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("new_AnalogTrigger",1,SWIGTYPE_p_AnalogInput);
   }
   
   result = (AnalogTrigger *)new AnalogTrigger(arg1);
@@ -4998,8 +4169,8 @@ fail:
 
 static int _wrap_new_AnalogTrigger(lua_State* L) {
   int argc;
-  int argv[3]={
-    1,2,3
+  int argv[2]={
+    1,2
   };
   
   argc = lua_gettop(L);
@@ -5007,7 +4178,21 @@ static int _wrap_new_AnalogTrigger(lua_State* L) {
     int _v;
     {
       void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_int32_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_new_AnalogTrigger__SWIG_0(L);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_AnalogInput, 0)) {
         _v = 0;
       } else {
         _v = 1;
@@ -5017,50 +4202,11 @@ static int _wrap_new_AnalogTrigger(lua_State* L) {
       return _wrap_new_AnalogTrigger__SWIG_1(L);
     }
   }
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_AnalogChannel, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_AnalogTrigger__SWIG_2(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_AnalogTrigger__SWIG_0(L);
-      }
-    }
-  }
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_AnalogTrigger'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    AnalogTrigger::AnalogTrigger(uint8_t,uint32_t)\n"
-    "    AnalogTrigger::AnalogTrigger(uint32_t)\n"
-    "    AnalogTrigger::AnalogTrigger(AnalogChannel *)\n");
+    "    AnalogTrigger::AnalogTrigger(int32_t)\n"
+    "    AnalogTrigger::AnalogTrigger(AnalogInput *)\n");
   lua_error(L);return 0;
 }
 
@@ -5265,18 +4411,24 @@ fail:
 static int _wrap_AnalogTrigger_CreateOutput(lua_State* L) {
   int SWIG_arg = 0;
   AnalogTrigger *arg1 = (AnalogTrigger *) 0 ;
-  AnalogTriggerOutput::Type arg2 ;
+  AnalogTriggerType arg2 ;
+  AnalogTriggerType *argp2 ;
   AnalogTriggerOutput *result = 0 ;
   
   SWIG_check_num_args("AnalogTrigger::CreateOutput",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogTrigger::CreateOutput",1,"AnalogTrigger *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("AnalogTrigger::CreateOutput",2,"AnalogTriggerOutput::Type");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogTrigger::CreateOutput",2,"AnalogTriggerType");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogTrigger,0))){
     SWIG_fail_ptr("AnalogTrigger_CreateOutput",1,SWIGTYPE_p_AnalogTrigger);
   }
   
-  arg2 = (AnalogTriggerOutput::Type)(int)lua_tonumber(L, 2);
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_AnalogTriggerType,0))){
+    SWIG_fail_ptr("AnalogTrigger_CreateOutput",2,SWIGTYPE_p_AnalogTriggerType);
+  }
+  arg2 = *argp2;
+  
   result = (AnalogTriggerOutput *)(arg1)->CreateOutput(arg2);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_AnalogTriggerOutput,0); SWIG_arg++; 
   return SWIG_arg;
@@ -5422,185 +4574,6 @@ fail:
 }
 
 
-static int _wrap_AnalogTriggerOutput_RequestInterrupts__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogTriggerOutput *arg1 = (AnalogTriggerOutput *) 0 ;
-  tInterruptHandler arg2 ;
-  void *arg3 = (void *) 0 ;
-  tInterruptHandler *argp2 ;
-  
-  SWIG_check_num_args("AnalogTriggerOutput::RequestInterrupts",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogTriggerOutput::RequestInterrupts",1,"AnalogTriggerOutput *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogTriggerOutput::RequestInterrupts",2,"tInterruptHandler");
-  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("AnalogTriggerOutput::RequestInterrupts",3,"void *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogTriggerOutput,0))){
-    SWIG_fail_ptr("AnalogTriggerOutput_RequestInterrupts",1,SWIGTYPE_p_AnalogTriggerOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_tInterruptHandler,0))){
-    SWIG_fail_ptr("AnalogTriggerOutput_RequestInterrupts",2,SWIGTYPE_p_tInterruptHandler);
-  }
-  arg2 = *argp2;
-  
-  arg3=(void *)SWIG_MustGetPtr(L,3,0,0,3,"AnalogTriggerOutput_RequestInterrupts");
-  (arg1)->RequestInterrupts(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogTriggerOutput_RequestInterrupts__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogTriggerOutput *arg1 = (AnalogTriggerOutput *) 0 ;
-  tInterruptHandler arg2 ;
-  tInterruptHandler *argp2 ;
-  
-  SWIG_check_num_args("AnalogTriggerOutput::RequestInterrupts",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogTriggerOutput::RequestInterrupts",1,"AnalogTriggerOutput *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("AnalogTriggerOutput::RequestInterrupts",2,"tInterruptHandler");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogTriggerOutput,0))){
-    SWIG_fail_ptr("AnalogTriggerOutput_RequestInterrupts",1,SWIGTYPE_p_AnalogTriggerOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_tInterruptHandler,0))){
-    SWIG_fail_ptr("AnalogTriggerOutput_RequestInterrupts",2,SWIGTYPE_p_tInterruptHandler);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->RequestInterrupts(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogTriggerOutput_RequestInterrupts__SWIG_2(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogTriggerOutput *arg1 = (AnalogTriggerOutput *) 0 ;
-  
-  SWIG_check_num_args("AnalogTriggerOutput::RequestInterrupts",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogTriggerOutput::RequestInterrupts",1,"AnalogTriggerOutput *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogTriggerOutput,0))){
-    SWIG_fail_ptr("AnalogTriggerOutput_RequestInterrupts",1,SWIGTYPE_p_AnalogTriggerOutput);
-  }
-  
-  (arg1)->RequestInterrupts();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogTriggerOutput_RequestInterrupts(lua_State* L) {
-  int argc;
-  int argv[4]={
-    1,2,3,4
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_AnalogTriggerOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_AnalogTriggerOutput_RequestInterrupts__SWIG_2(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_AnalogTriggerOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_tInterruptHandler, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_AnalogTriggerOutput_RequestInterrupts__SWIG_1(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_AnalogTriggerOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_tInterruptHandler, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, 0, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          return _wrap_AnalogTriggerOutput_RequestInterrupts__SWIG_0(L);
-        }
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'AnalogTriggerOutput_RequestInterrupts'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    AnalogTriggerOutput::RequestInterrupts(tInterruptHandler,void *)\n"
-    "    AnalogTriggerOutput::RequestInterrupts(tInterruptHandler)\n"
-    "    AnalogTriggerOutput::RequestInterrupts()\n");
-  lua_error(L);return 0;
-}
-
-
 static void swig_delete_AnalogTriggerOutput(void *obj) {
 AnalogTriggerOutput *arg1 = (AnalogTriggerOutput *) obj;
 delete arg1;
@@ -5610,7 +4583,6 @@ static swig_lua_method swig_AnalogTriggerOutput_methods[] = {
     {"GetChannelForRouting", _wrap_AnalogTriggerOutput_GetChannelForRouting}, 
     {"GetModuleForRouting", _wrap_AnalogTriggerOutput_GetModuleForRouting}, 
     {"GetAnalogTriggerForRouting", _wrap_AnalogTriggerOutput_GetAnalogTriggerForRouting}, 
-    {"RequestInterrupts", _wrap_AnalogTriggerOutput_RequestInterrupts}, 
     {0,0}
 };
 static swig_lua_attribute swig_AnalogTriggerOutput_attributes[] = {
@@ -5623,187 +4595,11 @@ static swig_lua_method swig_AnalogTriggerOutput_cls_methods[] = {
     {0,0}
 };
 static swig_lua_const_info swig_AnalogTriggerOutput_cls_constants[] = {
-    {SWIG_LUA_CONSTTAB_INT("kInWindow", AnalogTriggerOutput::kInWindow)},
-    {SWIG_LUA_CONSTTAB_INT("kState", AnalogTriggerOutput::kState)},
-    {SWIG_LUA_CONSTTAB_INT("kRisingPulse", AnalogTriggerOutput::kRisingPulse)},
-    {SWIG_LUA_CONSTTAB_INT("kFallingPulse", AnalogTriggerOutput::kFallingPulse)},
     {0,0,0,0,0,0}
 };
 static swig_lua_class *swig_AnalogTriggerOutput_bases[] = {0};
 static const char *swig_AnalogTriggerOutput_base_names[] = {0};
 static swig_lua_class _wrap_class_AnalogTriggerOutput = { "AnalogTriggerOutput", &SWIGTYPE_p_AnalogTriggerOutput,0, swig_delete_AnalogTriggerOutput, swig_AnalogTriggerOutput_methods, swig_AnalogTriggerOutput_attributes, { "AnalogTriggerOutput", swig_AnalogTriggerOutput_cls_methods, swig_AnalogTriggerOutput_cls_attributes, swig_AnalogTriggerOutput_cls_constants }, swig_AnalogTriggerOutput_bases, swig_AnalogTriggerOutput_base_names };
-
-static int _wrap_AnalogIOButton_kThreshold_get(lua_State* L) {
-  int SWIG_arg = 0;
-  double result;
-  
-  SWIG_check_num_args("AnalogIOButton::kThreshold",0,0)
-  result = (double)(double)AnalogIOButton::kThreshold;
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_AnalogIOButton(lua_State* L) {
-  int SWIG_arg = 0;
-  int arg1 ;
-  AnalogIOButton *result = 0 ;
-  
-  SWIG_check_num_args("AnalogIOButton::AnalogIOButton",1,1)
-  if(!lua_isnumber(L,1)) SWIG_fail_arg("AnalogIOButton::AnalogIOButton",1,"int");
-  arg1 = (int)lua_tonumber(L, 1);
-  result = (AnalogIOButton *)new AnalogIOButton(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_AnalogIOButton,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AnalogIOButton_Get(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogIOButton *arg1 = (AnalogIOButton *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("AnalogIOButton::Get",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AnalogIOButton::Get",1,"AnalogIOButton *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogIOButton,0))){
-    SWIG_fail_ptr("AnalogIOButton_Get",1,SWIGTYPE_p_AnalogIOButton);
-  }
-  
-  result = (bool)(arg1)->Get();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_AnalogIOButton(void *obj) {
-AnalogIOButton *arg1 = (AnalogIOButton *) obj;
-delete arg1;
-}
-static swig_lua_method swig_AnalogIOButton_methods[] = {
-    {"Get", _wrap_AnalogIOButton_Get}, 
-    {0,0}
-};
-static swig_lua_attribute swig_AnalogIOButton_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_AnalogIOButton_cls_attributes[] = {
-    { "kThreshold", _wrap_AnalogIOButton_kThreshold_get, SWIG_Lua_set_immutable},
-    {0,0,0}
-};
-static swig_lua_method swig_AnalogIOButton_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_AnalogIOButton_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_AnalogIOButton_bases[] = {0};
-static const char *swig_AnalogIOButton_base_names[] = {0};
-static swig_lua_class _wrap_class_AnalogIOButton = { "AnalogIOButton", &SWIGTYPE_p_AnalogIOButton,_wrap_new_AnalogIOButton, swig_delete_AnalogIOButton, swig_AnalogIOButton_methods, swig_AnalogIOButton_attributes, { "AnalogIOButton", swig_AnalogIOButton_cls_methods, swig_AnalogIOButton_cls_attributes, swig_AnalogIOButton_cls_constants }, swig_AnalogIOButton_bases, swig_AnalogIOButton_base_names };
-
-static int _wrap_DigitalIOButton_kActiveState_get(lua_State* L) {
-  int SWIG_arg = 0;
-  bool result;
-  
-  SWIG_check_num_args("DigitalIOButton::kActiveState",0,0)
-  result = (bool)(bool)DigitalIOButton::kActiveState;
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_DigitalIOButton(lua_State* L) {
-  int SWIG_arg = 0;
-  int arg1 ;
-  DigitalIOButton *result = 0 ;
-  
-  SWIG_check_num_args("DigitalIOButton::DigitalIOButton",1,1)
-  if(!lua_isnumber(L,1)) SWIG_fail_arg("DigitalIOButton::DigitalIOButton",1,"int");
-  arg1 = (int)lua_tonumber(L, 1);
-  result = (DigitalIOButton *)new DigitalIOButton(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_DigitalIOButton,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalIOButton_Get(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalIOButton *arg1 = (DigitalIOButton *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("DigitalIOButton::Get",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalIOButton::Get",1,"DigitalIOButton *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalIOButton,0))){
-    SWIG_fail_ptr("DigitalIOButton_Get",1,SWIGTYPE_p_DigitalIOButton);
-  }
-  
-  result = (bool)(arg1)->Get();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_DigitalIOButton(void *obj) {
-DigitalIOButton *arg1 = (DigitalIOButton *) obj;
-delete arg1;
-}
-static swig_lua_method swig_DigitalIOButton_methods[] = {
-    {"Get", _wrap_DigitalIOButton_Get}, 
-    {0,0}
-};
-static swig_lua_attribute swig_DigitalIOButton_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_DigitalIOButton_cls_attributes[] = {
-    { "kActiveState", _wrap_DigitalIOButton_kActiveState_get, SWIG_Lua_set_immutable},
-    {0,0,0}
-};
-static swig_lua_method swig_DigitalIOButton_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_DigitalIOButton_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_DigitalIOButton_bases[] = {0};
-static const char *swig_DigitalIOButton_base_names[] = {0};
-static swig_lua_class _wrap_class_DigitalIOButton = { "DigitalIOButton", &SWIGTYPE_p_DigitalIOButton,_wrap_new_DigitalIOButton, swig_delete_DigitalIOButton, swig_DigitalIOButton_methods, swig_DigitalIOButton_attributes, { "DigitalIOButton", swig_DigitalIOButton_cls_methods, swig_DigitalIOButton_cls_attributes, swig_DigitalIOButton_cls_constants }, swig_DigitalIOButton_bases, swig_DigitalIOButton_base_names };
 
 static int _wrap_new_InternalButton__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
@@ -6194,4147 +4990,21 @@ static swig_lua_class *swig_NetworkButton_bases[] = {0};
 static const char *swig_NetworkButton_base_names[] = {0};
 static swig_lua_class _wrap_class_NetworkButton = { "NetworkButton", &SWIGTYPE_p_NetworkButton,_wrap_new_NetworkButton, swig_delete_NetworkButton, swig_NetworkButton_methods, swig_NetworkButton_attributes, { "NetworkButton", swig_NetworkButton_cls_methods, swig_NetworkButton_cls_attributes, swig_NetworkButton_cls_constants }, swig_NetworkButton_bases, swig_NetworkButton_base_names };
 
-static int _wrap_new_CANJaguar__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  CANJaguar::ControlMode arg2 ;
-  uint8_t *argp1 ;
-  CANJaguar *result = 0 ;
-  
-  SWIG_check_num_args("CANJaguar::CANJaguar",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("CANJaguar::CANJaguar",1,"uint8_t");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::CANJaguar",2,"CANJaguar::ControlMode");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_CANJaguar",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  arg2 = (CANJaguar::ControlMode)(int)lua_tonumber(L, 2);
-  result = (CANJaguar *)new CANJaguar(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_CANJaguar,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_CANJaguar__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint8_t *argp1 ;
-  CANJaguar *result = 0 ;
-  
-  SWIG_check_num_args("CANJaguar::CANJaguar",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("CANJaguar::CANJaguar",1,"uint8_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_CANJaguar",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  result = (CANJaguar *)new CANJaguar(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_CANJaguar,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_CANJaguar(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_CANJaguar__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_new_CANJaguar__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_CANJaguar'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    CANJaguar::CANJaguar(uint8_t,CANJaguar::ControlMode)\n"
-    "    CANJaguar::CANJaguar(uint8_t)\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_CANJaguar_Get(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("CANJaguar::Get",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::Get",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_Get",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (float)(arg1)->Get();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_Set__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  float arg2 ;
-  uint8_t arg3 ;
-  uint8_t *argp3 ;
-  
-  SWIG_check_num_args("CANJaguar::Set",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::Set",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::Set",2,"float");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("CANJaguar::Set",3,"uint8_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_Set",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("CANJaguar_Set",3,SWIGTYPE_p_uint8_t);
-  }
-  arg3 = *argp3;
-  
-  (arg1)->Set(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_Set__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  float arg2 ;
-  
-  SWIG_check_num_args("CANJaguar::Set",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::Set",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::Set",2,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_Set",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->Set(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_Set(lua_State* L) {
-  int argc;
-  int argv[4]={
-    1,2,3,4
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_CANJaguar, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_CANJaguar_Set__SWIG_1(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_CANJaguar, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          return _wrap_CANJaguar_Set__SWIG_0(L);
-        }
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'CANJaguar_Set'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    CANJaguar::Set(float,uint8_t)\n"
-    "    CANJaguar::Set(float)\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_CANJaguar_Disable(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  
-  SWIG_check_num_args("CANJaguar::Disable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::Disable",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_Disable",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  (arg1)->Disable();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_PIDWrite(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  float arg2 ;
-  
-  SWIG_check_num_args("CANJaguar::PIDWrite",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::PIDWrite",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::PIDWrite",2,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_PIDWrite",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->PIDWrite(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_SetSpeedReference(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  CANJaguar::SpeedReference arg2 ;
-  
-  SWIG_check_num_args("CANJaguar::SetSpeedReference",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::SetSpeedReference",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::SetSpeedReference",2,"CANJaguar::SpeedReference");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_SetSpeedReference",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (CANJaguar::SpeedReference)(int)lua_tonumber(L, 2);
-  (arg1)->SetSpeedReference(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetSpeedReference(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  CANJaguar::SpeedReference result;
-  
-  SWIG_check_num_args("CANJaguar::GetSpeedReference",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetSpeedReference",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetSpeedReference",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (CANJaguar::SpeedReference)(arg1)->GetSpeedReference();
-  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_SetPositionReference(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  CANJaguar::PositionReference arg2 ;
-  
-  SWIG_check_num_args("CANJaguar::SetPositionReference",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::SetPositionReference",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::SetPositionReference",2,"CANJaguar::PositionReference");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_SetPositionReference",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (CANJaguar::PositionReference)(int)lua_tonumber(L, 2);
-  (arg1)->SetPositionReference(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetPositionReference(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  CANJaguar::PositionReference result;
-  
-  SWIG_check_num_args("CANJaguar::GetPositionReference",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetPositionReference",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetPositionReference",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (CANJaguar::PositionReference)(arg1)->GetPositionReference();
-  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_SetPID(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  double arg2 ;
-  double arg3 ;
-  double arg4 ;
-  
-  SWIG_check_num_args("CANJaguar::SetPID",4,4)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::SetPID",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::SetPID",2,"double");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("CANJaguar::SetPID",3,"double");
-  if(!lua_isnumber(L,4)) SWIG_fail_arg("CANJaguar::SetPID",4,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_SetPID",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (double)lua_tonumber(L, 2);
-  arg3 = (double)lua_tonumber(L, 3);
-  arg4 = (double)lua_tonumber(L, 4);
-  (arg1)->SetPID(arg2,arg3,arg4);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetP(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("CANJaguar::GetP",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetP",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetP",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (double)(arg1)->GetP();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetI(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("CANJaguar::GetI",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetI",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetI",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (double)(arg1)->GetI();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetD(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("CANJaguar::GetD",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetD",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetD",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (double)(arg1)->GetD();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_EnableControl__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  double arg2 ;
-  
-  SWIG_check_num_args("CANJaguar::EnableControl",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::EnableControl",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::EnableControl",2,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_EnableControl",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (double)lua_tonumber(L, 2);
-  (arg1)->EnableControl(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_EnableControl__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  
-  SWIG_check_num_args("CANJaguar::EnableControl",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::EnableControl",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_EnableControl",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  (arg1)->EnableControl();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_EnableControl(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_CANJaguar, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_CANJaguar_EnableControl__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_CANJaguar, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_CANJaguar_EnableControl__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'CANJaguar_EnableControl'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    CANJaguar::EnableControl(double)\n"
-    "    CANJaguar::EnableControl()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_CANJaguar_DisableControl(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  
-  SWIG_check_num_args("CANJaguar::DisableControl",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::DisableControl",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_DisableControl",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  (arg1)->DisableControl();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_ChangeControlMode(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  CANJaguar::ControlMode arg2 ;
-  
-  SWIG_check_num_args("CANJaguar::ChangeControlMode",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::ChangeControlMode",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::ChangeControlMode",2,"CANJaguar::ControlMode");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_ChangeControlMode",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (CANJaguar::ControlMode)(int)lua_tonumber(L, 2);
-  (arg1)->ChangeControlMode(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetControlMode(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  CANJaguar::ControlMode result;
-  
-  SWIG_check_num_args("CANJaguar::GetControlMode",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetControlMode",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetControlMode",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (CANJaguar::ControlMode)(arg1)->GetControlMode();
-  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetBusVoltage(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("CANJaguar::GetBusVoltage",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetBusVoltage",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetBusVoltage",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (float)(arg1)->GetBusVoltage();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetOutputVoltage(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("CANJaguar::GetOutputVoltage",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetOutputVoltage",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetOutputVoltage",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (float)(arg1)->GetOutputVoltage();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetOutputCurrent(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("CANJaguar::GetOutputCurrent",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetOutputCurrent",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetOutputCurrent",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (float)(arg1)->GetOutputCurrent();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetTemperature(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("CANJaguar::GetTemperature",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetTemperature",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetTemperature",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (float)(arg1)->GetTemperature();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetPosition(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("CANJaguar::GetPosition",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetPosition",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetPosition",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (double)(arg1)->GetPosition();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetSpeed(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("CANJaguar::GetSpeed",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetSpeed",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetSpeed",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (double)(arg1)->GetSpeed();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetForwardLimitOK(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("CANJaguar::GetForwardLimitOK",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetForwardLimitOK",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetForwardLimitOK",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (bool)(arg1)->GetForwardLimitOK();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetReverseLimitOK(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("CANJaguar::GetReverseLimitOK",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetReverseLimitOK",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetReverseLimitOK",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (bool)(arg1)->GetReverseLimitOK();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetFaults(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  uint16_t result;
-  
-  SWIG_check_num_args("CANJaguar::GetFaults",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetFaults",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetFaults",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (arg1)->GetFaults();
-  {
-    uint16_t * resultptr = new uint16_t((const uint16_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint16_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetPowerCycled(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("CANJaguar::GetPowerCycled",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetPowerCycled",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetPowerCycled",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (bool)(arg1)->GetPowerCycled();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_SetVoltageRampRate(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  double arg2 ;
-  
-  SWIG_check_num_args("CANJaguar::SetVoltageRampRate",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::SetVoltageRampRate",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::SetVoltageRampRate",2,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_SetVoltageRampRate",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (double)lua_tonumber(L, 2);
-  (arg1)->SetVoltageRampRate(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetFirmwareVersion(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("CANJaguar::GetFirmwareVersion",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetFirmwareVersion",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetFirmwareVersion",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (arg1)->GetFirmwareVersion();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetHardwareVersion(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  uint8_t result;
-  
-  SWIG_check_num_args("CANJaguar::GetHardwareVersion",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetHardwareVersion",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetHardwareVersion",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (arg1)->GetHardwareVersion();
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_ConfigNeutralMode(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  CANJaguar::NeutralMode arg2 ;
-  
-  SWIG_check_num_args("CANJaguar::ConfigNeutralMode",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::ConfigNeutralMode",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::ConfigNeutralMode",2,"CANJaguar::NeutralMode");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_ConfigNeutralMode",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (CANJaguar::NeutralMode)(int)lua_tonumber(L, 2);
-  (arg1)->ConfigNeutralMode(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_ConfigEncoderCodesPerRev(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  uint16_t arg2 ;
-  uint16_t *argp2 ;
-  
-  SWIG_check_num_args("CANJaguar::ConfigEncoderCodesPerRev",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::ConfigEncoderCodesPerRev",1,"CANJaguar *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("CANJaguar::ConfigEncoderCodesPerRev",2,"uint16_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_ConfigEncoderCodesPerRev",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint16_t,0))){
-    SWIG_fail_ptr("CANJaguar_ConfigEncoderCodesPerRev",2,SWIGTYPE_p_uint16_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->ConfigEncoderCodesPerRev(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_ConfigPotentiometerTurns(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  uint16_t arg2 ;
-  uint16_t *argp2 ;
-  
-  SWIG_check_num_args("CANJaguar::ConfigPotentiometerTurns",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::ConfigPotentiometerTurns",1,"CANJaguar *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("CANJaguar::ConfigPotentiometerTurns",2,"uint16_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_ConfigPotentiometerTurns",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint16_t,0))){
-    SWIG_fail_ptr("CANJaguar_ConfigPotentiometerTurns",2,SWIGTYPE_p_uint16_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->ConfigPotentiometerTurns(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_ConfigSoftPositionLimits(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  double arg2 ;
-  double arg3 ;
-  
-  SWIG_check_num_args("CANJaguar::ConfigSoftPositionLimits",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::ConfigSoftPositionLimits",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::ConfigSoftPositionLimits",2,"double");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("CANJaguar::ConfigSoftPositionLimits",3,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_ConfigSoftPositionLimits",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (double)lua_tonumber(L, 2);
-  arg3 = (double)lua_tonumber(L, 3);
-  (arg1)->ConfigSoftPositionLimits(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_DisableSoftPositionLimits(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  
-  SWIG_check_num_args("CANJaguar::DisableSoftPositionLimits",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::DisableSoftPositionLimits",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_DisableSoftPositionLimits",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  (arg1)->DisableSoftPositionLimits();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_ConfigMaxOutputVoltage(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  double arg2 ;
-  
-  SWIG_check_num_args("CANJaguar::ConfigMaxOutputVoltage",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::ConfigMaxOutputVoltage",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::ConfigMaxOutputVoltage",2,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_ConfigMaxOutputVoltage",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (double)lua_tonumber(L, 2);
-  (arg1)->ConfigMaxOutputVoltage(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_ConfigFaultTime(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  float arg2 ;
-  
-  SWIG_check_num_args("CANJaguar::ConfigFaultTime",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::ConfigFaultTime",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::ConfigFaultTime",2,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_ConfigFaultTime",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->ConfigFaultTime(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_UpdateSyncGroup(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint8_t *argp1 ;
-  
-  SWIG_check_num_args("CANJaguar::UpdateSyncGroup",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("CANJaguar::UpdateSyncGroup",1,"uint8_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("CANJaguar_UpdateSyncGroup",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  CANJaguar::UpdateSyncGroup(arg1);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_SetExpiration(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  float arg2 ;
-  
-  SWIG_check_num_args("CANJaguar::SetExpiration",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::SetExpiration",1,"CANJaguar *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("CANJaguar::SetExpiration",2,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_SetExpiration",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->SetExpiration(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetExpiration(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("CANJaguar::GetExpiration",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetExpiration",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetExpiration",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (float)(arg1)->GetExpiration();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_IsAlive(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("CANJaguar::IsAlive",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::IsAlive",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_IsAlive",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (bool)(arg1)->IsAlive();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_StopMotor(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  
-  SWIG_check_num_args("CANJaguar::StopMotor",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::StopMotor",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_StopMotor",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  (arg1)->StopMotor();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_IsSafetyEnabled(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("CANJaguar::IsSafetyEnabled",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::IsSafetyEnabled",1,"CANJaguar *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_IsSafetyEnabled",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  result = (bool)(arg1)->IsSafetyEnabled();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_SetSafetyEnabled(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  bool arg2 ;
-  
-  SWIG_check_num_args("CANJaguar::SetSafetyEnabled",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::SetSafetyEnabled",1,"CANJaguar *");
-  if(!lua_isboolean(L,2)) SWIG_fail_arg("CANJaguar::SetSafetyEnabled",2,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_SetSafetyEnabled",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (lua_toboolean(L, 2)!=0);
-  (arg1)->SetSafetyEnabled(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CANJaguar_GetDescription(lua_State* L) {
-  int SWIG_arg = 0;
-  CANJaguar *arg1 = (CANJaguar *) 0 ;
-  char *arg2 = (char *) 0 ;
-  
-  SWIG_check_num_args("CANJaguar::GetDescription",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CANJaguar::GetDescription",1,"CANJaguar *");
-  if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("CANJaguar::GetDescription",2,"char *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CANJaguar,0))){
-    SWIG_fail_ptr("CANJaguar_GetDescription",1,SWIGTYPE_p_CANJaguar);
-  }
-  
-  arg2 = (char *)lua_tostring(L, 2);
-  (arg1)->GetDescription(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_CANJaguar(void *obj) {
-CANJaguar *arg1 = (CANJaguar *) obj;
-delete arg1;
-}
-static swig_lua_method swig_CANJaguar_methods[] = {
-    {"Get", _wrap_CANJaguar_Get}, 
-    {"Set", _wrap_CANJaguar_Set}, 
-    {"Disable", _wrap_CANJaguar_Disable}, 
-    {"PIDWrite", _wrap_CANJaguar_PIDWrite}, 
-    {"SetSpeedReference", _wrap_CANJaguar_SetSpeedReference}, 
-    {"GetSpeedReference", _wrap_CANJaguar_GetSpeedReference}, 
-    {"SetPositionReference", _wrap_CANJaguar_SetPositionReference}, 
-    {"GetPositionReference", _wrap_CANJaguar_GetPositionReference}, 
-    {"SetPID", _wrap_CANJaguar_SetPID}, 
-    {"GetP", _wrap_CANJaguar_GetP}, 
-    {"GetI", _wrap_CANJaguar_GetI}, 
-    {"GetD", _wrap_CANJaguar_GetD}, 
-    {"EnableControl", _wrap_CANJaguar_EnableControl}, 
-    {"DisableControl", _wrap_CANJaguar_DisableControl}, 
-    {"ChangeControlMode", _wrap_CANJaguar_ChangeControlMode}, 
-    {"GetControlMode", _wrap_CANJaguar_GetControlMode}, 
-    {"GetBusVoltage", _wrap_CANJaguar_GetBusVoltage}, 
-    {"GetOutputVoltage", _wrap_CANJaguar_GetOutputVoltage}, 
-    {"GetOutputCurrent", _wrap_CANJaguar_GetOutputCurrent}, 
-    {"GetTemperature", _wrap_CANJaguar_GetTemperature}, 
-    {"GetPosition", _wrap_CANJaguar_GetPosition}, 
-    {"GetSpeed", _wrap_CANJaguar_GetSpeed}, 
-    {"GetForwardLimitOK", _wrap_CANJaguar_GetForwardLimitOK}, 
-    {"GetReverseLimitOK", _wrap_CANJaguar_GetReverseLimitOK}, 
-    {"GetFaults", _wrap_CANJaguar_GetFaults}, 
-    {"GetPowerCycled", _wrap_CANJaguar_GetPowerCycled}, 
-    {"SetVoltageRampRate", _wrap_CANJaguar_SetVoltageRampRate}, 
-    {"GetFirmwareVersion", _wrap_CANJaguar_GetFirmwareVersion}, 
-    {"GetHardwareVersion", _wrap_CANJaguar_GetHardwareVersion}, 
-    {"ConfigNeutralMode", _wrap_CANJaguar_ConfigNeutralMode}, 
-    {"ConfigEncoderCodesPerRev", _wrap_CANJaguar_ConfigEncoderCodesPerRev}, 
-    {"ConfigPotentiometerTurns", _wrap_CANJaguar_ConfigPotentiometerTurns}, 
-    {"ConfigSoftPositionLimits", _wrap_CANJaguar_ConfigSoftPositionLimits}, 
-    {"DisableSoftPositionLimits", _wrap_CANJaguar_DisableSoftPositionLimits}, 
-    {"ConfigMaxOutputVoltage", _wrap_CANJaguar_ConfigMaxOutputVoltage}, 
-    {"ConfigFaultTime", _wrap_CANJaguar_ConfigFaultTime}, 
-    {"SetExpiration", _wrap_CANJaguar_SetExpiration}, 
-    {"GetExpiration", _wrap_CANJaguar_GetExpiration}, 
-    {"IsAlive", _wrap_CANJaguar_IsAlive}, 
-    {"StopMotor", _wrap_CANJaguar_StopMotor}, 
-    {"IsSafetyEnabled", _wrap_CANJaguar_IsSafetyEnabled}, 
-    {"SetSafetyEnabled", _wrap_CANJaguar_SetSafetyEnabled}, 
-    {"GetDescription", _wrap_CANJaguar_GetDescription}, 
-    {0,0}
-};
-static swig_lua_attribute swig_CANJaguar_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_CANJaguar_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_CANJaguar_cls_methods[] = {
-    {"UpdateSyncGroup", _wrap_CANJaguar_UpdateSyncGroup}, 
-    {0,0}
-};
-static swig_lua_const_info swig_CANJaguar_cls_constants[] = {
-    {SWIG_LUA_CONSTTAB_FLOAT("kApproxBusVoltage", CANJaguar::kApproxBusVoltage)},
-    {SWIG_LUA_CONSTTAB_INT("kPercentVbus", CANJaguar::kPercentVbus)},
-    {SWIG_LUA_CONSTTAB_INT("kCurrent", CANJaguar::kCurrent)},
-    {SWIG_LUA_CONSTTAB_INT("kSpeed", CANJaguar::kSpeed)},
-    {SWIG_LUA_CONSTTAB_INT("kPosition", CANJaguar::kPosition)},
-    {SWIG_LUA_CONSTTAB_INT("kVoltage", CANJaguar::kVoltage)},
-    {SWIG_LUA_CONSTTAB_INT("kCurrentFault", CANJaguar::kCurrentFault)},
-    {SWIG_LUA_CONSTTAB_INT("kTemperatureFault", CANJaguar::kTemperatureFault)},
-    {SWIG_LUA_CONSTTAB_INT("kBusVoltageFault", CANJaguar::kBusVoltageFault)},
-    {SWIG_LUA_CONSTTAB_INT("kGateDriverFault", CANJaguar::kGateDriverFault)},
-    {SWIG_LUA_CONSTTAB_INT("kForwardLimit", CANJaguar::kForwardLimit)},
-    {SWIG_LUA_CONSTTAB_INT("kReverseLimit", CANJaguar::kReverseLimit)},
-    {SWIG_LUA_CONSTTAB_INT("kPosRef_QuadEncoder", CANJaguar::kPosRef_QuadEncoder)},
-    {SWIG_LUA_CONSTTAB_INT("kPosRef_Potentiometer", CANJaguar::kPosRef_Potentiometer)},
-    {SWIG_LUA_CONSTTAB_INT("kPosRef_None", CANJaguar::kPosRef_None)},
-    {SWIG_LUA_CONSTTAB_INT("kSpeedRef_Encoder", CANJaguar::kSpeedRef_Encoder)},
-    {SWIG_LUA_CONSTTAB_INT("kSpeedRef_InvEncoder", CANJaguar::kSpeedRef_InvEncoder)},
-    {SWIG_LUA_CONSTTAB_INT("kSpeedRef_QuadEncoder", CANJaguar::kSpeedRef_QuadEncoder)},
-    {SWIG_LUA_CONSTTAB_INT("kSpeedRef_None", CANJaguar::kSpeedRef_None)},
-    {SWIG_LUA_CONSTTAB_INT("kNeutralMode_Jumper", CANJaguar::kNeutralMode_Jumper)},
-    {SWIG_LUA_CONSTTAB_INT("kNeutralMode_Brake", CANJaguar::kNeutralMode_Brake)},
-    {SWIG_LUA_CONSTTAB_INT("kNeutralMode_Coast", CANJaguar::kNeutralMode_Coast)},
-    {SWIG_LUA_CONSTTAB_INT("kLimitMode_SwitchInputsOnly", CANJaguar::kLimitMode_SwitchInputsOnly)},
-    {SWIG_LUA_CONSTTAB_INT("kLimitMode_SoftPositionLimits", CANJaguar::kLimitMode_SoftPositionLimits)},
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_CANJaguar_bases[] = {0};
-static const char *swig_CANJaguar_base_names[] = {0};
-static swig_lua_class _wrap_class_CANJaguar = { "CANJaguar", &SWIGTYPE_p_CANJaguar,_wrap_new_CANJaguar, swig_delete_CANJaguar, swig_CANJaguar_methods, swig_CANJaguar_attributes, { "CANJaguar", swig_CANJaguar_cls_methods, swig_CANJaguar_cls_attributes, swig_CANJaguar_cls_constants }, swig_CANJaguar_bases, swig_CANJaguar_base_names };
-
-static int _wrap_Command_TimeSinceInitialized(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("Command::TimeSinceInitialized",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::TimeSinceInitialized",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_TimeSinceInitialized",1,SWIGTYPE_p_Command);
-  }
-  
-  result = (double)(arg1)->TimeSinceInitialized();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_Requires(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  Subsystem *arg2 = (Subsystem *) 0 ;
-  
-  SWIG_check_num_args("Command::Requires",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::Requires",1,"Command *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Command::Requires",2,"Subsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_Requires",1,SWIGTYPE_p_Command);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_Subsystem,0))){
-    SWIG_fail_ptr("Command_Requires",2,SWIGTYPE_p_Subsystem);
-  }
-  
-  (arg1)->Requires(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_IsCanceled(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("Command::IsCanceled",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::IsCanceled",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_IsCanceled",1,SWIGTYPE_p_Command);
-  }
-  
-  result = (bool)(arg1)->IsCanceled();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_Start(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  
-  SWIG_check_num_args("Command::Start",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::Start",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_Start",1,SWIGTYPE_p_Command);
-  }
-  
-  (arg1)->Start();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_Run(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("Command::Run",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::Run",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_Run",1,SWIGTYPE_p_Command);
-  }
-  
-  result = (bool)(arg1)->Run();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_Cancel(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  
-  SWIG_check_num_args("Command::Cancel",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::Cancel",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_Cancel",1,SWIGTYPE_p_Command);
-  }
-  
-  (arg1)->Cancel();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_IsRunning(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("Command::IsRunning",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::IsRunning",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_IsRunning",1,SWIGTYPE_p_Command);
-  }
-  
-  result = (bool)(arg1)->IsRunning();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_IsInterruptible(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("Command::IsInterruptible",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::IsInterruptible",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_IsInterruptible",1,SWIGTYPE_p_Command);
-  }
-  
-  result = (bool)(arg1)->IsInterruptible();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_SetInterruptible(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  bool arg2 ;
-  
-  SWIG_check_num_args("Command::SetInterruptible",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::SetInterruptible",1,"Command *");
-  if(!lua_isboolean(L,2)) SWIG_fail_arg("Command::SetInterruptible",2,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_SetInterruptible",1,SWIGTYPE_p_Command);
-  }
-  
-  arg2 = (lua_toboolean(L, 2)!=0);
-  (arg1)->SetInterruptible(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_DoesRequire(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  Subsystem *arg2 = (Subsystem *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("Command::DoesRequire",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::DoesRequire",1,"Command *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Command::DoesRequire",2,"Subsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_DoesRequire",1,SWIGTYPE_p_Command);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_Subsystem,0))){
-    SWIG_fail_ptr("Command_DoesRequire",2,SWIGTYPE_p_Subsystem);
-  }
-  
-  result = (bool)(arg1)->DoesRequire(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_GetRequirements(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  SwigValueWrapper< std::set< Subsystem * > > result;
-  
-  SWIG_check_num_args("Command::GetRequirements",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::GetRequirements",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_GetRequirements",1,SWIGTYPE_p_Command);
-  }
-  
-  result = (arg1)->GetRequirements();
-  {
-    Command::SubsystemSet * resultptr = new Command::SubsystemSet((const Command::SubsystemSet &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__setT_Subsystem_p_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_GetGroup(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  CommandGroup *result = 0 ;
-  
-  SWIG_check_num_args("Command::GetGroup",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::GetGroup",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_GetGroup",1,SWIGTYPE_p_Command);
-  }
-  
-  result = (CommandGroup *)(arg1)->GetGroup();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_CommandGroup,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_SetRunWhenDisabled(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  bool arg2 ;
-  
-  SWIG_check_num_args("Command::SetRunWhenDisabled",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::SetRunWhenDisabled",1,"Command *");
-  if(!lua_isboolean(L,2)) SWIG_fail_arg("Command::SetRunWhenDisabled",2,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_SetRunWhenDisabled",1,SWIGTYPE_p_Command);
-  }
-  
-  arg2 = (lua_toboolean(L, 2)!=0);
-  (arg1)->SetRunWhenDisabled(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_WillRunWhenDisabled(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("Command::WillRunWhenDisabled",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::WillRunWhenDisabled",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_WillRunWhenDisabled",1,SWIGTYPE_p_Command);
-  }
-  
-  result = (bool)(arg1)->WillRunWhenDisabled();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_GetID(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  int result;
-  
-  SWIG_check_num_args("Command::GetID",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::GetID",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_GetID",1,SWIGTYPE_p_Command);
-  }
-  
-  result = (int)(arg1)->GetID();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_GetName(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  std::string result;
-  
-  SWIG_check_num_args("Command::GetName",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::GetName",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_GetName",1,SWIGTYPE_p_Command);
-  }
-  
-  result = (arg1)->GetName();
-  {
-    std::string * resultptr = new std::string((const std::string &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_InitTable(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  ITable *arg2 = (ITable *) 0 ;
-  
-  SWIG_check_num_args("Command::InitTable",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::InitTable",1,"Command *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Command::InitTable",2,"ITable *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_InitTable",1,SWIGTYPE_p_Command);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
-    SWIG_fail_ptr("Command_InitTable",2,SWIGTYPE_p_ITable);
-  }
-  
-  (arg1)->InitTable(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_GetTable(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  ITable *result = 0 ;
-  
-  SWIG_check_num_args("Command::GetTable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::GetTable",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_GetTable",1,SWIGTYPE_p_Command);
-  }
-  
-  result = (ITable *)(arg1)->GetTable();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ITable,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_GetSmartDashboardType(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  std::string result;
-  
-  SWIG_check_num_args("Command::GetSmartDashboardType",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::GetSmartDashboardType",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_GetSmartDashboardType",1,SWIGTYPE_p_Command);
-  }
-  
-  result = (arg1)->GetSmartDashboardType();
-  {
-    std::string * resultptr = new std::string((const std::string &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Command_ValueChanged(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  ITable *arg2 = (ITable *) 0 ;
-  std::string *arg3 = 0 ;
-  EntryValue arg4 ;
-  bool arg5 ;
-  EntryValue *argp4 ;
-  
-  SWIG_check_num_args("Command::ValueChanged",5,5)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Command::ValueChanged",1,"Command *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Command::ValueChanged",2,"ITable *");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Command::ValueChanged",3,"std::string const &");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("Command::ValueChanged",4,"EntryValue");
-  if(!lua_isboolean(L,5)) SWIG_fail_arg("Command::ValueChanged",5,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Command_ValueChanged",1,SWIGTYPE_p_Command);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
-    SWIG_fail_ptr("Command_ValueChanged",2,SWIGTYPE_p_ITable);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_std__string,0))){
-    SWIG_fail_ptr("Command_ValueChanged",3,SWIGTYPE_p_std__string);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_EntryValue,0))){
-    SWIG_fail_ptr("Command_ValueChanged",4,SWIGTYPE_p_EntryValue);
-  }
-  arg4 = *argp4;
-  
-  arg5 = (lua_toboolean(L, 5)!=0);
-  (arg1)->ValueChanged(arg2,(std::string const &)*arg3,arg4,arg5);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_Command(void *obj) {
-Command *arg1 = (Command *) obj;
-delete arg1;
-}
-static swig_lua_method swig_Command_methods[] = {
-    {"TimeSinceInitialized", _wrap_Command_TimeSinceInitialized}, 
-    {"Requires", _wrap_Command_Requires}, 
-    {"IsCanceled", _wrap_Command_IsCanceled}, 
-    {"Start", _wrap_Command_Start}, 
-    {"Run", _wrap_Command_Run}, 
-    {"Cancel", _wrap_Command_Cancel}, 
-    {"IsRunning", _wrap_Command_IsRunning}, 
-    {"IsInterruptible", _wrap_Command_IsInterruptible}, 
-    {"SetInterruptible", _wrap_Command_SetInterruptible}, 
-    {"DoesRequire", _wrap_Command_DoesRequire}, 
-    {"GetRequirements", _wrap_Command_GetRequirements}, 
-    {"GetGroup", _wrap_Command_GetGroup}, 
-    {"SetRunWhenDisabled", _wrap_Command_SetRunWhenDisabled}, 
-    {"WillRunWhenDisabled", _wrap_Command_WillRunWhenDisabled}, 
-    {"GetID", _wrap_Command_GetID}, 
-    {"GetName", _wrap_Command_GetName}, 
-    {"InitTable", _wrap_Command_InitTable}, 
-    {"GetTable", _wrap_Command_GetTable}, 
-    {"GetSmartDashboardType", _wrap_Command_GetSmartDashboardType}, 
-    {"ValueChanged", _wrap_Command_ValueChanged}, 
-    {0,0}
-};
-static swig_lua_attribute swig_Command_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_Command_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_Command_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_Command_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_Command_bases[] = {0};
-static const char *swig_Command_base_names[] = {0};
-static swig_lua_class _wrap_class_Command = { "Command", &SWIGTYPE_p_Command,0, swig_delete_Command, swig_Command_methods, swig_Command_attributes, { "Command", swig_Command_cls_methods, swig_Command_cls_attributes, swig_Command_cls_constants }, swig_Command_bases, swig_Command_base_names };
-
-static int _wrap_new_CommandGroup__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  CommandGroup *result = 0 ;
-  
-  SWIG_check_num_args("CommandGroup::CommandGroup",0,0)
-  result = (CommandGroup *)new CommandGroup();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_CommandGroup,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_CommandGroup__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  char *arg1 = (char *) 0 ;
-  CommandGroup *result = 0 ;
-  
-  SWIG_check_num_args("CommandGroup::CommandGroup",1,1)
-  if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("CommandGroup::CommandGroup",1,"char const *");
-  arg1 = (char *)lua_tostring(L, 1);
-  result = (CommandGroup *)new CommandGroup((char const *)arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_CommandGroup,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_CommandGroup(lua_State* L) {
-  int argc;
-  int argv[2]={
-    1,2
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 0) {
-    return _wrap_new_CommandGroup__SWIG_0(L);
-  }
-  if (argc == 1) {
-    int _v;
-    {
-      _v = SWIG_lua_isnilstring(L,argv[0]);
-    }
-    if (_v) {
-      return _wrap_new_CommandGroup__SWIG_1(L);
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_CommandGroup'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    CommandGroup::CommandGroup()\n"
-    "    CommandGroup::CommandGroup(char const *)\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_CommandGroup_AddSequential__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  CommandGroup *arg1 = (CommandGroup *) 0 ;
-  Command *arg2 = (Command *) 0 ;
-  
-  SWIG_check_num_args("CommandGroup::AddSequential",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CommandGroup::AddSequential",1,"CommandGroup *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("CommandGroup::AddSequential",2,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CommandGroup,0))){
-    SWIG_fail_ptr("CommandGroup_AddSequential",1,SWIGTYPE_p_CommandGroup);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("CommandGroup_AddSequential",2,SWIGTYPE_p_Command);
-  }
-  
-  (arg1)->AddSequential(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CommandGroup_AddSequential__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  CommandGroup *arg1 = (CommandGroup *) 0 ;
-  Command *arg2 = (Command *) 0 ;
-  double arg3 ;
-  
-  SWIG_check_num_args("CommandGroup::AddSequential",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CommandGroup::AddSequential",1,"CommandGroup *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("CommandGroup::AddSequential",2,"Command *");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("CommandGroup::AddSequential",3,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CommandGroup,0))){
-    SWIG_fail_ptr("CommandGroup_AddSequential",1,SWIGTYPE_p_CommandGroup);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("CommandGroup_AddSequential",2,SWIGTYPE_p_Command);
-  }
-  
-  arg3 = (double)lua_tonumber(L, 3);
-  (arg1)->AddSequential(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CommandGroup_AddSequential(lua_State* L) {
-  int argc;
-  int argv[4]={
-    1,2,3,4
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_CommandGroup, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_Command, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_CommandGroup_AddSequential__SWIG_0(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_CommandGroup, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_Command, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          _v = lua_isnumber(L,argv[2]);
-        }
-        if (_v) {
-          return _wrap_CommandGroup_AddSequential__SWIG_1(L);
-        }
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'CommandGroup_AddSequential'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    CommandGroup::AddSequential(Command *)\n"
-    "    CommandGroup::AddSequential(Command *,double)\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_CommandGroup_AddParallel__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  CommandGroup *arg1 = (CommandGroup *) 0 ;
-  Command *arg2 = (Command *) 0 ;
-  
-  SWIG_check_num_args("CommandGroup::AddParallel",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CommandGroup::AddParallel",1,"CommandGroup *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("CommandGroup::AddParallel",2,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CommandGroup,0))){
-    SWIG_fail_ptr("CommandGroup_AddParallel",1,SWIGTYPE_p_CommandGroup);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("CommandGroup_AddParallel",2,SWIGTYPE_p_Command);
-  }
-  
-  (arg1)->AddParallel(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CommandGroup_AddParallel__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  CommandGroup *arg1 = (CommandGroup *) 0 ;
-  Command *arg2 = (Command *) 0 ;
-  double arg3 ;
-  
-  SWIG_check_num_args("CommandGroup::AddParallel",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CommandGroup::AddParallel",1,"CommandGroup *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("CommandGroup::AddParallel",2,"Command *");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("CommandGroup::AddParallel",3,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CommandGroup,0))){
-    SWIG_fail_ptr("CommandGroup_AddParallel",1,SWIGTYPE_p_CommandGroup);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("CommandGroup_AddParallel",2,SWIGTYPE_p_Command);
-  }
-  
-  arg3 = (double)lua_tonumber(L, 3);
-  (arg1)->AddParallel(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CommandGroup_AddParallel(lua_State* L) {
-  int argc;
-  int argv[4]={
-    1,2,3,4
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_CommandGroup, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_Command, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_CommandGroup_AddParallel__SWIG_0(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_CommandGroup, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_Command, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          _v = lua_isnumber(L,argv[2]);
-        }
-        if (_v) {
-          return _wrap_CommandGroup_AddParallel__SWIG_1(L);
-        }
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'CommandGroup_AddParallel'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    CommandGroup::AddParallel(Command *)\n"
-    "    CommandGroup::AddParallel(Command *,double)\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_CommandGroup_IsInterruptible(lua_State* L) {
-  int SWIG_arg = 0;
-  CommandGroup *arg1 = (CommandGroup *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("CommandGroup::IsInterruptible",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CommandGroup::IsInterruptible",1,"CommandGroup *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CommandGroup,0))){
-    SWIG_fail_ptr("CommandGroup_IsInterruptible",1,SWIGTYPE_p_CommandGroup);
-  }
-  
-  result = (bool)(arg1)->IsInterruptible();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_CommandGroup_GetSize(lua_State* L) {
-  int SWIG_arg = 0;
-  CommandGroup *arg1 = (CommandGroup *) 0 ;
-  int result;
-  
-  SWIG_check_num_args("CommandGroup::GetSize",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("CommandGroup::GetSize",1,"CommandGroup *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_CommandGroup,0))){
-    SWIG_fail_ptr("CommandGroup_GetSize",1,SWIGTYPE_p_CommandGroup);
-  }
-  
-  result = (int)(arg1)->GetSize();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_CommandGroup(void *obj) {
-CommandGroup *arg1 = (CommandGroup *) obj;
-delete arg1;
-}
-static swig_lua_method swig_CommandGroup_methods[] = {
-    {"AddSequential", _wrap_CommandGroup_AddSequential}, 
-    {"AddParallel", _wrap_CommandGroup_AddParallel}, 
-    {"IsInterruptible", _wrap_CommandGroup_IsInterruptible}, 
-    {"GetSize", _wrap_CommandGroup_GetSize}, 
-    {0,0}
-};
-static swig_lua_attribute swig_CommandGroup_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_CommandGroup_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_CommandGroup_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_CommandGroup_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_CommandGroup_bases[] = {0,0};
-static const char *swig_CommandGroup_base_names[] = {"Command *",0};
-static swig_lua_class _wrap_class_CommandGroup = { "CommandGroup", &SWIGTYPE_p_CommandGroup,_wrap_new_CommandGroup, swig_delete_CommandGroup, swig_CommandGroup_methods, swig_CommandGroup_attributes, { "CommandGroup", swig_CommandGroup_cls_methods, swig_CommandGroup_cls_attributes, swig_CommandGroup_cls_constants }, swig_CommandGroup_bases, swig_CommandGroup_base_names };
-
-static int _wrap_PIDCommand_SetSetpointRelative(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDCommand *arg1 = (PIDCommand *) 0 ;
-  double arg2 ;
-  
-  SWIG_check_num_args("PIDCommand::SetSetpointRelative",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDCommand::SetSetpointRelative",1,"PIDCommand *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("PIDCommand::SetSetpointRelative",2,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDCommand,0))){
-    SWIG_fail_ptr("PIDCommand_SetSetpointRelative",1,SWIGTYPE_p_PIDCommand);
-  }
-  
-  arg2 = (double)lua_tonumber(L, 2);
-  (arg1)->SetSetpointRelative(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDCommand_PIDWrite(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDCommand *arg1 = (PIDCommand *) 0 ;
-  float arg2 ;
-  
-  SWIG_check_num_args("PIDCommand::PIDWrite",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDCommand::PIDWrite",1,"PIDCommand *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("PIDCommand::PIDWrite",2,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDCommand,0))){
-    SWIG_fail_ptr("PIDCommand_PIDWrite",1,SWIGTYPE_p_PIDCommand);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->PIDWrite(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDCommand_PIDGet(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDCommand *arg1 = (PIDCommand *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("PIDCommand::PIDGet",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDCommand::PIDGet",1,"PIDCommand *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDCommand,0))){
-    SWIG_fail_ptr("PIDCommand_PIDGet",1,SWIGTYPE_p_PIDCommand);
-  }
-  
-  result = (double)(arg1)->PIDGet();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDCommand_InitTable(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDCommand *arg1 = (PIDCommand *) 0 ;
-  ITable *arg2 = (ITable *) 0 ;
-  
-  SWIG_check_num_args("PIDCommand::InitTable",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDCommand::InitTable",1,"PIDCommand *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("PIDCommand::InitTable",2,"ITable *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDCommand,0))){
-    SWIG_fail_ptr("PIDCommand_InitTable",1,SWIGTYPE_p_PIDCommand);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
-    SWIG_fail_ptr("PIDCommand_InitTable",2,SWIGTYPE_p_ITable);
-  }
-  
-  (arg1)->InitTable(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDCommand_GetSmartDashboardType(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDCommand *arg1 = (PIDCommand *) 0 ;
-  std::string result;
-  
-  SWIG_check_num_args("PIDCommand::GetSmartDashboardType",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDCommand::GetSmartDashboardType",1,"PIDCommand *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDCommand,0))){
-    SWIG_fail_ptr("PIDCommand_GetSmartDashboardType",1,SWIGTYPE_p_PIDCommand);
-  }
-  
-  result = (arg1)->GetSmartDashboardType();
-  {
-    std::string * resultptr = new std::string((const std::string &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_PIDCommand(void *obj) {
-PIDCommand *arg1 = (PIDCommand *) obj;
-delete arg1;
-}
-static swig_lua_method swig_PIDCommand_methods[] = {
-    {"SetSetpointRelative", _wrap_PIDCommand_SetSetpointRelative}, 
-    {"PIDWrite", _wrap_PIDCommand_PIDWrite}, 
-    {"PIDGet", _wrap_PIDCommand_PIDGet}, 
-    {"InitTable", _wrap_PIDCommand_InitTable}, 
-    {"GetSmartDashboardType", _wrap_PIDCommand_GetSmartDashboardType}, 
-    {0,0}
-};
-static swig_lua_attribute swig_PIDCommand_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_PIDCommand_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_PIDCommand_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_PIDCommand_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_PIDCommand_bases[] = {0,0};
-static const char *swig_PIDCommand_base_names[] = {"Command *",0};
-static swig_lua_class _wrap_class_PIDCommand = { "PIDCommand", &SWIGTYPE_p_PIDCommand,0, swig_delete_PIDCommand, swig_PIDCommand_methods, swig_PIDCommand_attributes, { "PIDCommand", swig_PIDCommand_cls_methods, swig_PIDCommand_cls_attributes, swig_PIDCommand_cls_constants }, swig_PIDCommand_bases, swig_PIDCommand_base_names };
-
-static int _wrap_PIDSubsystem_Enable(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  
-  SWIG_check_num_args("PIDSubsystem::Enable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::Enable",1,"PIDSubsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_Enable",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  (arg1)->Enable();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDSubsystem_Disable(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  
-  SWIG_check_num_args("PIDSubsystem::Disable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::Disable",1,"PIDSubsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_Disable",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  (arg1)->Disable();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDSubsystem_PIDWrite(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  float arg2 ;
-  
-  SWIG_check_num_args("PIDSubsystem::PIDWrite",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::PIDWrite",1,"PIDSubsystem *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("PIDSubsystem::PIDWrite",2,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_PIDWrite",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->PIDWrite(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDSubsystem_PIDGet(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("PIDSubsystem::PIDGet",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::PIDGet",1,"PIDSubsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_PIDGet",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  result = (double)(arg1)->PIDGet();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDSubsystem_SetSetpoint(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  double arg2 ;
-  
-  SWIG_check_num_args("PIDSubsystem::SetSetpoint",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::SetSetpoint",1,"PIDSubsystem *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("PIDSubsystem::SetSetpoint",2,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_SetSetpoint",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  arg2 = (double)lua_tonumber(L, 2);
-  (arg1)->SetSetpoint(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDSubsystem_SetSetpointRelative(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  double arg2 ;
-  
-  SWIG_check_num_args("PIDSubsystem::SetSetpointRelative",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::SetSetpointRelative",1,"PIDSubsystem *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("PIDSubsystem::SetSetpointRelative",2,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_SetSetpointRelative",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  arg2 = (double)lua_tonumber(L, 2);
-  (arg1)->SetSetpointRelative(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDSubsystem_SetInputRange(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  float arg2 ;
-  float arg3 ;
-  
-  SWIG_check_num_args("PIDSubsystem::SetInputRange",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::SetInputRange",1,"PIDSubsystem *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("PIDSubsystem::SetInputRange",2,"float");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("PIDSubsystem::SetInputRange",3,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_SetInputRange",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  arg3 = (float)lua_tonumber(L, 3);
-  (arg1)->SetInputRange(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDSubsystem_GetSetpoint(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("PIDSubsystem::GetSetpoint",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::GetSetpoint",1,"PIDSubsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_GetSetpoint",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  result = (double)(arg1)->GetSetpoint();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDSubsystem_GetPosition(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("PIDSubsystem::GetPosition",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::GetPosition",1,"PIDSubsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_GetPosition",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  result = (double)(arg1)->GetPosition();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDSubsystem_SetAbsoluteTolerance(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  float arg2 ;
-  
-  SWIG_check_num_args("PIDSubsystem::SetAbsoluteTolerance",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::SetAbsoluteTolerance",1,"PIDSubsystem *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("PIDSubsystem::SetAbsoluteTolerance",2,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_SetAbsoluteTolerance",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->SetAbsoluteTolerance(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDSubsystem_SetPercentTolerance(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  float arg2 ;
-  
-  SWIG_check_num_args("PIDSubsystem::SetPercentTolerance",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::SetPercentTolerance",1,"PIDSubsystem *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("PIDSubsystem::SetPercentTolerance",2,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_SetPercentTolerance",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->SetPercentTolerance(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDSubsystem_OnTarget(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("PIDSubsystem::OnTarget",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::OnTarget",1,"PIDSubsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_OnTarget",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  result = (bool)(arg1)->OnTarget();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDSubsystem_InitTable(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  ITable *arg2 = (ITable *) 0 ;
-  
-  SWIG_check_num_args("PIDSubsystem::InitTable",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::InitTable",1,"PIDSubsystem *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("PIDSubsystem::InitTable",2,"ITable *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_InitTable",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
-    SWIG_fail_ptr("PIDSubsystem_InitTable",2,SWIGTYPE_p_ITable);
-  }
-  
-  (arg1)->InitTable(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_PIDSubsystem_GetSmartDashboardType(lua_State* L) {
-  int SWIG_arg = 0;
-  PIDSubsystem *arg1 = (PIDSubsystem *) 0 ;
-  std::string result;
-  
-  SWIG_check_num_args("PIDSubsystem::GetSmartDashboardType",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PIDSubsystem::GetSmartDashboardType",1,"PIDSubsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PIDSubsystem,0))){
-    SWIG_fail_ptr("PIDSubsystem_GetSmartDashboardType",1,SWIGTYPE_p_PIDSubsystem);
-  }
-  
-  result = (arg1)->GetSmartDashboardType();
-  {
-    std::string * resultptr = new std::string((const std::string &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_PIDSubsystem(void *obj) {
-PIDSubsystem *arg1 = (PIDSubsystem *) obj;
-delete arg1;
-}
-static swig_lua_method swig_PIDSubsystem_methods[] = {
-    {"Enable", _wrap_PIDSubsystem_Enable}, 
-    {"Disable", _wrap_PIDSubsystem_Disable}, 
-    {"PIDWrite", _wrap_PIDSubsystem_PIDWrite}, 
-    {"PIDGet", _wrap_PIDSubsystem_PIDGet}, 
-    {"SetSetpoint", _wrap_PIDSubsystem_SetSetpoint}, 
-    {"SetSetpointRelative", _wrap_PIDSubsystem_SetSetpointRelative}, 
-    {"SetInputRange", _wrap_PIDSubsystem_SetInputRange}, 
-    {"GetSetpoint", _wrap_PIDSubsystem_GetSetpoint}, 
-    {"GetPosition", _wrap_PIDSubsystem_GetPosition}, 
-    {"SetAbsoluteTolerance", _wrap_PIDSubsystem_SetAbsoluteTolerance}, 
-    {"SetPercentTolerance", _wrap_PIDSubsystem_SetPercentTolerance}, 
-    {"OnTarget", _wrap_PIDSubsystem_OnTarget}, 
-    {"InitTable", _wrap_PIDSubsystem_InitTable}, 
-    {"GetSmartDashboardType", _wrap_PIDSubsystem_GetSmartDashboardType}, 
-    {0,0}
-};
-static swig_lua_attribute swig_PIDSubsystem_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_PIDSubsystem_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_PIDSubsystem_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_PIDSubsystem_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_PIDSubsystem_bases[] = {0};
-static const char *swig_PIDSubsystem_base_names[] = {0};
-static swig_lua_class _wrap_class_PIDSubsystem = { "PIDSubsystem", &SWIGTYPE_p_PIDSubsystem,0, swig_delete_PIDSubsystem, swig_PIDSubsystem_methods, swig_PIDSubsystem_attributes, { "PIDSubsystem", swig_PIDSubsystem_cls_methods, swig_PIDSubsystem_cls_attributes, swig_PIDSubsystem_cls_constants }, swig_PIDSubsystem_bases, swig_PIDSubsystem_base_names };
-
-static int _wrap_new_PrintCommand(lua_State* L) {
-  int SWIG_arg = 0;
-  char *arg1 = (char *) 0 ;
-  PrintCommand *result = 0 ;
-  
-  SWIG_check_num_args("PrintCommand::PrintCommand",1,1)
-  if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("PrintCommand::PrintCommand",1,"char const *");
-  arg1 = (char *)lua_tostring(L, 1);
-  result = (PrintCommand *)new PrintCommand((char const *)arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_PrintCommand,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_PrintCommand(void *obj) {
-PrintCommand *arg1 = (PrintCommand *) obj;
-delete arg1;
-}
-static swig_lua_method swig_PrintCommand_methods[] = {
-    {0,0}
-};
-static swig_lua_attribute swig_PrintCommand_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_PrintCommand_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_PrintCommand_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_PrintCommand_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_PrintCommand_bases[] = {0,0};
-static const char *swig_PrintCommand_base_names[] = {"Command *",0};
-static swig_lua_class _wrap_class_PrintCommand = { "PrintCommand", &SWIGTYPE_p_PrintCommand,_wrap_new_PrintCommand, swig_delete_PrintCommand, swig_PrintCommand_methods, swig_PrintCommand_attributes, { "PrintCommand", swig_PrintCommand_cls_methods, swig_PrintCommand_cls_attributes, swig_PrintCommand_cls_constants }, swig_PrintCommand_bases, swig_PrintCommand_base_names };
-
-static int _wrap_Scheduler_GetInstance(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *result = 0 ;
-  
-  SWIG_check_num_args("Scheduler::GetInstance",0,0)
-  result = (Scheduler *)Scheduler::GetInstance();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Scheduler,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Scheduler_AddCommand(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *arg1 = (Scheduler *) 0 ;
-  Command *arg2 = (Command *) 0 ;
-  
-  SWIG_check_num_args("Scheduler::AddCommand",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Scheduler::AddCommand",1,"Scheduler *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Scheduler::AddCommand",2,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Scheduler,0))){
-    SWIG_fail_ptr("Scheduler_AddCommand",1,SWIGTYPE_p_Scheduler);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Scheduler_AddCommand",2,SWIGTYPE_p_Command);
-  }
-  
-  (arg1)->AddCommand(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Scheduler_AddButton(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *arg1 = (Scheduler *) 0 ;
-  ButtonScheduler *arg2 = (ButtonScheduler *) 0 ;
-  
-  SWIG_check_num_args("Scheduler::AddButton",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Scheduler::AddButton",1,"Scheduler *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Scheduler::AddButton",2,"ButtonScheduler *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Scheduler,0))){
-    SWIG_fail_ptr("Scheduler_AddButton",1,SWIGTYPE_p_Scheduler);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ButtonScheduler,0))){
-    SWIG_fail_ptr("Scheduler_AddButton",2,SWIGTYPE_p_ButtonScheduler);
-  }
-  
-  (arg1)->AddButton(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Scheduler_RegisterSubsystem(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *arg1 = (Scheduler *) 0 ;
-  Subsystem *arg2 = (Subsystem *) 0 ;
-  
-  SWIG_check_num_args("Scheduler::RegisterSubsystem",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Scheduler::RegisterSubsystem",1,"Scheduler *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Scheduler::RegisterSubsystem",2,"Subsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Scheduler,0))){
-    SWIG_fail_ptr("Scheduler_RegisterSubsystem",1,SWIGTYPE_p_Scheduler);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_Subsystem,0))){
-    SWIG_fail_ptr("Scheduler_RegisterSubsystem",2,SWIGTYPE_p_Subsystem);
-  }
-  
-  (arg1)->RegisterSubsystem(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Scheduler_Run(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *arg1 = (Scheduler *) 0 ;
-  
-  SWIG_check_num_args("Scheduler::Run",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Scheduler::Run",1,"Scheduler *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Scheduler,0))){
-    SWIG_fail_ptr("Scheduler_Run",1,SWIGTYPE_p_Scheduler);
-  }
-  
-  (arg1)->Run();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Scheduler_Remove(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *arg1 = (Scheduler *) 0 ;
-  Command *arg2 = (Command *) 0 ;
-  
-  SWIG_check_num_args("Scheduler::Remove",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Scheduler::Remove",1,"Scheduler *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Scheduler::Remove",2,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Scheduler,0))){
-    SWIG_fail_ptr("Scheduler_Remove",1,SWIGTYPE_p_Scheduler);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Scheduler_Remove",2,SWIGTYPE_p_Command);
-  }
-  
-  (arg1)->Remove(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Scheduler_RemoveAll(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *arg1 = (Scheduler *) 0 ;
-  
-  SWIG_check_num_args("Scheduler::RemoveAll",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Scheduler::RemoveAll",1,"Scheduler *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Scheduler,0))){
-    SWIG_fail_ptr("Scheduler_RemoveAll",1,SWIGTYPE_p_Scheduler);
-  }
-  
-  (arg1)->RemoveAll();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Scheduler_SetEnabled(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *arg1 = (Scheduler *) 0 ;
-  bool arg2 ;
-  
-  SWIG_check_num_args("Scheduler::SetEnabled",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Scheduler::SetEnabled",1,"Scheduler *");
-  if(!lua_isboolean(L,2)) SWIG_fail_arg("Scheduler::SetEnabled",2,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Scheduler,0))){
-    SWIG_fail_ptr("Scheduler_SetEnabled",1,SWIGTYPE_p_Scheduler);
-  }
-  
-  arg2 = (lua_toboolean(L, 2)!=0);
-  (arg1)->SetEnabled(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Scheduler_UpdateTable(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *arg1 = (Scheduler *) 0 ;
-  
-  SWIG_check_num_args("Scheduler::UpdateTable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Scheduler::UpdateTable",1,"Scheduler *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Scheduler,0))){
-    SWIG_fail_ptr("Scheduler_UpdateTable",1,SWIGTYPE_p_Scheduler);
-  }
-  
-  (arg1)->UpdateTable();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Scheduler_GetSmartDashboardType(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *arg1 = (Scheduler *) 0 ;
-  std::string result;
-  
-  SWIG_check_num_args("Scheduler::GetSmartDashboardType",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Scheduler::GetSmartDashboardType",1,"Scheduler *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Scheduler,0))){
-    SWIG_fail_ptr("Scheduler_GetSmartDashboardType",1,SWIGTYPE_p_Scheduler);
-  }
-  
-  result = (arg1)->GetSmartDashboardType();
-  {
-    std::string * resultptr = new std::string((const std::string &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Scheduler_InitTable(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *arg1 = (Scheduler *) 0 ;
-  ITable *arg2 = (ITable *) 0 ;
-  
-  SWIG_check_num_args("Scheduler::InitTable",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Scheduler::InitTable",1,"Scheduler *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Scheduler::InitTable",2,"ITable *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Scheduler,0))){
-    SWIG_fail_ptr("Scheduler_InitTable",1,SWIGTYPE_p_Scheduler);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
-    SWIG_fail_ptr("Scheduler_InitTable",2,SWIGTYPE_p_ITable);
-  }
-  
-  (arg1)->InitTable(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Scheduler_GetTable(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *arg1 = (Scheduler *) 0 ;
-  ITable *result = 0 ;
-  
-  SWIG_check_num_args("Scheduler::GetTable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Scheduler::GetTable",1,"Scheduler *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Scheduler,0))){
-    SWIG_fail_ptr("Scheduler_GetTable",1,SWIGTYPE_p_Scheduler);
-  }
-  
-  result = (ITable *)(arg1)->GetTable();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ITable,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Scheduler_GetName(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *arg1 = (Scheduler *) 0 ;
-  std::string result;
-  
-  SWIG_check_num_args("Scheduler::GetName",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Scheduler::GetName",1,"Scheduler *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Scheduler,0))){
-    SWIG_fail_ptr("Scheduler_GetName",1,SWIGTYPE_p_Scheduler);
-  }
-  
-  result = (arg1)->GetName();
-  {
-    std::string * resultptr = new std::string((const std::string &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Scheduler_GetType(lua_State* L) {
-  int SWIG_arg = 0;
-  Scheduler *arg1 = (Scheduler *) 0 ;
-  std::string result;
-  
-  SWIG_check_num_args("Scheduler::GetType",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Scheduler::GetType",1,"Scheduler *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Scheduler,0))){
-    SWIG_fail_ptr("Scheduler_GetType",1,SWIGTYPE_p_Scheduler);
-  }
-  
-  result = (arg1)->GetType();
-  {
-    std::string * resultptr = new std::string((const std::string &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static swig_lua_method swig_Scheduler_methods[] = {
-    {"AddCommand", _wrap_Scheduler_AddCommand}, 
-    {"AddButton", _wrap_Scheduler_AddButton}, 
-    {"RegisterSubsystem", _wrap_Scheduler_RegisterSubsystem}, 
-    {"Run", _wrap_Scheduler_Run}, 
-    {"Remove", _wrap_Scheduler_Remove}, 
-    {"RemoveAll", _wrap_Scheduler_RemoveAll}, 
-    {"SetEnabled", _wrap_Scheduler_SetEnabled}, 
-    {"UpdateTable", _wrap_Scheduler_UpdateTable}, 
-    {"GetSmartDashboardType", _wrap_Scheduler_GetSmartDashboardType}, 
-    {"InitTable", _wrap_Scheduler_InitTable}, 
-    {"GetTable", _wrap_Scheduler_GetTable}, 
-    {"GetName", _wrap_Scheduler_GetName}, 
-    {"GetType", _wrap_Scheduler_GetType}, 
-    {0,0}
-};
-static swig_lua_attribute swig_Scheduler_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_Scheduler_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_Scheduler_cls_methods[] = {
-    {"GetInstance", _wrap_Scheduler_GetInstance}, 
-    {0,0}
-};
-static swig_lua_const_info swig_Scheduler_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_Scheduler_bases[] = {0};
-static const char *swig_Scheduler_base_names[] = {0};
-static swig_lua_class _wrap_class_Scheduler = { "Scheduler", &SWIGTYPE_p_Scheduler,0,0, swig_Scheduler_methods, swig_Scheduler_attributes, { "Scheduler", swig_Scheduler_cls_methods, swig_Scheduler_cls_attributes, swig_Scheduler_cls_constants }, swig_Scheduler_bases, swig_Scheduler_base_names };
-
-static int _wrap_new_StartCommand(lua_State* L) {
-  int SWIG_arg = 0;
-  Command *arg1 = (Command *) 0 ;
-  StartCommand *result = 0 ;
-  
-  SWIG_check_num_args("StartCommand::StartCommand",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("StartCommand::StartCommand",1,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("new_StartCommand",1,SWIGTYPE_p_Command);
-  }
-  
-  result = (StartCommand *)new StartCommand(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_StartCommand,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_StartCommand(void *obj) {
-StartCommand *arg1 = (StartCommand *) obj;
-delete arg1;
-}
-static swig_lua_method swig_StartCommand_methods[] = {
-    {0,0}
-};
-static swig_lua_attribute swig_StartCommand_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_StartCommand_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_StartCommand_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_StartCommand_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_StartCommand_bases[] = {0,0};
-static const char *swig_StartCommand_base_names[] = {"Command *",0};
-static swig_lua_class _wrap_class_StartCommand = { "StartCommand", &SWIGTYPE_p_StartCommand,_wrap_new_StartCommand, swig_delete_StartCommand, swig_StartCommand_methods, swig_StartCommand_attributes, { "StartCommand", swig_StartCommand_cls_methods, swig_StartCommand_cls_attributes, swig_StartCommand_cls_constants }, swig_StartCommand_bases, swig_StartCommand_base_names };
-
-static int _wrap_new_Subsystem(lua_State* L) {
-  int SWIG_arg = 0;
-  char *arg1 = (char *) 0 ;
-  Subsystem *result = 0 ;
-  
-  SWIG_check_num_args("Subsystem::Subsystem",1,1)
-  if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("Subsystem::Subsystem",1,"char const *");
-  arg1 = (char *)lua_tostring(L, 1);
-  result = (Subsystem *)new Subsystem((char const *)arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Subsystem,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Subsystem_SetDefaultCommand(lua_State* L) {
-  int SWIG_arg = 0;
-  Subsystem *arg1 = (Subsystem *) 0 ;
-  Command *arg2 = (Command *) 0 ;
-  
-  SWIG_check_num_args("Subsystem::SetDefaultCommand",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Subsystem::SetDefaultCommand",1,"Subsystem *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Subsystem::SetDefaultCommand",2,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Subsystem,0))){
-    SWIG_fail_ptr("Subsystem_SetDefaultCommand",1,SWIGTYPE_p_Subsystem);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Subsystem_SetDefaultCommand",2,SWIGTYPE_p_Command);
-  }
-  
-  (arg1)->SetDefaultCommand(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Subsystem_GetDefaultCommand(lua_State* L) {
-  int SWIG_arg = 0;
-  Subsystem *arg1 = (Subsystem *) 0 ;
-  Command *result = 0 ;
-  
-  SWIG_check_num_args("Subsystem::GetDefaultCommand",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Subsystem::GetDefaultCommand",1,"Subsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Subsystem,0))){
-    SWIG_fail_ptr("Subsystem_GetDefaultCommand",1,SWIGTYPE_p_Subsystem);
-  }
-  
-  result = (Command *)(arg1)->GetDefaultCommand();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Command,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Subsystem_SetCurrentCommand(lua_State* L) {
-  int SWIG_arg = 0;
-  Subsystem *arg1 = (Subsystem *) 0 ;
-  Command *arg2 = (Command *) 0 ;
-  
-  SWIG_check_num_args("Subsystem::SetCurrentCommand",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Subsystem::SetCurrentCommand",1,"Subsystem *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Subsystem::SetCurrentCommand",2,"Command *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Subsystem,0))){
-    SWIG_fail_ptr("Subsystem_SetCurrentCommand",1,SWIGTYPE_p_Subsystem);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_Command,0))){
-    SWIG_fail_ptr("Subsystem_SetCurrentCommand",2,SWIGTYPE_p_Command);
-  }
-  
-  (arg1)->SetCurrentCommand(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Subsystem_GetCurrentCommand(lua_State* L) {
-  int SWIG_arg = 0;
-  Subsystem *arg1 = (Subsystem *) 0 ;
-  Command *result = 0 ;
-  
-  SWIG_check_num_args("Subsystem::GetCurrentCommand",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Subsystem::GetCurrentCommand",1,"Subsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Subsystem,0))){
-    SWIG_fail_ptr("Subsystem_GetCurrentCommand",1,SWIGTYPE_p_Subsystem);
-  }
-  
-  result = (Command *)(arg1)->GetCurrentCommand();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Command,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Subsystem_InitDefaultCommand(lua_State* L) {
-  int SWIG_arg = 0;
-  Subsystem *arg1 = (Subsystem *) 0 ;
-  
-  SWIG_check_num_args("Subsystem::InitDefaultCommand",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Subsystem::InitDefaultCommand",1,"Subsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Subsystem,0))){
-    SWIG_fail_ptr("Subsystem_InitDefaultCommand",1,SWIGTYPE_p_Subsystem);
-  }
-  
-  (arg1)->InitDefaultCommand();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Subsystem_GetName(lua_State* L) {
-  int SWIG_arg = 0;
-  Subsystem *arg1 = (Subsystem *) 0 ;
-  std::string result;
-  
-  SWIG_check_num_args("Subsystem::GetName",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Subsystem::GetName",1,"Subsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Subsystem,0))){
-    SWIG_fail_ptr("Subsystem_GetName",1,SWIGTYPE_p_Subsystem);
-  }
-  
-  result = (arg1)->GetName();
-  {
-    std::string * resultptr = new std::string((const std::string &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Subsystem_InitTable(lua_State* L) {
-  int SWIG_arg = 0;
-  Subsystem *arg1 = (Subsystem *) 0 ;
-  ITable *arg2 = (ITable *) 0 ;
-  
-  SWIG_check_num_args("Subsystem::InitTable",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Subsystem::InitTable",1,"Subsystem *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Subsystem::InitTable",2,"ITable *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Subsystem,0))){
-    SWIG_fail_ptr("Subsystem_InitTable",1,SWIGTYPE_p_Subsystem);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
-    SWIG_fail_ptr("Subsystem_InitTable",2,SWIGTYPE_p_ITable);
-  }
-  
-  (arg1)->InitTable(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Subsystem_GetTable(lua_State* L) {
-  int SWIG_arg = 0;
-  Subsystem *arg1 = (Subsystem *) 0 ;
-  ITable *result = 0 ;
-  
-  SWIG_check_num_args("Subsystem::GetTable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Subsystem::GetTable",1,"Subsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Subsystem,0))){
-    SWIG_fail_ptr("Subsystem_GetTable",1,SWIGTYPE_p_Subsystem);
-  }
-  
-  result = (ITable *)(arg1)->GetTable();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ITable,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Subsystem_GetSmartDashboardType(lua_State* L) {
-  int SWIG_arg = 0;
-  Subsystem *arg1 = (Subsystem *) 0 ;
-  std::string result;
-  
-  SWIG_check_num_args("Subsystem::GetSmartDashboardType",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Subsystem::GetSmartDashboardType",1,"Subsystem *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Subsystem,0))){
-    SWIG_fail_ptr("Subsystem_GetSmartDashboardType",1,SWIGTYPE_p_Subsystem);
-  }
-  
-  result = (arg1)->GetSmartDashboardType();
-  {
-    std::string * resultptr = new std::string((const std::string &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_Subsystem(void *obj) {
-Subsystem *arg1 = (Subsystem *) obj;
-delete arg1;
-}
-static swig_lua_method swig_Subsystem_methods[] = {
-    {"SetDefaultCommand", _wrap_Subsystem_SetDefaultCommand}, 
-    {"GetDefaultCommand", _wrap_Subsystem_GetDefaultCommand}, 
-    {"SetCurrentCommand", _wrap_Subsystem_SetCurrentCommand}, 
-    {"GetCurrentCommand", _wrap_Subsystem_GetCurrentCommand}, 
-    {"InitDefaultCommand", _wrap_Subsystem_InitDefaultCommand}, 
-    {"GetName", _wrap_Subsystem_GetName}, 
-    {"InitTable", _wrap_Subsystem_InitTable}, 
-    {"GetTable", _wrap_Subsystem_GetTable}, 
-    {"GetSmartDashboardType", _wrap_Subsystem_GetSmartDashboardType}, 
-    {0,0}
-};
-static swig_lua_attribute swig_Subsystem_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_Subsystem_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_Subsystem_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_Subsystem_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_Subsystem_bases[] = {0};
-static const char *swig_Subsystem_base_names[] = {0};
-static swig_lua_class _wrap_class_Subsystem = { "Subsystem", &SWIGTYPE_p_Subsystem,_wrap_new_Subsystem, swig_delete_Subsystem, swig_Subsystem_methods, swig_Subsystem_attributes, { "Subsystem", swig_Subsystem_cls_methods, swig_Subsystem_cls_attributes, swig_Subsystem_cls_constants }, swig_Subsystem_bases, swig_Subsystem_base_names };
-
-static int _wrap_new_WaitCommand__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  double arg1 ;
-  WaitCommand *result = 0 ;
-  
-  SWIG_check_num_args("WaitCommand::WaitCommand",1,1)
-  if(!lua_isnumber(L,1)) SWIG_fail_arg("WaitCommand::WaitCommand",1,"double");
-  arg1 = (double)lua_tonumber(L, 1);
-  result = (WaitCommand *)new WaitCommand(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_WaitCommand,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_WaitCommand__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  char *arg1 = (char *) 0 ;
-  double arg2 ;
-  WaitCommand *result = 0 ;
-  
-  SWIG_check_num_args("WaitCommand::WaitCommand",2,2)
-  if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("WaitCommand::WaitCommand",1,"char const *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("WaitCommand::WaitCommand",2,"double");
-  arg1 = (char *)lua_tostring(L, 1);
-  arg2 = (double)lua_tonumber(L, 2);
-  result = (WaitCommand *)new WaitCommand((char const *)arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_WaitCommand,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_WaitCommand(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      _v = lua_isnumber(L,argv[0]);
-    }
-    if (_v) {
-      return _wrap_new_WaitCommand__SWIG_0(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      _v = SWIG_lua_isnilstring(L,argv[0]);
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_new_WaitCommand__SWIG_1(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_WaitCommand'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    WaitCommand::WaitCommand(double)\n"
-    "    WaitCommand::WaitCommand(char const *,double)\n");
-  lua_error(L);return 0;
-}
-
-
-static void swig_delete_WaitCommand(void *obj) {
-WaitCommand *arg1 = (WaitCommand *) obj;
-delete arg1;
-}
-static swig_lua_method swig_WaitCommand_methods[] = {
-    {0,0}
-};
-static swig_lua_attribute swig_WaitCommand_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_WaitCommand_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_WaitCommand_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_WaitCommand_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_WaitCommand_bases[] = {0,0};
-static const char *swig_WaitCommand_base_names[] = {"Command *",0};
-static swig_lua_class _wrap_class_WaitCommand = { "WaitCommand", &SWIGTYPE_p_WaitCommand,_wrap_new_WaitCommand, swig_delete_WaitCommand, swig_WaitCommand_methods, swig_WaitCommand_attributes, { "WaitCommand", swig_WaitCommand_cls_methods, swig_WaitCommand_cls_attributes, swig_WaitCommand_cls_constants }, swig_WaitCommand_bases, swig_WaitCommand_base_names };
-
-static int _wrap_new_WaitForChildren__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  double arg1 ;
-  WaitForChildren *result = 0 ;
-  
-  SWIG_check_num_args("WaitForChildren::WaitForChildren",1,1)
-  if(!lua_isnumber(L,1)) SWIG_fail_arg("WaitForChildren::WaitForChildren",1,"double");
-  arg1 = (double)lua_tonumber(L, 1);
-  result = (WaitForChildren *)new WaitForChildren(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_WaitForChildren,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_WaitForChildren__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  char *arg1 = (char *) 0 ;
-  double arg2 ;
-  WaitForChildren *result = 0 ;
-  
-  SWIG_check_num_args("WaitForChildren::WaitForChildren",2,2)
-  if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("WaitForChildren::WaitForChildren",1,"char const *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("WaitForChildren::WaitForChildren",2,"double");
-  arg1 = (char *)lua_tostring(L, 1);
-  arg2 = (double)lua_tonumber(L, 2);
-  result = (WaitForChildren *)new WaitForChildren((char const *)arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_WaitForChildren,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_WaitForChildren(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      _v = lua_isnumber(L,argv[0]);
-    }
-    if (_v) {
-      return _wrap_new_WaitForChildren__SWIG_0(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      _v = SWIG_lua_isnilstring(L,argv[0]);
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_new_WaitForChildren__SWIG_1(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_WaitForChildren'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    WaitForChildren::WaitForChildren(double)\n"
-    "    WaitForChildren::WaitForChildren(char const *,double)\n");
-  lua_error(L);return 0;
-}
-
-
-static void swig_delete_WaitForChildren(void *obj) {
-WaitForChildren *arg1 = (WaitForChildren *) obj;
-delete arg1;
-}
-static swig_lua_method swig_WaitForChildren_methods[] = {
-    {0,0}
-};
-static swig_lua_attribute swig_WaitForChildren_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_WaitForChildren_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_WaitForChildren_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_WaitForChildren_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_WaitForChildren_bases[] = {0,0};
-static const char *swig_WaitForChildren_base_names[] = {"Command *",0};
-static swig_lua_class _wrap_class_WaitForChildren = { "WaitForChildren", &SWIGTYPE_p_WaitForChildren,_wrap_new_WaitForChildren, swig_delete_WaitForChildren, swig_WaitForChildren_methods, swig_WaitForChildren_attributes, { "WaitForChildren", swig_WaitForChildren_cls_methods, swig_WaitForChildren_cls_attributes, swig_WaitForChildren_cls_constants }, swig_WaitForChildren_bases, swig_WaitForChildren_base_names };
-
-static int _wrap_new_WaitUntilCommand__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  double arg1 ;
-  WaitUntilCommand *result = 0 ;
-  
-  SWIG_check_num_args("WaitUntilCommand::WaitUntilCommand",1,1)
-  if(!lua_isnumber(L,1)) SWIG_fail_arg("WaitUntilCommand::WaitUntilCommand",1,"double");
-  arg1 = (double)lua_tonumber(L, 1);
-  result = (WaitUntilCommand *)new WaitUntilCommand(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_WaitUntilCommand,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_WaitUntilCommand__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  char *arg1 = (char *) 0 ;
-  double arg2 ;
-  WaitUntilCommand *result = 0 ;
-  
-  SWIG_check_num_args("WaitUntilCommand::WaitUntilCommand",2,2)
-  if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("WaitUntilCommand::WaitUntilCommand",1,"char const *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("WaitUntilCommand::WaitUntilCommand",2,"double");
-  arg1 = (char *)lua_tostring(L, 1);
-  arg2 = (double)lua_tonumber(L, 2);
-  result = (WaitUntilCommand *)new WaitUntilCommand((char const *)arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_WaitUntilCommand,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_WaitUntilCommand(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      _v = lua_isnumber(L,argv[0]);
-    }
-    if (_v) {
-      return _wrap_new_WaitUntilCommand__SWIG_0(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      _v = SWIG_lua_isnilstring(L,argv[0]);
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_new_WaitUntilCommand__SWIG_1(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_WaitUntilCommand'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    WaitUntilCommand::WaitUntilCommand(double)\n"
-    "    WaitUntilCommand::WaitUntilCommand(char const *,double)\n");
-  lua_error(L);return 0;
-}
-
-
-static void swig_delete_WaitUntilCommand(void *obj) {
-WaitUntilCommand *arg1 = (WaitUntilCommand *) obj;
-delete arg1;
-}
-static swig_lua_method swig_WaitUntilCommand_methods[] = {
-    {0,0}
-};
-static swig_lua_attribute swig_WaitUntilCommand_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_WaitUntilCommand_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_WaitUntilCommand_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_WaitUntilCommand_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_WaitUntilCommand_bases[] = {0,0};
-static const char *swig_WaitUntilCommand_base_names[] = {"Command *",0};
-static swig_lua_class _wrap_class_WaitUntilCommand = { "WaitUntilCommand", &SWIGTYPE_p_WaitUntilCommand,_wrap_new_WaitUntilCommand, swig_delete_WaitUntilCommand, swig_WaitUntilCommand_methods, swig_WaitUntilCommand_attributes, { "WaitUntilCommand", swig_WaitUntilCommand_cls_methods, swig_WaitUntilCommand_cls_attributes, swig_WaitUntilCommand_cls_constants }, swig_WaitUntilCommand_bases, swig_WaitUntilCommand_base_names };
-
 static int _wrap_new_Compressor__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
-  uint32_t arg1 ;
-  uint32_t arg2 ;
-  uint32_t *argp1 ;
-  uint32_t *argp2 ;
+  uint8_t arg1 ;
+  uint8_t *argp1 ;
   Compressor *result = 0 ;
   
-  SWIG_check_num_args("Compressor::Compressor",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Compressor::Compressor",1,"uint32_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Compressor::Compressor",2,"uint32_t");
+  SWIG_check_num_args("Compressor::Compressor",1,1)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Compressor::Compressor",1,"uint8_t");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Compressor",1,SWIGTYPE_p_uint32_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("new_Compressor",1,SWIGTYPE_p_uint8_t);
   }
   arg1 = *argp1;
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Compressor",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (Compressor *)new Compressor(arg1,arg2);
+  result = (Compressor *)new Compressor(arg1);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_Compressor,1); SWIG_arg++; 
   return SWIG_arg;
   
@@ -10348,46 +5018,10 @@ fail:
 
 static int _wrap_new_Compressor__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t arg3 ;
-  uint32_t arg4 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  uint8_t *argp3 ;
-  uint32_t *argp4 ;
   Compressor *result = 0 ;
   
-  SWIG_check_num_args("Compressor::Compressor",4,4)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Compressor::Compressor",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Compressor::Compressor",2,"uint32_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Compressor::Compressor",3,"uint8_t");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("Compressor::Compressor",4,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Compressor",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Compressor",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Compressor",3,SWIGTYPE_p_uint8_t);
-  }
-  arg3 = *argp3;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Compressor",4,SWIGTYPE_p_uint32_t);
-  }
-  arg4 = *argp4;
-  
-  result = (Compressor *)new Compressor(arg1,arg2,arg3,arg4);
+  SWIG_check_num_args("Compressor::Compressor",0,0)
+  result = (Compressor *)new Compressor();
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_Compressor,1); SWIG_arg++; 
   return SWIG_arg;
   
@@ -10401,36 +5035,15 @@ fail:
 
 static int _wrap_new_Compressor(lua_State* L) {
   int argc;
-  int argv[5]={
-    1,2,3,4,5
+  int argv[2]={
+    1,2
   };
   
   argc = lua_gettop(L);
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_Compressor__SWIG_0(L);
-      }
-    }
+  if (argc == 0) {
+    return _wrap_new_Compressor__SWIG_1(L);
   }
-  if (argc == 4) {
+  if (argc == 1) {
     int _v;
     {
       void *ptr;
@@ -10441,44 +5054,14 @@ static int _wrap_new_Compressor(lua_State* L) {
       }
     }
     if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
-          }
-          if (_v) {
-            return _wrap_new_Compressor__SWIG_1(L);
-          }
-        }
-      }
+      return _wrap_new_Compressor__SWIG_0(L);
     }
   }
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Compressor'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    Compressor::Compressor(uint32_t,uint32_t)\n"
-    "    Compressor::Compressor(uint8_t,uint32_t,uint8_t,uint32_t)\n");
+    "    Compressor::Compressor(uint8_t)\n"
+    "    Compressor::Compressor()\n");
   lua_error(L);return 0;
 }
 
@@ -10556,7 +5139,7 @@ fail:
 static int _wrap_Compressor_GetPressureSwitchValue(lua_State* L) {
   int SWIG_arg = 0;
   Compressor *arg1 = (Compressor *) 0 ;
-  uint32_t result;
+  bool result;
   
   SWIG_check_num_args("Compressor::GetPressureSwitchValue",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Compressor::GetPressureSwitchValue",1,"Compressor *");
@@ -10565,11 +5148,8 @@ static int _wrap_Compressor_GetPressureSwitchValue(lua_State* L) {
     SWIG_fail_ptr("Compressor_GetPressureSwitchValue",1,SWIGTYPE_p_Compressor);
   }
   
-  result = (arg1)->GetPressureSwitchValue();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
+  result = (bool)(arg1)->GetPressureSwitchValue();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -10580,21 +5160,236 @@ fail:
 }
 
 
-static int _wrap_Compressor_SetRelayValue(lua_State* L) {
+static int _wrap_Compressor_GetCompressorCurrent(lua_State* L) {
   int SWIG_arg = 0;
   Compressor *arg1 = (Compressor *) 0 ;
-  Relay::Value arg2 ;
+  float result;
   
-  SWIG_check_num_args("Compressor::SetRelayValue",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Compressor::SetRelayValue",1,"Compressor *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("Compressor::SetRelayValue",2,"Relay::Value");
+  SWIG_check_num_args("Compressor::GetCompressorCurrent",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Compressor::GetCompressorCurrent",1,"Compressor *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Compressor,0))){
-    SWIG_fail_ptr("Compressor_SetRelayValue",1,SWIGTYPE_p_Compressor);
+    SWIG_fail_ptr("Compressor_GetCompressorCurrent",1,SWIGTYPE_p_Compressor);
   }
   
-  arg2 = (Relay::Value)(int)lua_tonumber(L, 2);
-  (arg1)->SetRelayValue(arg2);
+  result = (float)(arg1)->GetCompressorCurrent();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Compressor_SetClosedLoopControl(lua_State* L) {
+  int SWIG_arg = 0;
+  Compressor *arg1 = (Compressor *) 0 ;
+  bool arg2 ;
+  
+  SWIG_check_num_args("Compressor::SetClosedLoopControl",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Compressor::SetClosedLoopControl",1,"Compressor *");
+  if(!lua_isboolean(L,2)) SWIG_fail_arg("Compressor::SetClosedLoopControl",2,"bool");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Compressor,0))){
+    SWIG_fail_ptr("Compressor_SetClosedLoopControl",1,SWIGTYPE_p_Compressor);
+  }
+  
+  arg2 = (lua_toboolean(L, 2)!=0);
+  (arg1)->SetClosedLoopControl(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Compressor_GetClosedLoopControl(lua_State* L) {
+  int SWIG_arg = 0;
+  Compressor *arg1 = (Compressor *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("Compressor::GetClosedLoopControl",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Compressor::GetClosedLoopControl",1,"Compressor *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Compressor,0))){
+    SWIG_fail_ptr("Compressor_GetClosedLoopControl",1,SWIGTYPE_p_Compressor);
+  }
+  
+  result = (bool)(arg1)->GetClosedLoopControl();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Compressor_GetCompressorCurrentTooHighFault(lua_State* L) {
+  int SWIG_arg = 0;
+  Compressor *arg1 = (Compressor *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("Compressor::GetCompressorCurrentTooHighFault",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Compressor::GetCompressorCurrentTooHighFault",1,"Compressor *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Compressor,0))){
+    SWIG_fail_ptr("Compressor_GetCompressorCurrentTooHighFault",1,SWIGTYPE_p_Compressor);
+  }
+  
+  result = (bool)(arg1)->GetCompressorCurrentTooHighFault();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Compressor_GetCompressorCurrentTooHighStickyFault(lua_State* L) {
+  int SWIG_arg = 0;
+  Compressor *arg1 = (Compressor *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("Compressor::GetCompressorCurrentTooHighStickyFault",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Compressor::GetCompressorCurrentTooHighStickyFault",1,"Compressor *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Compressor,0))){
+    SWIG_fail_ptr("Compressor_GetCompressorCurrentTooHighStickyFault",1,SWIGTYPE_p_Compressor);
+  }
+  
+  result = (bool)(arg1)->GetCompressorCurrentTooHighStickyFault();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Compressor_GetCompressorShortedStickyFault(lua_State* L) {
+  int SWIG_arg = 0;
+  Compressor *arg1 = (Compressor *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("Compressor::GetCompressorShortedStickyFault",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Compressor::GetCompressorShortedStickyFault",1,"Compressor *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Compressor,0))){
+    SWIG_fail_ptr("Compressor_GetCompressorShortedStickyFault",1,SWIGTYPE_p_Compressor);
+  }
+  
+  result = (bool)(arg1)->GetCompressorShortedStickyFault();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Compressor_GetCompressorShortedFault(lua_State* L) {
+  int SWIG_arg = 0;
+  Compressor *arg1 = (Compressor *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("Compressor::GetCompressorShortedFault",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Compressor::GetCompressorShortedFault",1,"Compressor *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Compressor,0))){
+    SWIG_fail_ptr("Compressor_GetCompressorShortedFault",1,SWIGTYPE_p_Compressor);
+  }
+  
+  result = (bool)(arg1)->GetCompressorShortedFault();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Compressor_GetCompressorNotConnectedStickyFault(lua_State* L) {
+  int SWIG_arg = 0;
+  Compressor *arg1 = (Compressor *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("Compressor::GetCompressorNotConnectedStickyFault",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Compressor::GetCompressorNotConnectedStickyFault",1,"Compressor *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Compressor,0))){
+    SWIG_fail_ptr("Compressor_GetCompressorNotConnectedStickyFault",1,SWIGTYPE_p_Compressor);
+  }
+  
+  result = (bool)(arg1)->GetCompressorNotConnectedStickyFault();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Compressor_GetCompressorNotConnectedFault(lua_State* L) {
+  int SWIG_arg = 0;
+  Compressor *arg1 = (Compressor *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("Compressor::GetCompressorNotConnectedFault",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Compressor::GetCompressorNotConnectedFault",1,"Compressor *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Compressor,0))){
+    SWIG_fail_ptr("Compressor_GetCompressorNotConnectedFault",1,SWIGTYPE_p_Compressor);
+  }
+  
+  result = (bool)(arg1)->GetCompressorNotConnectedFault();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Compressor_ClearAllPCMStickyFaults(lua_State* L) {
+  int SWIG_arg = 0;
+  Compressor *arg1 = (Compressor *) 0 ;
+  
+  SWIG_check_num_args("Compressor::ClearAllPCMStickyFaults",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Compressor::ClearAllPCMStickyFaults",1,"Compressor *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Compressor,0))){
+    SWIG_fail_ptr("Compressor_ClearAllPCMStickyFaults",1,SWIGTYPE_p_Compressor);
+  }
+  
+  (arg1)->ClearAllPCMStickyFaults();
   
   return SWIG_arg;
   
@@ -10756,6 +5551,55 @@ fail:
 }
 
 
+static int _wrap_Compressor_ValueChanged(lua_State* L) {
+  int SWIG_arg = 0;
+  Compressor *arg1 = (Compressor *) 0 ;
+  ITable *arg2 = (ITable *) 0 ;
+  std::string *arg3 = 0 ;
+  EntryValue arg4 ;
+  bool arg5 ;
+  EntryValue *argp4 ;
+  
+  SWIG_check_num_args("Compressor::ValueChanged",5,5)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Compressor::ValueChanged",1,"Compressor *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Compressor::ValueChanged",2,"ITable *");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Compressor::ValueChanged",3,"std::string const &");
+  if(!lua_isuserdata(L,4)) SWIG_fail_arg("Compressor::ValueChanged",4,"EntryValue");
+  if(!lua_isboolean(L,5)) SWIG_fail_arg("Compressor::ValueChanged",5,"bool");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Compressor,0))){
+    SWIG_fail_ptr("Compressor_ValueChanged",1,SWIGTYPE_p_Compressor);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
+    SWIG_fail_ptr("Compressor_ValueChanged",2,SWIGTYPE_p_ITable);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("Compressor_ValueChanged",3,SWIGTYPE_p_std__string);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_EntryValue,0))){
+    SWIG_fail_ptr("Compressor_ValueChanged",4,SWIGTYPE_p_EntryValue);
+  }
+  arg4 = *argp4;
+  
+  arg5 = (lua_toboolean(L, 5)!=0);
+  (arg1)->ValueChanged(arg2,(std::string const &)*arg3,arg4,arg5);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Compressor(void *obj) {
 Compressor *arg1 = (Compressor *) obj;
 delete arg1;
@@ -10765,13 +5609,23 @@ static swig_lua_method swig_Compressor_methods[] = {
     {"Stop", _wrap_Compressor_Stop}, 
     {"Enabled", _wrap_Compressor_Enabled}, 
     {"GetPressureSwitchValue", _wrap_Compressor_GetPressureSwitchValue}, 
-    {"SetRelayValue", _wrap_Compressor_SetRelayValue}, 
+    {"GetCompressorCurrent", _wrap_Compressor_GetCompressorCurrent}, 
+    {"SetClosedLoopControl", _wrap_Compressor_SetClosedLoopControl}, 
+    {"GetClosedLoopControl", _wrap_Compressor_GetClosedLoopControl}, 
+    {"GetCompressorCurrentTooHighFault", _wrap_Compressor_GetCompressorCurrentTooHighFault}, 
+    {"GetCompressorCurrentTooHighStickyFault", _wrap_Compressor_GetCompressorCurrentTooHighStickyFault}, 
+    {"GetCompressorShortedStickyFault", _wrap_Compressor_GetCompressorShortedStickyFault}, 
+    {"GetCompressorShortedFault", _wrap_Compressor_GetCompressorShortedFault}, 
+    {"GetCompressorNotConnectedStickyFault", _wrap_Compressor_GetCompressorNotConnectedStickyFault}, 
+    {"GetCompressorNotConnectedFault", _wrap_Compressor_GetCompressorNotConnectedFault}, 
+    {"ClearAllPCMStickyFaults", _wrap_Compressor_ClearAllPCMStickyFaults}, 
     {"UpdateTable", _wrap_Compressor_UpdateTable}, 
     {"StartLiveWindowMode", _wrap_Compressor_StartLiveWindowMode}, 
     {"StopLiveWindowMode", _wrap_Compressor_StopLiveWindowMode}, 
     {"GetSmartDashboardType", _wrap_Compressor_GetSmartDashboardType}, 
     {"InitTable", _wrap_Compressor_InitTable}, 
     {"GetTable", _wrap_Compressor_GetTable}, 
+    {"ValueChanged", _wrap_Compressor_ValueChanged}, 
     {0,0}
 };
 static swig_lua_attribute swig_Compressor_attributes[] = {
@@ -10809,15 +5663,15 @@ fail:
 
 static int _wrap_new_Counter__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
-  uint32_t arg1 ;
-  uint32_t *argp1 ;
+  int32_t arg1 ;
+  int32_t *argp1 ;
   Counter *result = 0 ;
   
   SWIG_check_num_args("Counter::Counter",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Counter::Counter",1,"uint32_t");
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Counter::Counter",1,"int32_t");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Counter",1,SWIGTYPE_p_uint32_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_int32_t,0))){
+    SWIG_fail_ptr("new_Counter",1,SWIGTYPE_p_int32_t);
   }
   arg1 = *argp1;
   
@@ -10834,41 +5688,6 @@ fail:
 
 
 static int _wrap_new_Counter__SWIG_2(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  Counter *result = 0 ;
-  
-  SWIG_check_num_args("Counter::Counter",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Counter::Counter",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Counter::Counter",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Counter",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Counter",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (Counter *)new Counter(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Counter,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Counter__SWIG_3(lua_State* L) {
   int SWIG_arg = 0;
   DigitalSource *arg1 = (DigitalSource *) 0 ;
   Counter *result = 0 ;
@@ -10892,7 +5711,7 @@ fail:
 }
 
 
-static int _wrap_new_Counter__SWIG_4(lua_State* L) {
+static int _wrap_new_Counter__SWIG_3(lua_State* L) {
   int SWIG_arg = 0;
   DigitalSource *arg1 = 0 ;
   Counter *result = 0 ;
@@ -10916,7 +5735,7 @@ fail:
 }
 
 
-static int _wrap_new_Counter__SWIG_5(lua_State* L) {
+static int _wrap_new_Counter__SWIG_4(lua_State* L) {
   int SWIG_arg = 0;
   AnalogTrigger *arg1 = (AnalogTrigger *) 0 ;
   Counter *result = 0 ;
@@ -10940,7 +5759,7 @@ fail:
 }
 
 
-static int _wrap_new_Counter__SWIG_6(lua_State* L) {
+static int _wrap_new_Counter__SWIG_5(lua_State* L) {
   int SWIG_arg = 0;
   AnalogTrigger *arg1 = 0 ;
   Counter *result = 0 ;
@@ -10964,7 +5783,7 @@ fail:
 }
 
 
-static int _wrap_new_Counter__SWIG_7(lua_State* L) {
+static int _wrap_new_Counter__SWIG_6(lua_State* L) {
   int SWIG_arg = 0;
   EncodingType arg1 ;
   DigitalSource *arg2 = (DigitalSource *) 0 ;
@@ -11021,7 +5840,7 @@ static int _wrap_new_Counter(lua_State* L) {
     int _v;
     {
       void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_int32_t, 0)) {
         _v = 0;
       } else {
         _v = 1;
@@ -11042,7 +5861,7 @@ static int _wrap_new_Counter(lua_State* L) {
       }
     }
     if (_v) {
-      return _wrap_new_Counter__SWIG_3(L);
+      return _wrap_new_Counter__SWIG_2(L);
     }
   }
   if (argc == 1) {
@@ -11056,7 +5875,7 @@ static int _wrap_new_Counter(lua_State* L) {
       }
     }
     if (_v) {
-      return _wrap_new_Counter__SWIG_4(L);
+      return _wrap_new_Counter__SWIG_3(L);
     }
   }
   if (argc == 1) {
@@ -11070,7 +5889,7 @@ static int _wrap_new_Counter(lua_State* L) {
       }
     }
     if (_v) {
-      return _wrap_new_Counter__SWIG_5(L);
+      return _wrap_new_Counter__SWIG_4(L);
     }
   }
   if (argc == 1) {
@@ -11084,31 +5903,7 @@ static int _wrap_new_Counter(lua_State* L) {
       }
     }
     if (_v) {
-      return _wrap_new_Counter__SWIG_6(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_Counter__SWIG_2(L);
-      }
+      return _wrap_new_Counter__SWIG_5(L);
     }
   }
   if (argc == 4) {
@@ -11144,7 +5939,7 @@ static int _wrap_new_Counter(lua_State* L) {
             _v = lua_isboolean(L,argv[3]);
           }
           if (_v) {
-            return _wrap_new_Counter__SWIG_7(L);
+            return _wrap_new_Counter__SWIG_6(L);
           }
         }
       }
@@ -11154,8 +5949,7 @@ static int _wrap_new_Counter(lua_State* L) {
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Counter'\n"
     "  Possible C/C++ prototypes are:\n"
     "    Counter::Counter()\n"
-    "    Counter::Counter(uint32_t)\n"
-    "    Counter::Counter(uint8_t,uint32_t)\n"
+    "    Counter::Counter(int32_t)\n"
     "    Counter::Counter(DigitalSource *)\n"
     "    Counter::Counter(DigitalSource &)\n"
     "    Counter::Counter(AnalogTrigger *)\n"
@@ -11168,20 +5962,20 @@ static int _wrap_new_Counter(lua_State* L) {
 static int _wrap_Counter_SetUpSource__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   Counter *arg1 = (Counter *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
+  int32_t arg2 ;
+  int32_t *argp2 ;
   
   SWIG_check_num_args("Counter::SetUpSource",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Counter::SetUpSource",1,"Counter *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Counter::SetUpSource",2,"uint32_t");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Counter::SetUpSource",2,"int32_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Counter,0))){
     SWIG_fail_ptr("Counter_SetUpSource",1,SWIGTYPE_p_Counter);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("Counter_SetUpSource",2,SWIGTYPE_p_uint32_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_int32_t,0))){
+    SWIG_fail_ptr("Counter_SetUpSource",2,SWIGTYPE_p_int32_t);
   }
   arg2 = *argp2;
   
@@ -11200,29 +5994,27 @@ fail:
 static int _wrap_Counter_SetUpSource__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
   Counter *arg1 = (Counter *) 0 ;
-  uint8_t arg2 ;
-  uint32_t arg3 ;
-  uint8_t *argp2 ;
-  uint32_t *argp3 ;
+  AnalogTrigger *arg2 = (AnalogTrigger *) 0 ;
+  AnalogTriggerType arg3 ;
+  AnalogTriggerType *argp3 ;
   
   SWIG_check_num_args("Counter::SetUpSource",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Counter::SetUpSource",1,"Counter *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Counter::SetUpSource",2,"uint8_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Counter::SetUpSource",3,"uint32_t");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Counter::SetUpSource",2,"AnalogTrigger *");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Counter::SetUpSource",3,"AnalogTriggerType");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Counter,0))){
     SWIG_fail_ptr("Counter_SetUpSource",1,SWIGTYPE_p_Counter);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("Counter_SetUpSource",2,SWIGTYPE_p_uint8_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_AnalogTrigger,0))){
+    SWIG_fail_ptr("Counter_SetUpSource",2,SWIGTYPE_p_AnalogTrigger);
   }
-  arg2 = *argp2;
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("Counter_SetUpSource",3,SWIGTYPE_p_uint32_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_AnalogTriggerType,0))){
+    SWIG_fail_ptr("Counter_SetUpSource",3,SWIGTYPE_p_AnalogTriggerType);
   }
   arg3 = *argp3;
   
@@ -11241,46 +6033,14 @@ fail:
 static int _wrap_Counter_SetUpSource__SWIG_2(lua_State* L) {
   int SWIG_arg = 0;
   Counter *arg1 = (Counter *) 0 ;
-  AnalogTrigger *arg2 = (AnalogTrigger *) 0 ;
-  AnalogTriggerOutput::Type arg3 ;
-  
-  SWIG_check_num_args("Counter::SetUpSource",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Counter::SetUpSource",1,"Counter *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Counter::SetUpSource",2,"AnalogTrigger *");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("Counter::SetUpSource",3,"AnalogTriggerOutput::Type");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Counter,0))){
-    SWIG_fail_ptr("Counter_SetUpSource",1,SWIGTYPE_p_Counter);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_AnalogTrigger,0))){
-    SWIG_fail_ptr("Counter_SetUpSource",2,SWIGTYPE_p_AnalogTrigger);
-  }
-  
-  arg3 = (AnalogTriggerOutput::Type)(int)lua_tonumber(L, 3);
-  (arg1)->SetUpSource(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Counter_SetUpSource__SWIG_3(lua_State* L) {
-  int SWIG_arg = 0;
-  Counter *arg1 = (Counter *) 0 ;
   AnalogTrigger *arg2 = 0 ;
-  AnalogTriggerOutput::Type arg3 ;
+  AnalogTriggerType arg3 ;
+  AnalogTriggerType *argp3 ;
   
   SWIG_check_num_args("Counter::SetUpSource",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Counter::SetUpSource",1,"Counter *");
   if(!lua_isuserdata(L,2)) SWIG_fail_arg("Counter::SetUpSource",2,"AnalogTrigger &");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("Counter::SetUpSource",3,"AnalogTriggerOutput::Type");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Counter::SetUpSource",3,"AnalogTriggerType");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Counter,0))){
     SWIG_fail_ptr("Counter_SetUpSource",1,SWIGTYPE_p_Counter);
@@ -11291,7 +6051,12 @@ static int _wrap_Counter_SetUpSource__SWIG_3(lua_State* L) {
     SWIG_fail_ptr("Counter_SetUpSource",2,SWIGTYPE_p_AnalogTrigger);
   }
   
-  arg3 = (AnalogTriggerOutput::Type)(int)lua_tonumber(L, 3);
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_AnalogTriggerType,0))){
+    SWIG_fail_ptr("Counter_SetUpSource",3,SWIGTYPE_p_AnalogTriggerType);
+  }
+  arg3 = *argp3;
+  
   (arg1)->SetUpSource(*arg2,arg3);
   
   return SWIG_arg;
@@ -11304,7 +6069,7 @@ fail:
 }
 
 
-static int _wrap_Counter_SetUpSource__SWIG_4(lua_State* L) {
+static int _wrap_Counter_SetUpSource__SWIG_3(lua_State* L) {
   int SWIG_arg = 0;
   Counter *arg1 = (Counter *) 0 ;
   DigitalSource *arg2 = (DigitalSource *) 0 ;
@@ -11334,7 +6099,7 @@ fail:
 }
 
 
-static int _wrap_Counter_SetUpSource__SWIG_5(lua_State* L) {
+static int _wrap_Counter_SetUpSource__SWIG_4(lua_State* L) {
   int SWIG_arg = 0;
   Counter *arg1 = (Counter *) 0 ;
   DigitalSource *arg2 = 0 ;
@@ -11384,7 +6149,7 @@ static int _wrap_Counter_SetUpSource(lua_State* L) {
     if (_v) {
       {
         void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_int32_t, 0)) {
           _v = 0;
         } else {
           _v = 1;
@@ -11415,7 +6180,7 @@ static int _wrap_Counter_SetUpSource(lua_State* L) {
         }
       }
       if (_v) {
-        return _wrap_Counter_SetUpSource__SWIG_4(L);
+        return _wrap_Counter_SetUpSource__SWIG_3(L);
       }
     }
   }
@@ -11439,70 +6204,7 @@ static int _wrap_Counter_SetUpSource(lua_State* L) {
         }
       }
       if (_v) {
-        return _wrap_Counter_SetUpSource__SWIG_5(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Counter, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_AnalogTrigger, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          _v = lua_isnumber(L,argv[2]);
-        }
-        if (_v) {
-          return _wrap_Counter_SetUpSource__SWIG_3(L);
-        }
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Counter, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          return _wrap_Counter_SetUpSource__SWIG_1(L);
-        }
+        return _wrap_Counter_SetUpSource__SWIG_4(L);
       }
     }
   }
@@ -11527,7 +6229,46 @@ static int _wrap_Counter_SetUpSource(lua_State* L) {
       }
       if (_v) {
         {
-          _v = lua_isnumber(L,argv[2]);
+          void *ptr;
+          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_AnalogTriggerType, 0)) {
+            _v = 0;
+          } else {
+            _v = 1;
+          }
+        }
+        if (_v) {
+          return _wrap_Counter_SetUpSource__SWIG_1(L);
+        }
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Counter, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_AnalogTrigger, 0)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        {
+          void *ptr;
+          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_AnalogTriggerType, 0)) {
+            _v = 0;
+          } else {
+            _v = 1;
+          }
         }
         if (_v) {
           return _wrap_Counter_SetUpSource__SWIG_2(L);
@@ -11538,10 +6279,9 @@ static int _wrap_Counter_SetUpSource(lua_State* L) {
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Counter_SetUpSource'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    Counter::SetUpSource(uint32_t)\n"
-    "    Counter::SetUpSource(uint8_t,uint32_t)\n"
-    "    Counter::SetUpSource(AnalogTrigger *,AnalogTriggerOutput::Type)\n"
-    "    Counter::SetUpSource(AnalogTrigger &,AnalogTriggerOutput::Type)\n"
+    "    Counter::SetUpSource(int32_t)\n"
+    "    Counter::SetUpSource(AnalogTrigger *,AnalogTriggerType)\n"
+    "    Counter::SetUpSource(AnalogTrigger &,AnalogTriggerType)\n"
     "    Counter::SetUpSource(DigitalSource *)\n"
     "    Counter::SetUpSource(DigitalSource &)\n");
   lua_error(L);return 0;
@@ -11603,20 +6343,20 @@ fail:
 static int _wrap_Counter_SetDownSource__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   Counter *arg1 = (Counter *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
+  int32_t arg2 ;
+  int32_t *argp2 ;
   
   SWIG_check_num_args("Counter::SetDownSource",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Counter::SetDownSource",1,"Counter *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Counter::SetDownSource",2,"uint32_t");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Counter::SetDownSource",2,"int32_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Counter,0))){
     SWIG_fail_ptr("Counter_SetDownSource",1,SWIGTYPE_p_Counter);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("Counter_SetDownSource",2,SWIGTYPE_p_uint32_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_int32_t,0))){
+    SWIG_fail_ptr("Counter_SetDownSource",2,SWIGTYPE_p_int32_t);
   }
   arg2 = *argp2;
   
@@ -11635,29 +6375,27 @@ fail:
 static int _wrap_Counter_SetDownSource__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
   Counter *arg1 = (Counter *) 0 ;
-  uint8_t arg2 ;
-  uint32_t arg3 ;
-  uint8_t *argp2 ;
-  uint32_t *argp3 ;
+  AnalogTrigger *arg2 = (AnalogTrigger *) 0 ;
+  AnalogTriggerType arg3 ;
+  AnalogTriggerType *argp3 ;
   
   SWIG_check_num_args("Counter::SetDownSource",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Counter::SetDownSource",1,"Counter *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Counter::SetDownSource",2,"uint8_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Counter::SetDownSource",3,"uint32_t");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Counter::SetDownSource",2,"AnalogTrigger *");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Counter::SetDownSource",3,"AnalogTriggerType");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Counter,0))){
     SWIG_fail_ptr("Counter_SetDownSource",1,SWIGTYPE_p_Counter);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("Counter_SetDownSource",2,SWIGTYPE_p_uint8_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_AnalogTrigger,0))){
+    SWIG_fail_ptr("Counter_SetDownSource",2,SWIGTYPE_p_AnalogTrigger);
   }
-  arg2 = *argp2;
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("Counter_SetDownSource",3,SWIGTYPE_p_uint32_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_AnalogTriggerType,0))){
+    SWIG_fail_ptr("Counter_SetDownSource",3,SWIGTYPE_p_AnalogTriggerType);
   }
   arg3 = *argp3;
   
@@ -11676,46 +6414,14 @@ fail:
 static int _wrap_Counter_SetDownSource__SWIG_2(lua_State* L) {
   int SWIG_arg = 0;
   Counter *arg1 = (Counter *) 0 ;
-  AnalogTrigger *arg2 = (AnalogTrigger *) 0 ;
-  AnalogTriggerOutput::Type arg3 ;
-  
-  SWIG_check_num_args("Counter::SetDownSource",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Counter::SetDownSource",1,"Counter *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Counter::SetDownSource",2,"AnalogTrigger *");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("Counter::SetDownSource",3,"AnalogTriggerOutput::Type");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Counter,0))){
-    SWIG_fail_ptr("Counter_SetDownSource",1,SWIGTYPE_p_Counter);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_AnalogTrigger,0))){
-    SWIG_fail_ptr("Counter_SetDownSource",2,SWIGTYPE_p_AnalogTrigger);
-  }
-  
-  arg3 = (AnalogTriggerOutput::Type)(int)lua_tonumber(L, 3);
-  (arg1)->SetDownSource(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Counter_SetDownSource__SWIG_3(lua_State* L) {
-  int SWIG_arg = 0;
-  Counter *arg1 = (Counter *) 0 ;
   AnalogTrigger *arg2 = 0 ;
-  AnalogTriggerOutput::Type arg3 ;
+  AnalogTriggerType arg3 ;
+  AnalogTriggerType *argp3 ;
   
   SWIG_check_num_args("Counter::SetDownSource",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Counter::SetDownSource",1,"Counter *");
   if(!lua_isuserdata(L,2)) SWIG_fail_arg("Counter::SetDownSource",2,"AnalogTrigger &");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("Counter::SetDownSource",3,"AnalogTriggerOutput::Type");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Counter::SetDownSource",3,"AnalogTriggerType");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Counter,0))){
     SWIG_fail_ptr("Counter_SetDownSource",1,SWIGTYPE_p_Counter);
@@ -11726,7 +6432,12 @@ static int _wrap_Counter_SetDownSource__SWIG_3(lua_State* L) {
     SWIG_fail_ptr("Counter_SetDownSource",2,SWIGTYPE_p_AnalogTrigger);
   }
   
-  arg3 = (AnalogTriggerOutput::Type)(int)lua_tonumber(L, 3);
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_AnalogTriggerType,0))){
+    SWIG_fail_ptr("Counter_SetDownSource",3,SWIGTYPE_p_AnalogTriggerType);
+  }
+  arg3 = *argp3;
+  
   (arg1)->SetDownSource(*arg2,arg3);
   
   return SWIG_arg;
@@ -11739,7 +6450,7 @@ fail:
 }
 
 
-static int _wrap_Counter_SetDownSource__SWIG_4(lua_State* L) {
+static int _wrap_Counter_SetDownSource__SWIG_3(lua_State* L) {
   int SWIG_arg = 0;
   Counter *arg1 = (Counter *) 0 ;
   DigitalSource *arg2 = (DigitalSource *) 0 ;
@@ -11769,7 +6480,7 @@ fail:
 }
 
 
-static int _wrap_Counter_SetDownSource__SWIG_5(lua_State* L) {
+static int _wrap_Counter_SetDownSource__SWIG_4(lua_State* L) {
   int SWIG_arg = 0;
   Counter *arg1 = (Counter *) 0 ;
   DigitalSource *arg2 = 0 ;
@@ -11819,7 +6530,7 @@ static int _wrap_Counter_SetDownSource(lua_State* L) {
     if (_v) {
       {
         void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_int32_t, 0)) {
           _v = 0;
         } else {
           _v = 1;
@@ -11850,7 +6561,7 @@ static int _wrap_Counter_SetDownSource(lua_State* L) {
         }
       }
       if (_v) {
-        return _wrap_Counter_SetDownSource__SWIG_4(L);
+        return _wrap_Counter_SetDownSource__SWIG_3(L);
       }
     }
   }
@@ -11874,70 +6585,7 @@ static int _wrap_Counter_SetDownSource(lua_State* L) {
         }
       }
       if (_v) {
-        return _wrap_Counter_SetDownSource__SWIG_5(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Counter, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_AnalogTrigger, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          _v = lua_isnumber(L,argv[2]);
-        }
-        if (_v) {
-          return _wrap_Counter_SetDownSource__SWIG_3(L);
-        }
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Counter, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          return _wrap_Counter_SetDownSource__SWIG_1(L);
-        }
+        return _wrap_Counter_SetDownSource__SWIG_4(L);
       }
     }
   }
@@ -11962,7 +6610,46 @@ static int _wrap_Counter_SetDownSource(lua_State* L) {
       }
       if (_v) {
         {
-          _v = lua_isnumber(L,argv[2]);
+          void *ptr;
+          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_AnalogTriggerType, 0)) {
+            _v = 0;
+          } else {
+            _v = 1;
+          }
+        }
+        if (_v) {
+          return _wrap_Counter_SetDownSource__SWIG_1(L);
+        }
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Counter, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_AnalogTrigger, 0)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        {
+          void *ptr;
+          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_AnalogTriggerType, 0)) {
+            _v = 0;
+          } else {
+            _v = 1;
+          }
         }
         if (_v) {
           return _wrap_Counter_SetDownSource__SWIG_2(L);
@@ -11973,10 +6660,9 @@ static int _wrap_Counter_SetDownSource(lua_State* L) {
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Counter_SetDownSource'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    Counter::SetDownSource(uint32_t)\n"
-    "    Counter::SetDownSource(uint8_t,uint32_t)\n"
-    "    Counter::SetDownSource(AnalogTrigger *,AnalogTriggerOutput::Type)\n"
-    "    Counter::SetDownSource(AnalogTrigger &,AnalogTriggerOutput::Type)\n"
+    "    Counter::SetDownSource(int32_t)\n"
+    "    Counter::SetDownSource(AnalogTrigger *,AnalogTriggerType)\n"
+    "    Counter::SetDownSource(AnalogTrigger &,AnalogTriggerType)\n"
     "    Counter::SetDownSource(DigitalSource *)\n"
     "    Counter::SetDownSource(DigitalSource &)\n");
   lua_error(L);return 0;
@@ -12159,29 +6845,6 @@ fail:
 }
 
 
-static int _wrap_Counter_Start(lua_State* L) {
-  int SWIG_arg = 0;
-  Counter *arg1 = (Counter *) 0 ;
-  
-  SWIG_check_num_args("Counter::Start",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Counter::Start",1,"Counter *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Counter,0))){
-    SWIG_fail_ptr("Counter_Start",1,SWIGTYPE_p_Counter);
-  }
-  
-  (arg1)->Start();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
 static int _wrap_Counter_Get(lua_State* L) {
   int SWIG_arg = 0;
   Counter *arg1 = (Counter *) 0 ;
@@ -12221,29 +6884,6 @@ static int _wrap_Counter_Reset(lua_State* L) {
   }
   
   (arg1)->Reset();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Counter_Stop(lua_State* L) {
-  int SWIG_arg = 0;
-  Counter *arg1 = (Counter *) 0 ;
-  
-  SWIG_check_num_args("Counter::Stop",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Counter::Stop",1,"Counter *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Counter,0))){
-    SWIG_fail_ptr("Counter_Stop",1,SWIGTYPE_p_Counter);
-  }
-  
-  (arg1)->Stop();
   
   return SWIG_arg;
   
@@ -12429,19 +7069,19 @@ fail:
 }
 
 
-static int _wrap_Counter_GetIndex(lua_State* L) {
+static int _wrap_Counter_GetFPGAIndex(lua_State* L) {
   int SWIG_arg = 0;
   Counter *arg1 = (Counter *) 0 ;
   uint32_t result;
   
-  SWIG_check_num_args("Counter::GetIndex",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Counter::GetIndex",1,"Counter *");
+  SWIG_check_num_args("Counter::GetFPGAIndex",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Counter::GetFPGAIndex",1,"Counter *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Counter,0))){
-    SWIG_fail_ptr("Counter_GetIndex",1,SWIGTYPE_p_Counter);
+    SWIG_fail_ptr("Counter_GetFPGAIndex",1,SWIGTYPE_p_Counter);
   }
   
-  result = (arg1)->GetIndex();
+  result = (arg1)->GetFPGAIndex();
   {
     uint32_t * resultptr = new uint32_t((const uint32_t &) result);
     SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
@@ -12622,10 +7262,8 @@ static swig_lua_method swig_Counter_methods[] = {
     {"SetSemiPeriodMode", _wrap_Counter_SetSemiPeriodMode}, 
     {"SetPulseLengthMode", _wrap_Counter_SetPulseLengthMode}, 
     {"SetReverseDirection", _wrap_Counter_SetReverseDirection}, 
-    {"Start", _wrap_Counter_Start}, 
     {"Get", _wrap_Counter_Get}, 
     {"Reset", _wrap_Counter_Reset}, 
-    {"Stop", _wrap_Counter_Stop}, 
     {"GetPeriod", _wrap_Counter_GetPeriod}, 
     {"SetMaxPeriod", _wrap_Counter_SetMaxPeriod}, 
     {"SetUpdateWhenEmpty", _wrap_Counter_SetUpdateWhenEmpty}, 
@@ -12633,7 +7271,7 @@ static swig_lua_method swig_Counter_methods[] = {
     {"GetDirection", _wrap_Counter_GetDirection}, 
     {"SetSamplesToAverage", _wrap_Counter_SetSamplesToAverage}, 
     {"GetSamplesToAverage", _wrap_Counter_GetSamplesToAverage}, 
-    {"GetIndex", _wrap_Counter_GetIndex}, 
+    {"GetFPGAIndex", _wrap_Counter_GetFPGAIndex}, 
     {"UpdateTable", _wrap_Counter_UpdateTable}, 
     {"StartLiveWindowMode", _wrap_Counter_StartLiveWindowMode}, 
     {"StopLiveWindowMode", _wrap_Counter_StopLiveWindowMode}, 
@@ -12652,698 +7290,13 @@ static swig_lua_method swig_Counter_cls_methods[] = {
     {0,0}
 };
 static swig_lua_const_info swig_Counter_cls_constants[] = {
-    {SWIG_LUA_CONSTTAB_INT("kTwoPulse", Counter::kTwoPulse)},
-    {SWIG_LUA_CONSTTAB_INT("kSemiperiod", Counter::kSemiperiod)},
-    {SWIG_LUA_CONSTTAB_INT("kPulseLength", Counter::kPulseLength)},
-    {SWIG_LUA_CONSTTAB_INT("kExternalDirection", Counter::kExternalDirection)},
     {0,0,0,0,0,0}
 };
 static swig_lua_class *swig_Counter_bases[] = {0};
 static const char *swig_Counter_base_names[] = {0};
 static swig_lua_class _wrap_class_Counter = { "Counter", &SWIGTYPE_p_Counter,_wrap_new_Counter, swig_delete_Counter, swig_Counter_methods, swig_Counter_attributes, { "Counter", swig_Counter_cls_methods, swig_Counter_cls_attributes, swig_Counter_cls_constants }, swig_Counter_bases, swig_Counter_base_names };
 
-static int _wrap_new_Dashboard(lua_State* L) {
-  int SWIG_arg = 0;
-  SEM_ID arg1 ;
-  SEM_ID *argp1 ;
-  Dashboard *result = 0 ;
-  
-  SWIG_check_num_args("Dashboard::Dashboard",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Dashboard::Dashboard",1,"SEM_ID");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_SEM_ID,0))){
-    SWIG_fail_ptr("new_Dashboard",1,SWIGTYPE_p_SEM_ID);
-  }
-  arg1 = *argp1;
-  
-  result = (Dashboard *)new Dashboard(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Dashboard,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_AddI8(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  int8_t arg2 ;
-  int8_t *argp2 ;
-  
-  SWIG_check_num_args("Dashboard::AddI8",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::AddI8",1,"Dashboard *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Dashboard::AddI8",2,"int8_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_AddI8",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_int8_t,0))){
-    SWIG_fail_ptr("Dashboard_AddI8",2,SWIGTYPE_p_int8_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->AddI8(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_AddI16(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  int16_t arg2 ;
-  int16_t *argp2 ;
-  
-  SWIG_check_num_args("Dashboard::AddI16",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::AddI16",1,"Dashboard *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Dashboard::AddI16",2,"int16_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_AddI16",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_int16_t,0))){
-    SWIG_fail_ptr("Dashboard_AddI16",2,SWIGTYPE_p_int16_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->AddI16(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_AddI32(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  int32_t arg2 ;
-  int32_t *argp2 ;
-  
-  SWIG_check_num_args("Dashboard::AddI32",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::AddI32",1,"Dashboard *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Dashboard::AddI32",2,"int32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_AddI32",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_int32_t,0))){
-    SWIG_fail_ptr("Dashboard_AddI32",2,SWIGTYPE_p_int32_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->AddI32(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_AddU8(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  uint8_t arg2 ;
-  uint8_t *argp2 ;
-  
-  SWIG_check_num_args("Dashboard::AddU8",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::AddU8",1,"Dashboard *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Dashboard::AddU8",2,"uint8_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_AddU8",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("Dashboard_AddU8",2,SWIGTYPE_p_uint8_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->AddU8(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_AddU16(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  uint16_t arg2 ;
-  uint16_t *argp2 ;
-  
-  SWIG_check_num_args("Dashboard::AddU16",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::AddU16",1,"Dashboard *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Dashboard::AddU16",2,"uint16_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_AddU16",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint16_t,0))){
-    SWIG_fail_ptr("Dashboard_AddU16",2,SWIGTYPE_p_uint16_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->AddU16(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_AddU32(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("Dashboard::AddU32",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::AddU32",1,"Dashboard *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Dashboard::AddU32",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_AddU32",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("Dashboard_AddU32",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->AddU32(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_AddFloat(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  float arg2 ;
-  
-  SWIG_check_num_args("Dashboard::AddFloat",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::AddFloat",1,"Dashboard *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("Dashboard::AddFloat",2,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_AddFloat",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->AddFloat(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_AddDouble(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  double arg2 ;
-  
-  SWIG_check_num_args("Dashboard::AddDouble",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::AddDouble",1,"Dashboard *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("Dashboard::AddDouble",2,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_AddDouble",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  arg2 = (double)lua_tonumber(L, 2);
-  (arg1)->AddDouble(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_AddBoolean(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  bool arg2 ;
-  
-  SWIG_check_num_args("Dashboard::AddBoolean",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::AddBoolean",1,"Dashboard *");
-  if(!lua_isboolean(L,2)) SWIG_fail_arg("Dashboard::AddBoolean",2,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_AddBoolean",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  arg2 = (lua_toboolean(L, 2)!=0);
-  (arg1)->AddBoolean(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_AddString__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  char *arg2 = (char *) 0 ;
-  
-  SWIG_check_num_args("Dashboard::AddString",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::AddString",1,"Dashboard *");
-  if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("Dashboard::AddString",2,"char *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_AddString",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  arg2 = (char *)lua_tostring(L, 2);
-  (arg1)->AddString(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_AddString__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  char *arg2 = (char *) 0 ;
-  int32_t arg3 ;
-  int32_t *argp3 ;
-  
-  SWIG_check_num_args("Dashboard::AddString",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::AddString",1,"Dashboard *");
-  if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("Dashboard::AddString",2,"char *");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Dashboard::AddString",3,"int32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_AddString",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  arg2 = (char *)lua_tostring(L, 2);
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_int32_t,0))){
-    SWIG_fail_ptr("Dashboard_AddString",3,SWIGTYPE_p_int32_t);
-  }
-  arg3 = *argp3;
-  
-  (arg1)->AddString(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_AddString(lua_State* L) {
-  int argc;
-  int argv[4]={
-    1,2,3,4
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Dashboard, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = SWIG_lua_isnilstring(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_Dashboard_AddString__SWIG_0(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Dashboard, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = SWIG_lua_isnilstring(L,argv[1]);
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_int32_t, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          return _wrap_Dashboard_AddString__SWIG_1(L);
-        }
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Dashboard_AddString'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    Dashboard::AddString(char *)\n"
-    "    Dashboard::AddString(char *,int32_t)\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_Dashboard_AddArray(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  
-  SWIG_check_num_args("Dashboard::AddArray",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::AddArray",1,"Dashboard *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_AddArray",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  (arg1)->AddArray();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_FinalizeArray(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  
-  SWIG_check_num_args("Dashboard::FinalizeArray",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::FinalizeArray",1,"Dashboard *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_FinalizeArray",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  (arg1)->FinalizeArray();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_AddCluster(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  
-  SWIG_check_num_args("Dashboard::AddCluster",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::AddCluster",1,"Dashboard *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_AddCluster",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  (arg1)->AddCluster();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_FinalizeCluster(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  
-  SWIG_check_num_args("Dashboard::FinalizeCluster",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::FinalizeCluster",1,"Dashboard *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_FinalizeCluster",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  (arg1)->FinalizeCluster();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_Printf(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  char *arg2 = (char *) 0 ;
-  void *arg3 = 0 ;
-  
-  SWIG_check_num_args("Dashboard::Printf",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::Printf",1,"Dashboard *");
-  if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("Dashboard::Printf",2,"char const *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_Printf",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  arg2 = (char *)lua_tostring(L, 2);
-  (arg1)->Printf((char const *)arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_Finalize(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  int32_t result;
-  
-  SWIG_check_num_args("Dashboard::Finalize",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::Finalize",1,"Dashboard *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_Finalize",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  result = (arg1)->Finalize();
-  {
-    int32_t * resultptr = new int32_t((const int32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_GetStatusBuffer(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  char **arg2 = (char **) 0 ;
-  int32_t *arg3 = (int32_t *) 0 ;
-  
-  SWIG_check_num_args("Dashboard::GetStatusBuffer",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::GetStatusBuffer",1,"Dashboard *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("Dashboard::GetStatusBuffer",2,"char **");
-  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("Dashboard::GetStatusBuffer",3,"int32_t *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_GetStatusBuffer",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_p_char,0))){
-    SWIG_fail_ptr("Dashboard_GetStatusBuffer",2,SWIGTYPE_p_p_char);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_int32_t,0))){
-    SWIG_fail_ptr("Dashboard_GetStatusBuffer",3,SWIGTYPE_p_int32_t);
-  }
-  
-  (arg1)->GetStatusBuffer(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Dashboard_Flush(lua_State* L) {
-  int SWIG_arg = 0;
-  Dashboard *arg1 = (Dashboard *) 0 ;
-  
-  SWIG_check_num_args("Dashboard::Flush",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Dashboard::Flush",1,"Dashboard *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Dashboard,0))){
-    SWIG_fail_ptr("Dashboard_Flush",1,SWIGTYPE_p_Dashboard);
-  }
-  
-  (arg1)->Flush();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_Dashboard(void *obj) {
-Dashboard *arg1 = (Dashboard *) obj;
-delete arg1;
-}
-static swig_lua_method swig_Dashboard_methods[] = {
-    {"AddI8", _wrap_Dashboard_AddI8}, 
-    {"AddI16", _wrap_Dashboard_AddI16}, 
-    {"AddI32", _wrap_Dashboard_AddI32}, 
-    {"AddU8", _wrap_Dashboard_AddU8}, 
-    {"AddU16", _wrap_Dashboard_AddU16}, 
-    {"AddU32", _wrap_Dashboard_AddU32}, 
-    {"AddFloat", _wrap_Dashboard_AddFloat}, 
-    {"AddDouble", _wrap_Dashboard_AddDouble}, 
-    {"AddBoolean", _wrap_Dashboard_AddBoolean}, 
-    {"AddString", _wrap_Dashboard_AddString}, 
-    {"AddArray", _wrap_Dashboard_AddArray}, 
-    {"FinalizeArray", _wrap_Dashboard_FinalizeArray}, 
-    {"AddCluster", _wrap_Dashboard_AddCluster}, 
-    {"FinalizeCluster", _wrap_Dashboard_FinalizeCluster}, 
-    {"Printf", _wrap_Dashboard_Printf}, 
-    {"Finalize", _wrap_Dashboard_Finalize}, 
-    {"GetStatusBuffer", _wrap_Dashboard_GetStatusBuffer}, 
-    {"Flush", _wrap_Dashboard_Flush}, 
-    {0,0}
-};
-static swig_lua_attribute swig_Dashboard_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_Dashboard_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_Dashboard_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_Dashboard_cls_constants[] = {
-    {SWIG_LUA_CONSTTAB_INT("kI8", Dashboard::kI8)},
-    {SWIG_LUA_CONSTTAB_INT("kI16", Dashboard::kI16)},
-    {SWIG_LUA_CONSTTAB_INT("kI32", Dashboard::kI32)},
-    {SWIG_LUA_CONSTTAB_INT("kU8", Dashboard::kU8)},
-    {SWIG_LUA_CONSTTAB_INT("kU16", Dashboard::kU16)},
-    {SWIG_LUA_CONSTTAB_INT("kU32", Dashboard::kU32)},
-    {SWIG_LUA_CONSTTAB_INT("kFloat", Dashboard::kFloat)},
-    {SWIG_LUA_CONSTTAB_INT("kDouble", Dashboard::kDouble)},
-    {SWIG_LUA_CONSTTAB_INT("kBoolean", Dashboard::kBoolean)},
-    {SWIG_LUA_CONSTTAB_INT("kString", Dashboard::kString)},
-    {SWIG_LUA_CONSTTAB_INT("kOther", Dashboard::kOther)},
-    {SWIG_LUA_CONSTTAB_INT("kArray", Dashboard::kArray)},
-    {SWIG_LUA_CONSTTAB_INT("kCluster", Dashboard::kCluster)},
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_Dashboard_bases[] = {0};
-static const char *swig_Dashboard_base_names[] = {0};
-static swig_lua_class _wrap_class_Dashboard = { "Dashboard", &SWIGTYPE_p_Dashboard,_wrap_new_Dashboard, swig_delete_Dashboard, swig_Dashboard_methods, swig_Dashboard_attributes, { "Dashboard", swig_Dashboard_cls_methods, swig_Dashboard_cls_attributes, swig_Dashboard_cls_constants }, swig_Dashboard_bases, swig_Dashboard_base_names };
-
-static int _wrap_new_DigitalInput__SWIG_0(lua_State* L) {
+static int _wrap_new_DigitalInput(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
   uint32_t *argp1 ;
@@ -13369,99 +7322,10 @@ fail:
 }
 
 
-static int _wrap_new_DigitalInput__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  DigitalInput *result = 0 ;
-  
-  SWIG_check_num_args("DigitalInput::DigitalInput",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("DigitalInput::DigitalInput",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalInput::DigitalInput",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_DigitalInput",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_DigitalInput",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (DigitalInput *)new DigitalInput(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_DigitalInput,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_DigitalInput(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_DigitalInput__SWIG_0(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_DigitalInput__SWIG_1(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_DigitalInput'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    DigitalInput::DigitalInput(uint32_t)\n"
-    "    DigitalInput::DigitalInput(uint8_t,uint32_t)\n");
-  lua_error(L);return 0;
-}
-
-
 static int _wrap_DigitalInput_Get(lua_State* L) {
   int SWIG_arg = 0;
   DigitalInput *arg1 = (DigitalInput *) 0 ;
-  uint32_t result;
+  bool result;
   
   SWIG_check_num_args("DigitalInput::Get",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalInput::Get",1,"DigitalInput *");
@@ -13470,11 +7334,8 @@ static int _wrap_DigitalInput_Get(lua_State* L) {
     SWIG_fail_ptr("DigitalInput_Get",1,SWIGTYPE_p_DigitalInput);
   }
   
-  result = (arg1)->Get();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
+  result = (bool)(arg1)->Get();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -13580,214 +7441,6 @@ static int _wrap_DigitalInput_GetAnalogTriggerForRouting(lua_State* L) {
   
   result = (bool)(arg1)->GetAnalogTriggerForRouting();
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalInput_RequestInterrupts__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalInput *arg1 = (DigitalInput *) 0 ;
-  tInterruptHandler arg2 ;
-  void *arg3 = (void *) 0 ;
-  tInterruptHandler *argp2 ;
-  
-  SWIG_check_num_args("DigitalInput::RequestInterrupts",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalInput::RequestInterrupts",1,"DigitalInput *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalInput::RequestInterrupts",2,"tInterruptHandler");
-  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("DigitalInput::RequestInterrupts",3,"void *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalInput,0))){
-    SWIG_fail_ptr("DigitalInput_RequestInterrupts",1,SWIGTYPE_p_DigitalInput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_tInterruptHandler,0))){
-    SWIG_fail_ptr("DigitalInput_RequestInterrupts",2,SWIGTYPE_p_tInterruptHandler);
-  }
-  arg2 = *argp2;
-  
-  arg3=(void *)SWIG_MustGetPtr(L,3,0,0,3,"DigitalInput_RequestInterrupts");
-  (arg1)->RequestInterrupts(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalInput_RequestInterrupts__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalInput *arg1 = (DigitalInput *) 0 ;
-  tInterruptHandler arg2 ;
-  tInterruptHandler *argp2 ;
-  
-  SWIG_check_num_args("DigitalInput::RequestInterrupts",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalInput::RequestInterrupts",1,"DigitalInput *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalInput::RequestInterrupts",2,"tInterruptHandler");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalInput,0))){
-    SWIG_fail_ptr("DigitalInput_RequestInterrupts",1,SWIGTYPE_p_DigitalInput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_tInterruptHandler,0))){
-    SWIG_fail_ptr("DigitalInput_RequestInterrupts",2,SWIGTYPE_p_tInterruptHandler);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->RequestInterrupts(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalInput_RequestInterrupts__SWIG_2(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalInput *arg1 = (DigitalInput *) 0 ;
-  
-  SWIG_check_num_args("DigitalInput::RequestInterrupts",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalInput::RequestInterrupts",1,"DigitalInput *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalInput,0))){
-    SWIG_fail_ptr("DigitalInput_RequestInterrupts",1,SWIGTYPE_p_DigitalInput);
-  }
-  
-  (arg1)->RequestInterrupts();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalInput_RequestInterrupts(lua_State* L) {
-  int argc;
-  int argv[4]={
-    1,2,3,4
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalInput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_DigitalInput_RequestInterrupts__SWIG_2(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalInput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_tInterruptHandler, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_DigitalInput_RequestInterrupts__SWIG_1(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalInput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_tInterruptHandler, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, 0, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          return _wrap_DigitalInput_RequestInterrupts__SWIG_0(L);
-        }
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'DigitalInput_RequestInterrupts'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    DigitalInput::RequestInterrupts(tInterruptHandler,void *)\n"
-    "    DigitalInput::RequestInterrupts(tInterruptHandler)\n"
-    "    DigitalInput::RequestInterrupts()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_DigitalInput_SetUpSourceEdge(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalInput *arg1 = (DigitalInput *) 0 ;
-  bool arg2 ;
-  bool arg3 ;
-  
-  SWIG_check_num_args("DigitalInput::SetUpSourceEdge",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalInput::SetUpSourceEdge",1,"DigitalInput *");
-  if(!lua_isboolean(L,2)) SWIG_fail_arg("DigitalInput::SetUpSourceEdge",2,"bool");
-  if(!lua_isboolean(L,3)) SWIG_fail_arg("DigitalInput::SetUpSourceEdge",3,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalInput,0))){
-    SWIG_fail_ptr("DigitalInput_SetUpSourceEdge",1,SWIGTYPE_p_DigitalInput);
-  }
-  
-  arg2 = (lua_toboolean(L, 2)!=0);
-  arg3 = (lua_toboolean(L, 3)!=0);
-  (arg1)->SetUpSourceEdge(arg2,arg3);
-  
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -13958,8 +7611,6 @@ static swig_lua_method swig_DigitalInput_methods[] = {
     {"GetChannelForRouting", _wrap_DigitalInput_GetChannelForRouting}, 
     {"GetModuleForRouting", _wrap_DigitalInput_GetModuleForRouting}, 
     {"GetAnalogTriggerForRouting", _wrap_DigitalInput_GetAnalogTriggerForRouting}, 
-    {"RequestInterrupts", _wrap_DigitalInput_RequestInterrupts}, 
-    {"SetUpSourceEdge", _wrap_DigitalInput_SetUpSourceEdge}, 
     {"UpdateTable", _wrap_DigitalInput_UpdateTable}, 
     {"StartLiveWindowMode", _wrap_DigitalInput_StartLiveWindowMode}, 
     {"StopLiveWindowMode", _wrap_DigitalInput_StopLiveWindowMode}, 
@@ -13984,1268 +7635,7 @@ static swig_lua_class *swig_DigitalInput_bases[] = {0};
 static const char *swig_DigitalInput_base_names[] = {0};
 static swig_lua_class _wrap_class_DigitalInput = { "DigitalInput", &SWIGTYPE_p_DigitalInput,_wrap_new_DigitalInput, swig_delete_DigitalInput, swig_DigitalInput_methods, swig_DigitalInput_attributes, { "DigitalInput", swig_DigitalInput_cls_methods, swig_DigitalInput_cls_attributes, swig_DigitalInput_cls_constants }, swig_DigitalInput_bases, swig_DigitalInput_base_names };
 
-static int _wrap_kExpectedLoopTiming_get(lua_State* L) {
-  int SWIG_arg = 0;
-  uint32_t result;
-  
-  SWIG_check_num_args("kExpectedLoopTiming",0,0)
-  result = (uint32_t)kExpectedLoopTiming;
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_SetPWM(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  uint8_t arg3 ;
-  uint32_t *argp2 ;
-  uint8_t *argp3 ;
-  
-  SWIG_check_num_args("DigitalModule::SetPWM",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::SetPWM",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::SetPWM",2,"uint32_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("DigitalModule::SetPWM",3,"uint8_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_SetPWM",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_SetPWM",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("DigitalModule_SetPWM",3,SWIGTYPE_p_uint8_t);
-  }
-  arg3 = *argp3;
-  
-  (arg1)->SetPWM(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetPWM(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  uint8_t result;
-  
-  SWIG_check_num_args("DigitalModule::GetPWM",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::GetPWM",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::GetPWM",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_GetPWM",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_GetPWM",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (arg1)->GetPWM(arg2);
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_SetPWMPeriodScale(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t arg3 ;
-  uint32_t *argp2 ;
-  uint32_t *argp3 ;
-  
-  SWIG_check_num_args("DigitalModule::SetPWMPeriodScale",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::SetPWMPeriodScale",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::SetPWMPeriodScale",2,"uint32_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("DigitalModule::SetPWMPeriodScale",3,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_SetPWMPeriodScale",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_SetPWMPeriodScale",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_SetPWMPeriodScale",3,SWIGTYPE_p_uint32_t);
-  }
-  arg3 = *argp3;
-  
-  (arg1)->SetPWMPeriodScale(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_SetRelayForward(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  bool arg3 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DigitalModule::SetRelayForward",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::SetRelayForward",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::SetRelayForward",2,"uint32_t");
-  if(!lua_isboolean(L,3)) SWIG_fail_arg("DigitalModule::SetRelayForward",3,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_SetRelayForward",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_SetRelayForward",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (lua_toboolean(L, 3)!=0);
-  (arg1)->SetRelayForward(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_SetRelayReverse(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  bool arg3 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DigitalModule::SetRelayReverse",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::SetRelayReverse",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::SetRelayReverse",2,"uint32_t");
-  if(!lua_isboolean(L,3)) SWIG_fail_arg("DigitalModule::SetRelayReverse",3,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_SetRelayReverse",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_SetRelayReverse",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (lua_toboolean(L, 3)!=0);
-  (arg1)->SetRelayReverse(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetRelayForward__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  bool result;
-  
-  SWIG_check_num_args("DigitalModule::GetRelayForward",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::GetRelayForward",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::GetRelayForward",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_GetRelayForward",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_GetRelayForward",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (bool)(arg1)->GetRelayForward(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetRelayForward__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint8_t result;
-  
-  SWIG_check_num_args("DigitalModule::GetRelayForward",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::GetRelayForward",1,"DigitalModule *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_GetRelayForward",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  result = (arg1)->GetRelayForward();
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetRelayForward(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalModule, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_DigitalModule_GetRelayForward__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalModule, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_DigitalModule_GetRelayForward__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'DigitalModule_GetRelayForward'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    DigitalModule::GetRelayForward(uint32_t)\n"
-    "    DigitalModule::GetRelayForward()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_DigitalModule_GetRelayReverse__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  bool result;
-  
-  SWIG_check_num_args("DigitalModule::GetRelayReverse",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::GetRelayReverse",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::GetRelayReverse",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_GetRelayReverse",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_GetRelayReverse",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (bool)(arg1)->GetRelayReverse(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetRelayReverse__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint8_t result;
-  
-  SWIG_check_num_args("DigitalModule::GetRelayReverse",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::GetRelayReverse",1,"DigitalModule *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_GetRelayReverse",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  result = (arg1)->GetRelayReverse();
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetRelayReverse(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalModule, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_DigitalModule_GetRelayReverse__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalModule, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_DigitalModule_GetRelayReverse__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'DigitalModule_GetRelayReverse'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    DigitalModule::GetRelayReverse(uint32_t)\n"
-    "    DigitalModule::GetRelayReverse()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_DigitalModule_AllocateDIO(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  bool arg3 ;
-  uint32_t *argp2 ;
-  bool result;
-  
-  SWIG_check_num_args("DigitalModule::AllocateDIO",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::AllocateDIO",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::AllocateDIO",2,"uint32_t");
-  if(!lua_isboolean(L,3)) SWIG_fail_arg("DigitalModule::AllocateDIO",3,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_AllocateDIO",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_AllocateDIO",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (lua_toboolean(L, 3)!=0);
-  result = (bool)(arg1)->AllocateDIO(arg2,arg3);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_FreeDIO(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DigitalModule::FreeDIO",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::FreeDIO",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::FreeDIO",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_FreeDIO",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_FreeDIO",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->FreeDIO(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_SetDIO(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  short arg3 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DigitalModule::SetDIO",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::SetDIO",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::SetDIO",2,"uint32_t");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("DigitalModule::SetDIO",3,"short");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_SetDIO",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_SetDIO",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (short)lua_tonumber(L, 3);
-  (arg1)->SetDIO(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetDIO__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  bool result;
-  
-  SWIG_check_num_args("DigitalModule::GetDIO",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::GetDIO",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::GetDIO",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_GetDIO",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_GetDIO",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (bool)(arg1)->GetDIO(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetDIO__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint16_t result;
-  
-  SWIG_check_num_args("DigitalModule::GetDIO",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::GetDIO",1,"DigitalModule *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_GetDIO",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  result = (arg1)->GetDIO();
-  {
-    uint16_t * resultptr = new uint16_t((const uint16_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint16_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetDIO(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalModule, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_DigitalModule_GetDIO__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalModule, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_DigitalModule_GetDIO__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'DigitalModule_GetDIO'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    DigitalModule::GetDIO(uint32_t)\n"
-    "    DigitalModule::GetDIO()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_DigitalModule_GetDIODirection__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  bool result;
-  
-  SWIG_check_num_args("DigitalModule::GetDIODirection",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::GetDIODirection",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::GetDIODirection",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_GetDIODirection",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_GetDIODirection",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (bool)(arg1)->GetDIODirection(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetDIODirection__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint16_t result;
-  
-  SWIG_check_num_args("DigitalModule::GetDIODirection",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::GetDIODirection",1,"DigitalModule *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_GetDIODirection",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  result = (arg1)->GetDIODirection();
-  {
-    uint16_t * resultptr = new uint16_t((const uint16_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint16_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetDIODirection(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalModule, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_DigitalModule_GetDIODirection__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalModule, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_DigitalModule_GetDIODirection__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'DigitalModule_GetDIODirection'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    DigitalModule::GetDIODirection(uint32_t)\n"
-    "    DigitalModule::GetDIODirection()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_DigitalModule_Pulse(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  float arg3 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DigitalModule::Pulse",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::Pulse",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::Pulse",2,"uint32_t");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("DigitalModule::Pulse",3,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_Pulse",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_Pulse",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (float)lua_tonumber(L, 3);
-  (arg1)->Pulse(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_IsPulsing__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  bool result;
-  
-  SWIG_check_num_args("DigitalModule::IsPulsing",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::IsPulsing",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::IsPulsing",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_IsPulsing",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_IsPulsing",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (bool)(arg1)->IsPulsing(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_IsPulsing__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("DigitalModule::IsPulsing",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::IsPulsing",1,"DigitalModule *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_IsPulsing",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  result = (bool)(arg1)->IsPulsing();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_IsPulsing(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalModule, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_DigitalModule_IsPulsing__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalModule, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_DigitalModule_IsPulsing__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'DigitalModule_IsPulsing'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    DigitalModule::IsPulsing(uint32_t)\n"
-    "    DigitalModule::IsPulsing()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_DigitalModule_AllocateDO_PWM(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("DigitalModule::AllocateDO_PWM",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::AllocateDO_PWM",1,"DigitalModule *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_AllocateDO_PWM",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  result = (arg1)->AllocateDO_PWM();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_FreeDO_PWM(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DigitalModule::FreeDO_PWM",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::FreeDO_PWM",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::FreeDO_PWM",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_FreeDO_PWM",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_FreeDO_PWM",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->FreeDO_PWM(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_SetDO_PWMRate(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  float arg2 ;
-  
-  SWIG_check_num_args("DigitalModule::SetDO_PWMRate",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::SetDO_PWMRate",1,"DigitalModule *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("DigitalModule::SetDO_PWMRate",2,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_SetDO_PWMRate",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->SetDO_PWMRate(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_SetDO_PWMDutyCycle(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  float arg3 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DigitalModule::SetDO_PWMDutyCycle",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::SetDO_PWMDutyCycle",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::SetDO_PWMDutyCycle",2,"uint32_t");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("DigitalModule::SetDO_PWMDutyCycle",3,"float");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_SetDO_PWMDutyCycle",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_SetDO_PWMDutyCycle",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (float)lua_tonumber(L, 3);
-  (arg1)->SetDO_PWMDutyCycle(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_SetDO_PWMOutputChannel(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t arg3 ;
-  uint32_t *argp2 ;
-  uint32_t *argp3 ;
-  
-  SWIG_check_num_args("DigitalModule::SetDO_PWMOutputChannel",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::SetDO_PWMOutputChannel",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::SetDO_PWMOutputChannel",2,"uint32_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("DigitalModule::SetDO_PWMOutputChannel",3,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_SetDO_PWMOutputChannel",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_SetDO_PWMOutputChannel",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_SetDO_PWMOutputChannel",3,SWIGTYPE_p_uint32_t);
-  }
-  arg3 = *argp3;
-  
-  (arg1)->SetDO_PWMOutputChannel(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetLoopTiming(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint16_t result;
-  
-  SWIG_check_num_args("DigitalModule::GetLoopTiming",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::GetLoopTiming",1,"DigitalModule *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_GetLoopTiming",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  result = (arg1)->GetLoopTiming();
-  {
-    uint16_t * resultptr = new uint16_t((const uint16_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint16_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetI2C(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalModule *arg1 = (DigitalModule *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  I2C *result = 0 ;
-  
-  SWIG_check_num_args("DigitalModule::GetI2C",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalModule::GetI2C",1,"DigitalModule *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalModule::GetI2C",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalModule,0))){
-    SWIG_fail_ptr("DigitalModule_GetI2C",1,SWIGTYPE_p_DigitalModule);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_GetI2C",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (I2C *)(arg1)->GetI2C(arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_I2C,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_GetInstance(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint8_t *argp1 ;
-  DigitalModule *result = 0 ;
-  
-  SWIG_check_num_args("DigitalModule::GetInstance",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("DigitalModule::GetInstance",1,"uint8_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("DigitalModule_GetInstance",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  result = (DigitalModule *)DigitalModule::GetInstance(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_DigitalModule,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_RemapDigitalChannel(lua_State* L) {
-  int SWIG_arg = 0;
-  uint32_t arg1 ;
-  uint32_t *argp1 ;
-  uint8_t result;
-  
-  SWIG_check_num_args("DigitalModule::RemapDigitalChannel",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("DigitalModule::RemapDigitalChannel",1,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_RemapDigitalChannel",1,SWIGTYPE_p_uint32_t);
-  }
-  arg1 = *argp1;
-  
-  result = DigitalModule::RemapDigitalChannel(arg1);
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalModule_UnmapDigitalChannel(lua_State* L) {
-  int SWIG_arg = 0;
-  uint32_t arg1 ;
-  uint32_t *argp1 ;
-  uint8_t result;
-  
-  SWIG_check_num_args("DigitalModule::UnmapDigitalChannel",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("DigitalModule::UnmapDigitalChannel",1,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DigitalModule_UnmapDigitalChannel",1,SWIGTYPE_p_uint32_t);
-  }
-  arg1 = *argp1;
-  
-  result = DigitalModule::UnmapDigitalChannel(arg1);
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static swig_lua_method swig_DigitalModule_methods[] = {
-    {"SetPWM", _wrap_DigitalModule_SetPWM}, 
-    {"GetPWM", _wrap_DigitalModule_GetPWM}, 
-    {"SetPWMPeriodScale", _wrap_DigitalModule_SetPWMPeriodScale}, 
-    {"SetRelayForward", _wrap_DigitalModule_SetRelayForward}, 
-    {"SetRelayReverse", _wrap_DigitalModule_SetRelayReverse}, 
-    {"GetRelayForward", _wrap_DigitalModule_GetRelayForward}, 
-    {"GetRelayReverse", _wrap_DigitalModule_GetRelayReverse}, 
-    {"AllocateDIO", _wrap_DigitalModule_AllocateDIO}, 
-    {"FreeDIO", _wrap_DigitalModule_FreeDIO}, 
-    {"SetDIO", _wrap_DigitalModule_SetDIO}, 
-    {"GetDIO", _wrap_DigitalModule_GetDIO}, 
-    {"GetDIODirection", _wrap_DigitalModule_GetDIODirection}, 
-    {"Pulse", _wrap_DigitalModule_Pulse}, 
-    {"IsPulsing", _wrap_DigitalModule_IsPulsing}, 
-    {"AllocateDO_PWM", _wrap_DigitalModule_AllocateDO_PWM}, 
-    {"FreeDO_PWM", _wrap_DigitalModule_FreeDO_PWM}, 
-    {"SetDO_PWMRate", _wrap_DigitalModule_SetDO_PWMRate}, 
-    {"SetDO_PWMDutyCycle", _wrap_DigitalModule_SetDO_PWMDutyCycle}, 
-    {"SetDO_PWMOutputChannel", _wrap_DigitalModule_SetDO_PWMOutputChannel}, 
-    {"GetLoopTiming", _wrap_DigitalModule_GetLoopTiming}, 
-    {"GetI2C", _wrap_DigitalModule_GetI2C}, 
-    {0,0}
-};
-static swig_lua_attribute swig_DigitalModule_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_DigitalModule_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_DigitalModule_cls_methods[] = {
-    {"GetInstance", _wrap_DigitalModule_GetInstance}, 
-    {"RemapDigitalChannel", _wrap_DigitalModule_RemapDigitalChannel}, 
-    {"UnmapDigitalChannel", _wrap_DigitalModule_UnmapDigitalChannel}, 
-    {0,0}
-};
-static swig_lua_const_info swig_DigitalModule_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_DigitalModule_bases[] = {0};
-static const char *swig_DigitalModule_base_names[] = {0};
-static swig_lua_class _wrap_class_DigitalModule = { "DigitalModule", &SWIGTYPE_p_DigitalModule,0,0, swig_DigitalModule_methods, swig_DigitalModule_attributes, { "DigitalModule", swig_DigitalModule_cls_methods, swig_DigitalModule_cls_attributes, swig_DigitalModule_cls_constants }, swig_DigitalModule_bases, swig_DigitalModule_base_names };
-
-static int _wrap_new_DigitalOutput__SWIG_0(lua_State* L) {
+static int _wrap_new_DigitalOutput(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
   uint32_t *argp1 ;
@@ -15268,95 +7658,6 @@ static int _wrap_new_DigitalOutput__SWIG_0(lua_State* L) {
 fail:
   lua_error(L);
   return SWIG_arg;
-}
-
-
-static int _wrap_new_DigitalOutput__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  DigitalOutput *result = 0 ;
-  
-  SWIG_check_num_args("DigitalOutput::DigitalOutput",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("DigitalOutput::DigitalOutput",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalOutput::DigitalOutput",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_DigitalOutput",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_DigitalOutput",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (DigitalOutput *)new DigitalOutput(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_DigitalOutput,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_DigitalOutput(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_DigitalOutput__SWIG_0(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_DigitalOutput__SWIG_1(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_DigitalOutput'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    DigitalOutput::DigitalOutput(uint32_t)\n"
-    "    DigitalOutput::DigitalOutput(uint8_t,uint32_t)\n");
-  lua_error(L);return 0;
 }
 
 
@@ -15648,157 +7949,6 @@ fail:
 }
 
 
-static int _wrap_DigitalOutput_RequestInterrupts__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalOutput *arg1 = (DigitalOutput *) 0 ;
-  tInterruptHandler arg2 ;
-  void *arg3 = (void *) 0 ;
-  tInterruptHandler *argp2 ;
-  
-  SWIG_check_num_args("DigitalOutput::RequestInterrupts",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalOutput::RequestInterrupts",1,"DigitalOutput *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalOutput::RequestInterrupts",2,"tInterruptHandler");
-  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("DigitalOutput::RequestInterrupts",3,"void *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("DigitalOutput_RequestInterrupts",1,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_tInterruptHandler,0))){
-    SWIG_fail_ptr("DigitalOutput_RequestInterrupts",2,SWIGTYPE_p_tInterruptHandler);
-  }
-  arg2 = *argp2;
-  
-  arg3=(void *)SWIG_MustGetPtr(L,3,0,0,3,"DigitalOutput_RequestInterrupts");
-  (arg1)->RequestInterrupts(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalOutput_RequestInterrupts__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalOutput *arg1 = (DigitalOutput *) 0 ;
-  
-  SWIG_check_num_args("DigitalOutput::RequestInterrupts",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalOutput::RequestInterrupts",1,"DigitalOutput *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("DigitalOutput_RequestInterrupts",1,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  (arg1)->RequestInterrupts();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalOutput_RequestInterrupts(lua_State* L) {
-  int argc;
-  int argv[4]={
-    1,2,3,4
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_DigitalOutput_RequestInterrupts__SWIG_1(L);
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_tInterruptHandler, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, 0, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          return _wrap_DigitalOutput_RequestInterrupts__SWIG_0(L);
-        }
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'DigitalOutput_RequestInterrupts'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    DigitalOutput::RequestInterrupts(tInterruptHandler,void *)\n"
-    "    DigitalOutput::RequestInterrupts()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_DigitalOutput_SetUpSourceEdge(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalOutput *arg1 = (DigitalOutput *) 0 ;
-  bool arg2 ;
-  bool arg3 ;
-  
-  SWIG_check_num_args("DigitalOutput::SetUpSourceEdge",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalOutput::SetUpSourceEdge",1,"DigitalOutput *");
-  if(!lua_isboolean(L,2)) SWIG_fail_arg("DigitalOutput::SetUpSourceEdge",2,"bool");
-  if(!lua_isboolean(L,3)) SWIG_fail_arg("DigitalOutput::SetUpSourceEdge",3,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("DigitalOutput_SetUpSourceEdge",1,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  arg2 = (lua_toboolean(L, 2)!=0);
-  arg3 = (lua_toboolean(L, 3)!=0);
-  (arg1)->SetUpSourceEdge(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
 static int _wrap_DigitalOutput_ValueChanged(lua_State* L) {
   int SWIG_arg = 0;
   DigitalOutput *arg1 = (DigitalOutput *) 0 ;
@@ -16014,8 +8164,6 @@ static swig_lua_method swig_DigitalOutput_methods[] = {
     {"GetChannelForRouting", _wrap_DigitalOutput_GetChannelForRouting}, 
     {"GetModuleForRouting", _wrap_DigitalOutput_GetModuleForRouting}, 
     {"GetAnalogTriggerForRouting", _wrap_DigitalOutput_GetAnalogTriggerForRouting}, 
-    {"RequestInterrupts", _wrap_DigitalOutput_RequestInterrupts}, 
-    {"SetUpSourceEdge", _wrap_DigitalOutput_SetUpSourceEdge}, 
     {"ValueChanged", _wrap_DigitalOutput_ValueChanged}, 
     {"UpdateTable", _wrap_DigitalOutput_UpdateTable}, 
     {"StartLiveWindowMode", _wrap_DigitalOutput_StartLiveWindowMode}, 
@@ -16119,128 +8267,6 @@ fail:
 }
 
 
-static int _wrap_DigitalSource_RequestInterrupts__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalSource *arg1 = (DigitalSource *) 0 ;
-  tInterruptHandler arg2 ;
-  void *arg3 = (void *) 0 ;
-  tInterruptHandler *argp2 ;
-  
-  SWIG_check_num_args("DigitalSource::RequestInterrupts",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalSource::RequestInterrupts",1,"DigitalSource *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DigitalSource::RequestInterrupts",2,"tInterruptHandler");
-  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("DigitalSource::RequestInterrupts",3,"void *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalSource,0))){
-    SWIG_fail_ptr("DigitalSource_RequestInterrupts",1,SWIGTYPE_p_DigitalSource);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_tInterruptHandler,0))){
-    SWIG_fail_ptr("DigitalSource_RequestInterrupts",2,SWIGTYPE_p_tInterruptHandler);
-  }
-  arg2 = *argp2;
-  
-  arg3=(void *)SWIG_MustGetPtr(L,3,0,0,3,"DigitalSource_RequestInterrupts");
-  (arg1)->RequestInterrupts(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalSource_RequestInterrupts__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalSource *arg1 = (DigitalSource *) 0 ;
-  
-  SWIG_check_num_args("DigitalSource::RequestInterrupts",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DigitalSource::RequestInterrupts",1,"DigitalSource *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalSource,0))){
-    SWIG_fail_ptr("DigitalSource_RequestInterrupts",1,SWIGTYPE_p_DigitalSource);
-  }
-  
-  (arg1)->RequestInterrupts();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DigitalSource_RequestInterrupts(lua_State* L) {
-  int argc;
-  int argv[4]={
-    1,2,3,4
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalSource, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_DigitalSource_RequestInterrupts__SWIG_1(L);
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalSource, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_tInterruptHandler, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, 0, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          return _wrap_DigitalSource_RequestInterrupts__SWIG_0(L);
-        }
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'DigitalSource_RequestInterrupts'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    DigitalSource::RequestInterrupts(tInterruptHandler,void *)\n"
-    "    DigitalSource::RequestInterrupts()\n");
-  lua_error(L);return 0;
-}
-
-
 static void swig_delete_DigitalSource(void *obj) {
 DigitalSource *arg1 = (DigitalSource *) obj;
 delete arg1;
@@ -16249,7 +8275,6 @@ static swig_lua_method swig_DigitalSource_methods[] = {
     {"GetChannelForRouting", _wrap_DigitalSource_GetChannelForRouting}, 
     {"GetModuleForRouting", _wrap_DigitalSource_GetModuleForRouting}, 
     {"GetAnalogTriggerForRouting", _wrap_DigitalSource_GetAnalogTriggerForRouting}, 
-    {"RequestInterrupts", _wrap_DigitalSource_RequestInterrupts}, 
     {0,0}
 };
 static swig_lua_attribute swig_DigitalSource_attributes[] = {
@@ -16471,6 +8496,54 @@ fail:
 }
 
 
+static int _wrap_DoubleSolenoid_IsFwdSolenoidBlackListed(lua_State* L) {
+  int SWIG_arg = 0;
+  DoubleSolenoid *arg1 = (DoubleSolenoid *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("DoubleSolenoid::IsFwdSolenoidBlackListed",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DoubleSolenoid::IsFwdSolenoidBlackListed",1,"DoubleSolenoid *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DoubleSolenoid,0))){
+    SWIG_fail_ptr("DoubleSolenoid_IsFwdSolenoidBlackListed",1,SWIGTYPE_p_DoubleSolenoid);
+  }
+  
+  result = (bool)(arg1)->IsFwdSolenoidBlackListed();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DoubleSolenoid_IsRevSolenoidBlackListed(lua_State* L) {
+  int SWIG_arg = 0;
+  DoubleSolenoid *arg1 = (DoubleSolenoid *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("DoubleSolenoid::IsRevSolenoidBlackListed",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DoubleSolenoid::IsRevSolenoidBlackListed",1,"DoubleSolenoid *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DoubleSolenoid,0))){
+    SWIG_fail_ptr("DoubleSolenoid_IsRevSolenoidBlackListed",1,SWIGTYPE_p_DoubleSolenoid);
+  }
+  
+  result = (bool)(arg1)->IsRevSolenoidBlackListed();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_DoubleSolenoid_ValueChanged(lua_State* L) {
   int SWIG_arg = 0;
   DoubleSolenoid *arg1 = (DoubleSolenoid *) 0 ;
@@ -16677,6 +8750,8 @@ delete arg1;
 static swig_lua_method swig_DoubleSolenoid_methods[] = {
     {"Set", _wrap_DoubleSolenoid_Set}, 
     {"Get", _wrap_DoubleSolenoid_Get}, 
+    {"IsFwdSolenoidBlackListed", _wrap_DoubleSolenoid_IsFwdSolenoidBlackListed}, 
+    {"IsRevSolenoidBlackListed", _wrap_DoubleSolenoid_IsRevSolenoidBlackListed}, 
     {"ValueChanged", _wrap_DoubleSolenoid_ValueChanged}, 
     {"UpdateTable", _wrap_DoubleSolenoid_UpdateTable}, 
     {"StartLiveWindowMode", _wrap_DoubleSolenoid_StartLiveWindowMode}, 
@@ -16712,6 +8787,31 @@ static int _wrap_DriverStation_GetInstance(lua_State* L) {
   SWIG_check_num_args("DriverStation::GetInstance",0,0)
   result = (DriverStation *)DriverStation::GetInstance();
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_DriverStation,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DriverStation_ReportError(lua_State* L) {
+  int SWIG_arg = 0;
+  std::string arg1 ;
+  std::string *argp1 ;
+  
+  SWIG_check_num_args("DriverStation::ReportError",1,1)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("DriverStation::ReportError",1,"std::string");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("DriverStation_ReportError",1,SWIGTYPE_p_std__string);
+  }
+  arg1 = *argp1;
+  
+  DriverStation::ReportError(arg1);
+  
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -16764,12 +8864,54 @@ fail:
 }
 
 
+static int _wrap_DriverStation_GetStickPOV(lua_State* L) {
+  int SWIG_arg = 0;
+  DriverStation *arg1 = (DriverStation *) 0 ;
+  uint32_t arg2 ;
+  uint32_t arg3 ;
+  uint32_t *argp2 ;
+  uint32_t *argp3 ;
+  int result;
+  
+  SWIG_check_num_args("DriverStation::GetStickPOV",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetStickPOV",1,"DriverStation *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStation::GetStickPOV",2,"uint32_t");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("DriverStation::GetStickPOV",3,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
+    SWIG_fail_ptr("DriverStation_GetStickPOV",1,SWIGTYPE_p_DriverStation);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("DriverStation_GetStickPOV",2,SWIGTYPE_p_uint32_t);
+  }
+  arg2 = *argp2;
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("DriverStation_GetStickPOV",3,SWIGTYPE_p_uint32_t);
+  }
+  arg3 = *argp3;
+  
+  result = (int)(arg1)->GetStickPOV(arg2,arg3);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_DriverStation_GetStickButtons(lua_State* L) {
   int SWIG_arg = 0;
   DriverStation *arg1 = (DriverStation *) 0 ;
   uint32_t arg2 ;
   uint32_t *argp2 ;
-  short result;
+  uint32_t result;
   
   SWIG_check_num_args("DriverStation::GetStickButtons",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetStickButtons",1,"DriverStation *");
@@ -16785,8 +8927,11 @@ static int _wrap_DriverStation_GetStickButtons(lua_State* L) {
   }
   arg2 = *argp2;
   
-  result = (short)(arg1)->GetStickButtons(arg2);
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  result = (arg1)->GetStickButtons(arg2);
+  {
+    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -16797,61 +8942,37 @@ fail:
 }
 
 
-static int _wrap_DriverStation_GetAnalogIn(lua_State* L) {
+static int _wrap_DriverStation_GetStickButton(lua_State* L) {
   int SWIG_arg = 0;
   DriverStation *arg1 = (DriverStation *) 0 ;
   uint32_t arg2 ;
+  uint8_t arg3 ;
   uint32_t *argp2 ;
-  float result;
-  
-  SWIG_check_num_args("DriverStation::GetAnalogIn",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetAnalogIn",1,"DriverStation *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStation::GetAnalogIn",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_GetAnalogIn",1,SWIGTYPE_p_DriverStation);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStation_GetAnalogIn",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (float)(arg1)->GetAnalogIn(arg2);
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStation_GetDigitalIn(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStation *arg1 = (DriverStation *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
+  uint8_t *argp3 ;
   bool result;
   
-  SWIG_check_num_args("DriverStation::GetDigitalIn",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetDigitalIn",1,"DriverStation *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStation::GetDigitalIn",2,"uint32_t");
+  SWIG_check_num_args("DriverStation::GetStickButton",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetStickButton",1,"DriverStation *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStation::GetStickButton",2,"uint32_t");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("DriverStation::GetStickButton",3,"uint8_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_GetDigitalIn",1,SWIGTYPE_p_DriverStation);
+    SWIG_fail_ptr("DriverStation_GetStickButton",1,SWIGTYPE_p_DriverStation);
   }
   
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStation_GetDigitalIn",2,SWIGTYPE_p_uint32_t);
+    SWIG_fail_ptr("DriverStation_GetStickButton",2,SWIGTYPE_p_uint32_t);
   }
   arg2 = *argp2;
   
-  result = (bool)(arg1)->GetDigitalIn(arg2);
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("DriverStation_GetStickButton",3,SWIGTYPE_p_uint8_t);
+  }
+  arg3 = *argp3;
+  
+  result = (bool)(arg1)->GetStickButton(arg2,arg3);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -16863,31 +8984,29 @@ fail:
 }
 
 
-static int _wrap_DriverStation_SetDigitalOut(lua_State* L) {
+static int _wrap_DriverStation_GetStickAxisCount(lua_State* L) {
   int SWIG_arg = 0;
   DriverStation *arg1 = (DriverStation *) 0 ;
   uint32_t arg2 ;
-  bool arg3 ;
   uint32_t *argp2 ;
+  int result;
   
-  SWIG_check_num_args("DriverStation::SetDigitalOut",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::SetDigitalOut",1,"DriverStation *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStation::SetDigitalOut",2,"uint32_t");
-  if(!lua_isboolean(L,3)) SWIG_fail_arg("DriverStation::SetDigitalOut",3,"bool");
+  SWIG_check_num_args("DriverStation::GetStickAxisCount",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetStickAxisCount",1,"DriverStation *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStation::GetStickAxisCount",2,"uint32_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_SetDigitalOut",1,SWIGTYPE_p_DriverStation);
+    SWIG_fail_ptr("DriverStation_GetStickAxisCount",1,SWIGTYPE_p_DriverStation);
   }
   
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStation_SetDigitalOut",2,SWIGTYPE_p_uint32_t);
+    SWIG_fail_ptr("DriverStation_GetStickAxisCount",2,SWIGTYPE_p_uint32_t);
   }
   arg2 = *argp2;
   
-  arg3 = (lua_toboolean(L, 3)!=0);
-  (arg1)->SetDigitalOut(arg2,arg3);
-  
+  result = (int)(arg1)->GetStickAxisCount(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -16898,29 +9017,62 @@ fail:
 }
 
 
-static int _wrap_DriverStation_GetDigitalOut(lua_State* L) {
+static int _wrap_DriverStation_GetStickPOVCount(lua_State* L) {
   int SWIG_arg = 0;
   DriverStation *arg1 = (DriverStation *) 0 ;
   uint32_t arg2 ;
   uint32_t *argp2 ;
-  bool result;
+  int result;
   
-  SWIG_check_num_args("DriverStation::GetDigitalOut",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetDigitalOut",1,"DriverStation *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStation::GetDigitalOut",2,"uint32_t");
+  SWIG_check_num_args("DriverStation::GetStickPOVCount",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetStickPOVCount",1,"DriverStation *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStation::GetStickPOVCount",2,"uint32_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_GetDigitalOut",1,SWIGTYPE_p_DriverStation);
+    SWIG_fail_ptr("DriverStation_GetStickPOVCount",1,SWIGTYPE_p_DriverStation);
   }
   
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStation_GetDigitalOut",2,SWIGTYPE_p_uint32_t);
+    SWIG_fail_ptr("DriverStation_GetStickPOVCount",2,SWIGTYPE_p_uint32_t);
   }
   arg2 = *argp2;
   
-  result = (bool)(arg1)->GetDigitalOut(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  result = (int)(arg1)->GetStickPOVCount(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DriverStation_GetStickButtonCount(lua_State* L) {
+  int SWIG_arg = 0;
+  DriverStation *arg1 = (DriverStation *) 0 ;
+  uint32_t arg2 ;
+  uint32_t *argp2 ;
+  int result;
+  
+  SWIG_check_num_args("DriverStation::GetStickButtonCount",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetStickButtonCount",1,"DriverStation *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStation::GetStickButtonCount",2,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
+    SWIG_fail_ptr("DriverStation_GetStickButtonCount",1,SWIGTYPE_p_DriverStation);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("DriverStation_GetStickButtonCount",2,SWIGTYPE_p_uint32_t);
+  }
+  arg2 = *argp2;
+  
+  result = (int)(arg1)->GetStickButtonCount(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -17051,6 +9203,30 @@ fail:
 }
 
 
+static int _wrap_DriverStation_IsDSAttached(lua_State* L) {
+  int SWIG_arg = 0;
+  DriverStation *arg1 = (DriverStation *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("DriverStation::IsDSAttached",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::IsDSAttached",1,"DriverStation *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
+    SWIG_fail_ptr("DriverStation_IsDSAttached",1,SWIGTYPE_p_DriverStation);
+  }
+  
+  result = (bool)(arg1)->IsDSAttached();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_DriverStation_IsNewControlData(lua_State* L) {
   int SWIG_arg = 0;
   DriverStation *arg1 = (DriverStation *) 0 ;
@@ -17099,23 +9275,44 @@ fail:
 }
 
 
-static int _wrap_DriverStation_GetPacketNumber(lua_State* L) {
+static int _wrap_DriverStation_IsSysActive(lua_State* L) {
   int SWIG_arg = 0;
   DriverStation *arg1 = (DriverStation *) 0 ;
-  uint32_t result;
+  bool result;
   
-  SWIG_check_num_args("DriverStation::GetPacketNumber",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetPacketNumber",1,"DriverStation *");
+  SWIG_check_num_args("DriverStation::IsSysActive",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::IsSysActive",1,"DriverStation *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_GetPacketNumber",1,SWIGTYPE_p_DriverStation);
+    SWIG_fail_ptr("DriverStation_IsSysActive",1,SWIGTYPE_p_DriverStation);
   }
   
-  result = (arg1)->GetPacketNumber();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
+  result = (bool)(arg1)->IsSysActive();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_DriverStation_IsSysBrownedOut(lua_State* L) {
+  int SWIG_arg = 0;
+  DriverStation *arg1 = (DriverStation *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("DriverStation::IsSysBrownedOut",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::IsSysBrownedOut",1,"DriverStation *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
+    SWIG_fail_ptr("DriverStation_IsSysBrownedOut",1,SWIGTYPE_p_DriverStation);
   }
+  
+  result = (bool)(arg1)->IsSysBrownedOut();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -17248,263 +9445,6 @@ fail:
 }
 
 
-static int _wrap_DriverStation_GetTeamNumber(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStation *arg1 = (DriverStation *) 0 ;
-  uint16_t result;
-  
-  SWIG_check_num_args("DriverStation::GetTeamNumber",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetTeamNumber",1,"DriverStation *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_GetTeamNumber",1,SWIGTYPE_p_DriverStation);
-  }
-  
-  result = (arg1)->GetTeamNumber();
-  {
-    uint16_t * resultptr = new uint16_t((const uint16_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint16_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStation_GetHighPriorityDashboardPacker(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStation *arg1 = (DriverStation *) 0 ;
-  Dashboard *result = 0 ;
-  
-  SWIG_check_num_args("DriverStation::GetHighPriorityDashboardPacker",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetHighPriorityDashboardPacker",1,"DriverStation *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_GetHighPriorityDashboardPacker",1,SWIGTYPE_p_DriverStation);
-  }
-  
-  result = (Dashboard *) &(arg1)->GetHighPriorityDashboardPacker();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Dashboard,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStation_GetLowPriorityDashboardPacker(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStation *arg1 = (DriverStation *) 0 ;
-  Dashboard *result = 0 ;
-  
-  SWIG_check_num_args("DriverStation::GetLowPriorityDashboardPacker",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetLowPriorityDashboardPacker",1,"DriverStation *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_GetLowPriorityDashboardPacker",1,SWIGTYPE_p_DriverStation);
-  }
-  
-  result = (Dashboard *) &(arg1)->GetLowPriorityDashboardPacker();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Dashboard,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStation_GetHighPriorityDashboardPackerInUse(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStation *arg1 = (DriverStation *) 0 ;
-  DashboardBase *result = 0 ;
-  
-  SWIG_check_num_args("DriverStation::GetHighPriorityDashboardPackerInUse",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetHighPriorityDashboardPackerInUse",1,"DriverStation *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_GetHighPriorityDashboardPackerInUse",1,SWIGTYPE_p_DriverStation);
-  }
-  
-  result = (DashboardBase *)(arg1)->GetHighPriorityDashboardPackerInUse();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_DashboardBase,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStation_GetLowPriorityDashboardPackerInUse(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStation *arg1 = (DriverStation *) 0 ;
-  DashboardBase *result = 0 ;
-  
-  SWIG_check_num_args("DriverStation::GetLowPriorityDashboardPackerInUse",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetLowPriorityDashboardPackerInUse",1,"DriverStation *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_GetLowPriorityDashboardPackerInUse",1,SWIGTYPE_p_DriverStation);
-  }
-  
-  result = (DashboardBase *)(arg1)->GetLowPriorityDashboardPackerInUse();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_DashboardBase,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStation_SetHighPriorityDashboardPackerToUse(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStation *arg1 = (DriverStation *) 0 ;
-  DashboardBase *arg2 = (DashboardBase *) 0 ;
-  
-  SWIG_check_num_args("DriverStation::SetHighPriorityDashboardPackerToUse",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::SetHighPriorityDashboardPackerToUse",1,"DriverStation *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("DriverStation::SetHighPriorityDashboardPackerToUse",2,"DashboardBase *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_SetHighPriorityDashboardPackerToUse",1,SWIGTYPE_p_DriverStation);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DashboardBase,0))){
-    SWIG_fail_ptr("DriverStation_SetHighPriorityDashboardPackerToUse",2,SWIGTYPE_p_DashboardBase);
-  }
-  
-  (arg1)->SetHighPriorityDashboardPackerToUse(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStation_SetLowPriorityDashboardPackerToUse(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStation *arg1 = (DriverStation *) 0 ;
-  DashboardBase *arg2 = (DashboardBase *) 0 ;
-  
-  SWIG_check_num_args("DriverStation::SetLowPriorityDashboardPackerToUse",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::SetLowPriorityDashboardPackerToUse",1,"DriverStation *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("DriverStation::SetLowPriorityDashboardPackerToUse",2,"DashboardBase *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_SetLowPriorityDashboardPackerToUse",1,SWIGTYPE_p_DriverStation);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DashboardBase,0))){
-    SWIG_fail_ptr("DriverStation_SetLowPriorityDashboardPackerToUse",2,SWIGTYPE_p_DashboardBase);
-  }
-  
-  (arg1)->SetLowPriorityDashboardPackerToUse(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStation_GetEnhancedIO(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStation *arg1 = (DriverStation *) 0 ;
-  DriverStationEnhancedIO *result = 0 ;
-  
-  SWIG_check_num_args("DriverStation::GetEnhancedIO",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetEnhancedIO",1,"DriverStation *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_GetEnhancedIO",1,SWIGTYPE_p_DriverStation);
-  }
-  
-  result = (DriverStationEnhancedIO *) &(arg1)->GetEnhancedIO();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_DriverStationEnhancedIO,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStation_IncrementUpdateNumber(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStation *arg1 = (DriverStation *) 0 ;
-  
-  SWIG_check_num_args("DriverStation::IncrementUpdateNumber",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::IncrementUpdateNumber",1,"DriverStation *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_IncrementUpdateNumber",1,SWIGTYPE_p_DriverStation);
-  }
-  
-  (arg1)->IncrementUpdateNumber();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStation_GetUserStatusDataSem(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStation *arg1 = (DriverStation *) 0 ;
-  SEM_ID result;
-  
-  SWIG_check_num_args("DriverStation::GetUserStatusDataSem",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStation::GetUserStatusDataSem",1,"DriverStation *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStation,0))){
-    SWIG_fail_ptr("DriverStation_GetUserStatusDataSem",1,SWIGTYPE_p_DriverStation);
-  }
-  
-  result = (arg1)->GetUserStatusDataSem();
-  {
-    SEM_ID * resultptr = new SEM_ID((const SEM_ID &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_SEM_ID,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
 static int _wrap_DriverStation_InDisabled(lua_State* L) {
   int SWIG_arg = 0;
   DriverStation *arg1 = (DriverStation *) 0 ;
@@ -17615,34 +9555,27 @@ delete arg1;
 }
 static swig_lua_method swig_DriverStation_methods[] = {
     {"GetStickAxis", _wrap_DriverStation_GetStickAxis}, 
+    {"GetStickPOV", _wrap_DriverStation_GetStickPOV}, 
     {"GetStickButtons", _wrap_DriverStation_GetStickButtons}, 
-    {"GetAnalogIn", _wrap_DriverStation_GetAnalogIn}, 
-    {"GetDigitalIn", _wrap_DriverStation_GetDigitalIn}, 
-    {"SetDigitalOut", _wrap_DriverStation_SetDigitalOut}, 
-    {"GetDigitalOut", _wrap_DriverStation_GetDigitalOut}, 
+    {"GetStickButton", _wrap_DriverStation_GetStickButton}, 
+    {"GetStickAxisCount", _wrap_DriverStation_GetStickAxisCount}, 
+    {"GetStickPOVCount", _wrap_DriverStation_GetStickPOVCount}, 
+    {"GetStickButtonCount", _wrap_DriverStation_GetStickButtonCount}, 
     {"IsEnabled", _wrap_DriverStation_IsEnabled}, 
     {"IsDisabled", _wrap_DriverStation_IsDisabled}, 
     {"IsAutonomous", _wrap_DriverStation_IsAutonomous}, 
     {"IsOperatorControl", _wrap_DriverStation_IsOperatorControl}, 
     {"IsTest", _wrap_DriverStation_IsTest}, 
+    {"IsDSAttached", _wrap_DriverStation_IsDSAttached}, 
     {"IsNewControlData", _wrap_DriverStation_IsNewControlData}, 
     {"IsFMSAttached", _wrap_DriverStation_IsFMSAttached}, 
-    {"GetPacketNumber", _wrap_DriverStation_GetPacketNumber}, 
+    {"IsSysActive", _wrap_DriverStation_IsSysActive}, 
+    {"IsSysBrownedOut", _wrap_DriverStation_IsSysBrownedOut}, 
     {"GetAlliance", _wrap_DriverStation_GetAlliance}, 
     {"GetLocation", _wrap_DriverStation_GetLocation}, 
     {"WaitForData", _wrap_DriverStation_WaitForData}, 
     {"GetMatchTime", _wrap_DriverStation_GetMatchTime}, 
     {"GetBatteryVoltage", _wrap_DriverStation_GetBatteryVoltage}, 
-    {"GetTeamNumber", _wrap_DriverStation_GetTeamNumber}, 
-    {"GetHighPriorityDashboardPacker", _wrap_DriverStation_GetHighPriorityDashboardPacker}, 
-    {"GetLowPriorityDashboardPacker", _wrap_DriverStation_GetLowPriorityDashboardPacker}, 
-    {"GetHighPriorityDashboardPackerInUse", _wrap_DriverStation_GetHighPriorityDashboardPackerInUse}, 
-    {"GetLowPriorityDashboardPackerInUse", _wrap_DriverStation_GetLowPriorityDashboardPackerInUse}, 
-    {"SetHighPriorityDashboardPackerToUse", _wrap_DriverStation_SetHighPriorityDashboardPackerToUse}, 
-    {"SetLowPriorityDashboardPackerToUse", _wrap_DriverStation_SetLowPriorityDashboardPackerToUse}, 
-    {"GetEnhancedIO", _wrap_DriverStation_GetEnhancedIO}, 
-    {"IncrementUpdateNumber", _wrap_DriverStation_IncrementUpdateNumber}, 
-    {"GetUserStatusDataSem", _wrap_DriverStation_GetUserStatusDataSem}, 
     {"InDisabled", _wrap_DriverStation_InDisabled}, 
     {"InAutonomous", _wrap_DriverStation_InAutonomous}, 
     {"InOperatorControl", _wrap_DriverStation_InOperatorControl}, 
@@ -17657,6 +9590,7 @@ static swig_lua_attribute swig_DriverStation_cls_attributes[] = {
 };
 static swig_lua_method swig_DriverStation_cls_methods[] = {
     {"GetInstance", _wrap_DriverStation_GetInstance}, 
+    {"ReportError", _wrap_DriverStation_ReportError}, 
     {0,0}
 };
 static swig_lua_const_info swig_DriverStation_cls_constants[] = {
@@ -17668,893 +9602,6 @@ static swig_lua_const_info swig_DriverStation_cls_constants[] = {
 static swig_lua_class *swig_DriverStation_bases[] = {0};
 static const char *swig_DriverStation_base_names[] = {0};
 static swig_lua_class _wrap_class_DriverStation = { "DriverStation", &SWIGTYPE_p_DriverStation,0, swig_delete_DriverStation, swig_DriverStation_methods, swig_DriverStation_attributes, { "DriverStation", swig_DriverStation_cls_methods, swig_DriverStation_cls_attributes, swig_DriverStation_cls_constants }, swig_DriverStation_bases, swig_DriverStation_base_names };
-
-static int _wrap_DriverStationEnhancedIO_GetAcceleration(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  DriverStationEnhancedIO::tAccelChannel arg2 ;
-  double result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetAcceleration",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetAcceleration",1,"DriverStationEnhancedIO *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::GetAcceleration",2,"DriverStationEnhancedIO::tAccelChannel");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetAcceleration",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  arg2 = (DriverStationEnhancedIO::tAccelChannel)(int)lua_tonumber(L, 2);
-  result = (double)(arg1)->GetAcceleration(arg2);
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetAnalogIn(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  double result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetAnalogIn",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetAnalogIn",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::GetAnalogIn",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetAnalogIn",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetAnalogIn",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (double)(arg1)->GetAnalogIn(arg2);
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetAnalogInRatio(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  double result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetAnalogInRatio",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetAnalogInRatio",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::GetAnalogInRatio",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetAnalogInRatio",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetAnalogInRatio",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (double)(arg1)->GetAnalogInRatio(arg2);
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetAnalogOut(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  double result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetAnalogOut",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetAnalogOut",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::GetAnalogOut",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetAnalogOut",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetAnalogOut",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (double)(arg1)->GetAnalogOut(arg2);
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_SetAnalogOut(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  double arg3 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::SetAnalogOut",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::SetAnalogOut",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::SetAnalogOut",2,"uint32_t");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("DriverStationEnhancedIO::SetAnalogOut",3,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetAnalogOut",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetAnalogOut",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (double)lua_tonumber(L, 3);
-  (arg1)->SetAnalogOut(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetButton(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  bool result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetButton",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetButton",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::GetButton",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetButton",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetButton",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (bool)(arg1)->GetButton(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetButtons(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint8_t result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetButtons",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetButtons",1,"DriverStationEnhancedIO *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetButtons",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  result = (arg1)->GetButtons();
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_SetLED(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  bool arg3 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::SetLED",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::SetLED",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::SetLED",2,"uint32_t");
-  if(!lua_isboolean(L,3)) SWIG_fail_arg("DriverStationEnhancedIO::SetLED",3,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetLED",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetLED",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (lua_toboolean(L, 3)!=0);
-  (arg1)->SetLED(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_SetLEDs(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint8_t arg2 ;
-  uint8_t *argp2 ;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::SetLEDs",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::SetLEDs",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::SetLEDs",2,"uint8_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetLEDs",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetLEDs",2,SWIGTYPE_p_uint8_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->SetLEDs(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetDigital(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  bool result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetDigital",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetDigital",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::GetDigital",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetDigital",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetDigital",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (bool)(arg1)->GetDigital(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetDigitals(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint16_t result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetDigitals",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetDigitals",1,"DriverStationEnhancedIO *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetDigitals",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  result = (arg1)->GetDigitals();
-  {
-    uint16_t * resultptr = new uint16_t((const uint16_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint16_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_SetDigitalOutput(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  bool arg3 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::SetDigitalOutput",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::SetDigitalOutput",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::SetDigitalOutput",2,"uint32_t");
-  if(!lua_isboolean(L,3)) SWIG_fail_arg("DriverStationEnhancedIO::SetDigitalOutput",3,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetDigitalOutput",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetDigitalOutput",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (lua_toboolean(L, 3)!=0);
-  (arg1)->SetDigitalOutput(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetDigitalConfig(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  DriverStationEnhancedIO::tDigitalConfig result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetDigitalConfig",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetDigitalConfig",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::GetDigitalConfig",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetDigitalConfig",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetDigitalConfig",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (DriverStationEnhancedIO::tDigitalConfig)(arg1)->GetDigitalConfig(arg2);
-  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_SetDigitalConfig(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  DriverStationEnhancedIO::tDigitalConfig arg3 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::SetDigitalConfig",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::SetDigitalConfig",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::SetDigitalConfig",2,"uint32_t");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("DriverStationEnhancedIO::SetDigitalConfig",3,"DriverStationEnhancedIO::tDigitalConfig");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetDigitalConfig",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetDigitalConfig",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (DriverStationEnhancedIO::tDigitalConfig)(int)lua_tonumber(L, 3);
-  (arg1)->SetDigitalConfig(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetPWMPeriod(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  DriverStationEnhancedIO::tPWMPeriodChannels arg2 ;
-  double result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetPWMPeriod",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetPWMPeriod",1,"DriverStationEnhancedIO *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::GetPWMPeriod",2,"DriverStationEnhancedIO::tPWMPeriodChannels");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetPWMPeriod",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  arg2 = (DriverStationEnhancedIO::tPWMPeriodChannels)(int)lua_tonumber(L, 2);
-  result = (double)(arg1)->GetPWMPeriod(arg2);
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_SetPWMPeriod(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  DriverStationEnhancedIO::tPWMPeriodChannels arg2 ;
-  double arg3 ;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::SetPWMPeriod",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::SetPWMPeriod",1,"DriverStationEnhancedIO *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::SetPWMPeriod",2,"DriverStationEnhancedIO::tPWMPeriodChannels");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("DriverStationEnhancedIO::SetPWMPeriod",3,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetPWMPeriod",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  arg2 = (DriverStationEnhancedIO::tPWMPeriodChannels)(int)lua_tonumber(L, 2);
-  arg3 = (double)lua_tonumber(L, 3);
-  (arg1)->SetPWMPeriod(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetFixedDigitalOutput(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  bool result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetFixedDigitalOutput",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetFixedDigitalOutput",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::GetFixedDigitalOutput",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetFixedDigitalOutput",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetFixedDigitalOutput",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (bool)(arg1)->GetFixedDigitalOutput(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_SetFixedDigitalOutput(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  bool arg3 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::SetFixedDigitalOutput",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::SetFixedDigitalOutput",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::SetFixedDigitalOutput",2,"uint32_t");
-  if(!lua_isboolean(L,3)) SWIG_fail_arg("DriverStationEnhancedIO::SetFixedDigitalOutput",3,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetFixedDigitalOutput",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetFixedDigitalOutput",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (lua_toboolean(L, 3)!=0);
-  (arg1)->SetFixedDigitalOutput(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetEncoder(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  int16_t result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetEncoder",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetEncoder",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::GetEncoder",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetEncoder",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetEncoder",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (arg1)->GetEncoder(arg2);
-  {
-    int16_t * resultptr = new int16_t((const int16_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int16_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_ResetEncoder(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::ResetEncoder",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::ResetEncoder",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::ResetEncoder",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_ResetEncoder",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_ResetEncoder",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->ResetEncoder(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetEncoderIndexEnable(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  bool result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetEncoderIndexEnable",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetEncoderIndexEnable",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::GetEncoderIndexEnable",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetEncoderIndexEnable",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetEncoderIndexEnable",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (bool)(arg1)->GetEncoderIndexEnable(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_SetEncoderIndexEnable(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  bool arg3 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::SetEncoderIndexEnable",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::SetEncoderIndexEnable",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::SetEncoderIndexEnable",2,"uint32_t");
-  if(!lua_isboolean(L,3)) SWIG_fail_arg("DriverStationEnhancedIO::SetEncoderIndexEnable",3,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetEncoderIndexEnable",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetEncoderIndexEnable",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (lua_toboolean(L, 3)!=0);
-  (arg1)->SetEncoderIndexEnable(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetTouchSlider(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetTouchSlider",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetTouchSlider",1,"DriverStationEnhancedIO *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetTouchSlider",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  result = (double)(arg1)->GetTouchSlider();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetPWMOutput(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  double result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetPWMOutput",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetPWMOutput",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::GetPWMOutput",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetPWMOutput",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetPWMOutput",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (double)(arg1)->GetPWMOutput(arg2);
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_SetPWMOutput(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint32_t arg2 ;
-  double arg3 ;
-  uint32_t *argp2 ;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::SetPWMOutput",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::SetPWMOutput",1,"DriverStationEnhancedIO *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("DriverStationEnhancedIO::SetPWMOutput",2,"uint32_t");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("DriverStationEnhancedIO::SetPWMOutput",3,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetPWMOutput",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_SetPWMOutput",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (double)lua_tonumber(L, 3);
-  (arg1)->SetPWMOutput(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_DriverStationEnhancedIO_GetFirmwareVersion(lua_State* L) {
-  int SWIG_arg = 0;
-  DriverStationEnhancedIO *arg1 = (DriverStationEnhancedIO *) 0 ;
-  uint8_t result;
-  
-  SWIG_check_num_args("DriverStationEnhancedIO::GetFirmwareVersion",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("DriverStationEnhancedIO::GetFirmwareVersion",1,"DriverStationEnhancedIO *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DriverStationEnhancedIO,0))){
-    SWIG_fail_ptr("DriverStationEnhancedIO_GetFirmwareVersion",1,SWIGTYPE_p_DriverStationEnhancedIO);
-  }
-  
-  result = (arg1)->GetFirmwareVersion();
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static swig_lua_method swig_DriverStationEnhancedIO_methods[] = {
-    {"GetAcceleration", _wrap_DriverStationEnhancedIO_GetAcceleration}, 
-    {"GetAnalogIn", _wrap_DriverStationEnhancedIO_GetAnalogIn}, 
-    {"GetAnalogInRatio", _wrap_DriverStationEnhancedIO_GetAnalogInRatio}, 
-    {"GetAnalogOut", _wrap_DriverStationEnhancedIO_GetAnalogOut}, 
-    {"SetAnalogOut", _wrap_DriverStationEnhancedIO_SetAnalogOut}, 
-    {"GetButton", _wrap_DriverStationEnhancedIO_GetButton}, 
-    {"GetButtons", _wrap_DriverStationEnhancedIO_GetButtons}, 
-    {"SetLED", _wrap_DriverStationEnhancedIO_SetLED}, 
-    {"SetLEDs", _wrap_DriverStationEnhancedIO_SetLEDs}, 
-    {"GetDigital", _wrap_DriverStationEnhancedIO_GetDigital}, 
-    {"GetDigitals", _wrap_DriverStationEnhancedIO_GetDigitals}, 
-    {"SetDigitalOutput", _wrap_DriverStationEnhancedIO_SetDigitalOutput}, 
-    {"GetDigitalConfig", _wrap_DriverStationEnhancedIO_GetDigitalConfig}, 
-    {"SetDigitalConfig", _wrap_DriverStationEnhancedIO_SetDigitalConfig}, 
-    {"GetPWMPeriod", _wrap_DriverStationEnhancedIO_GetPWMPeriod}, 
-    {"SetPWMPeriod", _wrap_DriverStationEnhancedIO_SetPWMPeriod}, 
-    {"GetFixedDigitalOutput", _wrap_DriverStationEnhancedIO_GetFixedDigitalOutput}, 
-    {"SetFixedDigitalOutput", _wrap_DriverStationEnhancedIO_SetFixedDigitalOutput}, 
-    {"GetEncoder", _wrap_DriverStationEnhancedIO_GetEncoder}, 
-    {"ResetEncoder", _wrap_DriverStationEnhancedIO_ResetEncoder}, 
-    {"GetEncoderIndexEnable", _wrap_DriverStationEnhancedIO_GetEncoderIndexEnable}, 
-    {"SetEncoderIndexEnable", _wrap_DriverStationEnhancedIO_SetEncoderIndexEnable}, 
-    {"GetTouchSlider", _wrap_DriverStationEnhancedIO_GetTouchSlider}, 
-    {"GetPWMOutput", _wrap_DriverStationEnhancedIO_GetPWMOutput}, 
-    {"SetPWMOutput", _wrap_DriverStationEnhancedIO_SetPWMOutput}, 
-    {"GetFirmwareVersion", _wrap_DriverStationEnhancedIO_GetFirmwareVersion}, 
-    {0,0}
-};
-static swig_lua_attribute swig_DriverStationEnhancedIO_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_DriverStationEnhancedIO_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_DriverStationEnhancedIO_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_DriverStationEnhancedIO_cls_constants[] = {
-    {SWIG_LUA_CONSTTAB_INT("kUnknown", DriverStationEnhancedIO::kUnknown)},
-    {SWIG_LUA_CONSTTAB_INT("kInputFloating", DriverStationEnhancedIO::kInputFloating)},
-    {SWIG_LUA_CONSTTAB_INT("kInputPullUp", DriverStationEnhancedIO::kInputPullUp)},
-    {SWIG_LUA_CONSTTAB_INT("kInputPullDown", DriverStationEnhancedIO::kInputPullDown)},
-    {SWIG_LUA_CONSTTAB_INT("kOutput", DriverStationEnhancedIO::kOutput)},
-    {SWIG_LUA_CONSTTAB_INT("kPWM", DriverStationEnhancedIO::kPWM)},
-    {SWIG_LUA_CONSTTAB_INT("kAnalogComparator", DriverStationEnhancedIO::kAnalogComparator)},
-    {SWIG_LUA_CONSTTAB_INT("kAccelX", DriverStationEnhancedIO::kAccelX)},
-    {SWIG_LUA_CONSTTAB_INT("kAccelY", DriverStationEnhancedIO::kAccelY)},
-    {SWIG_LUA_CONSTTAB_INT("kAccelZ", DriverStationEnhancedIO::kAccelZ)},
-    {SWIG_LUA_CONSTTAB_INT("kPWMChannels1and2", DriverStationEnhancedIO::kPWMChannels1and2)},
-    {SWIG_LUA_CONSTTAB_INT("kPWMChannels3and4", DriverStationEnhancedIO::kPWMChannels3and4)},
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_DriverStationEnhancedIO_bases[] = {0};
-static const char *swig_DriverStationEnhancedIO_base_names[] = {0};
-static swig_lua_class _wrap_class_DriverStationEnhancedIO = { "DriverStationEnhancedIO", &SWIGTYPE_p_DriverStationEnhancedIO,0,0, swig_DriverStationEnhancedIO_methods, swig_DriverStationEnhancedIO_attributes, { "DriverStationEnhancedIO", swig_DriverStationEnhancedIO_cls_methods, swig_DriverStationEnhancedIO_cls_attributes, swig_DriverStationEnhancedIO_cls_constants }, swig_DriverStationEnhancedIO_bases, swig_DriverStationEnhancedIO_base_names };
 
 static int _wrap_new_Encoder__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
@@ -18678,180 +9725,6 @@ fail:
 
 static int _wrap_new_Encoder__SWIG_3(lua_State* L) {
   int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t arg3 ;
-  uint32_t arg4 ;
-  bool arg5 ;
-  EncodingType arg6 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  uint8_t *argp3 ;
-  uint32_t *argp4 ;
-  EncodingType *argp6 ;
-  Encoder *result = 0 ;
-  
-  SWIG_check_num_args("Encoder::Encoder",6,6)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Encoder::Encoder",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Encoder::Encoder",2,"uint32_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Encoder::Encoder",3,"uint8_t");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("Encoder::Encoder",4,"uint32_t");
-  if(!lua_isboolean(L,5)) SWIG_fail_arg("Encoder::Encoder",5,"bool");
-  if(!lua_isuserdata(L,6)) SWIG_fail_arg("Encoder::Encoder",6,"EncodingType");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Encoder",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Encoder",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Encoder",3,SWIGTYPE_p_uint8_t);
-  }
-  arg3 = *argp3;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Encoder",4,SWIGTYPE_p_uint32_t);
-  }
-  arg4 = *argp4;
-  
-  arg5 = (lua_toboolean(L, 5)!=0);
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,6,(void**)&argp6,SWIGTYPE_p_EncodingType,0))){
-    SWIG_fail_ptr("new_Encoder",6,SWIGTYPE_p_EncodingType);
-  }
-  arg6 = *argp6;
-  
-  result = (Encoder *)new Encoder(arg1,arg2,arg3,arg4,arg5,arg6);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Encoder,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Encoder__SWIG_4(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t arg3 ;
-  uint32_t arg4 ;
-  bool arg5 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  uint8_t *argp3 ;
-  uint32_t *argp4 ;
-  Encoder *result = 0 ;
-  
-  SWIG_check_num_args("Encoder::Encoder",5,5)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Encoder::Encoder",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Encoder::Encoder",2,"uint32_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Encoder::Encoder",3,"uint8_t");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("Encoder::Encoder",4,"uint32_t");
-  if(!lua_isboolean(L,5)) SWIG_fail_arg("Encoder::Encoder",5,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Encoder",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Encoder",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Encoder",3,SWIGTYPE_p_uint8_t);
-  }
-  arg3 = *argp3;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Encoder",4,SWIGTYPE_p_uint32_t);
-  }
-  arg4 = *argp4;
-  
-  arg5 = (lua_toboolean(L, 5)!=0);
-  result = (Encoder *)new Encoder(arg1,arg2,arg3,arg4,arg5);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Encoder,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Encoder__SWIG_5(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t arg3 ;
-  uint32_t arg4 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  uint8_t *argp3 ;
-  uint32_t *argp4 ;
-  Encoder *result = 0 ;
-  
-  SWIG_check_num_args("Encoder::Encoder",4,4)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Encoder::Encoder",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Encoder::Encoder",2,"uint32_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Encoder::Encoder",3,"uint8_t");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("Encoder::Encoder",4,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Encoder",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Encoder",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Encoder",3,SWIGTYPE_p_uint8_t);
-  }
-  arg3 = *argp3;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Encoder",4,SWIGTYPE_p_uint32_t);
-  }
-  arg4 = *argp4;
-  
-  result = (Encoder *)new Encoder(arg1,arg2,arg3,arg4);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Encoder,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Encoder__SWIG_6(lua_State* L) {
-  int SWIG_arg = 0;
   DigitalSource *arg1 = (DigitalSource *) 0 ;
   DigitalSource *arg2 = (DigitalSource *) 0 ;
   bool arg3 ;
@@ -18893,7 +9766,7 @@ fail:
 }
 
 
-static int _wrap_new_Encoder__SWIG_7(lua_State* L) {
+static int _wrap_new_Encoder__SWIG_4(lua_State* L) {
   int SWIG_arg = 0;
   DigitalSource *arg1 = (DigitalSource *) 0 ;
   DigitalSource *arg2 = (DigitalSource *) 0 ;
@@ -18927,7 +9800,7 @@ fail:
 }
 
 
-static int _wrap_new_Encoder__SWIG_8(lua_State* L) {
+static int _wrap_new_Encoder__SWIG_5(lua_State* L) {
   int SWIG_arg = 0;
   DigitalSource *arg1 = (DigitalSource *) 0 ;
   DigitalSource *arg2 = (DigitalSource *) 0 ;
@@ -18958,7 +9831,7 @@ fail:
 }
 
 
-static int _wrap_new_Encoder__SWIG_9(lua_State* L) {
+static int _wrap_new_Encoder__SWIG_6(lua_State* L) {
   int SWIG_arg = 0;
   DigitalSource *arg1 = 0 ;
   DigitalSource *arg2 = 0 ;
@@ -19001,7 +9874,7 @@ fail:
 }
 
 
-static int _wrap_new_Encoder__SWIG_10(lua_State* L) {
+static int _wrap_new_Encoder__SWIG_7(lua_State* L) {
   int SWIG_arg = 0;
   DigitalSource *arg1 = 0 ;
   DigitalSource *arg2 = 0 ;
@@ -19035,7 +9908,7 @@ fail:
 }
 
 
-static int _wrap_new_Encoder__SWIG_11(lua_State* L) {
+static int _wrap_new_Encoder__SWIG_8(lua_State* L) {
   int SWIG_arg = 0;
   DigitalSource *arg1 = 0 ;
   DigitalSource *arg2 = 0 ;
@@ -19068,8 +9941,8 @@ fail:
 
 static int _wrap_new_Encoder(lua_State* L) {
   int argc;
-  int argv[7]={
-    1,2,3,4,5,6,7
+  int argv[5]={
+    1,2,3,4,5
   };
   
   argc = lua_gettop(L);
@@ -19117,7 +9990,7 @@ static int _wrap_new_Encoder(lua_State* L) {
         }
       }
       if (_v) {
-        return _wrap_new_Encoder__SWIG_8(L);
+        return _wrap_new_Encoder__SWIG_5(L);
       }
     }
   }
@@ -19141,7 +10014,7 @@ static int _wrap_new_Encoder(lua_State* L) {
         }
       }
       if (_v) {
-        return _wrap_new_Encoder__SWIG_11(L);
+        return _wrap_new_Encoder__SWIG_8(L);
       }
     }
   }
@@ -19198,7 +10071,7 @@ static int _wrap_new_Encoder(lua_State* L) {
           _v = lua_isboolean(L,argv[2]);
         }
         if (_v) {
-          return _wrap_new_Encoder__SWIG_10(L);
+          return _wrap_new_Encoder__SWIG_7(L);
         }
       }
     }
@@ -19227,51 +10100,7 @@ static int _wrap_new_Encoder(lua_State* L) {
           _v = lua_isboolean(L,argv[2]);
         }
         if (_v) {
-          return _wrap_new_Encoder__SWIG_7(L);
-        }
-      }
-    }
-  }
-  if (argc == 4) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
-          }
-          if (_v) {
-            return _wrap_new_Encoder__SWIG_5(L);
-          }
+          return _wrap_new_Encoder__SWIG_4(L);
         }
       }
     }
@@ -19290,45 +10119,6 @@ static int _wrap_new_Encoder(lua_State* L) {
       {
         void *ptr;
         if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalSource, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          _v = lua_isboolean(L,argv[2]);
-        }
-        if (_v) {
-          {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_EncodingType, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
-          }
-          if (_v) {
-            return _wrap_new_Encoder__SWIG_9(L);
-          }
-        }
-      }
-    }
-  }
-  if (argc == 4) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalSource, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalSource, 0)) {
           _v = 0;
         } else {
           _v = 1;
@@ -19393,11 +10183,11 @@ static int _wrap_new_Encoder(lua_State* L) {
       }
     }
   }
-  if (argc == 5) {
+  if (argc == 4) {
     int _v;
     {
       void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalSource, 0)) {
         _v = 0;
       } else {
         _v = 1;
@@ -19406,7 +10196,7 @@ static int _wrap_new_Encoder(lua_State* L) {
     if (_v) {
       {
         void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
+        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalSource, 0)) {
           _v = 0;
         } else {
           _v = 1;
@@ -19414,88 +10204,19 @@ static int _wrap_new_Encoder(lua_State* L) {
       }
       if (_v) {
         {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
+          _v = lua_isboolean(L,argv[2]);
         }
         if (_v) {
           {
             void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
+            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_EncodingType, 0)) {
               _v = 0;
             } else {
               _v = 1;
             }
           }
           if (_v) {
-            {
-              _v = lua_isboolean(L,argv[4]);
-            }
-            if (_v) {
-              return _wrap_new_Encoder__SWIG_4(L);
-            }
-          }
-        }
-      }
-    }
-  }
-  if (argc == 6) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
-          }
-          if (_v) {
-            {
-              _v = lua_isboolean(L,argv[4]);
-            }
-            if (_v) {
-              {
-                void *ptr;
-                if (lua_isuserdata(L,argv[5])==0 || SWIG_ConvertPtr(L,argv[5], (void **) &ptr, SWIGTYPE_p_EncodingType, 0)) {
-                  _v = 0;
-                } else {
-                  _v = 1;
-                }
-              }
-              if (_v) {
-                return _wrap_new_Encoder__SWIG_3(L);
-              }
-            }
+            return _wrap_new_Encoder__SWIG_3(L);
           }
         }
       }
@@ -19507,9 +10228,6 @@ static int _wrap_new_Encoder(lua_State* L) {
     "    Encoder::Encoder(uint32_t,uint32_t,bool,EncodingType)\n"
     "    Encoder::Encoder(uint32_t,uint32_t,bool)\n"
     "    Encoder::Encoder(uint32_t,uint32_t)\n"
-    "    Encoder::Encoder(uint8_t,uint32_t,uint8_t,uint32_t,bool,EncodingType)\n"
-    "    Encoder::Encoder(uint8_t,uint32_t,uint8_t,uint32_t,bool)\n"
-    "    Encoder::Encoder(uint8_t,uint32_t,uint8_t,uint32_t)\n"
     "    Encoder::Encoder(DigitalSource *,DigitalSource *,bool,EncodingType)\n"
     "    Encoder::Encoder(DigitalSource *,DigitalSource *,bool)\n"
     "    Encoder::Encoder(DigitalSource *,DigitalSource *)\n"
@@ -19517,29 +10235,6 @@ static int _wrap_new_Encoder(lua_State* L) {
     "    Encoder::Encoder(DigitalSource &,DigitalSource &,bool)\n"
     "    Encoder::Encoder(DigitalSource &,DigitalSource &)\n");
   lua_error(L);return 0;
-}
-
-
-static int _wrap_Encoder_Start(lua_State* L) {
-  int SWIG_arg = 0;
-  Encoder *arg1 = (Encoder *) 0 ;
-  
-  SWIG_check_num_args("Encoder::Start",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Encoder::Start",1,"Encoder *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Encoder,0))){
-    SWIG_fail_ptr("Encoder_Start",1,SWIGTYPE_p_Encoder);
-  }
-  
-  (arg1)->Start();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
 }
 
 
@@ -19597,6 +10292,33 @@ fail:
 }
 
 
+static int _wrap_Encoder_GetEncodingScale(lua_State* L) {
+  int SWIG_arg = 0;
+  Encoder *arg1 = (Encoder *) 0 ;
+  int32_t result;
+  
+  SWIG_check_num_args("Encoder::GetEncodingScale",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Encoder::GetEncodingScale",1,"Encoder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Encoder,0))){
+    SWIG_fail_ptr("Encoder_GetEncodingScale",1,SWIGTYPE_p_Encoder);
+  }
+  
+  result = (arg1)->GetEncodingScale();
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_Encoder_Reset(lua_State* L) {
   int SWIG_arg = 0;
   Encoder *arg1 = (Encoder *) 0 ;
@@ -19609,29 +10331,6 @@ static int _wrap_Encoder_Reset(lua_State* L) {
   }
   
   (arg1)->Reset();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Encoder_Stop(lua_State* L) {
-  int SWIG_arg = 0;
-  Encoder *arg1 = (Encoder *) 0 ;
-  
-  SWIG_check_num_args("Encoder::Stop",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Encoder::Stop",1,"Encoder *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Encoder,0))){
-    SWIG_fail_ptr("Encoder_Stop",1,SWIGTYPE_p_Encoder);
-  }
-  
-  (arg1)->Stop();
   
   return SWIG_arg;
   
@@ -20123,16 +10822,42 @@ fail:
 }
 
 
+static int _wrap_Encoder_GetFPGAIndex(lua_State* L) {
+  int SWIG_arg = 0;
+  Encoder *arg1 = (Encoder *) 0 ;
+  int32_t result;
+  
+  SWIG_check_num_args("Encoder::GetFPGAIndex",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Encoder::GetFPGAIndex",1,"Encoder *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Encoder,0))){
+    SWIG_fail_ptr("Encoder_GetFPGAIndex",1,SWIGTYPE_p_Encoder);
+  }
+  
+  result = (arg1)->GetFPGAIndex();
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Encoder(void *obj) {
 Encoder *arg1 = (Encoder *) obj;
 delete arg1;
 }
 static swig_lua_method swig_Encoder_methods[] = {
-    {"Start", _wrap_Encoder_Start}, 
     {"Get", _wrap_Encoder_Get}, 
     {"GetRaw", _wrap_Encoder_GetRaw}, 
+    {"GetEncodingScale", _wrap_Encoder_GetEncodingScale}, 
     {"Reset", _wrap_Encoder_Reset}, 
-    {"Stop", _wrap_Encoder_Stop}, 
     {"GetPeriod", _wrap_Encoder_GetPeriod}, 
     {"SetMaxPeriod", _wrap_Encoder_SetMaxPeriod}, 
     {"GetStopped", _wrap_Encoder_GetStopped}, 
@@ -20152,6 +10877,7 @@ static swig_lua_method swig_Encoder_methods[] = {
     {"GetSmartDashboardType", _wrap_Encoder_GetSmartDashboardType}, 
     {"InitTable", _wrap_Encoder_InitTable}, 
     {"GetTable", _wrap_Encoder_GetTable}, 
+    {"GetFPGAIndex", _wrap_Encoder_GetFPGAIndex}, 
     {0,0}
 };
 static swig_lua_attribute swig_Encoder_attributes[] = {
@@ -20401,35 +11127,44 @@ static int _wrap_ErrorBase_SetWPIError(lua_State* L) {
   int SWIG_arg = 0;
   ErrorBase *arg1 = (ErrorBase *) 0 ;
   char *arg2 = (char *) 0 ;
-  char *arg3 = (char *) 0 ;
+  Error::Code arg3 ;
   char *arg4 = (char *) 0 ;
   char *arg5 = (char *) 0 ;
-  uint32_t arg6 ;
-  uint32_t *argp6 ;
+  char *arg6 = (char *) 0 ;
+  uint32_t arg7 ;
+  Error::Code *argp3 ;
+  uint32_t *argp7 ;
   
-  SWIG_check_num_args("ErrorBase::SetWPIError",6,6)
+  SWIG_check_num_args("ErrorBase::SetWPIError",7,7)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ErrorBase::SetWPIError",1,"ErrorBase const *");
   if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("ErrorBase::SetWPIError",2,"char const *");
-  if(!SWIG_lua_isnilstring(L,3)) SWIG_fail_arg("ErrorBase::SetWPIError",3,"char const *");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("ErrorBase::SetWPIError",3,"Error::Code");
   if(!SWIG_lua_isnilstring(L,4)) SWIG_fail_arg("ErrorBase::SetWPIError",4,"char const *");
   if(!SWIG_lua_isnilstring(L,5)) SWIG_fail_arg("ErrorBase::SetWPIError",5,"char const *");
-  if(!lua_isuserdata(L,6)) SWIG_fail_arg("ErrorBase::SetWPIError",6,"uint32_t");
+  if(!SWIG_lua_isnilstring(L,6)) SWIG_fail_arg("ErrorBase::SetWPIError",6,"char const *");
+  if(!lua_isuserdata(L,7)) SWIG_fail_arg("ErrorBase::SetWPIError",7,"uint32_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ErrorBase,0))){
     SWIG_fail_ptr("ErrorBase_SetWPIError",1,SWIGTYPE_p_ErrorBase);
   }
   
   arg2 = (char *)lua_tostring(L, 2);
-  arg3 = (char *)lua_tostring(L, 3);
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_Error__Code,0))){
+    SWIG_fail_ptr("ErrorBase_SetWPIError",3,SWIGTYPE_p_Error__Code);
+  }
+  arg3 = *argp3;
+  
   arg4 = (char *)lua_tostring(L, 4);
   arg5 = (char *)lua_tostring(L, 5);
+  arg6 = (char *)lua_tostring(L, 6);
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,6,(void**)&argp6,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("ErrorBase_SetWPIError",6,SWIGTYPE_p_uint32_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,7,(void**)&argp7,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("ErrorBase_SetWPIError",7,SWIGTYPE_p_uint32_t);
   }
-  arg6 = *argp6;
+  arg7 = *argp7;
   
-  ((ErrorBase const *)arg1)->SetWPIError((char const *)arg2,(char const *)arg3,(char const *)arg4,(char const *)arg5,arg6);
+  ((ErrorBase const *)arg1)->SetWPIError((char const *)arg2,arg3,(char const *)arg4,(char const *)arg5,(char const *)arg6,arg7);
   
   return SWIG_arg;
   
@@ -20706,79 +11441,6 @@ fail:
 
 static int _wrap_new_GearTooth__SWIG_2(lua_State* L) {
   int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  bool arg3 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  GearTooth *result = 0 ;
-  
-  SWIG_check_num_args("GearTooth::GearTooth",3,3)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("GearTooth::GearTooth",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("GearTooth::GearTooth",2,"uint32_t");
-  if(!lua_isboolean(L,3)) SWIG_fail_arg("GearTooth::GearTooth",3,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_GearTooth",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_GearTooth",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (lua_toboolean(L, 3)!=0);
-  result = (GearTooth *)new GearTooth(arg1,arg2,arg3);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_GearTooth,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_GearTooth__SWIG_3(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  GearTooth *result = 0 ;
-  
-  SWIG_check_num_args("GearTooth::GearTooth",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("GearTooth::GearTooth",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("GearTooth::GearTooth",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_GearTooth",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_GearTooth",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (GearTooth *)new GearTooth(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_GearTooth,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_GearTooth__SWIG_4(lua_State* L) {
-  int SWIG_arg = 0;
   DigitalSource *arg1 = (DigitalSource *) 0 ;
   bool arg2 ;
   GearTooth *result = 0 ;
@@ -20804,7 +11466,7 @@ fail:
 }
 
 
-static int _wrap_new_GearTooth__SWIG_5(lua_State* L) {
+static int _wrap_new_GearTooth__SWIG_3(lua_State* L) {
   int SWIG_arg = 0;
   DigitalSource *arg1 = (DigitalSource *) 0 ;
   GearTooth *result = 0 ;
@@ -20828,7 +11490,7 @@ fail:
 }
 
 
-static int _wrap_new_GearTooth__SWIG_6(lua_State* L) {
+static int _wrap_new_GearTooth__SWIG_4(lua_State* L) {
   int SWIG_arg = 0;
   DigitalSource *arg1 = 0 ;
   bool arg2 ;
@@ -20855,7 +11517,7 @@ fail:
 }
 
 
-static int _wrap_new_GearTooth__SWIG_7(lua_State* L) {
+static int _wrap_new_GearTooth__SWIG_5(lua_State* L) {
   int SWIG_arg = 0;
   DigitalSource *arg1 = 0 ;
   GearTooth *result = 0 ;
@@ -20881,8 +11543,8 @@ fail:
 
 static int _wrap_new_GearTooth(lua_State* L) {
   int argc;
-  int argv[4]={
-    1,2,3,4
+  int argv[3]={
+    1,2,3
   };
   
   argc = lua_gettop(L);
@@ -20911,7 +11573,7 @@ static int _wrap_new_GearTooth(lua_State* L) {
       }
     }
     if (_v) {
-      return _wrap_new_GearTooth__SWIG_5(L);
+      return _wrap_new_GearTooth__SWIG_3(L);
     }
   }
   if (argc == 1) {
@@ -20925,26 +11587,7 @@ static int _wrap_new_GearTooth(lua_State* L) {
       }
     }
     if (_v) {
-      return _wrap_new_GearTooth__SWIG_7(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalSource, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isboolean(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_new_GearTooth__SWIG_4(L);
-      }
+      return _wrap_new_GearTooth__SWIG_5(L);
     }
   }
   if (argc == 2) {
@@ -20981,7 +11624,7 @@ static int _wrap_new_GearTooth(lua_State* L) {
         _v = lua_isboolean(L,argv[1]);
       }
       if (_v) {
-        return _wrap_new_GearTooth__SWIG_6(L);
+        return _wrap_new_GearTooth__SWIG_4(L);
       }
     }
   }
@@ -20989,7 +11632,7 @@ static int _wrap_new_GearTooth(lua_State* L) {
     int _v;
     {
       void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalSource, 0)) {
         _v = 0;
       } else {
         _v = 1;
@@ -20997,44 +11640,10 @@ static int _wrap_new_GearTooth(lua_State* L) {
     }
     if (_v) {
       {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
+        _v = lua_isboolean(L,argv[1]);
       }
       if (_v) {
-        return _wrap_new_GearTooth__SWIG_3(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          _v = lua_isboolean(L,argv[2]);
-        }
-        if (_v) {
-          return _wrap_new_GearTooth__SWIG_2(L);
-        }
+        return _wrap_new_GearTooth__SWIG_2(L);
       }
     }
   }
@@ -21043,8 +11652,6 @@ static int _wrap_new_GearTooth(lua_State* L) {
     "  Possible C/C++ prototypes are:\n"
     "    GearTooth::GearTooth(uint32_t,bool)\n"
     "    GearTooth::GearTooth(uint32_t)\n"
-    "    GearTooth::GearTooth(uint8_t,uint32_t,bool)\n"
-    "    GearTooth::GearTooth(uint8_t,uint32_t)\n"
     "    GearTooth::GearTooth(DigitalSource *,bool)\n"
     "    GearTooth::GearTooth(DigitalSource *)\n"
     "    GearTooth::GearTooth(DigitalSource &,bool)\n"
@@ -21770,6 +12377,117 @@ fail:
 }
 
 
+static int _wrap_GenericHID_GetPOV__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  GenericHID *arg1 = (GenericHID *) 0 ;
+  uint32_t arg2 ;
+  uint32_t *argp2 ;
+  int result;
+  
+  SWIG_check_num_args("GenericHID::GetPOV",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("GenericHID::GetPOV",1,"GenericHID *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("GenericHID::GetPOV",2,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_GenericHID,0))){
+    SWIG_fail_ptr("GenericHID_GetPOV",1,SWIGTYPE_p_GenericHID);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("GenericHID_GetPOV",2,SWIGTYPE_p_uint32_t);
+  }
+  arg2 = *argp2;
+  
+  result = (int)(arg1)->GetPOV(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_GenericHID_GetPOV__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  GenericHID *arg1 = (GenericHID *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("GenericHID::GetPOV",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("GenericHID::GetPOV",1,"GenericHID *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_GenericHID,0))){
+    SWIG_fail_ptr("GenericHID_GetPOV",1,SWIGTYPE_p_GenericHID);
+  }
+  
+  result = (int)(arg1)->GetPOV();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_GenericHID_GetPOV(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_GenericHID, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_GenericHID_GetPOV__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_GenericHID, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_GenericHID_GetPOV__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'GenericHID_GetPOV'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    GenericHID::GetPOV(uint32_t)\n"
+    "    GenericHID::GetPOV()\n");
+  lua_error(L);return 0;
+}
+
+
 static void swig_delete_GenericHID(void *obj) {
 GenericHID *arg1 = (GenericHID *) obj;
 delete arg1;
@@ -21785,6 +12503,7 @@ static swig_lua_method swig_GenericHID_methods[] = {
     {"GetTop", _wrap_GenericHID_GetTop}, 
     {"GetBumper", _wrap_GenericHID_GetBumper}, 
     {"GetRawButton", _wrap_GenericHID_GetRawButton}, 
+    {"GetPOV", _wrap_GenericHID_GetPOV}, 
     {0,0}
 };
 static swig_lua_attribute swig_GenericHID_attributes[] = {
@@ -21807,28 +12526,19 @@ static swig_lua_class _wrap_class_GenericHID = { "GenericHID", &SWIGTYPE_p_Gener
 
 static int _wrap_new_Gyro__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
+  int32_t arg1 ;
+  int32_t *argp1 ;
   Gyro *result = 0 ;
   
-  SWIG_check_num_args("Gyro::Gyro",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Gyro::Gyro",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Gyro::Gyro",2,"uint32_t");
+  SWIG_check_num_args("Gyro::Gyro",1,1)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Gyro::Gyro",1,"int32_t");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Gyro",1,SWIGTYPE_p_uint8_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_int32_t,0))){
+    SWIG_fail_ptr("new_Gyro",1,SWIGTYPE_p_int32_t);
   }
   arg1 = *argp1;
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Gyro",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (Gyro *)new Gyro(arg1,arg2);
+  result = (Gyro *)new Gyro(arg1);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_Gyro,1); SWIG_arg++; 
   return SWIG_arg;
   
@@ -21842,17 +12552,15 @@ fail:
 
 static int _wrap_new_Gyro__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
-  uint32_t arg1 ;
-  uint32_t *argp1 ;
+  AnalogInput *arg1 = (AnalogInput *) 0 ;
   Gyro *result = 0 ;
   
   SWIG_check_num_args("Gyro::Gyro",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Gyro::Gyro",1,"uint32_t");
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Gyro::Gyro",1,"AnalogInput *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Gyro",1,SWIGTYPE_p_uint32_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("new_Gyro",1,SWIGTYPE_p_AnalogInput);
   }
-  arg1 = *argp1;
   
   result = (Gyro *)new Gyro(arg1);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_Gyro,1); SWIG_arg++; 
@@ -21868,38 +12576,14 @@ fail:
 
 static int _wrap_new_Gyro__SWIG_2(lua_State* L) {
   int SWIG_arg = 0;
-  AnalogChannel *arg1 = (AnalogChannel *) 0 ;
+  AnalogInput *arg1 = 0 ;
   Gyro *result = 0 ;
   
   SWIG_check_num_args("Gyro::Gyro",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Gyro::Gyro",1,"AnalogChannel *");
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Gyro::Gyro",1,"AnalogInput &");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("new_Gyro",1,SWIGTYPE_p_AnalogChannel);
-  }
-  
-  result = (Gyro *)new Gyro(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Gyro,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Gyro__SWIG_3(lua_State* L) {
-  int SWIG_arg = 0;
-  AnalogChannel *arg1 = 0 ;
-  Gyro *result = 0 ;
-  
-  SWIG_check_num_args("Gyro::Gyro",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Gyro::Gyro",1,"AnalogChannel &");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogChannel,0))){
-    SWIG_fail_ptr("new_Gyro",1,SWIGTYPE_p_AnalogChannel);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AnalogInput,0))){
+    SWIG_fail_ptr("new_Gyro",1,SWIGTYPE_p_AnalogInput);
   }
   
   result = (Gyro *)new Gyro(*arg1);
@@ -21916,8 +12600,8 @@ fail:
 
 static int _wrap_new_Gyro(lua_State* L) {
   int argc;
-  int argv[3]={
-    1,2,3
+  int argv[2]={
+    1,2
   };
   
   argc = lua_gettop(L);
@@ -21925,7 +12609,21 @@ static int _wrap_new_Gyro(lua_State* L) {
     int _v;
     {
       void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_int32_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_new_Gyro__SWIG_0(L);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_AnalogInput, 0)) {
         _v = 0;
       } else {
         _v = 1;
@@ -21939,7 +12637,7 @@ static int _wrap_new_Gyro(lua_State* L) {
     int _v;
     {
       void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_AnalogChannel, 0)) {
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_AnalogInput, 0)) {
         _v = 0;
       } else {
         _v = 1;
@@ -21949,51 +12647,12 @@ static int _wrap_new_Gyro(lua_State* L) {
       return _wrap_new_Gyro__SWIG_2(L);
     }
   }
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_AnalogChannel, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_Gyro__SWIG_3(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_Gyro__SWIG_0(L);
-      }
-    }
-  }
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Gyro'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    Gyro::Gyro(uint8_t,uint32_t)\n"
-    "    Gyro::Gyro(uint32_t)\n"
-    "    Gyro::Gyro(AnalogChannel *)\n"
-    "    Gyro::Gyro(AnalogChannel &)\n");
+    "    Gyro::Gyro(int32_t)\n"
+    "    Gyro::Gyro(AnalogInput *)\n"
+    "    Gyro::Gyro(AnalogInput &)\n");
   lua_error(L);return 0;
 }
 
@@ -22072,6 +12731,32 @@ fail:
 }
 
 
+static int _wrap_Gyro_SetDeadband(lua_State* L) {
+  int SWIG_arg = 0;
+  Gyro *arg1 = (Gyro *) 0 ;
+  float arg2 ;
+  
+  SWIG_check_num_args("Gyro::SetDeadband",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Gyro::SetDeadband",1,"Gyro *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("Gyro::SetDeadband",2,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Gyro,0))){
+    SWIG_fail_ptr("Gyro_SetDeadband",1,SWIGTYPE_p_Gyro);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->SetDeadband(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_Gyro_SetPIDSourceParameter(lua_State* L) {
   int SWIG_arg = 0;
   Gyro *arg1 = (Gyro *) 0 ;
@@ -22116,6 +12801,29 @@ static int _wrap_Gyro_Reset(lua_State* L) {
   }
   
   (arg1)->Reset();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Gyro_InitGyro(lua_State* L) {
+  int SWIG_arg = 0;
+  Gyro *arg1 = (Gyro *) 0 ;
+  
+  SWIG_check_num_args("Gyro::InitGyro",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Gyro::InitGyro",1,"Gyro *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Gyro,0))){
+    SWIG_fail_ptr("Gyro_InitGyro",1,SWIGTYPE_p_Gyro);
+  }
+  
+  (arg1)->InitGyro();
   
   return SWIG_arg;
   
@@ -22309,8 +13017,10 @@ static swig_lua_method swig_Gyro_methods[] = {
     {"GetAngle", _wrap_Gyro_GetAngle}, 
     {"GetRate", _wrap_Gyro_GetRate}, 
     {"SetSensitivity", _wrap_Gyro_SetSensitivity}, 
+    {"SetDeadband", _wrap_Gyro_SetDeadband}, 
     {"SetPIDSourceParameter", _wrap_Gyro_SetPIDSourceParameter}, 
     {"Reset", _wrap_Gyro_Reset}, 
+    {"InitGyro", _wrap_Gyro_InitGyro}, 
     {"PIDGet", _wrap_Gyro_PIDGet}, 
     {"UpdateTable", _wrap_Gyro_UpdateTable}, 
     {"StartLiveWindowMode", _wrap_Gyro_StartLiveWindowMode}, 
@@ -22339,22 +13049,25 @@ static swig_lua_class *swig_Gyro_bases[] = {0};
 static const char *swig_Gyro_base_names[] = {0};
 static swig_lua_class _wrap_class_Gyro = { "Gyro", &SWIGTYPE_p_Gyro,_wrap_new_Gyro, swig_delete_Gyro, swig_Gyro_methods, swig_Gyro_attributes, { "Gyro", swig_Gyro_cls_methods, swig_Gyro_cls_attributes, swig_Gyro_cls_constants }, swig_Gyro_bases, swig_Gyro_base_names };
 
-static int _wrap_new_HiTechnicCompass(lua_State* L) {
+static int _wrap_new_I2C(lua_State* L) {
   int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint8_t *argp1 ;
-  HiTechnicCompass *result = 0 ;
+  I2C::Port arg1 ;
+  uint8_t arg2 ;
+  uint8_t *argp2 ;
+  I2C *result = 0 ;
   
-  SWIG_check_num_args("HiTechnicCompass::HiTechnicCompass",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("HiTechnicCompass::HiTechnicCompass",1,"uint8_t");
+  SWIG_check_num_args("I2C::I2C",2,2)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("I2C::I2C",1,"I2C::Port");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("I2C::I2C",2,"uint8_t");
+  arg1 = (I2C::Port)(int)lua_tonumber(L, 1);
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_HiTechnicCompass",1,SWIGTYPE_p_uint8_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("new_I2C",2,SWIGTYPE_p_uint8_t);
   }
-  arg1 = *argp1;
+  arg2 = *argp2;
   
-  result = (HiTechnicCompass *)new HiTechnicCompass(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_HiTechnicCompass,1); SWIG_arg++; 
+  result = (I2C *)new I2C(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_I2C,1); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -22364,697 +13077,6 @@ fail:
   return SWIG_arg;
 }
 
-
-static int _wrap_HiTechnicCompass_GetAngle(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicCompass *arg1 = (HiTechnicCompass *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("HiTechnicCompass::GetAngle",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicCompass::GetAngle",1,"HiTechnicCompass *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicCompass,0))){
-    SWIG_fail_ptr("HiTechnicCompass_GetAngle",1,SWIGTYPE_p_HiTechnicCompass);
-  }
-  
-  result = (float)(arg1)->GetAngle();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicCompass_UpdateTable(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicCompass *arg1 = (HiTechnicCompass *) 0 ;
-  
-  SWIG_check_num_args("HiTechnicCompass::UpdateTable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicCompass::UpdateTable",1,"HiTechnicCompass *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicCompass,0))){
-    SWIG_fail_ptr("HiTechnicCompass_UpdateTable",1,SWIGTYPE_p_HiTechnicCompass);
-  }
-  
-  (arg1)->UpdateTable();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicCompass_StartLiveWindowMode(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicCompass *arg1 = (HiTechnicCompass *) 0 ;
-  
-  SWIG_check_num_args("HiTechnicCompass::StartLiveWindowMode",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicCompass::StartLiveWindowMode",1,"HiTechnicCompass *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicCompass,0))){
-    SWIG_fail_ptr("HiTechnicCompass_StartLiveWindowMode",1,SWIGTYPE_p_HiTechnicCompass);
-  }
-  
-  (arg1)->StartLiveWindowMode();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicCompass_StopLiveWindowMode(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicCompass *arg1 = (HiTechnicCompass *) 0 ;
-  
-  SWIG_check_num_args("HiTechnicCompass::StopLiveWindowMode",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicCompass::StopLiveWindowMode",1,"HiTechnicCompass *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicCompass,0))){
-    SWIG_fail_ptr("HiTechnicCompass_StopLiveWindowMode",1,SWIGTYPE_p_HiTechnicCompass);
-  }
-  
-  (arg1)->StopLiveWindowMode();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicCompass_GetSmartDashboardType(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicCompass *arg1 = (HiTechnicCompass *) 0 ;
-  std::string result;
-  
-  SWIG_check_num_args("HiTechnicCompass::GetSmartDashboardType",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicCompass::GetSmartDashboardType",1,"HiTechnicCompass *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicCompass,0))){
-    SWIG_fail_ptr("HiTechnicCompass_GetSmartDashboardType",1,SWIGTYPE_p_HiTechnicCompass);
-  }
-  
-  result = (arg1)->GetSmartDashboardType();
-  {
-    std::string * resultptr = new std::string((const std::string &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicCompass_InitTable(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicCompass *arg1 = (HiTechnicCompass *) 0 ;
-  ITable *arg2 = (ITable *) 0 ;
-  
-  SWIG_check_num_args("HiTechnicCompass::InitTable",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicCompass::InitTable",1,"HiTechnicCompass *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("HiTechnicCompass::InitTable",2,"ITable *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicCompass,0))){
-    SWIG_fail_ptr("HiTechnicCompass_InitTable",1,SWIGTYPE_p_HiTechnicCompass);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
-    SWIG_fail_ptr("HiTechnicCompass_InitTable",2,SWIGTYPE_p_ITable);
-  }
-  
-  (arg1)->InitTable(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicCompass_GetTable(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicCompass *arg1 = (HiTechnicCompass *) 0 ;
-  ITable *result = 0 ;
-  
-  SWIG_check_num_args("HiTechnicCompass::GetTable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicCompass::GetTable",1,"HiTechnicCompass *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicCompass,0))){
-    SWIG_fail_ptr("HiTechnicCompass_GetTable",1,SWIGTYPE_p_HiTechnicCompass);
-  }
-  
-  result = (ITable *)(arg1)->GetTable();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ITable,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_HiTechnicCompass(void *obj) {
-HiTechnicCompass *arg1 = (HiTechnicCompass *) obj;
-delete arg1;
-}
-static swig_lua_method swig_HiTechnicCompass_methods[] = {
-    {"GetAngle", _wrap_HiTechnicCompass_GetAngle}, 
-    {"UpdateTable", _wrap_HiTechnicCompass_UpdateTable}, 
-    {"StartLiveWindowMode", _wrap_HiTechnicCompass_StartLiveWindowMode}, 
-    {"StopLiveWindowMode", _wrap_HiTechnicCompass_StopLiveWindowMode}, 
-    {"GetSmartDashboardType", _wrap_HiTechnicCompass_GetSmartDashboardType}, 
-    {"InitTable", _wrap_HiTechnicCompass_InitTable}, 
-    {"GetTable", _wrap_HiTechnicCompass_GetTable}, 
-    {0,0}
-};
-static swig_lua_attribute swig_HiTechnicCompass_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_HiTechnicCompass_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_HiTechnicCompass_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_HiTechnicCompass_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_HiTechnicCompass_bases[] = {0};
-static const char *swig_HiTechnicCompass_base_names[] = {0};
-static swig_lua_class _wrap_class_HiTechnicCompass = { "HiTechnicCompass", &SWIGTYPE_p_HiTechnicCompass,_wrap_new_HiTechnicCompass, swig_delete_HiTechnicCompass, swig_HiTechnicCompass_methods, swig_HiTechnicCompass_attributes, { "HiTechnicCompass", swig_HiTechnicCompass_cls_methods, swig_HiTechnicCompass_cls_attributes, swig_HiTechnicCompass_cls_constants }, swig_HiTechnicCompass_bases, swig_HiTechnicCompass_base_names };
-
-static int _wrap_new_HiTechnicColorSensor(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint8_t *argp1 ;
-  HiTechnicColorSensor *result = 0 ;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::HiTechnicColorSensor",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("HiTechnicColorSensor::HiTechnicColorSensor",1,"uint8_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_HiTechnicColorSensor",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  result = (HiTechnicColorSensor *)new HiTechnicColorSensor(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_HiTechnicColorSensor,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_GetColor(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  uint8_t result;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::GetColor",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::GetColor",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_GetColor",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  result = (arg1)->GetColor();
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_GetRed(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  uint8_t result;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::GetRed",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::GetRed",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_GetRed",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  result = (arg1)->GetRed();
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_GetGreen(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  uint8_t result;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::GetGreen",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::GetGreen",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_GetGreen",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  result = (arg1)->GetGreen();
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_GetBlue(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  uint8_t result;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::GetBlue",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::GetBlue",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_GetBlue",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  result = (arg1)->GetBlue();
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_GetRGB(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  HiTechnicColorSensor::RGB result;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::GetRGB",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::GetRGB",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_GetRGB",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  result = (arg1)->GetRGB();
-  {
-    HiTechnicColorSensor::RGB * resultptr = new HiTechnicColorSensor::RGB((const HiTechnicColorSensor::RGB &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_HiTechnicColorSensor__RGB,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_GetRawRed(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  uint16_t result;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::GetRawRed",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::GetRawRed",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_GetRawRed",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  result = (arg1)->GetRawRed();
-  {
-    uint16_t * resultptr = new uint16_t((const uint16_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint16_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_GetRawGreen(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  uint16_t result;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::GetRawGreen",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::GetRawGreen",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_GetRawGreen",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  result = (arg1)->GetRawGreen();
-  {
-    uint16_t * resultptr = new uint16_t((const uint16_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint16_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_GetRawBlue(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  uint16_t result;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::GetRawBlue",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::GetRawBlue",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_GetRawBlue",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  result = (arg1)->GetRawBlue();
-  {
-    uint16_t * resultptr = new uint16_t((const uint16_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint16_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_GetRawRGB(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  HiTechnicColorSensor::RGB result;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::GetRawRGB",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::GetRawRGB",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_GetRawRGB",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  result = (arg1)->GetRawRGB();
-  {
-    HiTechnicColorSensor::RGB * resultptr = new HiTechnicColorSensor::RGB((const HiTechnicColorSensor::RGB &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_HiTechnicColorSensor__RGB,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_SetMode(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  HiTechnicColorSensor::tColorMode arg2 ;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::SetMode",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::SetMode",1,"HiTechnicColorSensor *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("HiTechnicColorSensor::SetMode",2,"HiTechnicColorSensor::tColorMode");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_SetMode",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  arg2 = (HiTechnicColorSensor::tColorMode)(int)lua_tonumber(L, 2);
-  (arg1)->SetMode(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_GetType(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  std::string result;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::GetType",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::GetType",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_GetType",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  result = (arg1)->GetType();
-  {
-    std::string * resultptr = new std::string((const std::string &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_InitTable(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  ITable *arg2 = (ITable *) 0 ;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::InitTable",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::InitTable",1,"HiTechnicColorSensor *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("HiTechnicColorSensor::InitTable",2,"ITable *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_InitTable",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_ITable,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_InitTable",2,SWIGTYPE_p_ITable);
-  }
-  
-  (arg1)->InitTable(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_UpdateTable(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::UpdateTable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::UpdateTable",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_UpdateTable",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  (arg1)->UpdateTable();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_GetTable(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  ITable *result = 0 ;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::GetTable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::GetTable",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_GetTable",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  result = (ITable *)(arg1)->GetTable();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ITable,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_StartLiveWindowMode(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::StartLiveWindowMode",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::StartLiveWindowMode",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_StartLiveWindowMode",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  (arg1)->StartLiveWindowMode();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_HiTechnicColorSensor_StopLiveWindowMode(lua_State* L) {
-  int SWIG_arg = 0;
-  HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) 0 ;
-  
-  SWIG_check_num_args("HiTechnicColorSensor::StopLiveWindowMode",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("HiTechnicColorSensor::StopLiveWindowMode",1,"HiTechnicColorSensor *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_HiTechnicColorSensor,0))){
-    SWIG_fail_ptr("HiTechnicColorSensor_StopLiveWindowMode",1,SWIGTYPE_p_HiTechnicColorSensor);
-  }
-  
-  (arg1)->StopLiveWindowMode();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_HiTechnicColorSensor(void *obj) {
-HiTechnicColorSensor *arg1 = (HiTechnicColorSensor *) obj;
-delete arg1;
-}
-static swig_lua_method swig_HiTechnicColorSensor_methods[] = {
-    {"GetColor", _wrap_HiTechnicColorSensor_GetColor}, 
-    {"GetRed", _wrap_HiTechnicColorSensor_GetRed}, 
-    {"GetGreen", _wrap_HiTechnicColorSensor_GetGreen}, 
-    {"GetBlue", _wrap_HiTechnicColorSensor_GetBlue}, 
-    {"GetRGB", _wrap_HiTechnicColorSensor_GetRGB}, 
-    {"GetRawRed", _wrap_HiTechnicColorSensor_GetRawRed}, 
-    {"GetRawGreen", _wrap_HiTechnicColorSensor_GetRawGreen}, 
-    {"GetRawBlue", _wrap_HiTechnicColorSensor_GetRawBlue}, 
-    {"GetRawRGB", _wrap_HiTechnicColorSensor_GetRawRGB}, 
-    {"SetMode", _wrap_HiTechnicColorSensor_SetMode}, 
-    {"GetType", _wrap_HiTechnicColorSensor_GetType}, 
-    {"InitTable", _wrap_HiTechnicColorSensor_InitTable}, 
-    {"UpdateTable", _wrap_HiTechnicColorSensor_UpdateTable}, 
-    {"GetTable", _wrap_HiTechnicColorSensor_GetTable}, 
-    {"StartLiveWindowMode", _wrap_HiTechnicColorSensor_StartLiveWindowMode}, 
-    {"StopLiveWindowMode", _wrap_HiTechnicColorSensor_StopLiveWindowMode}, 
-    {0,0}
-};
-static swig_lua_attribute swig_HiTechnicColorSensor_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_HiTechnicColorSensor_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_HiTechnicColorSensor_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_HiTechnicColorSensor_cls_constants[] = {
-    {SWIG_LUA_CONSTTAB_INT("kActive", HiTechnicColorSensor::kActive)},
-    {SWIG_LUA_CONSTTAB_INT("kPassive", HiTechnicColorSensor::kPassive)},
-    {SWIG_LUA_CONSTTAB_INT("kRaw", HiTechnicColorSensor::kRaw)},
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_HiTechnicColorSensor_bases[] = {0};
-static const char *swig_HiTechnicColorSensor_base_names[] = {0};
-static swig_lua_class _wrap_class_HiTechnicColorSensor = { "HiTechnicColorSensor", &SWIGTYPE_p_HiTechnicColorSensor,_wrap_new_HiTechnicColorSensor, swig_delete_HiTechnicColorSensor, swig_HiTechnicColorSensor_methods, swig_HiTechnicColorSensor_attributes, { "HiTechnicColorSensor", swig_HiTechnicColorSensor_cls_methods, swig_HiTechnicColorSensor_cls_attributes, swig_HiTechnicColorSensor_cls_constants }, swig_HiTechnicColorSensor_bases, swig_HiTechnicColorSensor_base_names };
 
 static int _wrap_I2C_Transaction(lua_State* L) {
   int SWIG_arg = 0;
@@ -23178,6 +13200,46 @@ fail:
 }
 
 
+static int _wrap_I2C_WriteBulk(lua_State* L) {
+  int SWIG_arg = 0;
+  I2C *arg1 = (I2C *) 0 ;
+  uint8_t *arg2 = (uint8_t *) 0 ;
+  uint8_t arg3 ;
+  uint8_t *argp3 ;
+  bool result;
+  
+  SWIG_check_num_args("I2C::WriteBulk",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("I2C::WriteBulk",1,"I2C *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("I2C::WriteBulk",2,"uint8_t *");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("I2C::WriteBulk",3,"uint8_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_I2C,0))){
+    SWIG_fail_ptr("I2C_WriteBulk",1,SWIGTYPE_p_I2C);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("I2C_WriteBulk",2,SWIGTYPE_p_uint8_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("I2C_WriteBulk",3,SWIGTYPE_p_uint8_t);
+  }
+  arg3 = *argp3;
+  
+  result = (bool)(arg1)->WriteBulk(arg2,arg3);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_I2C_Read(lua_State* L) {
   int SWIG_arg = 0;
   I2C *arg1 = (I2C *) 0 ;
@@ -23227,6 +13289,46 @@ fail:
 }
 
 
+static int _wrap_I2C_ReadOnly(lua_State* L) {
+  int SWIG_arg = 0;
+  I2C *arg1 = (I2C *) 0 ;
+  uint8_t arg2 ;
+  uint8_t *arg3 = (uint8_t *) 0 ;
+  uint8_t *argp2 ;
+  bool result;
+  
+  SWIG_check_num_args("I2C::ReadOnly",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("I2C::ReadOnly",1,"I2C *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("I2C::ReadOnly",2,"uint8_t");
+  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("I2C::ReadOnly",3,"uint8_t *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_I2C,0))){
+    SWIG_fail_ptr("I2C_ReadOnly",1,SWIGTYPE_p_I2C);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("I2C_ReadOnly",2,SWIGTYPE_p_uint8_t);
+  }
+  arg2 = *argp2;
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("I2C_ReadOnly",3,SWIGTYPE_p_uint8_t);
+  }
+  
+  result = (bool)(arg1)->ReadOnly(arg2,arg3);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_I2C_Broadcast(lua_State* L) {
   int SWIG_arg = 0;
   I2C *arg1 = (I2C *) 0 ;
@@ -23257,32 +13359,6 @@ static int _wrap_I2C_Broadcast(lua_State* L) {
   arg3 = *argp3;
   
   (arg1)->Broadcast(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_I2C_SetCompatibilityMode(lua_State* L) {
-  int SWIG_arg = 0;
-  I2C *arg1 = (I2C *) 0 ;
-  bool arg2 ;
-  
-  SWIG_check_num_args("I2C::SetCompatibilityMode",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("I2C::SetCompatibilityMode",1,"I2C *");
-  if(!lua_isboolean(L,2)) SWIG_fail_arg("I2C::SetCompatibilityMode",2,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_I2C,0))){
-    SWIG_fail_ptr("I2C_SetCompatibilityMode",1,SWIGTYPE_p_I2C);
-  }
-  
-  arg2 = (lua_toboolean(L, 2)!=0);
-  (arg1)->SetCompatibilityMode(arg2);
   
   return SWIG_arg;
   
@@ -23351,9 +13427,10 @@ static swig_lua_method swig_I2C_methods[] = {
     {"Transaction", _wrap_I2C_Transaction}, 
     {"AddressOnly", _wrap_I2C_AddressOnly}, 
     {"Write", _wrap_I2C_Write}, 
+    {"WriteBulk", _wrap_I2C_WriteBulk}, 
     {"Read", _wrap_I2C_Read}, 
+    {"ReadOnly", _wrap_I2C_ReadOnly}, 
     {"Broadcast", _wrap_I2C_Broadcast}, 
-    {"SetCompatibilityMode", _wrap_I2C_SetCompatibilityMode}, 
     {"VerifySensor", _wrap_I2C_VerifySensor}, 
     {0,0}
 };
@@ -23367,11 +13444,13 @@ static swig_lua_method swig_I2C_cls_methods[] = {
     {0,0}
 };
 static swig_lua_const_info swig_I2C_cls_constants[] = {
+    {SWIG_LUA_CONSTTAB_INT("kOnboard", I2C::kOnboard)},
+    {SWIG_LUA_CONSTTAB_INT("kMXP", I2C::kMXP)},
     {0,0,0,0,0,0}
 };
 static swig_lua_class *swig_I2C_bases[] = {0};
 static const char *swig_I2C_base_names[] = {0};
-static swig_lua_class _wrap_class_I2C = { "I2C", &SWIGTYPE_p_I2C,0, swig_delete_I2C, swig_I2C_methods, swig_I2C_attributes, { "I2C", swig_I2C_cls_methods, swig_I2C_cls_attributes, swig_I2C_cls_constants }, swig_I2C_bases, swig_I2C_base_names };
+static swig_lua_class _wrap_class_I2C = { "I2C", &SWIGTYPE_p_I2C,_wrap_new_I2C, swig_delete_I2C, swig_I2C_methods, swig_I2C_attributes, { "I2C", swig_I2C_cls_methods, swig_I2C_cls_attributes, swig_I2C_cls_constants }, swig_I2C_bases, swig_I2C_base_names };
 
 static int _wrap_IterativeRobot_StartCompetition(lua_State* L) {
   int SWIG_arg = 0;
@@ -23603,80 +13682,6 @@ fail:
 }
 
 
-static int _wrap_IterativeRobot_SetPeriod(lua_State* L) {
-  int SWIG_arg = 0;
-  IterativeRobot *arg1 = (IterativeRobot *) 0 ;
-  double arg2 ;
-  
-  SWIG_check_num_args("IterativeRobot::SetPeriod",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("IterativeRobot::SetPeriod",1,"IterativeRobot *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("IterativeRobot::SetPeriod",2,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_IterativeRobot,0))){
-    SWIG_fail_ptr("IterativeRobot_SetPeriod",1,SWIGTYPE_p_IterativeRobot);
-  }
-  
-  arg2 = (double)lua_tonumber(L, 2);
-  (arg1)->SetPeriod(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_IterativeRobot_GetPeriod(lua_State* L) {
-  int SWIG_arg = 0;
-  IterativeRobot *arg1 = (IterativeRobot *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("IterativeRobot::GetPeriod",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("IterativeRobot::GetPeriod",1,"IterativeRobot *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_IterativeRobot,0))){
-    SWIG_fail_ptr("IterativeRobot_GetPeriod",1,SWIGTYPE_p_IterativeRobot);
-  }
-  
-  result = (double)(arg1)->GetPeriod();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_IterativeRobot_GetLoopsPerSec(lua_State* L) {
-  int SWIG_arg = 0;
-  IterativeRobot *arg1 = (IterativeRobot *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("IterativeRobot::GetLoopsPerSec",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("IterativeRobot::GetLoopsPerSec",1,"IterativeRobot *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_IterativeRobot,0))){
-    SWIG_fail_ptr("IterativeRobot_GetLoopsPerSec",1,SWIGTYPE_p_IterativeRobot);
-  }
-  
-  result = (double)(arg1)->GetLoopsPerSec();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
 static swig_lua_method swig_IterativeRobot_methods[] = {
     {"StartCompetition", _wrap_IterativeRobot_StartCompetition}, 
     {"RobotInit", _wrap_IterativeRobot_RobotInit}, 
@@ -23688,9 +13693,6 @@ static swig_lua_method swig_IterativeRobot_methods[] = {
     {"AutonomousPeriodic", _wrap_IterativeRobot_AutonomousPeriodic}, 
     {"TeleopPeriodic", _wrap_IterativeRobot_TeleopPeriodic}, 
     {"TestPeriodic", _wrap_IterativeRobot_TestPeriodic}, 
-    {"SetPeriod", _wrap_IterativeRobot_SetPeriod}, 
-    {"GetPeriod", _wrap_IterativeRobot_GetPeriod}, 
-    {"GetLoopsPerSec", _wrap_IterativeRobot_GetLoopsPerSec}, 
     {0,0}
 };
 static swig_lua_attribute swig_IterativeRobot_attributes[] = {
@@ -23710,16 +13712,94 @@ static swig_lua_class *swig_IterativeRobot_bases[] = {0};
 static const char *swig_IterativeRobot_base_names[] = {0};
 static swig_lua_class _wrap_class_IterativeRobot = { "IterativeRobot", &SWIGTYPE_p_IterativeRobot,0,0, swig_IterativeRobot_methods, swig_IterativeRobot_attributes, { "IterativeRobot", swig_IterativeRobot_cls_methods, swig_IterativeRobot_cls_attributes, swig_IterativeRobot_cls_constants }, swig_IterativeRobot_bases, swig_IterativeRobot_base_names };
 
+static int _wrap_InterruptableSensorBase_GetChannelForRouting(lua_State* L) {
+  int SWIG_arg = 0;
+  InterruptableSensorBase *arg1 = (InterruptableSensorBase *) 0 ;
+  uint32_t result;
+  
+  SWIG_check_num_args("InterruptableSensorBase::GetChannelForRouting",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("InterruptableSensorBase::GetChannelForRouting",1,"InterruptableSensorBase *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_InterruptableSensorBase,0))){
+    SWIG_fail_ptr("InterruptableSensorBase_GetChannelForRouting",1,SWIGTYPE_p_InterruptableSensorBase);
+  }
+  
+  result = (arg1)->GetChannelForRouting();
+  {
+    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_InterruptableSensorBase_GetModuleForRouting(lua_State* L) {
+  int SWIG_arg = 0;
+  InterruptableSensorBase *arg1 = (InterruptableSensorBase *) 0 ;
+  uint32_t result;
+  
+  SWIG_check_num_args("InterruptableSensorBase::GetModuleForRouting",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("InterruptableSensorBase::GetModuleForRouting",1,"InterruptableSensorBase *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_InterruptableSensorBase,0))){
+    SWIG_fail_ptr("InterruptableSensorBase_GetModuleForRouting",1,SWIGTYPE_p_InterruptableSensorBase);
+  }
+  
+  result = (arg1)->GetModuleForRouting();
+  {
+    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_InterruptableSensorBase_GetAnalogTriggerForRouting(lua_State* L) {
+  int SWIG_arg = 0;
+  InterruptableSensorBase *arg1 = (InterruptableSensorBase *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("InterruptableSensorBase::GetAnalogTriggerForRouting",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("InterruptableSensorBase::GetAnalogTriggerForRouting",1,"InterruptableSensorBase *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_InterruptableSensorBase,0))){
+    SWIG_fail_ptr("InterruptableSensorBase_GetAnalogTriggerForRouting",1,SWIGTYPE_p_InterruptableSensorBase);
+  }
+  
+  result = (bool)(arg1)->GetAnalogTriggerForRouting();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_InterruptableSensorBase_RequestInterrupts__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   InterruptableSensorBase *arg1 = (InterruptableSensorBase *) 0 ;
-  tInterruptHandler arg2 ;
+  InterruptHandlerFunction arg2 ;
   void *arg3 = (void *) 0 ;
-  tInterruptHandler *argp2 ;
+  InterruptHandlerFunction *argp2 ;
   
   SWIG_check_num_args("InterruptableSensorBase::RequestInterrupts",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("InterruptableSensorBase::RequestInterrupts",1,"InterruptableSensorBase *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("InterruptableSensorBase::RequestInterrupts",2,"tInterruptHandler");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("InterruptableSensorBase::RequestInterrupts",2,"InterruptHandlerFunction");
   if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("InterruptableSensorBase::RequestInterrupts",3,"void *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_InterruptableSensorBase,0))){
@@ -23727,8 +13807,8 @@ static int _wrap_InterruptableSensorBase_RequestInterrupts__SWIG_0(lua_State* L)
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_tInterruptHandler,0))){
-    SWIG_fail_ptr("InterruptableSensorBase_RequestInterrupts",2,SWIGTYPE_p_tInterruptHandler);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_InterruptHandlerFunction,0))){
+    SWIG_fail_ptr("InterruptableSensorBase_RequestInterrupts",2,SWIGTYPE_p_InterruptHandlerFunction);
   }
   arg2 = *argp2;
   
@@ -23802,7 +13882,7 @@ static int _wrap_InterruptableSensorBase_RequestInterrupts(lua_State* L) {
     if (_v) {
       {
         void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_tInterruptHandler, 0)) {
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_InterruptHandlerFunction, 0)) {
           _v = 0;
         } else {
           _v = 1;
@@ -23826,7 +13906,7 @@ static int _wrap_InterruptableSensorBase_RequestInterrupts(lua_State* L) {
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'InterruptableSensorBase_RequestInterrupts'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    InterruptableSensorBase::RequestInterrupts(tInterruptHandler,void *)\n"
+    "    InterruptableSensorBase::RequestInterrupts(InterruptHandlerFunction,void *)\n"
     "    InterruptableSensorBase::RequestInterrupts()\n");
   lua_error(L);return 0;
 }
@@ -23855,10 +13935,41 @@ fail:
 }
 
 
-static int _wrap_InterruptableSensorBase_WaitForInterrupt(lua_State* L) {
+static int _wrap_InterruptableSensorBase_WaitForInterrupt__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   InterruptableSensorBase *arg1 = (InterruptableSensorBase *) 0 ;
   float arg2 ;
+  bool arg3 ;
+  InterruptableSensorBase::WaitResult result;
+  
+  SWIG_check_num_args("InterruptableSensorBase::WaitForInterrupt",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("InterruptableSensorBase::WaitForInterrupt",1,"InterruptableSensorBase *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("InterruptableSensorBase::WaitForInterrupt",2,"float");
+  if(!lua_isboolean(L,3)) SWIG_fail_arg("InterruptableSensorBase::WaitForInterrupt",3,"bool");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_InterruptableSensorBase,0))){
+    SWIG_fail_ptr("InterruptableSensorBase_WaitForInterrupt",1,SWIGTYPE_p_InterruptableSensorBase);
+  }
+  
+  arg2 = (float)lua_tonumber(L, 2);
+  arg3 = (lua_toboolean(L, 3)!=0);
+  result = (InterruptableSensorBase::WaitResult)(arg1)->WaitForInterrupt(arg2,arg3);
+  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_InterruptableSensorBase_WaitForInterrupt__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  InterruptableSensorBase *arg1 = (InterruptableSensorBase *) 0 ;
+  float arg2 ;
+  InterruptableSensorBase::WaitResult result;
   
   SWIG_check_num_args("InterruptableSensorBase::WaitForInterrupt",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("InterruptableSensorBase::WaitForInterrupt",1,"InterruptableSensorBase *");
@@ -23869,8 +13980,8 @@ static int _wrap_InterruptableSensorBase_WaitForInterrupt(lua_State* L) {
   }
   
   arg2 = (float)lua_tonumber(L, 2);
-  (arg1)->WaitForInterrupt(arg2);
-  
+  result = (InterruptableSensorBase::WaitResult)(arg1)->WaitForInterrupt(arg2);
+  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -23878,6 +13989,65 @@ static int _wrap_InterruptableSensorBase_WaitForInterrupt(lua_State* L) {
 fail:
   lua_error(L);
   return SWIG_arg;
+}
+
+
+static int _wrap_InterruptableSensorBase_WaitForInterrupt(lua_State* L) {
+  int argc;
+  int argv[4]={
+    1,2,3,4
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 2) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_InterruptableSensorBase, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_InterruptableSensorBase_WaitForInterrupt__SWIG_1(L);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_InterruptableSensorBase, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          _v = lua_isboolean(L,argv[2]);
+        }
+        if (_v) {
+          return _wrap_InterruptableSensorBase_WaitForInterrupt__SWIG_0(L);
+        }
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'InterruptableSensorBase_WaitForInterrupt'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    InterruptableSensorBase::WaitForInterrupt(float,bool)\n"
+    "    InterruptableSensorBase::WaitForInterrupt(float)\n");
+  lua_error(L);return 0;
 }
 
 
@@ -23927,20 +14097,73 @@ fail:
 }
 
 
-static int _wrap_InterruptableSensorBase_ReadInterruptTimestamp(lua_State* L) {
+static int _wrap_InterruptableSensorBase_ReadRisingTimestamp(lua_State* L) {
   int SWIG_arg = 0;
   InterruptableSensorBase *arg1 = (InterruptableSensorBase *) 0 ;
   double result;
   
-  SWIG_check_num_args("InterruptableSensorBase::ReadInterruptTimestamp",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("InterruptableSensorBase::ReadInterruptTimestamp",1,"InterruptableSensorBase *");
+  SWIG_check_num_args("InterruptableSensorBase::ReadRisingTimestamp",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("InterruptableSensorBase::ReadRisingTimestamp",1,"InterruptableSensorBase *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_InterruptableSensorBase,0))){
-    SWIG_fail_ptr("InterruptableSensorBase_ReadInterruptTimestamp",1,SWIGTYPE_p_InterruptableSensorBase);
+    SWIG_fail_ptr("InterruptableSensorBase_ReadRisingTimestamp",1,SWIGTYPE_p_InterruptableSensorBase);
   }
   
-  result = (double)(arg1)->ReadInterruptTimestamp();
+  result = (double)(arg1)->ReadRisingTimestamp();
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_InterruptableSensorBase_ReadFallingTimestamp(lua_State* L) {
+  int SWIG_arg = 0;
+  InterruptableSensorBase *arg1 = (InterruptableSensorBase *) 0 ;
+  double result;
+  
+  SWIG_check_num_args("InterruptableSensorBase::ReadFallingTimestamp",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("InterruptableSensorBase::ReadFallingTimestamp",1,"InterruptableSensorBase *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_InterruptableSensorBase,0))){
+    SWIG_fail_ptr("InterruptableSensorBase_ReadFallingTimestamp",1,SWIGTYPE_p_InterruptableSensorBase);
+  }
+  
+  result = (double)(arg1)->ReadFallingTimestamp();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_InterruptableSensorBase_SetUpSourceEdge(lua_State* L) {
+  int SWIG_arg = 0;
+  InterruptableSensorBase *arg1 = (InterruptableSensorBase *) 0 ;
+  bool arg2 ;
+  bool arg3 ;
+  
+  SWIG_check_num_args("InterruptableSensorBase::SetUpSourceEdge",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("InterruptableSensorBase::SetUpSourceEdge",1,"InterruptableSensorBase *");
+  if(!lua_isboolean(L,2)) SWIG_fail_arg("InterruptableSensorBase::SetUpSourceEdge",2,"bool");
+  if(!lua_isboolean(L,3)) SWIG_fail_arg("InterruptableSensorBase::SetUpSourceEdge",3,"bool");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_InterruptableSensorBase,0))){
+    SWIG_fail_ptr("InterruptableSensorBase_SetUpSourceEdge",1,SWIGTYPE_p_InterruptableSensorBase);
+  }
+  
+  arg2 = (lua_toboolean(L, 2)!=0);
+  arg3 = (lua_toboolean(L, 3)!=0);
+  (arg1)->SetUpSourceEdge(arg2,arg3);
+  
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -23956,12 +14179,17 @@ InterruptableSensorBase *arg1 = (InterruptableSensorBase *) obj;
 delete arg1;
 }
 static swig_lua_method swig_InterruptableSensorBase_methods[] = {
+    {"GetChannelForRouting", _wrap_InterruptableSensorBase_GetChannelForRouting}, 
+    {"GetModuleForRouting", _wrap_InterruptableSensorBase_GetModuleForRouting}, 
+    {"GetAnalogTriggerForRouting", _wrap_InterruptableSensorBase_GetAnalogTriggerForRouting}, 
     {"RequestInterrupts", _wrap_InterruptableSensorBase_RequestInterrupts}, 
     {"CancelInterrupts", _wrap_InterruptableSensorBase_CancelInterrupts}, 
     {"WaitForInterrupt", _wrap_InterruptableSensorBase_WaitForInterrupt}, 
     {"EnableInterrupts", _wrap_InterruptableSensorBase_EnableInterrupts}, 
     {"DisableInterrupts", _wrap_InterruptableSensorBase_DisableInterrupts}, 
-    {"ReadInterruptTimestamp", _wrap_InterruptableSensorBase_ReadInterruptTimestamp}, 
+    {"ReadRisingTimestamp", _wrap_InterruptableSensorBase_ReadRisingTimestamp}, 
+    {"ReadFallingTimestamp", _wrap_InterruptableSensorBase_ReadFallingTimestamp}, 
+    {"SetUpSourceEdge", _wrap_InterruptableSensorBase_SetUpSourceEdge}, 
     {0,0}
 };
 static swig_lua_attribute swig_InterruptableSensorBase_attributes[] = {
@@ -23974,13 +14202,17 @@ static swig_lua_method swig_InterruptableSensorBase_cls_methods[] = {
     {0,0}
 };
 static swig_lua_const_info swig_InterruptableSensorBase_cls_constants[] = {
+    {SWIG_LUA_CONSTTAB_INT("kTimeout", InterruptableSensorBase::kTimeout)},
+    {SWIG_LUA_CONSTTAB_INT("kRisingEdge", InterruptableSensorBase::kRisingEdge)},
+    {SWIG_LUA_CONSTTAB_INT("kFallingEdge", InterruptableSensorBase::kFallingEdge)},
+    {SWIG_LUA_CONSTTAB_INT("kBoth", InterruptableSensorBase::kBoth)},
     {0,0,0,0,0,0}
 };
 static swig_lua_class *swig_InterruptableSensorBase_bases[] = {0};
 static const char *swig_InterruptableSensorBase_base_names[] = {0};
 static swig_lua_class _wrap_class_InterruptableSensorBase = { "InterruptableSensorBase", &SWIGTYPE_p_InterruptableSensorBase,0, swig_delete_InterruptableSensorBase, swig_InterruptableSensorBase_methods, swig_InterruptableSensorBase_attributes, { "InterruptableSensorBase", swig_InterruptableSensorBase_cls_methods, swig_InterruptableSensorBase_cls_attributes, swig_InterruptableSensorBase_cls_constants }, swig_InterruptableSensorBase_bases, swig_InterruptableSensorBase_base_names };
 
-static int _wrap_new_Jaguar__SWIG_0(lua_State* L) {
+static int _wrap_new_Jaguar(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
   uint32_t *argp1 ;
@@ -24003,95 +14235,6 @@ static int _wrap_new_Jaguar__SWIG_0(lua_State* L) {
 fail:
   lua_error(L);
   return SWIG_arg;
-}
-
-
-static int _wrap_new_Jaguar__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  Jaguar *result = 0 ;
-  
-  SWIG_check_num_args("Jaguar::Jaguar",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Jaguar::Jaguar",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Jaguar::Jaguar",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Jaguar",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Jaguar",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (Jaguar *)new Jaguar(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Jaguar,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Jaguar(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_Jaguar__SWIG_0(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_Jaguar__SWIG_1(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Jaguar'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    Jaguar::Jaguar(uint32_t)\n"
-    "    Jaguar::Jaguar(uint8_t,uint32_t)\n");
-  lua_error(L);return 0;
 }
 
 
@@ -25151,33 +15294,6 @@ static int _wrap_Joystick_GetBumper(lua_State* L) {
 }
 
 
-static int _wrap_Joystick_GetButton(lua_State* L) {
-  int SWIG_arg = 0;
-  Joystick *arg1 = (Joystick *) 0 ;
-  Joystick::ButtonType arg2 ;
-  bool result;
-  
-  SWIG_check_num_args("Joystick::GetButton",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Joystick::GetButton",1,"Joystick *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("Joystick::GetButton",2,"Joystick::ButtonType");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Joystick,0))){
-    SWIG_fail_ptr("Joystick_GetButton",1,SWIGTYPE_p_Joystick);
-  }
-  
-  arg2 = (Joystick::ButtonType)(int)lua_tonumber(L, 2);
-  result = (bool)(arg1)->GetButton(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
 static int _wrap_Joystick_GetRawButton(lua_State* L) {
   int SWIG_arg = 0;
   Joystick *arg1 = (Joystick *) 0 ;
@@ -25200,6 +15316,144 @@ static int _wrap_Joystick_GetRawButton(lua_State* L) {
   arg2 = *argp2;
   
   result = (bool)(arg1)->GetRawButton(arg2);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Joystick_GetPOV__SWIG_0(lua_State* L) {
+  int SWIG_arg = 0;
+  Joystick *arg1 = (Joystick *) 0 ;
+  uint32_t arg2 ;
+  uint32_t *argp2 ;
+  int result;
+  
+  SWIG_check_num_args("Joystick::GetPOV",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Joystick::GetPOV",1,"Joystick *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Joystick::GetPOV",2,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Joystick,0))){
+    SWIG_fail_ptr("Joystick_GetPOV",1,SWIGTYPE_p_Joystick);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("Joystick_GetPOV",2,SWIGTYPE_p_uint32_t);
+  }
+  arg2 = *argp2;
+  
+  result = (int)(arg1)->GetPOV(arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Joystick_GetPOV__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  Joystick *arg1 = (Joystick *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("Joystick::GetPOV",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Joystick::GetPOV",1,"Joystick *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Joystick,0))){
+    SWIG_fail_ptr("Joystick_GetPOV",1,SWIGTYPE_p_Joystick);
+  }
+  
+  result = (int)(arg1)->GetPOV();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Joystick_GetPOV(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Joystick, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_Joystick_GetPOV__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      void *ptr;
+      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Joystick, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_Joystick_GetPOV__SWIG_0(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Joystick_GetPOV'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    Joystick::GetPOV(uint32_t)\n"
+    "    Joystick::GetPOV()\n");
+  lua_error(L);return 0;
+}
+
+
+static int _wrap_Joystick_GetButton(lua_State* L) {
+  int SWIG_arg = 0;
+  Joystick *arg1 = (Joystick *) 0 ;
+  Joystick::ButtonType arg2 ;
+  bool result;
+  
+  SWIG_check_num_args("Joystick::GetButton",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Joystick::GetButton",1,"Joystick *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("Joystick::GetButton",2,"Joystick::ButtonType");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Joystick,0))){
+    SWIG_fail_ptr("Joystick_GetButton",1,SWIGTYPE_p_Joystick);
+  }
+  
+  arg2 = (Joystick::ButtonType)(int)lua_tonumber(L, 2);
+  result = (bool)(arg1)->GetButton(arg2);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -25309,6 +15563,174 @@ fail:
 }
 
 
+static int _wrap_Joystick_GetAxisCount(lua_State* L) {
+  int SWIG_arg = 0;
+  Joystick *arg1 = (Joystick *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("Joystick::GetAxisCount",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Joystick::GetAxisCount",1,"Joystick *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Joystick,0))){
+    SWIG_fail_ptr("Joystick_GetAxisCount",1,SWIGTYPE_p_Joystick);
+  }
+  
+  result = (int)(arg1)->GetAxisCount();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Joystick_GetButtonCount(lua_State* L) {
+  int SWIG_arg = 0;
+  Joystick *arg1 = (Joystick *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("Joystick::GetButtonCount",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Joystick::GetButtonCount",1,"Joystick *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Joystick,0))){
+    SWIG_fail_ptr("Joystick_GetButtonCount",1,SWIGTYPE_p_Joystick);
+  }
+  
+  result = (int)(arg1)->GetButtonCount();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Joystick_GetPOVCount(lua_State* L) {
+  int SWIG_arg = 0;
+  Joystick *arg1 = (Joystick *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("Joystick::GetPOVCount",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Joystick::GetPOVCount",1,"Joystick *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Joystick,0))){
+    SWIG_fail_ptr("Joystick_GetPOVCount",1,SWIGTYPE_p_Joystick);
+  }
+  
+  result = (int)(arg1)->GetPOVCount();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Joystick_SetRumble(lua_State* L) {
+  int SWIG_arg = 0;
+  Joystick *arg1 = (Joystick *) 0 ;
+  Joystick::RumbleType arg2 ;
+  float arg3 ;
+  
+  SWIG_check_num_args("Joystick::SetRumble",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Joystick::SetRumble",1,"Joystick *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("Joystick::SetRumble",2,"Joystick::RumbleType");
+  if(!lua_isnumber(L,3)) SWIG_fail_arg("Joystick::SetRumble",3,"float");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Joystick,0))){
+    SWIG_fail_ptr("Joystick_SetRumble",1,SWIGTYPE_p_Joystick);
+  }
+  
+  arg2 = (Joystick::RumbleType)(int)lua_tonumber(L, 2);
+  arg3 = (float)lua_tonumber(L, 3);
+  (arg1)->SetRumble(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Joystick_SetOutput(lua_State* L) {
+  int SWIG_arg = 0;
+  Joystick *arg1 = (Joystick *) 0 ;
+  uint8_t arg2 ;
+  bool arg3 ;
+  uint8_t *argp2 ;
+  
+  SWIG_check_num_args("Joystick::SetOutput",3,3)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Joystick::SetOutput",1,"Joystick *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Joystick::SetOutput",2,"uint8_t");
+  if(!lua_isboolean(L,3)) SWIG_fail_arg("Joystick::SetOutput",3,"bool");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Joystick,0))){
+    SWIG_fail_ptr("Joystick_SetOutput",1,SWIGTYPE_p_Joystick);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("Joystick_SetOutput",2,SWIGTYPE_p_uint8_t);
+  }
+  arg2 = *argp2;
+  
+  arg3 = (lua_toboolean(L, 3)!=0);
+  (arg1)->SetOutput(arg2,arg3);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Joystick_SetOutputs(lua_State* L) {
+  int SWIG_arg = 0;
+  Joystick *arg1 = (Joystick *) 0 ;
+  uint32_t arg2 ;
+  uint32_t *argp2 ;
+  
+  SWIG_check_num_args("Joystick::SetOutputs",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Joystick::SetOutputs",1,"Joystick *");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Joystick::SetOutputs",2,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Joystick,0))){
+    SWIG_fail_ptr("Joystick_SetOutputs",1,SWIGTYPE_p_Joystick);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("Joystick_SetOutputs",2,SWIGTYPE_p_uint32_t);
+  }
+  arg2 = *argp2;
+  
+  (arg1)->SetOutputs(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_Joystick(void *obj) {
 Joystick *arg1 = (Joystick *) obj;
 delete arg1;
@@ -25326,11 +15748,18 @@ static swig_lua_method swig_Joystick_methods[] = {
     {"GetTrigger", _wrap_Joystick_GetTrigger}, 
     {"GetTop", _wrap_Joystick_GetTop}, 
     {"GetBumper", _wrap_Joystick_GetBumper}, 
-    {"GetButton", _wrap_Joystick_GetButton}, 
     {"GetRawButton", _wrap_Joystick_GetRawButton}, 
+    {"GetPOV", _wrap_Joystick_GetPOV}, 
+    {"GetButton", _wrap_Joystick_GetButton}, 
     {"GetMagnitude", _wrap_Joystick_GetMagnitude}, 
     {"GetDirectionRadians", _wrap_Joystick_GetDirectionRadians}, 
     {"GetDirectionDegrees", _wrap_Joystick_GetDirectionDegrees}, 
+    {"GetAxisCount", _wrap_Joystick_GetAxisCount}, 
+    {"GetButtonCount", _wrap_Joystick_GetButtonCount}, 
+    {"GetPOVCount", _wrap_Joystick_GetPOVCount}, 
+    {"SetRumble", _wrap_Joystick_SetRumble}, 
+    {"SetOutput", _wrap_Joystick_SetOutput}, 
+    {"SetOutputs", _wrap_Joystick_SetOutputs}, 
     {0,0}
 };
 static swig_lua_attribute swig_Joystick_attributes[] = {
@@ -25353,29 +15782,30 @@ static swig_lua_const_info swig_Joystick_cls_constants[] = {
     {SWIG_LUA_CONSTTAB_INT("kTriggerButton", Joystick::kTriggerButton)},
     {SWIG_LUA_CONSTTAB_INT("kTopButton", Joystick::kTopButton)},
     {SWIG_LUA_CONSTTAB_INT("kNumButtonTypes", Joystick::kNumButtonTypes)},
+    {SWIG_LUA_CONSTTAB_INT("kLeftRumble", Joystick::kLeftRumble)},
+    {SWIG_LUA_CONSTTAB_INT("kRightRumble", Joystick::kRightRumble)},
     {0,0,0,0,0,0}
 };
 static swig_lua_class *swig_Joystick_bases[] = {0,0,0};
 static const char *swig_Joystick_base_names[] = {"GenericHID *","ErrorBase *",0};
 static swig_lua_class _wrap_class_Joystick = { "Joystick", &SWIGTYPE_p_Joystick,_wrap_new_Joystick, swig_delete_Joystick, swig_Joystick_methods, swig_Joystick_attributes, { "Joystick", swig_Joystick_cls_methods, swig_Joystick_cls_attributes, swig_Joystick_cls_constants }, swig_Joystick_bases, swig_Joystick_base_names };
 
-static int _wrap_new_JoystickAxis(lua_State* L) {
+static int _wrap_MotorSafety_SetExpiration(lua_State* L) {
   int SWIG_arg = 0;
-  Joystick *arg1 = (Joystick *) 0 ;
-  int arg2 ;
-  JoystickAxis *result = 0 ;
+  MotorSafety *arg1 = (MotorSafety *) 0 ;
+  float arg2 ;
   
-  SWIG_check_num_args("JoystickAxis::JoystickAxis",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("JoystickAxis::JoystickAxis",1,"Joystick *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("JoystickAxis::JoystickAxis",2,"int");
+  SWIG_check_num_args("MotorSafety::SetExpiration",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("MotorSafety::SetExpiration",1,"MotorSafety *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("MotorSafety::SetExpiration",2,"float");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Joystick,0))){
-    SWIG_fail_ptr("new_JoystickAxis",1,SWIGTYPE_p_Joystick);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_MotorSafety,0))){
+    SWIG_fail_ptr("MotorSafety_SetExpiration",1,SWIGTYPE_p_MotorSafety);
   }
   
-  arg2 = (int)lua_tonumber(L, 2);
-  result = (JoystickAxis *)new JoystickAxis(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_JoystickAxis,1); SWIG_arg++; 
+  arg2 = (float)lua_tonumber(L, 2);
+  (arg1)->SetExpiration(arg2);
+  
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -25386,19 +15816,19 @@ fail:
 }
 
 
-static int _wrap_JoystickAxis_Get(lua_State* L) {
+static int _wrap_MotorSafety_GetExpiration(lua_State* L) {
   int SWIG_arg = 0;
-  JoystickAxis *arg1 = (JoystickAxis *) 0 ;
+  MotorSafety *arg1 = (MotorSafety *) 0 ;
   float result;
   
-  SWIG_check_num_args("JoystickAxis::Get",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("JoystickAxis::Get",1,"JoystickAxis *");
+  SWIG_check_num_args("MotorSafety::GetExpiration",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("MotorSafety::GetExpiration",1,"MotorSafety *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_JoystickAxis,0))){
-    SWIG_fail_ptr("JoystickAxis_Get",1,SWIGTYPE_p_JoystickAxis);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_MotorSafety,0))){
+    SWIG_fail_ptr("MotorSafety_GetExpiration",1,SWIGTYPE_p_MotorSafety);
   }
   
-  result = (float)(arg1)->Get();
+  result = (float)(arg1)->GetExpiration();
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
@@ -25410,1267 +15840,158 @@ fail:
 }
 
 
-static void swig_delete_JoystickAxis(void *obj) {
-JoystickAxis *arg1 = (JoystickAxis *) obj;
+static int _wrap_MotorSafety_IsAlive(lua_State* L) {
+  int SWIG_arg = 0;
+  MotorSafety *arg1 = (MotorSafety *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("MotorSafety::IsAlive",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("MotorSafety::IsAlive",1,"MotorSafety *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_MotorSafety,0))){
+    SWIG_fail_ptr("MotorSafety_IsAlive",1,SWIGTYPE_p_MotorSafety);
+  }
+  
+  result = (bool)(arg1)->IsAlive();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_MotorSafety_StopMotor(lua_State* L) {
+  int SWIG_arg = 0;
+  MotorSafety *arg1 = (MotorSafety *) 0 ;
+  
+  SWIG_check_num_args("MotorSafety::StopMotor",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("MotorSafety::StopMotor",1,"MotorSafety *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_MotorSafety,0))){
+    SWIG_fail_ptr("MotorSafety_StopMotor",1,SWIGTYPE_p_MotorSafety);
+  }
+  
+  (arg1)->StopMotor();
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_MotorSafety_SetSafetyEnabled(lua_State* L) {
+  int SWIG_arg = 0;
+  MotorSafety *arg1 = (MotorSafety *) 0 ;
+  bool arg2 ;
+  
+  SWIG_check_num_args("MotorSafety::SetSafetyEnabled",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("MotorSafety::SetSafetyEnabled",1,"MotorSafety *");
+  if(!lua_isboolean(L,2)) SWIG_fail_arg("MotorSafety::SetSafetyEnabled",2,"bool");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_MotorSafety,0))){
+    SWIG_fail_ptr("MotorSafety_SetSafetyEnabled",1,SWIGTYPE_p_MotorSafety);
+  }
+  
+  arg2 = (lua_toboolean(L, 2)!=0);
+  (arg1)->SetSafetyEnabled(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_MotorSafety_IsSafetyEnabled(lua_State* L) {
+  int SWIG_arg = 0;
+  MotorSafety *arg1 = (MotorSafety *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("MotorSafety::IsSafetyEnabled",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("MotorSafety::IsSafetyEnabled",1,"MotorSafety *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_MotorSafety,0))){
+    SWIG_fail_ptr("MotorSafety_IsSafetyEnabled",1,SWIGTYPE_p_MotorSafety);
+  }
+  
+  result = (bool)(arg1)->IsSafetyEnabled();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_MotorSafety_GetDescription(lua_State* L) {
+  int SWIG_arg = 0;
+  MotorSafety *arg1 = (MotorSafety *) 0 ;
+  char *arg2 = (char *) 0 ;
+  
+  SWIG_check_num_args("MotorSafety::GetDescription",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("MotorSafety::GetDescription",1,"MotorSafety *");
+  if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("MotorSafety::GetDescription",2,"char *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_MotorSafety,0))){
+    SWIG_fail_ptr("MotorSafety_GetDescription",1,SWIGTYPE_p_MotorSafety);
+  }
+  
+  arg2 = (char *)lua_tostring(L, 2);
+  (arg1)->GetDescription(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static void swig_delete_MotorSafety(void *obj) {
+MotorSafety *arg1 = (MotorSafety *) obj;
 delete arg1;
 }
-static swig_lua_method swig_JoystickAxis_methods[] = {
-    {"Get", _wrap_JoystickAxis_Get}, 
+static swig_lua_method swig_MotorSafety_methods[] = {
+    {"SetExpiration", _wrap_MotorSafety_SetExpiration}, 
+    {"GetExpiration", _wrap_MotorSafety_GetExpiration}, 
+    {"IsAlive", _wrap_MotorSafety_IsAlive}, 
+    {"StopMotor", _wrap_MotorSafety_StopMotor}, 
+    {"SetSafetyEnabled", _wrap_MotorSafety_SetSafetyEnabled}, 
+    {"IsSafetyEnabled", _wrap_MotorSafety_IsSafetyEnabled}, 
+    {"GetDescription", _wrap_MotorSafety_GetDescription}, 
     {0,0}
 };
-static swig_lua_attribute swig_JoystickAxis_attributes[] = {
+static swig_lua_attribute swig_MotorSafety_attributes[] = {
     {0,0,0}
 };
-static swig_lua_attribute swig_JoystickAxis_cls_attributes[] = {
+static swig_lua_attribute swig_MotorSafety_cls_attributes[] = {
     {0,0,0}
 };
-static swig_lua_method swig_JoystickAxis_cls_methods[] = {
+static swig_lua_method swig_MotorSafety_cls_methods[] = {
     {0,0}
 };
-static swig_lua_const_info swig_JoystickAxis_cls_constants[] = {
+static swig_lua_const_info swig_MotorSafety_cls_constants[] = {
     {0,0,0,0,0,0}
 };
-static swig_lua_class *swig_JoystickAxis_bases[] = {0};
-static const char *swig_JoystickAxis_base_names[] = {0};
-static swig_lua_class _wrap_class_JoystickAxis = { "JoystickAxis", &SWIGTYPE_p_JoystickAxis,_wrap_new_JoystickAxis, swig_delete_JoystickAxis, swig_JoystickAxis_methods, swig_JoystickAxis_attributes, { "JoystickAxis", swig_JoystickAxis_cls_methods, swig_JoystickAxis_cls_attributes, swig_JoystickAxis_cls_constants }, swig_JoystickAxis_bases, swig_JoystickAxis_base_names };
-
-static int _wrap_Kinect_GetNumberOfPlayers(lua_State* L) {
-  int SWIG_arg = 0;
-  Kinect *arg1 = (Kinect *) 0 ;
-  int result;
-  
-  SWIG_check_num_args("Kinect::GetNumberOfPlayers",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Kinect::GetNumberOfPlayers",1,"Kinect *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Kinect,0))){
-    SWIG_fail_ptr("Kinect_GetNumberOfPlayers",1,SWIGTYPE_p_Kinect);
-  }
-  
-  result = (int)(arg1)->GetNumberOfPlayers();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Kinect_GetFloorClipPlane(lua_State* L) {
-  int SWIG_arg = 0;
-  Kinect *arg1 = (Kinect *) 0 ;
-  Kinect::Point4 result;
-  
-  SWIG_check_num_args("Kinect::GetFloorClipPlane",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Kinect::GetFloorClipPlane",1,"Kinect *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Kinect,0))){
-    SWIG_fail_ptr("Kinect_GetFloorClipPlane",1,SWIGTYPE_p_Kinect);
-  }
-  
-  result = (arg1)->GetFloorClipPlane();
-  {
-    Kinect::Point4 * resultptr = new Kinect::Point4((const Kinect::Point4 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_Kinect__Point4,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Kinect_GetGravityNormal(lua_State* L) {
-  int SWIG_arg = 0;
-  Kinect *arg1 = (Kinect *) 0 ;
-  Kinect::Point4 result;
-  
-  SWIG_check_num_args("Kinect::GetGravityNormal",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Kinect::GetGravityNormal",1,"Kinect *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Kinect,0))){
-    SWIG_fail_ptr("Kinect_GetGravityNormal",1,SWIGTYPE_p_Kinect);
-  }
-  
-  result = (arg1)->GetGravityNormal();
-  {
-    Kinect::Point4 * resultptr = new Kinect::Point4((const Kinect::Point4 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_Kinect__Point4,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Kinect_GetSkeleton__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  Kinect *arg1 = (Kinect *) 0 ;
-  int arg2 ;
-  Skeleton result;
-  
-  SWIG_check_num_args("Kinect::GetSkeleton",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Kinect::GetSkeleton",1,"Kinect *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("Kinect::GetSkeleton",2,"int");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Kinect,0))){
-    SWIG_fail_ptr("Kinect_GetSkeleton",1,SWIGTYPE_p_Kinect);
-  }
-  
-  arg2 = (int)lua_tonumber(L, 2);
-  result = (arg1)->GetSkeleton(arg2);
-  {
-    Skeleton * resultptr = new Skeleton((const Skeleton &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_Skeleton,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Kinect_GetSkeleton__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  Kinect *arg1 = (Kinect *) 0 ;
-  Skeleton result;
-  
-  SWIG_check_num_args("Kinect::GetSkeleton",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Kinect::GetSkeleton",1,"Kinect *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Kinect,0))){
-    SWIG_fail_ptr("Kinect_GetSkeleton",1,SWIGTYPE_p_Kinect);
-  }
-  
-  result = (arg1)->GetSkeleton();
-  {
-    Skeleton * resultptr = new Skeleton((const Skeleton &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_Skeleton,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Kinect_GetSkeleton(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Kinect, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_Kinect_GetSkeleton__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Kinect, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_Kinect_GetSkeleton__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Kinect_GetSkeleton'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    Kinect::GetSkeleton(int)\n"
-    "    Kinect::GetSkeleton()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_Kinect_GetPosition__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  Kinect *arg1 = (Kinect *) 0 ;
-  int arg2 ;
-  Kinect::Point4 result;
-  
-  SWIG_check_num_args("Kinect::GetPosition",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Kinect::GetPosition",1,"Kinect *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("Kinect::GetPosition",2,"int");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Kinect,0))){
-    SWIG_fail_ptr("Kinect_GetPosition",1,SWIGTYPE_p_Kinect);
-  }
-  
-  arg2 = (int)lua_tonumber(L, 2);
-  result = (arg1)->GetPosition(arg2);
-  {
-    Kinect::Point4 * resultptr = new Kinect::Point4((const Kinect::Point4 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_Kinect__Point4,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Kinect_GetPosition__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  Kinect *arg1 = (Kinect *) 0 ;
-  Kinect::Point4 result;
-  
-  SWIG_check_num_args("Kinect::GetPosition",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Kinect::GetPosition",1,"Kinect *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Kinect,0))){
-    SWIG_fail_ptr("Kinect_GetPosition",1,SWIGTYPE_p_Kinect);
-  }
-  
-  result = (arg1)->GetPosition();
-  {
-    Kinect::Point4 * resultptr = new Kinect::Point4((const Kinect::Point4 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_Kinect__Point4,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Kinect_GetPosition(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Kinect, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_Kinect_GetPosition__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Kinect, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_Kinect_GetPosition__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Kinect_GetPosition'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    Kinect::GetPosition(int)\n"
-    "    Kinect::GetPosition()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_Kinect_GetQuality__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  Kinect *arg1 = (Kinect *) 0 ;
-  int arg2 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("Kinect::GetQuality",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Kinect::GetQuality",1,"Kinect *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("Kinect::GetQuality",2,"int");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Kinect,0))){
-    SWIG_fail_ptr("Kinect_GetQuality",1,SWIGTYPE_p_Kinect);
-  }
-  
-  arg2 = (int)lua_tonumber(L, 2);
-  result = (arg1)->GetQuality(arg2);
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Kinect_GetQuality__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  Kinect *arg1 = (Kinect *) 0 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("Kinect::GetQuality",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Kinect::GetQuality",1,"Kinect *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Kinect,0))){
-    SWIG_fail_ptr("Kinect_GetQuality",1,SWIGTYPE_p_Kinect);
-  }
-  
-  result = (arg1)->GetQuality();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Kinect_GetQuality(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Kinect, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_Kinect_GetQuality__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Kinect, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_Kinect_GetQuality__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Kinect_GetQuality'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    Kinect::GetQuality(int)\n"
-    "    Kinect::GetQuality()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_Kinect_GetTrackingState__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  Kinect *arg1 = (Kinect *) 0 ;
-  int arg2 ;
-  Kinect::SkeletonTrackingState result;
-  
-  SWIG_check_num_args("Kinect::GetTrackingState",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Kinect::GetTrackingState",1,"Kinect *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("Kinect::GetTrackingState",2,"int");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Kinect,0))){
-    SWIG_fail_ptr("Kinect_GetTrackingState",1,SWIGTYPE_p_Kinect);
-  }
-  
-  arg2 = (int)lua_tonumber(L, 2);
-  result = (Kinect::SkeletonTrackingState)(arg1)->GetTrackingState(arg2);
-  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Kinect_GetTrackingState__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  Kinect *arg1 = (Kinect *) 0 ;
-  Kinect::SkeletonTrackingState result;
-  
-  SWIG_check_num_args("Kinect::GetTrackingState",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Kinect::GetTrackingState",1,"Kinect *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Kinect,0))){
-    SWIG_fail_ptr("Kinect_GetTrackingState",1,SWIGTYPE_p_Kinect);
-  }
-  
-  result = (Kinect::SkeletonTrackingState)(arg1)->GetTrackingState();
-  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Kinect_GetTrackingState(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Kinect, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_Kinect_GetTrackingState__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_Kinect, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_Kinect_GetTrackingState__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Kinect_GetTrackingState'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    Kinect::GetTrackingState(int)\n"
-    "    Kinect::GetTrackingState()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_Kinect_GetInstance(lua_State* L) {
-  int SWIG_arg = 0;
-  Kinect *result = 0 ;
-  
-  SWIG_check_num_args("Kinect::GetInstance",0,0)
-  result = (Kinect *)Kinect::GetInstance();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Kinect,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static swig_lua_method swig_Kinect_methods[] = {
-    {"GetNumberOfPlayers", _wrap_Kinect_GetNumberOfPlayers}, 
-    {"GetFloorClipPlane", _wrap_Kinect_GetFloorClipPlane}, 
-    {"GetGravityNormal", _wrap_Kinect_GetGravityNormal}, 
-    {"GetSkeleton", _wrap_Kinect_GetSkeleton}, 
-    {"GetPosition", _wrap_Kinect_GetPosition}, 
-    {"GetQuality", _wrap_Kinect_GetQuality}, 
-    {"GetTrackingState", _wrap_Kinect_GetTrackingState}, 
-    {0,0}
-};
-static swig_lua_attribute swig_Kinect_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_Kinect_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_Kinect_cls_methods[] = {
-    {"GetInstance", _wrap_Kinect_GetInstance}, 
-    {0,0}
-};
-static swig_lua_const_info swig_Kinect_cls_constants[] = {
-    {SWIG_LUA_CONSTTAB_INT("kNotTracked", Kinect::kNotTracked)},
-    {SWIG_LUA_CONSTTAB_INT("kPositionOnly", Kinect::kPositionOnly)},
-    {SWIG_LUA_CONSTTAB_INT("kTracked", Kinect::kTracked)},
-    {SWIG_LUA_CONSTTAB_INT("kClippedRight", Kinect::kClippedRight)},
-    {SWIG_LUA_CONSTTAB_INT("kClippedLeft", Kinect::kClippedLeft)},
-    {SWIG_LUA_CONSTTAB_INT("kClippedTop", Kinect::kClippedTop)},
-    {SWIG_LUA_CONSTTAB_INT("kClippedBottom", Kinect::kClippedBottom)},
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_Kinect_bases[] = {0};
-static const char *swig_Kinect_base_names[] = {0};
-static swig_lua_class _wrap_class_Kinect = { "Kinect", &SWIGTYPE_p_Kinect,0,0, swig_Kinect_methods, swig_Kinect_attributes, { "Kinect", swig_Kinect_cls_methods, swig_Kinect_cls_attributes, swig_Kinect_cls_constants }, swig_Kinect_bases, swig_Kinect_base_names };
-
-static int _wrap_new_KinectStick(lua_State* L) {
-  int SWIG_arg = 0;
-  int arg1 ;
-  KinectStick *result = 0 ;
-  
-  SWIG_check_num_args("KinectStick::KinectStick",1,1)
-  if(!lua_isnumber(L,1)) SWIG_fail_arg("KinectStick::KinectStick",1,"int");
-  arg1 = (int)lua_tonumber(L, 1);
-  result = (KinectStick *)new KinectStick(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_KinectStick,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetX__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  GenericHID::JoystickHand arg2 ;
-  float result;
-  
-  SWIG_check_num_args("KinectStick::GetX",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetX",1,"KinectStick *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("KinectStick::GetX",2,"GenericHID::JoystickHand");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetX",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  arg2 = (GenericHID::JoystickHand)(int)lua_tonumber(L, 2);
-  result = (float)(arg1)->GetX(arg2);
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetX__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("KinectStick::GetX",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetX",1,"KinectStick *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetX",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  result = (float)(arg1)->GetX();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetX(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_KinectStick, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_KinectStick_GetX__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_KinectStick, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_KinectStick_GetX__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'KinectStick_GetX'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    KinectStick::GetX(GenericHID::JoystickHand)\n"
-    "    KinectStick::GetX()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_KinectStick_GetY__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  GenericHID::JoystickHand arg2 ;
-  float result;
-  
-  SWIG_check_num_args("KinectStick::GetY",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetY",1,"KinectStick *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("KinectStick::GetY",2,"GenericHID::JoystickHand");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetY",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  arg2 = (GenericHID::JoystickHand)(int)lua_tonumber(L, 2);
-  result = (float)(arg1)->GetY(arg2);
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetY__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("KinectStick::GetY",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetY",1,"KinectStick *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetY",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  result = (float)(arg1)->GetY();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetY(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_KinectStick, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_KinectStick_GetY__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_KinectStick, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_KinectStick_GetY__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'KinectStick_GetY'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    KinectStick::GetY(GenericHID::JoystickHand)\n"
-    "    KinectStick::GetY()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_KinectStick_GetZ(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("KinectStick::GetZ",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetZ",1,"KinectStick *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetZ",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  result = (float)(arg1)->GetZ();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetTwist(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("KinectStick::GetTwist",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetTwist",1,"KinectStick *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetTwist",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  result = (float)(arg1)->GetTwist();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetThrottle(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  float result;
-  
-  SWIG_check_num_args("KinectStick::GetThrottle",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetThrottle",1,"KinectStick *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetThrottle",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  result = (float)(arg1)->GetThrottle();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetRawAxis(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  float result;
-  
-  SWIG_check_num_args("KinectStick::GetRawAxis",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetRawAxis",1,"KinectStick *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("KinectStick::GetRawAxis",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetRawAxis",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("KinectStick_GetRawAxis",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (float)(arg1)->GetRawAxis(arg2);
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetTrigger__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  GenericHID::JoystickHand arg2 ;
-  bool result;
-  
-  SWIG_check_num_args("KinectStick::GetTrigger",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetTrigger",1,"KinectStick *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("KinectStick::GetTrigger",2,"GenericHID::JoystickHand");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetTrigger",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  arg2 = (GenericHID::JoystickHand)(int)lua_tonumber(L, 2);
-  result = (bool)(arg1)->GetTrigger(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetTrigger__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("KinectStick::GetTrigger",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetTrigger",1,"KinectStick *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetTrigger",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  result = (bool)(arg1)->GetTrigger();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetTrigger(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_KinectStick, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_KinectStick_GetTrigger__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_KinectStick, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_KinectStick_GetTrigger__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'KinectStick_GetTrigger'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    KinectStick::GetTrigger(GenericHID::JoystickHand)\n"
-    "    KinectStick::GetTrigger()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_KinectStick_GetTop__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  GenericHID::JoystickHand arg2 ;
-  bool result;
-  
-  SWIG_check_num_args("KinectStick::GetTop",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetTop",1,"KinectStick *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("KinectStick::GetTop",2,"GenericHID::JoystickHand");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetTop",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  arg2 = (GenericHID::JoystickHand)(int)lua_tonumber(L, 2);
-  result = (bool)(arg1)->GetTop(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetTop__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("KinectStick::GetTop",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetTop",1,"KinectStick *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetTop",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  result = (bool)(arg1)->GetTop();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetTop(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_KinectStick, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_KinectStick_GetTop__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_KinectStick, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_KinectStick_GetTop__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'KinectStick_GetTop'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    KinectStick::GetTop(GenericHID::JoystickHand)\n"
-    "    KinectStick::GetTop()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_KinectStick_GetBumper__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  GenericHID::JoystickHand arg2 ;
-  bool result;
-  
-  SWIG_check_num_args("KinectStick::GetBumper",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetBumper",1,"KinectStick *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("KinectStick::GetBumper",2,"GenericHID::JoystickHand");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetBumper",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  arg2 = (GenericHID::JoystickHand)(int)lua_tonumber(L, 2);
-  result = (bool)(arg1)->GetBumper(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetBumper__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("KinectStick::GetBumper",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetBumper",1,"KinectStick *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetBumper",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  result = (bool)(arg1)->GetBumper();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_KinectStick_GetBumper(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_KinectStick, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_KinectStick_GetBumper__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_KinectStick, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isnumber(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_KinectStick_GetBumper__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'KinectStick_GetBumper'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    KinectStick::GetBumper(GenericHID::JoystickHand)\n"
-    "    KinectStick::GetBumper()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_KinectStick_GetRawButton(lua_State* L) {
-  int SWIG_arg = 0;
-  KinectStick *arg1 = (KinectStick *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
-  bool result;
-  
-  SWIG_check_num_args("KinectStick::GetRawButton",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("KinectStick::GetRawButton",1,"KinectStick *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("KinectStick::GetRawButton",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_KinectStick,0))){
-    SWIG_fail_ptr("KinectStick_GetRawButton",1,SWIGTYPE_p_KinectStick);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("KinectStick_GetRawButton",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (bool)(arg1)->GetRawButton(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_KinectStick(void *obj) {
-KinectStick *arg1 = (KinectStick *) obj;
-delete arg1;
-}
-static swig_lua_method swig_KinectStick_methods[] = {
-    {"GetX", _wrap_KinectStick_GetX}, 
-    {"GetY", _wrap_KinectStick_GetY}, 
-    {"GetZ", _wrap_KinectStick_GetZ}, 
-    {"GetTwist", _wrap_KinectStick_GetTwist}, 
-    {"GetThrottle", _wrap_KinectStick_GetThrottle}, 
-    {"GetRawAxis", _wrap_KinectStick_GetRawAxis}, 
-    {"GetTrigger", _wrap_KinectStick_GetTrigger}, 
-    {"GetTop", _wrap_KinectStick_GetTop}, 
-    {"GetBumper", _wrap_KinectStick_GetBumper}, 
-    {"GetRawButton", _wrap_KinectStick_GetRawButton}, 
-    {0,0}
-};
-static swig_lua_attribute swig_KinectStick_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_KinectStick_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_KinectStick_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_KinectStick_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_KinectStick_bases[] = {0,0,0};
-static const char *swig_KinectStick_base_names[] = {"GenericHID *","ErrorBase *",0};
-static swig_lua_class _wrap_class_KinectStick = { "KinectStick", &SWIGTYPE_p_KinectStick,_wrap_new_KinectStick, swig_delete_KinectStick, swig_KinectStick_methods, swig_KinectStick_attributes, { "KinectStick", swig_KinectStick_cls_methods, swig_KinectStick_cls_attributes, swig_KinectStick_cls_constants }, swig_KinectStick_bases, swig_KinectStick_base_names };
+static swig_lua_class *swig_MotorSafety_bases[] = {0};
+static const char *swig_MotorSafety_base_names[] = {0};
+static swig_lua_class _wrap_class_MotorSafety = { "MotorSafety", &SWIGTYPE_p_MotorSafety,0, swig_delete_MotorSafety, swig_MotorSafety_methods, swig_MotorSafety_attributes, { "MotorSafety", swig_MotorSafety_cls_methods, swig_MotorSafety_cls_attributes, swig_MotorSafety_cls_constants }, swig_MotorSafety_bases, swig_MotorSafety_base_names };
 
 static int _wrap_new_Notifier__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
@@ -28878,14 +18199,14 @@ static int _wrap_Preferences_GetLong__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   Preferences *arg1 = (Preferences *) 0 ;
   char *arg2 = (char *) 0 ;
-  INT64 arg3 ;
-  INT64 *argp3 ;
-  INT64 result;
+  int64_t arg3 ;
+  int64_t *argp3 ;
+  int64_t result;
   
   SWIG_check_num_args("Preferences::GetLong",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Preferences::GetLong",1,"Preferences *");
   if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("Preferences::GetLong",2,"char const *");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Preferences::GetLong",3,"INT64");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Preferences::GetLong",3,"int64_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Preferences,0))){
     SWIG_fail_ptr("Preferences_GetLong",1,SWIGTYPE_p_Preferences);
@@ -28893,15 +18214,15 @@ static int _wrap_Preferences_GetLong__SWIG_0(lua_State* L) {
   
   arg2 = (char *)lua_tostring(L, 2);
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_INT64,0))){
-    SWIG_fail_ptr("Preferences_GetLong",3,SWIGTYPE_p_INT64);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_int64_t,0))){
+    SWIG_fail_ptr("Preferences_GetLong",3,SWIGTYPE_p_int64_t);
   }
   arg3 = *argp3;
   
   result = (arg1)->GetLong((char const *)arg2,arg3);
   {
-    INT64 * resultptr = new INT64((const INT64 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_INT64,1); SWIG_arg++;
+    int64_t * resultptr = new int64_t((const int64_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int64_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -28917,7 +18238,7 @@ static int _wrap_Preferences_GetLong__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
   Preferences *arg1 = (Preferences *) 0 ;
   char *arg2 = (char *) 0 ;
-  INT64 result;
+  int64_t result;
   
   SWIG_check_num_args("Preferences::GetLong",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Preferences::GetLong",1,"Preferences *");
@@ -28930,8 +18251,8 @@ static int _wrap_Preferences_GetLong__SWIG_1(lua_State* L) {
   arg2 = (char *)lua_tostring(L, 2);
   result = (arg1)->GetLong((char const *)arg2);
   {
-    INT64 * resultptr = new INT64((const INT64 &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_INT64,1); SWIG_arg++;
+    int64_t * resultptr = new int64_t((const int64_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int64_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -28986,7 +18307,7 @@ static int _wrap_Preferences_GetLong(lua_State* L) {
       if (_v) {
         {
           void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_INT64, 0)) {
+          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_int64_t, 0)) {
             _v = 0;
           } else {
             _v = 1;
@@ -29001,7 +18322,7 @@ static int _wrap_Preferences_GetLong(lua_State* L) {
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'Preferences_GetLong'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    Preferences::GetLong(char const *,INT64)\n"
+    "    Preferences::GetLong(char const *,int64_t)\n"
     "    Preferences::GetLong(char const *)\n");
   lua_error(L);return 0;
 }
@@ -29156,13 +18477,13 @@ static int _wrap_Preferences_PutLong(lua_State* L) {
   int SWIG_arg = 0;
   Preferences *arg1 = (Preferences *) 0 ;
   char *arg2 = (char *) 0 ;
-  INT64 arg3 ;
-  INT64 *argp3 ;
+  int64_t arg3 ;
+  int64_t *argp3 ;
   
   SWIG_check_num_args("Preferences::PutLong",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Preferences::PutLong",1,"Preferences *");
   if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("Preferences::PutLong",2,"char const *");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Preferences::PutLong",3,"INT64");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Preferences::PutLong",3,"int64_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Preferences,0))){
     SWIG_fail_ptr("Preferences_PutLong",1,SWIGTYPE_p_Preferences);
@@ -29170,8 +18491,8 @@ static int _wrap_Preferences_PutLong(lua_State* L) {
   
   arg2 = (char *)lua_tostring(L, 2);
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_INT64,0))){
-    SWIG_fail_ptr("Preferences_PutLong",3,SWIGTYPE_p_INT64);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_int64_t,0))){
+    SWIG_fail_ptr("Preferences_PutLong",3,SWIGTYPE_p_int64_t);
   }
   arg3 = *argp3;
   
@@ -29349,7 +18670,7 @@ static swig_lua_class *swig_Preferences_bases[] = {0,0};
 static const char *swig_Preferences_base_names[] = {"ErrorBase *",0};
 static swig_lua_class _wrap_class_Preferences = { "Preferences", &SWIGTYPE_p_Preferences,0,0, swig_Preferences_methods, swig_Preferences_attributes, { "Preferences", swig_Preferences_cls_methods, swig_Preferences_cls_attributes, swig_Preferences_cls_constants }, swig_Preferences_bases, swig_Preferences_base_names };
 
-static int _wrap_new_PWM__SWIG_0(lua_State* L) {
+static int _wrap_new_PWM(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
   uint32_t *argp1 ;
@@ -29375,115 +18696,21 @@ fail:
 }
 
 
-static int _wrap_new_PWM__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  PWM *result = 0 ;
-  
-  SWIG_check_num_args("PWM::PWM",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("PWM::PWM",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("PWM::PWM",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_PWM",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_PWM",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (PWM *)new PWM(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_PWM,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_PWM(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_PWM__SWIG_0(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_PWM__SWIG_1(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_PWM'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    PWM::PWM(uint32_t)\n"
-    "    PWM::PWM(uint8_t,uint32_t)\n");
-  lua_error(L);return 0;
-}
-
-
 static int _wrap_PWM_SetRaw(lua_State* L) {
   int SWIG_arg = 0;
   PWM *arg1 = (PWM *) 0 ;
-  uint8_t arg2 ;
-  uint8_t *argp2 ;
+  unsigned short arg2 ;
   
   SWIG_check_num_args("PWM::SetRaw",2,2)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PWM::SetRaw",1,"PWM *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("PWM::SetRaw",2,"uint8_t");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("PWM::SetRaw",2,"unsigned short");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PWM,0))){
     SWIG_fail_ptr("PWM_SetRaw",1,SWIGTYPE_p_PWM);
   }
   
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("PWM_SetRaw",2,SWIGTYPE_p_uint8_t);
-  }
-  arg2 = *argp2;
-  
+  SWIG_contract_assert((lua_tonumber(L,2)>=0),"number must not be negative")
+  arg2 = (unsigned short)lua_tonumber(L, 2);
   (arg1)->SetRaw(arg2);
   
   return SWIG_arg;
@@ -29499,7 +18726,7 @@ fail:
 static int _wrap_PWM_GetRaw(lua_State* L) {
   int SWIG_arg = 0;
   PWM *arg1 = (PWM *) 0 ;
-  uint8_t result;
+  unsigned short result;
   
   SWIG_check_num_args("PWM::GetRaw",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PWM::GetRaw",1,"PWM *");
@@ -29508,11 +18735,8 @@ static int _wrap_PWM_GetRaw(lua_State* L) {
     SWIG_fail_ptr("PWM_GetRaw",1,SWIGTYPE_p_PWM);
   }
   
-  result = (arg1)->GetRaw();
-  {
-    uint8_t * resultptr = new uint8_t((const uint8_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint8_t,1); SWIG_arg++;
-  }
+  result = (unsigned short)(arg1)->GetRaw();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -29538,6 +18762,29 @@ static int _wrap_PWM_SetPeriodMultiplier(lua_State* L) {
   
   arg2 = (PWM::PeriodMultiplier)(int)lua_tonumber(L, 2);
   (arg1)->SetPeriodMultiplier(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_PWM_SetZeroLatch(lua_State* L) {
+  int SWIG_arg = 0;
+  PWM *arg1 = (PWM *) 0 ;
+  
+  SWIG_check_num_args("PWM::SetZeroLatch",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PWM::SetZeroLatch",1,"PWM *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PWM,0))){
+    SWIG_fail_ptr("PWM_SetZeroLatch",1,SWIGTYPE_p_PWM);
+  }
+  
+  (arg1)->SetZeroLatch();
   
   return SWIG_arg;
   
@@ -29827,33 +19074,6 @@ fail:
 }
 
 
-static int _wrap_PWM_GetModuleNumber(lua_State* L) {
-  int SWIG_arg = 0;
-  PWM *arg1 = (PWM *) 0 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("PWM::GetModuleNumber",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("PWM::GetModuleNumber",1,"PWM *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_PWM,0))){
-    SWIG_fail_ptr("PWM_GetModuleNumber",1,SWIGTYPE_p_PWM);
-  }
-  
-  result = (arg1)->GetModuleNumber();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
 static void swig_delete_PWM(void *obj) {
 PWM *arg1 = (PWM *) obj;
 delete arg1;
@@ -29862,10 +19082,10 @@ static swig_lua_method swig_PWM_methods[] = {
     {"SetRaw", _wrap_PWM_SetRaw}, 
     {"GetRaw", _wrap_PWM_GetRaw}, 
     {"SetPeriodMultiplier", _wrap_PWM_SetPeriodMultiplier}, 
+    {"SetZeroLatch", _wrap_PWM_SetZeroLatch}, 
     {"EnableDeadbandElimination", _wrap_PWM_EnableDeadbandElimination}, 
     {"SetBounds", _wrap_PWM_SetBounds}, 
     {"GetChannel", _wrap_PWM_GetChannel}, 
-    {"GetModuleNumber", _wrap_PWM_GetModuleNumber}, 
     {0,0}
 };
 static swig_lua_attribute swig_PWM_attributes[] = {
@@ -29942,83 +19162,10 @@ fail:
 }
 
 
-static int _wrap_new_Relay__SWIG_2(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  Relay::Direction arg3 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  Relay *result = 0 ;
-  
-  SWIG_check_num_args("Relay::Relay",3,3)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Relay::Relay",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Relay::Relay",2,"uint32_t");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("Relay::Relay",3,"Relay::Direction");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Relay",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Relay",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  arg3 = (Relay::Direction)(int)lua_tonumber(L, 3);
-  result = (Relay *)new Relay(arg1,arg2,arg3);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Relay,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Relay__SWIG_3(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  Relay *result = 0 ;
-  
-  SWIG_check_num_args("Relay::Relay",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Relay::Relay",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Relay::Relay",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Relay",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Relay",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (Relay *)new Relay(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Relay,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
 static int _wrap_new_Relay(lua_State* L) {
   int argc;
-  int argv[4]={
-    1,2,3,4
+  int argv[3]={
+    1,2,3
   };
   
   argc = lua_gettop(L);
@@ -30055,66 +19202,11 @@ static int _wrap_new_Relay(lua_State* L) {
       }
     }
   }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_Relay__SWIG_3(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          _v = lua_isnumber(L,argv[2]);
-        }
-        if (_v) {
-          return _wrap_new_Relay__SWIG_2(L);
-        }
-      }
-    }
-  }
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Relay'\n"
     "  Possible C/C++ prototypes are:\n"
     "    Relay::Relay(uint32_t,Relay::Direction)\n"
-    "    Relay::Relay(uint32_t)\n"
-    "    Relay::Relay(uint8_t,uint32_t,Relay::Direction)\n"
-    "    Relay::Relay(uint8_t,uint32_t)\n");
+    "    Relay::Relay(uint32_t)\n");
   lua_error(L);return 0;
 }
 
@@ -30684,326 +19776,6 @@ static swig_lua_const_info swig_Resource_cls_constants[] = {
 static swig_lua_class *swig_Resource_bases[] = {0,0};
 static const char *swig_Resource_base_names[] = {"ErrorBase *",0};
 static swig_lua_class _wrap_class_Resource = { "Resource", &SWIGTYPE_p_Resource,0, swig_delete_Resource, swig_Resource_methods, swig_Resource_attributes, { "Resource", swig_Resource_cls_methods, swig_Resource_cls_attributes, swig_Resource_cls_constants }, swig_Resource_bases, swig_Resource_base_names };
-
-static int _wrap_RobotBase_getInstance(lua_State* L) {
-  int SWIG_arg = 0;
-  RobotBase *result = 0 ;
-  
-  SWIG_check_num_args("RobotBase::getInstance",0,0)
-  result = (RobotBase *) &RobotBase::getInstance();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_RobotBase,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_RobotBase_setInstance(lua_State* L) {
-  int SWIG_arg = 0;
-  RobotBase *arg1 = (RobotBase *) 0 ;
-  
-  SWIG_check_num_args("RobotBase::setInstance",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("RobotBase::setInstance",1,"RobotBase *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_RobotBase,0))){
-    SWIG_fail_ptr("RobotBase_setInstance",1,SWIGTYPE_p_RobotBase);
-  }
-  
-  RobotBase::setInstance(arg1);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_RobotBase_IsEnabled(lua_State* L) {
-  int SWIG_arg = 0;
-  RobotBase *arg1 = (RobotBase *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("RobotBase::IsEnabled",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("RobotBase::IsEnabled",1,"RobotBase *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_RobotBase,0))){
-    SWIG_fail_ptr("RobotBase_IsEnabled",1,SWIGTYPE_p_RobotBase);
-  }
-  
-  result = (bool)(arg1)->IsEnabled();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_RobotBase_IsDisabled(lua_State* L) {
-  int SWIG_arg = 0;
-  RobotBase *arg1 = (RobotBase *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("RobotBase::IsDisabled",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("RobotBase::IsDisabled",1,"RobotBase *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_RobotBase,0))){
-    SWIG_fail_ptr("RobotBase_IsDisabled",1,SWIGTYPE_p_RobotBase);
-  }
-  
-  result = (bool)(arg1)->IsDisabled();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_RobotBase_IsAutonomous(lua_State* L) {
-  int SWIG_arg = 0;
-  RobotBase *arg1 = (RobotBase *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("RobotBase::IsAutonomous",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("RobotBase::IsAutonomous",1,"RobotBase *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_RobotBase,0))){
-    SWIG_fail_ptr("RobotBase_IsAutonomous",1,SWIGTYPE_p_RobotBase);
-  }
-  
-  result = (bool)(arg1)->IsAutonomous();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_RobotBase_IsOperatorControl(lua_State* L) {
-  int SWIG_arg = 0;
-  RobotBase *arg1 = (RobotBase *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("RobotBase::IsOperatorControl",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("RobotBase::IsOperatorControl",1,"RobotBase *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_RobotBase,0))){
-    SWIG_fail_ptr("RobotBase_IsOperatorControl",1,SWIGTYPE_p_RobotBase);
-  }
-  
-  result = (bool)(arg1)->IsOperatorControl();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_RobotBase_IsTest(lua_State* L) {
-  int SWIG_arg = 0;
-  RobotBase *arg1 = (RobotBase *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("RobotBase::IsTest",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("RobotBase::IsTest",1,"RobotBase *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_RobotBase,0))){
-    SWIG_fail_ptr("RobotBase_IsTest",1,SWIGTYPE_p_RobotBase);
-  }
-  
-  result = (bool)(arg1)->IsTest();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_RobotBase_IsSystemActive(lua_State* L) {
-  int SWIG_arg = 0;
-  RobotBase *arg1 = (RobotBase *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("RobotBase::IsSystemActive",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("RobotBase::IsSystemActive",1,"RobotBase *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_RobotBase,0))){
-    SWIG_fail_ptr("RobotBase_IsSystemActive",1,SWIGTYPE_p_RobotBase);
-  }
-  
-  result = (bool)(arg1)->IsSystemActive();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_RobotBase_IsNewDataAvailable(lua_State* L) {
-  int SWIG_arg = 0;
-  RobotBase *arg1 = (RobotBase *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("RobotBase::IsNewDataAvailable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("RobotBase::IsNewDataAvailable",1,"RobotBase *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_RobotBase,0))){
-    SWIG_fail_ptr("RobotBase_IsNewDataAvailable",1,SWIGTYPE_p_RobotBase);
-  }
-  
-  result = (bool)(arg1)->IsNewDataAvailable();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_RobotBase_GetWatchdog(lua_State* L) {
-  int SWIG_arg = 0;
-  RobotBase *arg1 = (RobotBase *) 0 ;
-  Watchdog *result = 0 ;
-  
-  SWIG_check_num_args("RobotBase::GetWatchdog",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("RobotBase::GetWatchdog",1,"RobotBase *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_RobotBase,0))){
-    SWIG_fail_ptr("RobotBase_GetWatchdog",1,SWIGTYPE_p_RobotBase);
-  }
-  
-  result = (Watchdog *) &(arg1)->GetWatchdog();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Watchdog,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_RobotBase_startRobotTask(lua_State* L) {
-  int SWIG_arg = 0;
-  FUNCPTR arg1 ;
-  FUNCPTR *argp1 ;
-  
-  SWIG_check_num_args("RobotBase::startRobotTask",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("RobotBase::startRobotTask",1,"FUNCPTR");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_FUNCPTR,0))){
-    SWIG_fail_ptr("RobotBase_startRobotTask",1,SWIGTYPE_p_FUNCPTR);
-  }
-  arg1 = *argp1;
-  
-  RobotBase::startRobotTask(arg1);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_RobotBase_robotTask(lua_State* L) {
-  int SWIG_arg = 0;
-  FUNCPTR arg1 ;
-  Task *arg2 = (Task *) 0 ;
-  FUNCPTR *argp1 ;
-  
-  SWIG_check_num_args("RobotBase::robotTask",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("RobotBase::robotTask",1,"FUNCPTR");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("RobotBase::robotTask",2,"Task *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_FUNCPTR,0))){
-    SWIG_fail_ptr("RobotBase_robotTask",1,SWIGTYPE_p_FUNCPTR);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_Task,0))){
-    SWIG_fail_ptr("RobotBase_robotTask",2,SWIGTYPE_p_Task);
-  }
-  
-  RobotBase::robotTask(arg1,arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static swig_lua_method swig_RobotBase_methods[] = {
-    {"IsEnabled", _wrap_RobotBase_IsEnabled}, 
-    {"IsDisabled", _wrap_RobotBase_IsDisabled}, 
-    {"IsAutonomous", _wrap_RobotBase_IsAutonomous}, 
-    {"IsOperatorControl", _wrap_RobotBase_IsOperatorControl}, 
-    {"IsTest", _wrap_RobotBase_IsTest}, 
-    {"IsSystemActive", _wrap_RobotBase_IsSystemActive}, 
-    {"IsNewDataAvailable", _wrap_RobotBase_IsNewDataAvailable}, 
-    {"GetWatchdog", _wrap_RobotBase_GetWatchdog}, 
-    {0,0}
-};
-static swig_lua_attribute swig_RobotBase_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_RobotBase_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_RobotBase_cls_methods[] = {
-    {"getInstance", _wrap_RobotBase_getInstance}, 
-    {"setInstance", _wrap_RobotBase_setInstance}, 
-    {"startRobotTask", _wrap_RobotBase_startRobotTask}, 
-    {"robotTask", _wrap_RobotBase_robotTask}, 
-    {0,0}
-};
-static swig_lua_const_info swig_RobotBase_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_RobotBase_bases[] = {0};
-static const char *swig_RobotBase_base_names[] = {0};
-static swig_lua_class _wrap_class_RobotBase = { "RobotBase", &SWIGTYPE_p_RobotBase,0,0, swig_RobotBase_methods, swig_RobotBase_attributes, { "RobotBase", swig_RobotBase_cls_methods, swig_RobotBase_cls_attributes, swig_RobotBase_cls_constants }, swig_RobotBase_bases, swig_RobotBase_base_names };
 
 static int _wrap_new_RobotDrive__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
@@ -33743,8 +22515,8 @@ static swig_lua_const_info swig_RobotDrive_cls_constants[] = {
     {SWIG_LUA_CONSTTAB_INT("kRearRightMotor", RobotDrive::kRearRightMotor)},
     {0,0,0,0,0,0}
 };
-static swig_lua_class *swig_RobotDrive_bases[] = {0,0};
-static const char *swig_RobotDrive_base_names[] = {"ErrorBase *",0};
+static swig_lua_class *swig_RobotDrive_bases[] = {0,0,0};
+static const char *swig_RobotDrive_base_names[] = {"MotorSafety *","ErrorBase *",0};
 static swig_lua_class _wrap_class_RobotDrive = { "RobotDrive", &SWIGTYPE_p_RobotDrive,_wrap_new_RobotDrive, swig_delete_RobotDrive, swig_RobotDrive_methods, swig_RobotDrive_attributes, { "RobotDrive", swig_RobotDrive_cls_methods, swig_RobotDrive_cls_attributes, swig_RobotDrive_cls_constants }, swig_RobotDrive_bases, swig_RobotDrive_base_names };
 
 static int _wrap_new_SensorBase(lua_State* L) {
@@ -33780,46 +22552,6 @@ fail:
 }
 
 
-static int _wrap_SensorBase_GetDefaultAnalogModule(lua_State* L) {
-  int SWIG_arg = 0;
-  uint32_t result;
-  
-  SWIG_check_num_args("SensorBase::GetDefaultAnalogModule",0,0)
-  result = SensorBase::GetDefaultAnalogModule();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SensorBase_GetDefaultDigitalModule(lua_State* L) {
-  int SWIG_arg = 0;
-  uint32_t result;
-  
-  SWIG_check_num_args("SensorBase::GetDefaultDigitalModule",0,0)
-  result = SensorBase::GetDefaultDigitalModule();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
 static int _wrap_SensorBase_GetDefaultSolenoidModule(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t result;
@@ -33830,110 +22562,6 @@ static int _wrap_SensorBase_GetDefaultSolenoidModule(lua_State* L) {
     uint32_t * resultptr = new uint32_t((const uint32_t &) result);
     SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
   }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SensorBase_CheckAnalogModule(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint8_t *argp1 ;
-  bool result;
-  
-  SWIG_check_num_args("SensorBase::CheckAnalogModule",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SensorBase::CheckAnalogModule",1,"uint8_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("SensorBase_CheckAnalogModule",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  result = (bool)SensorBase::CheckAnalogModule(arg1);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SensorBase_CheckDigitalModule(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint8_t *argp1 ;
-  bool result;
-  
-  SWIG_check_num_args("SensorBase::CheckDigitalModule",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SensorBase::CheckDigitalModule",1,"uint8_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("SensorBase_CheckDigitalModule",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  result = (bool)SensorBase::CheckDigitalModule(arg1);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SensorBase_CheckPWMModule(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint8_t *argp1 ;
-  bool result;
-  
-  SWIG_check_num_args("SensorBase::CheckPWMModule",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SensorBase::CheckPWMModule",1,"uint8_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("SensorBase_CheckPWMModule",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  result = (bool)SensorBase::CheckPWMModule(arg1);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SensorBase_CheckRelayModule(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint8_t *argp1 ;
-  bool result;
-  
-  SWIG_check_num_args("SensorBase::CheckRelayModule",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SensorBase::CheckRelayModule",1,"uint8_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("SensorBase_CheckRelayModule",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  result = (bool)SensorBase::CheckRelayModule(arg1);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -34048,21 +22676,47 @@ fail:
 }
 
 
-static int _wrap_SensorBase_CheckAnalogChannel(lua_State* L) {
+static int _wrap_SensorBase_CheckAnalogInput(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
   uint32_t *argp1 ;
   bool result;
   
-  SWIG_check_num_args("SensorBase::CheckAnalogChannel",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SensorBase::CheckAnalogChannel",1,"uint32_t");
+  SWIG_check_num_args("SensorBase::CheckAnalogInput",1,1)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SensorBase::CheckAnalogInput",1,"uint32_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("SensorBase_CheckAnalogChannel",1,SWIGTYPE_p_uint32_t);
+    SWIG_fail_ptr("SensorBase_CheckAnalogInput",1,SWIGTYPE_p_uint32_t);
   }
   arg1 = *argp1;
   
-  result = (bool)SensorBase::CheckAnalogChannel(arg1);
+  result = (bool)SensorBase::CheckAnalogInput(arg1);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SensorBase_CheckAnalogOutput(lua_State* L) {
+  int SWIG_arg = 0;
+  uint32_t arg1 ;
+  uint32_t *argp1 ;
+  bool result;
+  
+  SWIG_check_num_args("SensorBase::CheckAnalogOutput",1,1)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SensorBase::CheckAnalogOutput",1,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("SensorBase_CheckAnalogOutput",1,SWIGTYPE_p_uint32_t);
+  }
+  arg1 = *argp1;
+  
+  result = (bool)SensorBase::CheckAnalogOutput(arg1);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -34100,6 +22754,32 @@ fail:
 }
 
 
+static int _wrap_SensorBase_CheckPDPChannel(lua_State* L) {
+  int SWIG_arg = 0;
+  uint32_t arg1 ;
+  uint32_t *argp1 ;
+  bool result;
+  
+  SWIG_check_num_args("SensorBase::CheckPDPChannel",1,1)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SensorBase::CheckPDPChannel",1,"uint32_t");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("SensorBase_CheckPDPChannel",1,SWIGTYPE_p_uint32_t);
+  }
+  arg1 = *argp1;
+  
+  result = (bool)SensorBase::CheckPDPChannel(arg1);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static void swig_delete_SensorBase(void *obj) {
 SensorBase *arg1 = (SensorBase *) obj;
 delete arg1;
@@ -34115,19 +22795,15 @@ static swig_lua_attribute swig_SensorBase_cls_attributes[] = {
 };
 static swig_lua_method swig_SensorBase_cls_methods[] = {
     {"DeleteSingletons", _wrap_SensorBase_DeleteSingletons}, 
-    {"GetDefaultAnalogModule", _wrap_SensorBase_GetDefaultAnalogModule}, 
-    {"GetDefaultDigitalModule", _wrap_SensorBase_GetDefaultDigitalModule}, 
     {"GetDefaultSolenoidModule", _wrap_SensorBase_GetDefaultSolenoidModule}, 
-    {"CheckAnalogModule", _wrap_SensorBase_CheckAnalogModule}, 
-    {"CheckDigitalModule", _wrap_SensorBase_CheckDigitalModule}, 
-    {"CheckPWMModule", _wrap_SensorBase_CheckPWMModule}, 
-    {"CheckRelayModule", _wrap_SensorBase_CheckRelayModule}, 
     {"CheckSolenoidModule", _wrap_SensorBase_CheckSolenoidModule}, 
     {"CheckDigitalChannel", _wrap_SensorBase_CheckDigitalChannel}, 
     {"CheckRelayChannel", _wrap_SensorBase_CheckRelayChannel}, 
     {"CheckPWMChannel", _wrap_SensorBase_CheckPWMChannel}, 
-    {"CheckAnalogChannel", _wrap_SensorBase_CheckAnalogChannel}, 
+    {"CheckAnalogInput", _wrap_SensorBase_CheckAnalogInput}, 
+    {"CheckAnalogOutput", _wrap_SensorBase_CheckAnalogOutput}, 
     {"CheckSolenoidChannel", _wrap_SensorBase_CheckSolenoidChannel}, 
+    {"CheckPDPChannel", _wrap_SensorBase_CheckPDPChannel}, 
     {0,0}
 };
 static swig_lua_const_info swig_SensorBase_cls_constants[] = {
@@ -34140,33 +22816,36 @@ static swig_lua_class _wrap_class_SensorBase = { "SensorBase", &SWIGTYPE_p_Senso
 static int _wrap_new_SerialPort__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
-  uint8_t arg2 ;
-  SerialPort::Parity arg3 ;
-  SerialPort::StopBits arg4 ;
+  SerialPort::Port arg2 ;
+  uint8_t arg3 ;
+  SerialPort::Parity arg4 ;
+  SerialPort::StopBits arg5 ;
   uint32_t *argp1 ;
-  uint8_t *argp2 ;
+  uint8_t *argp3 ;
   SerialPort *result = 0 ;
   
-  SWIG_check_num_args("SerialPort::SerialPort",4,4)
+  SWIG_check_num_args("SerialPort::SerialPort",5,5)
   if(!lua_isuserdata(L,1)) SWIG_fail_arg("SerialPort::SerialPort",1,"uint32_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("SerialPort::SerialPort",2,"uint8_t");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("SerialPort::SerialPort",3,"SerialPort::Parity");
-  if(!lua_isnumber(L,4)) SWIG_fail_arg("SerialPort::SerialPort",4,"SerialPort::StopBits");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("SerialPort::SerialPort",2,"SerialPort::Port");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("SerialPort::SerialPort",3,"uint8_t");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("SerialPort::SerialPort",4,"SerialPort::Parity");
+  if(!lua_isnumber(L,5)) SWIG_fail_arg("SerialPort::SerialPort",5,"SerialPort::StopBits");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
     SWIG_fail_ptr("new_SerialPort",1,SWIGTYPE_p_uint32_t);
   }
   arg1 = *argp1;
   
+  arg2 = (SerialPort::Port)(int)lua_tonumber(L, 2);
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_SerialPort",2,SWIGTYPE_p_uint8_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("new_SerialPort",3,SWIGTYPE_p_uint8_t);
   }
-  arg2 = *argp2;
+  arg3 = *argp3;
   
-  arg3 = (SerialPort::Parity)(int)lua_tonumber(L, 3);
-  arg4 = (SerialPort::StopBits)(int)lua_tonumber(L, 4);
-  result = (SerialPort *)new SerialPort(arg1,arg2,arg3,arg4);
+  arg4 = (SerialPort::Parity)(int)lua_tonumber(L, 4);
+  arg5 = (SerialPort::StopBits)(int)lua_tonumber(L, 5);
+  result = (SerialPort *)new SerialPort(arg1,arg2,arg3,arg4,arg5);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_SerialPort,1); SWIG_arg++; 
   return SWIG_arg;
   
@@ -34181,30 +22860,33 @@ fail:
 static int _wrap_new_SerialPort__SWIG_1(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
-  uint8_t arg2 ;
-  SerialPort::Parity arg3 ;
+  SerialPort::Port arg2 ;
+  uint8_t arg3 ;
+  SerialPort::Parity arg4 ;
   uint32_t *argp1 ;
-  uint8_t *argp2 ;
+  uint8_t *argp3 ;
   SerialPort *result = 0 ;
   
-  SWIG_check_num_args("SerialPort::SerialPort",3,3)
+  SWIG_check_num_args("SerialPort::SerialPort",4,4)
   if(!lua_isuserdata(L,1)) SWIG_fail_arg("SerialPort::SerialPort",1,"uint32_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("SerialPort::SerialPort",2,"uint8_t");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("SerialPort::SerialPort",3,"SerialPort::Parity");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("SerialPort::SerialPort",2,"SerialPort::Port");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("SerialPort::SerialPort",3,"uint8_t");
+  if(!lua_isnumber(L,4)) SWIG_fail_arg("SerialPort::SerialPort",4,"SerialPort::Parity");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
     SWIG_fail_ptr("new_SerialPort",1,SWIGTYPE_p_uint32_t);
   }
   arg1 = *argp1;
   
+  arg2 = (SerialPort::Port)(int)lua_tonumber(L, 2);
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_SerialPort",2,SWIGTYPE_p_uint8_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("new_SerialPort",3,SWIGTYPE_p_uint8_t);
   }
-  arg2 = *argp2;
+  arg3 = *argp3;
   
-  arg3 = (SerialPort::Parity)(int)lua_tonumber(L, 3);
-  result = (SerialPort *)new SerialPort(arg1,arg2,arg3);
+  arg4 = (SerialPort::Parity)(int)lua_tonumber(L, 4);
+  result = (SerialPort *)new SerialPort(arg1,arg2,arg3,arg4);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_SerialPort,1); SWIG_arg++; 
   return SWIG_arg;
   
@@ -34219,27 +22901,30 @@ fail:
 static int _wrap_new_SerialPort__SWIG_2(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
-  uint8_t arg2 ;
+  SerialPort::Port arg2 ;
+  uint8_t arg3 ;
   uint32_t *argp1 ;
-  uint8_t *argp2 ;
+  uint8_t *argp3 ;
   SerialPort *result = 0 ;
   
-  SWIG_check_num_args("SerialPort::SerialPort",2,2)
+  SWIG_check_num_args("SerialPort::SerialPort",3,3)
   if(!lua_isuserdata(L,1)) SWIG_fail_arg("SerialPort::SerialPort",1,"uint32_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("SerialPort::SerialPort",2,"uint8_t");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("SerialPort::SerialPort",2,"SerialPort::Port");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("SerialPort::SerialPort",3,"uint8_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
     SWIG_fail_ptr("new_SerialPort",1,SWIGTYPE_p_uint32_t);
   }
   arg1 = *argp1;
   
+  arg2 = (SerialPort::Port)(int)lua_tonumber(L, 2);
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_SerialPort",2,SWIGTYPE_p_uint8_t);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("new_SerialPort",3,SWIGTYPE_p_uint8_t);
   }
-  arg2 = *argp2;
+  arg3 = *argp3;
   
-  result = (SerialPort *)new SerialPort(arg1,arg2);
+  result = (SerialPort *)new SerialPort(arg1,arg2,arg3);
   SWIG_NewPointerObj(L,result,SWIGTYPE_p_SerialPort,1); SWIG_arg++; 
   return SWIG_arg;
   
@@ -34252,6 +22937,35 @@ fail:
 
 
 static int _wrap_new_SerialPort__SWIG_3(lua_State* L) {
+  int SWIG_arg = 0;
+  uint32_t arg1 ;
+  SerialPort::Port arg2 ;
+  uint32_t *argp1 ;
+  SerialPort *result = 0 ;
+  
+  SWIG_check_num_args("SerialPort::SerialPort",2,2)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SerialPort::SerialPort",1,"uint32_t");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("SerialPort::SerialPort",2,"SerialPort::Port");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("new_SerialPort",1,SWIGTYPE_p_uint32_t);
+  }
+  arg1 = *argp1;
+  
+  arg2 = (SerialPort::Port)(int)lua_tonumber(L, 2);
+  result = (SerialPort *)new SerialPort(arg1,arg2);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_SerialPort,1); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_new_SerialPort__SWIG_4(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
   uint32_t *argp1 ;
@@ -34279,8 +22993,8 @@ fail:
 
 static int _wrap_new_SerialPort(lua_State* L) {
   int argc;
-  int argv[5]={
-    1,2,3,4,5
+  int argv[6]={
+    1,2,3,4,5,6
   };
   
   argc = lua_gettop(L);
@@ -34295,7 +23009,7 @@ static int _wrap_new_SerialPort(lua_State* L) {
       }
     }
     if (_v) {
-      return _wrap_new_SerialPort__SWIG_3(L);
+      return _wrap_new_SerialPort__SWIG_4(L);
     }
   }
   if (argc == 2) {
@@ -34310,15 +23024,10 @@ static int _wrap_new_SerialPort(lua_State* L) {
     }
     if (_v) {
       {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
+        _v = lua_isnumber(L,argv[1]);
       }
       if (_v) {
-        return _wrap_new_SerialPort__SWIG_2(L);
+        return _wrap_new_SerialPort__SWIG_3(L);
       }
     }
   }
@@ -34334,19 +23043,19 @@ static int _wrap_new_SerialPort(lua_State* L) {
     }
     if (_v) {
       {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
+        _v = lua_isnumber(L,argv[1]);
       }
       if (_v) {
         {
-          _v = lua_isnumber(L,argv[2]);
+          void *ptr;
+          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
+            _v = 0;
+          } else {
+            _v = 1;
+          }
         }
         if (_v) {
-          return _wrap_new_SerialPort__SWIG_1(L);
+          return _wrap_new_SerialPort__SWIG_2(L);
         }
       }
     }
@@ -34363,23 +23072,62 @@ static int _wrap_new_SerialPort(lua_State* L) {
     }
     if (_v) {
       {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
+        _v = lua_isnumber(L,argv[1]);
       }
       if (_v) {
         {
-          _v = lua_isnumber(L,argv[2]);
+          void *ptr;
+          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
+            _v = 0;
+          } else {
+            _v = 1;
+          }
         }
         if (_v) {
           {
             _v = lua_isnumber(L,argv[3]);
           }
           if (_v) {
-            return _wrap_new_SerialPort__SWIG_0(L);
+            return _wrap_new_SerialPort__SWIG_1(L);
+          }
+        }
+      }
+    }
+  }
+  if (argc == 5) {
+    int _v;
+    {
+      void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        {
+          void *ptr;
+          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
+            _v = 0;
+          } else {
+            _v = 1;
+          }
+        }
+        if (_v) {
+          {
+            _v = lua_isnumber(L,argv[3]);
+          }
+          if (_v) {
+            {
+              _v = lua_isnumber(L,argv[4]);
+            }
+            if (_v) {
+              return _wrap_new_SerialPort__SWIG_0(L);
+            }
           }
         }
       }
@@ -34388,9 +23136,10 @@ static int _wrap_new_SerialPort(lua_State* L) {
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_SerialPort'\n"
     "  Possible C/C++ prototypes are:\n"
-    "    SerialPort::SerialPort(uint32_t,uint8_t,SerialPort::Parity,SerialPort::StopBits)\n"
-    "    SerialPort::SerialPort(uint32_t,uint8_t,SerialPort::Parity)\n"
-    "    SerialPort::SerialPort(uint32_t,uint8_t)\n"
+    "    SerialPort::SerialPort(uint32_t,SerialPort::Port,uint8_t,SerialPort::Parity,SerialPort::StopBits)\n"
+    "    SerialPort::SerialPort(uint32_t,SerialPort::Port,uint8_t,SerialPort::Parity)\n"
+    "    SerialPort::SerialPort(uint32_t,SerialPort::Port,uint8_t)\n"
+    "    SerialPort::SerialPort(uint32_t,SerialPort::Port)\n"
     "    SerialPort::SerialPort(uint32_t)\n");
   lua_error(L);return 0;
 }
@@ -34560,60 +23309,6 @@ static int _wrap_SerialPort_GetBytesReceived(lua_State* L) {
     int32_t * resultptr = new int32_t((const int32_t &) result);
     SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
   }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SerialPort_Printf(lua_State* L) {
-  int SWIG_arg = 0;
-  SerialPort *arg1 = (SerialPort *) 0 ;
-  char *arg2 = (char *) 0 ;
-  void *arg3 = 0 ;
-  
-  SWIG_check_num_args("SerialPort::Printf",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SerialPort::Printf",1,"SerialPort *");
-  if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("SerialPort::Printf",2,"char const *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SerialPort,0))){
-    SWIG_fail_ptr("SerialPort_Printf",1,SWIGTYPE_p_SerialPort);
-  }
-  
-  arg2 = (char *)lua_tostring(L, 2);
-  (arg1)->Printf((char const *)arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SerialPort_Scanf(lua_State* L) {
-  int SWIG_arg = 0;
-  SerialPort *arg1 = (SerialPort *) 0 ;
-  char *arg2 = (char *) 0 ;
-  void *arg3 = 0 ;
-  
-  SWIG_check_num_args("SerialPort::Scanf",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SerialPort::Scanf",1,"SerialPort *");
-  if(!SWIG_lua_isnilstring(L,2)) SWIG_fail_arg("SerialPort::Scanf",2,"char const *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SerialPort,0))){
-    SWIG_fail_ptr("SerialPort_Scanf",1,SWIGTYPE_p_SerialPort);
-  }
-  
-  arg2 = (char *)lua_tostring(L, 2);
-  (arg1)->Scanf((char const *)arg2,arg3);
-  
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -34873,8 +23568,6 @@ static swig_lua_method swig_SerialPort_methods[] = {
     {"EnableTermination", _wrap_SerialPort_EnableTermination}, 
     {"DisableTermination", _wrap_SerialPort_DisableTermination}, 
     {"GetBytesReceived", _wrap_SerialPort_GetBytesReceived}, 
-    {"Printf", _wrap_SerialPort_Printf}, 
-    {"Scanf", _wrap_SerialPort_Scanf}, 
     {"Read", _wrap_SerialPort_Read}, 
     {"Write", _wrap_SerialPort_Write}, 
     {"SetTimeout", _wrap_SerialPort_SetTimeout}, 
@@ -34909,13 +23602,16 @@ static swig_lua_const_info swig_SerialPort_cls_constants[] = {
     {SWIG_LUA_CONSTTAB_INT("kFlowControl_DtrDsr", SerialPort::kFlowControl_DtrDsr)},
     {SWIG_LUA_CONSTTAB_INT("kFlushOnAccess", SerialPort::kFlushOnAccess)},
     {SWIG_LUA_CONSTTAB_INT("kFlushWhenFull", SerialPort::kFlushWhenFull)},
+    {SWIG_LUA_CONSTTAB_INT("kOnboard", SerialPort::kOnboard)},
+    {SWIG_LUA_CONSTTAB_INT("kMXP", SerialPort::kMXP)},
+    {SWIG_LUA_CONSTTAB_INT("kUSB", SerialPort::kUSB)},
     {0,0,0,0,0,0}
 };
 static swig_lua_class *swig_SerialPort_bases[] = {0,0};
 static const char *swig_SerialPort_base_names[] = {"ErrorBase *",0};
 static swig_lua_class _wrap_class_SerialPort = { "SerialPort", &SWIGTYPE_p_SerialPort,_wrap_new_SerialPort, swig_delete_SerialPort, swig_SerialPort_methods, swig_SerialPort_attributes, { "SerialPort", swig_SerialPort_cls_methods, swig_SerialPort_cls_attributes, swig_SerialPort_cls_constants }, swig_SerialPort_bases, swig_SerialPort_base_names };
 
-static int _wrap_new_Servo__SWIG_0(lua_State* L) {
+static int _wrap_new_Servo(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
   uint32_t *argp1 ;
@@ -34938,95 +23634,6 @@ static int _wrap_new_Servo__SWIG_0(lua_State* L) {
 fail:
   lua_error(L);
   return SWIG_arg;
-}
-
-
-static int _wrap_new_Servo__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  Servo *result = 0 ;
-  
-  SWIG_check_num_args("Servo::Servo",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Servo::Servo",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Servo::Servo",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Servo",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Servo",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (Servo *)new Servo(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Servo,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Servo(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_Servo__SWIG_0(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_Servo__SWIG_1(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Servo'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    Servo::Servo(uint32_t)\n"
-    "    Servo::Servo(uint8_t,uint32_t)\n");
-  lua_error(L);return 0;
 }
 
 
@@ -35478,13 +24085,13 @@ static swig_lua_class *swig_Servo_bases[] = {0};
 static const char *swig_Servo_base_names[] = {0};
 static swig_lua_class _wrap_class_Servo = { "Servo", &SWIGTYPE_p_Servo,_wrap_new_Servo, swig_delete_Servo, swig_Servo_methods, swig_Servo_attributes, { "Servo", swig_Servo_cls_methods, swig_Servo_cls_attributes, swig_Servo_cls_constants }, swig_Servo_bases, swig_Servo_base_names };
 
-static int _wrap_new_SimpleRobot(lua_State* L) {
+static int _wrap_new_SampleRobot(lua_State* L) {
   int SWIG_arg = 0;
-  SimpleRobot *result = 0 ;
+  SampleRobot *result = 0 ;
   
-  SWIG_check_num_args("SimpleRobot::SimpleRobot",0,0)
-  result = (SimpleRobot *)new SimpleRobot();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_SimpleRobot,1); SWIG_arg++; 
+  SWIG_check_num_args("SampleRobot::SampleRobot",0,0)
+  result = (SampleRobot *)new SampleRobot();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_SampleRobot,1); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -35495,15 +24102,15 @@ fail:
 }
 
 
-static int _wrap_SimpleRobot_RobotInit(lua_State* L) {
+static int _wrap_SampleRobot_RobotInit(lua_State* L) {
   int SWIG_arg = 0;
-  SimpleRobot *arg1 = (SimpleRobot *) 0 ;
+  SampleRobot *arg1 = (SampleRobot *) 0 ;
   
-  SWIG_check_num_args("SimpleRobot::RobotInit",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SimpleRobot::RobotInit",1,"SimpleRobot *");
+  SWIG_check_num_args("SampleRobot::RobotInit",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SampleRobot::RobotInit",1,"SampleRobot *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SimpleRobot,0))){
-    SWIG_fail_ptr("SimpleRobot_RobotInit",1,SWIGTYPE_p_SimpleRobot);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SampleRobot,0))){
+    SWIG_fail_ptr("SampleRobot_RobotInit",1,SWIGTYPE_p_SampleRobot);
   }
   
   (arg1)->RobotInit();
@@ -35518,15 +24125,15 @@ fail:
 }
 
 
-static int _wrap_SimpleRobot_Disabled(lua_State* L) {
+static int _wrap_SampleRobot_Disabled(lua_State* L) {
   int SWIG_arg = 0;
-  SimpleRobot *arg1 = (SimpleRobot *) 0 ;
+  SampleRobot *arg1 = (SampleRobot *) 0 ;
   
-  SWIG_check_num_args("SimpleRobot::Disabled",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SimpleRobot::Disabled",1,"SimpleRobot *");
+  SWIG_check_num_args("SampleRobot::Disabled",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SampleRobot::Disabled",1,"SampleRobot *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SimpleRobot,0))){
-    SWIG_fail_ptr("SimpleRobot_Disabled",1,SWIGTYPE_p_SimpleRobot);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SampleRobot,0))){
+    SWIG_fail_ptr("SampleRobot_Disabled",1,SWIGTYPE_p_SampleRobot);
   }
   
   (arg1)->Disabled();
@@ -35541,15 +24148,15 @@ fail:
 }
 
 
-static int _wrap_SimpleRobot_Autonomous(lua_State* L) {
+static int _wrap_SampleRobot_Autonomous(lua_State* L) {
   int SWIG_arg = 0;
-  SimpleRobot *arg1 = (SimpleRobot *) 0 ;
+  SampleRobot *arg1 = (SampleRobot *) 0 ;
   
-  SWIG_check_num_args("SimpleRobot::Autonomous",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SimpleRobot::Autonomous",1,"SimpleRobot *");
+  SWIG_check_num_args("SampleRobot::Autonomous",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SampleRobot::Autonomous",1,"SampleRobot *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SimpleRobot,0))){
-    SWIG_fail_ptr("SimpleRobot_Autonomous",1,SWIGTYPE_p_SimpleRobot);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SampleRobot,0))){
+    SWIG_fail_ptr("SampleRobot_Autonomous",1,SWIGTYPE_p_SampleRobot);
   }
   
   (arg1)->Autonomous();
@@ -35564,15 +24171,15 @@ fail:
 }
 
 
-static int _wrap_SimpleRobot_OperatorControl(lua_State* L) {
+static int _wrap_SampleRobot_OperatorControl(lua_State* L) {
   int SWIG_arg = 0;
-  SimpleRobot *arg1 = (SimpleRobot *) 0 ;
+  SampleRobot *arg1 = (SampleRobot *) 0 ;
   
-  SWIG_check_num_args("SimpleRobot::OperatorControl",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SimpleRobot::OperatorControl",1,"SimpleRobot *");
+  SWIG_check_num_args("SampleRobot::OperatorControl",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SampleRobot::OperatorControl",1,"SampleRobot *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SimpleRobot,0))){
-    SWIG_fail_ptr("SimpleRobot_OperatorControl",1,SWIGTYPE_p_SimpleRobot);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SampleRobot,0))){
+    SWIG_fail_ptr("SampleRobot_OperatorControl",1,SWIGTYPE_p_SampleRobot);
   }
   
   (arg1)->OperatorControl();
@@ -35587,15 +24194,15 @@ fail:
 }
 
 
-static int _wrap_SimpleRobot_Test(lua_State* L) {
+static int _wrap_SampleRobot_Test(lua_State* L) {
   int SWIG_arg = 0;
-  SimpleRobot *arg1 = (SimpleRobot *) 0 ;
+  SampleRobot *arg1 = (SampleRobot *) 0 ;
   
-  SWIG_check_num_args("SimpleRobot::Test",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SimpleRobot::Test",1,"SimpleRobot *");
+  SWIG_check_num_args("SampleRobot::Test",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SampleRobot::Test",1,"SampleRobot *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SimpleRobot,0))){
-    SWIG_fail_ptr("SimpleRobot_Test",1,SWIGTYPE_p_SimpleRobot);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SampleRobot,0))){
+    SWIG_fail_ptr("SampleRobot_Test",1,SWIGTYPE_p_SampleRobot);
   }
   
   (arg1)->Test();
@@ -35610,15 +24217,15 @@ fail:
 }
 
 
-static int _wrap_SimpleRobot_RobotMain(lua_State* L) {
+static int _wrap_SampleRobot_RobotMain(lua_State* L) {
   int SWIG_arg = 0;
-  SimpleRobot *arg1 = (SimpleRobot *) 0 ;
+  SampleRobot *arg1 = (SampleRobot *) 0 ;
   
-  SWIG_check_num_args("SimpleRobot::RobotMain",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SimpleRobot::RobotMain",1,"SimpleRobot *");
+  SWIG_check_num_args("SampleRobot::RobotMain",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SampleRobot::RobotMain",1,"SampleRobot *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SimpleRobot,0))){
-    SWIG_fail_ptr("SimpleRobot_RobotMain",1,SWIGTYPE_p_SimpleRobot);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SampleRobot,0))){
+    SWIG_fail_ptr("SampleRobot_RobotMain",1,SWIGTYPE_p_SampleRobot);
   }
   
   (arg1)->RobotMain();
@@ -35633,15 +24240,15 @@ fail:
 }
 
 
-static int _wrap_SimpleRobot_StartCompetition(lua_State* L) {
+static int _wrap_SampleRobot_StartCompetition(lua_State* L) {
   int SWIG_arg = 0;
-  SimpleRobot *arg1 = (SimpleRobot *) 0 ;
+  SampleRobot *arg1 = (SampleRobot *) 0 ;
   
-  SWIG_check_num_args("SimpleRobot::StartCompetition",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SimpleRobot::StartCompetition",1,"SimpleRobot *");
+  SWIG_check_num_args("SampleRobot::StartCompetition",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SampleRobot::StartCompetition",1,"SampleRobot *");
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SimpleRobot,0))){
-    SWIG_fail_ptr("SimpleRobot_StartCompetition",1,SWIGTYPE_p_SimpleRobot);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SampleRobot,0))){
+    SWIG_fail_ptr("SampleRobot_StartCompetition",1,SWIGTYPE_p_SampleRobot);
   }
   
   (arg1)->StartCompetition();
@@ -35656,35 +24263,35 @@ fail:
 }
 
 
-static void swig_delete_SimpleRobot(void *obj) {
-SimpleRobot *arg1 = (SimpleRobot *) obj;
+static void swig_delete_SampleRobot(void *obj) {
+SampleRobot *arg1 = (SampleRobot *) obj;
 delete arg1;
 }
-static swig_lua_method swig_SimpleRobot_methods[] = {
-    {"RobotInit", _wrap_SimpleRobot_RobotInit}, 
-    {"Disabled", _wrap_SimpleRobot_Disabled}, 
-    {"Autonomous", _wrap_SimpleRobot_Autonomous}, 
-    {"OperatorControl", _wrap_SimpleRobot_OperatorControl}, 
-    {"Test", _wrap_SimpleRobot_Test}, 
-    {"RobotMain", _wrap_SimpleRobot_RobotMain}, 
-    {"StartCompetition", _wrap_SimpleRobot_StartCompetition}, 
+static swig_lua_method swig_SampleRobot_methods[] = {
+    {"RobotInit", _wrap_SampleRobot_RobotInit}, 
+    {"Disabled", _wrap_SampleRobot_Disabled}, 
+    {"Autonomous", _wrap_SampleRobot_Autonomous}, 
+    {"OperatorControl", _wrap_SampleRobot_OperatorControl}, 
+    {"Test", _wrap_SampleRobot_Test}, 
+    {"RobotMain", _wrap_SampleRobot_RobotMain}, 
+    {"StartCompetition", _wrap_SampleRobot_StartCompetition}, 
     {0,0}
 };
-static swig_lua_attribute swig_SimpleRobot_attributes[] = {
+static swig_lua_attribute swig_SampleRobot_attributes[] = {
     {0,0,0}
 };
-static swig_lua_attribute swig_SimpleRobot_cls_attributes[] = {
+static swig_lua_attribute swig_SampleRobot_cls_attributes[] = {
     {0,0,0}
 };
-static swig_lua_method swig_SimpleRobot_cls_methods[] = {
+static swig_lua_method swig_SampleRobot_cls_methods[] = {
     {0,0}
 };
-static swig_lua_const_info swig_SimpleRobot_cls_constants[] = {
+static swig_lua_const_info swig_SampleRobot_cls_constants[] = {
     {0,0,0,0,0,0}
 };
-static swig_lua_class *swig_SimpleRobot_bases[] = {0,0};
-static const char *swig_SimpleRobot_base_names[] = {"RobotBase *",0};
-static swig_lua_class _wrap_class_SimpleRobot = { "SimpleRobot", &SWIGTYPE_p_SimpleRobot,_wrap_new_SimpleRobot, swig_delete_SimpleRobot, swig_SimpleRobot_methods, swig_SimpleRobot_attributes, { "SimpleRobot", swig_SimpleRobot_cls_methods, swig_SimpleRobot_cls_attributes, swig_SimpleRobot_cls_constants }, swig_SimpleRobot_bases, swig_SimpleRobot_base_names };
+static swig_lua_class *swig_SampleRobot_bases[] = {0};
+static const char *swig_SampleRobot_base_names[] = {0};
+static swig_lua_class _wrap_class_SampleRobot = { "SampleRobot", &SWIGTYPE_p_SampleRobot,_wrap_new_SampleRobot, swig_delete_SampleRobot, swig_SampleRobot_methods, swig_SampleRobot_attributes, { "SampleRobot", swig_SampleRobot_cls_methods, swig_SampleRobot_cls_attributes, swig_SampleRobot_cls_constants }, swig_SampleRobot_bases, swig_SampleRobot_base_names };
 
 static int _wrap_new_SendableChooser(lua_State* L) {
   int SWIG_arg = 0;
@@ -36020,6 +24627,32 @@ static int _wrap_SmartDashboard_PutData(lua_State* L) {
 }
 
 
+static int _wrap_SmartDashboard_GetData(lua_State* L) {
+  int SWIG_arg = 0;
+  std::string arg1 ;
+  std::string *argp1 ;
+  Sendable *result = 0 ;
+  
+  SWIG_check_num_args("SmartDashboard::GetData",1,1)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SmartDashboard::GetData",1,"std::string");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("SmartDashboard_GetData",1,SWIGTYPE_p_std__string);
+  }
+  arg1 = *argp1;
+  
+  result = (Sendable *)SmartDashboard::GetData(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Sendable,0); SWIG_arg++; 
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_SmartDashboard_PutBoolean(lua_State* L) {
   int SWIG_arg = 0;
   std::string arg1 ;
@@ -36048,7 +24681,7 @@ fail:
 }
 
 
-static int _wrap_SmartDashboard_GetBoolean(lua_State* L) {
+static int _wrap_SmartDashboard_GetBoolean__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   std::string arg1 ;
   std::string *argp1 ;
@@ -36071,6 +24704,84 @@ static int _wrap_SmartDashboard_GetBoolean(lua_State* L) {
 fail:
   lua_error(L);
   return SWIG_arg;
+}
+
+
+static int _wrap_SmartDashboard_GetBoolean__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  std::string arg1 ;
+  bool arg2 ;
+  std::string *argp1 ;
+  bool result;
+  
+  SWIG_check_num_args("SmartDashboard::GetBoolean",2,2)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SmartDashboard::GetBoolean",1,"std::string");
+  if(!lua_isboolean(L,2)) SWIG_fail_arg("SmartDashboard::GetBoolean",2,"bool");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("SmartDashboard_GetBoolean",1,SWIGTYPE_p_std__string);
+  }
+  arg1 = *argp1;
+  
+  arg2 = (lua_toboolean(L, 2)!=0);
+  result = (bool)SmartDashboard::GetBoolean(arg1,arg2);
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SmartDashboard_GetBoolean(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_std__string, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SmartDashboard_GetBoolean__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_std__string, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isboolean(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SmartDashboard_GetBoolean__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SmartDashboard_GetBoolean'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    SmartDashboard::GetBoolean(std::string)\n"
+    "    SmartDashboard::GetBoolean(std::string,bool)\n");
+  lua_error(L);return 0;
 }
 
 
@@ -36102,7 +24813,7 @@ fail:
 }
 
 
-static int _wrap_SmartDashboard_GetNumber(lua_State* L) {
+static int _wrap_SmartDashboard_GetNumber__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
   std::string arg1 ;
   std::string *argp1 ;
@@ -36125,6 +24836,84 @@ static int _wrap_SmartDashboard_GetNumber(lua_State* L) {
 fail:
   lua_error(L);
   return SWIG_arg;
+}
+
+
+static int _wrap_SmartDashboard_GetNumber__SWIG_1(lua_State* L) {
+  int SWIG_arg = 0;
+  std::string arg1 ;
+  double arg2 ;
+  std::string *argp1 ;
+  double result;
+  
+  SWIG_check_num_args("SmartDashboard::GetNumber",2,2)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SmartDashboard::GetNumber",1,"std::string");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("SmartDashboard::GetNumber",2,"double");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("SmartDashboard_GetNumber",1,SWIGTYPE_p_std__string);
+  }
+  arg1 = *argp1;
+  
+  arg2 = (double)lua_tonumber(L, 2);
+  result = (double)SmartDashboard::GetNumber(arg1,arg2);
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_SmartDashboard_GetNumber(lua_State* L) {
+  int argc;
+  int argv[3]={
+    1,2,3
+  };
+  
+  argc = lua_gettop(L);
+  if (argc == 1) {
+    int _v;
+    {
+      void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_std__string, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      return _wrap_SmartDashboard_GetNumber__SWIG_0(L);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_std__string, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        _v = lua_isnumber(L,argv[1]);
+      }
+      if (_v) {
+        return _wrap_SmartDashboard_GetNumber__SWIG_1(L);
+      }
+    }
+  }
+  
+  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SmartDashboard_GetNumber'\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    SmartDashboard::GetNumber(std::string)\n"
+    "    SmartDashboard::GetNumber(std::string,double)\n");
+  lua_error(L);return 0;
 }
 
 
@@ -36224,6 +25013,44 @@ fail:
 }
 
 
+static int _wrap_SmartDashboard_GetString__SWIG_2(lua_State* L) {
+  int SWIG_arg = 0;
+  std::string arg1 ;
+  std::string arg2 ;
+  std::string *argp1 ;
+  std::string *argp2 ;
+  std::string result;
+  
+  SWIG_check_num_args("SmartDashboard::GetString",2,2)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SmartDashboard::GetString",1,"std::string");
+  if(!lua_isuserdata(L,2)) SWIG_fail_arg("SmartDashboard::GetString",2,"std::string");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("SmartDashboard_GetString",1,SWIGTYPE_p_std__string);
+  }
+  arg1 = *argp1;
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("SmartDashboard_GetString",2,SWIGTYPE_p_std__string);
+  }
+  arg2 = *argp2;
+  
+  result = SmartDashboard::GetString(arg1,arg2);
+  {
+    std::string * resultptr = new std::string((const std::string &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_SmartDashboard_GetString(lua_State* L) {
   int argc;
   int argv[4]={
@@ -36243,6 +25070,30 @@ static int _wrap_SmartDashboard_GetString(lua_State* L) {
     }
     if (_v) {
       return _wrap_SmartDashboard_GetString__SWIG_1(L);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      void *ptr;
+      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_std__string, 0)) {
+        _v = 0;
+      } else {
+        _v = 1;
+      }
+    }
+    if (_v) {
+      {
+        void *ptr;
+        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_std__string, 0)) {
+          _v = 0;
+        } else {
+          _v = 1;
+        }
+      }
+      if (_v) {
+        return _wrap_SmartDashboard_GetString__SWIG_2(L);
+      }
     }
   }
   if (argc == 3) {
@@ -36273,7 +25124,8 @@ static int _wrap_SmartDashboard_GetString(lua_State* L) {
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SmartDashboard_GetString'\n"
     "  Possible C/C++ prototypes are:\n"
     "    SmartDashboard::GetString(std::string,char *,unsigned int)\n"
-    "    SmartDashboard::GetString(std::string)\n");
+    "    SmartDashboard::GetString(std::string)\n"
+    "    SmartDashboard::GetString(std::string,std::string)\n");
   lua_error(L);return 0;
 }
 
@@ -36354,6 +25206,7 @@ static swig_lua_attribute swig_SmartDashboard_cls_attributes[] = {
 static swig_lua_method swig_SmartDashboard_cls_methods[] = {
     {"init", _wrap_SmartDashboard_init}, 
     {"PutData", _wrap_SmartDashboard_PutData}, 
+    {"GetData", _wrap_SmartDashboard_GetData}, 
     {"PutBoolean", _wrap_SmartDashboard_PutBoolean}, 
     {"GetBoolean", _wrap_SmartDashboard_GetBoolean}, 
     {"PutNumber", _wrap_SmartDashboard_PutNumber}, 
@@ -36525,6 +25378,30 @@ static int _wrap_Solenoid_Get(lua_State* L) {
   }
   
   result = (bool)(arg1)->Get();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_Solenoid_IsBlackListed(lua_State* L) {
+  int SWIG_arg = 0;
+  Solenoid *arg1 = (Solenoid *) 0 ;
+  bool result;
+  
+  SWIG_check_num_args("Solenoid::IsBlackListed",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Solenoid::IsBlackListed",1,"Solenoid *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Solenoid,0))){
+    SWIG_fail_ptr("Solenoid_IsBlackListed",1,SWIGTYPE_p_Solenoid);
+  }
+  
+  result = (bool)(arg1)->IsBlackListed();
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -36742,6 +25619,7 @@ delete arg1;
 static swig_lua_method swig_Solenoid_methods[] = {
     {"Set", _wrap_Solenoid_Set}, 
     {"Get", _wrap_Solenoid_Get}, 
+    {"IsBlackListed", _wrap_Solenoid_IsBlackListed}, 
     {"ValueChanged", _wrap_Solenoid_ValueChanged}, 
     {"UpdateTable", _wrap_Solenoid_UpdateTable}, 
     {"StartLiveWindowMode", _wrap_Solenoid_StartLiveWindowMode}, 
@@ -36965,439 +25843,16 @@ static swig_lua_class *swig_SpeedController_bases[] = {0,0};
 static const char *swig_SpeedController_base_names[] = {"PIDOutput *",0};
 static swig_lua_class _wrap_class_SpeedController = { "SpeedController", &SWIGTYPE_p_SpeedController,0, swig_delete_SpeedController, swig_SpeedController_methods, swig_SpeedController_attributes, { "SpeedController", swig_SpeedController_cls_methods, swig_SpeedController_cls_attributes, swig_SpeedController_cls_constants }, swig_SpeedController_bases, swig_SpeedController_base_names };
 
-static int _wrap_new_SPI__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalOutput *arg1 = 0 ;
-  DigitalOutput *arg2 = 0 ;
-  DigitalInput *arg3 = 0 ;
-  SPI *result = 0 ;
-  
-  SWIG_check_num_args("SPI::SPI",3,3)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SPI::SPI",1,"DigitalOutput &");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("SPI::SPI",2,"DigitalOutput &");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("SPI::SPI",3,"DigitalInput &");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_SPI",1,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_SPI",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_DigitalInput,0))){
-    SWIG_fail_ptr("new_SPI",3,SWIGTYPE_p_DigitalInput);
-  }
-  
-  result = (SPI *)new SPI(*arg1,*arg2,*arg3);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_SPI,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_SPI__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalOutput *arg1 = (DigitalOutput *) 0 ;
-  DigitalOutput *arg2 = (DigitalOutput *) 0 ;
-  DigitalInput *arg3 = (DigitalInput *) 0 ;
-  SPI *result = 0 ;
-  
-  SWIG_check_num_args("SPI::SPI",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::SPI",1,"DigitalOutput *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("SPI::SPI",2,"DigitalOutput *");
-  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("SPI::SPI",3,"DigitalInput *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_SPI",1,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_SPI",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_DigitalInput,0))){
-    SWIG_fail_ptr("new_SPI",3,SWIGTYPE_p_DigitalInput);
-  }
-  
-  result = (SPI *)new SPI(arg1,arg2,arg3);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_SPI,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_SPI__SWIG_2(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalOutput *arg1 = 0 ;
-  DigitalOutput *arg2 = 0 ;
-  SPI *result = 0 ;
-  
-  SWIG_check_num_args("SPI::SPI",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SPI::SPI",1,"DigitalOutput &");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("SPI::SPI",2,"DigitalOutput &");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_SPI",1,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_SPI",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  result = (SPI *)new SPI(*arg1,*arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_SPI,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_SPI__SWIG_3(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalOutput *arg1 = (DigitalOutput *) 0 ;
-  DigitalOutput *arg2 = (DigitalOutput *) 0 ;
-  SPI *result = 0 ;
-  
-  SWIG_check_num_args("SPI::SPI",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::SPI",1,"DigitalOutput *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("SPI::SPI",2,"DigitalOutput *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_SPI",1,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_SPI",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  result = (SPI *)new SPI(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_SPI,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_SPI__SWIG_4(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalOutput *arg1 = 0 ;
-  DigitalInput *arg2 = 0 ;
-  SPI *result = 0 ;
-  
-  SWIG_check_num_args("SPI::SPI",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SPI::SPI",1,"DigitalOutput &");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("SPI::SPI",2,"DigitalInput &");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_SPI",1,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalInput,0))){
-    SWIG_fail_ptr("new_SPI",2,SWIGTYPE_p_DigitalInput);
-  }
-  
-  result = (SPI *)new SPI(*arg1,*arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_SPI,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_SPI__SWIG_5(lua_State* L) {
-  int SWIG_arg = 0;
-  DigitalOutput *arg1 = (DigitalOutput *) 0 ;
-  DigitalInput *arg2 = (DigitalInput *) 0 ;
-  SPI *result = 0 ;
-  
-  SWIG_check_num_args("SPI::SPI",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::SPI",1,"DigitalOutput *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("SPI::SPI",2,"DigitalInput *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("new_SPI",1,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalInput,0))){
-    SWIG_fail_ptr("new_SPI",2,SWIGTYPE_p_DigitalInput);
-  }
-  
-  result = (SPI *)new SPI(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_SPI,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
 static int _wrap_new_SPI(lua_State* L) {
-  int argc;
-  int argv[4]={
-    1,2,3,4
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_SPI__SWIG_2(L);
-      }
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_SPI__SWIG_3(L);
-      }
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalInput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_SPI__SWIG_4(L);
-      }
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalInput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_SPI__SWIG_5(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_DigitalInput, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          return _wrap_new_SPI__SWIG_0(L);
-        }
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_DigitalInput, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          return _wrap_new_SPI__SWIG_1(L);
-        }
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_SPI'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    SPI::SPI(DigitalOutput &,DigitalOutput &,DigitalInput &)\n"
-    "    SPI::SPI(DigitalOutput *,DigitalOutput *,DigitalInput *)\n"
-    "    SPI::SPI(DigitalOutput &,DigitalOutput &)\n"
-    "    SPI::SPI(DigitalOutput *,DigitalOutput *)\n"
-    "    SPI::SPI(DigitalOutput &,DigitalInput &)\n"
-    "    SPI::SPI(DigitalOutput *,DigitalInput *)\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_SPI_SetBitsPerWord(lua_State* L) {
   int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
+  SPI::Port arg1 ;
+  SPI *result = 0 ;
   
-  SWIG_check_num_args("SPI::SetBitsPerWord",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::SetBitsPerWord",1,"SPI *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("SPI::SetBitsPerWord",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_SetBitsPerWord",1,SWIGTYPE_p_SPI);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("SPI_SetBitsPerWord",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->SetBitsPerWord(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_GetBitsPerWord(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("SPI::GetBitsPerWord",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::GetBitsPerWord",1,"SPI *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_GetBitsPerWord",1,SWIGTYPE_p_SPI);
-  }
-  
-  result = (arg1)->GetBitsPerWord();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
+  SWIG_check_num_args("SPI::SPI",1,1)
+  if(!lua_isnumber(L,1)) SWIG_fail_arg("SPI::SPI",1,"SPI::Port");
+  arg1 = (SPI::Port)(int)lua_tonumber(L, 1);
+  result = (SPI *)new SPI(arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_SPI,1); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -37526,580 +25981,6 @@ fail:
 }
 
 
-static int _wrap_SPI_SetSlaveSelect__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  DigitalOutput *arg2 = (DigitalOutput *) 0 ;
-  SPI::tFrameMode arg3 ;
-  bool arg4 ;
-  
-  SWIG_check_num_args("SPI::SetSlaveSelect",4,4)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::SetSlaveSelect",1,"SPI *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("SPI::SetSlaveSelect",2,"DigitalOutput *");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("SPI::SetSlaveSelect",3,"SPI::tFrameMode");
-  if(!lua_isboolean(L,4)) SWIG_fail_arg("SPI::SetSlaveSelect",4,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_SetSlaveSelect",1,SWIGTYPE_p_SPI);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("SPI_SetSlaveSelect",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  arg3 = (SPI::tFrameMode)(int)lua_tonumber(L, 3);
-  arg4 = (lua_toboolean(L, 4)!=0);
-  (arg1)->SetSlaveSelect(arg2,arg3,arg4);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_SetSlaveSelect__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  DigitalOutput *arg2 = (DigitalOutput *) 0 ;
-  SPI::tFrameMode arg3 ;
-  
-  SWIG_check_num_args("SPI::SetSlaveSelect",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::SetSlaveSelect",1,"SPI *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("SPI::SetSlaveSelect",2,"DigitalOutput *");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("SPI::SetSlaveSelect",3,"SPI::tFrameMode");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_SetSlaveSelect",1,SWIGTYPE_p_SPI);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("SPI_SetSlaveSelect",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  arg3 = (SPI::tFrameMode)(int)lua_tonumber(L, 3);
-  (arg1)->SetSlaveSelect(arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_SetSlaveSelect__SWIG_2(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  DigitalOutput *arg2 = (DigitalOutput *) 0 ;
-  
-  SWIG_check_num_args("SPI::SetSlaveSelect",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::SetSlaveSelect",1,"SPI *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("SPI::SetSlaveSelect",2,"DigitalOutput *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_SetSlaveSelect",1,SWIGTYPE_p_SPI);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("SPI_SetSlaveSelect",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  (arg1)->SetSlaveSelect(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_SetSlaveSelect__SWIG_3(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  DigitalOutput *arg2 = 0 ;
-  SPI::tFrameMode arg3 ;
-  bool arg4 ;
-  
-  SWIG_check_num_args("SPI::SetSlaveSelect",4,4)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::SetSlaveSelect",1,"SPI *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("SPI::SetSlaveSelect",2,"DigitalOutput &");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("SPI::SetSlaveSelect",3,"SPI::tFrameMode");
-  if(!lua_isboolean(L,4)) SWIG_fail_arg("SPI::SetSlaveSelect",4,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_SetSlaveSelect",1,SWIGTYPE_p_SPI);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("SPI_SetSlaveSelect",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  arg3 = (SPI::tFrameMode)(int)lua_tonumber(L, 3);
-  arg4 = (lua_toboolean(L, 4)!=0);
-  (arg1)->SetSlaveSelect(*arg2,arg3,arg4);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_SetSlaveSelect__SWIG_4(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  DigitalOutput *arg2 = 0 ;
-  SPI::tFrameMode arg3 ;
-  
-  SWIG_check_num_args("SPI::SetSlaveSelect",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::SetSlaveSelect",1,"SPI *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("SPI::SetSlaveSelect",2,"DigitalOutput &");
-  if(!lua_isnumber(L,3)) SWIG_fail_arg("SPI::SetSlaveSelect",3,"SPI::tFrameMode");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_SetSlaveSelect",1,SWIGTYPE_p_SPI);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("SPI_SetSlaveSelect",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  arg3 = (SPI::tFrameMode)(int)lua_tonumber(L, 3);
-  (arg1)->SetSlaveSelect(*arg2,arg3);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_SetSlaveSelect__SWIG_5(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  DigitalOutput *arg2 = 0 ;
-  
-  SWIG_check_num_args("SPI::SetSlaveSelect",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::SetSlaveSelect",1,"SPI *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("SPI::SetSlaveSelect",2,"DigitalOutput &");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_SetSlaveSelect",1,SWIGTYPE_p_SPI);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_DigitalOutput,0))){
-    SWIG_fail_ptr("SPI_SetSlaveSelect",2,SWIGTYPE_p_DigitalOutput);
-  }
-  
-  (arg1)->SetSlaveSelect(*arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_SetSlaveSelect(lua_State* L) {
-  int argc;
-  int argv[5]={
-    1,2,3,4,5
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SPI, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_SPI_SetSlaveSelect__SWIG_2(L);
-      }
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SPI, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_SPI_SetSlaveSelect__SWIG_5(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SPI, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          _v = lua_isnumber(L,argv[2]);
-        }
-        if (_v) {
-          return _wrap_SPI_SetSlaveSelect__SWIG_4(L);
-        }
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SPI, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          _v = lua_isnumber(L,argv[2]);
-        }
-        if (_v) {
-          return _wrap_SPI_SetSlaveSelect__SWIG_1(L);
-        }
-      }
-    }
-  }
-  if (argc == 4) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SPI, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          _v = lua_isnumber(L,argv[2]);
-        }
-        if (_v) {
-          {
-            _v = lua_isboolean(L,argv[3]);
-          }
-          if (_v) {
-            return _wrap_SPI_SetSlaveSelect__SWIG_0(L);
-          }
-        }
-      }
-    }
-  }
-  if (argc == 4) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SPI, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_DigitalOutput, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          _v = lua_isnumber(L,argv[2]);
-        }
-        if (_v) {
-          {
-            _v = lua_isboolean(L,argv[3]);
-          }
-          if (_v) {
-            return _wrap_SPI_SetSlaveSelect__SWIG_3(L);
-          }
-        }
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SPI_SetSlaveSelect'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    SPI::SetSlaveSelect(DigitalOutput *,SPI::tFrameMode,bool)\n"
-    "    SPI::SetSlaveSelect(DigitalOutput *,SPI::tFrameMode)\n"
-    "    SPI::SetSlaveSelect(DigitalOutput *)\n"
-    "    SPI::SetSlaveSelect(DigitalOutput &,SPI::tFrameMode,bool)\n"
-    "    SPI::SetSlaveSelect(DigitalOutput &,SPI::tFrameMode)\n"
-    "    SPI::SetSlaveSelect(DigitalOutput &)\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_SPI_GetSlaveSelect__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  SPI::tFrameMode *arg2 = (SPI::tFrameMode *) 0 ;
-  bool *arg3 = (bool *) 0 ;
-  DigitalOutput *result = 0 ;
-  
-  SWIG_check_num_args("SPI::GetSlaveSelect",3,3)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::GetSlaveSelect",1,"SPI *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("SPI::GetSlaveSelect",2,"SPI::tFrameMode *");
-  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("SPI::GetSlaveSelect",3,"bool *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_GetSlaveSelect",1,SWIGTYPE_p_SPI);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_SPI__tFrameMode,0))){
-    SWIG_fail_ptr("SPI_GetSlaveSelect",2,SWIGTYPE_p_SPI__tFrameMode);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_bool,0))){
-    SWIG_fail_ptr("SPI_GetSlaveSelect",3,SWIGTYPE_p_bool);
-  }
-  
-  result = (DigitalOutput *)(arg1)->GetSlaveSelect(arg2,arg3);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_DigitalOutput,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_GetSlaveSelect__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  SPI::tFrameMode *arg2 = (SPI::tFrameMode *) 0 ;
-  DigitalOutput *result = 0 ;
-  
-  SWIG_check_num_args("SPI::GetSlaveSelect",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::GetSlaveSelect",1,"SPI *");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("SPI::GetSlaveSelect",2,"SPI::tFrameMode *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_GetSlaveSelect",1,SWIGTYPE_p_SPI);
-  }
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_SPI__tFrameMode,0))){
-    SWIG_fail_ptr("SPI_GetSlaveSelect",2,SWIGTYPE_p_SPI__tFrameMode);
-  }
-  
-  result = (DigitalOutput *)(arg1)->GetSlaveSelect(arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_DigitalOutput,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_GetSlaveSelect__SWIG_2(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  DigitalOutput *result = 0 ;
-  
-  SWIG_check_num_args("SPI::GetSlaveSelect",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::GetSlaveSelect",1,"SPI *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_GetSlaveSelect",1,SWIGTYPE_p_SPI);
-  }
-  
-  result = (DigitalOutput *)(arg1)->GetSlaveSelect();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_DigitalOutput,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_GetSlaveSelect(lua_State* L) {
-  int argc;
-  int argv[4]={
-    1,2,3,4
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SPI, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_SPI_GetSlaveSelect__SWIG_2(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SPI, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_SPI__tFrameMode, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_SPI_GetSlaveSelect__SWIG_1(L);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SPI, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_SPI__tFrameMode, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (SWIG_isptrtype(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_bool, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          return _wrap_SPI_GetSlaveSelect__SWIG_0(L);
-        }
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SPI_GetSlaveSelect'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    SPI::GetSlaveSelect(SPI::tFrameMode *,bool *)\n"
-    "    SPI::GetSlaveSelect(SPI::tFrameMode *)\n"
-    "    SPI::GetSlaveSelect()\n");
-  lua_error(L);return 0;
-}
-
-
 static int _wrap_SPI_SetClockActiveLow(lua_State* L) {
   int SWIG_arg = 0;
   SPI *arg1 = (SPI *) 0 ;
@@ -38146,18 +26027,18 @@ fail:
 }
 
 
-static int _wrap_SPI_ApplyConfig(lua_State* L) {
+static int _wrap_SPI_SetChipSelectActiveHigh(lua_State* L) {
   int SWIG_arg = 0;
   SPI *arg1 = (SPI *) 0 ;
   
-  SWIG_check_num_args("SPI::ApplyConfig",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::ApplyConfig",1,"SPI *");
+  SWIG_check_num_args("SPI::SetChipSelectActiveHigh",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::SetChipSelectActiveHigh",1,"SPI *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_ApplyConfig",1,SWIGTYPE_p_SPI);
+    SWIG_fail_ptr("SPI_SetChipSelectActiveHigh",1,SWIGTYPE_p_SPI);
   }
   
-  (arg1)->ApplyConfig();
+  (arg1)->SetChipSelectActiveHigh();
   
   return SWIG_arg;
   
@@ -38169,98 +26050,19 @@ fail:
 }
 
 
-static int _wrap_SPI_GetOutputFIFOAvailable(lua_State* L) {
+static int _wrap_SPI_SetChipSelectActiveLow(lua_State* L) {
   int SWIG_arg = 0;
   SPI *arg1 = (SPI *) 0 ;
-  uint16_t result;
   
-  SWIG_check_num_args("SPI::GetOutputFIFOAvailable",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::GetOutputFIFOAvailable",1,"SPI *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_GetOutputFIFOAvailable",1,SWIGTYPE_p_SPI);
-  }
-  
-  result = (arg1)->GetOutputFIFOAvailable();
-  {
-    uint16_t * resultptr = new uint16_t((const uint16_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint16_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_GetNumReceived(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  uint16_t result;
-  
-  SWIG_check_num_args("SPI::GetNumReceived",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::GetNumReceived",1,"SPI *");
+  SWIG_check_num_args("SPI::SetChipSelectActiveLow",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::SetChipSelectActiveLow",1,"SPI *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_GetNumReceived",1,SWIGTYPE_p_SPI);
+    SWIG_fail_ptr("SPI_SetChipSelectActiveLow",1,SWIGTYPE_p_SPI);
   }
   
-  result = (arg1)->GetNumReceived();
-  {
-    uint16_t * resultptr = new uint16_t((const uint16_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint16_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
+  (arg1)->SetChipSelectActiveLow();
   
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_IsDone(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("SPI::IsDone",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::IsDone",1,"SPI *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_IsDone",1,SWIGTYPE_p_SPI);
-  }
-  
-  result = (bool)(arg1)->IsDone();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_HadReceiveOverflow(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("SPI::HadReceiveOverflow",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::HadReceiveOverflow",1,"SPI *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_HadReceiveOverflow",1,SWIGTYPE_p_SPI);
-  }
-  
-  result = (bool)(arg1)->HadReceiveOverflow();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -38274,81 +26076,35 @@ fail:
 static int _wrap_SPI_Write(lua_State* L) {
   int SWIG_arg = 0;
   SPI *arg1 = (SPI *) 0 ;
-  uint32_t arg2 ;
-  uint32_t *argp2 ;
+  uint8_t *arg2 = (uint8_t *) 0 ;
+  uint8_t arg3 ;
+  uint8_t *argp3 ;
+  int32_t result;
   
-  SWIG_check_num_args("SPI::Write",2,2)
+  SWIG_check_num_args("SPI::Write",3,3)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::Write",1,"SPI *");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("SPI::Write",2,"uint32_t");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("SPI::Write",2,"uint8_t *");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("SPI::Write",3,"uint8_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
     SWIG_fail_ptr("SPI_Write",1,SWIGTYPE_p_SPI);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("SPI_Write",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  (arg1)->Write(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_Read__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  bool arg2 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("SPI::Read",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::Read",1,"SPI *");
-  if(!lua_isboolean(L,2)) SWIG_fail_arg("SPI::Read",2,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_Read",1,SWIGTYPE_p_SPI);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("SPI_Write",2,SWIGTYPE_p_uint8_t);
   }
   
-  arg2 = (lua_toboolean(L, 2)!=0);
-  result = (arg1)->Read(arg2);
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("SPI_Write",3,SWIGTYPE_p_uint8_t);
+  }
+  arg3 = *argp3;
+  
+  result = (arg1)->Write(arg2,arg3);
   {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SPI_Read__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  SPI *arg1 = (SPI *) 0 ;
-  uint32_t result;
-  
-  SWIG_check_num_args("SPI::Read",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::Read",1,"SPI *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_Read",1,SWIGTYPE_p_SPI);
-  }
-  
-  result = (arg1)->Read();
-  {
-    uint32_t * resultptr = new uint32_t((const uint32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_uint32_t,1); SWIG_arg++;
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -38361,67 +26117,41 @@ fail:
 
 
 static int _wrap_SPI_Read(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SPI, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_SPI_Read__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (SWIG_isptrtype(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SPI, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        _v = lua_isboolean(L,argv[1]);
-      }
-      if (_v) {
-        return _wrap_SPI_Read__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'SPI_Read'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    SPI::Read(bool)\n"
-    "    SPI::Read()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_SPI_Reset(lua_State* L) {
   int SWIG_arg = 0;
   SPI *arg1 = (SPI *) 0 ;
+  bool arg2 ;
+  uint8_t *arg3 = (uint8_t *) 0 ;
+  uint8_t arg4 ;
+  uint8_t *argp4 ;
+  int32_t result;
   
-  SWIG_check_num_args("SPI::Reset",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::Reset",1,"SPI *");
+  SWIG_check_num_args("SPI::Read",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::Read",1,"SPI *");
+  if(!lua_isboolean(L,2)) SWIG_fail_arg("SPI::Read",2,"bool");
+  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("SPI::Read",3,"uint8_t *");
+  if(!lua_isuserdata(L,4)) SWIG_fail_arg("SPI::Read",4,"uint8_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_Reset",1,SWIGTYPE_p_SPI);
+    SWIG_fail_ptr("SPI_Read",1,SWIGTYPE_p_SPI);
   }
   
-  (arg1)->Reset();
+  arg2 = (lua_toboolean(L, 2)!=0);
   
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("SPI_Read",3,SWIGTYPE_p_uint8_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("SPI_Read",4,SWIGTYPE_p_uint8_t);
+  }
+  arg4 = *argp4;
+  
+  result = (arg1)->Read(arg2,arg3,arg4);
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -38432,19 +26162,46 @@ fail:
 }
 
 
-static int _wrap_SPI_ClearReceivedData(lua_State* L) {
+static int _wrap_SPI_Transaction(lua_State* L) {
   int SWIG_arg = 0;
   SPI *arg1 = (SPI *) 0 ;
+  uint8_t *arg2 = (uint8_t *) 0 ;
+  uint8_t *arg3 = (uint8_t *) 0 ;
+  uint8_t arg4 ;
+  uint8_t *argp4 ;
+  int32_t result;
   
-  SWIG_check_num_args("SPI::ClearReceivedData",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::ClearReceivedData",1,"SPI *");
+  SWIG_check_num_args("SPI::Transaction",4,4)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("SPI::Transaction",1,"SPI *");
+  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("SPI::Transaction",2,"uint8_t *");
+  if(!SWIG_isptrtype(L,3)) SWIG_fail_arg("SPI::Transaction",3,"uint8_t *");
+  if(!lua_isuserdata(L,4)) SWIG_fail_arg("SPI::Transaction",4,"uint8_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_SPI,0))){
-    SWIG_fail_ptr("SPI_ClearReceivedData",1,SWIGTYPE_p_SPI);
+    SWIG_fail_ptr("SPI_Transaction",1,SWIGTYPE_p_SPI);
   }
   
-  (arg1)->ClearReceivedData();
   
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("SPI_Transaction",2,SWIGTYPE_p_uint8_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("SPI_Transaction",3,SWIGTYPE_p_uint8_t);
+  }
+  
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_uint8_t,0))){
+    SWIG_fail_ptr("SPI_Transaction",4,SWIGTYPE_p_uint8_t);
+  }
+  arg4 = *argp4;
+  
+  result = (arg1)->Transaction(arg2,arg3,arg4);
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -38460,26 +26217,18 @@ SPI *arg1 = (SPI *) obj;
 delete arg1;
 }
 static swig_lua_method swig_SPI_methods[] = {
-    {"SetBitsPerWord", _wrap_SPI_SetBitsPerWord}, 
-    {"GetBitsPerWord", _wrap_SPI_GetBitsPerWord}, 
     {"SetClockRate", _wrap_SPI_SetClockRate}, 
     {"SetMSBFirst", _wrap_SPI_SetMSBFirst}, 
     {"SetLSBFirst", _wrap_SPI_SetLSBFirst}, 
     {"SetSampleDataOnFalling", _wrap_SPI_SetSampleDataOnFalling}, 
     {"SetSampleDataOnRising", _wrap_SPI_SetSampleDataOnRising}, 
-    {"SetSlaveSelect", _wrap_SPI_SetSlaveSelect}, 
-    {"GetSlaveSelect", _wrap_SPI_GetSlaveSelect}, 
     {"SetClockActiveLow", _wrap_SPI_SetClockActiveLow}, 
     {"SetClockActiveHigh", _wrap_SPI_SetClockActiveHigh}, 
-    {"ApplyConfig", _wrap_SPI_ApplyConfig}, 
-    {"GetOutputFIFOAvailable", _wrap_SPI_GetOutputFIFOAvailable}, 
-    {"GetNumReceived", _wrap_SPI_GetNumReceived}, 
-    {"IsDone", _wrap_SPI_IsDone}, 
-    {"HadReceiveOverflow", _wrap_SPI_HadReceiveOverflow}, 
+    {"SetChipSelectActiveHigh", _wrap_SPI_SetChipSelectActiveHigh}, 
+    {"SetChipSelectActiveLow", _wrap_SPI_SetChipSelectActiveLow}, 
     {"Write", _wrap_SPI_Write}, 
     {"Read", _wrap_SPI_Read}, 
-    {"Reset", _wrap_SPI_Reset}, 
-    {"ClearReceivedData", _wrap_SPI_ClearReceivedData}, 
+    {"Transaction", _wrap_SPI_Transaction}, 
     {0,0}
 };
 static swig_lua_attribute swig_SPI_attributes[] = {
@@ -38492,226 +26241,18 @@ static swig_lua_method swig_SPI_cls_methods[] = {
     {0,0}
 };
 static swig_lua_const_info swig_SPI_cls_constants[] = {
-    {SWIG_LUA_CONSTTAB_INT("kChipSelect", SPI::kChipSelect)},
-    {SWIG_LUA_CONSTTAB_INT("kPreLatchPulse", SPI::kPreLatchPulse)},
-    {SWIG_LUA_CONSTTAB_INT("kPostLatchPulse", SPI::kPostLatchPulse)},
-    {SWIG_LUA_CONSTTAB_INT("kPreAndPostLatchPulse", SPI::kPreAndPostLatchPulse)},
-    {SWIG_LUA_CONSTTAB_INT("kReceiveFIFODepth", SPI::kReceiveFIFODepth)},
-    {SWIG_LUA_CONSTTAB_INT("kTransmitFIFODepth", SPI::kTransmitFIFODepth)},
+    {SWIG_LUA_CONSTTAB_INT("kOnboardCS0", SPI::kOnboardCS0)},
+    {SWIG_LUA_CONSTTAB_INT("kOnboardCS1", SPI::kOnboardCS1)},
+    {SWIG_LUA_CONSTTAB_INT("kOnboardCS2", SPI::kOnboardCS2)},
+    {SWIG_LUA_CONSTTAB_INT("kOnboardCS3", SPI::kOnboardCS3)},
+    {SWIG_LUA_CONSTTAB_INT("kMXP", SPI::kMXP)},
     {0,0,0,0,0,0}
 };
 static swig_lua_class *swig_SPI_bases[] = {0,0};
 static const char *swig_SPI_base_names[] = {"SensorBase *",0};
 static swig_lua_class _wrap_class_SPI = { "SPI", &SWIGTYPE_p_SPI,_wrap_new_SPI, swig_delete_SPI, swig_SPI_methods, swig_SPI_attributes, { "SPI", swig_SPI_cls_methods, swig_SPI_cls_attributes, swig_SPI_cls_constants }, swig_SPI_bases, swig_SPI_base_names };
 
-static int _wrap_new_ReentrantSemaphore(lua_State* L) {
-  int SWIG_arg = 0;
-  ReentrantSemaphore *result = 0 ;
-  
-  SWIG_check_num_args("ReentrantSemaphore::ReentrantSemaphore",0,0)
-  result = (ReentrantSemaphore *)new ReentrantSemaphore();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_ReentrantSemaphore,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_ReentrantSemaphore_take(lua_State* L) {
-  int SWIG_arg = 0;
-  ReentrantSemaphore *arg1 = (ReentrantSemaphore *) 0 ;
-  int result;
-  
-  SWIG_check_num_args("ReentrantSemaphore::take",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ReentrantSemaphore::take",1,"ReentrantSemaphore *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ReentrantSemaphore,0))){
-    SWIG_fail_ptr("ReentrantSemaphore_take",1,SWIGTYPE_p_ReentrantSemaphore);
-  }
-  
-  result = (int)(arg1)->take();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_ReentrantSemaphore_give(lua_State* L) {
-  int SWIG_arg = 0;
-  ReentrantSemaphore *arg1 = (ReentrantSemaphore *) 0 ;
-  int result;
-  
-  SWIG_check_num_args("ReentrantSemaphore::give",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("ReentrantSemaphore::give",1,"ReentrantSemaphore *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ReentrantSemaphore,0))){
-    SWIG_fail_ptr("ReentrantSemaphore_give",1,SWIGTYPE_p_ReentrantSemaphore);
-  }
-  
-  result = (int)(arg1)->give();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_ReentrantSemaphore(void *obj) {
-ReentrantSemaphore *arg1 = (ReentrantSemaphore *) obj;
-delete arg1;
-}
-static swig_lua_method swig_ReentrantSemaphore_methods[] = {
-    {"take", _wrap_ReentrantSemaphore_take}, 
-    {"give", _wrap_ReentrantSemaphore_give}, 
-    {0,0}
-};
-static swig_lua_attribute swig_ReentrantSemaphore_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_ReentrantSemaphore_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_ReentrantSemaphore_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_ReentrantSemaphore_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_ReentrantSemaphore_bases[] = {0};
-static const char *swig_ReentrantSemaphore_base_names[] = {0};
-static swig_lua_class _wrap_class_ReentrantSemaphore = { "ReentrantSemaphore", &SWIGTYPE_p_ReentrantSemaphore,_wrap_new_ReentrantSemaphore, swig_delete_ReentrantSemaphore, swig_ReentrantSemaphore_methods, swig_ReentrantSemaphore_attributes, { "ReentrantSemaphore", swig_ReentrantSemaphore_cls_methods, swig_ReentrantSemaphore_cls_attributes, swig_ReentrantSemaphore_cls_constants }, swig_ReentrantSemaphore_bases, swig_ReentrantSemaphore_base_names };
-
-static int _wrap_new_Synchronized__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  SEM_ID arg1 ;
-  SEM_ID *argp1 ;
-  Synchronized *result = 0 ;
-  
-  SWIG_check_num_args("Synchronized::Synchronized",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Synchronized::Synchronized",1,"SEM_ID");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_SEM_ID,0))){
-    SWIG_fail_ptr("new_Synchronized",1,SWIGTYPE_p_SEM_ID);
-  }
-  arg1 = *argp1;
-  
-  result = (Synchronized *)new Synchronized(arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Synchronized,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Synchronized__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  ReentrantSemaphore *arg1 = 0 ;
-  Synchronized *result = 0 ;
-  
-  SWIG_check_num_args("Synchronized::Synchronized",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Synchronized::Synchronized",1,"ReentrantSemaphore &");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_ReentrantSemaphore,0))){
-    SWIG_fail_ptr("new_Synchronized",1,SWIGTYPE_p_ReentrantSemaphore);
-  }
-  
-  result = (Synchronized *)new Synchronized(*arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Synchronized,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Synchronized(lua_State* L) {
-  int argc;
-  int argv[2]={
-    1,2
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_SEM_ID, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_Synchronized__SWIG_0(L);
-    }
-  }
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_ReentrantSemaphore, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_Synchronized__SWIG_1(L);
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Synchronized'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    Synchronized::Synchronized(SEM_ID)\n"
-    "    Synchronized::Synchronized(ReentrantSemaphore &)\n");
-  lua_error(L);return 0;
-}
-
-
-static void swig_delete_Synchronized(void *obj) {
-Synchronized *arg1 = (Synchronized *) obj;
-delete arg1;
-}
-static swig_lua_method swig_Synchronized_methods[] = {
-    {0,0}
-};
-static swig_lua_attribute swig_Synchronized_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_Synchronized_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_Synchronized_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_Synchronized_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_Synchronized_bases[] = {0};
-static const char *swig_Synchronized_base_names[] = {0};
-static swig_lua_class _wrap_class_Synchronized = { "Synchronized", &SWIGTYPE_p_Synchronized,_wrap_new_Synchronized, swig_delete_Synchronized, swig_Synchronized_methods, swig_Synchronized_attributes, { "Synchronized", swig_Synchronized_cls_methods, swig_Synchronized_cls_attributes, swig_Synchronized_cls_constants }, swig_Synchronized_bases, swig_Synchronized_base_names };
-
-static int _wrap_new_Talon__SWIG_0(lua_State* L) {
+static int _wrap_new_Talon(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
   uint32_t *argp1 ;
@@ -38734,95 +26275,6 @@ static int _wrap_new_Talon__SWIG_0(lua_State* L) {
 fail:
   lua_error(L);
   return SWIG_arg;
-}
-
-
-static int _wrap_new_Talon__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  Talon *result = 0 ;
-  
-  SWIG_check_num_args("Talon::Talon",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Talon::Talon",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Talon::Talon",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Talon",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Talon",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (Talon *)new Talon(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Talon,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Talon(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_Talon__SWIG_0(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_Talon__SWIG_1(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Talon'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    Talon::Talon(uint32_t)\n"
-    "    Talon::Talon(uint8_t,uint32_t)\n");
-  lua_error(L);return 0;
 }
 
 
@@ -41012,7 +28464,7 @@ fail:
 static int _wrap_Task_GetID(lua_State* L) {
   int SWIG_arg = 0;
   Task *arg1 = (Task *) 0 ;
-  int32_t result;
+  TASK result;
   
   SWIG_check_num_args("Task::GetID",1,1)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Task::GetID",1,"Task *");
@@ -41023,8 +28475,8 @@ static int _wrap_Task_GetID(lua_State* L) {
   
   result = (arg1)->GetID();
   {
-    int32_t * resultptr = new int32_t((const int32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+    TASK * resultptr = new TASK((const TASK &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_TASK,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -41070,260 +28522,6 @@ static swig_lua_const_info swig_Task_cls_constants[] = {
 static swig_lua_class *swig_Task_bases[] = {0,0};
 static const char *swig_Task_base_names[] = {"ErrorBase *",0};
 static swig_lua_class _wrap_class_Task = { "Task", &SWIGTYPE_p_Task,_wrap_new_Task, swig_delete_Task, swig_Task_methods, swig_Task_attributes, { "Task", swig_Task_cls_methods, swig_Task_cls_attributes, swig_Task_cls_constants }, swig_Task_bases, swig_Task_base_names };
-
-static int _wrap_Wait(lua_State* L) {
-  int SWIG_arg = 0;
-  double arg1 ;
-  
-  SWIG_check_num_args("Wait",1,1)
-  if(!lua_isnumber(L,1)) SWIG_fail_arg("Wait",1,"double");
-  arg1 = (double)lua_tonumber(L, 1);
-  Wait(arg1);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_GetClock(lua_State* L) {
-  int SWIG_arg = 0;
-  double result;
-  
-  SWIG_check_num_args("GetClock",0,0)
-  result = (double)GetClock();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_GetTime(lua_State* L) {
-  int SWIG_arg = 0;
-  double result;
-  
-  SWIG_check_num_args("GetTime",0,0)
-  result = (double)GetTime();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Timer(lua_State* L) {
-  int SWIG_arg = 0;
-  Timer *result = 0 ;
-  
-  SWIG_check_num_args("Timer::Timer",0,0)
-  result = (Timer *)new Timer();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Timer,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Timer_Get(lua_State* L) {
-  int SWIG_arg = 0;
-  Timer *arg1 = (Timer *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("Timer::Get",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Timer::Get",1,"Timer *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Timer,0))){
-    SWIG_fail_ptr("Timer_Get",1,SWIGTYPE_p_Timer);
-  }
-  
-  result = (double)(arg1)->Get();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Timer_Reset(lua_State* L) {
-  int SWIG_arg = 0;
-  Timer *arg1 = (Timer *) 0 ;
-  
-  SWIG_check_num_args("Timer::Reset",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Timer::Reset",1,"Timer *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Timer,0))){
-    SWIG_fail_ptr("Timer_Reset",1,SWIGTYPE_p_Timer);
-  }
-  
-  (arg1)->Reset();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Timer_Start(lua_State* L) {
-  int SWIG_arg = 0;
-  Timer *arg1 = (Timer *) 0 ;
-  
-  SWIG_check_num_args("Timer::Start",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Timer::Start",1,"Timer *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Timer,0))){
-    SWIG_fail_ptr("Timer_Start",1,SWIGTYPE_p_Timer);
-  }
-  
-  (arg1)->Start();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Timer_Stop(lua_State* L) {
-  int SWIG_arg = 0;
-  Timer *arg1 = (Timer *) 0 ;
-  
-  SWIG_check_num_args("Timer::Stop",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Timer::Stop",1,"Timer *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Timer,0))){
-    SWIG_fail_ptr("Timer_Stop",1,SWIGTYPE_p_Timer);
-  }
-  
-  (arg1)->Stop();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Timer_HasPeriodPassed(lua_State* L) {
-  int SWIG_arg = 0;
-  Timer *arg1 = (Timer *) 0 ;
-  double arg2 ;
-  bool result;
-  
-  SWIG_check_num_args("Timer::HasPeriodPassed",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Timer::HasPeriodPassed",1,"Timer *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("Timer::HasPeriodPassed",2,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Timer,0))){
-    SWIG_fail_ptr("Timer_HasPeriodPassed",1,SWIGTYPE_p_Timer);
-  }
-  
-  arg2 = (double)lua_tonumber(L, 2);
-  result = (bool)(arg1)->HasPeriodPassed(arg2);
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Timer_GetFPGATimestamp(lua_State* L) {
-  int SWIG_arg = 0;
-  double result;
-  
-  SWIG_check_num_args("Timer::GetFPGATimestamp",0,0)
-  result = (double)Timer::GetFPGATimestamp();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Timer_GetPPCTimestamp(lua_State* L) {
-  int SWIG_arg = 0;
-  double result;
-  
-  SWIG_check_num_args("Timer::GetPPCTimestamp",0,0)
-  result = (double)Timer::GetPPCTimestamp();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_Timer(void *obj) {
-Timer *arg1 = (Timer *) obj;
-delete arg1;
-}
-static swig_lua_method swig_Timer_methods[] = {
-    {"Get", _wrap_Timer_Get}, 
-    {"Reset", _wrap_Timer_Reset}, 
-    {"Start", _wrap_Timer_Start}, 
-    {"Stop", _wrap_Timer_Stop}, 
-    {"HasPeriodPassed", _wrap_Timer_HasPeriodPassed}, 
-    {0,0}
-};
-static swig_lua_attribute swig_Timer_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_Timer_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_Timer_cls_methods[] = {
-    {"GetFPGATimestamp", _wrap_Timer_GetFPGATimestamp}, 
-    {"GetPPCTimestamp", _wrap_Timer_GetPPCTimestamp}, 
-    {0,0}
-};
-static swig_lua_const_info swig_Timer_cls_constants[] = {
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_Timer_bases[] = {0};
-static const char *swig_Timer_base_names[] = {0};
-static swig_lua_class _wrap_class_Timer = { "Timer", &SWIGTYPE_p_Timer,_wrap_new_Timer, swig_delete_Timer, swig_Timer_methods, swig_Timer_attributes, { "Timer", swig_Timer_cls_methods, swig_Timer_cls_attributes, swig_Timer_cls_constants }, swig_Timer_bases, swig_Timer_base_names };
 
 static int _wrap_new_Ultrasonic__SWIG_0(lua_State* L) {
   int SWIG_arg = 0;
@@ -41528,119 +28726,10 @@ fail:
 }
 
 
-static int _wrap_new_Ultrasonic__SWIG_6(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t arg3 ;
-  uint32_t arg4 ;
-  Ultrasonic::DistanceUnit arg5 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  uint8_t *argp3 ;
-  uint32_t *argp4 ;
-  Ultrasonic *result = 0 ;
-  
-  SWIG_check_num_args("Ultrasonic::Ultrasonic",5,5)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Ultrasonic::Ultrasonic",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Ultrasonic::Ultrasonic",2,"uint32_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Ultrasonic::Ultrasonic",3,"uint8_t");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("Ultrasonic::Ultrasonic",4,"uint32_t");
-  if(!lua_isnumber(L,5)) SWIG_fail_arg("Ultrasonic::Ultrasonic",5,"Ultrasonic::DistanceUnit");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Ultrasonic",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Ultrasonic",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Ultrasonic",3,SWIGTYPE_p_uint8_t);
-  }
-  arg3 = *argp3;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Ultrasonic",4,SWIGTYPE_p_uint32_t);
-  }
-  arg4 = *argp4;
-  
-  arg5 = (Ultrasonic::DistanceUnit)(int)lua_tonumber(L, 5);
-  result = (Ultrasonic *)new Ultrasonic(arg1,arg2,arg3,arg4,arg5);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Ultrasonic,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Ultrasonic__SWIG_7(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t arg3 ;
-  uint32_t arg4 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  uint8_t *argp3 ;
-  uint32_t *argp4 ;
-  Ultrasonic *result = 0 ;
-  
-  SWIG_check_num_args("Ultrasonic::Ultrasonic",4,4)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Ultrasonic::Ultrasonic",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Ultrasonic::Ultrasonic",2,"uint32_t");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("Ultrasonic::Ultrasonic",3,"uint8_t");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("Ultrasonic::Ultrasonic",4,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Ultrasonic",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Ultrasonic",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&argp3,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Ultrasonic",3,SWIGTYPE_p_uint8_t);
-  }
-  arg3 = *argp3;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&argp4,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Ultrasonic",4,SWIGTYPE_p_uint32_t);
-  }
-  arg4 = *argp4;
-  
-  result = (Ultrasonic *)new Ultrasonic(arg1,arg2,arg3,arg4);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Ultrasonic,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
 static int _wrap_new_Ultrasonic(lua_State* L) {
   int argc;
-  int argv[6]={
-    1,2,3,4,5,6
+  int argv[4]={
+    1,2,3,4
   };
   
   argc = lua_gettop(L);
@@ -41803,99 +28892,6 @@ static int _wrap_new_Ultrasonic(lua_State* L) {
       }
     }
   }
-  if (argc == 4) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
-          }
-          if (_v) {
-            return _wrap_new_Ultrasonic__SWIG_7(L);
-          }
-        }
-      }
-    }
-  }
-  if (argc == 5) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        {
-          void *ptr;
-          if (lua_isuserdata(L,argv[2])==0 || SWIG_ConvertPtr(L,argv[2], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-            _v = 0;
-          } else {
-            _v = 1;
-          }
-        }
-        if (_v) {
-          {
-            void *ptr;
-            if (lua_isuserdata(L,argv[3])==0 || SWIG_ConvertPtr(L,argv[3], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-              _v = 0;
-            } else {
-              _v = 1;
-            }
-          }
-          if (_v) {
-            {
-              _v = lua_isnumber(L,argv[4]);
-            }
-            if (_v) {
-              return _wrap_new_Ultrasonic__SWIG_6(L);
-            }
-          }
-        }
-      }
-    }
-  }
   
   SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Ultrasonic'\n"
     "  Possible C/C++ prototypes are:\n"
@@ -41904,9 +28900,7 @@ static int _wrap_new_Ultrasonic(lua_State* L) {
     "    Ultrasonic::Ultrasonic(DigitalOutput &,DigitalInput &,Ultrasonic::DistanceUnit)\n"
     "    Ultrasonic::Ultrasonic(DigitalOutput &,DigitalInput &)\n"
     "    Ultrasonic::Ultrasonic(uint32_t,uint32_t,Ultrasonic::DistanceUnit)\n"
-    "    Ultrasonic::Ultrasonic(uint32_t,uint32_t)\n"
-    "    Ultrasonic::Ultrasonic(uint8_t,uint32_t,uint8_t,uint32_t,Ultrasonic::DistanceUnit)\n"
-    "    Ultrasonic::Ultrasonic(uint8_t,uint32_t,uint8_t,uint32_t)\n");
+    "    Ultrasonic::Ultrasonic(uint32_t,uint32_t)\n");
   lua_error(L);return 0;
 }
 
@@ -42387,30 +29381,36 @@ static int _wrap_wpi_assertEqual_impl(lua_State* L) {
   int arg2 ;
   char *arg3 = (char *) 0 ;
   char *arg4 = (char *) 0 ;
-  uint32_t arg5 ;
+  char *arg5 = (char *) 0 ;
   char *arg6 = (char *) 0 ;
-  uint32_t *argp5 ;
+  uint32_t arg7 ;
+  char *arg8 = (char *) 0 ;
+  uint32_t *argp7 ;
   bool result;
   
-  SWIG_check_num_args("wpi_assertEqual_impl",6,6)
+  SWIG_check_num_args("wpi_assertEqual_impl",8,8)
   if(!lua_isnumber(L,1)) SWIG_fail_arg("wpi_assertEqual_impl",1,"int");
   if(!lua_isnumber(L,2)) SWIG_fail_arg("wpi_assertEqual_impl",2,"int");
   if(!SWIG_lua_isnilstring(L,3)) SWIG_fail_arg("wpi_assertEqual_impl",3,"char const *");
   if(!SWIG_lua_isnilstring(L,4)) SWIG_fail_arg("wpi_assertEqual_impl",4,"char const *");
-  if(!lua_isuserdata(L,5)) SWIG_fail_arg("wpi_assertEqual_impl",5,"uint32_t");
+  if(!SWIG_lua_isnilstring(L,5)) SWIG_fail_arg("wpi_assertEqual_impl",5,"char const *");
   if(!SWIG_lua_isnilstring(L,6)) SWIG_fail_arg("wpi_assertEqual_impl",6,"char const *");
+  if(!lua_isuserdata(L,7)) SWIG_fail_arg("wpi_assertEqual_impl",7,"uint32_t");
+  if(!SWIG_lua_isnilstring(L,8)) SWIG_fail_arg("wpi_assertEqual_impl",8,"char const *");
   arg1 = (int)lua_tonumber(L, 1);
   arg2 = (int)lua_tonumber(L, 2);
   arg3 = (char *)lua_tostring(L, 3);
   arg4 = (char *)lua_tostring(L, 4);
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,5,(void**)&argp5,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("wpi_assertEqual_impl",5,SWIGTYPE_p_uint32_t);
-  }
-  arg5 = *argp5;
-  
+  arg5 = (char *)lua_tostring(L, 5);
   arg6 = (char *)lua_tostring(L, 6);
-  result = (bool)wpi_assertEqual_impl(arg1,arg2,(char const *)arg3,(char const *)arg4,arg5,(char const *)arg6);
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,7,(void**)&argp7,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("wpi_assertEqual_impl",7,SWIGTYPE_p_uint32_t);
+  }
+  arg7 = *argp7;
+  
+  arg8 = (char *)lua_tostring(L, 8);
+  result = (bool)wpi_assertEqual_impl(arg1,arg2,(char const *)arg3,(char const *)arg4,(char const *)arg5,(char const *)arg6,arg7,(char const *)arg8);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
@@ -42428,160 +29428,37 @@ static int _wrap_wpi_assertNotEqual_impl(lua_State* L) {
   int arg2 ;
   char *arg3 = (char *) 0 ;
   char *arg4 = (char *) 0 ;
-  uint32_t arg5 ;
+  char *arg5 = (char *) 0 ;
   char *arg6 = (char *) 0 ;
-  uint32_t *argp5 ;
+  uint32_t arg7 ;
+  char *arg8 = (char *) 0 ;
+  uint32_t *argp7 ;
   bool result;
   
-  SWIG_check_num_args("wpi_assertNotEqual_impl",6,6)
+  SWIG_check_num_args("wpi_assertNotEqual_impl",8,8)
   if(!lua_isnumber(L,1)) SWIG_fail_arg("wpi_assertNotEqual_impl",1,"int");
   if(!lua_isnumber(L,2)) SWIG_fail_arg("wpi_assertNotEqual_impl",2,"int");
   if(!SWIG_lua_isnilstring(L,3)) SWIG_fail_arg("wpi_assertNotEqual_impl",3,"char const *");
   if(!SWIG_lua_isnilstring(L,4)) SWIG_fail_arg("wpi_assertNotEqual_impl",4,"char const *");
-  if(!lua_isuserdata(L,5)) SWIG_fail_arg("wpi_assertNotEqual_impl",5,"uint32_t");
+  if(!SWIG_lua_isnilstring(L,5)) SWIG_fail_arg("wpi_assertNotEqual_impl",5,"char const *");
   if(!SWIG_lua_isnilstring(L,6)) SWIG_fail_arg("wpi_assertNotEqual_impl",6,"char const *");
+  if(!lua_isuserdata(L,7)) SWIG_fail_arg("wpi_assertNotEqual_impl",7,"uint32_t");
+  if(!SWIG_lua_isnilstring(L,8)) SWIG_fail_arg("wpi_assertNotEqual_impl",8,"char const *");
   arg1 = (int)lua_tonumber(L, 1);
   arg2 = (int)lua_tonumber(L, 2);
   arg3 = (char *)lua_tostring(L, 3);
   arg4 = (char *)lua_tostring(L, 4);
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,5,(void**)&argp5,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("wpi_assertNotEqual_impl",5,SWIGTYPE_p_uint32_t);
-  }
-  arg5 = *argp5;
-  
+  arg5 = (char *)lua_tostring(L, 5);
   arg6 = (char *)lua_tostring(L, 6);
-  result = (bool)wpi_assertNotEqual_impl(arg1,arg2,(char const *)arg3,(char const *)arg4,arg5,(char const *)arg6);
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,7,(void**)&argp7,SWIGTYPE_p_uint32_t,0))){
+    SWIG_fail_ptr("wpi_assertNotEqual_impl",7,SWIGTYPE_p_uint32_t);
+  }
+  arg7 = *argp7;
+  
+  arg8 = (char *)lua_tostring(L, 8);
+  result = (bool)wpi_assertNotEqual_impl(arg1,arg2,(char const *)arg3,(char const *)arg4,(char const *)arg5,(char const *)arg6,arg7,(char const *)arg8);
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_wpi_getLabel__SWIG_0(lua_State* L) {
-  int SWIG_arg = 0;
-  UINT arg1 ;
-  int32_t *arg2 = (int32_t *) 0 ;
-  UINT *argp1 ;
-  char *result = 0 ;
-  
-  SWIG_check_num_args("wpi_getLabel",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("wpi_getLabel",1,"UINT");
-  if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("wpi_getLabel",2,"int32_t *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_UINT,0))){
-    SWIG_fail_ptr("wpi_getLabel",1,SWIGTYPE_p_UINT);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&arg2,SWIGTYPE_p_int32_t,0))){
-    SWIG_fail_ptr("wpi_getLabel",2,SWIGTYPE_p_int32_t);
-  }
-  
-  result = (char *)wpi_getLabel(arg1,arg2);
-  lua_pushstring(L,(const char *)result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_wpi_getLabel__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  UINT arg1 ;
-  UINT *argp1 ;
-  char *result = 0 ;
-  
-  SWIG_check_num_args("wpi_getLabel",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("wpi_getLabel",1,"UINT");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_UINT,0))){
-    SWIG_fail_ptr("wpi_getLabel",1,SWIGTYPE_p_UINT);
-  }
-  arg1 = *argp1;
-  
-  result = (char *)wpi_getLabel(arg1);
-  lua_pushstring(L,(const char *)result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_wpi_getLabel(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_UINT, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_wpi_getLabel__SWIG_1(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_UINT, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (SWIG_isptrtype(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_int32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_wpi_getLabel__SWIG_0(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'wpi_getLabel'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    wpi_getLabel(UINT,int32_t *)\n"
-    "    wpi_getLabel(UINT)\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_wpi_selfTrace(lua_State* L) {
-  int SWIG_arg = 0;
-  
-  SWIG_check_num_args("wpi_selfTrace",0,0)
-  wpi_selfTrace();
-  
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -42600,25 +29477,6 @@ static int _wrap_wpi_suspendOnAssertEnabled(lua_State* L) {
   if(!lua_isboolean(L,1)) SWIG_fail_arg("wpi_suspendOnAssertEnabled",1,"bool");
   arg1 = (lua_toboolean(L, 1)!=0);
   wpi_suspendOnAssertEnabled(arg1);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_wpi_stackTraceOnAssertEnable(lua_State* L) {
-  int SWIG_arg = 0;
-  bool arg1 ;
-  
-  SWIG_check_num_args("wpi_stackTraceOnAssertEnable",1,1)
-  if(!lua_isboolean(L,1)) SWIG_fail_arg("wpi_stackTraceOnAssertEnable",1,"bool");
-  arg1 = (lua_toboolean(L, 1)!=0);
-  wpi_stackTraceOnAssertEnable(arg1);
   
   return SWIG_arg;
   
@@ -42690,16 +29548,13 @@ fail:
 }
 
 
-static int _wrap_GetRIOUserSwitch(lua_State* L) {
+static int _wrap_GetUserButton(lua_State* L) {
   int SWIG_arg = 0;
-  int32_t result;
+  bool result;
   
-  SWIG_check_num_args("GetRIOUserSwitch",0,0)
-  result = GetRIOUserSwitch();
-  {
-    int32_t * resultptr = new int32_t((const int32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
-  }
+  SWIG_check_num_args("GetUserButton",0,0)
+  result = (bool)GetUserButton();
+  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -42710,40 +29565,24 @@ fail:
 }
 
 
-static int _wrap_SetRIOUserLED(lua_State* L) {
+static int _wrap_GetStackTrace(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
   uint32_t *argp1 ;
+  std::string result;
   
-  SWIG_check_num_args("SetRIOUserLED",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SetRIOUserLED",1,"uint32_t");
+  SWIG_check_num_args("GetStackTrace",1,1)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("GetStackTrace",1,"uint32_t");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("SetRIOUserLED",1,SWIGTYPE_p_uint32_t);
+    SWIG_fail_ptr("GetStackTrace",1,SWIGTYPE_p_uint32_t);
   }
   arg1 = *argp1;
   
-  SetRIOUserLED(arg1);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_GetRIOUserLED(lua_State* L) {
-  int SWIG_arg = 0;
-  int32_t result;
-  
-  SWIG_check_num_args("GetRIOUserLED",0,0)
-  result = GetRIOUserLED();
+  result = GetStackTrace(arg1);
   {
-    int32_t * resultptr = new int32_t((const int32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+    std::string * resultptr = new std::string((const std::string &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_std__string,1); SWIG_arg++;
   }
   return SWIG_arg;
   
@@ -42755,92 +29594,7 @@ fail:
 }
 
 
-static int _wrap_ToggleRIOUserLED(lua_State* L) {
-  int SWIG_arg = 0;
-  int32_t result;
-  
-  SWIG_check_num_args("ToggleRIOUserLED",0,0)
-  result = ToggleRIOUserLED();
-  {
-    int32_t * resultptr = new int32_t((const int32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_SetRIO_FPGA_LED(lua_State* L) {
-  int SWIG_arg = 0;
-  uint32_t arg1 ;
-  uint32_t *argp1 ;
-  
-  SWIG_check_num_args("SetRIO_FPGA_LED",1,1)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("SetRIO_FPGA_LED",1,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("SetRIO_FPGA_LED",1,SWIGTYPE_p_uint32_t);
-  }
-  arg1 = *argp1;
-  
-  SetRIO_FPGA_LED(arg1);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_GetRIO_FPGA_LED(lua_State* L) {
-  int SWIG_arg = 0;
-  int32_t result;
-  
-  SWIG_check_num_args("GetRIO_FPGA_LED",0,0)
-  result = GetRIO_FPGA_LED();
-  {
-    int32_t * resultptr = new int32_t((const int32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_ToggleRIO_FPGA_LED(lua_State* L) {
-  int SWIG_arg = 0;
-  int32_t result;
-  
-  SWIG_check_num_args("ToggleRIO_FPGA_LED",0,0)
-  result = ToggleRIO_FPGA_LED();
-  {
-    int32_t * resultptr = new int32_t((const int32_t &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
-  }
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Victor__SWIG_0(lua_State* L) {
+static int _wrap_new_Victor(lua_State* L) {
   int SWIG_arg = 0;
   uint32_t arg1 ;
   uint32_t *argp1 ;
@@ -42863,95 +29617,6 @@ static int _wrap_new_Victor__SWIG_0(lua_State* L) {
 fail:
   lua_error(L);
   return SWIG_arg;
-}
-
-
-static int _wrap_new_Victor__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  uint8_t arg1 ;
-  uint32_t arg2 ;
-  uint8_t *argp1 ;
-  uint32_t *argp2 ;
-  Victor *result = 0 ;
-  
-  SWIG_check_num_args("Victor::Victor",2,2)
-  if(!lua_isuserdata(L,1)) SWIG_fail_arg("Victor::Victor",1,"uint8_t");
-  if(!lua_isuserdata(L,2)) SWIG_fail_arg("Victor::Victor",2,"uint32_t");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&argp1,SWIGTYPE_p_uint8_t,0))){
-    SWIG_fail_ptr("new_Victor",1,SWIGTYPE_p_uint8_t);
-  }
-  arg1 = *argp1;
-  
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,2,(void**)&argp2,SWIGTYPE_p_uint32_t,0))){
-    SWIG_fail_ptr("new_Victor",2,SWIGTYPE_p_uint32_t);
-  }
-  arg2 = *argp2;
-  
-  result = (Victor *)new Victor(arg1,arg2);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Victor,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_new_Victor(lua_State* L) {
-  int argc;
-  int argv[3]={
-    1,2,3
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 1) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      return _wrap_new_Victor__SWIG_0(L);
-    }
-  }
-  if (argc == 2) {
-    int _v;
-    {
-      void *ptr;
-      if (lua_isuserdata(L,argv[0])==0 || SWIG_ConvertPtr(L,argv[0], (void **) &ptr, SWIGTYPE_p_uint8_t, 0)) {
-        _v = 0;
-      } else {
-        _v = 1;
-      }
-    }
-    if (_v) {
-      {
-        void *ptr;
-        if (lua_isuserdata(L,argv[1])==0 || SWIG_ConvertPtr(L,argv[1], (void **) &ptr, SWIGTYPE_p_uint32_t, 0)) {
-          _v = 0;
-        } else {
-          _v = 1;
-        }
-      }
-      if (_v) {
-        return _wrap_new_Victor__SWIG_1(L);
-      }
-    }
-  }
-  
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'new_Victor'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    Victor::Victor(uint32_t)\n"
-    "    Victor::Victor(uint8_t,uint32_t)\n");
-  lua_error(L);return 0;
 }
 
 
@@ -43180,77 +29845,20 @@ static swig_lua_class *swig_Victor_bases[] = {0,0};
 static const char *swig_Victor_base_names[] = {"SpeedController *",0};
 static swig_lua_class _wrap_class_Victor = { "Victor", &SWIGTYPE_p_Victor,_wrap_new_Victor, swig_delete_Victor, swig_Victor_methods, swig_Victor_attributes, { "Victor", swig_Victor_cls_methods, swig_Victor_cls_attributes, swig_Victor_cls_constants }, swig_Victor_bases, swig_Victor_base_names };
 
-static int _wrap_AxisCamera_GetInstance__SWIG_0(lua_State* L) {
+static int _wrap_new_AxisCamera(lua_State* L) {
   int SWIG_arg = 0;
-  char *arg1 = (char *) 0 ;
+  std::string *arg1 = 0 ;
   AxisCamera *result = 0 ;
   
-  SWIG_check_num_args("AxisCamera::GetInstance",1,1)
-  if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("AxisCamera::GetInstance",1,"char const *");
-  arg1 = (char *)lua_tostring(L, 1);
-  result = (AxisCamera *) &AxisCamera::GetInstance((char const *)arg1);
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_AxisCamera,0); SWIG_arg++; 
-  return SWIG_arg;
+  SWIG_check_num_args("AxisCamera::AxisCamera",1,1)
+  if(!lua_isuserdata(L,1)) SWIG_fail_arg("AxisCamera::AxisCamera",1,"std::string const &");
   
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AxisCamera_GetInstance__SWIG_1(lua_State* L) {
-  int SWIG_arg = 0;
-  AxisCamera *result = 0 ;
-  
-  SWIG_check_num_args("AxisCamera::GetInstance",0,0)
-  result = (AxisCamera *) &AxisCamera::GetInstance();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_AxisCamera,0); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AxisCamera_GetInstance(lua_State* L) {
-  int argc;
-  int argv[2]={
-    1,2
-  };
-  
-  argc = lua_gettop(L);
-  if (argc == 0) {
-    return _wrap_AxisCamera_GetInstance__SWIG_1(L);
-  }
-  if (argc == 1) {
-    int _v;
-    {
-      _v = SWIG_lua_isnilstring(L,argv[0]);
-    }
-    if (_v) {
-      return _wrap_AxisCamera_GetInstance__SWIG_0(L);
-    }
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_std__string,0))){
+    SWIG_fail_ptr("new_AxisCamera",1,SWIGTYPE_p_std__string);
   }
   
-  SWIG_Lua_pusherrstring(L,"Wrong arguments for overloaded function 'AxisCamera_GetInstance'\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    AxisCamera::GetInstance(char const *)\n"
-    "    AxisCamera::GetInstance()\n");
-  lua_error(L);return 0;
-}
-
-
-static int _wrap_AxisCamera_DeleteInstance(lua_State* L) {
-  int SWIG_arg = 0;
-  
-  SWIG_check_num_args("AxisCamera::DeleteInstance",0,0)
-  AxisCamera::DeleteInstance();
-  
+  result = (AxisCamera *)new AxisCamera((std::string const &)*arg1);
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_AxisCamera,1); SWIG_arg++; 
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -43267,41 +29875,14 @@ static int _wrap_AxisCamera_IsFreshImage(lua_State* L) {
   bool result;
   
   SWIG_check_num_args("AxisCamera::IsFreshImage",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::IsFreshImage",1,"AxisCamera *");
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::IsFreshImage",1,"AxisCamera const *");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
     SWIG_fail_ptr("AxisCamera_IsFreshImage",1,SWIGTYPE_p_AxisCamera);
   }
   
-  result = (bool)(arg1)->IsFreshImage();
+  result = (bool)((AxisCamera const *)arg1)->IsFreshImage();
   lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_AxisCamera_GetNewImageSem(lua_State* L) {
-  int SWIG_arg = 0;
-  AxisCamera *arg1 = (AxisCamera *) 0 ;
-  SEM_ID result;
-  
-  SWIG_check_num_args("AxisCamera::GetNewImageSem",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::GetNewImageSem",1,"AxisCamera *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
-    SWIG_fail_ptr("AxisCamera_GetNewImageSem",1,SWIGTYPE_p_AxisCamera);
-  }
-  
-  result = (arg1)->GetNewImageSem();
-  {
-    SEM_ID * resultptr = new SEM_ID((const SEM_ID &) result);
-    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_SEM_ID,1); SWIG_arg++;
-  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -43481,15 +30062,15 @@ static int _wrap_AxisCamera_CopyJPEG(lua_State* L) {
   int SWIG_arg = 0;
   AxisCamera *arg1 = (AxisCamera *) 0 ;
   char **arg2 = (char **) 0 ;
-  int *arg3 = 0 ;
-  int *arg4 = 0 ;
+  unsigned int *arg3 = 0 ;
+  unsigned int *arg4 = 0 ;
   int result;
   
   SWIG_check_num_args("AxisCamera::CopyJPEG",4,4)
   if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::CopyJPEG",1,"AxisCamera *");
   if(!SWIG_isptrtype(L,2)) SWIG_fail_arg("AxisCamera::CopyJPEG",2,"char **");
-  if(!lua_isuserdata(L,3)) SWIG_fail_arg("AxisCamera::CopyJPEG",3,"int &");
-  if(!lua_isuserdata(L,4)) SWIG_fail_arg("AxisCamera::CopyJPEG",4,"int &");
+  if(!lua_isuserdata(L,3)) SWIG_fail_arg("AxisCamera::CopyJPEG",3,"unsigned int &");
+  if(!lua_isuserdata(L,4)) SWIG_fail_arg("AxisCamera::CopyJPEG",4,"unsigned int &");
   
   if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
     SWIG_fail_ptr("AxisCamera_CopyJPEG",1,SWIGTYPE_p_AxisCamera);
@@ -43501,17 +30082,467 @@ static int _wrap_AxisCamera_CopyJPEG(lua_State* L) {
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_int,0))){
-    SWIG_fail_ptr("AxisCamera_CopyJPEG",3,SWIGTYPE_p_int);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,3,(void**)&arg3,SWIGTYPE_p_unsigned_int,0))){
+    SWIG_fail_ptr("AxisCamera_CopyJPEG",3,SWIGTYPE_p_unsigned_int);
   }
   
   
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_int,0))){
-    SWIG_fail_ptr("AxisCamera_CopyJPEG",4,SWIGTYPE_p_int);
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,4,(void**)&arg4,SWIGTYPE_p_unsigned_int,0))){
+    SWIG_fail_ptr("AxisCamera_CopyJPEG",4,SWIGTYPE_p_unsigned_int);
   }
   
   result = (int)(arg1)->CopyJPEG(arg2,*arg3,*arg4);
   lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_WriteBrightness(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  int arg2 ;
+  
+  SWIG_check_num_args("AxisCamera::WriteBrightness",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::WriteBrightness",1,"AxisCamera *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("AxisCamera::WriteBrightness",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_WriteBrightness",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  (arg1)->WriteBrightness(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_GetBrightness(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("AxisCamera::GetBrightness",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::GetBrightness",1,"AxisCamera *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_GetBrightness",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  result = (int)(arg1)->GetBrightness();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_WriteWhiteBalance(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  AxisCamera::WhiteBalance arg2 ;
+  
+  SWIG_check_num_args("AxisCamera::WriteWhiteBalance",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::WriteWhiteBalance",1,"AxisCamera *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("AxisCamera::WriteWhiteBalance",2,"AxisCamera::WhiteBalance");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_WriteWhiteBalance",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  arg2 = (AxisCamera::WhiteBalance)(int)lua_tonumber(L, 2);
+  (arg1)->WriteWhiteBalance(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_GetWhiteBalance(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  AxisCamera::WhiteBalance result;
+  
+  SWIG_check_num_args("AxisCamera::GetWhiteBalance",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::GetWhiteBalance",1,"AxisCamera *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_GetWhiteBalance",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  result = (AxisCamera::WhiteBalance)(arg1)->GetWhiteBalance();
+  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_WriteColorLevel(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  int arg2 ;
+  
+  SWIG_check_num_args("AxisCamera::WriteColorLevel",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::WriteColorLevel",1,"AxisCamera *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("AxisCamera::WriteColorLevel",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_WriteColorLevel",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  (arg1)->WriteColorLevel(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_GetColorLevel(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("AxisCamera::GetColorLevel",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::GetColorLevel",1,"AxisCamera *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_GetColorLevel",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  result = (int)(arg1)->GetColorLevel();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_WriteExposureControl(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  AxisCamera::ExposureControl arg2 ;
+  
+  SWIG_check_num_args("AxisCamera::WriteExposureControl",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::WriteExposureControl",1,"AxisCamera *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("AxisCamera::WriteExposureControl",2,"AxisCamera::ExposureControl");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_WriteExposureControl",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  arg2 = (AxisCamera::ExposureControl)(int)lua_tonumber(L, 2);
+  (arg1)->WriteExposureControl(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_GetExposureControl(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  AxisCamera::ExposureControl result;
+  
+  SWIG_check_num_args("AxisCamera::GetExposureControl",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::GetExposureControl",1,"AxisCamera *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_GetExposureControl",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  result = (AxisCamera::ExposureControl)(arg1)->GetExposureControl();
+  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_WriteExposurePriority(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  int arg2 ;
+  
+  SWIG_check_num_args("AxisCamera::WriteExposurePriority",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::WriteExposurePriority",1,"AxisCamera *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("AxisCamera::WriteExposurePriority",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_WriteExposurePriority",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  (arg1)->WriteExposurePriority(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_GetExposurePriority(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("AxisCamera::GetExposurePriority",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::GetExposurePriority",1,"AxisCamera *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_GetExposurePriority",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  result = (int)(arg1)->GetExposurePriority();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_WriteMaxFPS(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  int arg2 ;
+  
+  SWIG_check_num_args("AxisCamera::WriteMaxFPS",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::WriteMaxFPS",1,"AxisCamera *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("AxisCamera::WriteMaxFPS",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_WriteMaxFPS",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  (arg1)->WriteMaxFPS(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_GetMaxFPS(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("AxisCamera::GetMaxFPS",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::GetMaxFPS",1,"AxisCamera *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_GetMaxFPS",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  result = (int)(arg1)->GetMaxFPS();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_WriteResolution(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  AxisCamera::Resolution arg2 ;
+  
+  SWIG_check_num_args("AxisCamera::WriteResolution",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::WriteResolution",1,"AxisCamera *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("AxisCamera::WriteResolution",2,"AxisCamera::Resolution");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_WriteResolution",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  arg2 = (AxisCamera::Resolution)(int)lua_tonumber(L, 2);
+  (arg1)->WriteResolution(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_GetResolution(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  AxisCamera::Resolution result;
+  
+  SWIG_check_num_args("AxisCamera::GetResolution",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::GetResolution",1,"AxisCamera *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_GetResolution",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  result = (AxisCamera::Resolution)(arg1)->GetResolution();
+  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_WriteCompression(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  int arg2 ;
+  
+  SWIG_check_num_args("AxisCamera::WriteCompression",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::WriteCompression",1,"AxisCamera *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("AxisCamera::WriteCompression",2,"int");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_WriteCompression",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  arg2 = (int)lua_tonumber(L, 2);
+  (arg1)->WriteCompression(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_GetCompression(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  int result;
+  
+  SWIG_check_num_args("AxisCamera::GetCompression",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::GetCompression",1,"AxisCamera *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_GetCompression",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  result = (int)(arg1)->GetCompression();
+  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_WriteRotation(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  AxisCamera::Rotation arg2 ;
+  
+  SWIG_check_num_args("AxisCamera::WriteRotation",2,2)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::WriteRotation",1,"AxisCamera *");
+  if(!lua_isnumber(L,2)) SWIG_fail_arg("AxisCamera::WriteRotation",2,"AxisCamera::Rotation");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_WriteRotation",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  arg2 = (AxisCamera::Rotation)(int)lua_tonumber(L, 2);
+  (arg1)->WriteRotation(arg2);
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_AxisCamera_GetRotation(lua_State* L) {
+  int SWIG_arg = 0;
+  AxisCamera *arg1 = (AxisCamera *) 0 ;
+  AxisCamera::Rotation result;
+  
+  SWIG_check_num_args("AxisCamera::GetRotation",1,1)
+  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("AxisCamera::GetRotation",1,"AxisCamera *");
+  
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_AxisCamera,0))){
+    SWIG_fail_ptr("AxisCamera_GetRotation",1,SWIGTYPE_p_AxisCamera);
+  }
+  
+  result = (AxisCamera::Rotation)(arg1)->GetRotation();
+  lua_pushnumber(L, (lua_Number)(int)(result)); SWIG_arg++;
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -43528,9 +30559,26 @@ delete arg1;
 }
 static swig_lua_method swig_AxisCamera_methods[] = {
     {"IsFreshImage", _wrap_AxisCamera_IsFreshImage}, 
-    {"GetNewImageSem", _wrap_AxisCamera_GetNewImageSem}, 
     {"GetImage", _wrap_AxisCamera_GetImage}, 
     {"CopyJPEG", _wrap_AxisCamera_CopyJPEG}, 
+    {"WriteBrightness", _wrap_AxisCamera_WriteBrightness}, 
+    {"GetBrightness", _wrap_AxisCamera_GetBrightness}, 
+    {"WriteWhiteBalance", _wrap_AxisCamera_WriteWhiteBalance}, 
+    {"GetWhiteBalance", _wrap_AxisCamera_GetWhiteBalance}, 
+    {"WriteColorLevel", _wrap_AxisCamera_WriteColorLevel}, 
+    {"GetColorLevel", _wrap_AxisCamera_GetColorLevel}, 
+    {"WriteExposureControl", _wrap_AxisCamera_WriteExposureControl}, 
+    {"GetExposureControl", _wrap_AxisCamera_GetExposureControl}, 
+    {"WriteExposurePriority", _wrap_AxisCamera_WriteExposurePriority}, 
+    {"GetExposurePriority", _wrap_AxisCamera_GetExposurePriority}, 
+    {"WriteMaxFPS", _wrap_AxisCamera_WriteMaxFPS}, 
+    {"GetMaxFPS", _wrap_AxisCamera_GetMaxFPS}, 
+    {"WriteResolution", _wrap_AxisCamera_WriteResolution}, 
+    {"GetResolution", _wrap_AxisCamera_GetResolution}, 
+    {"WriteCompression", _wrap_AxisCamera_WriteCompression}, 
+    {"GetCompression", _wrap_AxisCamera_GetCompression}, 
+    {"WriteRotation", _wrap_AxisCamera_WriteRotation}, 
+    {"GetRotation", _wrap_AxisCamera_GetRotation}, 
     {0,0}
 };
 static swig_lua_attribute swig_AxisCamera_attributes[] = {
@@ -43540,285 +30588,33 @@ static swig_lua_attribute swig_AxisCamera_cls_attributes[] = {
     {0,0,0}
 };
 static swig_lua_method swig_AxisCamera_cls_methods[] = {
-    {"GetInstance", _wrap_AxisCamera_GetInstance}, 
-    {"DeleteInstance", _wrap_AxisCamera_DeleteInstance}, 
     {0,0}
 };
 static swig_lua_const_info swig_AxisCamera_cls_constants[] = {
+    {SWIG_LUA_CONSTTAB_INT("kWhiteBalance_Automatic", AxisCamera::kWhiteBalance_Automatic)},
+    {SWIG_LUA_CONSTTAB_INT("kWhiteBalance_Hold", AxisCamera::kWhiteBalance_Hold)},
+    {SWIG_LUA_CONSTTAB_INT("kWhiteBalance_FixedOutdoor1", AxisCamera::kWhiteBalance_FixedOutdoor1)},
+    {SWIG_LUA_CONSTTAB_INT("kWhiteBalance_FixedOutdoor2", AxisCamera::kWhiteBalance_FixedOutdoor2)},
+    {SWIG_LUA_CONSTTAB_INT("kWhiteBalance_FixedIndoor", AxisCamera::kWhiteBalance_FixedIndoor)},
+    {SWIG_LUA_CONSTTAB_INT("kWhiteBalance_FixedFluorescent1", AxisCamera::kWhiteBalance_FixedFluorescent1)},
+    {SWIG_LUA_CONSTTAB_INT("kWhiteBalance_FixedFluorescent2", AxisCamera::kWhiteBalance_FixedFluorescent2)},
+    {SWIG_LUA_CONSTTAB_INT("kExposureControl_Automatic", AxisCamera::kExposureControl_Automatic)},
+    {SWIG_LUA_CONSTTAB_INT("kExposureControl_Hold", AxisCamera::kExposureControl_Hold)},
+    {SWIG_LUA_CONSTTAB_INT("kExposureControl_FlickerFree50Hz", AxisCamera::kExposureControl_FlickerFree50Hz)},
+    {SWIG_LUA_CONSTTAB_INT("kExposureControl_FlickerFree60Hz", AxisCamera::kExposureControl_FlickerFree60Hz)},
+    {SWIG_LUA_CONSTTAB_INT("kResolution_640x480", AxisCamera::kResolution_640x480)},
+    {SWIG_LUA_CONSTTAB_INT("kResolution_480x360", AxisCamera::kResolution_480x360)},
+    {SWIG_LUA_CONSTTAB_INT("kResolution_320x240", AxisCamera::kResolution_320x240)},
+    {SWIG_LUA_CONSTTAB_INT("kResolution_240x180", AxisCamera::kResolution_240x180)},
+    {SWIG_LUA_CONSTTAB_INT("kResolution_176x144", AxisCamera::kResolution_176x144)},
+    {SWIG_LUA_CONSTTAB_INT("kResolution_160x120", AxisCamera::kResolution_160x120)},
+    {SWIG_LUA_CONSTTAB_INT("kRotation_0", AxisCamera::kRotation_0)},
+    {SWIG_LUA_CONSTTAB_INT("kRotation_180", AxisCamera::kRotation_180)},
     {0,0,0,0,0,0}
 };
-static swig_lua_class *swig_AxisCamera_bases[] = {0};
-static const char *swig_AxisCamera_base_names[] = {0};
-static swig_lua_class _wrap_class_AxisCamera = { "AxisCamera", &SWIGTYPE_p_AxisCamera,0, swig_delete_AxisCamera, swig_AxisCamera_methods, swig_AxisCamera_attributes, { "AxisCamera", swig_AxisCamera_cls_methods, swig_AxisCamera_cls_attributes, swig_AxisCamera_cls_constants }, swig_AxisCamera_bases, swig_AxisCamera_base_names };
-
-static int _wrap_new_Watchdog(lua_State* L) {
-  int SWIG_arg = 0;
-  Watchdog *result = 0 ;
-  
-  SWIG_check_num_args("Watchdog::Watchdog",0,0)
-  result = (Watchdog *)new Watchdog();
-  SWIG_NewPointerObj(L,result,SWIGTYPE_p_Watchdog,1); SWIG_arg++; 
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Watchdog_Feed(lua_State* L) {
-  int SWIG_arg = 0;
-  Watchdog *arg1 = (Watchdog *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("Watchdog::Feed",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Watchdog::Feed",1,"Watchdog *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Watchdog,0))){
-    SWIG_fail_ptr("Watchdog_Feed",1,SWIGTYPE_p_Watchdog);
-  }
-  
-  result = (bool)(arg1)->Feed();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Watchdog_Kill(lua_State* L) {
-  int SWIG_arg = 0;
-  Watchdog *arg1 = (Watchdog *) 0 ;
-  
-  SWIG_check_num_args("Watchdog::Kill",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Watchdog::Kill",1,"Watchdog *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Watchdog,0))){
-    SWIG_fail_ptr("Watchdog_Kill",1,SWIGTYPE_p_Watchdog);
-  }
-  
-  (arg1)->Kill();
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Watchdog_GetTimer(lua_State* L) {
-  int SWIG_arg = 0;
-  Watchdog *arg1 = (Watchdog *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("Watchdog::GetTimer",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Watchdog::GetTimer",1,"Watchdog *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Watchdog,0))){
-    SWIG_fail_ptr("Watchdog_GetTimer",1,SWIGTYPE_p_Watchdog);
-  }
-  
-  result = (double)(arg1)->GetTimer();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Watchdog_GetExpiration(lua_State* L) {
-  int SWIG_arg = 0;
-  Watchdog *arg1 = (Watchdog *) 0 ;
-  double result;
-  
-  SWIG_check_num_args("Watchdog::GetExpiration",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Watchdog::GetExpiration",1,"Watchdog *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Watchdog,0))){
-    SWIG_fail_ptr("Watchdog_GetExpiration",1,SWIGTYPE_p_Watchdog);
-  }
-  
-  result = (double)(arg1)->GetExpiration();
-  lua_pushnumber(L, (lua_Number) result); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Watchdog_SetExpiration(lua_State* L) {
-  int SWIG_arg = 0;
-  Watchdog *arg1 = (Watchdog *) 0 ;
-  double arg2 ;
-  
-  SWIG_check_num_args("Watchdog::SetExpiration",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Watchdog::SetExpiration",1,"Watchdog *");
-  if(!lua_isnumber(L,2)) SWIG_fail_arg("Watchdog::SetExpiration",2,"double");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Watchdog,0))){
-    SWIG_fail_ptr("Watchdog_SetExpiration",1,SWIGTYPE_p_Watchdog);
-  }
-  
-  arg2 = (double)lua_tonumber(L, 2);
-  (arg1)->SetExpiration(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Watchdog_GetEnabled(lua_State* L) {
-  int SWIG_arg = 0;
-  Watchdog *arg1 = (Watchdog *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("Watchdog::GetEnabled",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Watchdog::GetEnabled",1,"Watchdog *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Watchdog,0))){
-    SWIG_fail_ptr("Watchdog_GetEnabled",1,SWIGTYPE_p_Watchdog);
-  }
-  
-  result = (bool)(arg1)->GetEnabled();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Watchdog_SetEnabled(lua_State* L) {
-  int SWIG_arg = 0;
-  Watchdog *arg1 = (Watchdog *) 0 ;
-  bool arg2 ;
-  
-  SWIG_check_num_args("Watchdog::SetEnabled",2,2)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Watchdog::SetEnabled",1,"Watchdog *");
-  if(!lua_isboolean(L,2)) SWIG_fail_arg("Watchdog::SetEnabled",2,"bool");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Watchdog,0))){
-    SWIG_fail_ptr("Watchdog_SetEnabled",1,SWIGTYPE_p_Watchdog);
-  }
-  
-  arg2 = (lua_toboolean(L, 2)!=0);
-  (arg1)->SetEnabled(arg2);
-  
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Watchdog_IsAlive(lua_State* L) {
-  int SWIG_arg = 0;
-  Watchdog *arg1 = (Watchdog *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("Watchdog::IsAlive",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Watchdog::IsAlive",1,"Watchdog *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Watchdog,0))){
-    SWIG_fail_ptr("Watchdog_IsAlive",1,SWIGTYPE_p_Watchdog);
-  }
-  
-  result = (bool)(arg1)->IsAlive();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static int _wrap_Watchdog_IsSystemActive(lua_State* L) {
-  int SWIG_arg = 0;
-  Watchdog *arg1 = (Watchdog *) 0 ;
-  bool result;
-  
-  SWIG_check_num_args("Watchdog::IsSystemActive",1,1)
-  if(!SWIG_isptrtype(L,1)) SWIG_fail_arg("Watchdog::IsSystemActive",1,"Watchdog *");
-  
-  if (!SWIG_IsOK(SWIG_ConvertPtr(L,1,(void**)&arg1,SWIGTYPE_p_Watchdog,0))){
-    SWIG_fail_ptr("Watchdog_IsSystemActive",1,SWIGTYPE_p_Watchdog);
-  }
-  
-  result = (bool)(arg1)->IsSystemActive();
-  lua_pushboolean(L,(int)(result!=0)); SWIG_arg++;
-  return SWIG_arg;
-  
-  if(0) SWIG_fail;
-  
-fail:
-  lua_error(L);
-  return SWIG_arg;
-}
-
-
-static void swig_delete_Watchdog(void *obj) {
-Watchdog *arg1 = (Watchdog *) obj;
-delete arg1;
-}
-static swig_lua_method swig_Watchdog_methods[] = {
-    {"Feed", _wrap_Watchdog_Feed}, 
-    {"Kill", _wrap_Watchdog_Kill}, 
-    {"GetTimer", _wrap_Watchdog_GetTimer}, 
-    {"GetExpiration", _wrap_Watchdog_GetExpiration}, 
-    {"SetExpiration", _wrap_Watchdog_SetExpiration}, 
-    {"GetEnabled", _wrap_Watchdog_GetEnabled}, 
-    {"SetEnabled", _wrap_Watchdog_SetEnabled}, 
-    {"IsAlive", _wrap_Watchdog_IsAlive}, 
-    {"IsSystemActive", _wrap_Watchdog_IsSystemActive}, 
-    {0,0}
-};
-static swig_lua_attribute swig_Watchdog_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_attribute swig_Watchdog_cls_attributes[] = {
-    {0,0,0}
-};
-static swig_lua_method swig_Watchdog_cls_methods[] = {
-    {0,0}
-};
-static swig_lua_const_info swig_Watchdog_cls_constants[] = {
-    {SWIG_LUA_CONSTTAB_FLOAT("kDefaultWatchdogExpiration", Watchdog::kDefaultWatchdogExpiration)},
-    {0,0,0,0,0,0}
-};
-static swig_lua_class *swig_Watchdog_bases[] = {0,0};
-static const char *swig_Watchdog_base_names[] = {"SensorBase *",0};
-static swig_lua_class _wrap_class_Watchdog = { "Watchdog", &SWIGTYPE_p_Watchdog,_wrap_new_Watchdog, swig_delete_Watchdog, swig_Watchdog_methods, swig_Watchdog_attributes, { "Watchdog", swig_Watchdog_cls_methods, swig_Watchdog_cls_attributes, swig_Watchdog_cls_constants }, swig_Watchdog_bases, swig_Watchdog_base_names };
+static swig_lua_class *swig_AxisCamera_bases[] = {0,0};
+static const char *swig_AxisCamera_base_names[] = {"ErrorBase *",0};
+static swig_lua_class _wrap_class_AxisCamera = { "AxisCamera", &SWIGTYPE_p_AxisCamera,_wrap_new_AxisCamera, swig_delete_AxisCamera, swig_AxisCamera_methods, swig_AxisCamera_attributes, { "AxisCamera", swig_AxisCamera_cls_methods, swig_AxisCamera_cls_attributes, swig_AxisCamera_cls_constants }, swig_AxisCamera_bases, swig_AxisCamera_base_names };
 
 static int _wrap_wpi_error_s_ModuleIndexOutOfRange_set(lua_State* L) {
   int SWIG_arg = 0;
@@ -43853,6 +30649,26 @@ static int _wrap_wpi_error_s_ModuleIndexOutOfRange_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_ModuleIndexOutOfRange",0,0)
   result = (char *)wpi_error_s_ModuleIndexOutOfRange;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_ModuleIndexOutOfRange_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_ModuleIndexOutOfRange",0,0)
+  result = (int32_t)wpi_error_value_ModuleIndexOutOfRange;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -43906,6 +30722,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_ChannelIndexOutOfRange_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_ChannelIndexOutOfRange",0,0)
+  result = (int32_t)wpi_error_value_ChannelIndexOutOfRange;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_NotAllocated_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -43939,6 +30775,26 @@ static int _wrap_wpi_error_s_NotAllocated_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_NotAllocated",0,0)
   result = (char *)wpi_error_s_NotAllocated;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_NotAllocated_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_NotAllocated",0,0)
+  result = (int32_t)wpi_error_value_NotAllocated;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -43992,6 +30848,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_ResourceAlreadyAllocated_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_ResourceAlreadyAllocated",0,0)
+  result = (int32_t)wpi_error_value_ResourceAlreadyAllocated;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_NoAvailableResources_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -44025,6 +30901,26 @@ static int _wrap_wpi_error_s_NoAvailableResources_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_NoAvailableResources",0,0)
   result = (char *)wpi_error_s_NoAvailableResources;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_NoAvailableResources_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_NoAvailableResources",0,0)
+  result = (int32_t)wpi_error_value_NoAvailableResources;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -44078,6 +30974,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_NullParameter_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_NullParameter",0,0)
+  result = (int32_t)wpi_error_value_NullParameter;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_Timeout_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -44111,6 +31027,26 @@ static int _wrap_wpi_error_s_Timeout_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_Timeout",0,0)
   result = (char *)wpi_error_s_Timeout;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_Timeout_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_Timeout",0,0)
+  result = (int32_t)wpi_error_value_Timeout;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -44164,6 +31100,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_CompassManufacturerError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_CompassManufacturerError",0,0)
+  result = (int32_t)wpi_error_value_CompassManufacturerError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_CompassTypeError_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -44197,6 +31153,26 @@ static int _wrap_wpi_error_s_CompassTypeError_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_CompassTypeError",0,0)
   result = (char *)wpi_error_s_CompassTypeError;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_CompassTypeError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_CompassTypeError",0,0)
+  result = (int32_t)wpi_error_value_CompassTypeError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -44250,6 +31226,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_IncompatibleMode_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_IncompatibleMode",0,0)
+  result = (int32_t)wpi_error_value_IncompatibleMode;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_AnalogTriggerLimitOrderError_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -44283,6 +31279,26 @@ static int _wrap_wpi_error_s_AnalogTriggerLimitOrderError_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_AnalogTriggerLimitOrderError",0,0)
   result = (char *)wpi_error_s_AnalogTriggerLimitOrderError;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_AnalogTriggerLimitOrderError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_AnalogTriggerLimitOrderError",0,0)
+  result = (int32_t)wpi_error_value_AnalogTriggerLimitOrderError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -44336,6 +31352,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_AnalogTriggerPulseOutputError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_AnalogTriggerPulseOutputError",0,0)
+  result = (int32_t)wpi_error_value_AnalogTriggerPulseOutputError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_TaskError_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -44369,6 +31405,26 @@ static int _wrap_wpi_error_s_TaskError_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_TaskError",0,0)
   result = (char *)wpi_error_s_TaskError;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_TaskError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_TaskError",0,0)
+  result = (int32_t)wpi_error_value_TaskError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -44422,6 +31478,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_TaskIDError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_TaskIDError",0,0)
+  result = (int32_t)wpi_error_value_TaskIDError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_TaskDeletedError_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -44455,6 +31531,26 @@ static int _wrap_wpi_error_s_TaskDeletedError_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_TaskDeletedError",0,0)
   result = (char *)wpi_error_s_TaskDeletedError;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_TaskDeletedError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_TaskDeletedError",0,0)
+  result = (int32_t)wpi_error_value_TaskDeletedError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -44508,6 +31604,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_TaskOptionsError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_TaskOptionsError",0,0)
+  result = (int32_t)wpi_error_value_TaskOptionsError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_TaskMemoryError_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -44541,6 +31657,26 @@ static int _wrap_wpi_error_s_TaskMemoryError_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_TaskMemoryError",0,0)
   result = (char *)wpi_error_s_TaskMemoryError;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_TaskMemoryError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_TaskMemoryError",0,0)
+  result = (int32_t)wpi_error_value_TaskMemoryError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -44594,6 +31730,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_TaskPriorityError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_TaskPriorityError",0,0)
+  result = (int32_t)wpi_error_value_TaskPriorityError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_DriveUninitialized_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -44627,6 +31783,26 @@ static int _wrap_wpi_error_s_DriveUninitialized_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_DriveUninitialized",0,0)
   result = (char *)wpi_error_s_DriveUninitialized;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_DriveUninitialized_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_DriveUninitialized",0,0)
+  result = (int32_t)wpi_error_value_DriveUninitialized;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -44680,6 +31856,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_CompressorNonMatching_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_CompressorNonMatching",0,0)
+  result = (int32_t)wpi_error_value_CompressorNonMatching;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_CompressorAlreadyDefined_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -44713,6 +31909,26 @@ static int _wrap_wpi_error_s_CompressorAlreadyDefined_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_CompressorAlreadyDefined",0,0)
   result = (char *)wpi_error_s_CompressorAlreadyDefined;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_CompressorAlreadyDefined_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_CompressorAlreadyDefined",0,0)
+  result = (int32_t)wpi_error_value_CompressorAlreadyDefined;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -44766,6 +31982,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_CompressorUndefined_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_CompressorUndefined",0,0)
+  result = (int32_t)wpi_error_value_CompressorUndefined;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_InconsistentArrayValueAdded_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -44799,6 +32035,26 @@ static int _wrap_wpi_error_s_InconsistentArrayValueAdded_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_InconsistentArrayValueAdded",0,0)
   result = (char *)wpi_error_s_InconsistentArrayValueAdded;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_InconsistentArrayValueAdded_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_InconsistentArrayValueAdded",0,0)
+  result = (int32_t)wpi_error_value_InconsistentArrayValueAdded;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -44852,6 +32108,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_MismatchedComplexTypeClose_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_MismatchedComplexTypeClose",0,0)
+  result = (int32_t)wpi_error_value_MismatchedComplexTypeClose;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_DashboardDataOverflow_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -44885,6 +32161,26 @@ static int _wrap_wpi_error_s_DashboardDataOverflow_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_DashboardDataOverflow",0,0)
   result = (char *)wpi_error_s_DashboardDataOverflow;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_DashboardDataOverflow_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_DashboardDataOverflow",0,0)
+  result = (int32_t)wpi_error_value_DashboardDataOverflow;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -44938,6 +32234,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_DashboardDataCollision_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_DashboardDataCollision",0,0)
+  result = (int32_t)wpi_error_value_DashboardDataCollision;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_EnhancedIOMissing_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -44971,6 +32287,26 @@ static int _wrap_wpi_error_s_EnhancedIOMissing_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_EnhancedIOMissing",0,0)
   result = (char *)wpi_error_s_EnhancedIOMissing;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_EnhancedIOMissing_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_EnhancedIOMissing",0,0)
+  result = (int32_t)wpi_error_value_EnhancedIOMissing;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -45024,6 +32360,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_LineNotOutput_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_LineNotOutput",0,0)
+  result = (int32_t)wpi_error_value_LineNotOutput;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_ParameterOutOfRange_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -45057,6 +32413,26 @@ static int _wrap_wpi_error_s_ParameterOutOfRange_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_ParameterOutOfRange",0,0)
   result = (char *)wpi_error_s_ParameterOutOfRange;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_ParameterOutOfRange_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_ParameterOutOfRange",0,0)
+  result = (int32_t)wpi_error_value_ParameterOutOfRange;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -45110,6 +32486,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_SPIClockRateTooLow_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_SPIClockRateTooLow",0,0)
+  result = (int32_t)wpi_error_value_SPIClockRateTooLow;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_JaguarVersionError_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -45143,6 +32539,89 @@ static int _wrap_wpi_error_s_JaguarVersionError_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_JaguarVersionError",0,0)
   result = (char *)wpi_error_s_JaguarVersionError;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_JaguarVersionError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_JaguarVersionError",0,0)
+  result = (int32_t)wpi_error_value_JaguarVersionError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_s_JaguarMessageNotFound_set(lua_State* L) {
+  int SWIG_arg = 0;
+  char *arg1 = (char *) 0 ;
+  
+  SWIG_check_num_args("wpi_error_s_JaguarMessageNotFound",1,1)
+  if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("wpi_error_s_JaguarMessageNotFound",1,"char const *");
+  arg1 = (char *)lua_tostring(L, 1);
+  {
+    if (arg1) {
+      wpi_error_s_JaguarMessageNotFound = (char const *) (new char[strlen((const char *)arg1)+1]);
+      strcpy((char *)wpi_error_s_JaguarMessageNotFound, (const char *)arg1);
+    } else {
+      wpi_error_s_JaguarMessageNotFound = 0;
+    }
+  }
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_s_JaguarMessageNotFound_get(lua_State* L) {
+  int SWIG_arg = 0;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("wpi_error_s_JaguarMessageNotFound",0,0)
+  result = (char *)wpi_error_s_JaguarMessageNotFound;
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_JaguarMessageNotFound_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_JaguarMessageNotFound",0,0)
+  result = (int32_t)wpi_error_value_JaguarMessageNotFound;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -45196,6 +32675,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_NetworkTablesReadError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_NetworkTablesReadError",0,0)
+  result = (int32_t)wpi_error_value_NetworkTablesReadError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_NetworkTablesBufferFull_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -45229,6 +32728,26 @@ static int _wrap_wpi_error_s_NetworkTablesBufferFull_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_NetworkTablesBufferFull",0,0)
   result = (char *)wpi_error_s_NetworkTablesBufferFull;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_NetworkTablesBufferFull_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_NetworkTablesBufferFull",0,0)
+  result = (int32_t)wpi_error_value_NetworkTablesBufferFull;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -45282,6 +32801,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_NetworkTablesWrongType_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_NetworkTablesWrongType",0,0)
+  result = (int32_t)wpi_error_value_NetworkTablesWrongType;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_NetworkTablesCorrupt_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -45315,6 +32854,26 @@ static int _wrap_wpi_error_s_NetworkTablesCorrupt_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_NetworkTablesCorrupt",0,0)
   result = (char *)wpi_error_s_NetworkTablesCorrupt;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_NetworkTablesCorrupt_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_NetworkTablesCorrupt",0,0)
+  result = (int32_t)wpi_error_value_NetworkTablesCorrupt;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -45368,6 +32927,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_SmartDashboardMissingKey_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_SmartDashboardMissingKey",0,0)
+  result = (int32_t)wpi_error_value_SmartDashboardMissingKey;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_CommandIllegalUse_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -45401,6 +32980,89 @@ static int _wrap_wpi_error_s_CommandIllegalUse_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_CommandIllegalUse",0,0)
   result = (char *)wpi_error_s_CommandIllegalUse;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_CommandIllegalUse_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_CommandIllegalUse",0,0)
+  result = (int32_t)wpi_error_value_CommandIllegalUse;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_s_UnsupportedInSimulation_set(lua_State* L) {
+  int SWIG_arg = 0;
+  char *arg1 = (char *) 0 ;
+  
+  SWIG_check_num_args("wpi_error_s_UnsupportedInSimulation",1,1)
+  if(!SWIG_lua_isnilstring(L,1)) SWIG_fail_arg("wpi_error_s_UnsupportedInSimulation",1,"char const *");
+  arg1 = (char *)lua_tostring(L, 1);
+  {
+    if (arg1) {
+      wpi_error_s_UnsupportedInSimulation = (char const *) (new char[strlen((const char *)arg1)+1]);
+      strcpy((char *)wpi_error_s_UnsupportedInSimulation, (const char *)arg1);
+    } else {
+      wpi_error_s_UnsupportedInSimulation = 0;
+    }
+  }
+  
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_s_UnsupportedInSimulation_get(lua_State* L) {
+  int SWIG_arg = 0;
+  char *result = 0 ;
+  
+  SWIG_check_num_args("wpi_error_s_UnsupportedInSimulation",0,0)
+  result = (char *)wpi_error_s_UnsupportedInSimulation;
+  lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_UnsupportedInSimulation_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_UnsupportedInSimulation",0,0)
+  result = (int32_t)wpi_error_value_UnsupportedInSimulation;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -45454,6 +33116,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_SampleRateTooHigh_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_SampleRateTooHigh",0,0)
+  result = (int32_t)wpi_error_value_SampleRateTooHigh;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_VoltageOutOfRange_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -45487,6 +33169,26 @@ static int _wrap_wpi_error_s_VoltageOutOfRange_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_VoltageOutOfRange",0,0)
   result = (char *)wpi_error_s_VoltageOutOfRange;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_VoltageOutOfRange_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_VoltageOutOfRange",0,0)
+  result = (int32_t)wpi_error_value_VoltageOutOfRange;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -45540,6 +33242,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_CompressorTaskError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_CompressorTaskError",0,0)
+  result = (int32_t)wpi_error_value_CompressorTaskError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_LoopTimingError_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -45573,6 +33295,26 @@ static int _wrap_wpi_error_s_LoopTimingError_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_LoopTimingError",0,0)
   result = (char *)wpi_error_s_LoopTimingError;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_LoopTimingError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_LoopTimingError",0,0)
+  result = (int32_t)wpi_error_value_LoopTimingError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -45626,6 +33368,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_NonBinaryDigitalValue_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_NonBinaryDigitalValue",0,0)
+  result = (int32_t)wpi_error_value_NonBinaryDigitalValue;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_IncorrectBatteryChannel_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -45659,6 +33421,26 @@ static int _wrap_wpi_error_s_IncorrectBatteryChannel_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_IncorrectBatteryChannel",0,0)
   result = (char *)wpi_error_s_IncorrectBatteryChannel;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_IncorrectBatteryChannel_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_IncorrectBatteryChannel",0,0)
+  result = (int32_t)wpi_error_value_IncorrectBatteryChannel;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -45712,6 +33494,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_BadJoystickIndex_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_BadJoystickIndex",0,0)
+  result = (int32_t)wpi_error_value_BadJoystickIndex;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_BadJoystickAxis_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -45745,6 +33547,26 @@ static int _wrap_wpi_error_s_BadJoystickAxis_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_BadJoystickAxis",0,0)
   result = (char *)wpi_error_s_BadJoystickAxis;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_BadJoystickAxis_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_BadJoystickAxis",0,0)
+  result = (int32_t)wpi_error_value_BadJoystickAxis;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -45798,6 +33620,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_InvalidMotorIndex_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_InvalidMotorIndex",0,0)
+  result = (int32_t)wpi_error_value_InvalidMotorIndex;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_DriverStationTaskError_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -45831,6 +33673,26 @@ static int _wrap_wpi_error_s_DriverStationTaskError_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_DriverStationTaskError",0,0)
   result = (char *)wpi_error_s_DriverStationTaskError;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_DriverStationTaskError_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_DriverStationTaskError",0,0)
+  result = (int32_t)wpi_error_value_DriverStationTaskError;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -45884,6 +33746,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_EnhancedIOPWMPeriodOutOfRange_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_EnhancedIOPWMPeriodOutOfRange",0,0)
+  result = (int32_t)wpi_error_value_EnhancedIOPWMPeriodOutOfRange;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_SPIWriteNoMOSI_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -45917,6 +33799,26 @@ static int _wrap_wpi_error_s_SPIWriteNoMOSI_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_SPIWriteNoMOSI",0,0)
   result = (char *)wpi_error_s_SPIWriteNoMOSI;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_SPIWriteNoMOSI_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_SPIWriteNoMOSI",0,0)
+  result = (int32_t)wpi_error_value_SPIWriteNoMOSI;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -45970,6 +33872,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_SPIReadNoMISO_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_SPIReadNoMISO",0,0)
+  result = (int32_t)wpi_error_value_SPIReadNoMISO;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_SPIReadNoData_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -46013,6 +33935,26 @@ fail:
 }
 
 
+static int _wrap_wpi_error_value_SPIReadNoData_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_SPIReadNoData",0,0)
+  result = (int32_t)wpi_error_value_SPIReadNoData;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
 static int _wrap_wpi_error_s_IncompatibleState_set(lua_State* L) {
   int SWIG_arg = 0;
   char *arg1 = (char *) 0 ;
@@ -46046,6 +33988,26 @@ static int _wrap_wpi_error_s_IncompatibleState_get(lua_State* L) {
   SWIG_check_num_args("wpi_error_s_IncompatibleState",0,0)
   result = (char *)wpi_error_s_IncompatibleState;
   lua_pushstring(L,(const char *)result); SWIG_arg++;
+  return SWIG_arg;
+  
+  if(0) SWIG_fail;
+  
+fail:
+  lua_error(L);
+  return SWIG_arg;
+}
+
+
+static int _wrap_wpi_error_value_IncompatibleState_get(lua_State* L) {
+  int SWIG_arg = 0;
+  int32_t result;
+  
+  SWIG_check_num_args("wpi_error_value_IncompatibleState",0,0)
+  result = (int32_t)wpi_error_value_IncompatibleState;
+  {
+    int32_t * resultptr = new int32_t((const int32_t &) result);
+    SWIG_NewPointerObj(L,(void *) resultptr,SWIGTYPE_p_int32_t,1); SWIG_arg++;
+  }
   return SWIG_arg;
   
   if(0) SWIG_fail;
@@ -46154,75 +34116,49 @@ fail:
 #endif
 
 static const struct luaL_Reg swig_commands[] = {
-    { "AnalogModule_GetInstance", _wrap_AnalogModule_GetInstance},
-    { "CANJaguar_UpdateSyncGroup", _wrap_CANJaguar_UpdateSyncGroup},
-    { "Scheduler_GetInstance", _wrap_Scheduler_GetInstance},
-    { "DigitalModule_GetInstance", _wrap_DigitalModule_GetInstance},
-    { "DigitalModule_RemapDigitalChannel", _wrap_DigitalModule_RemapDigitalChannel},
-    { "DigitalModule_UnmapDigitalChannel", _wrap_DigitalModule_UnmapDigitalChannel},
+    { "AnalogInput_SetSampleRate", _wrap_AnalogInput_SetSampleRate},
+    { "AnalogInput_GetSampleRate", _wrap_AnalogInput_GetSampleRate},
     { "DriverStation_GetInstance", _wrap_DriverStation_GetInstance},
+    { "DriverStation_ReportError", _wrap_DriverStation_ReportError},
     { "ErrorBase_SetGlobalError", _wrap_ErrorBase_SetGlobalError},
     { "ErrorBase_SetGlobalWPIError", _wrap_ErrorBase_SetGlobalWPIError},
     { "ErrorBase_GetGlobalError", _wrap_ErrorBase_GetGlobalError},
     { "Joystick_GetStickForPort", _wrap_Joystick_GetStickForPort},
-    { "Kinect_GetInstance", _wrap_Kinect_GetInstance},
     { "Preferences_GetInstance", _wrap_Preferences_GetInstance},
     { "Resource_CreateResourceObject", _wrap_Resource_CreateResourceObject},
-    { "RobotBase_getInstance", _wrap_RobotBase_getInstance},
-    { "RobotBase_setInstance", _wrap_RobotBase_setInstance},
-    { "RobotBase_startRobotTask", _wrap_RobotBase_startRobotTask},
-    { "RobotBase_robotTask", _wrap_RobotBase_robotTask},
     { "SensorBase_DeleteSingletons", _wrap_SensorBase_DeleteSingletons},
-    { "SensorBase_GetDefaultAnalogModule", _wrap_SensorBase_GetDefaultAnalogModule},
-    { "SensorBase_GetDefaultDigitalModule", _wrap_SensorBase_GetDefaultDigitalModule},
     { "SensorBase_GetDefaultSolenoidModule", _wrap_SensorBase_GetDefaultSolenoidModule},
-    { "SensorBase_CheckAnalogModule", _wrap_SensorBase_CheckAnalogModule},
-    { "SensorBase_CheckDigitalModule", _wrap_SensorBase_CheckDigitalModule},
-    { "SensorBase_CheckPWMModule", _wrap_SensorBase_CheckPWMModule},
-    { "SensorBase_CheckRelayModule", _wrap_SensorBase_CheckRelayModule},
     { "SensorBase_CheckSolenoidModule", _wrap_SensorBase_CheckSolenoidModule},
     { "SensorBase_CheckDigitalChannel", _wrap_SensorBase_CheckDigitalChannel},
     { "SensorBase_CheckRelayChannel", _wrap_SensorBase_CheckRelayChannel},
     { "SensorBase_CheckPWMChannel", _wrap_SensorBase_CheckPWMChannel},
-    { "SensorBase_CheckAnalogChannel", _wrap_SensorBase_CheckAnalogChannel},
+    { "SensorBase_CheckAnalogInput", _wrap_SensorBase_CheckAnalogInput},
+    { "SensorBase_CheckAnalogOutput", _wrap_SensorBase_CheckAnalogOutput},
     { "SensorBase_CheckSolenoidChannel", _wrap_SensorBase_CheckSolenoidChannel},
+    { "SensorBase_CheckPDPChannel", _wrap_SensorBase_CheckPDPChannel},
     { "Servo_GetMaxAngle", _wrap_Servo_GetMaxAngle},
     { "Servo_GetMinAngle", _wrap_Servo_GetMinAngle},
     { "SmartDashboard_init", _wrap_SmartDashboard_init},
     { "SmartDashboard_PutData",_wrap_SmartDashboard_PutData},
+    { "SmartDashboard_GetData", _wrap_SmartDashboard_GetData},
     { "SmartDashboard_PutBoolean", _wrap_SmartDashboard_PutBoolean},
-    { "SmartDashboard_GetBoolean", _wrap_SmartDashboard_GetBoolean},
+    { "SmartDashboard_GetBoolean",_wrap_SmartDashboard_GetBoolean},
     { "SmartDashboard_PutNumber", _wrap_SmartDashboard_PutNumber},
-    { "SmartDashboard_GetNumber", _wrap_SmartDashboard_GetNumber},
+    { "SmartDashboard_GetNumber",_wrap_SmartDashboard_GetNumber},
     { "SmartDashboard_PutString", _wrap_SmartDashboard_PutString},
     { "SmartDashboard_GetString",_wrap_SmartDashboard_GetString},
     { "SmartDashboard_PutValue", _wrap_SmartDashboard_PutValue},
     { "SmartDashboard_RetrieveValue", _wrap_SmartDashboard_RetrieveValue},
-    { "Wait", _wrap_Wait},
-    { "GetClock", _wrap_GetClock},
-    { "GetTime", _wrap_GetTime},
-    { "Timer_GetFPGATimestamp", _wrap_Timer_GetFPGATimestamp},
-    { "Timer_GetPPCTimestamp", _wrap_Timer_GetPPCTimestamp},
     { "Ultrasonic_SetAutomaticMode", _wrap_Ultrasonic_SetAutomaticMode},
     { "wpi_assert_impl", _wrap_wpi_assert_impl},
     { "wpi_assertEqual_impl", _wrap_wpi_assertEqual_impl},
     { "wpi_assertNotEqual_impl", _wrap_wpi_assertNotEqual_impl},
-    { "wpi_getLabel",_wrap_wpi_getLabel},
-    { "wpi_selfTrace", _wrap_wpi_selfTrace},
     { "wpi_suspendOnAssertEnabled", _wrap_wpi_suspendOnAssertEnabled},
-    { "wpi_stackTraceOnAssertEnable", _wrap_wpi_stackTraceOnAssertEnable},
     { "GetFPGAVersion", _wrap_GetFPGAVersion},
     { "GetFPGARevision", _wrap_GetFPGARevision},
     { "GetFPGATime", _wrap_GetFPGATime},
-    { "GetRIOUserSwitch", _wrap_GetRIOUserSwitch},
-    { "SetRIOUserLED", _wrap_SetRIOUserLED},
-    { "GetRIOUserLED", _wrap_GetRIOUserLED},
-    { "ToggleRIOUserLED", _wrap_ToggleRIOUserLED},
-    { "SetRIO_FPGA_LED", _wrap_SetRIO_FPGA_LED},
-    { "GetRIO_FPGA_LED", _wrap_GetRIO_FPGA_LED},
-    { "ToggleRIO_FPGA_LED", _wrap_ToggleRIO_FPGA_LED},
-    { "AxisCamera_GetInstance",_wrap_AxisCamera_GetInstance},
-    { "AxisCamera_DeleteInstance", _wrap_AxisCamera_DeleteInstance},
+    { "GetUserButton", _wrap_GetUserButton},
+    { "GetStackTrace", _wrap_GetStackTrace},
     { "asUint32", _wrap_asUint32},
     { "fromUint32", _wrap_fromUint32},
     { "asStdString", _wrap_asStdString},
@@ -46231,163 +34167,148 @@ static const struct luaL_Reg swig_commands[] = {
 };
 
 static swig_lua_var_info swig_variables[] = {
-    { "AnalogChannel_kAccumulatorChannels", _wrap_AnalogChannel_kAccumulatorChannels_get, SWIG_Lua_set_immutable },
-    { "AnalogIOButton_kThreshold", _wrap_AnalogIOButton_kThreshold_get, SWIG_Lua_set_immutable },
-    { "DigitalIOButton_kActiveState", _wrap_DigitalIOButton_kActiveState_get, SWIG_Lua_set_immutable },
-    { "kExpectedLoopTiming", _wrap_kExpectedLoopTiming_get, SWIG_Lua_set_immutable },
+    { "AnalogInput_kAccumulatorChannels", _wrap_AnalogInput_kAccumulatorChannels_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_ModuleIndexOutOfRange", _wrap_wpi_error_s_ModuleIndexOutOfRange_get, _wrap_wpi_error_s_ModuleIndexOutOfRange_set },
+    { "wpi_error_value_ModuleIndexOutOfRange", _wrap_wpi_error_value_ModuleIndexOutOfRange_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_ChannelIndexOutOfRange", _wrap_wpi_error_s_ChannelIndexOutOfRange_get, _wrap_wpi_error_s_ChannelIndexOutOfRange_set },
+    { "wpi_error_value_ChannelIndexOutOfRange", _wrap_wpi_error_value_ChannelIndexOutOfRange_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_NotAllocated", _wrap_wpi_error_s_NotAllocated_get, _wrap_wpi_error_s_NotAllocated_set },
+    { "wpi_error_value_NotAllocated", _wrap_wpi_error_value_NotAllocated_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_ResourceAlreadyAllocated", _wrap_wpi_error_s_ResourceAlreadyAllocated_get, _wrap_wpi_error_s_ResourceAlreadyAllocated_set },
+    { "wpi_error_value_ResourceAlreadyAllocated", _wrap_wpi_error_value_ResourceAlreadyAllocated_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_NoAvailableResources", _wrap_wpi_error_s_NoAvailableResources_get, _wrap_wpi_error_s_NoAvailableResources_set },
+    { "wpi_error_value_NoAvailableResources", _wrap_wpi_error_value_NoAvailableResources_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_NullParameter", _wrap_wpi_error_s_NullParameter_get, _wrap_wpi_error_s_NullParameter_set },
+    { "wpi_error_value_NullParameter", _wrap_wpi_error_value_NullParameter_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_Timeout", _wrap_wpi_error_s_Timeout_get, _wrap_wpi_error_s_Timeout_set },
+    { "wpi_error_value_Timeout", _wrap_wpi_error_value_Timeout_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_CompassManufacturerError", _wrap_wpi_error_s_CompassManufacturerError_get, _wrap_wpi_error_s_CompassManufacturerError_set },
+    { "wpi_error_value_CompassManufacturerError", _wrap_wpi_error_value_CompassManufacturerError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_CompassTypeError", _wrap_wpi_error_s_CompassTypeError_get, _wrap_wpi_error_s_CompassTypeError_set },
+    { "wpi_error_value_CompassTypeError", _wrap_wpi_error_value_CompassTypeError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_IncompatibleMode", _wrap_wpi_error_s_IncompatibleMode_get, _wrap_wpi_error_s_IncompatibleMode_set },
+    { "wpi_error_value_IncompatibleMode", _wrap_wpi_error_value_IncompatibleMode_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_AnalogTriggerLimitOrderError", _wrap_wpi_error_s_AnalogTriggerLimitOrderError_get, _wrap_wpi_error_s_AnalogTriggerLimitOrderError_set },
+    { "wpi_error_value_AnalogTriggerLimitOrderError", _wrap_wpi_error_value_AnalogTriggerLimitOrderError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_AnalogTriggerPulseOutputError", _wrap_wpi_error_s_AnalogTriggerPulseOutputError_get, _wrap_wpi_error_s_AnalogTriggerPulseOutputError_set },
+    { "wpi_error_value_AnalogTriggerPulseOutputError", _wrap_wpi_error_value_AnalogTriggerPulseOutputError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_TaskError", _wrap_wpi_error_s_TaskError_get, _wrap_wpi_error_s_TaskError_set },
+    { "wpi_error_value_TaskError", _wrap_wpi_error_value_TaskError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_TaskIDError", _wrap_wpi_error_s_TaskIDError_get, _wrap_wpi_error_s_TaskIDError_set },
+    { "wpi_error_value_TaskIDError", _wrap_wpi_error_value_TaskIDError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_TaskDeletedError", _wrap_wpi_error_s_TaskDeletedError_get, _wrap_wpi_error_s_TaskDeletedError_set },
+    { "wpi_error_value_TaskDeletedError", _wrap_wpi_error_value_TaskDeletedError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_TaskOptionsError", _wrap_wpi_error_s_TaskOptionsError_get, _wrap_wpi_error_s_TaskOptionsError_set },
+    { "wpi_error_value_TaskOptionsError", _wrap_wpi_error_value_TaskOptionsError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_TaskMemoryError", _wrap_wpi_error_s_TaskMemoryError_get, _wrap_wpi_error_s_TaskMemoryError_set },
+    { "wpi_error_value_TaskMemoryError", _wrap_wpi_error_value_TaskMemoryError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_TaskPriorityError", _wrap_wpi_error_s_TaskPriorityError_get, _wrap_wpi_error_s_TaskPriorityError_set },
+    { "wpi_error_value_TaskPriorityError", _wrap_wpi_error_value_TaskPriorityError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_DriveUninitialized", _wrap_wpi_error_s_DriveUninitialized_get, _wrap_wpi_error_s_DriveUninitialized_set },
+    { "wpi_error_value_DriveUninitialized", _wrap_wpi_error_value_DriveUninitialized_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_CompressorNonMatching", _wrap_wpi_error_s_CompressorNonMatching_get, _wrap_wpi_error_s_CompressorNonMatching_set },
+    { "wpi_error_value_CompressorNonMatching", _wrap_wpi_error_value_CompressorNonMatching_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_CompressorAlreadyDefined", _wrap_wpi_error_s_CompressorAlreadyDefined_get, _wrap_wpi_error_s_CompressorAlreadyDefined_set },
+    { "wpi_error_value_CompressorAlreadyDefined", _wrap_wpi_error_value_CompressorAlreadyDefined_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_CompressorUndefined", _wrap_wpi_error_s_CompressorUndefined_get, _wrap_wpi_error_s_CompressorUndefined_set },
+    { "wpi_error_value_CompressorUndefined", _wrap_wpi_error_value_CompressorUndefined_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_InconsistentArrayValueAdded", _wrap_wpi_error_s_InconsistentArrayValueAdded_get, _wrap_wpi_error_s_InconsistentArrayValueAdded_set },
+    { "wpi_error_value_InconsistentArrayValueAdded", _wrap_wpi_error_value_InconsistentArrayValueAdded_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_MismatchedComplexTypeClose", _wrap_wpi_error_s_MismatchedComplexTypeClose_get, _wrap_wpi_error_s_MismatchedComplexTypeClose_set },
+    { "wpi_error_value_MismatchedComplexTypeClose", _wrap_wpi_error_value_MismatchedComplexTypeClose_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_DashboardDataOverflow", _wrap_wpi_error_s_DashboardDataOverflow_get, _wrap_wpi_error_s_DashboardDataOverflow_set },
+    { "wpi_error_value_DashboardDataOverflow", _wrap_wpi_error_value_DashboardDataOverflow_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_DashboardDataCollision", _wrap_wpi_error_s_DashboardDataCollision_get, _wrap_wpi_error_s_DashboardDataCollision_set },
+    { "wpi_error_value_DashboardDataCollision", _wrap_wpi_error_value_DashboardDataCollision_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_EnhancedIOMissing", _wrap_wpi_error_s_EnhancedIOMissing_get, _wrap_wpi_error_s_EnhancedIOMissing_set },
+    { "wpi_error_value_EnhancedIOMissing", _wrap_wpi_error_value_EnhancedIOMissing_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_LineNotOutput", _wrap_wpi_error_s_LineNotOutput_get, _wrap_wpi_error_s_LineNotOutput_set },
+    { "wpi_error_value_LineNotOutput", _wrap_wpi_error_value_LineNotOutput_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_ParameterOutOfRange", _wrap_wpi_error_s_ParameterOutOfRange_get, _wrap_wpi_error_s_ParameterOutOfRange_set },
+    { "wpi_error_value_ParameterOutOfRange", _wrap_wpi_error_value_ParameterOutOfRange_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_SPIClockRateTooLow", _wrap_wpi_error_s_SPIClockRateTooLow_get, _wrap_wpi_error_s_SPIClockRateTooLow_set },
+    { "wpi_error_value_SPIClockRateTooLow", _wrap_wpi_error_value_SPIClockRateTooLow_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_JaguarVersionError", _wrap_wpi_error_s_JaguarVersionError_get, _wrap_wpi_error_s_JaguarVersionError_set },
+    { "wpi_error_value_JaguarVersionError", _wrap_wpi_error_value_JaguarVersionError_get, SWIG_Lua_set_immutable },
+    { "wpi_error_s_JaguarMessageNotFound", _wrap_wpi_error_s_JaguarMessageNotFound_get, _wrap_wpi_error_s_JaguarMessageNotFound_set },
+    { "wpi_error_value_JaguarMessageNotFound", _wrap_wpi_error_value_JaguarMessageNotFound_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_NetworkTablesReadError", _wrap_wpi_error_s_NetworkTablesReadError_get, _wrap_wpi_error_s_NetworkTablesReadError_set },
+    { "wpi_error_value_NetworkTablesReadError", _wrap_wpi_error_value_NetworkTablesReadError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_NetworkTablesBufferFull", _wrap_wpi_error_s_NetworkTablesBufferFull_get, _wrap_wpi_error_s_NetworkTablesBufferFull_set },
+    { "wpi_error_value_NetworkTablesBufferFull", _wrap_wpi_error_value_NetworkTablesBufferFull_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_NetworkTablesWrongType", _wrap_wpi_error_s_NetworkTablesWrongType_get, _wrap_wpi_error_s_NetworkTablesWrongType_set },
+    { "wpi_error_value_NetworkTablesWrongType", _wrap_wpi_error_value_NetworkTablesWrongType_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_NetworkTablesCorrupt", _wrap_wpi_error_s_NetworkTablesCorrupt_get, _wrap_wpi_error_s_NetworkTablesCorrupt_set },
+    { "wpi_error_value_NetworkTablesCorrupt", _wrap_wpi_error_value_NetworkTablesCorrupt_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_SmartDashboardMissingKey", _wrap_wpi_error_s_SmartDashboardMissingKey_get, _wrap_wpi_error_s_SmartDashboardMissingKey_set },
+    { "wpi_error_value_SmartDashboardMissingKey", _wrap_wpi_error_value_SmartDashboardMissingKey_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_CommandIllegalUse", _wrap_wpi_error_s_CommandIllegalUse_get, _wrap_wpi_error_s_CommandIllegalUse_set },
+    { "wpi_error_value_CommandIllegalUse", _wrap_wpi_error_value_CommandIllegalUse_get, SWIG_Lua_set_immutable },
+    { "wpi_error_s_UnsupportedInSimulation", _wrap_wpi_error_s_UnsupportedInSimulation_get, _wrap_wpi_error_s_UnsupportedInSimulation_set },
+    { "wpi_error_value_UnsupportedInSimulation", _wrap_wpi_error_value_UnsupportedInSimulation_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_SampleRateTooHigh", _wrap_wpi_error_s_SampleRateTooHigh_get, _wrap_wpi_error_s_SampleRateTooHigh_set },
+    { "wpi_error_value_SampleRateTooHigh", _wrap_wpi_error_value_SampleRateTooHigh_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_VoltageOutOfRange", _wrap_wpi_error_s_VoltageOutOfRange_get, _wrap_wpi_error_s_VoltageOutOfRange_set },
+    { "wpi_error_value_VoltageOutOfRange", _wrap_wpi_error_value_VoltageOutOfRange_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_CompressorTaskError", _wrap_wpi_error_s_CompressorTaskError_get, _wrap_wpi_error_s_CompressorTaskError_set },
+    { "wpi_error_value_CompressorTaskError", _wrap_wpi_error_value_CompressorTaskError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_LoopTimingError", _wrap_wpi_error_s_LoopTimingError_get, _wrap_wpi_error_s_LoopTimingError_set },
+    { "wpi_error_value_LoopTimingError", _wrap_wpi_error_value_LoopTimingError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_NonBinaryDigitalValue", _wrap_wpi_error_s_NonBinaryDigitalValue_get, _wrap_wpi_error_s_NonBinaryDigitalValue_set },
+    { "wpi_error_value_NonBinaryDigitalValue", _wrap_wpi_error_value_NonBinaryDigitalValue_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_IncorrectBatteryChannel", _wrap_wpi_error_s_IncorrectBatteryChannel_get, _wrap_wpi_error_s_IncorrectBatteryChannel_set },
+    { "wpi_error_value_IncorrectBatteryChannel", _wrap_wpi_error_value_IncorrectBatteryChannel_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_BadJoystickIndex", _wrap_wpi_error_s_BadJoystickIndex_get, _wrap_wpi_error_s_BadJoystickIndex_set },
+    { "wpi_error_value_BadJoystickIndex", _wrap_wpi_error_value_BadJoystickIndex_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_BadJoystickAxis", _wrap_wpi_error_s_BadJoystickAxis_get, _wrap_wpi_error_s_BadJoystickAxis_set },
+    { "wpi_error_value_BadJoystickAxis", _wrap_wpi_error_value_BadJoystickAxis_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_InvalidMotorIndex", _wrap_wpi_error_s_InvalidMotorIndex_get, _wrap_wpi_error_s_InvalidMotorIndex_set },
+    { "wpi_error_value_InvalidMotorIndex", _wrap_wpi_error_value_InvalidMotorIndex_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_DriverStationTaskError", _wrap_wpi_error_s_DriverStationTaskError_get, _wrap_wpi_error_s_DriverStationTaskError_set },
+    { "wpi_error_value_DriverStationTaskError", _wrap_wpi_error_value_DriverStationTaskError_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_EnhancedIOPWMPeriodOutOfRange", _wrap_wpi_error_s_EnhancedIOPWMPeriodOutOfRange_get, _wrap_wpi_error_s_EnhancedIOPWMPeriodOutOfRange_set },
+    { "wpi_error_value_EnhancedIOPWMPeriodOutOfRange", _wrap_wpi_error_value_EnhancedIOPWMPeriodOutOfRange_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_SPIWriteNoMOSI", _wrap_wpi_error_s_SPIWriteNoMOSI_get, _wrap_wpi_error_s_SPIWriteNoMOSI_set },
+    { "wpi_error_value_SPIWriteNoMOSI", _wrap_wpi_error_value_SPIWriteNoMOSI_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_SPIReadNoMISO", _wrap_wpi_error_s_SPIReadNoMISO_get, _wrap_wpi_error_s_SPIReadNoMISO_set },
+    { "wpi_error_value_SPIReadNoMISO", _wrap_wpi_error_value_SPIReadNoMISO_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_SPIReadNoData", _wrap_wpi_error_s_SPIReadNoData_get, _wrap_wpi_error_s_SPIReadNoData_set },
+    { "wpi_error_value_SPIReadNoData", _wrap_wpi_error_value_SPIReadNoData_get, SWIG_Lua_set_immutable },
     { "wpi_error_s_IncompatibleState", _wrap_wpi_error_s_IncompatibleState_get, _wrap_wpi_error_s_IncompatibleState_set },
+    { "wpi_error_value_IncompatibleState", _wrap_wpi_error_value_IncompatibleState_get, SWIG_Lua_set_immutable },
     {0,0,0}
 };
 
 static swig_lua_const_info swig_constants[] = {
-    {SWIG_LUA_CONSTTAB_INT("ADXL345_I2C_kRange_2G", ADXL345_I2C::kRange_2G)},
-    {SWIG_LUA_CONSTTAB_INT("ADXL345_I2C_kRange_4G", ADXL345_I2C::kRange_4G)},
-    {SWIG_LUA_CONSTTAB_INT("ADXL345_I2C_kRange_8G", ADXL345_I2C::kRange_8G)},
-    {SWIG_LUA_CONSTTAB_INT("ADXL345_I2C_kRange_16G", ADXL345_I2C::kRange_16G)},
+    {SWIG_LUA_CONSTTAB_INT("Accelerometer_kRange_2G", Accelerometer::kRange_2G)},
+    {SWIG_LUA_CONSTTAB_INT("Accelerometer_kRange_4G", Accelerometer::kRange_4G)},
+    {SWIG_LUA_CONSTTAB_INT("Accelerometer_kRange_8G", Accelerometer::kRange_8G)},
+    {SWIG_LUA_CONSTTAB_INT("Accelerometer_kRange_16G", Accelerometer::kRange_16G)},
     {SWIG_LUA_CONSTTAB_INT("ADXL345_I2C_kAxis_X", ADXL345_I2C::kAxis_X)},
     {SWIG_LUA_CONSTTAB_INT("ADXL345_I2C_kAxis_Y", ADXL345_I2C::kAxis_Y)},
     {SWIG_LUA_CONSTTAB_INT("ADXL345_I2C_kAxis_Z", ADXL345_I2C::kAxis_Z)},
-    {SWIG_LUA_CONSTTAB_INT("ADXL345_SPI_kRange_2G", ADXL345_SPI::kRange_2G)},
-    {SWIG_LUA_CONSTTAB_INT("ADXL345_SPI_kRange_4G", ADXL345_SPI::kRange_4G)},
-    {SWIG_LUA_CONSTTAB_INT("ADXL345_SPI_kRange_8G", ADXL345_SPI::kRange_8G)},
-    {SWIG_LUA_CONSTTAB_INT("ADXL345_SPI_kRange_16G", ADXL345_SPI::kRange_16G)},
     {SWIG_LUA_CONSTTAB_INT("ADXL345_SPI_kAxis_X", ADXL345_SPI::kAxis_X)},
     {SWIG_LUA_CONSTTAB_INT("ADXL345_SPI_kAxis_Y", ADXL345_SPI::kAxis_Y)},
     {SWIG_LUA_CONSTTAB_INT("ADXL345_SPI_kAxis_Z", ADXL345_SPI::kAxis_Z)},
-    {SWIG_LUA_CONSTTAB_INT("AnalogModule_kTimebase", AnalogModule::kTimebase)},
-    {SWIG_LUA_CONSTTAB_INT("AnalogModule_kDefaultOversampleBits", AnalogModule::kDefaultOversampleBits)},
-    {SWIG_LUA_CONSTTAB_INT("AnalogModule_kDefaultAverageBits", AnalogModule::kDefaultAverageBits)},
-    {SWIG_LUA_CONSTTAB_FLOAT("AnalogModule_kDefaultSampleRate", AnalogModule::kDefaultSampleRate)},
-    {SWIG_LUA_CONSTTAB_INT("AnalogTriggerOutput_kInWindow", AnalogTriggerOutput::kInWindow)},
-    {SWIG_LUA_CONSTTAB_INT("AnalogTriggerOutput_kState", AnalogTriggerOutput::kState)},
-    {SWIG_LUA_CONSTTAB_INT("AnalogTriggerOutput_kRisingPulse", AnalogTriggerOutput::kRisingPulse)},
-    {SWIG_LUA_CONSTTAB_INT("AnalogTriggerOutput_kFallingPulse", AnalogTriggerOutput::kFallingPulse)},
-    {SWIG_LUA_CONSTTAB_FLOAT("CANJaguar_kApproxBusVoltage", CANJaguar::kApproxBusVoltage)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kPercentVbus", CANJaguar::kPercentVbus)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kCurrent", CANJaguar::kCurrent)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kSpeed", CANJaguar::kSpeed)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kPosition", CANJaguar::kPosition)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kVoltage", CANJaguar::kVoltage)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kCurrentFault", CANJaguar::kCurrentFault)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kTemperatureFault", CANJaguar::kTemperatureFault)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kBusVoltageFault", CANJaguar::kBusVoltageFault)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kGateDriverFault", CANJaguar::kGateDriverFault)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kForwardLimit", CANJaguar::kForwardLimit)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kReverseLimit", CANJaguar::kReverseLimit)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kPosRef_QuadEncoder", CANJaguar::kPosRef_QuadEncoder)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kPosRef_Potentiometer", CANJaguar::kPosRef_Potentiometer)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kPosRef_None", CANJaguar::kPosRef_None)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kSpeedRef_Encoder", CANJaguar::kSpeedRef_Encoder)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kSpeedRef_InvEncoder", CANJaguar::kSpeedRef_InvEncoder)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kSpeedRef_QuadEncoder", CANJaguar::kSpeedRef_QuadEncoder)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kSpeedRef_None", CANJaguar::kSpeedRef_None)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kNeutralMode_Jumper", CANJaguar::kNeutralMode_Jumper)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kNeutralMode_Brake", CANJaguar::kNeutralMode_Brake)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kNeutralMode_Coast", CANJaguar::kNeutralMode_Coast)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kLimitMode_SwitchInputsOnly", CANJaguar::kLimitMode_SwitchInputsOnly)},
-    {SWIG_LUA_CONSTTAB_INT("CANJaguar_kLimitMode_SoftPositionLimits", CANJaguar::kLimitMode_SoftPositionLimits)},
-    {SWIG_LUA_CONSTTAB_INT("COMPRESSOR_PRIORITY", 90)},
-    {SWIG_LUA_CONSTTAB_INT("Counter_kTwoPulse", Counter::kTwoPulse)},
-    {SWIG_LUA_CONSTTAB_INT("Counter_kSemiperiod", Counter::kSemiperiod)},
-    {SWIG_LUA_CONSTTAB_INT("Counter_kPulseLength", Counter::kPulseLength)},
-    {SWIG_LUA_CONSTTAB_INT("Counter_kExternalDirection", Counter::kExternalDirection)},
-    {SWIG_LUA_CONSTTAB_INT("Dashboard_kI8", Dashboard::kI8)},
-    {SWIG_LUA_CONSTTAB_INT("Dashboard_kI16", Dashboard::kI16)},
-    {SWIG_LUA_CONSTTAB_INT("Dashboard_kI32", Dashboard::kI32)},
-    {SWIG_LUA_CONSTTAB_INT("Dashboard_kU8", Dashboard::kU8)},
-    {SWIG_LUA_CONSTTAB_INT("Dashboard_kU16", Dashboard::kU16)},
-    {SWIG_LUA_CONSTTAB_INT("Dashboard_kU32", Dashboard::kU32)},
-    {SWIG_LUA_CONSTTAB_INT("Dashboard_kFloat", Dashboard::kFloat)},
-    {SWIG_LUA_CONSTTAB_INT("Dashboard_kDouble", Dashboard::kDouble)},
-    {SWIG_LUA_CONSTTAB_INT("Dashboard_kBoolean", Dashboard::kBoolean)},
-    {SWIG_LUA_CONSTTAB_INT("Dashboard_kString", Dashboard::kString)},
-    {SWIG_LUA_CONSTTAB_INT("Dashboard_kOther", Dashboard::kOther)},
-    {SWIG_LUA_CONSTTAB_INT("Dashboard_kArray", Dashboard::kArray)},
-    {SWIG_LUA_CONSTTAB_INT("Dashboard_kCluster", Dashboard::kCluster)},
     {SWIG_LUA_CONSTTAB_INT("DoubleSolenoid_kOff", DoubleSolenoid::kOff)},
     {SWIG_LUA_CONSTTAB_INT("DoubleSolenoid_kForward", DoubleSolenoid::kForward)},
     {SWIG_LUA_CONSTTAB_INT("DoubleSolenoid_kReverse", DoubleSolenoid::kReverse)},
     {SWIG_LUA_CONSTTAB_INT("DriverStation_kRed", DriverStation::kRed)},
     {SWIG_LUA_CONSTTAB_INT("DriverStation_kBlue", DriverStation::kBlue)},
     {SWIG_LUA_CONSTTAB_INT("DriverStation_kInvalid", DriverStation::kInvalid)},
-    {SWIG_LUA_CONSTTAB_FLOAT("kAnalogInputReference", 3.3)},
-    {SWIG_LUA_CONSTTAB_FLOAT("kAnalogOutputReference", 4.0)},
-    {SWIG_LUA_CONSTTAB_INT("kAccelOffset", 8300)},
-    {SWIG_LUA_CONSTTAB_FLOAT("kAccelScale", 3300.0)},
-    {SWIG_LUA_CONSTTAB_INT("kSupportedAPIVersion", 1)},
-    {SWIG_LUA_CONSTTAB_INT("DriverStationEnhancedIO_kUnknown", DriverStationEnhancedIO::kUnknown)},
-    {SWIG_LUA_CONSTTAB_INT("DriverStationEnhancedIO_kInputFloating", DriverStationEnhancedIO::kInputFloating)},
-    {SWIG_LUA_CONSTTAB_INT("DriverStationEnhancedIO_kInputPullUp", DriverStationEnhancedIO::kInputPullUp)},
-    {SWIG_LUA_CONSTTAB_INT("DriverStationEnhancedIO_kInputPullDown", DriverStationEnhancedIO::kInputPullDown)},
-    {SWIG_LUA_CONSTTAB_INT("DriverStationEnhancedIO_kOutput", DriverStationEnhancedIO::kOutput)},
-    {SWIG_LUA_CONSTTAB_INT("DriverStationEnhancedIO_kPWM", DriverStationEnhancedIO::kPWM)},
-    {SWIG_LUA_CONSTTAB_INT("DriverStationEnhancedIO_kAnalogComparator", DriverStationEnhancedIO::kAnalogComparator)},
-    {SWIG_LUA_CONSTTAB_INT("DriverStationEnhancedIO_kAccelX", DriverStationEnhancedIO::kAccelX)},
-    {SWIG_LUA_CONSTTAB_INT("DriverStationEnhancedIO_kAccelY", DriverStationEnhancedIO::kAccelY)},
-    {SWIG_LUA_CONSTTAB_INT("DriverStationEnhancedIO_kAccelZ", DriverStationEnhancedIO::kAccelZ)},
-    {SWIG_LUA_CONSTTAB_INT("DriverStationEnhancedIO_kPWMChannels1and2", DriverStationEnhancedIO::kPWMChannels1and2)},
-    {SWIG_LUA_CONSTTAB_INT("DriverStationEnhancedIO_kPWMChannels3and4", DriverStationEnhancedIO::kPWMChannels3and4)},
     {SWIG_LUA_CONSTTAB_FLOAT("GearTooth_kGearToothThreshold", GearTooth::kGearToothThreshold)},
     {SWIG_LUA_CONSTTAB_INT("GenericHID_kLeftHand", GenericHID::kLeftHand)},
     {SWIG_LUA_CONSTTAB_INT("GenericHID_kRightHand", GenericHID::kRightHand)},
     {SWIG_LUA_CONSTTAB_FLOAT("Gyro_kSamplesPerSecond", Gyro::kSamplesPerSecond)},
     {SWIG_LUA_CONSTTAB_FLOAT("Gyro_kCalibrationSampleTime", Gyro::kCalibrationSampleTime)},
     {SWIG_LUA_CONSTTAB_FLOAT("Gyro_kDefaultVoltsPerDegreePerSecond", Gyro::kDefaultVoltsPerDegreePerSecond)},
-    {SWIG_LUA_CONSTTAB_INT("HiTechnicColorSensor_kActive", HiTechnicColorSensor::kActive)},
-    {SWIG_LUA_CONSTTAB_INT("HiTechnicColorSensor_kPassive", HiTechnicColorSensor::kPassive)},
-    {SWIG_LUA_CONSTTAB_INT("HiTechnicColorSensor_kRaw", HiTechnicColorSensor::kRaw)},
+    {SWIG_LUA_CONSTTAB_INT("I2C_kOnboard", I2C::kOnboard)},
+    {SWIG_LUA_CONSTTAB_INT("I2C_kMXP", I2C::kMXP)},
     {SWIG_LUA_CONSTTAB_FLOAT("IterativeRobot_kDefaultPeriod", IterativeRobot::kDefaultPeriod)},
+    {SWIG_LUA_CONSTTAB_INT("InterruptableSensorBase_kTimeout", InterruptableSensorBase::kTimeout)},
+    {SWIG_LUA_CONSTTAB_INT("InterruptableSensorBase_kRisingEdge", InterruptableSensorBase::kRisingEdge)},
+    {SWIG_LUA_CONSTTAB_INT("InterruptableSensorBase_kFallingEdge", InterruptableSensorBase::kFallingEdge)},
+    {SWIG_LUA_CONSTTAB_INT("InterruptableSensorBase_kBoth", InterruptableSensorBase::kBoth)},
     {SWIG_LUA_CONSTTAB_INT("Joystick_kXAxis", Joystick::kXAxis)},
     {SWIG_LUA_CONSTTAB_INT("Joystick_kYAxis", Joystick::kYAxis)},
     {SWIG_LUA_CONSTTAB_INT("Joystick_kZAxis", Joystick::kZAxis)},
@@ -46397,14 +34318,9 @@ static swig_lua_const_info swig_constants[] = {
     {SWIG_LUA_CONSTTAB_INT("Joystick_kTriggerButton", Joystick::kTriggerButton)},
     {SWIG_LUA_CONSTTAB_INT("Joystick_kTopButton", Joystick::kTopButton)},
     {SWIG_LUA_CONSTTAB_INT("Joystick_kNumButtonTypes", Joystick::kNumButtonTypes)},
-    {SWIG_LUA_CONSTTAB_INT("kNumSkeletons", 1)},
-    {SWIG_LUA_CONSTTAB_INT("Kinect_kNotTracked", Kinect::kNotTracked)},
-    {SWIG_LUA_CONSTTAB_INT("Kinect_kPositionOnly", Kinect::kPositionOnly)},
-    {SWIG_LUA_CONSTTAB_INT("Kinect_kTracked", Kinect::kTracked)},
-    {SWIG_LUA_CONSTTAB_INT("Kinect_kClippedRight", Kinect::kClippedRight)},
-    {SWIG_LUA_CONSTTAB_INT("Kinect_kClippedLeft", Kinect::kClippedLeft)},
-    {SWIG_LUA_CONSTTAB_INT("Kinect_kClippedTop", Kinect::kClippedTop)},
-    {SWIG_LUA_CONSTTAB_INT("Kinect_kClippedBottom", Kinect::kClippedBottom)},
+    {SWIG_LUA_CONSTTAB_INT("Joystick_kLeftRumble", Joystick::kLeftRumble)},
+    {SWIG_LUA_CONSTTAB_INT("Joystick_kRightRumble", Joystick::kRightRumble)},
+    {SWIG_LUA_CONSTTAB_FLOAT("DEFAULT_SAFETY_EXPIRATION", 0.1)},
     {SWIG_LUA_CONSTTAB_INT("PIDSource_kDistance", PIDSource::kDistance)},
     {SWIG_LUA_CONSTTAB_INT("PIDSource_kRate", PIDSource::kRate)},
     {SWIG_LUA_CONSTTAB_INT("PIDSource_kAngle", PIDSource::kAngle)},
@@ -46436,103 +34352,45 @@ static swig_lua_const_info swig_constants[] = {
     {SWIG_LUA_CONSTTAB_INT("SerialPort_kFlowControl_DtrDsr", SerialPort::kFlowControl_DtrDsr)},
     {SWIG_LUA_CONSTTAB_INT("SerialPort_kFlushOnAccess", SerialPort::kFlushOnAccess)},
     {SWIG_LUA_CONSTTAB_INT("SerialPort_kFlushWhenFull", SerialPort::kFlushWhenFull)},
-    {SWIG_LUA_CONSTTAB_INT("SPI_kChipSelect", SPI::kChipSelect)},
-    {SWIG_LUA_CONSTTAB_INT("SPI_kPreLatchPulse", SPI::kPreLatchPulse)},
-    {SWIG_LUA_CONSTTAB_INT("SPI_kPostLatchPulse", SPI::kPostLatchPulse)},
-    {SWIG_LUA_CONSTTAB_INT("SPI_kPreAndPostLatchPulse", SPI::kPreAndPostLatchPulse)},
-    {SWIG_LUA_CONSTTAB_INT("SPI_kReceiveFIFODepth", SPI::kReceiveFIFODepth)},
-    {SWIG_LUA_CONSTTAB_INT("SPI_kTransmitFIFODepth", SPI::kTransmitFIFODepth)},
+    {SWIG_LUA_CONSTTAB_INT("SerialPort_kOnboard", SerialPort::kOnboard)},
+    {SWIG_LUA_CONSTTAB_INT("SerialPort_kMXP", SerialPort::kMXP)},
+    {SWIG_LUA_CONSTTAB_INT("SerialPort_kUSB", SerialPort::kUSB)},
+    {SWIG_LUA_CONSTTAB_INT("SPI_kOnboardCS0", SPI::kOnboardCS0)},
+    {SWIG_LUA_CONSTTAB_INT("SPI_kOnboardCS1", SPI::kOnboardCS1)},
+    {SWIG_LUA_CONSTTAB_INT("SPI_kOnboardCS2", SPI::kOnboardCS2)},
+    {SWIG_LUA_CONSTTAB_INT("SPI_kOnboardCS3", SPI::kOnboardCS3)},
+    {SWIG_LUA_CONSTTAB_INT("SPI_kMXP", SPI::kMXP)},
     {SWIG_LUA_CONSTTAB_INT("Ultrasonic_kInches", Ultrasonic::kInches)},
     {SWIG_LUA_CONSTTAB_INT("Ultrasonic_kMilliMeters", Ultrasonic::kMilliMeters)},
-    {SWIG_LUA_CONSTTAB_FLOAT("Watchdog_kDefaultWatchdogExpiration", Watchdog::kDefaultWatchdogExpiration)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kWhiteBalance_Automatic", AxisCamera::kWhiteBalance_Automatic)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kWhiteBalance_Hold", AxisCamera::kWhiteBalance_Hold)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kWhiteBalance_FixedOutdoor1", AxisCamera::kWhiteBalance_FixedOutdoor1)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kWhiteBalance_FixedOutdoor2", AxisCamera::kWhiteBalance_FixedOutdoor2)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kWhiteBalance_FixedIndoor", AxisCamera::kWhiteBalance_FixedIndoor)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kWhiteBalance_FixedFluorescent1", AxisCamera::kWhiteBalance_FixedFluorescent1)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kWhiteBalance_FixedFluorescent2", AxisCamera::kWhiteBalance_FixedFluorescent2)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kExposureControl_Automatic", AxisCamera::kExposureControl_Automatic)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kExposureControl_Hold", AxisCamera::kExposureControl_Hold)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kExposureControl_FlickerFree50Hz", AxisCamera::kExposureControl_FlickerFree50Hz)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kExposureControl_FlickerFree60Hz", AxisCamera::kExposureControl_FlickerFree60Hz)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kResolution_640x480", AxisCamera::kResolution_640x480)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kResolution_480x360", AxisCamera::kResolution_480x360)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kResolution_320x240", AxisCamera::kResolution_320x240)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kResolution_240x180", AxisCamera::kResolution_240x180)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kResolution_176x144", AxisCamera::kResolution_176x144)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kResolution_160x120", AxisCamera::kResolution_160x120)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kRotation_0", AxisCamera::kRotation_0)},
+    {SWIG_LUA_CONSTTAB_INT("AxisCamera_kRotation_180", AxisCamera::kRotation_180)},
     {0,0,0,0,0,0}
 };
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
-static void *_p_PIDCommandTo_p_Command(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((Command *)  ((PIDCommand *) x));
-}
-static void *_p_PrintCommandTo_p_Command(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((Command *)  ((PrintCommand *) x));
-}
-static void *_p_StartCommandTo_p_Command(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((Command *)  ((StartCommand *) x));
-}
-static void *_p_WaitCommandTo_p_Command(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((Command *)  ((WaitCommand *) x));
-}
-static void *_p_WaitUntilCommandTo_p_Command(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((Command *)  ((WaitUntilCommand *) x));
-}
-static void *_p_CommandGroupTo_p_Command(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((Command *)  ((CommandGroup *) x));
-}
-static void *_p_WaitForChildrenTo_p_Command(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((Command *)  ((WaitForChildren *) x));
-}
-static void *_p_DashboardTo_p_DashboardBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((DashboardBase *)  ((Dashboard *) x));
-}
-static void *_p_CommandTo_p_NamedSendable(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((NamedSendable *)  ((Command *) x));
-}
-static void *_p_PIDCommandTo_p_NamedSendable(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((NamedSendable *) (Command *) ((PIDCommand *) x));
-}
-static void *_p_PrintCommandTo_p_NamedSendable(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((NamedSendable *) (Command *) ((PrintCommand *) x));
-}
-static void *_p_StartCommandTo_p_NamedSendable(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((NamedSendable *) (Command *) ((StartCommand *) x));
-}
-static void *_p_WaitCommandTo_p_NamedSendable(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((NamedSendable *) (Command *) ((WaitCommand *) x));
-}
-static void *_p_WaitUntilCommandTo_p_NamedSendable(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((NamedSendable *) (Command *) ((WaitUntilCommand *) x));
-}
-static void *_p_SchedulerTo_p_NamedSendable(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((NamedSendable *)  ((Scheduler *) x));
-}
-static void *_p_SubsystemTo_p_NamedSendable(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((NamedSendable *)  ((Subsystem *) x));
-}
-static void *_p_CommandGroupTo_p_NamedSendable(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((NamedSendable *) (Command *) ((CommandGroup *) x));
-}
-static void *_p_WaitForChildrenTo_p_NamedSendable(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((NamedSendable *) (Command *) ((WaitForChildren *) x));
-}
-static void *_p_SendableChooserTo_p_Sendable(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((Sendable *)  ((SendableChooser *) x));
-}
-static void *_p_JoystickTo_p_GenericHID(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((GenericHID *)  ((Joystick *) x));
-}
-static void *_p_KinectStickTo_p_GenericHID(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((GenericHID *)  ((KinectStick *) x));
-}
-static void *_p_UltrasonicTo_p_PIDSource(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((PIDSource *)  ((Ultrasonic *) x));
+static void *_p_RobotDriveTo_p_MotorSafety(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((MotorSafety *)  ((RobotDrive *) x));
 }
 static void *_p_GearToothTo_p_Counter(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((Counter *)  ((GearTooth *) x));
-}
-static void *_p_SmartDashboardTo_p_SensorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((SensorBase *)  ((SmartDashboard *) x));
-}
-static void *_p_UltrasonicTo_p_SensorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((SensorBase *)  ((Ultrasonic *) x));
-}
-static void *_p_SPITo_p_SensorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((SensorBase *)  ((SPI *) x));
-}
-static void *_p_WatchdogTo_p_SensorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((SensorBase *)  ((Watchdog *) x));
-}
-static void *_p_SimpleRobotTo_p_RobotBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((RobotBase *)  ((SimpleRobot *) x));
 }
 static void *_p_PreferencesTo_p_ErrorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((ErrorBase *)  ((Preferences *) x));
@@ -46548,9 +34406,6 @@ static void *_p_NotifierTo_p_ErrorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) 
 }
 static void *_p_SmartDashboardTo_p_ErrorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((ErrorBase *) (SensorBase *) ((SmartDashboard *) x));
-}
-static void *_p_KinectStickTo_p_ErrorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((ErrorBase *)  ((KinectStick *) x));
 }
 static void *_p_UltrasonicTo_p_ErrorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((ErrorBase *) (SensorBase *) ((Ultrasonic *) x));
@@ -46570,14 +34425,17 @@ static void *_p_SerialPortTo_p_ErrorBase(void *x, int *SWIGUNUSEDPARM(newmemory)
 static void *_p_SPITo_p_ErrorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((ErrorBase *) (SensorBase *) ((SPI *) x));
 }
-static void *_p_WatchdogTo_p_ErrorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((ErrorBase *) (SensorBase *) ((Watchdog *) x));
+static void *_p_AxisCameraTo_p_ErrorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((ErrorBase *)  ((AxisCamera *) x));
 }
-static void *_p_VictorTo_p_SpeedController(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((SpeedController *)  ((Victor *) x));
+static void *_p_SmartDashboardTo_p_SensorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((SensorBase *)  ((SmartDashboard *) x));
 }
-static void *_p_TalonTo_p_SpeedController(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((SpeedController *)  ((Talon *) x));
+static void *_p_UltrasonicTo_p_SensorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((SensorBase *)  ((Ultrasonic *) x));
+}
+static void *_p_SPITo_p_SensorBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((SensorBase *)  ((SPI *) x));
 }
 static void *_p_SpeedControllerTo_p_PIDOutput(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((PIDOutput *)  ((SpeedController *) x));
@@ -46588,40 +34446,49 @@ static void *_p_VictorTo_p_PIDOutput(void *x, int *SWIGUNUSEDPARM(newmemory)) {
 static void *_p_TalonTo_p_PIDOutput(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((PIDOutput *) (SpeedController *) ((Talon *) x));
 }
+static void *_p_UltrasonicTo_p_PIDSource(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((PIDSource *)  ((Ultrasonic *) x));
+}
+static void *_p_SendableChooserTo_p_Sendable(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((Sendable *)  ((SendableChooser *) x));
+}
+static void *_p_VictorTo_p_SpeedController(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((SpeedController *)  ((Victor *) x));
+}
+static void *_p_TalonTo_p_SpeedController(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((SpeedController *)  ((Talon *) x));
+}
+static void *_p_JoystickTo_p_GenericHID(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((GenericHID *)  ((Joystick *) x));
+}
+static void *_p_ADXL345_SPITo_p_Accelerometer(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((Accelerometer *)  ((ADXL345_SPI *) x));
+}
+static void *_p_ADXL345_I2CTo_p_Accelerometer(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((Accelerometer *)  ((ADXL345_I2C *) x));
+}
 static swig_type_info _swigt__p_ADXL345_I2C = {"_p_ADXL345_I2C", "ADXL345_I2C *", 0, 0, (void*)&_wrap_class_ADXL345_I2C, 0};
 static swig_type_info _swigt__p_ADXL345_I2C__AllAxes = {"_p_ADXL345_I2C__AllAxes", "ADXL345_I2C::AllAxes *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ADXL345_SPI = {"_p_ADXL345_SPI", "ADXL345_SPI *", 0, 0, (void*)&_wrap_class_ADXL345_SPI, 0};
 static swig_type_info _swigt__p_ADXL345_SPI__AllAxes = {"_p_ADXL345_SPI__AllAxes", "ADXL345_SPI::AllAxes *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Accelerometer = {"_p_Accelerometer", "Accelerometer *", 0, 0, (void*)&_wrap_class_Accelerometer, 0};
-static swig_type_info _swigt__p_AnalogChannel = {"_p_AnalogChannel", "AnalogChannel *", 0, 0, (void*)&_wrap_class_AnalogChannel, 0};
-static swig_type_info _swigt__p_AnalogIOButton = {"_p_AnalogIOButton", "AnalogIOButton *", 0, 0, (void*)&_wrap_class_AnalogIOButton, 0};
-static swig_type_info _swigt__p_AnalogModule = {"_p_AnalogModule", "AnalogModule *", 0, 0, (void*)&_wrap_class_AnalogModule, 0};
+static swig_type_info _swigt__p_AnalogInput = {"_p_AnalogInput", "AnalogInput *", 0, 0, (void*)&_wrap_class_AnalogInput, 0};
+static swig_type_info _swigt__p_AnalogOutput = {"_p_AnalogOutput", "AnalogOutput *", 0, 0, (void*)&_wrap_class_AnalogOutput, 0};
 static swig_type_info _swigt__p_AnalogTrigger = {"_p_AnalogTrigger", "AnalogTrigger *", 0, 0, (void*)&_wrap_class_AnalogTrigger, 0};
 static swig_type_info _swigt__p_AnalogTriggerOutput = {"_p_AnalogTriggerOutput", "AnalogTriggerOutput *", 0, 0, (void*)&_wrap_class_AnalogTriggerOutput, 0};
+static swig_type_info _swigt__p_AnalogTriggerType = {"_p_AnalogTriggerType", "AnalogTriggerType *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_AxisCamera = {"_p_AxisCamera", "AxisCamera *", 0, 0, (void*)&_wrap_class_AxisCamera, 0};
 static swig_type_info _swigt__p_AxisType = {"_p_AxisType", "AxisType *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_ButtonScheduler = {"_p_ButtonScheduler", "ButtonScheduler *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ButtonType = {"_p_ButtonType", "ButtonType *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_CANJaguar = {"_p_CANJaguar", "CANJaguar *", 0, 0, (void*)&_wrap_class_CANJaguar, 0};
 static swig_type_info _swigt__p_ColorImage = {"_p_ColorImage", "ColorImage *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_Command = {"_p_Command", "Command *", 0, 0, (void*)&_wrap_class_Command, 0};
-static swig_type_info _swigt__p_CommandGroup = {"_p_CommandGroup", "CommandGroup *", 0, 0, (void*)&_wrap_class_CommandGroup, 0};
 static swig_type_info _swigt__p_ComplexData = {"_p_ComplexData", "ComplexData *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Compressor = {"_p_Compressor", "Compressor *", 0, 0, (void*)&_wrap_class_Compressor, 0};
-static swig_type_info _swigt__p_ControlMode = {"_p_ControlMode", "ControlMode *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Counter = {"_p_Counter", "Counter *", 0, 0, (void*)&_wrap_class_Counter, 0};
-static swig_type_info _swigt__p_Dashboard = {"_p_Dashboard", "Dashboard *", 0, 0, (void*)&_wrap_class_Dashboard, 0};
-static swig_type_info _swigt__p_DashboardBase = {"_p_DashboardBase", "DashboardBase *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_DigitalIOButton = {"_p_DigitalIOButton", "DigitalIOButton *", 0, 0, (void*)&_wrap_class_DigitalIOButton, 0};
 static swig_type_info _swigt__p_DigitalInput = {"_p_DigitalInput", "DigitalInput *", 0, 0, (void*)&_wrap_class_DigitalInput, 0};
-static swig_type_info _swigt__p_DigitalModule = {"_p_DigitalModule", "DigitalModule *", 0, 0, (void*)&_wrap_class_DigitalModule, 0};
 static swig_type_info _swigt__p_DigitalOutput = {"_p_DigitalOutput", "DigitalOutput *", 0, 0, (void*)&_wrap_class_DigitalOutput, 0};
 static swig_type_info _swigt__p_DigitalSource = {"_p_DigitalSource", "DigitalSource *", 0, 0, (void*)&_wrap_class_DigitalSource, 0};
-static swig_type_info _swigt__p_Direction = {"_p_Direction", "Direction *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_DistanceUnit = {"_p_DistanceUnit", "DistanceUnit *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_DoubleSolenoid = {"_p_DoubleSolenoid", "DoubleSolenoid *", 0, 0, (void*)&_wrap_class_DoubleSolenoid, 0};
 static swig_type_info _swigt__p_DriverStation = {"_p_DriverStation", "DriverStation *", 0, 0, (void*)&_wrap_class_DriverStation, 0};
-static swig_type_info _swigt__p_DriverStationEnhancedIO = {"_p_DriverStationEnhancedIO", "DriverStationEnhancedIO *", 0, 0, (void*)&_wrap_class_DriverStationEnhancedIO, 0};
 static swig_type_info _swigt__p_Encoder = {"_p_Encoder", "Encoder *", 0, 0, (void*)&_wrap_class_Encoder, 0};
 static swig_type_info _swigt__p_EncodingType = {"_p_EncodingType", "EncodingType *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_EntryValue = {"_p_EntryValue", "EntryValue *", 0, 0, (void*)0, 0};
@@ -46629,105 +34496,62 @@ static swig_type_info _swigt__p_Error = {"_p_Error", "Error *", 0, 0, (void*)0, 
 static swig_type_info _swigt__p_ErrorBase = {"_p_ErrorBase", "ErrorBase *", 0, 0, (void*)&_wrap_class_ErrorBase, 0};
 static swig_type_info _swigt__p_Error__Code = {"_p_Error__Code", "Error::Code *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FUNCPTR = {"_p_FUNCPTR", "FUNCPTR *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_Faults = {"_p_Faults", "Faults *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_FlowControl = {"_p_FlowControl", "FlowControl *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_GearTooth = {"_p_GearTooth", "GearTooth *", 0, 0, (void*)&_wrap_class_GearTooth, 0};
 static swig_type_info _swigt__p_GenericHID = {"_p_GenericHID", "GenericHID *", 0, 0, (void*)&_wrap_class_GenericHID, 0};
 static swig_type_info _swigt__p_Gyro = {"_p_Gyro", "Gyro *", 0, 0, (void*)&_wrap_class_Gyro, 0};
 static swig_type_info _swigt__p_HSLImage = {"_p_HSLImage", "HSLImage *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_HiTechnicColorSensor = {"_p_HiTechnicColorSensor", "HiTechnicColorSensor *", 0, 0, (void*)&_wrap_class_HiTechnicColorSensor, 0};
-static swig_type_info _swigt__p_HiTechnicColorSensor__RGB = {"_p_HiTechnicColorSensor__RGB", "HiTechnicColorSensor::RGB *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_HiTechnicCompass = {"_p_HiTechnicCompass", "HiTechnicCompass *", 0, 0, (void*)&_wrap_class_HiTechnicCompass, 0};
 static swig_type_info _swigt__p_I2C = {"_p_I2C", "I2C *", 0, 0, (void*)&_wrap_class_I2C, 0};
-static swig_type_info _swigt__p_INT64 = {"_p_INT64", "INT64 *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_ITable = {"_p_ITable", "ITable *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Image = {"_p_Image", "Image *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_InternalButton = {"_p_InternalButton", "InternalButton *", 0, 0, (void*)&_wrap_class_InternalButton, 0};
+static swig_type_info _swigt__p_InterruptHandlerFunction = {"_p_InterruptHandlerFunction", "InterruptHandlerFunction *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_InterruptableSensorBase = {"_p_InterruptableSensorBase", "InterruptableSensorBase *", 0, 0, (void*)&_wrap_class_InterruptableSensorBase, 0};
 static swig_type_info _swigt__p_IterativeRobot = {"_p_IterativeRobot", "IterativeRobot *", 0, 0, (void*)&_wrap_class_IterativeRobot, 0};
 static swig_type_info _swigt__p_Jaguar = {"_p_Jaguar", "Jaguar *", 0, 0, (void*)&_wrap_class_Jaguar, 0};
 static swig_type_info _swigt__p_Joystick = {"_p_Joystick", "Joystick *", 0, 0, (void*)&_wrap_class_Joystick, 0};
-static swig_type_info _swigt__p_JoystickAxis = {"_p_JoystickAxis", "JoystickAxis *", 0, 0, (void*)&_wrap_class_JoystickAxis, 0};
 static swig_type_info _swigt__p_JoystickButton = {"_p_JoystickButton", "JoystickButton *", 0, 0, (void*)&_wrap_class_JoystickButton, 0};
-static swig_type_info _swigt__p_JoystickHand = {"_p_JoystickHand", "JoystickHand *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_Kinect = {"_p_Kinect", "Kinect *", 0, 0, (void*)&_wrap_class_Kinect, 0};
-static swig_type_info _swigt__p_KinectStick = {"_p_KinectStick", "KinectStick *", 0, 0, (void*)&_wrap_class_KinectStick, 0};
-static swig_type_info _swigt__p_Kinect__Point4 = {"_p_Kinect__Point4", "Kinect::Point4 *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_LimitMode = {"_p_LimitMode", "LimitMode *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_Limits = {"_p_Limits", "Limits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_Mode = {"_p_Mode", "Mode *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_MotorType = {"_p_MotorType", "MotorType *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_MotorSafety = {"_p_MotorSafety", "MotorSafety *", 0, 0, (void*)&_wrap_class_MotorSafety, 0};
 static swig_type_info _swigt__p_NamedSendable = {"_p_NamedSendable", "NamedSendable *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_NetworkButton = {"_p_NetworkButton", "NetworkButton *", 0, 0, (void*)&_wrap_class_NetworkButton, 0};
-static swig_type_info _swigt__p_NeutralMode = {"_p_NeutralMode", "NeutralMode *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Notifier = {"_p_Notifier", "Notifier *", 0, 0, (void*)&_wrap_class_Notifier, 0};
-static swig_type_info _swigt__p_PIDCommand = {"_p_PIDCommand", "PIDCommand *", 0, 0, (void*)&_wrap_class_PIDCommand, 0};
 static swig_type_info _swigt__p_PIDController = {"_p_PIDController", "PIDController *", 0, 0, (void*)&_wrap_class_PIDController, 0};
 static swig_type_info _swigt__p_PIDOutput = {"_p_PIDOutput", "PIDOutput *", 0, 0, (void*)&_wrap_class_PIDOutput, 0};
 static swig_type_info _swigt__p_PIDSource = {"_p_PIDSource", "PIDSource *", 0, 0, (void*)&_wrap_class_PIDSource, 0};
 static swig_type_info _swigt__p_PIDSourceParameter = {"_p_PIDSourceParameter", "PIDSourceParameter *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_PIDSubsystem = {"_p_PIDSubsystem", "PIDSubsystem *", 0, 0, (void*)&_wrap_class_PIDSubsystem, 0};
 static swig_type_info _swigt__p_PWM = {"_p_PWM", "PWM *", 0, 0, (void*)&_wrap_class_PWM, 0};
-static swig_type_info _swigt__p_Parity = {"_p_Parity", "Parity *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_PeriodMultiplier = {"_p_PeriodMultiplier", "PeriodMultiplier *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_PositionReference = {"_p_PositionReference", "PositionReference *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_Port = {"_p_Port", "Port *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Preferences = {"_p_Preferences", "Preferences *", 0, 0, (void*)&_wrap_class_Preferences, 0};
-static swig_type_info _swigt__p_PrintCommand = {"_p_PrintCommand", "PrintCommand *", 0, 0, (void*)&_wrap_class_PrintCommand, 0};
-static swig_type_info _swigt__p_ReentrantSemaphore = {"_p_ReentrantSemaphore", "ReentrantSemaphore *", 0, 0, (void*)&_wrap_class_ReentrantSemaphore, 0};
 static swig_type_info _swigt__p_Relay = {"_p_Relay", "Relay *", 0, 0, (void*)&_wrap_class_Relay, 0};
 static swig_type_info _swigt__p_Resource = {"_p_Resource", "Resource *", 0, 0, (void*)&_wrap_class_Resource, 0};
-static swig_type_info _swigt__p_RobotBase = {"_p_RobotBase", "RobotBase *", 0, 0, (void*)&_wrap_class_RobotBase, 0};
 static swig_type_info _swigt__p_RobotDrive = {"_p_RobotDrive", "RobotDrive *", 0, 0, (void*)&_wrap_class_RobotDrive, 0};
-static swig_type_info _swigt__p_SEM_ID = {"_p_SEM_ID", "SEM_ID *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_RumbleType = {"_p_RumbleType", "RumbleType *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_SPI = {"_p_SPI", "SPI *", 0, 0, (void*)&_wrap_class_SPI, 0};
-static swig_type_info _swigt__p_SPI__tFrameMode = {"_p_SPI__tFrameMode", "enum SPI::tFrameMode *|SPI::tFrameMode *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_Scheduler = {"_p_Scheduler", "Scheduler *", 0, 0, (void*)&_wrap_class_Scheduler, 0};
+static swig_type_info _swigt__p_SampleRobot = {"_p_SampleRobot", "SampleRobot *", 0, 0, (void*)&_wrap_class_SampleRobot, 0};
 static swig_type_info _swigt__p_Sendable = {"_p_Sendable", "Sendable *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_SendableChooser = {"_p_SendableChooser", "SendableChooser *", 0, 0, (void*)&_wrap_class_SendableChooser, 0};
 static swig_type_info _swigt__p_SensorBase = {"_p_SensorBase", "SensorBase *", 0, 0, (void*)&_wrap_class_SensorBase, 0};
 static swig_type_info _swigt__p_SerialPort = {"_p_SerialPort", "SerialPort *", 0, 0, (void*)&_wrap_class_SerialPort, 0};
 static swig_type_info _swigt__p_Servo = {"_p_Servo", "Servo *", 0, 0, (void*)&_wrap_class_Servo, 0};
-static swig_type_info _swigt__p_SimpleRobot = {"_p_SimpleRobot", "SimpleRobot *", 0, 0, (void*)&_wrap_class_SimpleRobot, 0};
-static swig_type_info _swigt__p_Skeleton = {"_p_Skeleton", "Skeleton *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_SkeletonQuality = {"_p_SkeletonQuality", "SkeletonQuality *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_SkeletonTrackingState = {"_p_SkeletonTrackingState", "SkeletonTrackingState *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_SmartDashboard = {"_p_SmartDashboard", "SmartDashboard *", 0, 0, (void*)&_wrap_class_SmartDashboard, 0};
 static swig_type_info _swigt__p_Solenoid = {"_p_Solenoid", "Solenoid *", 0, 0, (void*)&_wrap_class_Solenoid, 0};
 static swig_type_info _swigt__p_SpeedController = {"_p_SpeedController", "SpeedController *", 0, 0, (void*)&_wrap_class_SpeedController, 0};
-static swig_type_info _swigt__p_SpeedReference = {"_p_SpeedReference", "SpeedReference *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_StartCommand = {"_p_StartCommand", "StartCommand *", 0, 0, (void*)&_wrap_class_StartCommand, 0};
-static swig_type_info _swigt__p_StopBits = {"_p_StopBits", "StopBits *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_Subsystem = {"_p_Subsystem", "Subsystem *", 0, 0, (void*)&_wrap_class_Subsystem, 0};
-static swig_type_info _swigt__p_SubsystemSet = {"_p_SubsystemSet", "SubsystemSet *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_Synchronized = {"_p_Synchronized", "Synchronized *", 0, 0, (void*)&_wrap_class_Synchronized, 0};
+static swig_type_info _swigt__p_TASK = {"_p_TASK", "TASK *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Talon = {"_p_Talon", "Talon *", 0, 0, (void*)&_wrap_class_Talon, 0};
 static swig_type_info _swigt__p_Task = {"_p_Task", "Task *", 0, 0, (void*)&_wrap_class_Task, 0};
-static swig_type_info _swigt__p_Timer = {"_p_Timer", "Timer *", 0, 0, (void*)&_wrap_class_Timer, 0};
-static swig_type_info _swigt__p_Type = {"_p_Type", "Type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_UINT = {"_p_UINT", "UINT *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Ultrasonic = {"_p_Ultrasonic", "Ultrasonic *", 0, 0, (void*)&_wrap_class_Ultrasonic, 0};
-static swig_type_info _swigt__p_Value = {"_p_Value", "Value *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Victor = {"_p_Victor", "Victor *", 0, 0, (void*)&_wrap_class_Victor, 0};
-static swig_type_info _swigt__p_WaitCommand = {"_p_WaitCommand", "WaitCommand *", 0, 0, (void*)&_wrap_class_WaitCommand, 0};
-static swig_type_info _swigt__p_WaitForChildren = {"_p_WaitForChildren", "WaitForChildren *", 0, 0, (void*)&_wrap_class_WaitForChildren, 0};
-static swig_type_info _swigt__p_WaitUntilCommand = {"_p_WaitUntilCommand", "WaitUntilCommand *", 0, 0, (void*)&_wrap_class_WaitUntilCommand, 0};
-static swig_type_info _swigt__p_Watchdog = {"_p_Watchdog", "Watchdog *", 0, 0, (void*)&_wrap_class_Watchdog, 0};
-static swig_type_info _swigt__p_WriteBufferMode = {"_p_WriteBufferMode", "WriteBufferMode *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_bool = {"_p_bool", "bool *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_f_p_void__void = {"_p_f_p_void__void", "TimerEventHandler|void (*)(void *)", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_int = {"_p_int", "int *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int16_t = {"_p_int16_t", "int16_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int32_t = {"_p_int32_t", "int32_t *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_int8_t = {"_p_int8_t", "int8_t *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_int64_t = {"_p_int64_t", "int64_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_Resource = {"_p_p_Resource", "Resource **", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_char = {"_p_p_char", "char **", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__setT_Subsystem_p_t = {"_p_std__setT_Subsystem_p_t", "Command::SubsystemSet *|std::set< Subsystem * > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__string = {"_p_std__string", "std::string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_std__string_t = {"_p_std__vectorT_std__string_t", "std::vector< std::string > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_tInterruptHandler = {"_p_tInterruptHandler", "tInterruptHandler *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint16_t = {"_p_uint16_t", "uint16_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint32_t = {"_p_uint32_t", "uint32_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uint8_t = {"_p_uint8_t", "uint8_t *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_unsigned_int = {"_p_unsigned_int", "unsigned int *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_void = {"_p_void", "void *", 0, 0, (void*)0, 0};
 
 static swig_type_info *swig_type_initial[] = {
@@ -46736,35 +34560,23 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_ADXL345_SPI,
   &_swigt__p_ADXL345_SPI__AllAxes,
   &_swigt__p_Accelerometer,
-  &_swigt__p_AnalogChannel,
-  &_swigt__p_AnalogIOButton,
-  &_swigt__p_AnalogModule,
+  &_swigt__p_AnalogInput,
+  &_swigt__p_AnalogOutput,
   &_swigt__p_AnalogTrigger,
   &_swigt__p_AnalogTriggerOutput,
+  &_swigt__p_AnalogTriggerType,
   &_swigt__p_AxisCamera,
   &_swigt__p_AxisType,
-  &_swigt__p_ButtonScheduler,
   &_swigt__p_ButtonType,
-  &_swigt__p_CANJaguar,
   &_swigt__p_ColorImage,
-  &_swigt__p_Command,
-  &_swigt__p_CommandGroup,
   &_swigt__p_ComplexData,
   &_swigt__p_Compressor,
-  &_swigt__p_ControlMode,
   &_swigt__p_Counter,
-  &_swigt__p_Dashboard,
-  &_swigt__p_DashboardBase,
-  &_swigt__p_DigitalIOButton,
   &_swigt__p_DigitalInput,
-  &_swigt__p_DigitalModule,
   &_swigt__p_DigitalOutput,
   &_swigt__p_DigitalSource,
-  &_swigt__p_Direction,
-  &_swigt__p_DistanceUnit,
   &_swigt__p_DoubleSolenoid,
   &_swigt__p_DriverStation,
-  &_swigt__p_DriverStationEnhancedIO,
   &_swigt__p_Encoder,
   &_swigt__p_EncodingType,
   &_swigt__p_EntryValue,
@@ -46772,105 +34584,62 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_ErrorBase,
   &_swigt__p_Error__Code,
   &_swigt__p_FUNCPTR,
-  &_swigt__p_Faults,
-  &_swigt__p_FlowControl,
   &_swigt__p_GearTooth,
   &_swigt__p_GenericHID,
   &_swigt__p_Gyro,
   &_swigt__p_HSLImage,
-  &_swigt__p_HiTechnicColorSensor,
-  &_swigt__p_HiTechnicColorSensor__RGB,
-  &_swigt__p_HiTechnicCompass,
   &_swigt__p_I2C,
-  &_swigt__p_INT64,
   &_swigt__p_ITable,
   &_swigt__p_Image,
   &_swigt__p_InternalButton,
+  &_swigt__p_InterruptHandlerFunction,
   &_swigt__p_InterruptableSensorBase,
   &_swigt__p_IterativeRobot,
   &_swigt__p_Jaguar,
   &_swigt__p_Joystick,
-  &_swigt__p_JoystickAxis,
   &_swigt__p_JoystickButton,
-  &_swigt__p_JoystickHand,
-  &_swigt__p_Kinect,
-  &_swigt__p_KinectStick,
-  &_swigt__p_Kinect__Point4,
-  &_swigt__p_LimitMode,
-  &_swigt__p_Limits,
-  &_swigt__p_Mode,
-  &_swigt__p_MotorType,
+  &_swigt__p_MotorSafety,
   &_swigt__p_NamedSendable,
   &_swigt__p_NetworkButton,
-  &_swigt__p_NeutralMode,
   &_swigt__p_Notifier,
-  &_swigt__p_PIDCommand,
   &_swigt__p_PIDController,
   &_swigt__p_PIDOutput,
   &_swigt__p_PIDSource,
   &_swigt__p_PIDSourceParameter,
-  &_swigt__p_PIDSubsystem,
   &_swigt__p_PWM,
-  &_swigt__p_Parity,
-  &_swigt__p_PeriodMultiplier,
-  &_swigt__p_PositionReference,
+  &_swigt__p_Port,
   &_swigt__p_Preferences,
-  &_swigt__p_PrintCommand,
-  &_swigt__p_ReentrantSemaphore,
   &_swigt__p_Relay,
   &_swigt__p_Resource,
-  &_swigt__p_RobotBase,
   &_swigt__p_RobotDrive,
-  &_swigt__p_SEM_ID,
+  &_swigt__p_RumbleType,
   &_swigt__p_SPI,
-  &_swigt__p_SPI__tFrameMode,
-  &_swigt__p_Scheduler,
+  &_swigt__p_SampleRobot,
   &_swigt__p_Sendable,
   &_swigt__p_SendableChooser,
   &_swigt__p_SensorBase,
   &_swigt__p_SerialPort,
   &_swigt__p_Servo,
-  &_swigt__p_SimpleRobot,
-  &_swigt__p_Skeleton,
-  &_swigt__p_SkeletonQuality,
-  &_swigt__p_SkeletonTrackingState,
   &_swigt__p_SmartDashboard,
   &_swigt__p_Solenoid,
   &_swigt__p_SpeedController,
-  &_swigt__p_SpeedReference,
-  &_swigt__p_StartCommand,
-  &_swigt__p_StopBits,
-  &_swigt__p_Subsystem,
-  &_swigt__p_SubsystemSet,
-  &_swigt__p_Synchronized,
+  &_swigt__p_TASK,
   &_swigt__p_Talon,
   &_swigt__p_Task,
-  &_swigt__p_Timer,
-  &_swigt__p_Type,
-  &_swigt__p_UINT,
   &_swigt__p_Ultrasonic,
-  &_swigt__p_Value,
   &_swigt__p_Victor,
-  &_swigt__p_WaitCommand,
-  &_swigt__p_WaitForChildren,
-  &_swigt__p_WaitUntilCommand,
-  &_swigt__p_Watchdog,
-  &_swigt__p_WriteBufferMode,
-  &_swigt__p_bool,
   &_swigt__p_f_p_void__void,
-  &_swigt__p_int,
   &_swigt__p_int16_t,
   &_swigt__p_int32_t,
-  &_swigt__p_int8_t,
+  &_swigt__p_int64_t,
   &_swigt__p_p_Resource,
   &_swigt__p_p_char,
-  &_swigt__p_std__setT_Subsystem_p_t,
   &_swigt__p_std__string,
   &_swigt__p_std__vectorT_std__string_t,
-  &_swigt__p_tInterruptHandler,
   &_swigt__p_uint16_t,
   &_swigt__p_uint32_t,
   &_swigt__p_uint8_t,
+  &_swigt__p_unsigned_int,
   &_swigt__p_void,
 };
 
@@ -46878,142 +34647,87 @@ static swig_cast_info _swigc__p_ADXL345_I2C[] = {  {&_swigt__p_ADXL345_I2C, 0, 0
 static swig_cast_info _swigc__p_ADXL345_I2C__AllAxes[] = {  {&_swigt__p_ADXL345_I2C__AllAxes, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ADXL345_SPI[] = {  {&_swigt__p_ADXL345_SPI, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ADXL345_SPI__AllAxes[] = {  {&_swigt__p_ADXL345_SPI__AllAxes, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Accelerometer[] = {  {&_swigt__p_Accelerometer, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_AnalogChannel[] = {  {&_swigt__p_AnalogChannel, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_AnalogIOButton[] = {  {&_swigt__p_AnalogIOButton, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_AnalogModule[] = {  {&_swigt__p_AnalogModule, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_Accelerometer[] = {  {&_swigt__p_Accelerometer, 0, 0, 0},  {&_swigt__p_ADXL345_SPI, _p_ADXL345_SPITo_p_Accelerometer, 0, 0},  {&_swigt__p_ADXL345_I2C, _p_ADXL345_I2CTo_p_Accelerometer, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_AnalogInput[] = {  {&_swigt__p_AnalogInput, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_AnalogOutput[] = {  {&_swigt__p_AnalogOutput, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_AnalogTrigger[] = {  {&_swigt__p_AnalogTrigger, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_AnalogTriggerOutput[] = {  {&_swigt__p_AnalogTriggerOutput, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_AnalogTriggerType[] = {  {&_swigt__p_AnalogTriggerType, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_AxisCamera[] = {  {&_swigt__p_AxisCamera, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_AxisType[] = {  {&_swigt__p_AxisType, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ButtonScheduler[] = {  {&_swigt__p_ButtonScheduler, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ButtonType[] = {  {&_swigt__p_ButtonType, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_CANJaguar[] = {  {&_swigt__p_CANJaguar, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ColorImage[] = {  {&_swigt__p_ColorImage, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Command[] = {  {&_swigt__p_Command, 0, 0, 0},  {&_swigt__p_PIDCommand, _p_PIDCommandTo_p_Command, 0, 0},  {&_swigt__p_PrintCommand, _p_PrintCommandTo_p_Command, 0, 0},  {&_swigt__p_StartCommand, _p_StartCommandTo_p_Command, 0, 0},  {&_swigt__p_WaitCommand, _p_WaitCommandTo_p_Command, 0, 0},  {&_swigt__p_WaitUntilCommand, _p_WaitUntilCommandTo_p_Command, 0, 0},  {&_swigt__p_CommandGroup, _p_CommandGroupTo_p_Command, 0, 0},  {&_swigt__p_WaitForChildren, _p_WaitForChildrenTo_p_Command, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_CommandGroup[] = {  {&_swigt__p_CommandGroup, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ComplexData[] = {  {&_swigt__p_ComplexData, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Compressor[] = {  {&_swigt__p_Compressor, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ControlMode[] = {  {&_swigt__p_ControlMode, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Counter[] = {  {&_swigt__p_Counter, 0, 0, 0},  {&_swigt__p_GearTooth, _p_GearToothTo_p_Counter, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Dashboard[] = {  {&_swigt__p_Dashboard, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DashboardBase[] = {  {&_swigt__p_Dashboard, _p_DashboardTo_p_DashboardBase, 0, 0},  {&_swigt__p_DashboardBase, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DigitalIOButton[] = {  {&_swigt__p_DigitalIOButton, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_DigitalInput[] = {  {&_swigt__p_DigitalInput, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DigitalModule[] = {  {&_swigt__p_DigitalModule, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_DigitalOutput[] = {  {&_swigt__p_DigitalOutput, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_DigitalSource[] = {  {&_swigt__p_DigitalSource, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Direction[] = {  {&_swigt__p_Direction, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DistanceUnit[] = {  {&_swigt__p_DistanceUnit, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_DoubleSolenoid[] = {  {&_swigt__p_DoubleSolenoid, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_DriverStation[] = {  {&_swigt__p_DriverStation, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_DriverStationEnhancedIO[] = {  {&_swigt__p_DriverStationEnhancedIO, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Encoder[] = {  {&_swigt__p_Encoder, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_EncodingType[] = {  {&_swigt__p_EncodingType, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_EntryValue[] = {  {&_swigt__p_EntryValue, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Error[] = {  {&_swigt__p_Error, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ErrorBase[] = {  {&_swigt__p_ErrorBase, 0, 0, 0},  {&_swigt__p_Watchdog, _p_WatchdogTo_p_ErrorBase, 0, 0},  {&_swigt__p_SensorBase, _p_SensorBaseTo_p_ErrorBase, 0, 0},  {&_swigt__p_KinectStick, _p_KinectStickTo_p_ErrorBase, 0, 0},  {&_swigt__p_Ultrasonic, _p_UltrasonicTo_p_ErrorBase, 0, 0},  {&_swigt__p_SmartDashboard, _p_SmartDashboardTo_p_ErrorBase, 0, 0},  {&_swigt__p_Task, _p_TaskTo_p_ErrorBase, 0, 0},  {&_swigt__p_RobotDrive, _p_RobotDriveTo_p_ErrorBase, 0, 0},  {&_swigt__p_Preferences, _p_PreferencesTo_p_ErrorBase, 0, 0},  {&_swigt__p_SerialPort, _p_SerialPortTo_p_ErrorBase, 0, 0},  {&_swigt__p_Notifier, _p_NotifierTo_p_ErrorBase, 0, 0},  {&_swigt__p_SPI, _p_SPITo_p_ErrorBase, 0, 0},  {&_swigt__p_Resource, _p_ResourceTo_p_ErrorBase, 0, 0},  {&_swigt__p_Joystick, _p_JoystickTo_p_ErrorBase, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_ErrorBase[] = {  {&_swigt__p_Preferences, _p_PreferencesTo_p_ErrorBase, 0, 0},  {&_swigt__p_Resource, _p_ResourceTo_p_ErrorBase, 0, 0},  {&_swigt__p_Joystick, _p_JoystickTo_p_ErrorBase, 0, 0},  {&_swigt__p_Notifier, _p_NotifierTo_p_ErrorBase, 0, 0},  {&_swigt__p_SmartDashboard, _p_SmartDashboardTo_p_ErrorBase, 0, 0},  {&_swigt__p_SPI, _p_SPITo_p_ErrorBase, 0, 0},  {&_swigt__p_Ultrasonic, _p_UltrasonicTo_p_ErrorBase, 0, 0},  {&_swigt__p_Task, _p_TaskTo_p_ErrorBase, 0, 0},  {&_swigt__p_RobotDrive, _p_RobotDriveTo_p_ErrorBase, 0, 0},  {&_swigt__p_SensorBase, _p_SensorBaseTo_p_ErrorBase, 0, 0},  {&_swigt__p_ErrorBase, 0, 0, 0},  {&_swigt__p_SerialPort, _p_SerialPortTo_p_ErrorBase, 0, 0},  {&_swigt__p_AxisCamera, _p_AxisCameraTo_p_ErrorBase, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Error__Code[] = {  {&_swigt__p_Error__Code, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FUNCPTR[] = {  {&_swigt__p_FUNCPTR, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Faults[] = {  {&_swigt__p_Faults, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_FlowControl[] = {  {&_swigt__p_FlowControl, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_GearTooth[] = {  {&_swigt__p_GearTooth, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_GenericHID[] = {  {&_swigt__p_GenericHID, 0, 0, 0},  {&_swigt__p_Joystick, _p_JoystickTo_p_GenericHID, 0, 0},  {&_swigt__p_KinectStick, _p_KinectStickTo_p_GenericHID, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_GenericHID[] = {  {&_swigt__p_GenericHID, 0, 0, 0},  {&_swigt__p_Joystick, _p_JoystickTo_p_GenericHID, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Gyro[] = {  {&_swigt__p_Gyro, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_HSLImage[] = {  {&_swigt__p_HSLImage, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_HiTechnicColorSensor[] = {  {&_swigt__p_HiTechnicColorSensor, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_HiTechnicColorSensor__RGB[] = {  {&_swigt__p_HiTechnicColorSensor__RGB, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_HiTechnicCompass[] = {  {&_swigt__p_HiTechnicCompass, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_I2C[] = {  {&_swigt__p_I2C, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_INT64[] = {  {&_swigt__p_INT64, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_ITable[] = {  {&_swigt__p_ITable, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Image[] = {  {&_swigt__p_Image, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_InternalButton[] = {  {&_swigt__p_InternalButton, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_InterruptHandlerFunction[] = {  {&_swigt__p_InterruptHandlerFunction, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_InterruptableSensorBase[] = {  {&_swigt__p_InterruptableSensorBase, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_IterativeRobot[] = {  {&_swigt__p_IterativeRobot, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Jaguar[] = {  {&_swigt__p_Jaguar, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Joystick[] = {  {&_swigt__p_Joystick, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_JoystickAxis[] = {  {&_swigt__p_JoystickAxis, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_JoystickButton[] = {  {&_swigt__p_JoystickButton, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_JoystickHand[] = {  {&_swigt__p_JoystickHand, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Kinect[] = {  {&_swigt__p_Kinect, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_KinectStick[] = {  {&_swigt__p_KinectStick, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Kinect__Point4[] = {  {&_swigt__p_Kinect__Point4, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_LimitMode[] = {  {&_swigt__p_LimitMode, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Limits[] = {  {&_swigt__p_Limits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Mode[] = {  {&_swigt__p_Mode, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_MotorType[] = {  {&_swigt__p_MotorType, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_NamedSendable[] = {  {&_swigt__p_Command, _p_CommandTo_p_NamedSendable, 0, 0},  {&_swigt__p_PIDCommand, _p_PIDCommandTo_p_NamedSendable, 0, 0},  {&_swigt__p_PrintCommand, _p_PrintCommandTo_p_NamedSendable, 0, 0},  {&_swigt__p_StartCommand, _p_StartCommandTo_p_NamedSendable, 0, 0},  {&_swigt__p_WaitCommand, _p_WaitCommandTo_p_NamedSendable, 0, 0},  {&_swigt__p_WaitUntilCommand, _p_WaitUntilCommandTo_p_NamedSendable, 0, 0},  {&_swigt__p_NamedSendable, 0, 0, 0},  {&_swigt__p_Scheduler, _p_SchedulerTo_p_NamedSendable, 0, 0},  {&_swigt__p_Subsystem, _p_SubsystemTo_p_NamedSendable, 0, 0},  {&_swigt__p_CommandGroup, _p_CommandGroupTo_p_NamedSendable, 0, 0},  {&_swigt__p_WaitForChildren, _p_WaitForChildrenTo_p_NamedSendable, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_MotorSafety[] = {  {&_swigt__p_RobotDrive, _p_RobotDriveTo_p_MotorSafety, 0, 0},  {&_swigt__p_MotorSafety, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_NamedSendable[] = {  {&_swigt__p_NamedSendable, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_NetworkButton[] = {  {&_swigt__p_NetworkButton, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_NeutralMode[] = {  {&_swigt__p_NeutralMode, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Notifier[] = {  {&_swigt__p_Notifier, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_PIDCommand[] = {  {&_swigt__p_PIDCommand, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_PIDController[] = {  {&_swigt__p_PIDController, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_PIDOutput[] = {  {&_swigt__p_SpeedController, _p_SpeedControllerTo_p_PIDOutput, 0, 0},  {&_swigt__p_PIDOutput, 0, 0, 0},  {&_swigt__p_Victor, _p_VictorTo_p_PIDOutput, 0, 0},  {&_swigt__p_Talon, _p_TalonTo_p_PIDOutput, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_PIDSource[] = {  {&_swigt__p_PIDSource, 0, 0, 0},  {&_swigt__p_Ultrasonic, _p_UltrasonicTo_p_PIDSource, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_PIDSourceParameter[] = {  {&_swigt__p_PIDSourceParameter, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_PIDSubsystem[] = {  {&_swigt__p_PIDSubsystem, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_PWM[] = {  {&_swigt__p_PWM, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Parity[] = {  {&_swigt__p_Parity, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_PeriodMultiplier[] = {  {&_swigt__p_PeriodMultiplier, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_PositionReference[] = {  {&_swigt__p_PositionReference, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_Port[] = {  {&_swigt__p_Port, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Preferences[] = {  {&_swigt__p_Preferences, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_PrintCommand[] = {  {&_swigt__p_PrintCommand, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_ReentrantSemaphore[] = {  {&_swigt__p_ReentrantSemaphore, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Relay[] = {  {&_swigt__p_Relay, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Resource[] = {  {&_swigt__p_Resource, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_RobotBase[] = {  {&_swigt__p_RobotBase, 0, 0, 0},  {&_swigt__p_SimpleRobot, _p_SimpleRobotTo_p_RobotBase, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_RobotDrive[] = {  {&_swigt__p_RobotDrive, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_SEM_ID[] = {  {&_swigt__p_SEM_ID, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_RumbleType[] = {  {&_swigt__p_RumbleType, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_SPI[] = {  {&_swigt__p_SPI, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_SPI__tFrameMode[] = {  {&_swigt__p_SPI__tFrameMode, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Scheduler[] = {  {&_swigt__p_Scheduler, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_SampleRobot[] = {  {&_swigt__p_SampleRobot, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Sendable[] = {  {&_swigt__p_Sendable, 0, 0, 0},  {&_swigt__p_SendableChooser, _p_SendableChooserTo_p_Sendable, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_SendableChooser[] = {  {&_swigt__p_SendableChooser, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_SensorBase[] = {  {&_swigt__p_SmartDashboard, _p_SmartDashboardTo_p_SensorBase, 0, 0},  {&_swigt__p_SPI, _p_SPITo_p_SensorBase, 0, 0},  {&_swigt__p_Ultrasonic, _p_UltrasonicTo_p_SensorBase, 0, 0},  {&_swigt__p_SensorBase, 0, 0, 0},  {&_swigt__p_Watchdog, _p_WatchdogTo_p_SensorBase, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_SensorBase[] = {  {&_swigt__p_SmartDashboard, _p_SmartDashboardTo_p_SensorBase, 0, 0},  {&_swigt__p_SPI, _p_SPITo_p_SensorBase, 0, 0},  {&_swigt__p_Ultrasonic, _p_UltrasonicTo_p_SensorBase, 0, 0},  {&_swigt__p_SensorBase, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_SerialPort[] = {  {&_swigt__p_SerialPort, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Servo[] = {  {&_swigt__p_Servo, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_SimpleRobot[] = {  {&_swigt__p_SimpleRobot, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Skeleton[] = {  {&_swigt__p_Skeleton, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_SkeletonQuality[] = {  {&_swigt__p_SkeletonQuality, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_SkeletonTrackingState[] = {  {&_swigt__p_SkeletonTrackingState, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_SmartDashboard[] = {  {&_swigt__p_SmartDashboard, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Solenoid[] = {  {&_swigt__p_Solenoid, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_SpeedController[] = {  {&_swigt__p_SpeedController, 0, 0, 0},  {&_swigt__p_Victor, _p_VictorTo_p_SpeedController, 0, 0},  {&_swigt__p_Talon, _p_TalonTo_p_SpeedController, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_SpeedReference[] = {  {&_swigt__p_SpeedReference, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_StartCommand[] = {  {&_swigt__p_StartCommand, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_StopBits[] = {  {&_swigt__p_StopBits, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Subsystem[] = {  {&_swigt__p_Subsystem, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_SubsystemSet[] = {  {&_swigt__p_SubsystemSet, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Synchronized[] = {  {&_swigt__p_Synchronized, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_TASK[] = {  {&_swigt__p_TASK, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Talon[] = {  {&_swigt__p_Talon, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Task[] = {  {&_swigt__p_Task, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Timer[] = {  {&_swigt__p_Timer, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Type[] = {  {&_swigt__p_Type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_UINT[] = {  {&_swigt__p_UINT, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Ultrasonic[] = {  {&_swigt__p_Ultrasonic, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Value[] = {  {&_swigt__p_Value, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Victor[] = {  {&_swigt__p_Victor, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_WaitCommand[] = {  {&_swigt__p_WaitCommand, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_WaitForChildren[] = {  {&_swigt__p_WaitForChildren, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_WaitUntilCommand[] = {  {&_swigt__p_WaitUntilCommand, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_Watchdog[] = {  {&_swigt__p_Watchdog, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_WriteBufferMode[] = {  {&_swigt__p_WriteBufferMode, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_bool[] = {  {&_swigt__p_bool, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_f_p_void__void[] = {  {&_swigt__p_f_p_void__void, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int16_t[] = {  {&_swigt__p_int16_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int32_t[] = {  {&_swigt__p_int32_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_int8_t[] = {  {&_swigt__p_int8_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_int64_t[] = {  {&_swigt__p_int64_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_Resource[] = {  {&_swigt__p_p_Resource, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_char[] = {  {&_swigt__p_p_char, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_std__setT_Subsystem_p_t[] = {  {&_swigt__p_std__setT_Subsystem_p_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__string[] = {  {&_swigt__p_std__string, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_std__string_t[] = {  {&_swigt__p_std__vectorT_std__string_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_tInterruptHandler[] = {  {&_swigt__p_tInterruptHandler, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uint16_t[] = {  {&_swigt__p_uint16_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uint32_t[] = {  {&_swigt__p_uint32_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uint8_t[] = {  {&_swigt__p_uint8_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_unsigned_int[] = {  {&_swigt__p_unsigned_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_void[] = {  {&_swigt__p_void, 0, 0, 0},{0, 0, 0, 0}};
 
 static swig_cast_info *swig_cast_initial[] = {
@@ -47022,35 +34736,23 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_ADXL345_SPI,
   _swigc__p_ADXL345_SPI__AllAxes,
   _swigc__p_Accelerometer,
-  _swigc__p_AnalogChannel,
-  _swigc__p_AnalogIOButton,
-  _swigc__p_AnalogModule,
+  _swigc__p_AnalogInput,
+  _swigc__p_AnalogOutput,
   _swigc__p_AnalogTrigger,
   _swigc__p_AnalogTriggerOutput,
+  _swigc__p_AnalogTriggerType,
   _swigc__p_AxisCamera,
   _swigc__p_AxisType,
-  _swigc__p_ButtonScheduler,
   _swigc__p_ButtonType,
-  _swigc__p_CANJaguar,
   _swigc__p_ColorImage,
-  _swigc__p_Command,
-  _swigc__p_CommandGroup,
   _swigc__p_ComplexData,
   _swigc__p_Compressor,
-  _swigc__p_ControlMode,
   _swigc__p_Counter,
-  _swigc__p_Dashboard,
-  _swigc__p_DashboardBase,
-  _swigc__p_DigitalIOButton,
   _swigc__p_DigitalInput,
-  _swigc__p_DigitalModule,
   _swigc__p_DigitalOutput,
   _swigc__p_DigitalSource,
-  _swigc__p_Direction,
-  _swigc__p_DistanceUnit,
   _swigc__p_DoubleSolenoid,
   _swigc__p_DriverStation,
-  _swigc__p_DriverStationEnhancedIO,
   _swigc__p_Encoder,
   _swigc__p_EncodingType,
   _swigc__p_EntryValue,
@@ -47058,105 +34760,62 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_ErrorBase,
   _swigc__p_Error__Code,
   _swigc__p_FUNCPTR,
-  _swigc__p_Faults,
-  _swigc__p_FlowControl,
   _swigc__p_GearTooth,
   _swigc__p_GenericHID,
   _swigc__p_Gyro,
   _swigc__p_HSLImage,
-  _swigc__p_HiTechnicColorSensor,
-  _swigc__p_HiTechnicColorSensor__RGB,
-  _swigc__p_HiTechnicCompass,
   _swigc__p_I2C,
-  _swigc__p_INT64,
   _swigc__p_ITable,
   _swigc__p_Image,
   _swigc__p_InternalButton,
+  _swigc__p_InterruptHandlerFunction,
   _swigc__p_InterruptableSensorBase,
   _swigc__p_IterativeRobot,
   _swigc__p_Jaguar,
   _swigc__p_Joystick,
-  _swigc__p_JoystickAxis,
   _swigc__p_JoystickButton,
-  _swigc__p_JoystickHand,
-  _swigc__p_Kinect,
-  _swigc__p_KinectStick,
-  _swigc__p_Kinect__Point4,
-  _swigc__p_LimitMode,
-  _swigc__p_Limits,
-  _swigc__p_Mode,
-  _swigc__p_MotorType,
+  _swigc__p_MotorSafety,
   _swigc__p_NamedSendable,
   _swigc__p_NetworkButton,
-  _swigc__p_NeutralMode,
   _swigc__p_Notifier,
-  _swigc__p_PIDCommand,
   _swigc__p_PIDController,
   _swigc__p_PIDOutput,
   _swigc__p_PIDSource,
   _swigc__p_PIDSourceParameter,
-  _swigc__p_PIDSubsystem,
   _swigc__p_PWM,
-  _swigc__p_Parity,
-  _swigc__p_PeriodMultiplier,
-  _swigc__p_PositionReference,
+  _swigc__p_Port,
   _swigc__p_Preferences,
-  _swigc__p_PrintCommand,
-  _swigc__p_ReentrantSemaphore,
   _swigc__p_Relay,
   _swigc__p_Resource,
-  _swigc__p_RobotBase,
   _swigc__p_RobotDrive,
-  _swigc__p_SEM_ID,
+  _swigc__p_RumbleType,
   _swigc__p_SPI,
-  _swigc__p_SPI__tFrameMode,
-  _swigc__p_Scheduler,
+  _swigc__p_SampleRobot,
   _swigc__p_Sendable,
   _swigc__p_SendableChooser,
   _swigc__p_SensorBase,
   _swigc__p_SerialPort,
   _swigc__p_Servo,
-  _swigc__p_SimpleRobot,
-  _swigc__p_Skeleton,
-  _swigc__p_SkeletonQuality,
-  _swigc__p_SkeletonTrackingState,
   _swigc__p_SmartDashboard,
   _swigc__p_Solenoid,
   _swigc__p_SpeedController,
-  _swigc__p_SpeedReference,
-  _swigc__p_StartCommand,
-  _swigc__p_StopBits,
-  _swigc__p_Subsystem,
-  _swigc__p_SubsystemSet,
-  _swigc__p_Synchronized,
+  _swigc__p_TASK,
   _swigc__p_Talon,
   _swigc__p_Task,
-  _swigc__p_Timer,
-  _swigc__p_Type,
-  _swigc__p_UINT,
   _swigc__p_Ultrasonic,
-  _swigc__p_Value,
   _swigc__p_Victor,
-  _swigc__p_WaitCommand,
-  _swigc__p_WaitForChildren,
-  _swigc__p_WaitUntilCommand,
-  _swigc__p_Watchdog,
-  _swigc__p_WriteBufferMode,
-  _swigc__p_bool,
   _swigc__p_f_p_void__void,
-  _swigc__p_int,
   _swigc__p_int16_t,
   _swigc__p_int32_t,
-  _swigc__p_int8_t,
+  _swigc__p_int64_t,
   _swigc__p_p_Resource,
   _swigc__p_p_char,
-  _swigc__p_std__setT_Subsystem_p_t,
   _swigc__p_std__string,
   _swigc__p_std__vectorT_std__string_t,
-  _swigc__p_tInterruptHandler,
   _swigc__p_uint16_t,
   _swigc__p_uint32_t,
   _swigc__p_uint8_t,
+  _swigc__p_unsigned_int,
   _swigc__p_void,
 };
 

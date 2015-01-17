@@ -80,7 +80,7 @@ function isPsp() return(Socket ~= nil) end
 if (not isPsp()) then
   socket = require("socket")
   io = require("io")
-  ltn12 = require("ltn12")
+  ltn12 = require("socket.ltn12")
 --require("ssl")
 end
 
@@ -710,7 +710,7 @@ function MQTT.client:parse_message_suback(                      -- Internal API
     error(me .. ": Outstanding message wasn't SUBSCRIBE")
   end
 
-  local topic_count = table.getn(outstanding[2])
+  local topic_count = #outstanding[2]
 
   if (topic_count ~= remaining_length - 2) then
     error(me .. ": Didn't received expected number of topics: " .. topic_count)
