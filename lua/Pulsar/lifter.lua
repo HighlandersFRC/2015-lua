@@ -4,12 +4,15 @@
 local core = require"core"
 local lifterPower = .5
 local lifterInOutPower = .5
-
+-- the lifter lock off means that the arms cannot be moved
 
 -- Intake In Command
+
+
 local lifterOut = {
   Initialize = function()
     -- motor code goes here
+    
     robotMap.lifterInOut:Set(-lifterInOutPower)
   end,
   IsFinished = function() 
@@ -48,6 +51,7 @@ local lifterIn = {
 local lifterUp = {
   Initialize = function()
     -- motor code goes here
+    OI.lifterLock:Set(on)
     robotMap.lifterUpDown:Set(-lifterPower)
   end,
   IsFinished = function() 
@@ -55,6 +59,7 @@ local lifterUp = {
   end,
   End = function(self)
     robotMap.lifterUpDown:Set(0)
+    OI.lifterLock:Set(off)
   end,
   Interrupted = function(self)
     self:End()
@@ -67,13 +72,16 @@ local lifterUp = {
 local lifterDown = {
   Initialize = function()
     -- motor code goes here
+    OI.lifterLock:Set(on)
     robotMap.lifterUpDown:Set(lifterPower)
   end,
   IsFinished = function() 
     return not OI.lifterDown:Get()  
   end,
   End = function(self)
+    
     robotMap.lifterUpDown:Set(0)
+    OI.lifterLock:Set(off)
   end,
   Interrupted = function(self)
     self:End()
@@ -82,6 +90,7 @@ local lifterDown = {
     "LifterUpDown"
   },
 }
+
 -- triggers
 
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterDown,lifterDown))
