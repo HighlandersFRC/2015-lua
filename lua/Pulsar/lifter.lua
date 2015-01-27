@@ -51,7 +51,7 @@ local lifterIn = {
 local lifterUp = {
   Initialize = function()
     -- motor code goes here
-    OI.lifterLock:Set(on)
+    robotMap.lifterLock:Set(true)
     robotMap.lifterUpDown:Set(-lifterPower)
   end,
   IsFinished = function() 
@@ -59,7 +59,7 @@ local lifterUp = {
   end,
   End = function(self)
     robotMap.lifterUpDown:Set(0)
-    OI.lifterLock:Set(off)
+    robotMap.lifterLock:Set(false)
   end,
   Interrupted = function(self)
     self:End()
@@ -72,7 +72,7 @@ local lifterUp = {
 local lifterDown = {
   Initialize = function()
     -- motor code goes here
-    OI.lifterLock:Set(on)
+    robotMap.lifterLock:Set(true)
     robotMap.lifterUpDown:Set(lifterPower)
   end,
   IsFinished = function() 
@@ -81,7 +81,7 @@ local lifterDown = {
   End = function(self)
     
     robotMap.lifterUpDown:Set(0)
-    OI.lifterLock:Set(off)
+    robotMap.lifterLock:Set(false)
   end,
   Interrupted = function(self)
     self:End()
