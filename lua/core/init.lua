@@ -9,7 +9,7 @@ core.getJoy = function(id)
     if joysticks[id] then
         return joysticks[id]
     end
-    joysticks[id] = WPILib.Joystick(WPILib.asUint32(id))
+    joysticks[id] = WPILib.Joystick(id)
     return joysticks[id]
 end
 
@@ -45,7 +45,7 @@ core.getTalon = function(id)
     if talons[id] then
         return talons[id]
     end
-    talons[id] = WPILib.Talon(WPILib.asUint32(id))
+    talons[id] = WPILib.Talon(id)
     return talons[id]
 end
 
@@ -55,7 +55,7 @@ core.getAIN = function(id)
     if AINs[id] then
         return AINs[id]
     end
-    AINs[id] = WPILib.AnalogChannel(WPILib.asUint32(id))
+    AINs[id] = WPILib.AnalogChannel(id)
     return PWMs[id]
 end
 
@@ -65,7 +65,7 @@ core.getDIO = function(id)
     if DIOs[id] then
         return DIOs[id]
     end
-    DIOs[id] = WPILib.DigitalChannel(WPILib.asUint32(id))
+    DIOs[id] = WPILib.DigitalChannel(id)
     return DIOs[id]
 end
 
@@ -75,21 +75,21 @@ core.getSolenoid = function(id)
     if solenoids[id] then
         return solenoids[id]
     end
-    solenoids[id] = WPILib.Solenoid(WPILib.asUint32(id))
+    solenoids[id] = WPILib.Solenoid(id)
     return solenoids[id]
 end
 
-core.setCompositeRobot = dofile("lua/core/compositeRobot.lua")
+core.setCompositeRobot = dofile("/home/lvuser/lua/core/compositeRobot.lua")
 
-core.setBasicRobot = dofile("lua/core/basicRobot.lua")
+core.setBasicRobot = dofile("/home/lvuser/lua/core/basicRobot.lua")
 
-core.coAction = dofile("lua/core/coroutineAction.lua")
+core.coAction = dofile("/home/lvuser/lua/core/coroutineAction.lua")
 
-core.seqAction = dofile("lua/core/sequentialAction.lua")
+core.seqAction = dofile("/home/lvuser/lua/core/sequentialAction.lua")
 
-core.parAction = dofile("lua/core/parallelAction.lua")
+core.parAction = dofile("/home/lvuser/lua/core/parallelAction.lua")
 
-core.serialize = dofile("lua/core/serialize.lua")
+core.serialize = dofile("/home/lvuser/lua/core/serialize.lua")
 
 local keepAlive_coroutines = {nextIndex = 1}
 
@@ -119,6 +119,7 @@ if MQTT_CONSOLE_ENABLE then
   local MQTT = require"paho.mqtt"
 
   printCout = print
+  
 
   local function mqttCallback(topic, payload)
     printCout("mqtt console input", topic, payload)
@@ -147,6 +148,10 @@ if MQTT_CONSOLE_ENABLE then
     ))
   
   print"MQTT console initialization"
+  publish = function(topic,payload)
+     mqtt_console_client:publish(topic,payload)
+  end
+  
 end
 
 return core

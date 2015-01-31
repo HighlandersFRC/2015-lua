@@ -17,6 +17,7 @@ local adjust = function(val)
 end
 
 local calibrate = function(points,time)
+  print("Calibrating Gyro")
   local timer = WPILib.Timer()
   timer:Start()
   local xSum = 0

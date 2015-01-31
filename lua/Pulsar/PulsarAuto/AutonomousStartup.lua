@@ -1,14 +1,20 @@
 print("AutoSys")
 --local autoTurn = require "Pulsar.PulsarAuto.Turn"
 local goForward = require"Pulsar.PulsarAuto.driveForward"
-local sequence = require "AutoSequence"
+local square = require"Pulsar.PulsarAuto.driveSquareSequnce"
+--local sequence = require "AutoSequence"
 --local arc = require "Pulsar.PulsarAuto.Arc"
+local forward = goForward(0,0)
 local core = require"core"
+local startTime = 0
 local autonomous = { 
   Initialize = function()
     print("autonomous command started")
     --local turn = autoTurn(1,1,1)
-    Robot.schedulerAuto:StartCommand(goForward)
+    forward = goForward(0,100)
+    Robot.schedulerAuto:StartCommand(forward)
+    --Robot.schedulerAuto:StartCommand(square)
+    --startTime = WPILib.Timer.GetFPGATimestamp()
     --degree speed radius
     --local arcAuto = arc(90,1,15)
     --Robot.schedulerAuto:StartCommand(arcAuto)
@@ -18,7 +24,8 @@ local autonomous = {
     Robot.schedulerAuto:Execute()
   end,
   End = function()
-
+    print("Auto Startup ended")
+  Robot.schedulerAuto:CancelCommand(forward)
   end
 }
 
