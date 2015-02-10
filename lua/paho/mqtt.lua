@@ -778,7 +778,7 @@ end
 -- @param #string topic
 -- @param #string payload
 -- @function [parent = #client] publish
---
+
 function MQTT.client:publish(                                     -- Public API
   topic,    -- string
   payload)  -- string

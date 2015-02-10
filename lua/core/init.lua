@@ -83,10 +83,6 @@ core.setCompositeRobot = dofile("/home/lvuser/lua/core/compositeRobot.lua")
 
 core.setBasicRobot = dofile("/home/lvuser/lua/core/basicRobot.lua")
 
-core.coAction = dofile("/home/lvuser/lua/core/coroutineAction.lua")
-
-core.seqAction = dofile("/home/lvuser/lua/core/sequentialAction.lua")
-
 core.parAction = dofile("/home/lvuser/lua/core/parallelAction.lua")
 
 core.serialize = dofile("/home/lvuser/lua/core/serialize.lua")
@@ -109,7 +105,7 @@ core.notify_keepAlive = function()
     else
       keepAlive_coroutines.nextIndex = keepAlive_coroutines.nextIndex + 1
     end
-    if keepAlive_coroutines.nextIndex >= #keepAlive_coroutines then
+    if keepAlive_coroutines.nextIndex > #keepAlive_coroutines then
       keepAlive_coroutines.nextIndex = 1
     end
   end
@@ -119,7 +115,6 @@ if MQTT_CONSOLE_ENABLE then
   local MQTT = require"paho.mqtt"
 
   printCout = print
-  
 
   local function mqttCallback(topic, payload)
     printCout("mqtt console input", topic, payload)
@@ -137,6 +132,10 @@ if MQTT_CONSOLE_ENABLE then
     mqtt_console_client:publish(MQTT_CONSOLE_TOPIC.."/out", ("%s"):rep(select("#", ...), "\t"):format(...))
   end
   
+  function publish(topic, message)
+    mqtt_console_client:publish(topic, message)
+  end
+  
   core.register_keepAlive(
     coroutine.create(
       function()
@@ -148,10 +147,6 @@ if MQTT_CONSOLE_ENABLE then
     ))
   
   print"MQTT console initialization"
-  publish = function(topic,payload)
-     mqtt_console_client:publish(topic,payload)
-  end
-  
 end
 
 return core

@@ -5,13 +5,16 @@
 
 print("beginning lua core initialization")
 
-package.path = "/lua/?.lua;/lua/core/?.lua;/lua/?/init.lua;/lua/core/?/init.lua;./?.lua;./?/init.lua"
+package.path = "/home/lvuser/lua/?.lua;/home/lvuser/lua/core/?.lua;/home/lvuser/lua/?/init.lua;/home/lvuser/lua/core/?/init.lua;./?.lua;./?/init.lua"
+package.cpath = "/home/lvuser/lua/?.so"
 
-dofile"/lua/core/defaultConfig.lua"
+dofile"/home/lvuser/lua/core/defaultConfig.lua"
 
-dofile"/lua/config.lua"
+dofile"/home/lvuser/lua/config.lua"
 
-
+debugPrint = function(...)
+  if enableDebug then print(...) end
+end
 
 
 print("finished lua core initialization")
