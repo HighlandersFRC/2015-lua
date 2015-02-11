@@ -18,22 +18,23 @@ end
 
 local calibrate = function(points,time)
   print("Calibrating Gyro")
-  local timer = WPILib.Timer()
-  timer:Start()
+  --local timer = WPILib.Timer()
+  print"created timer"
+  --timer:Start()
   local xSum = 0
   local ySum = 0
   local zSum = 0
   local gyroVals = {}
   local numPoints = 0
   while numPoints < points do
-    if timer:Get() >= time then
+    --if timer:Get() >= time then
       gyroVals = {gyroOne:readGyroRaw()}
       xSum = xSum +adjust(gyroVals[1])
       ySum = ySum +adjust(gyroVals[2])
       zSum = zSum +adjust(gyroVals[3])
-      timer:Reset()
+      --timer:Reset()
       numPoints = numPoints + 1
-    end
+    --end
   end
   xCal = xSum / numPoints
   yCal = ySum / numPoints

@@ -1,3 +1,8 @@
+
+print("WPILib", WPILib)
+print("WPILib.Timer", WPILib.Timer)
+print("WPILib.Timer.GetFPGATimestamp", WPILib.Timer.GetFPGATimestamp)
+
 local currentState = 1
 local currentEnabled = false
 
@@ -28,14 +33,17 @@ while true do
   end
   
   if currentState ~= newState then
-    local endfn = Robot[stateNames[currentState]].End or NoOp
-    endfn(stateNames[currentState])
-    local initfn = Robot[stateNames[newState]].Initialize or NoOp
-    initfn(stateNames[currentState])
-    currentState = newState
+    if newState ~= nil then
+      local endfn = Robot[stateNames[currentState]].End or NoOp
+      endfn(stateNames[currentState])
+      print("entered state "..stateNames[newState])
+      local initfn = Robot[stateNames[newState]].Initialize or NoOp
+      initfn(stateNames[currentState])
+      currentState = newState
+    end
   end
   
-  local exec = Robot[stateNames[newState]].Execute or NoOp
-  exec(stateNames[newState])
+  local exec = Robot[stateNames[currentState]].Execute or NoOp
+  exec(stateNames[currentState])
   core.notify_keepAlive()
 end

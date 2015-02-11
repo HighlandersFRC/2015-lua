@@ -107,11 +107,14 @@ local intakeRightIn = function()
   end
 end
 
+checkWPILib"before intake triggers"
 Robot.scheduler:AddTrigger(intakeLeftIn)
 Robot.scheduler:AddTrigger(intakeLeftOut)
 Robot.scheduler:AddTrigger(intakeRightIn)
 Robot.scheduler:AddTrigger(intakeRightOut)
+checkWPILib"after intake triggers"
 --Robot.scheduler:SetDefaultCommand("intakeWheels",intakeWheelsStopCommand)
 --Robot.Teleop.Put("intakeWheels", intakeWheelsStopCommand)
 debugPrint("intake finished")
 
+checkWPILib"after debugPrint"

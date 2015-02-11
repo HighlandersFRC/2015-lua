@@ -1,3 +1,8 @@
+print"in RobotMap"
+--require"WPILib"
+--print"required WPILib"
+WPILib.Talon(1)
+print"CANTalon"
 
 robotMap = {
 FLTalon = WPILib.CANTalon(1),

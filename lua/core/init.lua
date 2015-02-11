@@ -130,6 +130,7 @@ if MQTT_CONSOLE_ENABLE then
   function print(...)
     printCout(...)
     mqtt_console_client:publish(MQTT_CONSOLE_TOPIC.."/out", ("%s"):rep(select("#", ...), "\t"):format(...))
+    printCout"finished print"
   end
   
   function publish(topic, message)

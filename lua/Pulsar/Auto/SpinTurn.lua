@@ -18,21 +18,26 @@ local spinTurn = function(rotation)
       print("SpinTurn turning")
       heading = 0
       PID.setpoint = angle
-      startTime = WPILib.Timer.GetFPGATimestamp()
-      lastTime = WPILib.Timer.GetFPGATimestamp()
+      print"starting timestamps"
+      startTime = os.time()-- WPILib.Timer.GetFPGATimestamp()
+      lastTime = os.time()--WPILib.Timer.GetFPGATimestamp()
+      print"finished timestamps"
       gyro.Calibrate(100,.01)
+      print"finished calibration"
       --  Robot.drive:MecanumDrive_Cartesian(0, 0, -power)
     end,
     Execute = function()
       local x,y,z = gyro:Get()
       
-      local deltaTime = WPILib.Timer.GetFPGATimestamp() - lastTime
+      local deltaTime = os.time() - lastTime --WPILib.Timer.GetFPGATimestamp() - lastTime
       local X = x * (deltaTime) * 180/math.pi
 
       heading = heading + X
-            print(heading)
+            print("heading", heading)
       local response = PID:Update(heading)
+      print"before driving"
       Robot.drive:MecanumDrive_Cartesian(0, response, 0)
+      print"driving"
       lastTime = WPILib.Timer.GetFPGATimestamp()
     end,
     IsFinished = function() 

@@ -1,27 +1,38 @@
 local function parActInit(self)
-    for act in self.actions do
-        act.Initialize()
+    for _, act in ipairs(self.actions) do
+        act:Initialize()
     end
 end
 
 local function parActExec(self)
-    for act in self.actions do
-        act.Execute()
+    for _, act in ipairs(self.actions) do
+        act:Execute()
     end
 end
 
 local function parActEnd(self)
-    for act in self.actions do
-        act.End()
+    for _, act in ipairs(self.actions) do
+        act:End()
     end
 end
 
 local function parActFin(self)
     local fin = true
-    for act in self.actions do
-        fin = act.IsFinished() and fin
+    for _, act in ipairs(self.actions) do
+        fin = act:IsFinished() and fin
     end
     return fin
+end
+
+local function parActInterruptible(self)
+    if self._interruptible == false then
+      return false
+    end
+    local inter = true
+    for _, act in ipairs(self.actions) do
+        inter = act:IsInterruptible() and inter
+    end
+    return inter
 end
 
 local function parActAdd(self, act)
@@ -29,7 +40,7 @@ local function parActAdd(self, act)
 end
 
 local function parallelAction(...)
-    parAct = {}
+    local parAct = {}
     parAct.actions = {...}
     parAct.Initialize = parActInit
     parAct.Execute = parActExec
