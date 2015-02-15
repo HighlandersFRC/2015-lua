@@ -113,7 +113,7 @@ end
 
 if MQTT_CONSOLE_ENABLE then
   local MQTT = require"paho.mqtt"
-
++
   printCout = print
 
   local function mqttCallback(topic, payload)
@@ -148,6 +148,8 @@ if MQTT_CONSOLE_ENABLE then
     ))
   
   print"MQTT console initialization"
+else
+  function publish() end
 end
 
 return core
