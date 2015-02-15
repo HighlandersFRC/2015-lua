@@ -7,44 +7,31 @@ local lifterInOutPower = .4
 local currentHeight = 0
 local pid = require"PID"
 local lifterPoint = require"Pulsar.lifterPoint"
+local lifterInOutPoint = require"Pulsar.lifterInOut"
 local triggers = require"triggers"
 -- the lifter lock off means that the arms cannot be moved
 robotMap.lifterInOut:SetStatusFrameRateMs(2,20)
---robotMap.lifterInOut:GetEncPosition()
+robotMap.lifterUpDown:SetStatusFrameRateMs(2,20)
+--
 -- Intake In Command
 
   
 
 
-local holdLifter = {
+local lifterOut = {
   Initialize = function()
   end,
   Execute = function()
-    if(math.abs(currentHeight - (robotMap.lifterInOut:GetEncPosition()/1000 /25.4 * 120) )) >= 1 then
-      Robot.Scheduler:StartCommand(lifterPoint(currentHeight))
+    if robotMap.lifterInOut:GetEncPosition() < 1850 then
+    robotMap.lifterInOut:Set(-lifterInOutPower)
+    print(robotMap.lifterInOut:GetEncPosition())
+  else
+    robotMap.lifterInOut:Set(0)
+     print(robotMap.lifterInOut:GetEncPosition())
     end
   end,
   IsFinished = function() 
-    return not OI.lifterOut:Get()  
-  end,
-  End = function(self)
-    robotMap.lifterInOut:Set(0)
-  end,
-  Interrupted = function(self)
-    self:End()
-  end,
-  subsystems = {
-    "LifterUpDown"
-  },
-}
-local lifterOut = {
-  Initialize = function()
-    robotMap.lifterInOut:Set(-lifterInOutPower)
-  end,
-  Execute = function()
-  end,
-  IsFinished = function() 
-    return not OI.lifterOut:Get()  
+    return not OI.lifterOut:Get()
   end,
   End = function(self)
     robotMap.lifterInOut:Set(0)
@@ -60,12 +47,18 @@ local lifterOut = {
 local lifterIn = {
   Initialize = function()
     -- motor code goes here
-    robotMap.lifterInOut:Set(lifterInOutPower)
   end,
   Execute = function()
+      if robotMap.lifterInOut:GetEncPosition() > 200 then
+    robotMap.lifterInOut:Set(lifterInOutPower)
+     print(robotMap.lifterInOut:GetEncPosition())
+  else
+    robotMap.lifterInOut:Set(0)
+     print(robotMap.lifterInOut:GetEncPosition())
+    end
   end,
   IsFinished = function() 
-    return (not OI.lifterIn:Get())
+    return (not OI.lifterIn:Get()) 
   end,
   End = function(self)
     robotMap.lifterInOut:Set(0)
@@ -89,7 +82,7 @@ local lifterUp = {
   currentHeight = robotMap.lifterInOut:GetEncPosition()/1000 /25.4 * 120
   end,
   IsFinished = function() 
-    return OI.lifterUp:Get() <=.2 or robotMap.lifterInOut:GetEncPosition()/1000 /25.4 * 120 >= 41  
+    return OI.lifterUp:Get() <.2 
   end,
   End = function(self)
     robotMap.lifterUpDown:Set(0)
@@ -108,14 +101,14 @@ local lifterUp = {
 local lifterDown = {
   Initialize = function()
         print("lifterDown")
-    robotMap.lifterUpDown:Set(-OI.lifterDown:Get())
-    robotMap.lifterUpDownTwo:Set(-OI.lifterDown:Get())
+    robotMap.lifterUpDown:Set(-OI.lifterDown:Get() * 3/4)
+    robotMap.lifterUpDownTwo:Set(-OI.lifterDown:Get() * 3/4)
   end,
   Execute = function()
   currentHeight = robotMap.lifterInOut:GetEncPosition()/1000 /25.4 * 120
   end,
   IsFinished = function()
-    return OI.lifterDown:Get()<=.2 or (robotMap.lifterInOut:GetEncPosition()/1000 /25.4 * 120 )<=1 
+    return OI.lifterDown:Get()<.2
   end,
   End = function(self)
 
@@ -173,17 +166,24 @@ Robot.scheduler:AddTrigger(presetOneTrigger)
 --]]
 
 
-local presetOne = lifterPoint(0)
+local presetOne = lifterInOutPoint(8)
 local presetTwo = lifterPoint(14)
 local presetThree = lifterPoint(28)
-local presetFour = lifterPoint(41)
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.preset,presetOne))
---Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterUp,lifterUp))
---Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterDown,lifterDown))
+local presetFour = lifterInOutPoint(12)
+
+
+
+--Robot.scheduler:AddTrigger(triggers.whenPressed(OI.preset,cancel))
+
+
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterIn,lifterIn))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterOut,lifterOut))
 Robot.scheduler:AddTrigger(lifterUpTrigger)
 Robot.scheduler:AddTrigger(lifterDownTrigger)
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.presetThree,presetThree))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.presetTwo,presetTwo))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.preset,presetOne))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.presetFour,presetFour))
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.presetTwo,cancel))
 debugPrint("Lifter Finished")
 
