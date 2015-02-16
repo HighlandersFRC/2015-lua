@@ -26,8 +26,12 @@ require"Pulsar.OI"
 print"required OI"
 require"Pulsar.RobotMap"
 print"required RobotMap"
+require"Pulsar.RobotConfig"
+print"required RobotConfig"
 local Scheduler = require"command.Scheduler"
 print"requires finished"
+local toggleSlow = false
+local toggleTime = WPILib.Timer.GetFPGATimestamp()
 --require("mqtt_lua_console").start()
 checkWPILib("requires")
 
@@ -41,15 +45,24 @@ checkWPILib("schedulers")
 Robot.Teleop.Put("Drive",{
     Initialize = function()
       print"TeleopInit"
+      toggleTime = WPILib.Timer.GetFPGATimestamp()
     end,
     Execute = function()
+      if(OI.driveSpeed:Get() or OI.driveSpeed:Get() or OI.driveSlowSpeed:Get()) and (WPILib.Timer.GetFPGATimestamp() - toggleTime  >=.5) then
+          toggleSlow = not toggleSlow
+          toggleTime = WPILib.Timer.GetFPGATimestamp()
+        end
+      if toggleSlow then
+        Robot.drive:MecanumDrive_Cartesian(OI.DriveX:Get()/2, OI.DriveY:Get()/2, OI.DriveTheta:Get()/2)
+        else
       Robot.drive:MecanumDrive_Cartesian(OI.DriveX:Get(), OI.DriveY:Get(), OI.DriveTheta:Get())
+      end
       --Robot.drive:TankDrive(Robot.joy:GetRawAxis(1), Robot.joy:GetRawAxis(3))
       if count % 50 == 0 then
-        print("BLTalon voltage: "..tostring(robotMap.BLTalon:GetOutputVoltage()).." current: "..tostring(robotMap.BLTalon:GetOutputCurrent()))
+        --print("BLTalon voltage: "..tostring(robotMap.BLTalon:GetOutputVoltage()).." current: "..tostring(robotMap.BLTalon:GetOutputCurrent()))
       end
       count = count + 1
-    end,
+    end,  
     End = function()
       Robot.drive:MecanumDrive_Cartesian(0, 0, 0)
     end
@@ -71,7 +84,7 @@ Robot.Autonomous.Put("Autonomous", require"Pulsar.Auto.AutonomousStartup")
 checkWPILib"Put Schedulers"
 
 dofile "lua/Pulsar/pulsarIntake.lua"
-
+dofile "lua/Pulsar/lifter.lua"
 checkWPILib"end"
 print("WPILib", WPILib)
 print("WPILib.Timer", WPILib.Timer)
