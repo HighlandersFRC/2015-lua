@@ -7,12 +7,13 @@ local clamp = function(inputValue)
     return inputValue
   end
 end
-local inOutMacro = function(targetPosition)
+local inOutMacro = function(targetPosition, returnTime)
   print("lifter point created")
   -- this input is in inches
 -- 120 mm per revolution 25.4 mm in an inch
   local core = require"core"
   local pidLoop = require"core.PID"
+  local timer = WPILib.Timer()
 
   local target = 0 
   if targetPosition >= RobotConfig.lifterInOutMax then
@@ -37,6 +38,7 @@ local toPosition = {
     robotMap.lifterInOut:SetStatusFrameRateMs(2,20)
     startTime = WPILib.Timer.GetFPGATimestamp()
     PID.setpoint = target
+    timer:Start()
   end,
   Execute = function()
     currentPosition = robotMap.lifterInOut:GetEncPosition()
@@ -45,7 +47,8 @@ local toPosition = {
     print("Current Height: ", currentPosition,"   Target Height :", target, " Response : ",clamp(response))
   end,
   IsFinished = function() 
-    return false --math.abs(height - currentHeight) <=1000
+    --return false --math.abs(height - currentHeight) <=1000
+    return timer:Get() >= returnTime
   end,
   End = function(self)
     robotMap.lifterInOut:Set(0)
