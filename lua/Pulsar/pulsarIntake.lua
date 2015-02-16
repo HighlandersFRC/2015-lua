@@ -2,18 +2,18 @@
 
 --debugPrint("intake started")
 local core = require"core"
-local intakePower = .75
-
+local intakePower = .6
+local triggers = require"triggers"
 
 -- Intake In Command
 
-local intakeLeftInCommand = {
+local intakeLeftOutCommand = {
   Initialize = function()
     -- motor code goes here
-    robotMap.leftIntake:Set(intakePower)
+    robotMap.leftIntake:Set(OI.intakeLeftOut:Get())
   end,
   IsFinished = function() 
-    return not OI.intakeLeftInBtn:Get()  
+    return OI.intakeLeftOut:Get() <.2 
   end,
   End = function(self)
     robotMap.leftIntake:Set(0)
@@ -26,13 +26,13 @@ local intakeLeftInCommand = {
   },
 }
 
-local intakeLeftOutCommand = {
+local intakeLeftInCommand = {
   Initialize = function()
     -- motor code goes here
     robotMap.leftIntake:Set(-intakePower)
   end,
   IsFinished = function() 
-    return not OI.intakeLeftOutBtn:Get()  
+    return not OI.intakeLeftIn:Get() 
   end,
   End = function(self)
     robotMap.leftIntake:Set(0)
@@ -44,13 +44,13 @@ local intakeLeftOutCommand = {
     "Leftintake"
   },
 }
-local intakeRightInCommand = {
+local intakeRightOutCommand = {
   Initialize = function()
     -- motor code goes here
-    robotMap.rightIntake:Set(-intakePower)
+    robotMap.rightIntake:Set(-OI.intakeRightOut:Get())
   end,
   IsFinished = function() 
-    return not OI.intakeRightInBtn:Get()  
+    return OI.intakeRightOut:Get() <.2  
   end,
   End = function(self)
     robotMap.rightIntake:Set(0)
@@ -63,13 +63,14 @@ local intakeRightInCommand = {
   },
 }
 
-local intakeRightOutCommand = {
+local intakeRightInCommand = {
   Initialize = function()
+    print("Right Button")
     -- motor code goes here
     robotMap.rightIntake:Set(intakePower)
   end,
   IsFinished = function() 
-    return not OI.intakeRightOutBtn:Get()  
+    return not OI.intakeRightIn:Get()  
   end,
   End = function(self)
     robotMap.rightIntake:Set(0)
@@ -84,34 +85,22 @@ local intakeRightOutCommand = {
 -- triggers
 local intakeLeftOut = function()
   -- debugPrint("intake in trigger ")
-  if OI.intakeLeftOutBtn:Get() then
+  if OI.intakeLeftOut:Get()>=.2 then
     Robot.CurrentScheduler:StartCommand(intakeLeftOutCommand)
-  end
-end
-local intakeLeftIn = function()
-  -- debugPrint("intake in trigger ")
-  if OI.intakeLeftInBtn:Get() then
-    Robot.CurrentScheduler:StartCommand(intakeLeftInCommand)
   end
 end
 local intakeRightOut = function()
   -- debugPrint("intake in trigger ")
-  if OI.intakeRightOutBtn:Get() then
+  if OI.intakeRightOut:Get()>=.2 then
     Robot.CurrentScheduler:StartCommand(intakeRightOutCommand)
   end
 end
-local intakeRightIn = function()
-  -- debugPrint("intake in trigger ")
-  if OI.intakeRightInBtn:Get() then
-    Robot.CurrentScheduler:StartCommand(intakeRightInCommand)
-  end
-end
-
 checkWPILib"before intake triggers"
-Robot.scheduler:AddTrigger(intakeLeftIn)
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.intakeLeftIn,intakeLeftInCommand))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.intakeRightIn,intakeRightInCommand))
 Robot.scheduler:AddTrigger(intakeLeftOut)
-Robot.scheduler:AddTrigger(intakeRightIn)
 Robot.scheduler:AddTrigger(intakeRightOut)
+
 checkWPILib"after intake triggers"
 --Robot.scheduler:SetDefaultCommand("intakeWheels",intakeWheelsStopCommand)
 --Robot.Teleop.Put("intakeWheels", intakeWheelsStopCommand)
