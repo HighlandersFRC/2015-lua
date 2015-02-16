@@ -13,7 +13,7 @@ local lifterUp = function()
       timer:Start()
     end,
     IsFinished = function(self)
-      return timer:Get() >= 1.2
+      return timer:Get() >= 1
     end,
     Execute = function()
       end,
