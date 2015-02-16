@@ -83,8 +83,10 @@ Robot.Teleop.Put("Scheduler",Robot.scheduler)
 Robot.Autonomous.Put("Autonomous", require"Pulsar.Auto.AutonomousStartup")
 checkWPILib"Put Schedulers"
 
-dofile "lua/Pulsar/pulsarIntake.lua"
-dofile "lua/Pulsar/lifter.lua"
+
+require"Pulsar.pulsarIntake"
+require"Pulsar.lifter"
+
 checkWPILib"end"
 print("WPILib", WPILib)
 print("WPILib.Timer", WPILib.Timer)
