@@ -16,11 +16,13 @@ local inOutMacro = function(targetPosition)
 
   local target = 0 
   if targetPosition >= RobotConfig.lifterInOutMax then
-    print("Above Max")
+    
     target = RobotConfig.lifterInOutMax * 25.4 /120 * 756
+    print("Above Max",target)
   elseif targetPosition <= RobotConfig.lifterInOutMin then
-    print("Below MIN")
+    
       target = RobotConfig.lifterInOutMin* 25.4 /120 * 756
+      print("Below MIN",target)
   else 
     print("It was fine")
     target = targetPosition * 25.4 /120 * 756

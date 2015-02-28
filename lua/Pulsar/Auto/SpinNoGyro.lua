@@ -1,4 +1,3 @@
-
 print("SpinTurn Started")
 local spinTurn = function(waitTime)
   local angle = rotation
@@ -6,16 +5,18 @@ local spinTurn = function(waitTime)
   local startTime = 0
   local time = math.abs(waitTime)
   local t = waitTime
+  local timer = WPILib.Timer()
   local turn = {
     Initialize = function()
      count = 0
-      startTime = WPILib.Timer.GetFPGATimestamp()
+      Robot.drive:MecanumDrive_Cartesian(0, waitTime/t, 0)
+      timer:Start()
     end,
     Execute = function()
-        Robot.drive:MecanumDrive_Cartesian(0, waitTime/t, 0)
+        
     end,
     IsFinished = function() 
-      return WPILib.Timer.GetFPGATimestamp() -startTime >= time
+      return timer:Get() >= waitTime
     end,
     End = function(self)
       print("ENDING THE COMMAND HERE___________________")

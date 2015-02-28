@@ -73,7 +73,7 @@ Scheduler.CancelCommand = function(sched, command)
   local currSchedBackup = Robot.CurrentScheduler
   Robot.CurrentScheduler = sched
   local i = 1
-  while i < #sched.commands do
+  while i <= #sched.commands do
     if sched.commands[i] == command then
       sched.commands[i]:Interrupted()
       sched:UnlockCommand(sched.commands[i])

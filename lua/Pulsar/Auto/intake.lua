@@ -2,7 +2,7 @@ local core = require "core"
 --local pid = require "PID"
 
 --local pidLoop = pid(0.1, 0.01, 0.005)
-local intake = function()
+local intake = function(direction, time)
 
 
 
@@ -12,10 +12,17 @@ local intake = function()
       --newPid.setpoint = 2965
       --robotMap.lifterUpDown:SetFeedbackDevice(0)
       --for k,v in pairs(robotMap) do print(k,v) end
-
-      robotMap.rightIntake:Set(-1)
-      robotMap.leftIntake:Set(1)
+      if direction > 0 then
+      robotMap.rightIntake:Set(-.5)
+      robotMap.leftIntake:Set(.65)
       timer:Start()
+    end
+    
+      if direction < 0 then
+        robotMap.rightIntake:Set(.5)
+        robotMap.leftIntake:Set(-.5)
+        timer:Start()
+      end
       --robotMap.lifterInOut:Set(1)
       --robotMap.lifterInOut:Set(1)
       --robotMap.lifterUpDown:Set(1)
@@ -24,7 +31,7 @@ local intake = function()
 
     end,
     IsFinished = function(self)
-      return timer:Get() >= 1.5
+      return timer:Get() >= time
     end,
     Execute = function()
       print(robotMap.lifterUpDown:GetEncPosition())

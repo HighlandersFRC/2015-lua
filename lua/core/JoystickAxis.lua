@@ -12,7 +12,7 @@ joystickAxis.metatable = {
 joystickAxis.newinstance = function(joy, axisNum)
   local newAxis = {
     joystick = joy,
-    axis = WPILib.asUint32(axisNum)
+    axis = axisNum
   }
   setmetatable(newAxis, joystickAxis.metatable)
   return newAxis

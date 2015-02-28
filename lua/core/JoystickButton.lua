@@ -12,7 +12,7 @@ joystickButton.metatable = {
 joystickButton.newinstance = function(joy, btnNum)
   local newBtn = {
     joystick = joy,
-    button = WPILib.asUint32(btnNum)
+    button = btnNum
   }
   setmetatable(newBtn, joystickButton.metatable)
   return newBtn

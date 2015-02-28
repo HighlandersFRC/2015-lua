@@ -32,8 +32,15 @@ local Scheduler = require"command.Scheduler"
 print"requires finished"
 local toggleSlow = false
 local toggleTime = WPILib.Timer.GetFPGATimestamp()
+--local lidarSensor = WPILib.LidarLiteI2C()
 --require("mqtt_lua_console").start()
 checkWPILib("requires")
+--local lidarSensor = WPILib.LidarLiteI2C()
+local average = 0
+local readLidar = function()
+  --average = average + .1* (lidarSensor:Get() -average)
+  return average
+  end
 
 core.setCompositeRobot()
 
@@ -41,7 +48,8 @@ Robot.scheduler = Scheduler()
 Robot.schedulerAuto = Scheduler()
 
 checkWPILib("schedulers")
-
+autonomousVersion="Pulsar.Auto.NoAuto"
+Robot.Disabled.Put("autoChooser",require"Pulsar.Auto.autoChooser")
 Robot.Teleop.Put("Drive",{
     Initialize = function()
       print"TeleopInit"
@@ -55,11 +63,17 @@ Robot.Teleop.Put("Drive",{
       if toggleSlow then
         Robot.drive:MecanumDrive_Cartesian(OI.DriveX:Get()/2, OI.DriveY:Get()/2, OI.DriveTheta:Get()/2)
         else
-      Robot.drive:MecanumDrive_Cartesian(OI.DriveX:Get(), OI.DriveY:Get(), OI.DriveTheta:Get())
+     Robot.drive:MecanumDrive_Cartesian(OI.DriveX:Get(), OI.DriveY:Get()/2, OI.DriveTheta:Get())
       end
       --Robot.drive:TankDrive(Robot.joy:GetRawAxis(1), Robot.joy:GetRawAxis(3))
-      if count % 50 == 0 then
+      if count % 1 == 0 then
+
+        publish("Robot/Lidar", readLidar())
+       -- print("Limit switch ",robotMap.lifterUpDown:IsRevLimitSwitchClosed())
+      --print(lidarSensor:Get())
         --print("BLTalon voltage: "..tostring(robotMap.BLTalon:GetOutputVoltage()).." current: "..tostring(robotMap.BLTalon:GetOutputCurrent()))
+        print("Current Height", robotMap.lifterUpDown:GetEncPosition())
+       --error("trying to fill an already full mind")
       end
       count = count + 1
     end,  

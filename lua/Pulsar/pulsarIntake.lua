@@ -2,18 +2,24 @@
 
 --debugPrint("intake started")
 local core = require"core"
-local intakePower = .6
+local intakePower = .5
 local triggers = require"triggers"
 
 -- Intake In Command
-
+local lidarSensor = WPILib.LidarLiteI2C()
+local average = 0
+local readLidar = function()
+  average = average + .1* (lidarSensor:Get() -average)
+  return average
+  end
+print(readLidar())
 local intakeLeftOutCommand = {
   Initialize = function()
     -- motor code goes here
-    robotMap.leftIntake:Set(OI.intakeLeftOut:Get())
+    robotMap.leftIntake:Set(intakePower)
   end,
   IsFinished = function() 
-    return OI.intakeLeftOut:Get() <.2 
+    return not OI.intakeLeftOut:Get() 
   end,
   End = function(self)
     robotMap.leftIntake:Set(0)
@@ -29,7 +35,16 @@ local intakeLeftOutCommand = {
 local intakeLeftInCommand = {
   Initialize = function()
     -- motor code goes here
+
     robotMap.leftIntake:Set(-intakePower)
+
+end,
+Execute = function()
+  --if readLidar() <= 50 then
+ --   robotMap.leftIntake:Set(-intakePower/2)
+ -- else
+    robotMap.leftIntake:Set(-intakePower)
+  --end
   end,
   IsFinished = function() 
     return not OI.intakeLeftIn:Get() 
@@ -47,10 +62,10 @@ local intakeLeftInCommand = {
 local intakeRightOutCommand = {
   Initialize = function()
     -- motor code goes here
-    robotMap.rightIntake:Set(-OI.intakeRightOut:Get())
+    robotMap.rightIntake:Set(-intakePower)
   end,
   IsFinished = function() 
-    return OI.intakeRightOut:Get() <.2  
+    return not OI.intakeRightOut:Get()
   end,
   End = function(self)
     robotMap.rightIntake:Set(0)
@@ -68,6 +83,14 @@ local intakeRightInCommand = {
     print("Right Button")
     -- motor code goes here
     robotMap.rightIntake:Set(intakePower)
+
+end,
+Execute = function()
+ -- if readLidar() <= 50 then
+ --     robotMap.rightIntake:Set(intakePower /2)
+ -- else
+    robotMap.rightIntake:Set(intakePower)
+  --  end
   end,
   IsFinished = function() 
     return not OI.intakeRightIn:Get()  
@@ -98,8 +121,10 @@ end
 checkWPILib"before intake triggers"
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.intakeLeftIn,intakeLeftInCommand))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.intakeRightIn,intakeRightInCommand))
-Robot.scheduler:AddTrigger(intakeLeftOut)
-Robot.scheduler:AddTrigger(intakeRightOut)
+--Robot.scheduler:AddTrigger(intakeLeftOut)
+--Robot.scheduler:AddTrigger(intakeRightOut)
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.intakeLeftOut, intakeLeftOutCommand))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.intakeRightOut, intakeRightOutCommand))
 
 checkWPILib"after intake triggers"
 --Robot.scheduler:SetDefaultCommand("intakeWheels",intakeWheelsStopCommand)

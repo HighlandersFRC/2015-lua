@@ -17,7 +17,7 @@ whenPressed = function (input, cmd)
   end
 end,
 
-whenReleased = function()
+whenReleased = function(input,cmd)
   local prev = input:Get()
   return function ()
     if input:Get() == false and prev == true then

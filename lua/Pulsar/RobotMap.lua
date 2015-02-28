@@ -1,20 +1,20 @@
 print"in RobotMap"
+local core = require"core"
 --require"WPILib"
 --print"required WPILib"
 WPILib.Talon(1)
 print"CANTalon"
 
 robotMap = {
-FLTalon = WPILib.CANTalon(1),
-BLTalon = WPILib.CANTalon(2),
-FRTalon = WPILib.CANTalon(3),
-BRTalon = WPILib.CANTalon(4),
-rightIntake = WPILib.CANTalon(5),
-leftIntake = WPILib.CANTalon(6),
-lifterUpDown = WPILib.CANTalon(7),
-lifterupDownTwo = WPILib.CANTalon(8),
-lifterInOut = WPILib.CANTalon(9)
---lifterLock = WPILib.Solenoid(0)
+FLTalon = core.getCanTalon(1),
+BLTalon = core.getCanTalon(2),
+FRTalon = core.getCanTalon(3),
+BRTalon = core.getCanTalon(4),
+rightIntake = core.getCanTalon(5),
+leftIntake = core.getCanTalon(6),
+lifterUpDown = core.getCanTalon(7),
+lifterUpDownTwo = core.getCanTalon(8),
+lifterInOut = core.getCanTalon(9)
 }
 
   

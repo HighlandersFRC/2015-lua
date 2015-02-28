@@ -10,20 +10,19 @@ local driveForward = function(pwr, time)
   local heading = 0
 -----------------------------
   local pidLoop = require"core.PID"
-  local PID = pidLoop(0.16,.002,-1)
+  local PID = pidLoop(0.16,.000,0)
 -----------------------------
   local count = 0
   local goForward = {
     Initialize = function()
       print("initializing")
-     PID = pidLoop(0.16,.002,-1)
+     PID = pidLoop(0.16,.002,0)
       startTime = 0
       count = 0
       heading = 0
-      lastTime = WPILib.Timer.GetFPGATimestamp()
-      gyro.Calibrate(100,.01)
+     lastTime = WPILib.Timer.GetFPGATimestamp()
       startTime = WPILib.Timer.GetFPGATimestamp()
-    --  Robot.drive:MecanumDrive_Cartesian(0, 0, -power)
+    
     end,
     Execute = function()
       local x,y,z = gyro.Get()
@@ -39,10 +38,10 @@ local driveForward = function(pwr, time)
       end
       count = count + 1
       -- update talon speeds gyro One
-      Robot.drive:MecanumDrive_Cartesian(0, response, -power)
+      Robot.drive:MecanumDrive_Cartesian(0,0 , -power)
     end,
     IsFinished = function() 
-      return false--(startTime + delay <= WPILib.Timer.GetFPGATimestamp()) 
+      return (startTime + delay <= WPILib.Timer.GetFPGATimestamp()) 
     end,
     End = function(self)
       Robot.drive:MecanumDrive_Cartesian(0, 0,0)
@@ -62,4 +61,3 @@ end
 
 
 return driveForward
-

@@ -49,6 +49,16 @@ core.getTalon = function(id)
     return talons[id]
 end
 
+local canTalons = {}
+core.getCanTalon = function(id)
+    if canTalons[id] then
+        return canTalons[id]
+    end
+    canTalons[id] = WPILib.CANTalon(id)
+    return canTalons[id]
+end
+
+
 local AINs = {}
 
 core.getAIN = function(id)
@@ -113,7 +123,7 @@ end
 
 if MQTT_CONSOLE_ENABLE then
   local MQTT = require"paho.mqtt"
-+
+
   printCout = print
 
   local function mqttCallback(topic, payload)
