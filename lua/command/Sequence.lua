@@ -32,8 +32,24 @@ local function seqActFin(self)
   return self.actNum == 0
 end
 
+local function subsysUnion(...) 
+  local temp = {}
+  local args, n = {...}, select("#", ...)
+  for a=1, n do
+    for i=1, #args[a].subsys do
+      temp[args[a].subsys[i]]=true
+    end
+  end
+  local result = {}
+  for k, v in pairs(temp) do
+    table.insert(result, k)
+  end
+  return result
+end
+
 local function seqActAdd(self, act)
   self.actions[#self.actions + 1] = act
+  self.subsys = subsysUnion(self, act)
 end
 local function isInterruptible(self)
   if self._interruptible == false then
@@ -42,6 +58,7 @@ local function isInterruptible(self)
     return self.action[self.actNum]:IsInterruptible()
   end
 end
+
 local function createSeqAct(...)
   local seqAct = {}
   seqAct.actions = {...}
@@ -54,7 +71,7 @@ local function createSeqAct(...)
   seqAct.Add = seqActAdd
   seqAct.IsInterruptible = isInterruptible
   seqAct.Interrupted = interrupted
-  seqAct.subsystems = {}
+  seqAct.subsystems = subsysUnion(...)
   return seqAct
 end
 
