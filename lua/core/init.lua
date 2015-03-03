@@ -93,8 +93,6 @@ core.setCompositeRobot = dofile("/home/lvuser/lua/core/compositeRobot.lua")
 
 core.setBasicRobot = dofile("/home/lvuser/lua/core/basicRobot.lua")
 
-core.parAction = dofile("/home/lvuser/lua/core/parallelAction.lua")
-
 core.serialize = dofile("/home/lvuser/lua/core/serialize.lua")
 
 local keepAlive_coroutines = {nextIndex = 1}
