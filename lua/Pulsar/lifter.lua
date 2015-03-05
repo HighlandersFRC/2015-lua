@@ -127,9 +127,10 @@ end
 
 local zeroPreset = lifterPoint(0)
 local outPreset = lifterInOutPoint(15)
-local upPreset = lifterPoint(41.5)
+local upPreset = lifterPoint(100)
 local inPreset = lifterInOutPoint(0)
-
+local canPreset = lifterPoint(18)
+local totePreset = lifterPoint(12)
 
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.preset,cancel))
@@ -149,10 +150,11 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(OI.outPreset,outPreset))
 
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.zeroPreset,zeroPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.topPreset,upPreset))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.canUp,canPreset))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.toteUp,totePreset))
 
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,calibration()))
 --Robot.scheduler:SetDefaultCommand("LifterUpDown",lifterPoint(currentHeight))
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.presetTwo,cancel))
 debugPrint("Lifter Finished")
-
