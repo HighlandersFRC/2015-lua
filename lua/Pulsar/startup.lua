@@ -32,6 +32,10 @@ local Scheduler = require"command.Scheduler"
 print"requires finished"
 local toggleSlow = false
 local toggleTime = WPILib.Timer.GetFPGATimestamp()
+print("before zeroing", robotMap.navX:GetYaw())
+robotMap.navX:ZeroYaw()
+print("after zeroing", robotMap.navX:GetYaw())
+--robotMap.navX:SetYawPitchRoll(0,0,0,0)
 --local lidarSensor = WPILib.LidarLiteI2C()
 --require("mqtt_lua_console").start()
 checkWPILib("requires")

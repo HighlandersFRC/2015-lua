@@ -9,4 +9,5 @@ RobotConfig = {
   lifterInOutMin = 1.3,
   lifterInOutClampIn =1,
   lifterInOutClampOut = .6
+  
   }
