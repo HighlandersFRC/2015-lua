@@ -1,8 +1,8 @@
 
 print("RobotConfig Loaded")
 RobotConfig = {
-  lifterMax = 42.5,
-  lifterMin = 0.5,
+  lifterMax = 43,
+  lifterMin = 0.25,
   lifterClamp = 1,
   lifterClampDown = .75,
   lifterInOutMax = 14.5,
