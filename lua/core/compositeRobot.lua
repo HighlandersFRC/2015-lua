@@ -101,6 +101,6 @@ return function()
     Teleop = teleop,
     Disabled = disabled,
     type = "composite",
-    private = {autolist = {}, teleopList = {}, disabledList = {}}
+    private = {autoList = {}, teleopList = {}, disabledList = {}}
   }
 end
