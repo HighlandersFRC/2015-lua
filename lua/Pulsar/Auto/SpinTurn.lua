@@ -1,10 +1,9 @@
 
 print("SpinTurn Started")
 local spinTurn = function(rotation)
-
-  local gyro = require"Gyro"
+  
   local core = require"core"
-
+  
 -----------------------------
   local pidLoop = require"core.PID"
   local PID = pidLoop(0.165,0.05,0)
@@ -15,29 +14,29 @@ local spinTurn = function(rotation)
   local lastTime = 0
   local turn = {
     Initialize = function()
+      PID.minOutput = -.5
+      PID.maxOutput = .5
+      PID.minInput = -180
+      PID.maxInput = 180
+      PID.continuous = true
+      
+      
       print("SpinTurn turning")
       heading = 0
       PID.setpoint = angle
       print"starting timestamps"
-      startTime = os.time()-- WPILib.Timer.GetFPGATimestamp()
-      lastTime = os.time()--WPILib.Timer.GetFPGATimestamp()
+      startTime =  WPILib.Timer.GetFPGATimestamp()
+      lastTime = WPILib.Timer.GetFPGATimestamp()
       print"finished timestamps"
-      gyro.Calibrate(100,.01)
       print"finished calibration"
       --  Robot.drive:MecanumDrive_Cartesian(0, 0, -power)
     end,
     Execute = function()
-      local x,y,z = gyro:Get()
-      
-      local deltaTime = os.time() - lastTime --WPILib.Timer.GetFPGATimestamp() - lastTime
-      local X = x * (deltaTime) * 180/math.pi
-
-      heading = heading + X
-            print("heading", heading)
-      local response = PID:Update(heading)
-      print"before driving"
+       heading = robotMap.navX:GetYaw()
+      print("Heading",heading)
+      publish("Robot/Heading", heading)
+      local response = PID:Update(heading)    
       Robot.drive:MecanumDrive_Cartesian(0, response, 0)
-      print"driving"
       lastTime = WPILib.Timer.GetFPGATimestamp()
     end,
     IsFinished = function() 

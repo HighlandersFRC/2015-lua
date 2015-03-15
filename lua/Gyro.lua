@@ -16,7 +16,7 @@ local adjust = function(val)
   end
 end
 
-local calibrate = function(points,time)
+local calibrate = function(self, points,time)
   print("Calibrating Gyro")
   --local timer = WPILib.Timer()
   print"created timer"

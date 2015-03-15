@@ -1,1 +1,1 @@
-dofile"/lua/main.lua"
+require"main"

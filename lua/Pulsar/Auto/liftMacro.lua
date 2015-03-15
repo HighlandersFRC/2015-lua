@@ -25,7 +25,7 @@ local liftMacro = function(liftHeight)
       print("setting lifter values")
       robotMap.lifterUpDown:Set(response)
       robotMap.lifterUpDownTwo:Set(response)
-      --print("Current Height: ", currentHeight,"   Target Height :", height, " Response : ", response)
+      print("Current Height: ", currentHeight,"   Target Height :", height, " Response : ", response)
     end,
     IsFinished = function() 
      return math.abs(height - currentHeight) <= 100
@@ -35,7 +35,7 @@ local liftMacro = function(liftHeight)
       robotMap.lifterUpDownTwo:Set(0)
     end,
     Interrupted = function(self)
-     print("lifterPoint has been interrrupted")
+      print("lifterPoint has been interrrupted")
       self:End()
     end,
     IsInterruptible = function()
