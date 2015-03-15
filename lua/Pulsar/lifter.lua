@@ -40,7 +40,7 @@ local holdPosition = {
 }
 local lifterIn = {
   Initialize = function()
-    -- motor code goes here
+    print("startedCOmmand")
   end,
   Execute = function()
     print("inOut",robotMap.lifterInOut:Get() )
@@ -52,7 +52,7 @@ local lifterIn = {
       robotMap.lifterInOut:Set(OI.lifterInOut:Get())
     else
       --print("not moving")
-      --robotMap.lifterInOut:Set(0)
+      robotMap.lifterInOut:Set(0)
     end
 
   end,
@@ -138,22 +138,28 @@ local totePreset = lifterPoint(12)
 
 --
 
-Robot.scheduler:AddTrigger(lifterInOutTrigger)
---Robot.scheduler:AddTrigger(lifterUpTrigger)
+--Robot.scheduler:AddTrigger(lifterInOutTrigger)
+--these are the triggers for the inout command
+Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterInOut,.2),lifterIn))
+Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterInOut,-.2,true),lifterIn))
+
+-- these are the triggers for the main lifter up Down 
 Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterUpDown,.2),lifterUp))
 Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterUpDown,-.2,true),lifterUp))
 Robot.scheduler:AddTrigger(triggers.whenReleased(analogButton(OI.lifterUpDown,.2),holdPosition))
 Robot.scheduler:AddTrigger(triggers.whenReleased(analogButton(OI.lifterUpDown,-.2,true),holdPosition))
-
+-- these are the triggers for the in and out presets
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.inPreset,inPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.outPreset,outPreset))
-
+-- these are the triggers for the lifter setpoint presets
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.zeroPreset,zeroPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.topPreset,upPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.canUp,canPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.toteUp,totePreset))
 
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,calibration()))
+
+
+--Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,calibration()))
 --Robot.scheduler:SetDefaultCommand("LifterUpDown",lifterPoint(currentHeight))
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.presetTwo,cancel))
