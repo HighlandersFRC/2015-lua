@@ -105,6 +105,7 @@ checkWPILib"Put Schedulers"
 require"Pulsar.pulsarIntake"
 require"Pulsar.lifter"
 require"Pulsar.Tail"
+require"Pulsar.limitProtection"
 checkWPILib"end"
 print("WPILib", WPILib)
 print("WPILib.Timer", WPILib.Timer)
