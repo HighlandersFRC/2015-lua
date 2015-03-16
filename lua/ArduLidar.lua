@@ -1,43 +1,56 @@
 local core = require"core"
-local arduino = io.open"/dev/ttyACM0"
+local lanes = require"lanes"
+lanes.configure()
+local linda = lanes.linda()
+local laneGen = lanes.gen("io", "string",  function()
+    local alpha = 0.5
+    local emaVal = 0
+    local lastFragment = ""
+    local arduino = io.open"/dev/ttyACM0"
+    local function updateEMA(val)
+      emaVal = alpha * val + (1-alpha)*emaVal
+      linda:set("lidar",emaVal)
+    end
+    while true do
 
-local lidar = {}
-local lastFragment = ""
-lidar.alpha = 0.5
-lidar.emaVal = 0
-local function updateEMA(val)
-  lidar.emaVal = lidar.alpha * val + (1-lidar.alpha)*lidar.emaVal
-end
+      local recv = arduino:read(32)
+      -- print(recv)
 
-function lidar:Get()
-  return self.emaVal
-end
-
-core.register_keepAlive(
-  coroutine.create(
-    function()
-      while true do
-        local recv = arduino:read(32)
-        local offset = recv:find("\n")
-        local newVal = tonumber(lastFragment..recv:sub(1, offset))
+      local offset = recv:find("\n")
+      -- print(1)
+      local newVal = tonumber(lastFragment..recv:sub(1, offset))
+      -- print(2)
+      if newVal then
+        updateEMA(newVal)
+      end
+      -- print(3)
+      local prevOffset = offset
+      --print(4)
+      offset = recv:find("\n")
+      -- print(5)
+      while offset ~= nil do
+        --print("trying substr", recv:sub(prevOffset+1, offset), "giving", tonumber(recv:sub(prevOffset+1, offset)))
+        newVal = tonumber(recv:sub(prevOffset+1, offset))
         if newVal then
           updateEMA(newVal)
         end
-        local prevOffset = offset
-        offset = recv:find("\n")
-        while offset ~= nil do
-          --print("trying substr", recv:sub(prevOffset+1, offset), "giving", tonumber(recv:sub(prevOffset+1, offset)))
-          newVal = tonumber(recv:sub(prevOffset+1, offset))
-          if newVal then
-            updateEMA(newVal)
-          end
-          prevOffset = offset
-          offset = recv:find("\n", offset+1)
-        end
-        lastFragment = recv:sub(prevOffset+1, -1)
-        coroutine.yield()
+        prevOffset = offset
+        offset = recv:find("\n", offset+1)
       end
+      --print(6)
+      lastFragment = recv:sub(prevOffset+1, -1)
+
     end
-  ))
+  end)
+
+
+local lidar = {}
+local lastFragment = ""
+
+
+function lidar:Get()
+  return linda:get("lidar")
+end
+laneGen()
 
 return lidar

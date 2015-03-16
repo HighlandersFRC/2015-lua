@@ -41,7 +41,8 @@ local toPosition = {
     PID.setpoint = target
   end,
   Execute = function()
-    currentPosition = robotMap.lifterInOut:GetEncPosition()
+    currentPosition = robotMap.lifterInOut:GetPosition()
+    print(currentPosition)
     response = -PID:Update(currentPosition)
     robotMap.lifterInOut:Set(clamp(response))
     print("Current Height: ", currentPosition,"   Target Height :", target, " Response : ",clamp(response))

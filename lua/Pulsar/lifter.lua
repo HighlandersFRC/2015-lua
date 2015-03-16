@@ -19,9 +19,9 @@ robotMap.lifterUpDown:SetStatusFrameRateMs(2,20)
 
 local holdPosition = {
   Initialize = function()
-    local holdingHeight = (robotMap.lifterUpDown:GetEncPosition()/1000 /25.4 * 120)
+    local holdingHeight = (robotMap.lifterUpDown:GetPosition()/1000 /25.4 * 120)
     print("Holding Height :",holdingHeight)
-    Robot.scheduler:StartCommand(lifterPoint(-robotMap.lifterUpDown:GetEncPosition()/1000 /25.4 * 120))
+    Robot.scheduler:StartCommand(lifterPoint(-robotMap.lifterUpDown:GetPosition()/1000 /25.4 * 120))
   end,
   Execute = function()
   end,
@@ -44,10 +44,10 @@ local lifterIn = {
   end,
   Execute = function()
     print("inOut",robotMap.lifterInOut:Get() )
-    if robotMap.lifterInOut:GetEncPosition() <1900 and OI.lifterInOut:Get() < 0 then
+    if robotMap.lifterInOut:GetPosition() <1900 and OI.lifterInOut:Get() < 0 then
       print("moving in",OI.lifterInOut:Get())
       robotMap.lifterInOut:Set(OI.lifterInOut:Get())
-    elseif robotMap.lifterInOut:GetEncPosition() > 200  and OI.lifterInOut:Get() > 0 then
+    elseif robotMap.lifterInOut:GetPosition() > 200  and OI.lifterInOut:Get() > 0 then
       print("moving out")
       robotMap.lifterInOut:Set(OI.lifterInOut:Get())
     else
@@ -77,18 +77,17 @@ local lifterUp = {
 
   end,
   Execute = function()
-    print("Executing lift",robotMap.lifterUpDown:GetEncPosition()/1000 /25.4 * 120)
-    --publish("Robot/Height", robotMap.lifterInOut:GetEncPosition()/1000 /25.4 * 120)
-    if (math.abs(robotMap.lifterUpDown:GetEncPosition()/1000 /25.4 * 120) <= RobotConfig.lifterMax and -OI.lifterUpDown:Get() >  0) then
+    print("Executing lift",robotMap.lifterUpDown:GetPosition()/1000 /25.4 * 120)
+    if (math.abs(robotMap.lifterUpDown:GetPosition()/1000 /25.4 * 120) <= RobotConfig.lifterMax and -OI.lifterUpDown:Get() >  0) then
       robotMap.lifterUpDown:Set(-OI.lifterUpDown:Get())
-      robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
-    elseif ((math.abs(robotMap.lifterUpDown:GetEncPosition()/1000 /25.4 * 120)) >= RobotConfig.lifterMin) and ((-OI.lifterUpDown:Get()) <= 0)then
+     -- robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
+    elseif ((math.abs(robotMap.lifterUpDown:GetPosition()/1000 /25.4 * 120)) >= RobotConfig.lifterMin) and ((-OI.lifterUpDown:Get()) <= 0)then
       robotMap.lifterUpDown:Set(-OI.lifterUpDown:Get())
-      robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
+      --robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
     end
-    currentHeight = robotMap.lifterInOut:GetEncPosition()/1000 /25.4 * 120
+    currentHeight = robotMap.lifterInOut:GetPosition()/1000 /25.4 * 120
     print("lifter UpDown One :",robotMap.lifterUpDown:GetOutputCurrent())
-    print("lifter UpDown Two :",robotMap.lifterUpDownTwo:GetOutputCurrent())
+    --print("lifter UpDown Two :",robotMap.lifterUpDownTwo:GetOutputCurrent())
 
   end,
   IsFinished = function() 
@@ -96,7 +95,7 @@ local lifterUp = {
   end,
   End = function(self)
     robotMap.lifterUpDown:Set(0)
-    robotMap.lifterUpDownTwo:Set(0)
+   -- robotMap.lifterUpDownTwo:Set(0)
     print("Ending")
 
   end,

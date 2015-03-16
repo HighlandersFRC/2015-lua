@@ -5,6 +5,8 @@ local core = require"core"
 WPILib.Talon(1)
 print"CANTalon"
 local port = WPILib.SerialPort(57600,1)
+
+
 robotMap = {
   FLTalon = core.getCanTalon(1),
   BLTalon = core.getCanTalon(2),
@@ -13,10 +15,13 @@ robotMap = {
   rightIntake = core.getCanTalon(5),
   leftIntake = core.getCanTalon(6),
   lifterUpDown = core.getCanTalon(7),
-  lifterUpDownTwo = core.getCanTalon(8),
   lifterInOut = core.getCanTalon(9),
   navXport = port,
   navX = WPILib.AHRS(port,50),
   tail = core.getCanTalon(10)
 }
+local lifterUpDownTwo = core.getCanTalon(8)
+lifterUpDownTwo:SetControlMode(WPILib.CANTalon.kFollower)
+lifterUpDownTwo:Set(7)
+
 
