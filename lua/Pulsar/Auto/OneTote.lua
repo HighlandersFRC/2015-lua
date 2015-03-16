@@ -31,7 +31,7 @@ local fullAutonomous = sequence(
   wait(.2),
   spin(110),
   wait(.2),
-  drive(0.3, 3.6),
+  drive(0.3, 3.7),
   spin(180),
   --inOut(50, 1.5),
   start(intake(1, 1.2)),

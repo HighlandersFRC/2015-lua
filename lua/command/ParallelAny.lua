@@ -7,7 +7,7 @@ end
 
 local function parActExec(self)
   for i=1,#self.actions do
-    if self.actionState[i] then
+    if self._actionStates[i] then
       self.actions[i]:Execute()
       if self.actions[i]:IsFinished() then
         self.actions[i]:End()
@@ -27,9 +27,9 @@ local function parActEnd(self)
 end
 
 local function parActFin(self)
-  local fin = true
+  local fin = false
   for i=1,#self.actions do
-    fin = not self._actionStates[i] and fin
+    fin = not self._actionStates[i] or fin
   end
   return fin
 end

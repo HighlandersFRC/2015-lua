@@ -13,9 +13,7 @@ dofile"/home/lvuser/lua/core/defaultConfig.lua"
 dofile"/home/lvuser/lua/config.lua"
 
 debugPrint = function(...)
-  checkWPILib"beginning of debugPrint"
   if enableDebug then print(...) end
-  checkWPILib"end of debugPrint"
 end
 
 

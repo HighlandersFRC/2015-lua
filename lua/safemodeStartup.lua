@@ -1,1 +1,1 @@
-dofile"/lua/basicTank.lua"
+require"core".setBasicRobot()

@@ -1,4 +1,4 @@
---Intake Pulsar
+--Intake PulsarStable
 
 --debugPrint("intake started")
 local core = require"core"
@@ -6,11 +6,11 @@ local lifterPower = 1
 local lifterInOutPower = .4
 local currentHeight = 0
 local pid = require"PID"
-local lifterPoint = require"Pulsar.lifterPoint"
-local lifterInOutPoint = require"Pulsar.lifterInOut"
+local lifterPoint = require"PulsarStable.lifterPoint"
+local lifterInOutPoint = require"PulsarStable.lifterInOut"
 local triggers = require"triggers"
 local analogButton = require"AnalogButton"
-local calibration = require"Pulsar.calibrateEncoders"
+local calibration = require"PulsarStable.calibrateEncoders"
 -- the lifter lock off means that the arms cannot be moved
 robotMap.lifterInOut:SetStatusFrameRateMs(2,20)
 robotMap.lifterUpDown:SetStatusFrameRateMs(2,20)
@@ -40,7 +40,7 @@ local holdPosition = {
 }
 local lifterIn = {
   Initialize = function()
-    print("startedCOmmand")
+    -- motor code goes here
   end,
   Execute = function()
     print("inOut",robotMap.lifterInOut:Get() )
@@ -52,7 +52,7 @@ local lifterIn = {
       robotMap.lifterInOut:Set(OI.lifterInOut:Get())
     else
       --print("not moving")
-      robotMap.lifterInOut:Set(0)
+      --robotMap.lifterInOut:Set(0)
     end
 
   end,
@@ -127,7 +127,7 @@ end
 
 local zeroPreset = lifterPoint(0)
 local outPreset = lifterInOutPoint(15)
-local upPreset = lifterPoint(100)
+local upPreset = lifterPoint(41.5)
 local inPreset = lifterInOutPoint(0)
 local canPreset = lifterPoint(18)
 local totePreset = lifterPoint(12)
@@ -138,28 +138,22 @@ local totePreset = lifterPoint(12)
 
 --
 
---Robot.scheduler:AddTrigger(lifterInOutTrigger)
---these are the triggers for the inout command
-Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterInOut,.2),lifterIn))
-Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterInOut,-.2,true),lifterIn))
-
--- these are the triggers for the main lifter up Down 
+Robot.scheduler:AddTrigger(lifterInOutTrigger)
+--Robot.scheduler:AddTrigger(lifterUpTrigger)
 Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterUpDown,.2),lifterUp))
 Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterUpDown,-.2,true),lifterUp))
 Robot.scheduler:AddTrigger(triggers.whenReleased(analogButton(OI.lifterUpDown,.2),holdPosition))
 Robot.scheduler:AddTrigger(triggers.whenReleased(analogButton(OI.lifterUpDown,-.2,true),holdPosition))
--- these are the triggers for the in and out presets
+
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.inPreset,inPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.outPreset,outPreset))
--- these are the triggers for the lifter setpoint presets
+
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.zeroPreset,zeroPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.topPreset,upPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.canUp,canPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.toteUp,totePreset))
 
-
-
---Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,calibration()))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,calibration()))
 --Robot.scheduler:SetDefaultCommand("LifterUpDown",lifterPoint(currentHeight))
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.presetTwo,cancel))

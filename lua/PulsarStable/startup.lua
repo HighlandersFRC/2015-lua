@@ -22,27 +22,23 @@ print"beginning requires"
 --print"required WPILib"
 local core = require"core"
 print"required core"
-require"Pulsar.OI"
+require"PulsarStable.OI"
 print"required OI"
-require"Pulsar.RobotMap"
+require"PulsarStable.RobotMap"
 print"required RobotMap"
-require"Pulsar.RobotConfig"
+require"PulsarStable.RobotConfig"
 print"required RobotConfig"
 local Scheduler = require"command.Scheduler"
 print"requires finished"
 local toggleSlow = false
 local toggleTime = WPILib.Timer.GetFPGATimestamp()
-print("before zeroing", robotMap.navX:GetYaw())
-robotMap.navX:ZeroYaw()
-print("after zeroing", robotMap.navX:GetYaw())
---robotMap.navX:SetYawPitchRoll(0,0,0,0)
---local lidarSensor = WPILib.LidarLiteI2C()
+local lidarSensor = WPILib.LidarLiteI2C()
 --require("mqtt_lua_console").start()
 checkWPILib("requires")
---local lidarSensor = WPILib.LidarLiteI2C()
+        local lidarSensor = WPILib.LidarLiteI2C()
 local average = 0
 local readLidar = function()
-  --average = average + .1* (lidarSensor:Get() -average)
+  average = average + .1* (lidarSensor:Get() -average)
   return average
   end
 
@@ -52,8 +48,7 @@ Robot.scheduler = Scheduler()
 Robot.schedulerAuto = Scheduler()
 
 checkWPILib("schedulers")
-autonomousVersion="Pulsar.Auto.NoAuto"
-Robot.Disabled.Put("autoChooser",require"Pulsar.Auto.autoChooser")
+
 Robot.Teleop.Put("Drive",{
     Initialize = function()
       print"TeleopInit"
@@ -67,17 +62,15 @@ Robot.Teleop.Put("Drive",{
       if toggleSlow then
         Robot.drive:MecanumDrive_Cartesian(OI.DriveX:Get()/2, OI.DriveY:Get()/2, OI.DriveTheta:Get()/2)
         else
-     Robot.drive:MecanumDrive_Cartesian(OI.DriveX:Get(), OI.DriveY:Get()/2, OI.DriveTheta:Get())
+     Robot.drive:MecanumDrive_Cartesian(OI.DriveX:Get(), OI.DriveY:Get(), OI.DriveTheta:Get())
       end
       --Robot.drive:TankDrive(Robot.joy:GetRawAxis(1), Robot.joy:GetRawAxis(3))
       if count % 1 == 0 then
 
         publish("Robot/Lidar", readLidar())
        -- print("Limit switch ",robotMap.lifterUpDown:IsRevLimitSwitchClosed())
-      --print(lidarSensor:Get())
+      print(lidarSensor:Get())
         --print("BLTalon voltage: "..tostring(robotMap.BLTalon:GetOutputVoltage()).." current: "..tostring(robotMap.BLTalon:GetOutputCurrent()))
-       -- print("Current Height", robotMap.lifterUpDown:GetEncPosition())
-       --error("trying to fill an already full mind")
       end
       count = count + 1
     end,  
@@ -98,13 +91,13 @@ Robot.drive:SetInvertedMotor(3, true)
 checkWPILib"drive setup"
 
 Robot.Teleop.Put("Scheduler",Robot.scheduler)
-Robot.Autonomous.Put("Autonomous", require"Pulsar.Auto.AutonomousStartup")
+Robot.Autonomous.Put("Autonomous", require"PulsarStable.Auto.AutonomousStartup")
 checkWPILib"Put Schedulers"
 
 
-require"Pulsar.pulsarIntake"
-require"Pulsar.lifter"
-require"Pulsar.Tail"
+require"PulsarStable.pulsarIntake"
+require"PulsarStable.lifter"
+
 checkWPILib"end"
 print("WPILib", WPILib)
 print("WPILib.Timer", WPILib.Timer)
