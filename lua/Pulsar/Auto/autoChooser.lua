@@ -5,7 +5,7 @@ local autoChoiceTable = {
   [core.getJoyBtn(0,1)] = "Pulsar.Auto.NoAuto",
   [core.getJoyBtn(0,3)] = "Pulsar.Auto.goForward",
   [core.getJoyBtn(0,2)] = "Pulsar.Auto.OneTote",
-  [core.getJoyBtn(0,4)] = "Pulsar.Auto.AutoTesting"
+  [core.getJoyBtn(0,4)] = "Pulsar.Auto.ThreeTote"
   
 }
 local autoChooser = {
