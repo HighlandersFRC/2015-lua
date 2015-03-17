@@ -16,7 +16,8 @@ lifterUpDown = core.getCanTalon(7),
 lifterUpDownTwo = core.getCanTalon(8),
 lifterInOut = core.getCanTalon(9),
 navXport = port,
-  navX = WPILib.AHRS(port,50)
+  navX = WPILib.AHRS(port,50),
+PDPanel = WPILIb.PowerDistributionPanel()
 }
 
   
