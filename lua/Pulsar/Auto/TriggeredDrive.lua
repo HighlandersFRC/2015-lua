@@ -27,7 +27,6 @@ local driveForward = function(pwr, trig, time)
       lastTime = WPILib.Timer.GetFPGATimestamp()
       local response = PID:Update(heading)
       if count % 50 == 0 then
-        print(x .."    " .."       "..y.."        "..z)
         print("Heading == " .. heading )
         print("response   " .. response)
       end

@@ -73,7 +73,7 @@ Robot.Teleop.Put("Drive",{
        -- print("Limit switch ",robotMap.lifterUpDown:IsRevLimitSwitchClosed())
       --print(lidarSensor:Get())
         --print("BLTalon voltage: "..tostring(robotMap.BLTalon:GetOutputVoltage()).." current: "..tostring(robotMap.BLTalon:GetOutputCurrent()))
-        print("Current Height", robotMap.lifterUpDown:GetEncPosition())
+       -- print("Current Height", robotMap.lifterUpDown:GetEncPosition())
        --error("trying to fill an already full mind")
       end
       count = count + 1
@@ -101,7 +101,8 @@ checkWPILib"Put Schedulers"
 
 require"Pulsar.pulsarIntake"
 require"Pulsar.lifter"
-
+require"Pulsar.Tail"
+require"Pulsar.limitProtection"
 checkWPILib"end"
 print("WPILib", WPILib)
 print("WPILib.Timer", WPILib.Timer)

@@ -7,7 +7,7 @@ local function SetIntake(pwr)
     Execute = function() end,
     End = function() end,
     IsFinished = function() return true end,
-    subsys = {"intake"}
+    subsystems = {"intake"}
   }
 end
 

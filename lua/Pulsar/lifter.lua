@@ -17,11 +17,18 @@ robotMap.lifterUpDown:SetStatusFrameRateMs(2,20)
 --
 -- Intake In Command
 
+local function inch2tickUD(val)
+  return -val * 25.4 /120 * 1000
+end
+local function tick2inchUD(val)
+  return -val /1000 /25.4 *120
+end
+
 local holdPosition = {
   Initialize = function()
-    local holdingHeight = (robotMap.lifterUpDown:GetEncPosition()/1000 /25.4 * 120)
+    local holdingHeight = (robotMap.lifterUpDown:GetPosition()/1000 /25.4 * 120)
     print("Holding Height :",holdingHeight)
-    Robot.scheduler:StartCommand(lifterPoint(-robotMap.lifterUpDown:GetEncPosition()/1000 /25.4 * 120))
+    Robot.scheduler:StartCommand(lifterPoint(-robotMap.lifterUpDown:GetPosition()/1000 /25.4 * 120))
   end,
   Execute = function()
   end,
@@ -40,19 +47,19 @@ local holdPosition = {
 }
 local lifterIn = {
   Initialize = function()
-    -- motor code goes here
+    print("startedCOmmand")
   end,
   Execute = function()
     print("inOut",robotMap.lifterInOut:Get() )
-    if robotMap.lifterInOut:GetEncPosition() <1900 and OI.lifterInOut:Get() < 0 then
+    if robotMap.lifterInOut:GetPosition() <1900 and OI.lifterInOut:Get() < 0 then
       print("moving in",OI.lifterInOut:Get())
       robotMap.lifterInOut:Set(OI.lifterInOut:Get())
-    elseif robotMap.lifterInOut:GetEncPosition() > 200  and OI.lifterInOut:Get() > 0 then
+    elseif robotMap.lifterInOut:GetPosition() > 200  and OI.lifterInOut:Get() > 0 then
       print("moving out")
       robotMap.lifterInOut:Set(OI.lifterInOut:Get())
     else
       --print("not moving")
-      --robotMap.lifterInOut:Set(0)
+      robotMap.lifterInOut:Set(0)
     end
 
   end,
@@ -77,18 +84,24 @@ local lifterUp = {
 
   end,
   Execute = function()
-    print("Executing lift",robotMap.lifterUpDown:GetEncPosition()/1000 /25.4 * 120)
-    --publish("Robot/Height", robotMap.lifterInOut:GetEncPosition()/1000 /25.4 * 120)
-    if (math.abs(robotMap.lifterUpDown:GetEncPosition()/1000 /25.4 * 120) <= RobotConfig.lifterMax and -OI.lifterUpDown:Get() >  0) then
-      robotMap.lifterUpDown:Set(-OI.lifterUpDown:Get())
-      robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
-    elseif ((math.abs(robotMap.lifterUpDown:GetEncPosition()/1000 /25.4 * 120)) >= RobotConfig.lifterMin) and ((-OI.lifterUpDown:Get()) <= 0)then
-      robotMap.lifterUpDown:Set(-OI.lifterUpDown:Get())
-      robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
+    print("Executing lift",tick2inchUD(robotMap.lifterUpDown:GetPosition()))
+    local position = tick2inchUD(robotMap.lifterUpDown:GetPosition())
+    if (position <= RobotConfig.lifterMax and -OI.lifterUpDown:Get() >  0) then
+      local pwr = -math.min(OI.lifterUpDown:Get(), (RobotConfig.lifterMax - position) / 6)
+      robotMap.lifterUpDown:Set(pwr)
+      print("setting lifter power to", pwr, "input", OI.lifterUpDown:Get(), "ramp", (RobotConfig.lifterMax - position) / 6)
+     -- robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
+    elseif (position >= RobotConfig.lifterMin) and ((-OI.lifterUpDown:Get()) <= 0)then
+      local pwr = -math.max(OI.lifterUpDown:Get(), (position - RobotConfig.lifterMin) / 6)
+      robotMap.lifterUpDown:Set(pwr)
+      print("setting lifter power to", pwr, "input", OI.lifterUpDown:Get(), "ramp", (position - RobotConfig.lifterMin) / 6)
+      --robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
+    else
+      robotMap.lifterUpDown:Set(0)
     end
-    currentHeight = robotMap.lifterInOut:GetEncPosition()/1000 /25.4 * 120
+    currentHeight = robotMap.lifterInOut:GetPosition()/1000 /25.4 * 120
     print("lifter UpDown One :",robotMap.lifterUpDown:GetOutputCurrent())
-    print("lifter UpDown Two :",robotMap.lifterUpDownTwo:GetOutputCurrent())
+    --print("lifter UpDown Two :",robotMap.lifterUpDownTwo:GetOutputCurrent())
 
   end,
   IsFinished = function() 
@@ -96,7 +109,7 @@ local lifterUp = {
   end,
   End = function(self)
     robotMap.lifterUpDown:Set(0)
-    robotMap.lifterUpDownTwo:Set(0)
+   -- robotMap.lifterUpDownTwo:Set(0)
     print("Ending")
 
   end,
@@ -138,22 +151,28 @@ local totePreset = lifterPoint(12)
 
 --
 
-Robot.scheduler:AddTrigger(lifterInOutTrigger)
---Robot.scheduler:AddTrigger(lifterUpTrigger)
+--Robot.scheduler:AddTrigger(lifterInOutTrigger)
+--these are the triggers for the inout command
+Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterInOut,.2),lifterIn))
+Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterInOut,-.2,true),lifterIn))
+
+-- these are the triggers for the main lifter up Down 
 Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterUpDown,.2),lifterUp))
 Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterUpDown,-.2,true),lifterUp))
 Robot.scheduler:AddTrigger(triggers.whenReleased(analogButton(OI.lifterUpDown,.2),holdPosition))
 Robot.scheduler:AddTrigger(triggers.whenReleased(analogButton(OI.lifterUpDown,-.2,true),holdPosition))
-
+-- these are the triggers for the in and out presets
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.inPreset,inPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.outPreset,outPreset))
-
+-- these are the triggers for the lifter setpoint presets
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.zeroPreset,zeroPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.topPreset,upPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.canUp,canPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.toteUp,totePreset))
 
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,calibration()))
+
+
+--Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,calibration()))
 --Robot.scheduler:SetDefaultCommand("LifterUpDown",lifterPoint(currentHeight))
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.presetTwo,cancel))

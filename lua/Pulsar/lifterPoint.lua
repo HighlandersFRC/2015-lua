@@ -16,7 +16,7 @@ local liftMacro = function(liftHeight)
   local height = 0
   if liftHeight >= RobotConfig.lifterMax then
     height = -RobotConfig.lifterMax* 25.4 /120 * 1000
-  elseif liftHeight <= 1 then
+  elseif liftHeight <= RobotConfig.lifterMin then
     height = -RobotConfig.lifterMin * 25.4 /120 * 1000
   else 
     height = -liftHeight* 25.4 /120 * 1000
@@ -37,10 +37,10 @@ local liftMacro = function(liftHeight)
     Execute = function()
 
 
-      currentHeight = robotMap.lifterUpDown:GetEncPosition()
+      currentHeight = robotMap.lifterUpDown:GetPosition()
       response = -PID:Update(currentHeight)
       robotMap.lifterUpDown:Set(clamp(response))
-      robotMap.lifterUpDownTwo:Set(clamp(response))
+     -- robotMap.lifterUpDownTwo:Set(clamp(response))
       --print("Current Height: ", currentHeight,"   Target Height :", height, " Response : ", response,"Current Position ")
     end,
     IsFinished = function() 
@@ -48,7 +48,7 @@ local liftMacro = function(liftHeight)
     end,
     End = function(self)
       robotMap.lifterUpDown:Set(0)
-      robotMap.lifterUpDownTwo:Set(0)
+     -- robotMap.lifterUpDownTwo:Set(0)
     end,
     Interrupted = function(self)
       print("lifterPoint has been interrrupted")

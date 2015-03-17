@@ -8,6 +8,7 @@ local driveForward = function(pwr, time)
   local startTime = 0
   local lastTime = 0
   local heading = 0
+  local startHeading = 0
 -----------------------------
   local pidLoop = require"core.PID"
   local PID = pidLoop(0.16,.000,0)
@@ -22,23 +23,19 @@ local driveForward = function(pwr, time)
       heading = 0
      lastTime = WPILib.Timer.GetFPGATimestamp()
       startTime = WPILib.Timer.GetFPGATimestamp()
-    
+      startHeading = robotMap.navX:GetYaw()
     end,
-    Execute = function()
-      local x,y,z = gyro.Get()
-      local deltaTime = WPILib.Timer.GetFPGATimestamp() - lastTime
-      local X = x * (deltaTime) 
-      heading = heading + X
+    Execute = function() 
+      heading = robotMap.navX:GetYaw()-startHeading
       lastTime = WPILib.Timer.GetFPGATimestamp()
       local response = PID:Update(heading)
       if count % 50 == 0 then
-        print(x .."    " .."       "..y.."        "..z)
         print("Heading == " .. heading )
         print("response   " .. response)
       end
       count = count + 1
       -- update talon speeds gyro One
-      Robot.drive:MecanumDrive_Cartesian(0,0 , -power)
+      Robot.drive:MecanumDrive_Cartesian(0,heading , -power)
     end,
     IsFinished = function() 
       return (startTime + delay <= WPILib.Timer.GetFPGATimestamp()) 
