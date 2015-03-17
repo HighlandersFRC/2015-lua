@@ -2,7 +2,7 @@ local core = require "core"
 --local pid = require "PID"
 
 --local pidLoop = pid(0.1, 0.01, 0.005)
-local intake = function(direction, time)
+local intake = function(direction, time, power)
 
 
 
@@ -13,8 +13,8 @@ local intake = function(direction, time)
       --robotMap.lifterUpDown:SetFeedbackDevice(0)
       --for k,v in pairs(robotMap) do print(k,v) end
       if direction > 0 then
-      robotMap.rightIntake:Set(-.5)
-      robotMap.leftIntake:Set(.65)
+      robotMap.rightIntake:Set(-power)
+      robotMap.leftIntake:Set(power)
       timer:Start()
     end
     

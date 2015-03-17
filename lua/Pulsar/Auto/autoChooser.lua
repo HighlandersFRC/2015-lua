@@ -7,11 +7,11 @@ local autoChoiceTable = {
   [core.getJoyBtn(0,2)] = "Pulsar.Auto.OneTote",
   [core.getJoyBtn(0,4)] = "Pulsar.Auto.ThreeTote",
   [core.getJoyBtn(0,10)] = "Pulsar.Auto.AutoTesting"
-  
+
 }
 local autoChooser = {
   Initialize = function()
-  publish("dashboard/autoChooser", autonomousVersion)
+    publish("dashboard/autoChooser", autonomousVersion)
   end,
   Execute = function()
     for button , name in pairs(autoChoiceTable) do
