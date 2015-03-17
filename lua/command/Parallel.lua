@@ -1,13 +1,13 @@
 local function parActInit(self)
   for i=1,#self.actions do
     self._actionStates[i] = true
-    self.action[i]:Initialize()
+    self.actions[i]:Initialize()
   end
 end
 
 local function parActExec(self)
   for i=1,#self.actions do
-    if self.actionState[i] then
+    if self._actionStates[i] then
       self.actions[i]:Execute()
       if self.actions[i]:IsFinished() then
         self.actions[i]:End()
@@ -38,8 +38,8 @@ local function subsysUnion(...)
   local temp = {}
   local args, n = {...}, select("#", ...)
   for a=1, n do
-    for i=1, #args[a].subsys do
-      temp[args[a].subsys[i]]=true
+    for i=1, #args[a].subsystems do
+      temp[args[a].subsystems[i]]=true
     end
   end
   local result = {}
@@ -85,6 +85,7 @@ local function parallelAction(...)
   parAct.IsInterruptible = isInterruptible
   parAct.Interrupted = interrupted
   parAct.Add = parActAdd
+  parAct.subsystems = subsysUnion(...)
   return parAct
 end
 

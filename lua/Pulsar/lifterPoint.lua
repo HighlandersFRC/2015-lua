@@ -16,7 +16,7 @@ local liftMacro = function(liftHeight)
   local height = 0
   if liftHeight >= RobotConfig.lifterMax then
     height = -RobotConfig.lifterMax* 25.4 /120 * 1000
-  elseif liftHeight <= 1 then
+  elseif liftHeight <= RobotConfig.lifterMin then
     height = -RobotConfig.lifterMin * 25.4 /120 * 1000
   else 
     height = -liftHeight* 25.4 /120 * 1000
