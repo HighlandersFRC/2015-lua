@@ -36,8 +36,8 @@ local function subsysUnion(...)
   local temp = {}
   local args, n = {...}, select("#", ...)
   for a=1, n do
-    for i=1, #args[a].subsys do
-      temp[args[a].subsys[i]]=true
+    for i=1, #args[a].subsystems do
+      temp[args[a].subsystems[i]]=true
     end
   end
   local result = {}
@@ -49,7 +49,7 @@ end
 
 local function seqActAdd(self, act)
   self.actions[#self.actions + 1] = act
-  self.subsys = subsysUnion(self, act)
+  self.subsystems = subsysUnion(self, act)
 end
 local function isInterruptible(self)
   if self._interruptible == false then

@@ -1,4 +1,6 @@
 
+print"Alex Test"
+
 local core = require "core"
 local turn = require "Pulsar.Auto.SpinTurn"
 local sequence = require"command.Sequence"

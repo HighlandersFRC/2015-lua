@@ -17,6 +17,13 @@ robotMap.lifterUpDown:SetStatusFrameRateMs(2,20)
 --
 -- Intake In Command
 
+local function inch2tickUD(val)
+  return -val * 25.4 /120 * 1000
+end
+local function tick2inchUD(val)
+  return -val /1000 /25.4 *120
+end
+
 local holdPosition = {
   Initialize = function()
     local holdingHeight = (robotMap.lifterUpDown:GetPosition()/1000 /25.4 * 120)
@@ -77,13 +84,20 @@ local lifterUp = {
 
   end,
   Execute = function()
-    print("Executing lift",robotMap.lifterUpDown:GetPosition()/1000 /25.4 * 120)
-    if (math.abs(robotMap.lifterUpDown:GetPosition()/1000 /25.4 * 120) <= RobotConfig.lifterMax and -OI.lifterUpDown:Get() >  0) then
-      robotMap.lifterUpDown:Set(-OI.lifterUpDown:Get())
+    print("Executing lift",tick2inchUD(robotMap.lifterUpDown:GetPosition()))
+    local position = tick2inchUD(robotMap.lifterUpDown:GetPosition())
+    if (position <= RobotConfig.lifterMax and -OI.lifterUpDown:Get() >  0) then
+      local pwr = -math.min(OI.lifterUpDown:Get(), (RobotConfig.lifterMax - position) / 6)
+      robotMap.lifterUpDown:Set(pwr)
+      print("setting lifter power to", pwr, "input", OI.lifterUpDown:Get(), "ramp", (RobotConfig.lifterMax - position) / 6)
      -- robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
-    elseif ((math.abs(robotMap.lifterUpDown:GetPosition()/1000 /25.4 * 120)) >= RobotConfig.lifterMin) and ((-OI.lifterUpDown:Get()) <= 0)then
-      robotMap.lifterUpDown:Set(-OI.lifterUpDown:Get())
+    elseif (position >= RobotConfig.lifterMin) and ((-OI.lifterUpDown:Get()) <= 0)then
+      local pwr = -math.max(OI.lifterUpDown:Get(), (position - RobotConfig.lifterMin) / 6)
+      robotMap.lifterUpDown:Set(pwr)
+      print("setting lifter power to", pwr, "input", OI.lifterUpDown:Get(), "ramp", (position - RobotConfig.lifterMin) / 6)
       --robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
+    else
+      robotMap.lifterUpDown:Set(0)
     end
     currentHeight = robotMap.lifterInOut:GetPosition()/1000 /25.4 * 120
     print("lifter UpDown One :",robotMap.lifterUpDown:GetOutputCurrent())
