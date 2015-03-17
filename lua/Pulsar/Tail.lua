@@ -1,5 +1,5 @@
 local core = require"core"
-local tailPower = 1
+local tailPower = 0.5
 local triggers = require"triggers"
 
 local tailMove = {
@@ -15,7 +15,7 @@ local tailMove = {
       robotMap.tail:Set(-tailPower)
     else
       robotMap.tail:Set(0)
-      end
+    end
   end,
   IsFinished = function() 
     return false

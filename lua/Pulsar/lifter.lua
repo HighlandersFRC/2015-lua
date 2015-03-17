@@ -89,12 +89,12 @@ local lifterUp = {
     if (position <= RobotConfig.lifterMax and -OI.lifterUpDown:Get() >  0) then
       local pwr = -math.min(OI.lifterUpDown:Get(), (RobotConfig.lifterMax - position) / 6)
       robotMap.lifterUpDown:Set(pwr)
-      print("setting lifter power to", pwr, "input", OI.lifterUpDown:Get(), "ramp", (RobotConfig.lifterMax - position) / 6)
+      print("setting lifter power up to ".. tostring(pwr).. " input ".. tostring(OI.lifterUpDown:Get()).. " ramp "..tostring((RobotConfig.lifterMax - position) / 6))
      -- robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
     elseif (position >= RobotConfig.lifterMin) and ((-OI.lifterUpDown:Get()) <= 0)then
-      local pwr = -math.max(OI.lifterUpDown:Get(), (position - RobotConfig.lifterMin) / 6)
+      local pwr = -math.max(OI.lifterUpDown:Get(), (RobotConfig.lifterMin - position) / 6)
       robotMap.lifterUpDown:Set(pwr)
-      print("setting lifter power to", pwr, "input", OI.lifterUpDown:Get(), "ramp", (position - RobotConfig.lifterMin) / 6)
+      print("setting lifter power down to "..tostring(pwr).." input "..tostring(OI.lifterUpDown:Get()).." ramp "..tostring((position - RobotConfig.lifterMin) / 6))
       --robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
     else
       robotMap.lifterUpDown:Set(0)
