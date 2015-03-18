@@ -20,14 +20,14 @@ print("oneTote 2")
 
 local fullAutonomous = sequence(
   
-  start(liftMacro(22,00)),
+  start(liftMacro(22)),
   wait(.25),
   start(intake(-1, 1.5)),
   drive(0.2, 2),
   inOut(RobotConfig.lifterInOutMin, 1),
   --liftMacro(0,100),
   wait(0.5),
-  --liftMacro(22,200),
+  --liftMacro(22),
   wait(.2),
   spin(110),
   wait(.2),
@@ -36,7 +36,7 @@ local fullAutonomous = sequence(
   --inOut(50, 1.5),
   start(intake(1, 1.2)),
   wait(.5),
-  --liftMacro(0,100),
+  --liftMacro(0),
   wait(.5),
   --inOut(1, 1),
   drive(-0.3, 0.45)
