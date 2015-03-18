@@ -9,7 +9,7 @@ local lifterUp = function()
       --local PID = pidLoop(0.16,0,0)
       timer = WPILib.Timer()
       robotMap.lifterUpDown:Set(1)
-      robotMap.lifterUpDownTwo:Set(1)
+      --robotMap.lifterUpDownTwo:Set(1)
       timer:Start()
     end,
     IsFinished = function(self)
