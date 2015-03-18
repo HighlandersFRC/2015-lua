@@ -87,14 +87,14 @@ local lifterUp = {
     print("Executing lift",tick2inchUD(robotMap.lifterUpDown:GetPosition()))
     local position = tick2inchUD(robotMap.lifterUpDown:GetPosition())
     if (position <= RobotConfig.lifterMax and -OI.lifterUpDown:Get() >  0) then
-      local pwr = -math.min(OI.lifterUpDown:Get(), (RobotConfig.lifterMax - position) / 6)
+      local pwr = math.min(-OI.lifterUpDown:Get(), (RobotConfig.lifterMax - position) / 6)
       robotMap.lifterUpDown:Set(pwr)
       print("setting lifter power up to ".. tostring(pwr).. " input ".. tostring(OI.lifterUpDown:Get()).. " ramp "..tostring((RobotConfig.lifterMax - position) / 6))
-     -- robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
+      -- robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
     elseif (position >= RobotConfig.lifterMin) and ((-OI.lifterUpDown:Get()) <= 0)then
-      local pwr = -math.max(OI.lifterUpDown:Get(), (RobotConfig.lifterMin - position) / 6)
+      local pwr = -math.min(OI.lifterUpDown:Get(), -(RobotConfig.lifterMin - position) / 6)
       robotMap.lifterUpDown:Set(pwr)
-      print("setting lifter power down to "..tostring(pwr).." input "..tostring(OI.lifterUpDown:Get()).." ramp "..tostring((position - RobotConfig.lifterMin) / 6))
+      print("setting lifter power down to "..tostring(pwr).." input "..tostring(OI.lifterUpDown:Get()).." ramp "..tostring(-(position - RobotConfig.lifterMin) / 6))
       --robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
     else
       robotMap.lifterUpDown:Set(0)
@@ -109,7 +109,7 @@ local lifterUp = {
   end,
   End = function(self)
     robotMap.lifterUpDown:Set(0)
-   -- robotMap.lifterUpDownTwo:Set(0)
+    -- robotMap.lifterUpDownTwo:Set(0)
     print("Ending")
 
   end,
@@ -171,7 +171,7 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(OI.canUp,canPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.toteUp,totePreset))
 
 
-
+--Robot.scheduler:AddTrigger(triggers.whenPressed(OI.liftCal,calibration()))
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,calibration()))
 --Robot.scheduler:SetDefaultCommand("LifterUpDown",lifterPoint(currentHeight))
 
