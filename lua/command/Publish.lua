@@ -1,5 +1,5 @@
 return function(topic, message)
-  local publishCommand = {topic = topic, message = message, subsys = {}}
+  local publishCommand = {topic = topic, message = message, subsystems = {}}
 
   function publishCommand:Initialize()
     publish(self.topic, self.message)

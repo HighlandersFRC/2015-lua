@@ -1,5 +1,5 @@
 return function(...)
-  local printCommand = {vals = {...}, subsys = {}}
+  local printCommand = {vals = {...}, subsystems = {}}
 
   function printCommand:Initialize()
     print(table.unpack(self.vals))
