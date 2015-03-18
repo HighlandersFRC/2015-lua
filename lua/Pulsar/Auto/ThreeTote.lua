@@ -8,12 +8,14 @@ local liftMacro = require "Pulsar.Auto.liftMacro"
 local wait = require "command.Wait"
 local start = require "command.Start"
 local inOut = require "Pulsar.Auto.moveInOutAuto"
+local tailSet = require "Pulsar.TailPosition"
 
 --lifterInOutMax = 14.3,
 --lifterInOutMin = 1.5,
 
 local fullAutonomous = sequence(
   -- intake -1 is in, 1 is out
+  start(tailSet(80)),
   start(liftMacro(14)),
   inOut(1.45),
   wait(.4),
