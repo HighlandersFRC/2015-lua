@@ -20,5 +20,8 @@ topPreset = core.getJoyBtn(1,4),
 calibrate = core.getJoyBtn(1,8),
 canUp = core.getJoyBtn(1,6),
 toteUp = core.getJoyBtn(1,5),
-tail = core.getJoy(1)
+tail = core.getJoy(1),
+--liftCal = core.getJoyBtn(1,10),
+tailPresetOne = core.getJoyBtn(1,8),
+tailPresetTwo = core.getJoyBtn(1,7)
 }

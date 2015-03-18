@@ -2,7 +2,6 @@ local core = require"core"
 local lidar = require"ArduLidar"
 core.setBasicRobot()
 local updateCount = 0
-collectgarbage()
 
 Robot.Disabled = {
   Execute = function()
