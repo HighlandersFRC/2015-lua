@@ -14,20 +14,20 @@ local function ticks2Degrees(ticks)
   return ticks *360/1440
   end
 local liftMacro = function(target)
-  print("tail point created")
+  --print("tail point created")
   -- this input is in inches
 -- 120 mm per revolution 25.4 mm in an inch
   local core = require"core"
   local pidLoop = require"core.PID"
   local angle = 0
   if target >= RobotConfig.tailMax then
-    print("adjusting 1")
+    --print("adjusting 1")
     angle = degrees2ticks(RobotConfig.tailMax) 
   elseif target <= RobotConfig.tailMin then
-     print("adjusting 2")
+     --print("adjusting 2")
     angle = degrees2ticks(RobotConfig.tailMin)
   else 
-     print("not adjusted")
+     --print("not adjusted")
    angle = degrees2ticks(target)
   end
 
@@ -50,7 +50,7 @@ local liftMacro = function(target)
       currentAngle = -robotMap.tail:GetPosition()
      
       response = -PID:Update(currentAngle)
-      print("Tail target ", angle, "current angle", currentAngle,"response", response, "clamped response", clamp(response))
+      --print("Tail target ", angle, "current angle", currentAngle,"response", response, "clamped response", clamp(response))
       robotMap.tail:Set(response+.2 * -math.cos(ticks2Degrees(currentAngle)*math.pi/180))
     end,
     IsFinished = function() 

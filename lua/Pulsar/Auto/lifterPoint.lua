@@ -26,7 +26,7 @@ local liftMacro = function(liftHeight)
     end,
     End = function(self)
       robotMap.lifterUpDown:Set(0)
-      robotMap.lifterUpDownTwo:Set(0)
+      --robotMap.lifterUpDownTwo:Set(0)
     end,
     Interrupted = function(self)
       print("I have been interrrupted")

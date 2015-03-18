@@ -9,33 +9,40 @@ local wait = require "command.Wait"
 local start = require "command.Start"
 local inOut = require "Pulsar.Auto.moveInOutAuto"
 local tailSet = require "Pulsar.TailPosition"
+local printcmd = require "command.Print"
+local parallel = require "command.Parallel"
 
 --lifterInOutMax = 14.3,
 --lifterInOutMin = 1.5,
 
 local fullAutonomous = sequence(
   -- intake -1 is in, 1 is out
-  start(tailSet(80)),
-  start(liftMacro(14)),
-  inOut(1.45),
+  start(tailSet(73)),
+  wait(0.1),
+  parallel(liftMacro(14), inOut(1.3, 1)),
+  printcmd("3"),
   wait(.4),
   --wait for e/10 seconds like a boss
-  --wait(.271828182845904523536028747135266249775724709369995),
   start(intake(-1, 1.5, .5)),
-  drive(0.385, 1.079),
-  liftMacro(0.1),
+  drive(0.385, 1.03),
+  liftMacro(1.3),
+  printcmd("4"),
   wait(0.3),
   liftMacro(31),
+  ----------------------------
   --right in front of trashcan
+  ----------------------------
+  
+  
   -- direction, time, power
   start(intake(1, 1.5, 1)),
   wait(0.001),
-  start(drive(0.34, 2.5)),
-  wait(1.7),
-  start(intake(-1, 1.5, 0.5)),
-  liftMacro(0.1),
-  wait(0.3),
-  start(liftMacro(16))
+  start(drive(0.34, 1.3)),
+  wait(1.7)
+  --start(intake(-1, 1.5, 0.5)),
+  --liftMacro(0.1),
+  --wait(0.3),
+  --start(liftMacro(16))
   --[[inOut(1.4),
   --wait for e/10 seconds like a boss
   wait(.271828182845904523536028747135266249775724709369995),
