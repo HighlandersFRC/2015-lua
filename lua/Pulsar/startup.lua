@@ -67,9 +67,9 @@ Robot.Teleop.Put("Drive",{
      Robot.drive:MecanumDrive_Cartesian(OI.DriveX:Get(), OI.DriveY:Get()/2, OI.DriveTheta:Get())
       end
       --Robot.drive:TankDrive(Robot.joy:GetRawAxis(1), Robot.joy:GetRawAxis(3))
-      if count % 1 == 0 then
+      if count % 50 == 0 then
 
-        publish("Robot/Lidar", readLidar())
+     print("height",robotMap.lifterInOut:GetPosition())
        -- print("Limit switch ",robotMap.lifterUpDown:IsRevLimitSwitchClosed())
       --print(lidarSensor:Get())
         --print("BLTalon voltage: "..tostring(robotMap.BLTalon:GetOutputVoltage()).." current: "..tostring(robotMap.BLTalon:GetOutputCurrent()))
@@ -98,7 +98,7 @@ Robot.Teleop.Put("Scheduler",Robot.scheduler)
 Robot.Autonomous.Put("Autonomous", require"Pulsar.Auto.AutonomousStartup")
 checkWPILib"Put Schedulers"
 
-require"Pulsar.Claw"
+require"Pulsar.Tail"
 require"Pulsar.pulsarIntake"
 require"Pulsar.lifter"
 --require"Pulsar.Tail"
