@@ -1,3 +1,13 @@
+local clamp = function(val, clampValNeg,clampValPos)
+  if val >= clampValPos then
+    val = clampValPos
+  end
+  if val <= clampValNeg then
+    val = clampValNeg
+  end
+  return val
+end
+
 local driveForward = function(pwr, trig, time)
   local gyro = require"Gyro"
   local core = require"core"
@@ -8,13 +18,12 @@ local driveForward = function(pwr, trig, time)
   local heading = 0
 -----------------------------
   local pidLoop = require"core.PID"
-  local PID = pidLoop(0.16,.000,0)
+  local PID = pidLoop(0.1,.001,.01)
 -----------------------------
   local count = 0
   local goForward = {
     Initialize = function()
       print("initializing triggered drive")
-      PID = pidLoop(0.16,.002,0)
       startTime = 0
       count = 0
       heading = 0
@@ -26,13 +35,10 @@ local driveForward = function(pwr, trig, time)
       heading = robotMap.navX:GetYaw()
       lastTime = WPILib.Timer.GetFPGATimestamp()
       local response = PID:Update(heading)
-      if count % 50 == 0 then
-        print("Heading == " .. heading )
-        print("response   " .. response)
-      end
+      publish("Robot/Heading", heading..","..response)
       count = count + 1
       -- update talon speeds gyro One
-      Robot.drive:MecanumDrive_Cartesian(0,response , -power)
+      Robot.drive:MecanumDrive_Cartesian(0,response , -clamp(power,-WPILib.Timer.GetFPGATimestamp() + startTime, WPILib.Timer.GetFPGATimestamp() - startTime))
     end,
     IsFinished = function()
       if trig:Get() then
