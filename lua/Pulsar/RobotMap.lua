@@ -2,8 +2,6 @@ print"in RobotMap"
 local core = require"core"
 --require"WPILib"
 --print"required WPILib"
-WPILib.Talon(1)
-print"CANTalon"
 local port = WPILib.SerialPort(57600,1)
 
 
