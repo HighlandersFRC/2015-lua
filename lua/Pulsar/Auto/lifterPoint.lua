@@ -22,7 +22,7 @@ local liftMacro = function(liftHeight)
       robotMap.lifterUpDown:Set(response)
     end,
     IsFinished = function() 
-     return math.abs(height - currentHeight) <=1000
+     return math.abs(height - currentHeight) <=100
     end,
     End = function(self)
       robotMap.lifterUpDown:Set(0)

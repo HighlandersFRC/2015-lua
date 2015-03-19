@@ -1,12 +1,8 @@
-local function SetIntake(pwr, left)
+local function SetIntake(leftPwr, rightPwr)
   return {
     Initialize = function()
-      if left then
-        robotMap.leftIntake:Set(pwr)
-        robotMap.rightIntake:Set(pwr)
-      else
-      robotMap.leftIntake:Set(pwr)
-      robotMap.rightIntake:Set(-pwr)
+        robotMap.leftIntake:Set(leftPwr)
+        robotMap.rightIntake:Set(rightPwr or -leftPwr)
     end,
     Execute = function() end,
     End = function() end,
