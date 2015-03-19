@@ -34,7 +34,6 @@ local tailMove = {
         robotMap.tail:Set(0)
       end
     else
-      print("ending movement")
       robotMap.tail:SetVoltageRampRate(0)
       robotMap.tail:Set(0)
     end
