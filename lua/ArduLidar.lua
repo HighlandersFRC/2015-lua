@@ -1,6 +1,6 @@
 local core = require"core"
 local lanes = require"lanes"
-lanes.configure()
+lanes.configure({with_timers=false})
 local linda = lanes.linda()
 local laneGen = lanes.gen("io", "string",  function()
     local alpha = 0.5
@@ -49,7 +49,9 @@ local lastFragment = ""
 
 
 function lidar:Get()
-  return linda:get("lidar")
+  local val = linda:get("lidar")
+  print("lidar returned", val)
+  return val
 end
 laneGen()
 
