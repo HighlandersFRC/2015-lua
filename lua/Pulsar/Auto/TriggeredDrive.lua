@@ -13,7 +13,7 @@ local driveForward = function(pwr, trig, time)
   local count = 0
   local goForward = {
     Initialize = function()
-      print("initializing")
+      print("initializing triggered drive")
       PID = pidLoop(0.16,.002,0)
       startTime = 0
       count = 0
@@ -34,8 +34,16 @@ local driveForward = function(pwr, trig, time)
       -- update talon speeds gyro One
       Robot.drive:MecanumDrive_Cartesian(0,0 , -power)
     end,
-    IsFinished = function() 
-      return (trig:Get() or (delay and startTime + delay <= WPILib.Timer.GetFPGATimestamp())) 
+    IsFinished = function()
+      if trig:Get() then
+        print"TriggeredDriver terminated by trigger"
+        return true 
+      end
+      if delay and startTime + delay <= WPILib.Timer.GetFPGATimestamp() then
+        print"TriggeredDrive terminated by timeout."
+        return true
+      end
+      return false--(trig:Get() or (delay and startTime + delay <= WPILib.Timer.GetFPGATimestamp())) 
     end,
     End = function(self)
       Robot.drive:MecanumDrive_Cartesian(0, 0,0)
