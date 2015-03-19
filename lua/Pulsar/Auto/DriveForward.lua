@@ -3,7 +3,7 @@ print("drive forward auto started")
 local driveForward = function(pwr, time)
   local gyro = require"Gyro"
   local core = require"core"
-  local power = pwr
+  local power = pwr * 12.5
   local delay = time
   local startTime = 0
   local lastTime = 0
@@ -40,6 +40,11 @@ local driveForward = function(pwr, time)
       robotMap.BLTalon:SetVoltageRampRate(0)
       robotMap.FRTalon:SetVoltageRampRate(0)
       robotMap.BRTalon:SetVoltageRampRate(0)
+      
+      robotMap.FLTalon:SetControlMode(CANSpeedController.kVoltage)
+      robotMap.BLTalon:SetControlMode(CANSpeedController.kVoltage)
+      robotMap.FRTalon:SetControlMode(CANSpeedController.kVoltage)
+      robotMap.BRTalon:SetControlMode(CANSpeedController.kVoltage)
     end,
     Execute = function() 
       heading = robotMap.navX:GetYaw()
@@ -53,7 +58,7 @@ local driveForward = function(pwr, time)
       end
       count = count + 1
       -- update talon speeds gyro One
-      Robot.drive:MecanumDrive_Cartesian(0,response , -clamp(power,-WPILib.Timer.GetFPGATimestamp() + startTime, WPILib.Timer.GetFPGATimestamp() - startTime))
+      Robot.drive:MecanumDrive_Cartesian(0,response , (-clamp(power,-WPILib.Timer.GetFPGATimestamp() + startTime)*12.5, 12.5* (WPILib.Timer.GetFPGATimestamp() - startTime)))
     end,
     IsFinished = function() 
       return (startTime + delay <= WPILib.Timer.GetFPGATimestamp()) 
@@ -64,6 +69,12 @@ local driveForward = function(pwr, time)
       robotMap.BLTalon:SetVoltageRampRate(0)
       robotMap.FRTalon:SetVoltageRampRate(0)
       robotMap.BRTalon:SetVoltageRampRate(0)
+      
+      
+      robotMap.FLTalon:SetControlMode(CANSpeedController.kPercentVbus)
+      robotMap.BLTalon:SetControlMode(CANSpeedController.kPercentVbus)
+      robotMap.FRTalon:SetControlMode(CANSpeedController.kPercentVbus)
+      robotMap.BRTalon:SetControlMode(CANSpeedController.kPercentVbus)
     end,
     Interrupted = function(self)
       self:End()

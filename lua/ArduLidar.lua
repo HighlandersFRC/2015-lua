@@ -54,6 +54,6 @@ function lidar:Get()
   return val
 
 end
-laneGen()
+print("pcall of lanegen",pcall(laneGen))
 
 return lidar

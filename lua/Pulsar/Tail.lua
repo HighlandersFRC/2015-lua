@@ -56,7 +56,7 @@ local tailDown = {
   Initialize = function()
 
     Robot.scheduler:StartCommand(tailPosition(-66.5))
-    Robot.scheduler:StartCommand(lifterPoint(12))
+    Robot.scheduler:StartCommand(lifterPoint(10))
   end,
   Execute = function()
     --print(ticks2Degrees(robotMap.tail:GetPosition()))

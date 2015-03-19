@@ -39,6 +39,29 @@ local fullAutonomous = sequence(
   --right in front of first trashcan                
   parallel(setIntake(1, 1), drive(0.35, 1)),     
   setIntake(0),                                  
+  wait(.4) ,
+  
+  --====================================================--
+ 
+   start(tailSet(73)),                                                                     
+  --start(liftMacro(16)),
+ -- printcmd("1"),
+  --wait(0.1),
+  start(inOut(0)),  
+  -- printcmd("2"),
+  --wait(.4),   
+  --printcmd("3"),
+  setIntake(-.7,.7),                                 
+  triggerDrive(0.45, analogBtn(lidar, 45, true), 2), 
+  setIntake(0, 0),                              
+  -- has tote                                       
+  start(liftMacro(0)),                                    
+  wait(0.8),                                         
+  start(liftMacro(40)),  
+  wait(1),--=--
+  --right in front of second trashcan                
+  parallel(setIntake(1, 1), drive(0.35, 1)),     
+  setIntake(0),                                  
   wait(.4)                                        
 
 )
