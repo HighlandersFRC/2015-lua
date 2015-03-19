@@ -49,6 +49,7 @@ local lastFragment = ""
 
 
 function lidar:Get()
+  print(linda:get("lidar"))
   return linda:get("lidar")
 end
 laneGen()
