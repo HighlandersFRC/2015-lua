@@ -45,7 +45,7 @@ local toPosition = {
     print(currentPosition)
     response = -PID:Update(currentPosition)
     robotMap.lifterInOut:Set(clamp(response))
-    print("Current Height: ", currentPosition,"   Target Height :", target, " Response : ",clamp(response))
+   -- print("Current Height: ", currentPosition,"   Target Height :", target, " Response : ",clamp(response))
   end,
   IsFinished = function() 
     return false --math.abs(height - currentHeight) <=1000

@@ -65,7 +65,7 @@ local tailDown = {
     return false
   end,
   End = function(self)
-    print("Ending")
+   -- print("Ending")
     robotMap.tail:Set(0)
     robotMap.lifterUpDown:Set(0)
   end,
