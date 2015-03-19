@@ -6,7 +6,7 @@ local liftMacro = function(liftHeight)
   local pidLoop = require"core.PID"
   local height = -liftHeight * 25.4 /120 * 1000
 
-  local PID = pidLoop(.0015,0.006,0.005)
+local PID = pidLoop(.0015,0.006,0.005)
 
   local startTime = 0
   local lastTime = 0
