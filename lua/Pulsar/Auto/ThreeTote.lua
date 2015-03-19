@@ -1,4 +1,3 @@
--- power time
 local drive = require"Pulsar.Auto.DriveForward"
 local turn = require"Pulsar.Auto.SpinTurn"
 local intake = require "Pulsar.Auto.intake"
@@ -11,67 +10,78 @@ local inOut = require "Pulsar.Auto.moveInOutAuto"
 local tailSet = require "Pulsar.TailPosition"
 local printcmd = require "command.Print"
 local parallel = require "command.Parallel"
-
---lifterInOutMax = 14.3,
---lifterInOutMin = 1.5,
+local triggerDrive = require "Pulsar.Auto.TriggeredDrive"
+local setIntake = require "Pulsar.Auto.SetIntake"
+local analogBtn = require "AnalogButton"
+local lidar = require "ArduLidar"
 
 local fullAutonomous = sequence(
-  -- intake -1 is in, 1 is out
-  start(tailSet(73)),
-  wait(0.1),
-  parallel(liftMacro(14), inOut(1.3, 1)),
-  printcmd("3"),
-  wait(.4),
-  --wait for e/10 seconds like a boss
-  start(intake(-1, 1.5, .5)),
-  drive(0.385, 1.03),
-  liftMacro(1.3),
-  printcmd("4"),
-  wait(0.3),
-  liftMacro(31),
-  ----------------------------
-  --right in front of trashcan
-  ----------------------------
+  --------------------------------------------------------
+  --====================================================--
+  -----------------------------------------------------=--
+  start(tailSet(73)),                                --=--
+  wait(0.1),                                         --=--
+  parallel(liftMacro(16), inOut(1.35, 1)),           --=--
+  wait(.4),                                          --=--
+  setIntake(-.375, false),                           --=--
+  triggerDrive(0.37, analogBtn(lidar, 45, true), 2), --=--
+  setIntake(0, false),                               --=--
+  -- has tote                                        --=--
+  liftMacro(.05),                                    --=--
+  wait(0.4),                                         --=--
+  liftMacro(31),                                     --=--
+  --right in front of first trashcan                 --=--
+  parallel(setIntake(1, true), drive(0.35, 1)),      --=--
+  setIntake(0),                                      --=--
+  wait(.4),                                          --=--
+  -----------------------------------------------------=--
+  --====================================================--
+  --------------------------------------------------------
   
+  -- IN FRONT OF SECOND TOTE
   
-  -- direction, time, power
-  start(intake(1, 1.5, 1)),
-  wait(0.001),
-  start(drive(0.34, 1.3)),
-  wait(1.7)
-  --start(intake(-1, 1.5, 0.5)),
-  --liftMacro(0.1),
-  --wait(0.3),
-  --start(liftMacro(16))
-  --[[inOut(1.4),
-  --wait for e/10 seconds like a boss
-  wait(.271828182845904523536028747135266249775724709369995),
-  start(intake(1, 1.5)),
-  drive(0.4, 3),
-  liftMacro(0),
-  liftMacro(16),
-  start(intake(-1, 2.5)),
-  start(drive(0.4, 6)),
-  wait(3.1415926535897932384626433950),
-  start(intake(1, 1.5)),
-  liftMacro(0),
-  start(liftMacro(16)),
-  inOut(1.4),
-  --wait for e/10 seconds like a boss
-  wait(.271828182845904523536028747135266249775724709369995),
-  start(intake(1, 1.5)),
-  drive(0.4, 3),
-  liftMacro(0),
-  liftMacro(16),
-  start(intake(-1, 2.5)),
-  start(drive(0.4, 3)),
-  wait(3.1415926535897932384626433950),
-  start(intake(1, 1.5)),
-  liftMacro(0),
-  spin(90),
-  drive(0.4, 2.2),
-  inOut(14.15),
-  start(intake(-1, 2.5)),
-  liftMacro(0)--]]
+  --------------------------------------------------------
+  --====================================================--
+  -----------------------------------------------------=--
+  start(tailSet(73)),                                --=--
+  wait(0.1),                                         --=--
+  inOut(1.35, 1),                                    --=--
+  wait(.4),                                          --=--
+  setIntake(-.375),                                  --=--
+  triggerDrive(0.37, analogBtn(lidar, 45, true), 2), --=--
+  setIntake(0),                                      --=--
+  -- has tote                                        --=--
+  liftMacro(.05),                                    --=--
+  wait(0.4),                                         --=--
+  liftMacro(31),                                     --=--
+  --right in front of second trashcan                --=--
+  parallel(setIntake(1, true), drive(0.35, 1)),      --=--
+  setIntake(0),                                      --=--
+  printcmd("7"),                                     --=--
+  wait(.4),                                          --=--
+  -----------------------------------------------------=--
+  --====================================================--
+  --------------------------------------------------------
+
+  -- IN FRONT OF THIRD TOTE
+
+  ---------------------------------------------------------
+  --=====================================================--
+  ------------------------------------------------------=--
+  start(tailSet(73)),                                 --=--
+  wait(0.1),                                          --=--
+  inOut(1.35, 1),                                     --=--
+  wait(.4),                                           --=--
+  setIntake(-.375),                                   --=--
+  triggerDrive(0.37, analogBtn(lidar, 45, true), 2),  --=--
+  setIntake(0),                                       --=--
+  -- has tote                                         --=--
+  liftMacro(.05),                                     --=--
+  wait(0.4),                                          --=--
+  liftMacro(3)                                        --=--
+  --in front of third trashcan                        --=--
+  ------------------------------------------------------=--
+  --=====================================================--
+  ---------------------------------------------------------
 )
 return fullAutonomous
