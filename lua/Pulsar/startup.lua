@@ -98,10 +98,10 @@ Robot.Teleop.Put("Scheduler",Robot.scheduler)
 Robot.Autonomous.Put("Autonomous", require"Pulsar.Auto.AutonomousStartup")
 checkWPILib"Put Schedulers"
 
-
+require"Pulsar.Claw"
 require"Pulsar.pulsarIntake"
 require"Pulsar.lifter"
-require"Pulsar.Tail"
+--require"Pulsar.Tail"
 require"Pulsar.limitProtection"
 checkWPILib"end"
 print("WPILib", WPILib)

@@ -89,12 +89,12 @@ local lifterUp = {
     if (position <= RobotConfig.lifterMax and -OI.lifterUpDown:Get() >  0) then
       local pwr = math.min(-OI.lifterUpDown:Get(), (RobotConfig.lifterMax - position) / 6)
       robotMap.lifterUpDown:Set(pwr)
-      print("setting lifter power up to ".. tostring(pwr).. " input ".. tostring(OI.lifterUpDown:Get()).. " ramp "..tostring((RobotConfig.lifterMax - position) / 6))
+      --print("setting lifter power up to ".. tostring(pwr).. " input ".. tostring(OI.lifterUpDown:Get()).. " ramp "..tostring((RobotConfig.lifterMax - position) / 6))
       -- robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
     elseif (position >= RobotConfig.lifterMin) and ((-OI.lifterUpDown:Get()) <= 0)then
       local pwr = -math.min(OI.lifterUpDown:Get(), -(RobotConfig.lifterMin - position) / 6)
       robotMap.lifterUpDown:Set(pwr)
-      print("setting lifter power down to "..tostring(pwr).." input "..tostring(OI.lifterUpDown:Get()).." ramp "..tostring(-(position - RobotConfig.lifterMin) / 6))
+     -- print("setting lifter power down to "..tostring(pwr).." input "..tostring(OI.lifterUpDown:Get()).." ramp "..tostring(-(position - RobotConfig.lifterMin) / 6))
       --robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
     else
       robotMap.lifterUpDown:Set(0)
@@ -132,7 +132,7 @@ end
 local lifterInOutTrigger = function()
   -- debugPrint("intake in trigger ")
   if math.abs(OI.lifterInOut:Get()) >=.2 then
-    print("OI VALUE IN TRIGGER = ",OI.lifterInOut:Get())
+    --print("OI VALUE IN TRIGGER = ",OI.lifterInOut:Get())
     Robot.CurrentScheduler:CancelBySubsystem("LifterInOut")
     Robot.CurrentScheduler:StartCommand(lifterIn)
   end

@@ -18,7 +18,9 @@ FLTalon = core.getCanTalon(1),
   lifterInOut = core.getCanTalon(9),
   navXport = port,
   navX = WPILib.AHRS(port,50),
-  tail = core.getCanTalon(10)
+  tail = core.getCanTalon(11),
+  claw = core.getCanTalon(10),
+  clawTwo = core.getCanTalon(12)
 }
 local lifterUpDownTwo = core.getCanTalon(8)
 lifterUpDownTwo:SetControlMode(WPILib.CANTalon.kFollower)

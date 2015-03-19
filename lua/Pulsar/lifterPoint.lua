@@ -51,7 +51,7 @@ local liftMacro = function(liftHeight)
      -- robotMap.lifterUpDownTwo:Set(0)
     end,
     Interrupted = function(self)
-      print("lifterPoint has been interrrupted")
+     -- print("lifterPoint has been interrrupted")
       self:End()
     end,
     IsInterruptible = function()

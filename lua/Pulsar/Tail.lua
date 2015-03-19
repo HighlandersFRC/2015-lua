@@ -34,7 +34,7 @@ local tailMove = {
         robotMap.tail:Set(0)
       end
     else
-      print("ending movement")
+     -- print("ending movement")
       robotMap.tail:SetVoltageRampRate(0)
       robotMap.tail:Set(0)
     end
@@ -66,7 +66,7 @@ local tailDown = {
     return false
   end,
   End = function(self)
-    print("Ending")
+   -- print("Ending")
     robotMap.tail:Set(0)
     robotMap.lifterUpDown:Set(0)
   end,
