@@ -9,7 +9,6 @@ local function coActExec(self)
   local success, errmsg
   if not self:IsFinished() then
     success, errmsg = coroutine.resume(self.corout)
-    print(success, errmsg)
     if not success then error(errmsg) end
   end
 end
@@ -26,6 +25,10 @@ local function coActInterrupt(self)
   if self.interruptfunc then self.interruptfunc() end
 end
 
+local function coActInterruptible(self)
+  return true
+end
+
 local function coroutineAction(func, subsys, endfunc, interruptfunc, noRestart)
   local coAct = {}
   coAct.cofunc = func
@@ -39,6 +42,7 @@ local function coroutineAction(func, subsys, endfunc, interruptfunc, noRestart)
   coAct.End = coActEnd
   coAct.IsFinished = coActFin
   coAct.Interrupted = coActInterrupt
+  coAct.Interruptible = coActInterruptible
   return coAct
 end
 
