@@ -42,7 +42,7 @@ local toPosition = {
   end,
   Execute = function()
     currentPosition = robotMap.lifterInOut:GetPosition()
-    print(currentPosition)
+    --print(currentPosition)
     response = -PID:Update(currentPosition)
     robotMap.lifterInOut:Set(clamp(response))
    -- print("Current Height: ", currentPosition,"   Target Height :", target, " Response : ",clamp(response))
