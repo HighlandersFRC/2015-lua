@@ -172,7 +172,7 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(OI.toteUp,totePreset))
 
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.liftCal,calibration()))
---Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,calibration()))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,require"command.Parallel"(calibration(), require"command.Print"("triggered calibration sequence"))))
 --Robot.scheduler:SetDefaultCommand("LifterUpDown",lifterPoint(currentHeight))
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.presetTwo,cancel))
