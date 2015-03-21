@@ -3,7 +3,8 @@ print("drive forward auto started")
 local driveForward = function(pwr, time)
   local gyro = require"Gyro"
   local core = require"core"
-  local power = pwr * 12.5
+  local pwrMultiple = 1
+  local power = pwr * pwrMultiple
   local delay = time
   local startTime = 0
   local lastTime = 0
@@ -12,6 +13,9 @@ local driveForward = function(pwr, time)
 -----------------------------
   local pidLoop = require"core.PID"
   local PID = pidLoop(0.1,.001,.01)
+  PID.minInput = -180
+  PID.maxInput = 180
+  PID.continuous = true
 -----------------------------
   local count = 0
   local clamp = function(val, clampValNeg,clampValPos)
@@ -41,10 +45,13 @@ local driveForward = function(pwr, time)
       robotMap.FRTalon:SetVoltageRampRate(0)
       robotMap.BRTalon:SetVoltageRampRate(0)
       
-      robotMap.FLTalon:SetControlMode(CANSpeedController.kVoltage)
-      robotMap.BLTalon:SetControlMode(CANSpeedController.kVoltage)
-      robotMap.FRTalon:SetControlMode(CANSpeedController.kVoltage)
-      robotMap.BRTalon:SetControlMode(CANSpeedController.kVoltage)
+      robotMap.FLTalon:SetControlMode(0)
+      robotMap.BLTalon:SetControlMode(0)
+      robotMap.FRTalon:SetControlMode(0)
+      robotMap.BRTalon:SetControlMode(0)
+      print("ControlMode",robotMap.FLTalon:GetControlMode() )
+      print(power)
+      
     end,
     Execute = function() 
       heading = robotMap.navX:GetYaw()
@@ -52,13 +59,14 @@ local driveForward = function(pwr, time)
       local response = PID:Update(heading)
       if count % 1 == 0 then
         
-        print(heading, response )
+        --print(heading, response )
         publish("Robot/Heading",heading..","..response)
-
+      print(robotMap.PDP:GetVoltage())
       end
       count = count + 1
       -- update talon speeds gyro One
-      Robot.drive:MecanumDrive_Cartesian(0,response , (-clamp(power,-WPILib.Timer.GetFPGATimestamp() + startTime)*12.5, 12.5* (WPILib.Timer.GetFPGATimestamp() - startTime)))
+
+      Robot.drive:MecanumDrive_Cartesian(0,response , -clamp(power * 12/robotMap.PDP:GetVoltage(),(-WPILib.Timer.GetFPGATimestamp() + startTime)*pwrMultiple , pwrMultiple* (WPILib.Timer.GetFPGATimestamp() - startTime)))
     end,
     IsFinished = function() 
       return (startTime + delay <= WPILib.Timer.GetFPGATimestamp()) 
@@ -71,10 +79,10 @@ local driveForward = function(pwr, time)
       robotMap.BRTalon:SetVoltageRampRate(0)
       
       
-      robotMap.FLTalon:SetControlMode(CANSpeedController.kPercentVbus)
-      robotMap.BLTalon:SetControlMode(CANSpeedController.kPercentVbus)
-      robotMap.FRTalon:SetControlMode(CANSpeedController.kPercentVbus)
-      robotMap.BRTalon:SetControlMode(CANSpeedController.kPercentVbus)
+      robotMap.FLTalon:SetControlMode(0)
+      robotMap.BLTalon:SetControlMode(0)
+      robotMap.FRTalon:SetControlMode(0)
+      robotMap.BRTalon:SetControlMode(0)
     end,
     Interrupted = function(self)
       self:End()

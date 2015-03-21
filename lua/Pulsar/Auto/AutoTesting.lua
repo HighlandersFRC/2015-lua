@@ -15,11 +15,6 @@ local wait = require "command.Wait"
 local start = require "command.Start"
 robotMap.navX:ZeroYaw()
 return sequence(
-  start(lift(40)),  
-  wait(2),
-  start(lift(0)),  
-  wait(2),
-  start(lift(40)),  
-  wait(2)
+  drive(.5,10)
   
 )

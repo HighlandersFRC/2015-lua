@@ -18,7 +18,7 @@ local lidar = require "ArduLidar"
 local fullAutonomous = sequence(
   
   --====================================================--
- 
+
    start(tailSet(73)),                                
   wait(0.1),                                        
   start(liftMacro(16)),
@@ -36,13 +36,15 @@ local fullAutonomous = sequence(
   wait(0.8),                                         
   start(liftMacro(40)),  
   wait(1),--=--
-  --right in front of first trashcan                
-  parallel(setIntake(1, 1), drive(0.35, 1)),     
+  --right in front of first trashcan      
+  start(setIntake(1,1)),
+  drive(0.35, 1),     
   setIntake(0),                                  
-  wait(.4) ,
+  wait(.4),
+  printcmd("ended first tote")
   
   --====================================================--
- 
+ --[[
    start(tailSet(73)),                                                                     
   --start(liftMacro(16)),
  -- printcmd("1"),
@@ -63,6 +65,6 @@ local fullAutonomous = sequence(
   parallel(setIntake(1, 1), drive(0.35, 1)),     
   setIntake(0),                                  
   wait(.4)                                        
-
+]]
 )
 return fullAutonomous
