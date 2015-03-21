@@ -31,6 +31,7 @@ local laneGen = lanes.gen("io", "string",  function()
       while offset ~= nil do
         --print("trying substr", recv:sub(prevOffset+1, offset), "giving", tonumber(recv:sub(prevOffset+1, offset)))
         newVal = tonumber(recv:sub(prevOffset+1, offset))
+        print("newVal", newVal)
         if newVal then
           updateEMA(newVal)
         end
