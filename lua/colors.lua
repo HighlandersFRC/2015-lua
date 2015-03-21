@@ -205,4 +205,6 @@ c = {
   end
 }
 
+c.initialize()
+
 return c
