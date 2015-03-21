@@ -13,6 +13,9 @@ local driveForward = function(pwr, time)
 -----------------------------
   local pidLoop = require"core.PID"
   local PID = pidLoop(0.1,.001,.01)
+  PID.minInput = -180
+  PID.maxInput = 180
+  PID.continuous = true
 -----------------------------
   local count = 0
   local clamp = function(val, clampValNeg,clampValPos)
