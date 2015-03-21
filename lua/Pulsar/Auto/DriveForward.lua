@@ -58,7 +58,7 @@ local driveForward = function(pwr, time)
       end
       count = count + 1
       -- update talon speeds gyro One
-      Robot.drive:MecanumDrive_Cartesian(0,response , (-clamp(power,-WPILib.Timer.GetFPGATimestamp() + startTime)*12.5, 12.5* (WPILib.Timer.GetFPGATimestamp() - startTime)))
+      Robot.drive:MecanumDrive_Cartesian(0,response , (-clamp(power,-WPILib.Timer.GetFPGATimestamp()) + startTime)*12.5, 12.5* (WPILib.Timer.GetFPGATimestamp() - startTime))
     end,
     IsFinished = function() 
       return (startTime + delay <= WPILib.Timer.GetFPGATimestamp()) 

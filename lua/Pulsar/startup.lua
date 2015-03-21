@@ -94,6 +94,18 @@ Robot.drive:SetInvertedMotor(2, true)
 Robot.drive:SetInvertedMotor(3, true)
 checkWPILib"drive setup"
 
+
+
+Robot.Disabled.Put("DisabledCoast", {
+    Initialize = function()
+      robotMap.BRTalon:ConfigNeutralMode(2)
+      robotMap.BLTalon:ConfigNeutralMode(2) 
+      robotMap.FRTalon:ConfigNeutralMode(2) 
+      robotMap.FLTalon:ConfigNeutralMode(2)
+      end
+    })
+
+
 Robot.Teleop.Put("Scheduler",Robot.scheduler)
 Robot.Teleop.Put("SetMotors", {
     Initialize = function()
