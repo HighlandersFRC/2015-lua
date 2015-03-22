@@ -25,6 +25,7 @@ require"Pulsar.OI"
 require"Pulsar.RobotMap"
 require"Pulsar.RobotConfig"
 require"Pulsar.VoltagePublish"
+require "ArduLidar"
 local Scheduler = require"command.Scheduler"
 print"requires finished"
 local toggleSlow = false
@@ -57,6 +58,7 @@ Robot.Teleop.Put("Drive",{
       toggleTime = WPILib.Timer.GetFPGATimestamp()
     end,
     Execute = function()
+      print("limitSwitch",robotMap.lifterUpDown:IsRevLimitSwitchClosed())
       if(OI.driveSpeed:Get() or OI.driveSpeed:Get() or OI.driveSlowSpeed:Get()) and (WPILib.Timer.GetFPGATimestamp() - toggleTime  >=.5) then
         toggleSlow = not toggleSlow
         toggleTime = WPILib.Timer.GetFPGATimestamp()
@@ -94,6 +96,18 @@ Robot.drive:SetInvertedMotor(2, true)
 Robot.drive:SetInvertedMotor(3, true)
 checkWPILib"drive setup"
 
+
+
+Robot.Disabled.Put("DisabledCoast", {
+    Initialize = function()
+      robotMap.BRTalon:ConfigNeutralMode(2)
+      robotMap.BLTalon:ConfigNeutralMode(2) 
+      robotMap.FRTalon:ConfigNeutralMode(2) 
+      robotMap.FLTalon:ConfigNeutralMode(2)
+      end
+    })
+
+
 Robot.Teleop.Put("Scheduler",Robot.scheduler)
 Robot.Teleop.Put("SetMotors", {
     Initialize = function()
@@ -109,6 +123,16 @@ Robot.Teleop.Put("SetMotors", {
       robotMap.lifterUpDownTwo:SetControlMode(WPILib.CANTalon.kFollower)
       robotMap.lifterUpDownTwo:Set(7)
       robotMap.BRTalon:SetControlMode(0)
+      
+      robotMap.BLTalon:Set(0)
+      robotMap.BRTalon:Set(0)
+      robotMap.FLTalon:Set(0)
+      robotMap.FRTalon:Set(0)
+      
+      robotMap.lifterUpDown:Set(0)
+      robotMap.lifterInOut:Set(0)
+      robotMap.tail:Set(0)
+      
     end
   })
 Robot.Autonomous.Put("Autonomous", require"Pulsar.Auto.AutonomousStartup")
