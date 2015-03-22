@@ -5,6 +5,7 @@ local driveForward = function(pwr, time)
   local core = require"core"
   local pwrMultiple = 1
   local power = pwr * pwrMultiple
+  local accel = 2
   local delay = time
   local startTime = 0
   local lastTime = 0
@@ -39,7 +40,7 @@ local driveForward = function(pwr, time)
      lastTime = WPILib.Timer.GetFPGATimestamp()
       startTime = WPILib.Timer.GetFPGATimestamp()
       startHeading = robotMap.navX:GetYaw()
-      PID.setPoint = startHeading
+      --PID.setPoint = startHeading
       robotMap.FLTalon:SetVoltageRampRate(0)
       robotMap.BLTalon:SetVoltageRampRate(0)
       robotMap.FRTalon:SetVoltageRampRate(0)
@@ -54,7 +55,7 @@ local driveForward = function(pwr, time)
       
     end,
     Execute = function() 
-      heading = robotMap.navX:GetYaw()
+      heading = robotMap.navX:GetYaw() - startHeading
       lastTime = WPILib.Timer.GetFPGATimestamp()
       local response = PID:Update(heading)
       if count % 1 == 0 then
@@ -66,7 +67,7 @@ local driveForward = function(pwr, time)
       count = count + 1
       -- update talon speeds gyro One
 
-      Robot.drive:MecanumDrive_Cartesian(0,response , -clamp(power * 12/robotMap.PDP:GetVoltage(),(-WPILib.Timer.GetFPGATimestamp() + startTime)*pwrMultiple , pwrMultiple* (WPILib.Timer.GetFPGATimestamp() - startTime)))
+      Robot.drive:MecanumDrive_Cartesian(0,response , -clamp(power * 12/robotMap.PDP:GetVoltage(),(-WPILib.Timer.GetFPGATimestamp() + startTime)*pwrMultiple * accel , pwrMultiple * accel * (WPILib.Timer.GetFPGATimestamp() - startTime)))
     end,
     IsFinished = function() 
       return (startTime + delay <= WPILib.Timer.GetFPGATimestamp()) 
