@@ -6,7 +6,7 @@ local spinTurn = function(rotation)
   
 -----------------------------
   local pidLoop = require"core.PID"
-  local PID = pidLoop(0.165,0.05,0)
+  local PID = pidLoop(0.1,0.01,0.08)
 -----------------------------
   local angle = rotation
   local heading = 0

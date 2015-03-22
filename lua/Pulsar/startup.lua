@@ -25,6 +25,7 @@ require"Pulsar.OI"
 require"Pulsar.RobotMap"
 require"Pulsar.RobotConfig"
 require"Pulsar.VoltagePublish"
+require "ArduLidar"
 local Scheduler = require"command.Scheduler"
 print"requires finished"
 local toggleSlow = false

@@ -12,7 +12,7 @@ local driveForward = function(pwr, time)
   local startHeading = 0
 -----------------------------
   local pidLoop = require"core.PID"
-  local PID = pidLoop(0.1,.001,.01)
+  local PID = pidLoop(0.02,.001,.05)
   PID.minInput = -180
   PID.maxInput = 180
   PID.continuous = true

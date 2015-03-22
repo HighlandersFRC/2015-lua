@@ -27,7 +27,7 @@ return sequence(
   wait(2),
   start(lift(40)),  
   wait(2)--]]
-  
+
   --[[start(tailSet(73)),                                
   wait(0.1),                                        
   start(liftMacro(16)),
@@ -42,67 +42,80 @@ return sequence(
   triggerDrive(.6, analogBtn(lidar, 60, true), 1.5),
   triggerWait(analogBtn(lidar, 45, true), .5), 
   setIntake(0, 0)--]]
-  
+
   --==========================================--
-  
+
   start(tailSet(73)),                                
   wait(0.1),  
   start(liftMacro(16)),
-  printcmd("1"),
   wait(0.1),
-  start(inOut(1.7)),  
+  start(inOut(1.6)),  
   printcmd("2"),
   turn(-15),
   wait(.2),
   printcmd("3"),
   setIntake(-.6,.6),
   wait(.2),
-  triggerDrive(.6, analogBtn(lidar, 60, true), 1),
-  triggerWait(analogBtn(lidar, 45, true), .5), 
+  triggerDrive(.6, analogBtn(lidar, 53, true), 1),
+  triggerWait(analogBtn(lidar, 45, true), .6), 
   setIntake(0, 0),                              
   -- has tote                                       
   start(liftMacro(0)),                                    
-  wait(1.2),
-  turn(15),
-  start(liftMacro(32)),
-  wait(1),--=--
-  --right in front of first trashcan          
-  turn(-15),
-  parallel(setIntake(1, 1), drive(0.45, .5)),
-  setIntake(0),                                  
-  wait(.32),
+  wait(.8),
+  turn(23),
+  drive(.65, 1),                                
+  wait(.15),
   turn(0),
-  drive(.5,1)
-  
-  --===================================--
-  
-  --[[start(tailSet(73)),                                
-  wait(0.1),  
   start(liftMacro(16)),
+  drive(.55,.6),
+
+  --===================================--
+
+  start(tailSet(73)),                                
+  wait(0.1),  
   printcmd("1"),
   wait(0.1),
-  start(inOut(1.7)),
+  start(inOut(1.6)),  
   printcmd("2"),
   turn(-15),
   wait(.2),
   printcmd("3"),
   setIntake(-.6,.6),
   wait(.2),
-  triggerDrive(.6, analogBtn(lidar, 60, true), 1),
-  triggerWait(analogBtn(lidar, 45, true), .5), 
+  triggerDrive(.6, analogBtn(lidar, 53, true), 1),
+  triggerWait(analogBtn(lidar, 45, true), .6), 
   setIntake(0, 0),                              
   -- has tote                                       
   start(liftMacro(0)),                                    
-  wait(1.2),  
-  turn(15),
-  start(liftMacro(32)),
+  wait(.8),
+  turn(23),
+  drive(.65, 1),                                
+  wait(.15),
+  turn(0),
+  start(liftMacro(16)),
+  drive(.55,.55),
+
+  --==========================================--
+
+  start(tailSet(73)),                                
+  wait(0.1),  
+  printcmd("1"),
+  wait(0.1),
+  start(inOut(1.6)),  
+  printcmd("2"),
+  turn(-17),
   wait(.2),
-  
-  wait(1),--=--
-  --right in front of first trashcan                
-  parallel(setIntake(1, 1), drive(0.45, .86)),     
-  setIntake(0),                                  
-  wait(.32)--]]
-  
-  
+  printcmd("3"),
+  setIntake(-.6,.6),
+  wait(.2),
+  triggerDrive(.6, analogBtn(lidar, 53, true), 1.25),
+  triggerWait(analogBtn(lidar, 45, true), .6), 
+  setIntake(0, 0),                              
+  -- has tote                                       
+  start(liftMacro(0)),                                    
+  wait(.8),
+  turn(90),
+  start(liftMacro(16))
+
+
 )
