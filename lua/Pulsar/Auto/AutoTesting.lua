@@ -50,7 +50,7 @@ return sequence(
   start(liftMacro(16)),
   printcmd("1"),
   wait(0.1),
-  start(inOut(1.45)),  
+  start(inOut(1.7)),  
   printcmd("2"),
   turn(-15),
   wait(.2),
@@ -62,25 +62,26 @@ return sequence(
   setIntake(0, 0),                              
   -- has tote                                       
   start(liftMacro(0)),                                    
-  wait(1.2),                                         
-  start(liftMacro(32)),
-  wait(.2),
+  wait(1.2),
   turn(15),
+  start(liftMacro(32)),
   wait(1),--=--
-  --right in front of first trashcan                
-  parallel(setIntake(1, 1), drive(0.45, .86)),     
+  --right in front of first trashcan          
+  turn(-15),
+  parallel(setIntake(1, 1), drive(0.45, .5)),
   setIntake(0),                                  
   wait(.32),
-  drive(.5,1),
+  turn(0),
+  drive(.5,1)
   
   --===================================--
   
-  start(tailSet(73)),                                
+  --[[start(tailSet(73)),                                
   wait(0.1),  
   start(liftMacro(16)),
   printcmd("1"),
   wait(0.1),
-  start(inOut(1.45)),  
+  start(inOut(1.7)),
   printcmd("2"),
   turn(-15),
   wait(.2),
@@ -92,15 +93,16 @@ return sequence(
   setIntake(0, 0),                              
   -- has tote                                       
   start(liftMacro(0)),                                    
-  wait(1.2),                                         
+  wait(1.2),  
+  turn(15),
   start(liftMacro(32)),
   wait(.2),
-  turn(15),
+  
   wait(1),--=--
   --right in front of first trashcan                
   parallel(setIntake(1, 1), drive(0.45, .86)),     
   setIntake(0),                                  
-  wait(.32)
+  wait(.32)--]]
   
   
 )
