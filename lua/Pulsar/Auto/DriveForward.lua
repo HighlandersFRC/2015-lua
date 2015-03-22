@@ -12,31 +12,31 @@ local driveForward = function(pwr, time)
   local startHeading = 0
 -----------------------------
   local pidLoop = require"core.PID"
-  local PID = pidLoop(0.1,.001,.01)
+  local PID = pidLoop(0.02,.001,.05)
   PID.minInput = -180
   PID.maxInput = 180
   PID.continuous = true
 -----------------------------
   local count = 0
   local clamp = function(val, clampValNeg,clampValPos)
-    
+
     if val >= clampValPos then
       val = clampValPos
-      end
-    
+    end
+
     if val <= clampValNeg then
       val = clampValNeg
     end
-    
+
     return val
-    end
+  end
   local goForward = {
     Initialize = function()
       print("initializing")
       startTime = 0
       count = 0
       heading = 0
-     lastTime = WPILib.Timer.GetFPGATimestamp()
+      lastTime = WPILib.Timer.GetFPGATimestamp()
       startTime = WPILib.Timer.GetFPGATimestamp()
       startHeading = robotMap.navX:GetYaw()
       PID.setPoint = startHeading
@@ -44,28 +44,27 @@ local driveForward = function(pwr, time)
       robotMap.BLTalon:SetVoltageRampRate(0)
       robotMap.FRTalon:SetVoltageRampRate(0)
       robotMap.BRTalon:SetVoltageRampRate(0)
-      
+
       robotMap.FLTalon:SetControlMode(0)
       robotMap.BLTalon:SetControlMode(0)
       robotMap.FRTalon:SetControlMode(0)
       robotMap.BRTalon:SetControlMode(0)
       print("ControlMode",robotMap.FLTalon:GetControlMode() )
       print(power)
-      
+
     end,
     Execute = function() 
       heading = robotMap.navX:GetYaw()
       lastTime = WPILib.Timer.GetFPGATimestamp()
       local response = PID:Update(heading)
       if count % 1 == 0 then
-        
+
         --print(heading, response )
         publish("Robot/Heading",heading..","..response)
-      print(robotMap.PDP:GetVoltage())
+        print(robotMap.PDP:GetVoltage())
       end
       count = count + 1
       -- update talon speeds gyro One
-
       Robot.drive:MecanumDrive_Cartesian(0,response , -clamp(power * 12/robotMap.PDP:GetVoltage(),(-WPILib.Timer.GetFPGATimestamp() + startTime)*pwrMultiple , pwrMultiple* (WPILib.Timer.GetFPGATimestamp() - startTime)))
     end,
     IsFinished = function() 
@@ -77,8 +76,8 @@ local driveForward = function(pwr, time)
       robotMap.BLTalon:SetVoltageRampRate(0)
       robotMap.FRTalon:SetVoltageRampRate(0)
       robotMap.BRTalon:SetVoltageRampRate(0)
-      
-      
+
+
       robotMap.FLTalon:SetControlMode(0)
       robotMap.BLTalon:SetControlMode(0)
       robotMap.FRTalon:SetControlMode(0)

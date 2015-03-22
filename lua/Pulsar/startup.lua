@@ -25,6 +25,7 @@ require"Pulsar.OI"
 require"Pulsar.RobotMap"
 require"Pulsar.RobotConfig"
 require"Pulsar.VoltagePublish"
+require "ArduLidar"
 local Scheduler = require"command.Scheduler"
 print"requires finished"
 local toggleSlow = false
@@ -94,6 +95,18 @@ Robot.drive:SetInvertedMotor(1, true)
 Robot.drive:SetInvertedMotor(2, true)
 Robot.drive:SetInvertedMotor(3, true)
 checkWPILib"drive setup"
+
+
+
+Robot.Disabled.Put("DisabledCoast", {
+    Initialize = function()
+      robotMap.BRTalon:ConfigNeutralMode(2)
+      robotMap.BLTalon:ConfigNeutralMode(2) 
+      robotMap.FRTalon:ConfigNeutralMode(2) 
+      robotMap.FLTalon:ConfigNeutralMode(2)
+      end
+    })
+
 
 Robot.Teleop.Put("Scheduler",Robot.scheduler)
 Robot.Teleop.Put("SetMotors", {
