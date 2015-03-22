@@ -5,8 +5,9 @@ local Auto
 local autonomous = { 
   Initialize = function()
     Auto = require(autonomousVersion)
-    Robot.schedulerAuto:StartCommand(Auto)
     robotMap.navX:ZeroYaw()
+    Robot.schedulerAuto:StartCommand(Auto)
+    
     robotMap.BRTalon:ConfigNeutralMode(2) 
     robotMap.BLTalon:ConfigNeutralMode(2) 
     robotMap.FRTalon:ConfigNeutralMode(2) 

@@ -57,6 +57,7 @@ Robot.Teleop.Put("Drive",{
       toggleTime = WPILib.Timer.GetFPGATimestamp()
     end,
     Execute = function()
+      print("limitSwitch",robotMap.lifterUpDown:IsRevLimitSwitchClosed())
       if(OI.driveSpeed:Get() or OI.driveSpeed:Get() or OI.driveSlowSpeed:Get()) and (WPILib.Timer.GetFPGATimestamp() - toggleTime  >=.5) then
         toggleSlow = not toggleSlow
         toggleTime = WPILib.Timer.GetFPGATimestamp()
@@ -109,6 +110,16 @@ Robot.Teleop.Put("SetMotors", {
       robotMap.lifterUpDownTwo:SetControlMode(WPILib.CANTalon.kFollower)
       robotMap.lifterUpDownTwo:Set(7)
       robotMap.BRTalon:SetControlMode(0)
+      
+      robotMap.BLTalon:Set(0)
+      robotMap.BRTalon:Set(0)
+      robotMap.FLTalon:Set(0)
+      robotMap.FRTalon:Set(0)
+      
+      robotMap.lifterUpDown:Set(0)
+      robotMap.lifterInOut:Set(0)
+      robotMap.tail:Set(0)
+      
     end
   })
 Robot.Autonomous.Put("Autonomous", require"Pulsar.Auto.AutonomousStartup")
