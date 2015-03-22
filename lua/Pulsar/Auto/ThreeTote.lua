@@ -17,10 +17,9 @@ local lidar = require "ArduLidar"
 local triggerWait = require "command.TriggerWait"
 
 local fullAutonomous = sequence(
-  
+
   --====================================================--
- 
-  start(tailSet(73)),                                
+  start(tailSet(73)), 
   wait(0.1),                                        
   start(liftMacro(16)),
   printcmd("1"),
@@ -45,9 +44,6 @@ local fullAutonomous = sequence(
   parallel(setIntake(1, 1), drive(0.45, .86)),     
   setIntake(0),                                  
   wait(.32),
-  
-  --====================================================--
-  
    start(tailSet(73)),                                                                     
   --start(liftMacro(16)),
  -- printcmd("1"),
@@ -70,7 +66,7 @@ local fullAutonomous = sequence(
   --right in front of second trashcan                
   parallel(setIntake(1, 1), drive(0.45, .86)),     
   setIntake(0),                                  
-  wait(.32),
+wait(.32),
   
   --======================================================--
 
@@ -92,6 +88,5 @@ local fullAutonomous = sequence(
   start(liftMacro(0)),                                    
   wait(1.2),                                         
   start(liftMacro(32))
-
 )
 return fullAutonomous

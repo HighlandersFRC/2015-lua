@@ -1,5 +1,5 @@
 local core = require"core"
-local tailPower = 0.5
+local tailPower = 0.6
 local triggers = require"triggers"
 local tailPosition = require"Pulsar.TailPosition"
 local lifterPoint = require"Pulsar.lifterPoint"
@@ -56,7 +56,7 @@ local tailDown = {
   Initialize = function()
 
     Robot.scheduler:StartCommand(tailPosition(-66.5))
-    Robot.scheduler:StartCommand(lifterPoint(10))
+    Robot.scheduler:StartCommand(lifterPoint(11))
   end,
   Execute = function()
     --print(ticks2Degrees(robotMap.tail:GetPosition()))

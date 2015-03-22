@@ -7,6 +7,7 @@ Robot.Disabled = {
   Execute = function()
     if updateCount % 100 == 0 then
       print(lidar:Get())
+      
     end
     updateCount = updateCount+1
   end

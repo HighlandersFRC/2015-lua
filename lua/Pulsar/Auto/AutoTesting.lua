@@ -21,7 +21,7 @@ local triggerWait = require "command.TriggerWait"
 
 robotMap.navX:ZeroYaw()
 return sequence(
-  --[[start(lift(40)),  
+--[[start(lift(40)),  
   wait(2),
   start(lift(0)),  
   wait(2),
