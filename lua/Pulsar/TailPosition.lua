@@ -12,11 +12,9 @@ local function degrees2ticks(degrees)
 end
 local function ticks2Degrees(ticks)
   return ticks *360/1440
-  end
+end
 local liftMacro = function(target)
   --print("tail point created")
-  -- this input is in inches
--- 120 mm per revolution 25.4 mm in an inch
   local core = require"core"
   local pidLoop = require"core.PID"
   local angle = 0
@@ -41,17 +39,18 @@ local liftMacro = function(target)
       robotMap.tail:SetVoltageRampRate(10)
       print("tail going to ", angle)
       robotMap.tail:SetStatusFrameRateMs(2,20)
+      robotMap.tail:SetVoltageRampRate(0)
       startTime = WPILib.Timer.GetFPGATimestamp()
       PID.setpoint = angle
       PID.maxOutput = RobotConfig.tailClamp
       PID.minOutput = -RobotConfig.tailClamp
     end,
     Execute = function()
-      currentAngle = -robotMap.tail:GetPosition()
+      currentAngle = robotMap.tail:GetPosition()
      
-      response = -PID:Update(currentAngle)
+      response = PID:Update(currentAngle)
       --print("Tail target ", angle, "current angle", currentAngle,"response", response, "clamped response", clamp(response))
-      robotMap.tail:Set(response+.2 * -math.cos(ticks2Degrees(currentAngle)*math.pi/180))
+      robotMap.tail:Set(response+.2 * math.cos(ticks2Degrees(currentAngle)*math.pi/180))
     end,
     IsFinished = function() 
       return false 

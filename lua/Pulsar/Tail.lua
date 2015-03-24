@@ -10,23 +10,43 @@ end
 local function ticks2Degrees(ticks)
   return ticks /1440*360
 end
+
+local tailHold = {
+  Initialize = function()
+    local holdingHeight = ticks2Degrees(robotMap.tail:GetPosition())
+    print("Holding angle :",holdingHeight)
+    Robot.CurrentScheduler:StartCommand(tailPosition(holdingHeight))
+  end,
+  Execute = function()
+  end,
+  IsFinished = function() 
+    return true
+  end,
+  End = function(self)
+  end,
+  Interrupted = function(self)
+    print"Tail Hold has been interrupted"
+    self:End()
+  end,
+  subsystems = {},
+}
+
 local tailMove = {
   Initialize = function()
     robotMap.tail:SetVoltageRampRate(10)
     print("Started moving")
   end,
   Execute = function()
-    --print(robotMap.tail:GetPosition())
     if(OI.tail:GetPOV()==0) then
-      if (ticks2Degrees(-robotMap.tail:GetPosition()) <= RobotConfig.tailMax) then
+      if (ticks2Degrees(robotMap.tail:GetPosition()) <= RobotConfig.tailMax) then
         local pwr = math.min(tailPower, math.abs((RobotConfig.tailMax - ticks2Degrees(robotMap.tail:GetPosition()) ) / 10))
-        robotMap.tail:Set(-pwr)
+        robotMap.tail:Set(pwr)
       else
         robotMap.tail:SetVoltageRampRate(0)
         robotMap.tail:Set(0)
       end
     elseif OI.tail:GetPOV()==180 then
-      if (ticks2Degrees(-robotMap.tail:GetPosition()) >= RobotConfig.tailMin) then
+      if (ticks2Degrees(robotMap.tail:GetPosition()) >= RobotConfig.tailMin) then
         local pwr = -math.min(tailPower, math.abs((RobotConfig.tailMin - ticks2Degrees(robotMap.tail:GetPosition()) ) / 10))
         robotMap.tail:Set(pwr)
       else
@@ -82,6 +102,7 @@ local tailPresetTwo = tailPosition(80) -- should be 80
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailPresetOne,tailDown))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailPresetTwo,tailPresetTwo))
 Robot.scheduler:AddTrigger(triggers.whenPressed({Get = function() return OI.tail:GetPOV()> -1 end},tailMove))
+Robot.scheduler:AddTrigger(triggers.whenReleased({Get = function() return OI.tail:GetPOV()> -1 end},tailHold))
 
 --Robot.scheduler:AddTrigger(tailTrigger)
 Robot.scheduler:StartCommand(tailMove)
