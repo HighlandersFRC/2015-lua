@@ -2,14 +2,16 @@ print("AutoSys")
 --local oneTote = require "Pulsar.AutoSeq"
 --local threeTote = require "Pulsar.Auto.threeTote"
 local Auto
+local autoDriveNeutral = 1
 local autonomous = { 
   Initialize = function()
     Auto = require(autonomousVersion)
     robotMap.navX:ZeroYaw()
-    robotMap.BRTalon:ConfigNeutralMode(1) 
-    robotMap.BLTalon:ConfigNeutralMode(1) 
-    robotMap.FRTalon:ConfigNeutralMode(1) 
-    robotMap.FLTalon:ConfigNeutralMode(1) 
+    Robot.schedulerAuto:StartCommand(Auto)
+    robotMap.BRTalon:ConfigNeutralMode(autoDriveNeutral) 
+    robotMap.BLTalon:ConfigNeutralMode(autoDriveNeutral) 
+    robotMap.FRTalon:ConfigNeutralMode(autoDriveNeutral) 
+    robotMap.FLTalon:ConfigNeutralMode(autoDriveNeutral) 
 
   end,
   Execute = function()
