@@ -1,4 +1,3 @@
-
 print"AutoTest"
 
 local drive = require"Pulsar.Auto.DriveForward"
@@ -20,43 +19,21 @@ local lidar = require "ArduLidar"
 local triggerWait = require "command.TriggerWait"
 
 robotMap.navX:ZeroYaw()
+
 return sequence(
---[[start(lift(40)),  
-  wait(2),
-  start(lift(0)),  
-  wait(2),
-  start(lift(40)),  
-  wait(2)--]]
-
-  --[[start(tailSet(73)),                                
-  wait(0.1),                                        
-  start(liftMacro(16)),
-  printcmd("1"),
-  wait(0.1),
-  start(inOut(0)),  
-  printcmd("2"),
-  wait(.2),
-  printcmd("3"),
-  setIntake(-.6,.6),
-  wait(.2),
-  triggerDrive(.6, analogBtn(lidar, 60, true), 1.5),
-  triggerWait(analogBtn(lidar, 45, true), .5), 
-  setIntake(0, 0)--]]
-
-  --==========================================--
 
   start(tailSet(73)),                                
   wait(0.1),  
   start(liftMacro(16)),
   wait(0.1),
-  start(inOut(1.6)),  
+  start(inOut(1.55)),  
   printcmd("2"),
   turn(-15),
   wait(.2),
   printcmd("3"),
   setIntake(-.6,.6),
   wait(.2),
-  triggerDrive(.6, analogBtn(lidar, 53, true), 1),
+  triggerDrive(.6, analogBtn(lidar, 53, true), 1.5),
   triggerWait(analogBtn(lidar, 45, true), .6), 
   setIntake(0, 0),                              
   -- has tote                                       
@@ -75,14 +52,14 @@ return sequence(
   wait(0.1),  
   printcmd("1"),
   wait(0.1),
-  start(inOut(1.6)),  
+  start(inOut(1.55)),  
   printcmd("2"),
   turn(-15),
   wait(.2),
   printcmd("3"),
   setIntake(-.6,.6),
   wait(.2),
-  triggerDrive(.6, analogBtn(lidar, 53, true), 1),
+  triggerDrive(.6, analogBtn(lidar, 53, true), 1.5),
   triggerWait(analogBtn(lidar, 45, true), .6), 
   setIntake(0, 0),                              
   -- has tote                                       
@@ -101,21 +78,20 @@ return sequence(
   wait(0.1),  
   printcmd("1"),
   wait(0.1),
-  start(inOut(1.6)),  
+  start(inOut(1.55)),  
   printcmd("2"),
   turn(-17),
   wait(.2),
   printcmd("3"),
   setIntake(-.6,.6),
   wait(.2),
-  triggerDrive(.6, analogBtn(lidar, 53, true), 1.25),
+  triggerDrive(.6, analogBtn(lidar, 53, true), 1.5),
   triggerWait(analogBtn(lidar, 45, true), .6), 
   setIntake(0, 0),                              
   -- has tote                                       
   start(liftMacro(0)),                                    
   wait(.8),
-  turn(90),
-  start(liftMacro(16))
-
-
+  start(liftMacro(16)),
+  turn(90)
+  
 )
