@@ -1,5 +1,8 @@
 local core = require "core"
 local wait = function(trig, seconds)
+  if type(trig) == "function" then
+    trig = {Get=trig}
+  end
   local waitTime = {
     Initialize = function()
       timer = WPILib.Timer()
