@@ -2,17 +2,13 @@
 
 --debugPrint("intake started")
 local core = require"core"
-local intakePower = .5
+local intakePower = .80
 local triggers = require"triggers"
 
 -- Intake In Command
 local lidarSensor = WPILib.LidarLiteI2C()
 local average = 0
-local readLidar = function()
-  average = average + .1* (lidarSensor:Get() -average)
-  return average
-  end
-print(readLidar())
+
 local intakeLeftOutCommand = {
   Initialize = function()
     -- motor code goes here
