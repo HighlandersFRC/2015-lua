@@ -21,6 +21,9 @@ local laneGen = lanes.gen("io", "string",  function()
       local newVal = tonumber(lastFragment..recv:sub(1, offset))
       -- print(2)
       if newVal then
+        if newVal == 0 then
+          newVal = 4096
+        end
         updateEMA(newVal)
       end
       -- print(3)
@@ -33,6 +36,9 @@ local laneGen = lanes.gen("io", "string",  function()
         newVal = tonumber(recv:sub(prevOffset+1, offset))
         print("newVal", newVal)
         if newVal then
+          if newVal == 0 then
+            newVal = 4096
+          end
           updateEMA(newVal)
         end
         prevOffset = offset
