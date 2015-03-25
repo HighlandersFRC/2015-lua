@@ -58,7 +58,7 @@ Robot.Teleop.Put("Drive",{
       toggleTime = WPILib.Timer.GetFPGATimestamp()
     end,
     Execute = function()
-      print("limitSwitch",robotMap.lifterUpDown:IsRevLimitSwitchClosed())
+      --print("limitSwitch",robotMap.lifterUpDown:IsRevLimitSwitchClosed())
       if(OI.driveSpeed:Get() or OI.driveSpeed:Get() or OI.driveSlowSpeed:Get()) and (WPILib.Timer.GetFPGATimestamp() - toggleTime  >=.5) then
         toggleSlow = not toggleSlow
         toggleTime = WPILib.Timer.GetFPGATimestamp()
