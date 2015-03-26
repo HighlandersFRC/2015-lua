@@ -19,7 +19,7 @@ local calibration = function()
         print("waiting for encoder", math.abs(-1*robotMap.lifterUpDown:GetPosition() - position))
       end
       count = count + 1
-      robotMap.lifterUpDown:Set(.2)
+      robotMap.lifterUpDown:Set(.3)
       coroutine.yield()
 
     end

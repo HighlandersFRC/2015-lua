@@ -13,31 +13,22 @@ local start = require "command.Start"
 local inOut = require "Pulsar.Auto.moveInOutAuto"
 local holding = require "Pulsar.Auto.AutoHolding"
 
---lifterInOutMax = 14.3,
---lifterInOutMin = 1.5,
-
-print("oneTote 2")
 
 local fullAutonomous = sequence(
   
   start(liftMacro(22)),
   wait(.25),
-  start(intake(-1, 1.5)),
+  start(intake(-1, 1.5, .5)),
   drive(0.2, 2),
-  inOut(RobotConfig.lifterInOutMin, 1),
-  --liftMacro(0,100),
-  wait(0.5),
-  --liftMacro(22),
-  wait(.2),
+  wait(0.3),
   spin(110),
   wait(.2),
   drive(0.3, 3.7),
   spin(180),
   --inOut(50, 1.5),
-  start(intake(1, 1.2)),
-  wait(.5),
+  start(intake(1, 1.2, 1)),
+  wait(.2),
   --liftMacro(0),
-  wait(.5),
   --inOut(1, 1),
   drive(-0.3, 0.45)
   
