@@ -192,6 +192,7 @@ robotMap.tail:SetPosition(degrees2ticks(100))
 
   Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailPresetOne,tailDownPreset))
   Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailPresetTwo,tailPresetTwo))
+  Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailStow, tailPosition(85)))
   Robot.scheduler:AddTrigger(triggers.whenPressed({Get = function() return OI.tail:GetPOV() == 90 end},tailUp))
   Robot.scheduler:AddTrigger(triggers.whenPressed({Get = function() return OI.tail:GetPOV() == 270 end},tailDown))
   Robot.scheduler:AddTrigger(triggers.whenPressed({Get = function() return OI.tail:GetPOV()== 180 end},tailProngsDown))

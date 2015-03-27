@@ -20,7 +20,7 @@ local fullAutonomous = sequence(
   wait(.25),
   start(intake(-1, 1.5, .5)),
   drive(0.2, 2),
-  inOut(RobotConfig.lifterInOutMin, 1),
+  start(inOut(RobotConfig.lifterInOutMin)),
   --liftMacro(0,100),
   wait(0.5),
   --liftMacro(22),

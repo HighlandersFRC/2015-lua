@@ -177,9 +177,11 @@ end
 
 local zeroPreset = parallel(lifterPoint(0), start(sequence(wait(0.25), tailPos(65))))
 local outPreset = lifterInOutPoint(15)
-local upPreset = parallel(start(lifterPoint(100)), start(tailPos(58)))
+local upPreset = parallel(start(lifterPoint(100)), start(tailPos(52
+      )))
 local inPreset = lifterInOutPoint(0)
-local canPreset = parallel(lifterPoint(15), sequence(trigWait(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) <= 16 end), lifterInOutPoint(14)))
+local canPreset = parallel(start(lifterPoint(34)), start(tailPos(80)))
+--parallel(lifterPoint(15), sequence(trigWait(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) <= 16 end), lifterInOutPoint(14)))
 local totePreset = sequence(require"command.Print"("running tote preset"), SetLift(0.5, 5), lifterPoint(17))--lifterPoint(12)
 
 

@@ -24,5 +24,6 @@ tail = core.getJoy(1),
 --liftCal = core.getJoyBtn(1,10),
 tailPresetOne = core.getJoyBtn(1,8),
 tailPresetTwo = core.getJoyBtn(1,7),
-inOutDisable = core.getJoyBtn(2,6)
+inOutDisable = core.getJoyBtn(2,6),
+tailStow = core.getJoyBtn(1, 9)
 }

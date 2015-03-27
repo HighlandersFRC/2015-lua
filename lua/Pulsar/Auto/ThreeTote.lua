@@ -22,78 +22,66 @@ robotMap.navX:ZeroYaw()
 
 return sequence(
 
-  start(tailSet(73)),                                
-  wait(0.1),  
+  start(tailSet(80)),                                 
   start(liftMacro(16)),
-  wait(0.1),
   start(inOut(1.55)),  
-  printcmd("2"),
   turn(-17),
-  wait(.2),
-  printcmd("3"),
   setIntake(-.6,.6),
-  wait(.2),
   ----test vvv
-  drive(.4, .75),
-  wait(.4),
+  drive(.25, .9),
+  wait(.55),
   -------
   setIntake(0, 0),                              
   -- has tote                                       
   start(liftMacro(0)),                                    
-  wait(.8),
   turn(23),
-  drive(.65, .6),                                
-  wait(.15),
+  drive(.65, .38),                                
+  wait(.1),
   turn(0),
   start(liftMacro(16)),
-  drive(.6,.6)
+  drive(.7,.96),
 
   --===================================--
 
-  --[[start(tailSet(73)),                                
-  wait(0.1),  
-  printcmd("1"),
-  wait(0.1),
+  start(tailSet(80)),                                  
+  start(liftMacro(16)),
   start(inOut(1.55)),  
-  printcmd("2"),
-  turn(-15),
-  wait(.2),
-  printcmd("3"),
+  turn(-17),
   setIntake(-.6,.6),
-  wait(.2),
-  triggerDrive(.6, analogBtn(lidar, 53, true), 1.5),
-  triggerWait(analogBtn(lidar, 45, true), .6), 
+  ----test vvv
+  drive(.25, .9),
+  wait(.55),
+  -------
   setIntake(0, 0),                              
   -- has tote                                       
   start(liftMacro(0)),                                    
-  wait(.8),
   turn(23),
-  drive(.65, 1),                                
-  wait(.15),
+  drive(.65, .38),                                
+  wait(.1),
   turn(0),
   start(liftMacro(16)),
-  drive(.55,.55),
+  drive(.7, .96),
 
   --==========================================--
 
-  start(tailSet(73)),                                
-  wait(0.1),  
-  printcmd("1"),
-  wait(0.1),
+  start(tailSet(80)),                                
+  start(liftMacro(16)),
   start(inOut(1.55)),  
-  printcmd("2"),
-  turn(-17),
-  wait(.2),
-  printcmd("3"),
+  turn(-19),
   setIntake(-.6,.6),
-  wait(.2),
-  triggerDrive(.6, analogBtn(lidar, 53, true), 1.5),
-  triggerWait(analogBtn(lidar, 45, true), .6), 
+  ----test vvv
+  drive(.3, .9),
+  wait(.5),
+  -------
   setIntake(0, 0),                              
   -- has tote                                       
-  start(liftMacro(0)),                                    
-  wait(.8),
-  start(liftMacro(16)),
-  turn(90)--]]
+  start(liftMacro(8)),
+  turn(90),
+  drive(1, .6),
+  setIntake(.8,-.8),
+  drive(1, .3),
+  wait(.5),
+  setIntake(0, 0)
+  
   
 )
