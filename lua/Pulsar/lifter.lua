@@ -11,6 +11,13 @@ local lifterInOutPoint = require"Pulsar.lifterInOut"
 local triggers = require"triggers"
 local analogButton = require"AnalogButton"
 local calibration = require"Pulsar.calibrateEncoders"
+local tailPos = require"Pulsar.TailPosition"
+local parallel = require"command.Parallel"
+local start = require"command.Start"
+local sequence = require"command.Sequence"
+local wait = require"command.Wait"
+local trigWait = require"command.TriggerWait"
+
 -- the lifter lock off means that the arms cannot be moved
 robotMap.lifterInOut:SetStatusFrameRateMs(2,20)
 robotMap.lifterUpDown:SetStatusFrameRateMs(2,20)
@@ -38,20 +45,20 @@ local holdPosition = {
   End = function(self)
   end,
   Interrupted = function(self)
-    print"lifterUp has been interrupted"
+    print"lifter Hold has been interrupted"
     self:End()
   end,
   subsystems = {
-
   },
 }
 local lifterIn = {
   Initialize = function()
-    print("startedCOmmand")
+    print("started Lifter In")
   end,
   Execute = function()
-    print("inOut",robotMap.lifterInOut:Get() )
-    if robotMap.lifterInOut:GetPosition() <1900 and OI.lifterInOut:Get() < 0 then
+    if not OI.inOutDisable:Get() then
+      print("inOut",robotMap.lifterInOut:Get() )
+      if robotMap.lifterInOut:GetPosition() <1900 and OI.lifterInOut:Get() < 0 then
       print("moving in",OI.lifterInOut:Get())
       robotMap.lifterInOut:Set(OI.lifterInOut:Get())
     elseif robotMap.lifterInOut:GetPosition() > 200  and OI.lifterInOut:Get() > 0 then
@@ -61,20 +68,25 @@ local lifterIn = {
       --print("not moving")
       robotMap.lifterInOut:Set(0)
     end
+  else
 
-  end,
-  IsFinished = function() 
-    return (math.abs(OI.lifterInOut:Get()) <.2 )
-  end,
-  End = function(self)
-    robotMap.lifterInOut:Set(0)
-  end,
-  Interrupted = function(self)
-    self:End()
-  end,
-  subsystems = {
-    "LifterInOut"
-  },
+    print("moving in",OI.lifterInOut:Get())
+    robotMap.lifterInOut:Set(OI.lifterInOut:Get())
+  end
+
+end,
+IsFinished = function() 
+  return (math.abs(OI.lifterInOut:Get()) <.2 )
+end,
+End = function(self)
+  robotMap.lifterInOut:Set(0)
+end,
+Interrupted = function(self)
+  self:End()
+end,
+subsystems = {
+  "LifterInOut"
+},
 }
 
 local lifterUp = {
@@ -94,7 +106,7 @@ local lifterUp = {
     elseif (position >= RobotConfig.lifterMin) and ((-OI.lifterUpDown:Get()) <= 0)then
       local pwr = -math.min(OI.lifterUpDown:Get(), -(RobotConfig.lifterMin - position) / 6)
       robotMap.lifterUpDown:Set(pwr)
-     -- print("setting lifter power down to "..tostring(pwr).." input "..tostring(OI.lifterUpDown:Get()).." ramp "..tostring(-(position - RobotConfig.lifterMin) / 6))
+      -- print("setting lifter power down to "..tostring(pwr).." input "..tostring(OI.lifterUpDown:Get()).." ramp "..tostring(-(position - RobotConfig.lifterMin) / 6))
       --robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
     else
       robotMap.lifterUpDown:Set(0)
@@ -122,6 +134,31 @@ local lifterUp = {
   },
 }
 
+local function SetLift(power, target)
+  return {
+    Initialize = function()
+      print"initialized SetLift"
+    end,
+    Execute = function()
+      robotMap.lifterUpDown:Set(power)
+    end,
+    End = function()
+      robotMap.lifterUpDown:Set(0)
+    end,
+    Interrupted = function(self)
+      self:End()
+    end,
+    IsFinished = function()
+      if power > 0 then
+        return tick2inchUD(robotMap.lifterUpDown:GetPosition()) >= target
+      else
+        return tick2inchUD(robotMap.lifterUpDown:GetPosition()) <= target
+      end
+    end,
+    subsystems = {"LifterUpDown"}
+  }
+end
+
 local lifterUpTrigger = function()
   -- debugPrint("intake in trigger ")
   if math.abs(OI.lifterUpDown:Get()) >=.2 then
@@ -138,12 +175,12 @@ local lifterInOutTrigger = function()
   end
 end
 
-local zeroPreset = lifterPoint(0)
+local zeroPreset = parallel(lifterPoint(0), start(sequence(wait(0.25), tailPos(65))))
 local outPreset = lifterInOutPoint(15)
-local upPreset = lifterPoint(100)
+local upPreset = parallel(start(lifterPoint(100)), start(tailPos(58)))
 local inPreset = lifterInOutPoint(0)
-local canPreset = lifterPoint(18)
-local totePreset = lifterPoint(12)
+local canPreset = parallel(lifterPoint(15), sequence(trigWait(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) <= 16 end), lifterInOutPoint(14)))
+local totePreset = sequence(require"command.Print"("running tote preset"), SetLift(0.5, 5), lifterPoint(17))--lifterPoint(12)
 
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.preset,cancel))
@@ -172,7 +209,7 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(OI.toteUp,totePreset))
 
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.liftCal,calibration()))
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,require"command.Parallel"(calibration(), require"command.Print"("triggered calibration sequence"))))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,parallel(calibration(), require"command.Print"("triggered calibration sequence"))))
 --Robot.scheduler:SetDefaultCommand("LifterUpDown",lifterPoint(currentHeight))
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.presetTwo,cancel))
