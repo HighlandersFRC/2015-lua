@@ -3,11 +3,13 @@ local tailPower = 0.6
 local triggers = require"triggers"
 local tailPosition = require"Pulsar.TailPosition"
 local lifterPoint = require"Pulsar.lifterPoint"
-local tailProngPower = .40
+local tailProngPowerDown = .30
+local tailProngPowerUp = .60
 local current = 0
 local motorStallRatio = 3.33
 local tailCount = 0 
 local parallel = require"command.Parallel"
+local start = require"command.Start"
 local function degrees2ticks(degrees)
   return degrees /360*1440
 end
@@ -15,6 +17,9 @@ end
 local function ticks2Degrees(ticks)
   return ticks /1440*360
 end
+
+robotMap.tail:SetPosition(degrees2ticks(100))
+
 
 
   local tailHold = {
@@ -40,7 +45,7 @@ end
 
   local tailProngsDown = {
     Initialize = function()
-      robotMap.tailProngs:Set(-tailProngPower)
+      robotMap.tailProngs:Set(-tailProngPowerDown)
       tailCount = 0
     end,
     Execute = function() 
@@ -73,7 +78,7 @@ end
   }
   local tailProngsUp = {
     Initialize = function()
-      robotMap.tailProngs:Set(tailProngPower)
+      robotMap.tailProngs:Set(tailProngPowerUp)
       tailCount = 0
     end,
     Execute = function() 
@@ -163,6 +168,7 @@ end
     Initialize = function()
      Robot.scheduler:StartCommand(lifterPoint(11))
      Robot.scheduler:StartCommand(tailPosition(-66.5))
+
     end,
     Execute = function()
     end,
@@ -177,15 +183,16 @@ end
     end,
     subsystems = {},
   }
-  local tailDownPreset = parallel(tailPosition(-66.5),lifterPoint(11))
+  local tailDownPreset = parallel(start(tailPosition(-66.5)),start(lifterPoint(8.5)),start(tailProngsUp))
 
 
 
   local tailPresetOne = tailPosition(60)
   local tailPresetTwo = tailPosition(70) -- should be 80
 
-  Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailPresetOne,tailDownPosition))
+  Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailPresetOne,tailDownPreset))
   Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailPresetTwo,tailPresetTwo))
+  Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailStow, tailPosition(85)))
   Robot.scheduler:AddTrigger(triggers.whenPressed({Get = function() return OI.tail:GetPOV() == 90 end},tailUp))
   Robot.scheduler:AddTrigger(triggers.whenPressed({Get = function() return OI.tail:GetPOV() == 270 end},tailDown))
   Robot.scheduler:AddTrigger(triggers.whenPressed({Get = function() return OI.tail:GetPOV()== 180 end},tailProngsDown))

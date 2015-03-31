@@ -1,1 +1,2 @@
-dofile"/lua/main.lua"
+--dofile"/lua/main.lua"
+while true do end
