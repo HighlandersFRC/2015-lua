@@ -23,10 +23,11 @@ Scheduler.Execute = function(sched)
     end
     if command.IsFinished and command:IsFinished() then
       table.remove(sched.commands, index)
+      sched:UnlockCommand(command)
       if command.End then
         command:End()
       end
-      sched:UnlockCommand(command)
+      sched:StartDefaults(command.subsystems)
     else
       index = index + 1
     end
@@ -41,6 +42,7 @@ end
 
 Scheduler.StartCommand = function(sched, command)
   debugPrint("started start command")
+  if not command then debug.debug() end
   local currSchedBackup = Robot.CurrentScheduler
   Robot.CurrentScheduler = sched
   local canStart = true
@@ -60,8 +62,8 @@ Scheduler.StartCommand = function(sched, command)
       end
       sched.lockSubsys[subsys] = command
     end
+    table.insert(sched.commands, command)
     command:Initialize()
-      table.insert(sched.commands, command)
     Robot.CurrentScheduler = currSchedBackup
     return true
   end
@@ -89,11 +91,6 @@ Scheduler.UnlockCommand = function(sched, command)
   for _, subsys in ipairs(command.subsystems) do
     sched.lockSubsys[subsys] = nil
   end
-  for _, subsys in ipairs(command.subsystems) do
-    if sched.defaultCommands[subsys] then
-      sched:StartCommand(sched.defaultCommands[subsys])
-    end
-  end
 end
 
 Scheduler.SetDefaultCommand = function(sched, subsystem, command)
@@ -120,9 +117,22 @@ Scheduler.CancelAll = function(sched)
   Robot.CurrentScheduler = currSchedBackup
 end
 
-Scheduler.StartDefaults = function(sched)
-  for subsys, command in pairs(sched.defaultCommands) do
-    sched:StartCommand(command)
+Scheduler.StartDefaults = function(sched, subsystems)
+  if subsystems then
+    for _, subsys in ipairs(subsystems) do
+      if sched.defaultCommands[subsys] then
+        if not sched.lockSubsys[subsys] then
+          print("Starting default command for "..subsys)
+          sched:StartCommand(sched.defaultCommands[subsys])
+        end
+      end
+    end
+  else
+    for subsys, command in pairs(sched.defaultCommands) do
+      if not sched.lockSubsys[subsys] then
+        sched:StartCommand(command)
+      end
+    end
   end
 end
 
