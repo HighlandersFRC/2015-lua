@@ -9,7 +9,12 @@ function Div:Get()
   return dataflow.subtermEvaluator(self.left) / dataflow.subtermEvaluator(self.right)
 end
 
-Div.metatable = {__index = Div}
+Div.metatable = {}
+
+for k, v in pairs(dataflow.metatable) do
+  Div.metatable[k] = v
+end
+Div.metatable.__index = Add
 
 function Div.newinstance(left, right)
   local self = {left = left, right = right}

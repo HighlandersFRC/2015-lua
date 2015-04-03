@@ -13,7 +13,12 @@ function Or:Get()
   return temp
 end
 
-Or.metatable = {__index = Or}
+Or.metatable = {}
+
+for k, v in pairs(dataflow.metatable) do
+  Or.metatable[k] = v
+end
+Or.metatable.__index = Add
 
 function Or.newinstance(...)
   local self = {terms = {...}}

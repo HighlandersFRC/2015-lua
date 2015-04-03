@@ -10,7 +10,12 @@ function Mul:Get()
   return accum
 end
 
-Mul.metatable = {__index = Mul}
+Mul.metatable = {}
+
+for k, v in pairs(dataflow.metatable) do
+  Mul.metatable[k] = v
+end
+Mul.metatable.__index = Add
 
 function Mul.newinstance(...)
   local self = {terms = {...}}

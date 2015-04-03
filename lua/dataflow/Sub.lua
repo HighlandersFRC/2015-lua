@@ -9,7 +9,12 @@ function Sub:Get()
   return dataflow.subtermEvaluator(self.left) - dataflow.subtermEvaluator(self.right)
 end
 
-Sub.metatable = {__index = Sub}
+Sub.metatable = {}
+
+for k, v in pairs(dataflow.metatable) do
+  Sub.metatable[k] = v
+end
+Sub.metatable.__index = Add
 
 function Sub.newinstance(left, right)
   local self = {left = left, right = right}

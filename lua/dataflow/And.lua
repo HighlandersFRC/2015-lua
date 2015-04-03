@@ -13,7 +13,12 @@ function And:Get()
   return temp
 end
 
-And.metatable = {__index = And}
+And.metatable = {}
+
+for k, v in pairs(dataflow.metatable) do
+  And.metatable[k] = v
+end
+And.metatable.__index = Add
 
 function And.newinstance(...)
   local self = {terms = {...}}
