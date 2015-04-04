@@ -11,7 +11,7 @@ Abs.metatable = {}
 for k, v in pairs(dataflow.metatable) do
   Abs.metatable[k] = v
 end
-Abs.metatable.__index = Add
+Abs.metatable.__index = Abs
 
 function Abs.newinstance(expr)
   local self = {expr = expr}

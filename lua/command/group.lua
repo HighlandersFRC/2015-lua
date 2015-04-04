@@ -20,7 +20,7 @@ function group.subsysConflicts(...)
   local args, n = {...}, select("#", ...)
   for a=1, n do
     for i=1, #args[a].subsystems do
-      if temp[args[a].subsystems[i] then
+      if temp[args[a].subsystems[i]] then
         return true
       end
       temp[args[a].subsystems[i]]=true

@@ -18,7 +18,7 @@ And.metatable = {}
 for k, v in pairs(dataflow.metatable) do
   And.metatable[k] = v
 end
-And.metatable.__index = Add
+And.metatable.__index = And
 
 function And.newinstance(...)
   local self = {terms = {...}}

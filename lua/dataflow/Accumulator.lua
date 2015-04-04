@@ -5,9 +5,9 @@ local accum = {}
 function accum:Get()
   local update = dataflow.subtermEvaluator(self.source)
   if update == true then
-    update = self.incVal
-  elseif update == false then
-    update = self.decVal
+    update = self.inc
+  elseif update == false or update == nil then
+    update = self.dec
   end
   self.val = self.val + update
   if self.max and self.val > self.max then

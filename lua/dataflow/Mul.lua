@@ -15,7 +15,7 @@ Mul.metatable = {}
 for k, v in pairs(dataflow.metatable) do
   Mul.metatable[k] = v
 end
-Mul.metatable.__index = Add
+Mul.metatable.__index = Mul
 
 function Mul.newinstance(...)
   local self = {terms = {...}}
