@@ -142,7 +142,7 @@ checkWPILib"Put Schedulers"
 require"Pulsar.Tail"
 require"Pulsar.pulsarIntake"
 require"Pulsar.lifter"
---require"Pulsar.Tail"
+require"Pulsar.StallProtection"
 require"Pulsar.limitProtection"
 checkWPILib"end"
 print("WPILib", WPILib)

@@ -18,7 +18,7 @@ Or.metatable = {}
 for k, v in pairs(dataflow.metatable) do
   Or.metatable[k] = v
 end
-Or.metatable.__index = Add
+Or.metatable.__index = Or
 
 function Or.newinstance(...)
   local self = {terms = {...}}

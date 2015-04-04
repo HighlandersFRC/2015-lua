@@ -18,7 +18,7 @@ end
 
 flowObjectMT = {
   __gt = function(a, b)
-    return Compare(a, ">" b)
+    return Compare(a, ">", b)
   end,
   __lt = function(a, b)
     return Compare(a, "<", b)
@@ -54,7 +54,9 @@ function dataflow.subtermEvaluator(val)
     return val
   end
   if type(val) == "table" then
+    --debug.debug()
     return val:Get()
+    
   end
   if type(val) == "function" then
     return val()

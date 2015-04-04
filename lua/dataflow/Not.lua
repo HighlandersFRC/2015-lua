@@ -11,7 +11,7 @@ Not.metatable = {}
 for k, v in pairs(dataflow.metatable) do
   Not.metatable[k] = v
 end
-Not.metatable.__index = Add
+Not.metatable.__index = Not
 
 function Not.newinstance(expr)
   local self = {expr = expr}
