@@ -17,8 +17,7 @@ FLTalon = core.getCanTalon(1),
   --navXport = port,
   navX = WPILib.AHRS(port,50),
   tail = core.getCanTalon(11),
-  claw = core.getCanTalon(10),
-  clawTwo = core.getCanTalon(12),
+  tailProngs = core.getCanTalon(10),
   PDP = WPILib.PowerDistributionPanel()
 }
 local lifterUpDownTwo = core.getCanTalon(8)

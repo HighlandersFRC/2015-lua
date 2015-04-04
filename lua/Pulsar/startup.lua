@@ -136,6 +136,7 @@ Robot.Teleop.Put("SetMotors", {
     end
   })
 Robot.Autonomous.Put("Autonomous", require"Pulsar.Auto.AutonomousStartup")
+require"Pulsar.VoltagePublish"
 checkWPILib"Put Schedulers"
 
 require"Pulsar.Tail"

@@ -3,7 +3,7 @@ local xCal =0
 local yCal =0
 local zCal =0
 gyroOne:init(0x40)
-
+gyroOne:setFilterBW(000)
 
 local adjust = function(val)
   if  (val ~= nil) then
