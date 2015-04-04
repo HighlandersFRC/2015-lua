@@ -1,3 +1,5 @@
+local subsysUnion = require"command.group".subsysUnion
+
 local function seqActInit(self)
   self.actNum = 1
   self.actfin = false
@@ -30,21 +32,6 @@ end
 
 local function seqActFin(self)
   return self.actNum == 0
-end
-
-local function subsysUnion(...) 
-  local temp = {}
-  local args, n = {...}, select("#", ...)
-  for a=1, n do
-    for i=1, #args[a].subsystems do
-      temp[args[a].subsystems[i]]=true
-    end
-  end
-  local result = {}
-  for k, v in pairs(temp) do
-    table.insert(result, k)
-  end
-  return result
 end
 
 local function seqActAdd(self, act)
