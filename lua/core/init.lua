@@ -89,11 +89,9 @@ core.getSolenoid = function(id)
     return solenoids[id]
 end
 
-core.setCompositeRobot = dofile("/home/lvuser/lua/core/compositeRobot.lua")
-
-core.setBasicRobot = dofile("/home/lvuser/lua/core/basicRobot.lua")
-
-core.serialize = dofile("/home/lvuser/lua/core/serialize.lua")
+core.setBasicRobot = require "core.compositeRobot"
+core.setCompositeRobot = require "core.basicRobot"
+core.serialize = require "core.serialize"
 
 local keepAlive_coroutines = {nextIndex = 1}
 
@@ -126,7 +124,8 @@ if MQTT_CONSOLE_ENABLE then
 
   local function mqttCallback(topic, payload)
     printCout("mqtt console input", topic, payload)
-    -- No console input currently implemented
+    -- No console input currently implementedf
+    
   end
   
   local mqtt_console_client = MQTT.client.create(MQTT_SERVER_ADDRESS, MQTT_SERVER_PORT, mqttCallback)
