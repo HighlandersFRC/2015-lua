@@ -18,7 +18,7 @@ end
 
 flowObjectMT = {
   __gt = function(a, b)
-    return Compare(a, ">" b)
+    return Compare(a, ">", b)
   end,
   __lt = function(a, b)
     return Compare(a, "<", b)
