@@ -1,5 +1,3 @@
-local core = require "core"
-
 local Scheduler = {}
 
 Scheduler.Execute = function(sched)
@@ -148,7 +146,6 @@ Scheduler.newinstance = function()
     triggers = {}
   }
   setmetatable(newSched, Scheduler.metatable)
-  core.serialize.tree(newSched)
   return newSched
 end
 
