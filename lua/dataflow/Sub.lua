@@ -14,7 +14,7 @@ Sub.metatable = {}
 for k, v in pairs(dataflow.metatable) do
   Sub.metatable[k] = v
 end
-Sub.metatable.__index = Add
+Sub.metatable.__index = Sub
 
 function Sub.newinstance(left, right)
   local self = {left = left, right = right}

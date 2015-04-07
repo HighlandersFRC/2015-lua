@@ -18,6 +18,8 @@ setmetatable(commandDefaults,
       for k, v in pairs(commandData) do
         command[k] = v
       end
-      return commandData
+      return command
     end
   })
+
+return commandDefaults

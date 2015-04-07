@@ -49,6 +49,7 @@ local holdPosition = {
     self:End()
   end,
   subsystems = {
+    "LifterUpDown"
   },
 }
 local lifterIn = {
@@ -198,8 +199,8 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterInOut,-.2,
 -- these are the triggers for the main lifter up Down 
 Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterUpDown,.2),lifterUp))
 Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterUpDown,-.2,true),lifterUp))
-Robot.scheduler:AddTrigger(triggers.whenReleased(analogButton(OI.lifterUpDown,.2),holdPosition))
-Robot.scheduler:AddTrigger(triggers.whenReleased(analogButton(OI.lifterUpDown,-.2,true),holdPosition))
+--Robot.scheduler:AddTrigger(triggers.whenReleased(analogButton(OI.lifterUpDown,.2),holdPosition))
+--Robot.scheduler:AddTrigger(triggers.whenReleased(analogButton(OI.lifterUpDown,-.2,true),holdPosition))
 -- these are the triggers for the in and out presets
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.inPreset,inPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.outPreset,outPreset))
@@ -210,9 +211,7 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(OI.canUp,canPreset))
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.toteUp,totePreset))
 
 
---Robot.scheduler:AddTrigger(triggers.whenPressed(OI.liftCal,calibration()))
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,parallel(calibration(), require"command.Print"("triggered calibration sequence"))))
---Robot.scheduler:SetDefaultCommand("LifterUpDown",lifterPoint(currentHeight))
 
---Robot.scheduler:AddTrigger(triggers.whenPressed(OI.presetTwo,cancel))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,parallel(calibration(), require"command.Print"("triggered calibration sequence"))))
+Robot.scheduler:SetDefaultCommand("LifterUpDown",holdPosition)
 debugPrint("Lifter Finished")

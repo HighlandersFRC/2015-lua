@@ -14,7 +14,7 @@ Div.metatable = {}
 for k, v in pairs(dataflow.metatable) do
   Div.metatable[k] = v
 end
-Div.metatable.__index = Add
+Div.metatable.__index = Div
 
 function Div.newinstance(left, right)
   local self = {left = left, right = right}
