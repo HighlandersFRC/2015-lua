@@ -2,6 +2,7 @@ c = {
 
   --These variables are all the escape sequences that this library uses
   _COLORSTART = "\x1b[",
+  
   _BLACKBACK = "40;", _REDBACK = "41;", _GREENBACK = "42;", _YELLOWBACK = "43;", _BLUEBACK = "44;", _PURPLEBACK = "45;", _CYANBACK = "46;", _WHITEBACK = "47;",
   
   _BLACKTEXT = "30m", _REDTEXT = "31m", _GREENTEXT = "32m", _YELLOWTEXT = "33m", _BLUETEXT = "34m", _PURPLETEXT = "35m", _CYANTEXT = "36m", _WHITETEXT = "37m",
