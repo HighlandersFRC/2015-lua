@@ -57,37 +57,37 @@ local lifterIn = {
     print("started Lifter In")
   end,
   Execute = function()
-    if not OI.inOutDisable:Get() then
+    --if not OI.inOutDisable:Get() then
       print("inOut",robotMap.lifterInOut:Get() )
       if robotMap.lifterInOut:GetPosition() <1900 and OI.lifterInOut:Get() < 0 then
+        print("moving in",OI.lifterInOut:Get())
+        robotMap.lifterInOut:Set(OI.lifterInOut:Get())
+      elseif robotMap.lifterInOut:GetPosition() > 200  and OI.lifterInOut:Get() > 0 then
+        print("moving out")
+        robotMap.lifterInOut:Set(OI.lifterInOut:Get())
+      else
+        --print("not moving")
+        robotMap.lifterInOut:Set(0)
+      end
+    --[[else
+
       print("moving in",OI.lifterInOut:Get())
       robotMap.lifterInOut:Set(OI.lifterInOut:Get())
-    elseif robotMap.lifterInOut:GetPosition() > 200  and OI.lifterInOut:Get() > 0 then
-      print("moving out")
-      robotMap.lifterInOut:Set(OI.lifterInOut:Get())
-    else
-      --print("not moving")
-      robotMap.lifterInOut:Set(0)
-    end
-  else
+    end]]
 
-    print("moving in",OI.lifterInOut:Get())
-    robotMap.lifterInOut:Set(OI.lifterInOut:Get())
-  end
-
-end,
-IsFinished = function() 
-  return (math.abs(OI.lifterInOut:Get()) <.2 )
-end,
-End = function(self)
-  robotMap.lifterInOut:Set(0)
-end,
-Interrupted = function(self)
-  self:End()
-end,
-subsystems = {
-  "LifterInOut"
-},
+  end,
+  IsFinished = function() 
+    return (math.abs(OI.lifterInOut:Get()) <.2 )
+  end,
+  End = function(self)
+    robotMap.lifterInOut:Set(0)
+  end,
+  Interrupted = function(self)
+    self:End()
+  end,
+  subsystems = {
+    "LifterInOut"
+  },
 }
 
 local lifterUp = {
@@ -179,7 +179,7 @@ end
 local zeroPreset = parallel(lifterPoint(0), start(sequence(wait(0.25), tailPos(65))))
 local outPreset = lifterInOutPoint(15)
 local upPreset = parallel(start(lifterPoint(100)), start(tailPos(52
-      )))
+    )))
 local inPreset = lifterInOutPoint(0)
 local canPreset = parallel(start(lifterPoint(34)), start(tailPos(80)))
 --parallel(lifterPoint(15), sequence(trigWait(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) <= 16 end), lifterInOutPoint(14)))
