@@ -2,22 +2,10 @@ c = {
 
   --These variables are all the escape sequences that this library uses
   _COLORSTART = "\x1b[",
-  _BLACKBACK = "40;",
-  _REDBACK = "41;",
-  _GREENBACK = "42;",
-  _YELLOWBACK = "43;",
-  _BLUEBACK = "44;",
-  _PURPLEBACK = "45;",
-  _CYANBACK = "46;",
-  _WHITEBACK = "47;",
-  _BLACKTEXT = "30m",
-  _REDTEXT = "31m",
-  _GREENTEXT = "32m",
-  _YELLOWTEXT = "33m",
-  _BLUETEXT = "34m",
-  _PURPLETEXT = "35m",
-  _CYANTEXT = "36m",
-  _WHITETEXT = "37m",
+  _BLACKBACK = "40;", _REDBACK = "41;", _GREENBACK = "42;", _YELLOWBACK = "43;", _BLUEBACK = "44;", _PURPLEBACK = "45;", _CYANBACK = "46;", _WHITEBACK = "47;",
+  
+  _BLACKTEXT = "30m", _REDTEXT = "31m", _GREENTEXT = "32m", _YELLOWTEXT = "33m", _BLUETEXT = "34m", _PURPLETEXT = "35m", _CYANTEXT = "36m", _WHITETEXT = "37m",
+  
   _COLOREND = "\x1b[0m",
 
   --This table will contain all the above variables
@@ -32,10 +20,7 @@ c = {
   end,
 
   --This function is a simple iterator that loops through a table and returns the elements of the table
-  values = function(t)
-    local i = 0
-    return function () i = i + 1; return t[i] end
-  end,
+  values = function(t) local i = 0 return function () i = i + 1; return t[i] end end,
 
   --This function initializes the colors table
   initialize = function()
@@ -94,7 +79,7 @@ c = {
     --Is s is a string or number, then it can be concatenated with the proper escape sequences without any other commands  
     if type(s) == "string" or type(s) == "number" then
       return c._COLORSTART .. backColor .. textColor .. s .. c._COLOREND
-      --If s is a table, then its values are extracted and put into a string with spaces between elements and the proper escape sequences  
+    --If s is a table, then its values are extracted and put into a string with spaces between elements and the proper escape sequences  
     elseif type(s) == "table" then
       local st = ""
       for v in c.values(t) do
@@ -179,11 +164,7 @@ c = {
   end,
 
   --This function returns the length of the specified table
-  tableLength = function(t)
-    local count = 0
-    for _ in pairs(t) do count = count + 1 end
-    return count
-  end,
+  tableLength = function(t) local count = 0 for _ in pairs(t) do count = count + 1 end return count end,
 
 --This function receives a table like this one
 --  {{"color","color","color","color"},
