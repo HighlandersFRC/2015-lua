@@ -1,5 +1,3 @@
---Intake Pulsar
-
 --debugPrint("intake started")
 local core = require"core"
 local lifterPower = 1
@@ -17,6 +15,8 @@ local start = require"command.Start"
 local sequence = require"command.Sequence"
 local wait = require"command.Wait"
 local trigWait = require"command.TriggerWait"
+local dataflow = require"dataflow"
+local Compare = require"dataflow.Compare"
 
 -- the lifter lock off means that the arms cannot be moved
 robotMap.lifterInOut:SetStatusFrameRateMs(2,20)
@@ -57,37 +57,37 @@ local lifterIn = {
     print("started Lifter In")
   end,
   Execute = function()
-    if not OI.inOutDisable:Get() then
+    if not OI.lifterInOutDisable:Get() then
       print("inOut",robotMap.lifterInOut:Get() )
       if robotMap.lifterInOut:GetPosition() <1900 and OI.lifterInOut:Get() < 0 then
+        print("moving in",OI.lifterInOut:Get())
+        robotMap.lifterInOut:Set(OI.lifterInOut:Get())
+      elseif robotMap.lifterInOut:GetPosition() > 200  and OI.lifterInOut:Get() > 0 then
+        print("moving out")
+        robotMap.lifterInOut:Set(OI.lifterInOut:Get())
+      else
+        --print("not moving")
+        robotMap.lifterInOut:Set(0)
+      end
+    else
+
       print("moving in",OI.lifterInOut:Get())
       robotMap.lifterInOut:Set(OI.lifterInOut:Get())
-    elseif robotMap.lifterInOut:GetPosition() > 200  and OI.lifterInOut:Get() > 0 then
-      print("moving out")
-      robotMap.lifterInOut:Set(OI.lifterInOut:Get())
-    else
-      --print("not moving")
-      robotMap.lifterInOut:Set(0)
     end
-  else
 
-    print("moving in",OI.lifterInOut:Get())
-    robotMap.lifterInOut:Set(OI.lifterInOut:Get())
-  end
-
-end,
-IsFinished = function() 
-  return (math.abs(OI.lifterInOut:Get()) <.2 )
-end,
-End = function(self)
-  robotMap.lifterInOut:Set(0)
-end,
-Interrupted = function(self)
-  self:End()
-end,
-subsystems = {
-  "LifterInOut"
-},
+  end,
+  IsFinished = function() 
+    return (math.abs(OI.lifterInOut:Get()) <.2 )
+  end,
+  End = function(self)
+    robotMap.lifterInOut:Set(0)
+  end,
+  Interrupted = function(self)
+    self:End()
+  end,
+  subsystems = {
+    "LifterInOut"
+  },
 }
 
 local lifterUp = {
@@ -176,14 +176,19 @@ local lifterInOutTrigger = function()
   end
 end
 
+local lifterPos = dataflow.wrap(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) end)
+
 local zeroPreset = parallel(lifterPoint(0), start(sequence(wait(0.25), tailPos(65))))
 local outPreset = lifterInOutPoint(15)
 local upPreset = parallel(start(lifterPoint(100)), start(tailPos(52
-      )))
+    )))
 local inPreset = lifterInOutPoint(0)
 local canPreset = parallel(start(lifterPoint(34)), start(tailPos(80)))
 --parallel(lifterPoint(15), sequence(trigWait(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) <= 16 end), lifterInOutPoint(14)))
-local totePreset = sequence(require"command.Print"("running tote preset"), SetLift(0.5, 5), lifterPoint(17))--lifterPoint(12)
+local landfillTotePreset = lifterPoint(13)
+local landfillToteSeq = sequence(require"command.Print"("running landfill tote sequence"), SetLift(-0.5, RobotConfig.lifterMin+0.25), SetLift(0.5, 3), landfillTotePreset)--lifterPoint(12)
+local humanFeedTotePreset = lifterPoint(27)
+local humanFeedToteSeq = sequence(require"command.Print"("running human feeder tote sequence"), SetLift(-0.5, RobotConfig.lifterMin+0.25), trigWait(Compare(lifterPos, "<", RobotConfig.lifterMin + 0.25)), wait(0.1), SetLift(0.5, 3), humanFeedTotePreset)
 
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.preset,cancel))
@@ -202,16 +207,18 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(analogButton(OI.lifterUpDown,-.2
 --Robot.scheduler:AddTrigger(triggers.whenReleased(analogButton(OI.lifterUpDown,.2),holdPosition))
 --Robot.scheduler:AddTrigger(triggers.whenReleased(analogButton(OI.lifterUpDown,-.2,true),holdPosition))
 -- these are the triggers for the in and out presets
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.inPreset,inPreset))
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.outPreset,outPreset))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterInPreset,inPreset))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterOutPreset,outPreset))
 -- these are the triggers for the lifter setpoint presets
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.zeroPreset,zeroPreset))
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.topPreset,upPreset))
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.canUp,canPreset))
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.toteUp,totePreset))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterBottomPreset,zeroPreset))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterTopPreset,upPreset))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterCanPreset,canPreset))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterLandfillTotePreset,landfillTotePreset))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterLandfillToteSeq,landfillToteSeq))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterHumanFeedTotePreset,humanFeedTotePreset))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterHumanFeedToteSeq,humanFeedToteSeq))
 
 
-
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.calibrate,parallel(calibration(), require"command.Print"("triggered calibration sequence"))))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterCalibrate,parallel(calibration(), require"command.Print"("triggered calibration sequence"))))
 Robot.scheduler:SetDefaultCommand("LifterUpDown",holdPosition)
 debugPrint("Lifter Finished")

@@ -59,6 +59,8 @@ local function createSeqAct(...)
   seqAct.IsInterruptible = isInterruptible
   seqAct.Interrupted = interrupted
   seqAct.subsystems = subsysUnion(...)
+  local callinfo = debug.getinfo(2, "Sl")
+  seqAct.name = ("sequence@%s:%d"):format(callinfo.source, callinfo.currentline)
   return seqAct
 end
 
