@@ -13,5 +13,5 @@ RobotConfig = {
   tailMin = -60,
   tailClamp = .45,
   lifterKi = 8,
-  lifterDownCurrentLimit = -5
+  lifterDownCurrentLimit = -100
   }

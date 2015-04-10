@@ -1,8 +1,8 @@
 local clamp = function(inputValue)
   if inputValue >=RobotConfig.lifterClamp then
     return RobotConfig.lifterClamp
-  elseif inputValue <= -RobotConfig.lifterClamp then
-    return -RobotConfig.lifterClamp
+  elseif inputValue <= RobotConfig.lifterClampDown then
+    return RobotConfig.lifterClampDown
   else
     return inputValue
   end
@@ -21,7 +21,6 @@ local liftMacro = function(liftHeight)
   else 
     height = -liftHeight* 25.4 /120 * 1000
   end
-
   local PID = pidLoop(.001,0,0)
   local startTime = 0
   local lastTime = 0
@@ -35,13 +34,23 @@ local liftMacro = function(liftHeight)
       PID.setpoint = height
     end,
     Execute = function()
-
+      
 
       currentHeight = robotMap.lifterUpDown:GetPosition()
       response = -PID:Update(currentHeight)
+      local current = robotMap.lifterUpDown:GetOutputCurrent()*(robotMap.lifterUpDown:GetBusVoltage() /robotMap.lifterUpDown:GetOutputVoltage())
+      -- this expression is used to avoid cases where current spikes = inf
+      if math.abs(robotMap.lifterUpDown:GetOutputVoltage()) == 0 then
+        current = -100
+        end
+      RobotConfig.lifterClampDown = math.min(-.05,(robotMap.lifterUpDown:GetOutputVoltage() - (current/RobotConfig.lifterKi) + (RobotConfig.lifterDownCurrentLimit/RobotConfig.lifterKi)) / robotMap.lifterUpDown:GetBusVoltage())
+     print("VClamp = ".. robotMap.lifterUpDown:GetOutputVoltage().." - ".. current .. " / "..RobotConfig.lifterKi.. " + ".. RobotConfig.lifterDownCurrentLimit.." / ".. RobotConfig.lifterKi.. " / " .. robotMap.lifterUpDown:GetBusVoltage())
+      --print("Clamp",RobotConfig.lifterClampDown, "clamp comparison =", (robotMap.lifterUpDown:GetOutputVoltage() - (current/Ki) + (limitCurrentDown/Ki)) / robotMap.lifterUpDown:GetBusVoltage())
       robotMap.lifterUpDown:Set(clamp(response))
-     -- robotMap.lifterUpDownTwo:Set(clamp(response))
-      --print("Current Height: ", currentHeight,"   Target Height :", height, " Response : ", response,"Current Position ")
+      
+   -- print("moving lifter at", clamp(response), "Current ",robotMap.lifterUpDown:GetOutputCurrent()*(robotMap.lifterUpDown:GetBusVoltage() /       robotMap.lifterUpDown:GetOutputVoltage()))
+    
+     
     end,
     IsFinished = function() 
       return false --math.abs(height - currentHeight) <=1000
