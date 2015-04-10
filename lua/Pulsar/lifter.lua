@@ -23,7 +23,24 @@ robotMap.lifterInOut:SetStatusFrameRateMs(2,20)
 robotMap.lifterUpDown:SetStatusFrameRateMs(2,20)
 --
 -- Intake In Command
+local clamp = function(inputValue)
+  if inputValue >=RobotConfig.lifterClamp then
+    return RobotConfig.lifterClamp
+  elseif inputValue <= RobotConfig.lifterClampDown then
+    return RobotConfig.lifterClampDown
+  else
+    return inputValue
+  end
+end
+local adjustStall = function()
+  local current = robotMap.lifterUpDown:GetOutputCurrent()*(robotMap.lifterUpDown:GetBusVoltage() /robotMap.lifterUpDown:GetOutputVoltage())
+      -- this expression is used to avoid cases where current spikes = inf
+      if math.abs(robotMap.lifterUpDown:GetOutputVoltage()) == 0 then
+        current = -100
+        end
+      RobotConfig.lifterClampDown = math.min(-.05,(robotMap.lifterUpDown:GetOutputVoltage() - (current/RobotConfig.lifterKi) + (RobotConfig.lifterDownCurrentLimit/RobotConfig.lifterKi)) / robotMap.lifterUpDown:GetBusVoltage())
 
+  end
 local function inch2tickUD(val)
   return -val * 25.4 /120 * 1000
 end
@@ -97,7 +114,11 @@ local lifterUp = {
 
   end,
   Execute = function()
-    print("Executing lift",tick2inchUD(robotMap.lifterUpDown:GetPosition()))
+    
+    
+   adjustStall()
+    
+    
     local position = tick2inchUD(robotMap.lifterUpDown:GetPosition())
     if (position <= RobotConfig.lifterMax and -OI.lifterUpDown:Get() >  0) then
       local pwr = math.min(-OI.lifterUpDown:Get(), (RobotConfig.lifterMax - position) / 6)
@@ -106,7 +127,7 @@ local lifterUp = {
       -- robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
     elseif (position >= RobotConfig.lifterMin) and ((-OI.lifterUpDown:Get()) <= 0)then
       local pwr = -math.min(OI.lifterUpDown:Get(), -(RobotConfig.lifterMin - position) / 6)
-      robotMap.lifterUpDown:Set(pwr)
+      robotMap.lifterUpDown:Set(clamp(pwr))
       -- print("setting lifter power down to "..tostring(pwr).." input "..tostring(OI.lifterUpDown:Get()).." ramp "..tostring(-(position - RobotConfig.lifterMin) / 6))
       --robotMap.lifterUpDownTwo:Set(-OI.lifterUpDown:Get())
     else
@@ -141,7 +162,8 @@ local function SetLift(power, target)
       print"initialized SetLift"
     end,
     Execute = function()
-      robotMap.lifterUpDown:Set(power)
+     adjustStall()
+      robotMap.lifterUpDown:Set(clamp(power))
     end,
     End = function()
       robotMap.lifterUpDown:Set(0)
@@ -185,10 +207,12 @@ local upPreset = parallel(start(lifterPoint(100)), start(tailPos(52
 local inPreset = lifterInOutPoint(0)
 local canPreset = parallel(start(lifterPoint(34)), start(tailPos(80)))
 --parallel(lifterPoint(15), sequence(trigWait(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) <= 16 end), lifterInOutPoint(14)))
+
 local landfillTotePreset = lifterPoint(15.5)
-local landfillToteSeq = sequence(require"command.Print"("running landfill tote sequence"), SetLift(-0.5, RobotConfig.lifterMin+0.25), SetLift(0.5, 3), landfillTotePreset)--lifterPoint(12)
+local landfillToteSeq = sequence(require"command.Print"("running landfill tote sequence"), SetLift(-1, RobotConfig.lifterMin+2), SetLift(-0.3, RobotConfig.lifterMin+0.5), SetLift(0.5, 3), landfillTotePreset)
+
 local humanFeedTotePreset = lifterPoint(27)
-local humanFeedToteSeq = sequence(require"command.Print"("running human feeder tote sequence"), SetLift(-0.5, RobotConfig.lifterMin+0.25), trigWait(Compare(lifterPos, "<", RobotConfig.lifterMin + 0.25)), wait(0.1), SetLift(0.5, 3), humanFeedTotePreset)
+local humanFeedToteSeq = sequence(require"command.Print"("running human feeder tote sequence"), SetLift(-1, RobotConfig.lifterMin+2), SetLift(-0.3, RobotConfig.lifterMin+0.5), trigWait(Compare(lifterPos, "<", RobotConfig.lifterMin + 0.25)), wait(0.1), SetLift(0.5, 3), humanFeedTotePreset)
 
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.preset,cancel))
