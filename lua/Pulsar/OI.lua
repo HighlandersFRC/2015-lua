@@ -56,5 +56,6 @@ tailCarry = btn(1, 9),
 tailStow = btn(1, 10),
 tailCalibrate = btn(1, 11),
 
+
 lifterInOutDisable = core.getJoyBtn(2,6),
 }
