@@ -1,5 +1,6 @@
 local JoystickAxis = require("core.JoystickAxis")
 local JoystickButton = require"core.JoystickButton"
+local JoystickPOV = require"core.JoystickPOV"
 
 local core = {}
 
@@ -37,6 +38,10 @@ core.getJoyAxis = function(joy, axis)
     end
     joystickAxes[joy][axis] = JoystickAxis(core.getJoy(joy), axis)
     return joystickAxes[joy][axis]
+end
+
+core.getJoyPov = function(joy, dir)
+  return JoystickPOV(core.getJoy(joy), dir)
 end
 
 local talons = {}
