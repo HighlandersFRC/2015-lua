@@ -32,16 +32,16 @@ end
 local stallTrigger = function(motor,threshold,motorStallRatio)
   print("CheckingStall")
   local current = Abs(outputCurrent(motor)*(busVoltage(motor)/outputVoltage(motor)))
-  current = inspect("current",current)
+  --current = inspect("current",current)
   local count = Accum(And(Not(compare(outputVoltage(motor),"==",0)),compare( Abs(current/outputVoltage(motor)/motorStallRatio),">",threshold)), 0, 6)
-  count = inspect("count",count)
+  --count = inspect("count",count)
   return compare(count,">",5)   
 end
 local countVal = stallTrigger(robotMap.lifterUpDown,.5,1)
 
 local stopMotor = function(motor,subsys)
 
-  return command{Execute = function()motor:SetCanTalonControlMode(CanTalon.KPercentVBus) motor:Disable(); print("_____________________STOPPING STALLING MOTOR________________________________") end,subsystems = {subsys}}
+  return command{Execute = function()motor:SetCanTalonControlMode(WPILib.CanTalon.KPercentVBus) motor:Disable(); print("_____________________STOPPING STALLING MOTOR________________________________") end,subsystems = {subsys}}
 
 
 
