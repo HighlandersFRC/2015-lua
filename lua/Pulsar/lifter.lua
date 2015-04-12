@@ -17,7 +17,7 @@ local wait = require"command.Wait"
 local trigWait = require"command.TriggerWait"
 local dataflow = require"dataflow"
 local Compare = require"dataflow.Compare"
-
+local lifterInOutCalibration = require"Pulsar.CalibrationInOut"
 -- the lifter lock off means that the arms cannot be moved
 robotMap.lifterInOut:SetStatusFrameRateMs(2,20)
 robotMap.lifterUpDown:SetStatusFrameRateMs(2,20)
@@ -243,6 +243,7 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterHumanFeedTotePreset,hum
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterHumanFeedToteSeq,humanFeedToteSeq))
 
 
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterCalibrate,parallel(calibration(), require"command.Print"("triggered calibration sequence"))))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterCalibrate,parallel(calibration(), require"command.Print"("triggered calibration sequence"),lifterInOutCalibration())))
+
 Robot.scheduler:SetDefaultCommand("LifterUpDown",holdPosition)
 debugPrint("Lifter Finished")
