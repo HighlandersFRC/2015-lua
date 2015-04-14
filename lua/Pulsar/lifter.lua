@@ -202,8 +202,7 @@ local lifterPos = dataflow.wrap(function() return tick2inchUD(robotMap.lifterUpD
 
 local zeroPreset = parallel(lifterPoint(0), start(sequence(wait(0.25), tailPos(65))))
 local outPreset = lifterInOutPoint(15)
-local upPreset = parallel(start(lifterPoint(100)), start(tailPos(52
-    )))
+local upPreset = parallel(start(lifterPoint(100)), start(tailPos(52)))
 local inPreset = lifterInOutPoint(0)
 local canPreset = parallel(start(lifterPoint(34)), start(tailPos(80)))
 --parallel(lifterPoint(15), sequence(trigWait(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) <= 16 end), lifterInOutPoint(14)))
