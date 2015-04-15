@@ -104,8 +104,8 @@ Robot.Disabled.Put("DisabledCoast", {
       robotMap.BLTalon:ConfigNeutralMode(2) 
       robotMap.FRTalon:ConfigNeutralMode(2) 
       robotMap.FLTalon:ConfigNeutralMode(2)
-      end
-    })
+    end
+  })
 
 
 Robot.Teleop.Put("Scheduler",Robot.scheduler)
@@ -123,18 +123,24 @@ Robot.Teleop.Put("SetMotors", {
       robotMap.lifterUpDownTwo:SetControlMode(WPILib.CANTalon.kFollower)
       robotMap.lifterUpDownTwo:Set(7)
       robotMap.BRTalon:SetControlMode(0)
-      
+
       robotMap.BLTalon:Set(0)
       robotMap.BRTalon:Set(0)
       robotMap.FLTalon:Set(0)
       robotMap.FRTalon:Set(0)
-      
+
       robotMap.lifterUpDown:Set(0)
       robotMap.lifterInOut:Set(0)
       robotMap.tail:Set(0)
-      
+
     end
   })
+
+subscribe("Vision/Center", function(topic, payload)
+    print("Tote is at " .. payload)
+  end
+)
+
 Robot.Autonomous.Put("Autonomous", require"Pulsar.Auto.AutonomousStartup")
 require"Pulsar.VoltagePublish"
 checkWPILib"Put Schedulers"

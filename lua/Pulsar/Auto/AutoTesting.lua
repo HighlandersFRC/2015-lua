@@ -75,10 +75,10 @@ return sequence(
   setIntake(0, 0),                              
   -- has tote                                       
   start(liftMacro(12)),
-  turn(127),
+  turn(110),
   start(liftMacro(8)),
-  drive(1, .6),
-  setIntake(.8,-.8),
+  drive(1, 1),
+  setIntake(1,-1),
   drive(1, .3),
   wait(.5),
   setIntake(0, 0)
