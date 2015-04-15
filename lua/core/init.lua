@@ -126,12 +126,12 @@ end
 
 if MQTT_CONSOLE_ENABLE then
   local MQTT = require"paho.mqtt"
+  local dispatcher = require"dispatcher".create()
 
   printCout = print
 
   local function mqttCallback(topic, payload)
-    printCout("mqtt console input", topic, payload)
-    -- No console input currently implemented
+    dispatcher:notify(topic, payload)
   end
   
   local mqtt_console_client = MQTT.client.create(MQTT_SERVER_ADDRESS, MQTT_SERVER_PORT, mqttCallback)
@@ -149,6 +149,11 @@ if MQTT_CONSOLE_ENABLE then
     mqtt_console_client:publish(topic, message)
   end
   
+  function subscribe(topic, callback)
+    mqtt_console_client:subscribe({topic})
+    dispatcher:subscribe(topic, function(disp, top, payload) return callback(top, payload) end)
+  end
+  
   core.register_keepAlive(
     coroutine.create(
       function()
@@ -162,6 +167,7 @@ if MQTT_CONSOLE_ENABLE then
   print"MQTT console initialization"
 else
   function publish() end
+  function subscribe() error"error attempting to subscribe: MQTT is disabled." end
 end
 
 return core
