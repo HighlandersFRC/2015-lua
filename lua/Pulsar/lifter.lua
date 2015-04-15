@@ -17,7 +17,7 @@ local wait = require"command.Wait"
 local trigWait = require"command.TriggerWait"
 local dataflow = require"dataflow"
 local Compare = require"dataflow.Compare"
-local lifterInOutCalibration = require"Pulsar.CalibrationInOut"
+local lifterInOutCalibration = require"Pulsar.CalibrateInOut"
 -- the lifter lock off means that the arms cannot be moved
 robotMap.lifterInOut:SetStatusFrameRateMs(2,20)
 robotMap.lifterUpDown:SetStatusFrameRateMs(2,20)
