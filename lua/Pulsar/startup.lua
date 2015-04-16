@@ -136,10 +136,10 @@ Robot.Teleop.Put("SetMotors", {
     end
   })
 
-subscribe("Vision/Center", function(topic, payload)
+--[[subscribe("Vision/Center", function(topic, payload)
     print("Tote is at " .. payload)
   end
-)
+)]]--
 
 Robot.Autonomous.Put("Autonomous", require"Pulsar.Auto.AutonomousStartup")
 require"Pulsar.VoltagePublish"
