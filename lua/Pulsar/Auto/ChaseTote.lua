@@ -1,21 +1,33 @@
+local core = require "core"
+local angOffset
+local ang
+subscribe("Vision/Center", function(topic, payload)
+    --local x, y = payload
+    print("Tote is at " .. payload)
+    local index = string.find(payload, ", ")
+    local x = tonumber(string.sub(1,index))
+    local y = tonumber(string.sub(index+2))
+    
+    angOffset = math.deg(math.atan2(480-y, 320-x))
+    if angOffset < 0 then angOffset = angOffset + 360 end
+    ang = navX:GetYaw() + angOffset
+    end
+)
 
-print("SpinTurn Started")
-local spinTurn = function(rotation)
-  
-  local core = require"core"
+--===========================================================---
+local spinTurn = function()
   
 -----------------------------
   local pidLoop = require"core.PID"
-  local PID = pidLoop(0.1,0.01,0.08)
+  local PID = pidLoop(0.1,0.02,0.05)
 -----------------------------
-  local angle = rotation
   local heading = 0
   local startTime = 0
   local lastTime = 0
   local turn = {
     Initialize = function()
-      PID.minOutput = -1
-      PID.maxOutput = 1
+      PID.minOutput = -.5
+      PID.maxOutput = .5
       PID.minInput = -180
       PID.maxInput = 180
       PID.continuous = true
@@ -23,7 +35,7 @@ local spinTurn = function(rotation)
       
       print("SpinTurn turning")
       heading = 0
-      PID.setpoint = angle
+      PID.setpoint = ang
       print"starting timestamps"
       startTime =  WPILib.Timer.GetFPGATimestamp()
       lastTime = WPILib.Timer.GetFPGATimestamp()
@@ -32,6 +44,7 @@ local spinTurn = function(rotation)
       --  Robot.drive:MecanumDrive_Cartesian(0, 0, -power)
     end,
     Execute = function()
+      PID.setpoint = ang
        heading = robotMap.navX:GetYaw()
       print("Heading",heading)
       publish("Robot/Heading", heading)
@@ -40,12 +53,11 @@ local spinTurn = function(rotation)
       lastTime = WPILib.Timer.GetFPGATimestamp()
     end,
     IsFinished = function() 
-      
-      return math.abs(heading- angle)<= 2
+      return false
     end,
     End = function(self)
       
-      Robot.drive:MecanumDrive_Cartesian(0, 0,0)
+      Robot.drive:MecanumDrive_Cartesian(0, 0, 0)
     end,
     Interrupted = function(self)
       print("I have been interrrupted")
@@ -57,4 +69,4 @@ local spinTurn = function(rotation)
   }
   return turn
 end
-return spinTurn
+return spinTurn()

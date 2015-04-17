@@ -162,8 +162,9 @@ local function SetLift(power, target)
       print"initialized SetLift"
     end,
     Execute = function()
-     adjustStall()
-      robotMap.lifterUpDown:Set(clamp(power))
+     if not OI.lifterUpDownDisable:Get() then
+      robotMap.lifterUpDown:Set(power)
+      end
     end,
     End = function()
       robotMap.lifterUpDown:Set(0)
@@ -202,17 +203,16 @@ local lifterPos = dataflow.wrap(function() return tick2inchUD(robotMap.lifterUpD
 
 local zeroPreset = parallel(lifterPoint(0), start(sequence(wait(0.25), tailPos(65))))
 local outPreset = lifterInOutPoint(15)
-local upPreset = parallel(start(lifterPoint(100)), start(tailPos(52
-    )))
+local upPreset = parallel(start(lifterPoint(100)), start(tailPos(52)))
 local inPreset = lifterInOutPoint(0)
 local canPreset = parallel(start(lifterPoint(34)), start(tailPos(80)))
 --parallel(lifterPoint(15), sequence(trigWait(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) <= 16 end), lifterInOutPoint(14)))
 
 local landfillTotePreset = lifterPoint(15.5)
-local landfillToteSeq = sequence(require"command.Print"("running landfill tote sequence"), SetLift(-1, RobotConfig.lifterMin+2), SetLift(-0.3, RobotConfig.lifterMin+0.5), SetLift(0.5, 3), landfillTotePreset)
+local landfillToteSeq = sequence(require"command.Print"("running landfill tote sequence"), SetLift(-1, RobotConfig.lifterMin+4.5), SetLift(-0.3, RobotConfig.lifterMin+0.7), SetLift(0.5, 3), landfillTotePreset)
 
 local humanFeedTotePreset = lifterPoint(27)
-local humanFeedToteSeq = sequence(require"command.Print"("running human feeder tote sequence"), SetLift(-1, RobotConfig.lifterMin+2), SetLift(-0.3, RobotConfig.lifterMin+0.5), trigWait(Compare(lifterPos, "<", RobotConfig.lifterMin + 0.25)), wait(0.1), SetLift(0.5, 3), humanFeedTotePreset)
+local humanFeedToteSeq = sequence(require"command.Print"("running human feeder tote sequence"), SetLift(-1, RobotConfig.lifterMin+4.5), SetLift(-0.3, RobotConfig.lifterMin+0.7), trigWait(Compare(lifterPos, "<", RobotConfig.lifterMin + 0.25)), wait(0.1), SetLift(0.5, 3), humanFeedTotePreset)
 
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.preset,cancel))

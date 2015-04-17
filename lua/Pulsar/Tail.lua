@@ -118,7 +118,8 @@ local tailUp = {
     robotMap.tail:SetVoltageRampRate(10)
   end,
   Execute = function()
-    if (ticks2Degrees(-robotMap.tail:GetPosition()) <= RobotConfig.tailMax) then
+    print("trying to run tail up "..tostring(ticks2Degrees(robotMap.tail:GetPosition())))
+    if (ticks2Degrees(robotMap.tail:GetPosition()) <= RobotConfig.tailMax) then
       local pwr = math.min(tailPower, math.abs((RobotConfig.tailMax - ticks2Degrees(robotMap.tail:GetPosition()) ) / 10))
       robotMap.tail:Set(-pwr)
     else
@@ -146,7 +147,8 @@ local tailDown = {
     print("Started moving")
   end,
   Execute = function()
-    if (ticks2Degrees(-robotMap.tail:GetPosition()) >= RobotConfig.tailMin) then
+    print("trying to run tail down "..tostring(ticks2Degrees(robotMap.tail:GetPosition())))
+    if (ticks2Degrees(robotMap.tail:GetPosition()) >= RobotConfig.tailMin) then
       local pwr = -math.min(-tailPower, math.abs((RobotConfig.tailMin - ticks2Degrees(robotMap.tail:GetPosition()) ) / 10))
       robotMap.tail:Set(pwr)
     else
@@ -187,7 +189,7 @@ local tailDownPosition = {
   end,
   subsystems = {},
 }
-local tailDownPreset = parallel(start(tailPosition(-66.5)),start(lifterPoint(8.5)),start(tailProngsUp))
+local tailDownPreset = parallel(start(tailPosition(-66.5)),start(lifterPoint(8.5)), start(tailProngsUp))
 
 local tailUpPreset = tailPosition(70) -- should be 80
 print"tailDown"

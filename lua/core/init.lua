@@ -94,11 +94,9 @@ core.getSolenoid = function(id)
     return solenoids[id]
 end
 
-core.setCompositeRobot = dofile("/home/lvuser/lua/core/compositeRobot.lua")
-
-core.setBasicRobot = dofile("/home/lvuser/lua/core/basicRobot.lua")
-
-core.serialize = dofile("/home/lvuser/lua/core/serialize.lua")
+core.setBasicRobot = require "core.compositeRobot"
+core.setCompositeRobot = require "core.basicRobot"
+core.serialize = require "core.serialize"
 
 local keepAlive_coroutines = {nextIndex = 1}
 
