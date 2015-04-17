@@ -88,6 +88,9 @@ stallTrigger = function(motor, maxCurrent)
       local speed, accel = getSpeed()
       local current, dcurrent = getCurrent()
       local stall = false
+      if OI.lifterUpDownDisable:Get() then 
+        return false
+        end
       if math.abs(current) > maxCurrent then
         if speed >= 0 and current < 0 and accel <= 0 and dcurrent < 0 then
           stall = true
@@ -99,7 +102,7 @@ stallTrigger = function(motor, maxCurrent)
       else
         stall = false
       end
-      print("speed "..speed.." acceleration "..tostring(accel).." current "..tostring(current).." dI/dt "..tostring(dcurrent).." stall "..tostring(stall))
+     -- print("speed "..speed.." acceleration "..tostring(accel).." current "..tostring(current).." dI/dt "..tostring(dcurrent).." stall "..tostring(stall))
       return stall
     end
   }
@@ -116,5 +119,5 @@ end
 local stalledPrint = command{ Execute = function()  print ("Count on Lifter Stall = ",countVal:Get()) end,IsFinished = function() return false end}
 print("___________________________STALL TRIGGERS STARTED_______________________________________")
 --Robot.scheduler:AddTrigger(triggers.whenPressed(stallTrigger(robotMap.lifterUpDown,.5,1),stopMotor(robotMap.lifterUpDown,"LifterUpDown")))
-Robot.scheduler:AddTrigger(triggers.whenPressed(stallTrigger(robotMap.lifterUpDown, 30),stopMotor(robotMap.lifterUpDown,"LifterUpDown")))
+Robot.scheduler:AddTrigger(triggers.whenPressed(stallTrigger(robotMap.lifterUpDown, 100),stopMotor(robotMap.lifterUpDown,"LifterUpDown")))
 --Robot.scheduler:StartCommand(stalledPrint)
