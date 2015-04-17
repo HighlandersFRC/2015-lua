@@ -87,28 +87,34 @@ stallTrigger = function(motor, maxCurrent)
     Get = function()
       local speed, accel = getSpeed()
       local current, dcurrent = getCurrent()
-      print("speed "..speed.." acceleration "..tostring(accel).." current "..tostring(current).." dI/dt "..tostring(dcurrent))
+      local stall = false
       if math.abs(current) > maxCurrent then
-        if current > 0 and accel <= 0 and dcurrent > 0 then
-          return true
-        elseif current < 0 and accel >= 0 and dcurrent < 0 then
-          return true
+        if speed >= 0 and current < 0 and accel <= 0 and dcurrent < 0 then
+          stall = true
+        elseif speed <= 0 and current > 0 and accel >= 0 and dcurrent > 0 then
+          stall = true
         else
-          return false
+          stall = false
         end
       else
-        return false
+        stall = false
       end
+      print("speed "..speed.." acceleration "..tostring(accel).." current "..tostring(current).." dI/dt "..tostring(dcurrent).." stall "..tostring(stall))
+      return stall
     end
   }
 end
 
 local stopMotor = function(motor,subsys)
 
-  return command{Execute = function() motor:SetControlMode(WPILib.CANTalon.kPercentVbus) motor:Set(0); print("_____________________STOPPING STALLING MOTOR________________________________") end,subsystems = {subsys}}
+  return command{
+    Execute = function() motor:SetControlMode(WPILib.CANTalon.kPercentVbus) motor:Set(0); print("_____________________STOPPING STALLING MOTOR________________________________") end,
+    IsFinished = function() return false end,
+    Interrupted = function() print"_______STOP STALLED MOTOR INTERRUPTED_____" end,
+    subsystems = {subsys}}
 end
 local stalledPrint = command{ Execute = function()  print ("Count on Lifter Stall = ",countVal:Get()) end,IsFinished = function() return false end}
 print("___________________________STALL TRIGGERS STARTED_______________________________________")
 --Robot.scheduler:AddTrigger(triggers.whenPressed(stallTrigger(robotMap.lifterUpDown,.5,1),stopMotor(robotMap.lifterUpDown,"LifterUpDown")))
-Robot.scheduler:AddTrigger(triggers.whenPressed(stallTrigger(robotMap.lifterUpDown, 15),stopMotor(robotMap.lifterUpDown,"LifterUpDown")))
+Robot.scheduler:AddTrigger(triggers.whenPressed(stallTrigger(robotMap.lifterUpDown, 30),stopMotor(robotMap.lifterUpDown,"LifterUpDown")))
 --Robot.scheduler:StartCommand(stalledPrint)
