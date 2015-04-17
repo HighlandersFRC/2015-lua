@@ -21,7 +21,7 @@ local liftMacro = function(liftHeight)
   else 
     height = -liftHeight* 25.4 /120 * 1000
   end
-  local PID = pidLoop(.001,0,0)
+  local PID = pidLoop(.001,0,.001)
   local startTime = 0
   local lastTime = 0
   local currentHeight
@@ -34,23 +34,18 @@ local liftMacro = function(liftHeight)
       PID.setpoint = height
     end,
     Execute = function()
+      if not OI.lifterUpDownDisable:Get() then
+        
+        
+      
       
 
       currentHeight = robotMap.lifterUpDown:GetPosition()
       response = -PID:Update(currentHeight)
-      local current = robotMap.lifterUpDown:GetOutputCurrent()*(robotMap.lifterUpDown:GetBusVoltage() /robotMap.lifterUpDown:GetOutputVoltage())
-      -- this expression is used to avoid cases where current spikes = inf
-      if math.abs(robotMap.lifterUpDown:GetOutputVoltage()) == 0 then
-        current = -100
-        end
-      RobotConfig.lifterClampDown = math.min(-.05,(robotMap.lifterUpDown:GetOutputVoltage() - (current/RobotConfig.lifterKi) + (RobotConfig.lifterDownCurrentLimit/RobotConfig.lifterKi)) / robotMap.lifterUpDown:GetBusVoltage())
-     print("VClamp = ".. robotMap.lifterUpDown:GetOutputVoltage().." - ".. current .. " / "..RobotConfig.lifterKi.. " + ".. RobotConfig.lifterDownCurrentLimit.." / ".. RobotConfig.lifterKi.. " / " .. robotMap.lifterUpDown:GetBusVoltage())
-      --print("Clamp",RobotConfig.lifterClampDown, "clamp comparison =", (robotMap.lifterUpDown:GetOutputVoltage() - (current/Ki) + (limitCurrentDown/Ki)) / robotMap.lifterUpDown:GetBusVoltage())
-      robotMap.lifterUpDown:Set(clamp(response))
-      
-   -- print("moving lifter at", clamp(response), "Current ",robotMap.lifterUpDown:GetOutputCurrent()*(robotMap.lifterUpDown:GetBusVoltage() /       robotMap.lifterUpDown:GetOutputVoltage()))
     
-     
+      robotMap.lifterUpDown:Set(clamp(response))
+    
+     end
     end,
     IsFinished = function() 
       return false --math.abs(height - currentHeight) <=1000

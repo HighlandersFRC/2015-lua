@@ -17,7 +17,7 @@ local wait = require"command.Wait"
 local trigWait = require"command.TriggerWait"
 local dataflow = require"dataflow"
 local Compare = require"dataflow.Compare"
-local lifterInOutCalibration = require"Pulsar.CalibrationInOut"
+local lifterInOutCalibration = require"Pulsar.CalibrateInOut"
 -- the lifter lock off means that the arms cannot be moved
 robotMap.lifterInOut:SetStatusFrameRateMs(2,20)
 robotMap.lifterUpDown:SetStatusFrameRateMs(2,20)
@@ -162,8 +162,9 @@ local function SetLift(power, target)
       print"initialized SetLift"
     end,
     Execute = function()
-     adjustStall()
-      robotMap.lifterUpDown:Set(clamp(power))
+     if not OI.lifterUpDownDisable:Get() then
+      robotMap.lifterUpDown:Set(power)
+      end
     end,
     End = function()
       robotMap.lifterUpDown:Set(0)
@@ -206,10 +207,12 @@ local upPreset = parallel(start(lifterPoint(100)), start(tailPos(52)))
 local inPreset = lifterInOutPoint(0)
 local canPreset = parallel(start(lifterPoint(34)), start(tailPos(80)))
 --parallel(lifterPoint(15), sequence(trigWait(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) <= 16 end), lifterInOutPoint(14)))
-local landfillTotePreset = lifterPoint(13)
-local landfillToteSeq = sequence(require"command.Print"("running landfill tote sequence"), SetLift(-1, RobotConfig.lifterMin+2), SetLift(-0.3, RobotConfig.lifterMin+0.5), SetLift(0.5, 3), landfillTotePreset)--lifterPoint(12)
+
+local landfillTotePreset = lifterPoint(15.5)
+local landfillToteSeq = sequence(require"command.Print"("running landfill tote sequence"), SetLift(-1, RobotConfig.lifterMin+4.5), SetLift(-0.3, RobotConfig.lifterMin+0.7), SetLift(0.5, 3), landfillTotePreset)
+
 local humanFeedTotePreset = lifterPoint(27)
-local humanFeedToteSeq = sequence(require"command.Print"("running human feeder tote sequence"), SetLift(-1, RobotConfig.lifterMin+2), SetLift(-0.3, RobotConfig.lifterMin+0.5), trigWait(Compare(lifterPos, "<", RobotConfig.lifterMin + 0.25)), wait(0.1), SetLift(0.5, 3), humanFeedTotePreset)
+local humanFeedToteSeq = sequence(require"command.Print"("running human feeder tote sequence"), SetLift(-1, RobotConfig.lifterMin+4.5), SetLift(-0.3, RobotConfig.lifterMin+0.7), trigWait(Compare(lifterPos, "<", RobotConfig.lifterMin + 0.25)), wait(0.1), SetLift(0.5, 3), humanFeedTotePreset)
 
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.preset,cancel))
