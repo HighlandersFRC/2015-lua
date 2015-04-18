@@ -8,6 +8,10 @@ local lidar = require"ArduLidar"
 local alpha = 0.25
 local emaVal = 0
 local finished = false
+local intakeCount = 0
+local rightIntakeCurrent = 0
+local leftIntakeCurrent = 0
+local motorStallRatio = 3
 local function updateEMA(val)
   emaVal = alpha * val + (1-alpha)*emaVal
   return emaVal
@@ -17,11 +21,22 @@ subscribe("Vision/Center", function(topic, payload)
     --local x, y = payload
     --- print("Tote is at " .. payload)
     local index = string.find(payload, ", ")
-    x = tonumber(string.sub(payload,1,index-1))
+
+    if payload == "" then
+      print("(Chase Vision)Tote not found")
+      ang = nil
+      inRange = false
+      return
+
+    end
+    x = tonumber(string.sub(payload,1,index-1)) - 170
     y = tonumber(string.sub(payload,index+2))
 
+
+    print("(ChaseVision)Targeting",x,y)
+
     --angOffset = 90 - math.deg(math.atan2(480-y, x-320))
-    angOffset = (320-x)*45/320
+    angOffset = (320-x)*45/320 
     if angOffset < 0 then angOffset = angOffset
     end
     if angOffset < 10 and angOffset > -10 then
@@ -51,11 +66,12 @@ local spinTurn = function()
   local heading = 0
   local startTime = 0
   local lastTime = 0
+
   local turn = {
     Initialize = function()
       finished = false
-      PID.minOutput = -1
-      PID.maxOutput = 1
+      PID.minOutput = -.6
+      PID.maxOutput = .6
       PID.minInput = -180
       PID.maxInput = 180
       PID.continuous = true
@@ -77,6 +93,9 @@ local spinTurn = function()
       local angVal = 000
       if ang == nil then
         angVal = 000
+        robotMap.leftIntake:Set(0)
+        robotMap.rightIntake:Set(0)
+        Robot.drive:MecanumDrive_Cartesian(0, 0, 0)
       elseif ang ~= nil then
         angVal = ang
       end
@@ -94,27 +113,47 @@ local spinTurn = function()
 
       print("(ChaseVision)Lidar values",lidar:Get())
 
+      if lidar:Get() ~=nil then
 
-      if(lidar:Get() > 120) then
-        robotMap.leftIntake:Set(0)
-        robotMap.rightIntake:Set(0)
-        if inRange  then
-          Robot.drive:MecanumDrive_Cartesian(0,response,-.6)
+        if(lidar:Get() > 120) then
+          robotMap.leftIntake:Set(0)
+          robotMap.rightIntake:Set(0)
+          if inRange  then
+            Robot.drive:MecanumDrive_Cartesian(0,response,-.6)
+          else
+            Robot.drive:MecanumDrive_Cartesian(0, response, 0)
+          end
+        elseif lidar:Get() > 65 then
+          robotMap.leftIntake:Set(-1)
+          robotMap.rightIntake:Set(1)
+          Robot.drive:MecanumDrive_Cartesian(0, 0, -0.3)
+          if robotMap.leftIntake:GetOutputVoltage() ~= 0 or robotMap.rightIntake:GetOutputVoltage() ~= 0 then
+            rightIntakeCurrent = math.abs(robotMap.rightIntake:GetOutputCurrent()*(robotMap.rightIntake:GetBusVoltage() / robotMap.rightIntake:GetOutputVoltage()))
+            leftIntakeCurrent = math.abs(robotMap.leftIntake:GetOutputCurrent()*(robotMap.leftIntake:GetBusVoltage() / robotMap.leftIntake:GetOutputVoltage()))
+            if math.abs(rightIntakeCurrent / robotMap.rightIntake:GetOutputVoltage() /motorStallRatio) >0.5 or math.abs(leftIntakeCurrent / robotMap.leftIntake:GetOutputVoltage() /motorStallRatio) >0.5 then
+              intakeCount = intakeCount + 1
+            else 
+              if intakeCount >0 then
+                intakeCount = intakeCount -1
+              end
+            end
+            if intakeCount >=5 then
+              print("(ChaseVision) stall detected running out")
+              robotMap.leftIntake:Set(.5)
+              robotMap.rightIntake:Set(-.5)
+              Robot.drive:MecanumDrive_Cartesian(0, 0, 0)
+              intakeCount = 10
+            end
+          end
+        elseif lidar:Get() > 40 then
+          robotMap.leftIntake:Set(-.5)
+          robotMap.rightIntake:Set(.5)
+          Robot.drive:MecanumDrive_Cartesian(0, 0, 0)
         else
-          Robot.drive:MecanumDrive_Cartesian(0, response, 0)
+          robotMap.leftIntake:Set(0)
+          robotMap.rightIntake:Set(0)
+          finished = true
         end
-      elseif lidar:Get() > 80 then
-        robotMap.leftIntake:Set(-1)
-        robotMap.rightIntake:Set(1)
-        Robot.drive:MecanumDrive_Cartesian(0, 0, -0.3)
-      elseif lidar:Get() > 40 then
-        robotMap.leftIntake:Set(-.5)
-        robotMap.rightIntake:Set(.5)
-        Robot.drive:MecanumDrive_Cartesian(0, 0, 0)
-      else
-        robotMap.leftIntake:Set(0)
-        robotMap.rightIntake:Set(0)
-        finished = true
       end
     end,
     IsFinished = function() 
