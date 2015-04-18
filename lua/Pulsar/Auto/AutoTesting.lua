@@ -1,5 +1,3 @@
-print"AutoTest"
-
 local drive = require"Pulsar.Auto.DriveForward"
 local turn = require"Pulsar.Auto.SpinTurn"
 local intake = require "Pulsar.Auto.intake"
@@ -22,17 +20,13 @@ local chaseVision = require"Pulsar.Auto.ChaseVision"
 robotMap.navX:ZeroYaw()
 
 
---[[return sequence(
+return sequence(
+
 
   start(tailSet(80)),                                 
   start(liftMacro(16)),
   start(inOut(1)),  
-  setIntake(-.6,.6),
-  ----test vvv
-  drive(.25, 1.15),
-  wait(.35),
-  -------
-  setIntake(0, 0),                              
+  chaseVision,                            
   -- has tote                                       
   start(liftMacro(0)),                                    
   turn(40),
@@ -42,18 +36,13 @@ robotMap.navX:ZeroYaw()
   start(liftMacro(16)),
   drive(.7,.96),
 
-  --===================================--
+
 
   start(tailSet(80)),                                  
   start(liftMacro(16)),
   start(inOut(1)),  
   turn(0),
-  setIntake(-.6,.6),
-  ----test vvv
-  drive(.26, 1.2),
-  wait(.32),
-  -------
-  setIntake(0, 0),                              
+  chaseVision,                                
   -- has tote                                       
   start(liftMacro(0)),                                    
   turn(40),
@@ -63,18 +52,13 @@ robotMap.navX:ZeroYaw()
   start(liftMacro(16)),
   drive(.7, .96),
 
-  --==========================================--
+
 
   start(tailSet(80)),                                
   start(liftMacro(16)),
   start(inOut(1)),  
   turn(0),
-  setIntake(-.6,.6),
-  ----test vvv
-  drive(.32, 1.2),
-  wait(.32),
-  -------
-  setIntake(0, 0),                              
+  chaseVision,                              
   -- has tote                                       
   start(liftMacro(12)),
   turn(110),
@@ -86,6 +70,10 @@ robotMap.navX:ZeroYaw()
   setIntake(0, 0)
   
   
-)]]
 
-return  parallel(liftMacro(21),chaseVision)
+)
+
+
+
+
+
