@@ -21,6 +21,7 @@ local chaseVision = require"Pulsar.Auto.ChaseVision"
 
 robotMap.navX:ZeroYaw()
 
+
 --[[return sequence(
 
   start(tailSet(80)),                                 
@@ -87,4 +88,4 @@ robotMap.navX:ZeroYaw()
   
 )]]
 
-return chaseVision
+return  parallel(liftMacro(21),chaseVision)
