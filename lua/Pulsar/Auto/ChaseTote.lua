@@ -3,7 +3,8 @@ local angOffset
 local ang
 subscribe("Vision/Center", function(topic, payload)
     --local x, y = payload
-    print("Tote is at " .. payload)
+    --
+    --print("Tote is at " .. payload)
     local index = string.find(payload, ", ")
     local x = tonumber(string.sub(1,index))
     local y = tonumber(string.sub(index+2))

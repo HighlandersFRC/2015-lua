@@ -32,7 +32,7 @@ subscribe("Vision/Center", function(topic, payload)
       return
 
     end
-    x = tonumber(string.sub(payload,1,index-1)) - 0
+    x = tonumber(string.sub(payload,1,index-1)) - 170
     y = tonumber(string.sub(payload,index+2))
 
 
@@ -89,7 +89,7 @@ local spinTurn = function()
       --  Robot.drive:MecanumDrive_Cartesian(0, 0, -power)
     end,
     Execute = function()
-       
+
       local angVal = 000
       if ang == nil then
         angVal = 000
@@ -111,40 +111,42 @@ local spinTurn = function()
       local response = PID:Update(heading)    
       lastTime = WPILib.Timer.GetFPGATimestamp()
 
-     -- print("(ChaseVision)Lidar values",lidar:Get())
-  
+      -- print("(ChaseVision)Lidar values",lidar:Get())
+
       if lidar:Get() ~=nil then
 
         if(lidar:Get() > 120) then
-
+          robotMap.leftIntake:Set(-.5)
+          robotMap.rightIntake:Set(.5)
           if inRange  then
-            Robot.drive:MecanumDrive_Cartesian(0,response,-.6)
+            Robot.drive:MecanumDrive_Cartesian(0,response,-.3)
           else
             Robot.drive:MecanumDrive_Cartesian(0, response, 0)
           end
         elseif lidar:Get() > 65 then
-            robotMap.leftIntake:Set(-1)
-            robotMap.rightIntake:Set(1)
-            Robot.drive:MecanumDrive_Cartesian(0, 0, -0.3)
+          robotMap.leftIntake:Set(-1)
+          robotMap.rightIntake:Set(1)
+          Robot.drive:MecanumDrive_Cartesian(0, 0, -.22)
+          intakeCount = 0
         elseif lidar:Get() > 40 then
           if not isStalled then
             robotMap.leftIntake:Set(-1)
             robotMap.rightIntake:Set(1)
-            Robot.drive:MecanumDrive_Cartesian(0, 0, -.3)
+            Robot.drive:MecanumDrive_Cartesian(0, 0, -.22)
             --print("[ChaseVision] intake in")
           end
-         print("[ChaseVIsion] delta distances",math.abs(lidar:Get() - previousDistance) /(WPILib.Timer.GetFPGATimestamp() - lastTime) )
-          if math.abs(lidar:Get() - previousDistance) /(WPILib.Timer.GetFPGATimestamp() - lastTime)  < 50 then
+          --print("[ChaseVIsion] delta distances",math.abs(lidar:Get() - previousDistance) /(WPILib.Timer.GetFPGATimestamp() - lastTime) )
+          if math.abs(lidar:Get() - previousDistance) /(WPILib.Timer.GetFPGATimestamp() - lastTime)  < 40 then
             intakeCount = intakeCount+1
           else
             if(intakeCount) > 0 then
               intakeCount = intakeCount -1
             end
           end
-         
+
 
           if intakeCount >=5 then
-            print("(ChaseVision) stall detected running out_______________________________________________________________")
+            --print("(ChaseVision) stall detected running out_______________________________________________________________")
             robotMap.leftIntake:Set(.5)
             robotMap.rightIntake:Set(-.5)
             Robot.drive:MecanumDrive_Cartesian(0, 0, 0)
