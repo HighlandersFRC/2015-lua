@@ -47,6 +47,12 @@ end
 local function tick2inchUD(val)
   return -val /1000 /25.4 *120
 end
+local function inch2tickIO(val)
+  return val * 25.4 /120 * 756
+end
+local function tick2inchIO(val)
+  return val /25.4 *120 /756
+end
 
 local holdPosition = {
   Initialize = function()
@@ -200,6 +206,7 @@ local lifterInOutTrigger = function()
 end
 
 local lifterPos = dataflow.wrap(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) end)
+local lifterInOutPos = dataflow.wrap(function() return tick2inchIO(robotMap.lifterUpDown:GetPosition()) end)
 
 local zeroPreset = parallel(lifterPoint(0), start(sequence(wait(0.25), tailPos(65))))
 local outPreset = lifterInOutPoint(15)
@@ -247,3 +254,5 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterCalibrate,parallel(cali
 
 Robot.scheduler:SetDefaultCommand("LifterUpDown",holdPosition)
 debugPrint("Lifter Finished")
+
+return {position = lifterPos, inOutPosition = lifterInOutPos}

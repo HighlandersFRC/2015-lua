@@ -1,4 +1,5 @@
 local core = require "core"
+local lifter = require "lifter"
 core.register_keepAlive(
   coroutine.create(
     function()
@@ -8,6 +9,8 @@ core.register_keepAlive(
         publish("Robot/LifterUpDown/Voltage", tostring(robotMap.lifterUpDown:GetOutputVoltage()))
         --print("DriveFR Output Voltage "..robotMap.FRTalon:GetOutputVoltage())
         --publish("Robot/LifterUpDownTwo/Voltage", tostring(robotMap.lifterUpDownTwo:GetOutputVoltage()))
+        publish("dashboard/lifterPos", tostring(lifter.position:Get()))
+        publish("dashboard/lifterInOutPos", tostring(lifter.inOutPosition:Get()))
         coroutine.yield()
       end
     end))
