@@ -15,11 +15,11 @@ local And = require"dataflow.And"
 local Or = require"dataflow.Or"
 
 local function degrees2ticks(degrees)
-  return degrees /360*1440
+  return degrees * 4
 end
 
 local function ticks2Degrees(ticks)
-  return ticks /1440*360
+  return ticks / 4
 end
 
 robotMap.tail:SetPosition(degrees2ticks(100))

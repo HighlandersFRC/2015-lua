@@ -23,11 +23,16 @@ local laneGen = lanes.gen("io,string,os",   function()
       local recv = arduino:read("*n")
       updateEMA(recv)
     end
+    
+    
+    
   end)
 
 
 local lidar = {}
 local lastFragment = ""
+
+
 
 
 function lidar:Get()
