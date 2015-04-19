@@ -19,10 +19,12 @@ local chaseVision = require"Pulsar.Auto.ChaseVision"
 
 robotMap.navX:ZeroYaw()
 
+--[[
 return sequence(
 
+
   start(tailSet(80)),                                 
-  start(liftMacro(16)),
+  start(liftMacro(16 )),
   start(inOut(1)),  
   chaseVision,                            
   -- has tote                                       
@@ -34,7 +36,7 @@ return sequence(
   start(liftMacro(16)),
   drive(.7,.96),
 
-  --===================================--
+
 
   start(tailSet(80)),                                  
   start(liftMacro(16)),
@@ -50,7 +52,7 @@ return sequence(
   start(liftMacro(16)),
   drive(.7, .96),
 
-  --==========================================--
+
 
   start(tailSet(80)),                                
   start(liftMacro(16)),
@@ -68,4 +70,12 @@ return sequence(
   setIntake(0, 0)
   
   
+
 )
+--]]
+return parallel(chaseVision,liftMacro(18))
+
+
+
+
+

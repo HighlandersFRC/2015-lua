@@ -27,6 +27,7 @@ require"Pulsar.RobotConfig"
 require"Pulsar.VoltagePublish"
 require "ArduLidar"
 local Scheduler = require"command.Scheduler"
+local lifterPoint = require"Pulsar.lifterPoint"
 print"requires finished"
 local toggleSlow = false
 local toggleTime = WPILib.Timer.GetFPGATimestamp()
@@ -132,7 +133,8 @@ Robot.Teleop.Put("SetMotors", {
       robotMap.lifterUpDown:Set(0)
       robotMap.lifterInOut:Set(0)
       robotMap.tail:Set(0)
-
+      
+--lifterPoint(0)
     end
   })
 
