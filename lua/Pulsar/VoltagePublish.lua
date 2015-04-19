@@ -1,5 +1,5 @@
 local core = require "core"
-local lifter = require "lifter"
+local lifter = require "Pulsar.lifter"
 core.register_keepAlive(
   coroutine.create(
     function()

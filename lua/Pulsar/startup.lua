@@ -7,6 +7,10 @@ print("metatable", getmetatable(WPILib.Timer))
 
 WPILib_backup = WPILib
 
+if DEBUG_ENABLE then
+  require("mobdebug").start(DEBUG_SERVER_ADDRESS, DEBUG_SERVER_PORT)
+end
+
 function checkWPILib(location)
   if WPILib == WPILib_backup then
     debugPrint("WPILib is ok at "..location)
@@ -24,7 +28,6 @@ local core = require"core"
 require"Pulsar.OI"
 require"Pulsar.RobotMap"
 require"Pulsar.RobotConfig"
-require"Pulsar.VoltagePublish"
 require "ArduLidar"
 local Scheduler = require"command.Scheduler"
 local lifterPoint = require"Pulsar.lifterPoint"
