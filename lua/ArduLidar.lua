@@ -32,10 +32,10 @@ local lastFragment = ""
 
 function lidar:Get()
   local val = linda:get("lidar")
-  print("lidar returned", val)
+  --print("lidar returned", val)
   return val
 
 end
-print("pcall of lanegen",pcall(laneGen))
+--print("pcall of lanegen",pcall(laneGen))
 
 return lidar
