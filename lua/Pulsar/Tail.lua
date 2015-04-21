@@ -197,7 +197,7 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailDown,tailDownPreset))
 print"tailHigh"
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailHigh,tailUpPreset))
 print"tailStow"
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailStow, tailPosition(85)))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailStow, tailPosition(105)))
 print"tailUpDown"
 Robot.scheduler:AddTrigger(triggers.whenPressed(Compare(OI.tailUpDown, "<", -0.2),tailUp))
 Robot.scheduler:AddTrigger(triggers.whenPressed(Compare(OI.tailUpDown, ">", 0.2),tailDown))
