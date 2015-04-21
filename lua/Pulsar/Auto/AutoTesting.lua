@@ -23,9 +23,9 @@ return sequence(
   start(tailSet(80)),                                 
   start(liftMacro(18)),
   start(inOut(1.3)),
-  turn(-19),
+  turn(-18),
   chaseVision,                            
-  -- has tote                                       
+  -- has tote    
   start(liftMacro(0)),                                    
   turn(23),
   drive(.95, .5),                                
@@ -38,28 +38,28 @@ return sequence(
 
   start(tailSet(80)),                                  
   start(liftMacro(18)),  
-  turn(-19),
-  chaseVision,                                
+  turn(-18),
+  chaseVision,   
   -- has tote                                       
   start(liftMacro(0)),                                    
   turn(23),
-  drive(.95, .5),                                
+  drive(.95, .5), 
   wait(.1),
   turn(0),
   start(liftMacro(18)),
-  drive(.85, .73),
+  drive(.95, .73),
 
   --==========================================--
 
   start(tailSet(80)),                                
   start(liftMacro(18)),
-  turn(-19),
-  chaseVision,                              
+  turn(-18),
+  chaseVision,        
   -- has tote                                       
-  start(liftMacro(11)),
+  start(liftMacro(15)),
   turn(90),
   start(liftMacro(8)),
-  drive(1, 1.2),
+  drive(1, 1),
   setIntake(1,-1),
   drive(1, .3),
   wait(.5),
