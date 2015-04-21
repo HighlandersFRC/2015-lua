@@ -253,6 +253,8 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterHumanFeedToteSeq,humanF
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterCalibrate,parallel(calibration(), require"command.Print"("triggered calibration sequence"),lifterInOutCalibration())))
 
 Robot.scheduler:SetDefaultCommand("LifterUpDown",holdPosition)
+
 debugPrint("Lifter Finished")
 
 return {position = lifterPos, inOutPosition = lifterInOutPos}
+

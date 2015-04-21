@@ -44,6 +44,15 @@ local laneGen = lanes.gen("io,string,os",   function()
   local lastFragment = ""
 
 
+<<<<<<< HEAD
+function lidar:Get()
+  local val = linda:get("lidar")
+  --print("lidar returned", val)
+  return val
+
+end
+--print("pcall of lanegen",pcall(laneGen))
+=======
   function lidar:Get()
     local val = linda:get("lidar")
     --print("lidar returned", val)
@@ -51,5 +60,6 @@ local laneGen = lanes.gen("io,string,os",   function()
 
   end
   print("pcall of lanegen",pcall(laneGen))
+>>>>>>> e2fd0c53193808b4ce198a2f2e1d3eecf2ce323e
 
   return lidar
