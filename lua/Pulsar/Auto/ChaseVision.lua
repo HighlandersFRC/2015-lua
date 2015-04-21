@@ -162,7 +162,9 @@ local spinTurn = function()
 
         else
           robotMap.leftIntake:Set(0)
-          robotMap.rightIntake:Set(0)
+          robotMap.rightIntake:Set(0)local liftMacro = require "Pulsar.Auto.lifterUpDown"
+local chaseTote = require "Pulsar.Auto.ChaseVision"
+local sequence = require"command.Sequence"
           finished = true
         end
       end

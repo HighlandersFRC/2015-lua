@@ -216,10 +216,10 @@ local canPreset = parallel(start(lifterPoint(34)), start(tailPos(80)))
 --parallel(lifterPoint(15), sequence(trigWait(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) <= 16 end), lifterInOutPoint(14)))
 
 local landfillTotePreset = lifterPoint(17)
-local landfillToteSeq = sequence(require"command.Print"("running landfill tote sequence"), SetLift(-1, RobotConfig.lifterMin+4.5), SetLift(-0.3, RobotConfig.lifterMin+0.7), SetLift(0.5, 3), landfillTotePreset)
+local landfillToteSeq = sequence(require"command.Print"("running landfill tote sequence"), SetLift(-1, RobotConfig.lifterMin+4.5), SetLift(-0.3, RobotConfig.lifterMin+0.7), SetLift(0.5, 4), landfillTotePreset)
 
 local humanFeedTotePreset = lifterPoint(27)
-local humanFeedToteSeq = sequence(require"command.Print"("running human feeder tote sequence"), SetLift(-1, RobotConfig.lifterMin+4.5), SetLift(-0.3, RobotConfig.lifterMin+0.7), trigWait(Compare(lifterPos, "<", RobotConfig.lifterMin + 0.25)), wait(0.1), SetLift(0.5, 3), humanFeedTotePreset)
+local humanFeedToteSeq = sequence(require"command.Print"("running human feeder tote sequence"), SetLift(-1, RobotConfig.lifterMin+4.5), SetLift(-0.3, RobotConfig.lifterMin+0.7), trigWait(Compare(lifterPos, "<", RobotConfig.lifterMin + 0.25)), wait(0.1), SetLift(0.5, 4), humanFeedTotePreset)
 
 
 --Robot.scheduler:AddTrigger(triggers.whenPressed(OI.preset,cancel))
