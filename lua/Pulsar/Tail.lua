@@ -189,9 +189,9 @@ local tailDownPosition = {
   end,
   subsystems = {},
 }
-local tailDownPreset = parallel(start(tailPosition(-66.5)),start(lifterPoint(8.5)), start(tailProngsUp))
+local tailDownPreset = parallel(start(tailPosition(-66.5)),start(lifterPoint(10)), start(tailProngsUp))
 
-local tailUpPreset = tailPosition(70) -- should be 80
+local tailUpPreset = tailPosition(65) -- should be 80
 print"tailDown"
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailDown,tailDownPreset))
 print"tailHigh"
@@ -199,8 +199,8 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailHigh,tailUpPreset))
 print"tailStow"
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailStow, tailPosition(85)))
 print"tailUpDown"
-Robot.scheduler:AddTrigger(triggers.whenPressed(Compare(OI.tailUpDown, ">", 0.2),tailUp))
-Robot.scheduler:AddTrigger(triggers.whenPressed(Compare(OI.tailUpDown, "<", -0.2),tailDown))
+Robot.scheduler:AddTrigger(triggers.whenPressed(Compare(OI.tailUpDown, "<", -0.2),tailUp))
+Robot.scheduler:AddTrigger(triggers.whenPressed(Compare(OI.tailUpDown, ">", 0.2),tailDown))
 print"tailProngsDown"
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailProngsDown,tailProngsDown))
 print"tailProngsUp"
