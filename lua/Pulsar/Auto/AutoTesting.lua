@@ -47,7 +47,7 @@ return sequence(
   wait(.1),
   turn(0),
   start(liftMacro(18)),
-  drive(.95, .73),
+  drive(.95, .7),
 
   --==========================================--
 

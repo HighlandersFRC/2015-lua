@@ -51,7 +51,7 @@ local liftMacro = function(target)
      
       response = PID:Update(currentAngle)
       --print("Tail target ", angle, "current angle", currentAngle,"response", response, "clamped response", clamp(response))
-      robotMap.tail:Set(response+.25 * math.cos(ticks2Degrees(currentAngle)*math.pi/180))
+      robotMap.tail:Set(-response-.25 * math.cos(ticks2Degrees(currentAngle)*math.pi/180))
     end,
     IsFinished = function() 
       return false 

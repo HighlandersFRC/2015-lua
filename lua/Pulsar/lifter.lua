@@ -47,6 +47,12 @@ end
 local function tick2inchUD(val)
   return -val /1000 /25.4 *120
 end
+local function inch2tickIO(val)
+  return val * 25.4 /120 * 756
+end
+local function tick2inchIO(val)
+  return val /25.4 *120 /756
+end
 
 local holdPosition = {
   Initialize = function()
@@ -200,6 +206,7 @@ local lifterInOutTrigger = function()
 end
 
 local lifterPos = dataflow.wrap(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) end)
+local lifterInOutPos = dataflow.wrap(function() return tick2inchIO(robotMap.lifterUpDown:GetPosition()) end)
 
 local zeroPreset = parallel(lifterPoint(0), start(sequence(wait(0.25), tailPos(65))))
 local outPreset = lifterInOutPoint(15)
@@ -208,7 +215,7 @@ local inPreset = lifterInOutPoint(0)
 local canPreset = parallel(start(lifterPoint(34)), start(tailPos(80)))
 --parallel(lifterPoint(15), sequence(trigWait(function() return tick2inchUD(robotMap.lifterUpDown:GetPosition()) <= 16 end), lifterInOutPoint(14)))
 
-local landfillTotePreset = lifterPoint(15.5)
+local landfillTotePreset = lifterPoint(17)
 local landfillToteSeq = sequence(require"command.Print"("running landfill tote sequence"), SetLift(-1, RobotConfig.lifterMin+4.5), SetLift(-0.3, RobotConfig.lifterMin+0.7), SetLift(0.5, 3), landfillTotePreset)
 
 local humanFeedTotePreset = lifterPoint(27)
@@ -246,4 +253,8 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterHumanFeedToteSeq,humanF
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.lifterCalibrate,parallel(calibration(), require"command.Print"("triggered calibration sequence"),lifterInOutCalibration())))
 
 Robot.scheduler:SetDefaultCommand("LifterUpDown",holdPosition)
+
 debugPrint("Lifter Finished")
+
+return {position = lifterPos, inOutPosition = lifterInOutPos}
+
