@@ -1,6 +1,7 @@
 print("AutoSys")
 --local oneTote = require "Pulsar.AutoSeq"
 --local threeTote = require "Pulsar.Auto.threeTote"
+local Command = require"command"
 local Auto
 local autoDriveNeutral = 1
 local autonomous = { 
@@ -12,7 +13,7 @@ local autonomous = {
     robotMap.BLTalon:ConfigNeutralMode(autoDriveNeutral) 
     robotMap.FRTalon:ConfigNeutralMode(autoDriveNeutral) 
     robotMap.FLTalon:ConfigNeutralMode(autoDriveNeutral) 
-
+    Robot.schedulerAuto:StartCommand(Command{Execute = function() robotMap.lifterUpDown:Set(0) end, subsystems = {"lifterUpDown"}})    
   end,
   Execute = function()
     Robot.schedulerAuto:Execute()

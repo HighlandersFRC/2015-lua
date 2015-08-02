@@ -15,11 +15,11 @@ local And = require"dataflow.And"
 local Or = require"dataflow.Or"
 
 local function degrees2ticks(degrees)
-  return degrees * 4
+  return degrees /360*1440
 end
 
 local function ticks2Degrees(ticks)
-  return ticks / 4
+  return ticks /1440*360
 end
 
 robotMap.tail:SetPosition(degrees2ticks(100))
@@ -197,7 +197,7 @@ Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailDown,tailDownPreset))
 print"tailHigh"
 Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailHigh,tailUpPreset))
 print"tailStow"
-Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailStow, tailPosition(105)))
+Robot.scheduler:AddTrigger(triggers.whenPressed(OI.tailStow, tailPosition(100)))
 print"tailUpDown"
 Robot.scheduler:AddTrigger(triggers.whenPressed(Compare(OI.tailUpDown, "<", -0.2),tailUp))
 Robot.scheduler:AddTrigger(triggers.whenPressed(Compare(OI.tailUpDown, ">", 0.2),tailDown))

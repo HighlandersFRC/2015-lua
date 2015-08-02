@@ -8,7 +8,7 @@ local clamp = function(inputValue)
   end
 end
 local inOutMacro = function(targetPosition)
-  print("lifter point created")
+--  print("lifter point created")
   -- this input is in inches
 -- 120 mm per revolution 25.4 mm in an inch
   local core = require"core"
@@ -18,13 +18,13 @@ local inOutMacro = function(targetPosition)
   if targetPosition >= RobotConfig.lifterInOutMax then
     
     target = RobotConfig.lifterInOutMax * 25.4 /120 * 756
-    print("Above Max",target)
+   -- print("Above Max",target)
   elseif targetPosition <= RobotConfig.lifterInOutMin then
     
       target = RobotConfig.lifterInOutMin* 25.4 /120 * 756
-      print("Below MIN",target)
+     -- print("Below MIN",target)
   else 
-    print("It was fine")
+   -- print("It was fine")
     target = targetPosition * 25.4 /120 * 756
   end
 
@@ -35,7 +35,7 @@ local currentPosition
 local response
 local toPosition = {
   Initialize = function()
-    print("lifterInOut going to ", target)
+   -- print("lifterInOut going to ", target)
     robotMap.lifterInOut:SetStatusFrameRateMs(2,20)
     startTime = WPILib.Timer.GetFPGATimestamp()
     PID.setpoint = target
@@ -54,7 +54,7 @@ local toPosition = {
     robotMap.lifterInOut:Set(0)
   end,
   Interrupted = function(self)
-    print("lifterPoint has been interrrupted")
+  --  print("lifterPoint has been interrrupted")
     self:End()
   end,
   IsInterruptible = function()

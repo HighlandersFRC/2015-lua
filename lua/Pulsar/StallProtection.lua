@@ -119,6 +119,5 @@ end
 local stalledPrint = command{ Execute = function()  print ("Count on Lifter Stall = ",countVal:Get()) end,IsFinished = function() return false end}
 print("___________________________STALL TRIGGERS STARTED_______________________________________")
 --Robot.scheduler:AddTrigger(triggers.whenPressed(stallTrigger(robotMap.lifterUpDown,.5,1),stopMotor(robotMap.lifterUpDown,"LifterUpDown")))
-Robot.scheduler:AddTrigger(triggers.whenPressed(stallTrigger(robotMap.lifterUpDown, 40),stopMotor(robotMap.lifterUpDown,"LifterUpDown")))
---Robot.schedulerAuto:AddTrigger(triggers.whenPressed(stallTrigger(robotMap.lifterUpDown, 40),stopMotor(robotMap.lifterUpDown,"LifterUpDown")))
+Robot.scheduler:AddTrigger(triggers.whenPressed(stallTrigger(robotMap.lifterUpDown, 110),stopMotor(robotMap.lifterUpDown,"LifterUpDown")))
 --Robot.scheduler:StartCommand(stalledPrint)

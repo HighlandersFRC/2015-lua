@@ -94,8 +94,8 @@ core.getSolenoid = function(id)
     return solenoids[id]
 end
 
-core.setBasicRobot = require "core.compositeRobot"
-core.setCompositeRobot = require "core.basicRobot"
+core.setBasicRobot = require "core.basicRobot"
+core.setCompositeRobot = require "core.compositeRobot"
 core.serialize = require "core.serialize"
 
 local keepAlive_coroutines = {nextIndex = 1}
@@ -165,7 +165,7 @@ if MQTT_CONSOLE_ENABLE then
   print"MQTT console initialization"
 else
   function publish() end
-  function subscribe() error"error attempting to subscribe: MQTT is disabled." end
+  function subscribe() --[[error"error attempting to subscribe: MQTT is disabled."]] end
 end
 
 return core

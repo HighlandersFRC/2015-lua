@@ -36,7 +36,7 @@ inOutDisable = core.getJoyBtn(2,6),
 tailStow = core.getJoyBtn(1, 9)]]
 --gunner controls
 lifterUpDown = axis(1, 3),
-lifterInOut = axis(1, 2),
+lifterInOut = axis(1, 0),
 tailUpDown = axis(1, 1),
 lifterTopPreset = btn(1, 4),
 lifterBottomPreset = btn(1, 2),

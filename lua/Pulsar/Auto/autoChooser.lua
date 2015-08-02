@@ -1,22 +1,13 @@
 local core = require"core"
-local btn = core.getJoyBtn
-local And = require"dataflow.And"
-local Not = require"dataflow.Not"
-local parallel = require "command.Parallel"
-local chaseVision = require"Pulsar.Auto.ChaseVision"
-local liftMacro = require "Pulsar.Auto.lifterUpDown"
 autonomousVersion = "Pulsar.Auto.NoAuto"
 
-local autoAlt = btn(2,8)
 local autoChoiceTable = {
-  [btn(2,1)] = "Pulsar.Auto.NoAuto",
-  [btn(2,2)] = "Pulsar.Auto.goForward",
-  [btn(2,3)] = "Pulsar.Auto.OneTote",
-  [And(btn(2,4), Not(autoAlt))] = "Pulsar.Auto.ThreeToteRight",
-  [And(btn(2,4), autoAlt)] = "Pulsar.Auto.ThreeToteLeft",
-  --[btn(2,4)] = "Pulsar.Auto.ThreeToteRight",
-   [And(btn(2,5), Not(autoAlt))] = "Pulsar.Auto.AutoTesting",
-    [And(btn(2,5), autoAlt)] = "Pulsar.Auto.TestChaseVision"
+  [core.getJoyBtn(2,1)] = "Pulsar.Auto.NoAuto",
+  [core.getJoyBtn(2,2)] = "Pulsar.Auto.goForward",
+  [core.getJoyBtn(2,3)] = "Pulsar.Auto.OneTote",
+  [core.getJoyBtn(2,4)] = "Pulsar.Auto.ThreeTote",
+  [core.getJoyBtn(2,5)] = "Pulsar.Auto.AutoTesting"
+
 }
 local autoLastTime = 0
 local autoChooser = {

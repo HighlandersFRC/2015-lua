@@ -1,3 +1,5 @@
+print"AutoTest"
+
 local drive = require"Pulsar.Auto.DriveForward"
 local turn = require"Pulsar.Auto.SpinTurn"
 local intake = require "Pulsar.Auto.intake"
@@ -15,61 +17,72 @@ local setIntake = require "Pulsar.Auto.SetIntake"
 local analogBtn = require "AnalogButton"
 local lidar = require "ArduLidar"
 local triggerWait = require "command.TriggerWait"
-local chaseVision = require"Pulsar.Auto.ChaseVision"
+--local wrist = require"Pulsar.Auto.TailProngsAuto"
 
 robotMap.navX:ZeroYaw()
 
 return sequence(
-  start(tailSet(80)),                                 
-  start(liftMacro(18)),
-  start(inOut(1.3)),
-  turn(-18),
-  chaseVision,                            
-  -- has tote    
+
+  start(tailSet(100)),                                 
+  start(liftMacro(16)),
+  start(inOut(1.55)),  
+  turn(-17),
+  setIntake(-.6,.6),
+  ----test vvv
+  drive(.25, .9),
+  wait(.55),
+  -------
+  setIntake(0, 0),                              
+  -- has tote                                       
   start(liftMacro(0)),                                    
   turn(23),
-  drive(.95, .5),                                
+  drive(.65, .38),                                
   wait(.1),
   turn(0),
-  start(liftMacro(18)),
-  drive(.85,.73),
+  start(liftMacro(16)),
+  drive(.7,.96),
 
   --===================================--
 
-  start(tailSet(80)),                                  
-  start(liftMacro(18)),  
-  turn(-18),
-  chaseVision,   
+  start(tailSet(100)),                                  
+  start(liftMacro(16)),
+  start(inOut(1.55)),  
+  turn(-17),
+  setIntake(-.6,.6),
+  ----test vvv
+  drive(.25, .9),
+  wait(.55),
+  -------
+  setIntake(0, 0),                              
   -- has tote                                       
   start(liftMacro(0)),                                    
   turn(23),
-  drive(.95, .5), 
+  drive(.65, .38),                                
   wait(.1),
   turn(0),
-  start(liftMacro(18)),
-  drive(.95, .7),
+  start(liftMacro(16)),
+  drive(.7, .96),
 
   --==========================================--
 
-  start(tailSet(80)),                                
-  start(liftMacro(18)),
-  turn(-18),
-  chaseVision,        
+  start(tailSet(100)),                                
+  start(liftMacro(16)),
+  start(inOut(1.55)),  
+  turn(-17),
+  setIntake(-.6,.6),
+  ----test vvv
+  drive(.3, .9),
+  wait(.5),
+  -------
+  setIntake(0, 0),                              
   -- has tote                                       
-  start(liftMacro(15)),
-  turn(90),
   start(liftMacro(8)),
-  drive(1, 1),
-  setIntake(1,-1),
+  turn(90),
+  drive(1, .6),
+  setIntake(.8,-.8),
   drive(1, .3),
   wait(.5),
   setIntake(0, 0)
+  
+  
 )
-
-
---[[robotMap.navX:ZeroYaw()
-
-return sequence(
-  start(liftMacro(18)),
-  chaseVision
-  )--]]

@@ -15,6 +15,7 @@ local motorStallRatio = 3.33
 local previousDistance = 0
 local lidarLastTime = 0
 local isStalled 
+local lastStall = 0
 local function updateEMA(val)
   emaVal = alpha * val + (1-alpha)*emaVal
   return emaVal
@@ -22,17 +23,17 @@ end
 
 subscribe("Vision/Center", function(topic, payload)
     --local x, y = payload
-    --- print("Tote is at " .. payload)
+    print("Tote is at " .. payload)
     local index = string.find(payload, ", ")
 
     if payload == "" then
-      print("(Chase Vision)Tote not found")
+     -- print("(Chase Vision)Tote not found")
       ang = nil
       inRange = false
       return
 
     end
-    x = tonumber(string.sub(payload,1,index-1)) - 170
+    x = tonumber(string.sub(payload,1,index-1)) - 80
     y = tonumber(string.sub(payload,index+2))
 
 
@@ -42,7 +43,7 @@ subscribe("Vision/Center", function(topic, payload)
     angOffset = (320-x)*45/320 
     if angOffset < 0 then angOffset = angOffset
     end
-    if angOffset < 10 and angOffset > -10 then
+    if angOffset < 15 and angOffset > -15 then
       inRange = true
     else
       inRange = false
@@ -76,6 +77,7 @@ local spinTurn = function()
       lidarLastTime =  WPILib.Timer.GetFPGATimestamp()
       previousDistance = lidar:Get()
       isStalled =false
+      intakeCount = 0
       print("SpinTurn turning")
       heading = 0
 
@@ -111,13 +113,13 @@ local spinTurn = function()
       local response = PID:Update(heading)    
       lastTime = WPILib.Timer.GetFPGATimestamp()
 
-      -- print("(ChaseVision)Lidar values",lidar:Get())
+      print("(ChaseVision)Lidar values",lidar:Get())
 
       if lidar:Get() ~=nil then
 
         if(lidar:Get() > 120) then
           robotMap.leftIntake:Set(-.5)
-          robotMap.rightIntake:Set(.5)
+          robotMap.rightIntake:Set(.4)
           if inRange  then
             Robot.drive:MecanumDrive_Cartesian(0,response,-.3)
           else
@@ -125,21 +127,22 @@ local spinTurn = function()
           end
         elseif lidar:Get() > 65 then
           robotMap.leftIntake:Set(-1)
-          robotMap.rightIntake:Set(1)
+          robotMap.rightIntake:Set(0.9)
           Robot.drive:MecanumDrive_Cartesian(0, 0, -.22)
           intakeCount = 0
         elseif lidar:Get() > 40 then
           if not isStalled then
             robotMap.leftIntake:Set(-1)
-            robotMap.rightIntake:Set(1)
+            robotMap.rightIntake:Set(0.9)
             Robot.drive:MecanumDrive_Cartesian(0, 0, -.22)
             --print("[ChaseVision] intake in")
           end
           --print("[ChaseVIsion] delta distances",math.abs(lidar:Get() - previousDistance) /(WPILib.Timer.GetFPGATimestamp() - lastTime) )
           if math.abs(lidar:Get() - previousDistance) /(WPILib.Timer.GetFPGATimestamp() - lastTime)  < 40 then
             intakeCount = intakeCount+1
+            lastStall = WPILib.Timer.GetFPGATimestamp()
           else
-            if(intakeCount) > 0 then
+            if(intakeCount) > 0 and WPILib.Timer.GetFPGATimestamp() - lastStall > 0.05 then
               intakeCount = intakeCount -1
             end
           end
@@ -162,9 +165,7 @@ local spinTurn = function()
 
         else
           robotMap.leftIntake:Set(0)
-          robotMap.rightIntake:Set(0)local liftMacro = require "Pulsar.Auto.lifterUpDown"
-local chaseTote = require "Pulsar.Auto.ChaseVision"
-local sequence = require"command.Sequence"
+          robotMap.rightIntake:Set(0)
           finished = true
         end
       end
